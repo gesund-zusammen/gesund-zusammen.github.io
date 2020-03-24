@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+# Gesund-Zusammen: Digitale Tools Gegen Covid 
 
-You can use the [editor on GitHub](https://github.com/gesund-zusammen/gesund-zusammen.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+eine Offene Initiative
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+mit Unterstützung von finleap, via, und weiteren Partnern
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+In der aktuellen Situation möchten wir gerne einen nachvollziehbaren und starken Schritt nach vorne gehen, um Digitale Tools zu bauen, die gegen die Ausbreitung der Covid Pandemie effektiv helfen. Dabei ist unser oberstes Prinzip, den demokratischen mandatierten Vertretern möglichst gute Informationen zur Verfügung zu stellen, und die Entwicklung digitaler Tools zur Pandemie Bekämpfung unter Rücksicht auf die geltenden Datenschutz und Privatsphäre Gesetze in der Breite und in der Tiefe zu supporten. Wir hoffen ultimativ, dass unsere Gesund-Zusammen Initiative sich schnell überholt - und manchem nur eine kleiner Anschub ist.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## Digitale Initiativen von Gesund-Zusammen
 
-- Bulleted
-- List
+-> TVA
 
-1. Numbered
-2. List
+## Kommunikations Kanäle
 
-**Bold** and _Italic_ and `Code` text
+Twitter [@gesundzusammen](https://twitter.com/gesundzusammen) , Slack: [gesundzusammen.slack.com](https://gesundzusammen.slack.com/) , Github: [gesund-zusammen](https://github.com/gesund-zusammen)
 
-[Link](url) and ![Image](src)
-```
+### Traeger und Unterstuetzer von Gesund-Zusammen:
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gesund-zusammen/gesund-zusammen.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- Liste
