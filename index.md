@@ -16,6 +16,6 @@ In der aktuellen Situation möchten wir gerne einen nachvollziehbaren und starke
 
 Twitter [@gesundzusammen](https://twitter.com/gesundzusammen) , Slack: [gesundzusammen.slack.com](https://gesundzusammen.slack.com/) , Github: [gesund-zusammen](https://github.com/gesund-zusammen)
 
-### Traeger und Unterstuetzer von Gesund-Zusammen:
+## Traeger und Unterstuetzer von Gesund-Zusammen:
 
 - Liste
