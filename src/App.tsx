@@ -1,13 +1,13 @@
 import React from "react";
 
 import AppTheme from "./Theme";
-import LandingPage from "./components/LandingPage";
+import Page from "./components/Page";
 
 class App extends React.Component {
   render = () => {
     return (
       <AppTheme>
-        <LandingPage />
+        <Page />
       </AppTheme>
     );
   };
