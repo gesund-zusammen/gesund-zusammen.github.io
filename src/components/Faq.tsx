@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Button, Hidden, Grid } from "@material-ui/core";
+import { Typography, Button, Hidden, Grid } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
 import IlluFaq from "../images/illu_faq.svg";
