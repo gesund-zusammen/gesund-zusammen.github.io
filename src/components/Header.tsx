@@ -20,39 +20,33 @@ class Header extends React.PureComponent<IHeaderProps, {}> {
   render = () => {
     return (
       <>
-        <Box paddingBottom={4} marginTop={4}>
-          <Grid container spacing={0}>
-            <Grid item xs={12} sm={6}>
-              <img src={Logo} alt="#GesundZusammen"></img>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <HeaderNavItems>
-                <HeaderNavItem href="#">
-                  {translated(this.props.lang).header.nav.initiative}
-                </HeaderNavItem>
-                <HeaderNavItem href="#">
-                  {translated(this.props.lang).header.nav.projects}
-                </HeaderNavItem>
-                <HeaderNavItem href="#">
-                  {translated(this.props.lang).header.nav.supporters}
-                </HeaderNavItem>
-                <HeaderNavItem href="https://docs.google.com/document/d/1v7Z7puca9oy7kG_AZmVCZyxVRcBqRC9cGd4e344aGaA">
-                  {translated(this.props.lang).header.nav.faqs}
-                </HeaderNavItem>
-                <HeaderLangSwitch>
-                  <StyledSwitch
-                    checked={this.props.lang === "de"}
-                    onChange={this.handleLangChange}
-                    disableRipple={true}
-                    color="primary"
-                    name="langSwitch"
-                  ></StyledSwitch>
-                  <LangDisplay>{this.props.lang}</LangDisplay>
-                </HeaderLangSwitch>
-              </HeaderNavItems>
-            </Grid>
-          </Grid>
-        </Box>
+        <HeaderNav paddingBottom={4} marginTop={4}>
+          <HeaderLogo src={Logo} alt="#GesundZusammen"></HeaderLogo>
+          <HeaderNavItems>
+            <HeaderNavItem href="#">
+              {translated(this.props.lang).header.nav.initiative}
+            </HeaderNavItem>
+            <HeaderNavItem href="#">
+              {translated(this.props.lang).header.nav.projects}
+            </HeaderNavItem>
+            <HeaderNavItem href="#">
+              {translated(this.props.lang).header.nav.supporters}
+            </HeaderNavItem>
+            <HeaderNavItem href="https://docs.google.com/document/d/1v7Z7puca9oy7kG_AZmVCZyxVRcBqRC9cGd4e344aGaA">
+              {translated(this.props.lang).header.nav.faqs}
+            </HeaderNavItem>
+            <HeaderLangSwitch>
+              <StyledSwitch
+                checked={this.props.lang === "de"}
+                onChange={this.handleLangChange}
+                disableRipple={true}
+                color="primary"
+                name="langSwitch"
+              ></StyledSwitch>
+              <LangDisplay>{this.props.lang}</LangDisplay>
+            </HeaderLangSwitch>
+          </HeaderNavItems>
+        </HeaderNav>
         <Box paddingBottom={4} marginTop={4}>
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6}>
@@ -84,31 +78,64 @@ class Header extends React.PureComponent<IHeaderProps, {}> {
   };
 }
 
+const HeaderNav: AnyStyledComponent = styled(Box)`
+  display: block;
+  overflow: hidden;
+`;
+
+const HeaderLogo: AnyStyledComponent = styled.img`
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: 600px) {
+    margin: 0;
+    float: left;
+  }
+`;
+
 const HeaderNavItems: AnyStyledComponent = styled.div`
-  font-family: inherit;
-  display: inline-bock;
-  float: right;
+  display: inline-block;
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+
+  @media (min-width: 600px) {
+    float: right;
+    width: auto;
+    margin-top: 0.3rem;
+    text-align: right;
+  }
 `;
 
 const HeaderNavItem: AnyStyledComponent = styled.a`
-  font-family: inherit;
   display: inline-block;
+  width: 50%;
+  font-family: inherit;
   color: #ffffff;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600;
-  line-height: 160%;
-  margin-left: 1.3rem;
-  margin-top: 0.7rem;
+  line-height: 3rem;
 
-  &:first-of-type {
-    margin-left: 0;
+  @media (min-width: 600px) {
+    display: inline-block;
+    width: auto;
+    margin-left: 2rem;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
   }
 `;
 
 const HeaderLangSwitch: AnyStyledComponent = styled.div`
   display: inline-block;
-  margin-left: 1.3rem;
+  width: 100%;
+
+  @media (min-width: 600px) {
+    width: auto;
+    margin-left: 1.3rem;
+  }
 `;
 
 const StyledSwitch: AnyStyledComponent = styled(Switch)`
@@ -117,7 +144,6 @@ const StyledSwitch: AnyStyledComponent = styled(Switch)`
 
 const LangDisplay: AnyStyledComponent = styled.span`
   display: inline-block;
-  float: right;
   font-size: 1rem;
   margin-top: 0.7rem;
   text-transform: uppercase;

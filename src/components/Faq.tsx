@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Button } from "@material-ui/core";
+import { Box, Typography, Button, Hidden, Grid } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
 import IlluFaq from "../images/illu_faq.svg";
@@ -11,23 +11,36 @@ interface IFaqProps {
 class Faq extends React.PureComponent<IFaqProps, {}> {
   render = () => {
     return (
-      <Box style={{ position: "relative", overflow: "hidden" }}>
-        <FaqImage src={IlluFaq} alt="FAQ"></FaqImage>
-        <FaqContentWrapper>
-          <Typography variant="h3">Sie haben Fragen?</Typography>
-          <FaqButton color="primary" variant="outlined">
-            FAQs
-          </FaqButton>
-        </FaqContentWrapper>
-      </Box>
+      <Grid
+        container
+        direction="row"
+        justify="space-between"
+        alignItems="flex-end"
+      >
+        <Grid item xs={12} sm={4}>
+          <FaqContentWrapper>
+            <Typography variant="h3">Sie haben Fragen?</Typography>
+            <FaqButton color="primary" variant="outlined">
+              FAQs
+            </FaqButton>
+          </FaqContentWrapper>
+        </Grid>
+        <Hidden xsDown>
+          <Grid item xs={12} sm={8}>
+            <FaqImage src={IlluFaq} alt="FAQ"></FaqImage>
+          </Grid>
+        </Hidden>
+      </Grid>
     );
   };
 }
 
 const FaqContentWrapper: AnyStyledComponent = styled.div`
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  text-align: center;
+
+  @media (min-width: 600px) {
+    text-align: left;
+  }
 `;
 
 const FaqButton: AnyStyledComponent = styled(Button)`
@@ -43,7 +56,9 @@ const FaqButton: AnyStyledComponent = styled(Button)`
 `;
 
 const FaqImage: AnyStyledComponent = styled.img`
-  float: right;
+  width: 100%;
+  display: block;
+  margin: 0 0 0 auto;
 `;
 
 export default Faq;

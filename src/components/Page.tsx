@@ -31,7 +31,7 @@ class Page extends React.Component<{}, IPageState> {
   render = () => {
     return (
       <>
-        <HeaderWrapper id="header" component="header" paddingBottom={12}>
+        <HeaderWrapper id="header" component="header" paddingBottom={14}>
           <Container maxWidth="lg">
             <Header
               lang={this.state.lang}
@@ -52,7 +52,7 @@ class Page extends React.Component<{}, IPageState> {
           </Container>
         </Box>
 
-        <FooterWrapper id="footer" component="footer" marginTop={4}>
+        <FooterWrapper id="footer" component="footer">
           <Container maxWidth="lg">
             <Footer lang={this.state.lang}></Footer>
           </Container>
@@ -75,11 +75,15 @@ const HeaderWrapper: AnyStyledComponent = styled(Box)`
 const FooterWrapper: AnyStyledComponent = styled(Box)`
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   color: #ffffff;
-  padding: 5rem 0 2rem 0;
+  padding: 8rem 0 2rem 0;
   background-image: url(${BgFooter});
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: 600px) {
+    padding-top: 2rem;
+  }
 `;
 
 export default Page;

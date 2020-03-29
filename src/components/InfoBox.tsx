@@ -14,7 +14,9 @@ class InfoBox extends React.PureComponent<IInfoBoxProps, {}> {
         <StyledCard elevation={0}>
           <StyledCardContent>
             <Typography variant="h4">{this.props.title}</Typography>
-            <Typography variant="body2">{this.props.content}</Typography>
+            <Typography variant="body2" style={{ textAlign: "justify" }}>
+              {this.props.content}
+            </Typography>
           </StyledCardContent>
         </StyledCard>
       </Grid>

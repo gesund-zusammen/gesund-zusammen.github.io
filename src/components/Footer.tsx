@@ -17,9 +17,9 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
   render = () => {
     return (
       <>
-        <Typography variant="h3" style={{ color: "inherit" }}>
+        <SupportersHeader variant="h3">
           {translated(this.props.lang).footer.title}
-        </Typography>
+        </SupportersHeader>
 
         <Box marginTop={4}>
           <Grid
@@ -62,7 +62,7 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
         </Box>
 
         <FooterNav>
-          <img src={Logo} alt="#GesundZusammen"></img>
+          <FooterLogo src={Logo} alt="#GesundZusammen"></FooterLogo>
           <FooterNavItems>
             <FooterNavItem href="#">
               {translated(this.props.lang).footer.nav.privacy}
@@ -75,15 +75,37 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
             </FooterNavItem>
           </FooterNavItems>
         </FooterNav>
-
         <CopyrightNote>&copy; 2020 finleap GmbH</CopyrightNote>
       </>
     );
   };
 }
 
+const SupportersHeader = styled(Typography)`
+  && {
+    display: block;
+    color: inherit;
+    text-align: center;
+
+    @media (min-width: 600px) {
+      text-align: left;
+    }
+  }
+`;
+
+const FooterLogo: AnyStyledComponent = styled.img`
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: 600px) {
+    margin: 0;
+    float: left;
+  }
+`;
+
 const FooterNav: AnyStyledComponent = styled.div`
   display: block;
+  overflow: hidden;
   padding: 2rem 0;
   margin: 3rem 0 0 0;
   border-top: 2px solid #ffffff;
@@ -91,24 +113,37 @@ const FooterNav: AnyStyledComponent = styled.div`
 `;
 
 const FooterNavItems: AnyStyledComponent = styled.div`
-  font-family: inherit;
-  display: inline-bock;
-  float: right;
+  display: inline-block;
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+
+  @media (min-width: 600px) {
+    float: right;
+    width: auto;
+    margin: 0;
+    text-align: right;
+  }
 `;
 
 const FooterNavItem: AnyStyledComponent = styled.a`
+  display: block;
+  width: 100%;
   font-family: inherit;
-  display: inline-block;
   color: #ffffff;
   text-decoration: none;
   font-size: 0.8rem;
+  line-height: 2.8rem;
   font-weight: normal;
-  line-height: 160%;
-  margin-left: 2.8rem;
-  margin-top: 0.9rem;
 
-  &:first-of-type {
-    margin-left: 0;
+  @media (min-width: 600px) {
+    display: inline-block;
+    width: auto;
+    margin-left: 2rem;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
   }
 `;
 
