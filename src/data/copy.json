@@ -4,7 +4,8 @@
       "nav": {
         "initiative": "Initiative",
         "projects": "Projekte",
-        "supporters": "Unterstützer"
+        "supporters": "Unterstützer",
+        "faqs": "Fragen?"        
       },
       "title": "Digitale Tools gegen Covid-19",
       "content": "Eine offene Initiative, denn wir glauben fest daran:",
@@ -38,7 +39,8 @@
       "nav": {
         "initiative": "Initiative",
         "projects": "Projects",
-        "supporters": "Supporters"
+        "supporters": "Supporters",
+        "faqs": "FAQs"        
       },
       "title": "Digital tools to fight Covid-19",
       "content": "Eine offene Initiative, denn wir glauben fest daran:",

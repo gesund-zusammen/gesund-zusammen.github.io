@@ -62,6 +62,9 @@ class LandingPage extends React.Component<{}, ILandingPageState> {
                 <HeaderNavItem href="#">
                   {this.translated().header.nav.supporters}
                 </HeaderNavItem>
+                <HeaderNavItem href="https://docs.google.com/document/d/1v7Z7puca9oy7kG_AZmVCZyxVRcBqRC9cGd4e344aGaA">
+                  {this.translated().header.nav.faqs}
+                </HeaderNavItem>
                 <HeaderLangSwitch>
                   <LangSwitch
                     checked={this.state.lang === "de"}
