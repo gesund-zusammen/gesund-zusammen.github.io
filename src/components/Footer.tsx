@@ -1,5 +1,4 @@
 import React from "react";
-import { Grid, Button, Box } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
 import { translated } from "../util";
@@ -14,26 +13,6 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
   render = () => {
     return (
       <>
-        <Box marginTop={4}>
-          <Grid
-            container
-            direction="row"
-            justify="center"
-            alignItems="center"
-            spacing={0}
-          >
-            <Grid item xs={12} style={{ textAlign: "center" }}>
-              <Button
-                color="secondary"
-                variant="contained"
-                disableFocusRipple={true}
-              >
-                {translated(this.props.lang).footer.button}
-              </Button>
-            </Grid>
-          </Grid>
-        </Box>
-
         <FooterNav>
           <FooterLogo src={Logo} alt="#GesundZusammen"></FooterLogo>
           <FooterNavItems>

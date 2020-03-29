@@ -1,6 +1,8 @@
 import React from "react";
-import { Box, Grid, Typography } from "@material-ui/core";
+import { Box, Grid, Typography, Button } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
+
+import { translated } from "../util";
 
 import LogoOmio from "../images/partners/omio.png";
 import LogoBVDS from "../images/partners/bvds.png";
@@ -109,6 +111,25 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               <a href="https://www.misterspex.de/">
                 <PartnerLogo src={LogoMrSpex}></PartnerLogo>
               </a>
+            </Grid>
+          </Grid>
+        </Box>
+        <Box marginTop={4}>
+          <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+            spacing={0}
+          >
+            <Grid item xs={12} style={{ textAlign: "center" }}>
+              <Button
+                color="secondary"
+                variant="contained"
+                disableFocusRipple={true}
+              >
+                {translated(this.props.lang).footer.button}
+              </Button>
             </Grid>
           </Grid>
         </Box>
