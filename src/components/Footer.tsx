@@ -1,13 +1,10 @@
 import React from "react";
-import { Typography, Grid, Button, Box } from "@material-ui/core";
+import { Grid, Button, Box } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
 import { translated } from "../util";
 
 import Logo from "../images/logo.svg";
-import LogoFinleap from "../images/logo_finleap.svg";
-import LogoVia from "../images/logo_via.svg";
-import LogoWefox from "../images/logo_wefox.svg";
 
 interface IFooterProps {
   lang: "de" | "en";
@@ -17,30 +14,6 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
   render = () => {
     return (
       <>
-        <SupportersHeader variant="h3">
-          {translated(this.props.lang).footer.title}
-        </SupportersHeader>
-
-        <Box marginTop={4}>
-          <Grid
-            container
-            direction="row"
-            justify="space-between"
-            alignItems="center"
-            spacing={3}
-          >
-            <Grid item xs={12} sm={3} style={{ textAlign: "center" }}>
-              <img src={LogoFinleap} style={{ height: "100%" }}></img>
-            </Grid>
-            <Grid item xs={12} sm={3} style={{ textAlign: "center" }}>
-              <img src={LogoWefox} style={{ height: "100%" }}></img>
-            </Grid>
-            <Grid item xs={12} sm={3} style={{ textAlign: "center" }}>
-              <img src={LogoVia} style={{ height: "100%" }}></img>
-            </Grid>
-          </Grid>
-        </Box>
-
         <Box marginTop={4}>
           <Grid
             container
@@ -80,18 +53,6 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
     );
   };
 }
-
-const SupportersHeader = styled(Typography)`
-  && {
-    display: block;
-    color: inherit;
-    text-align: center;
-
-    @media (min-width: 600px) {
-      text-align: left;
-    }
-  }
-`;
 
 const FooterLogo: AnyStyledComponent = styled.img`
   display: block;

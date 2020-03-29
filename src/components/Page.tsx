@@ -7,6 +7,7 @@ import BgFooter from "../images/bg_footer.svg";
 
 import Header from "./Header";
 import MainContent from "./MainContent";
+import Partners from "./Partners";
 import Faq from "./Faq";
 import Footer from "./Footer";
 
@@ -43,6 +44,12 @@ class Page extends React.Component<{}, IPageState> {
         <Box id="maincontent" paddingBottom={4} marginTop={4}>
           <Container maxWidth="lg">
             <MainContent lang={this.state.lang}></MainContent>
+          </Container>
+        </Box>
+
+        <Box id="partners" paddingBottom={4} marginTop={4}>
+          <Container maxWidth="lg">
+            <Partners lang={this.state.lang}></Partners>
           </Container>
         </Box>
 
