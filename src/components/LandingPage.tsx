@@ -1,5 +1,12 @@
 import React from "react";
-import { Box, Grid, Container, Typography, Button } from "@material-ui/core";
+import {
+  Box,
+  Grid,
+  Container,
+  Typography,
+  Button,
+  Switch,
+} from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
 import InfoBox from "./InfoBox";
@@ -24,7 +31,7 @@ const DEFAULT_STATE: ILandingPageState = {
   lang: "de",
 };
 
-class LandingPage extends React.PureComponent<{}, ILandingPageState> {
+class LandingPage extends React.Component<{}, ILandingPageState> {
   constructor(props: {}) {
     super(props);
     this.state = DEFAULT_STATE;
@@ -32,6 +39,10 @@ class LandingPage extends React.PureComponent<{}, ILandingPageState> {
 
   translated = () => {
     return Copy[this.state.lang];
+  };
+
+  handleLangChange = () => {
+    this.setState({ lang: this.state.lang === "de" ? "en" : "de" });
   };
 
   render = () => {
@@ -42,9 +53,25 @@ class LandingPage extends React.PureComponent<{}, ILandingPageState> {
             <HeaderNav>
               <img src={Logo} alt="#GesundZusammen"></img>
               <HeaderNavItems>
-                <a href="#">{this.translated().header.nav.initiative}</a>
-                <a href="#">{this.translated().header.nav.projects}</a>
-                <a href="#">{this.translated().header.nav.supporters}</a>
+                <HeaderNavItem href="#">
+                  {this.translated().header.nav.initiative}
+                </HeaderNavItem>
+                <HeaderNavItem href="#">
+                  {this.translated().header.nav.projects}
+                </HeaderNavItem>
+                <HeaderNavItem href="#">
+                  {this.translated().header.nav.supporters}
+                </HeaderNavItem>
+                <HeaderLangSwitch>
+                  <Switch
+                    checked={this.state.lang === "de"}
+                    onChange={this.handleLangChange}
+                    disableRipple={true}
+                    color="primary"
+                    name="langSwitch"
+                  ></Switch>
+                </HeaderLangSwitch>
+                <HeaderLangDisplay>{this.state.lang}</HeaderLangDisplay>
               </HeaderNavItems>
             </HeaderNav>
             <HeaderContent>
@@ -152,7 +179,8 @@ const HeaderContainer: AnyStyledComponent = styled(Container)`
 const HeaderNav: AnyStyledComponent = styled.div`
   font-family: inherit;
   display: block;
-  padding: 1rem 0;
+  padding: 3rem 0 0 0;
+  overflow: hidden;
 
   && img {
     float: left;
@@ -165,9 +193,38 @@ const HeaderNavItems: AnyStyledComponent = styled.div`
   float: right;
 `;
 
+const HeaderNavItem: AnyStyledComponent = styled.a`
+  font-family: inherit;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 160%;
+  margin-left: 1.3rem;
+  margin-top: 0.7rem;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+`;
+
+const HeaderLangSwitch: AnyStyledComponent = styled.div`
+  display: inline-block;
+  margin-left: 1.3rem;
+`;
+
+const HeaderLangDisplay: AnyStyledComponent = styled.span`
+  display: inline-block;
+  float: right;
+  font-size: 1rem;
+  margin-top: 1.2rem;
+  text-transform: uppercase;
+`;
+
 const HeaderContent: AnyStyledComponent = styled.div`
   font-family: inherit;
-  margin-top: 8rem;
+  margin-top: 5rem;
   padding-bottom: 8rem;
   width: 50%;
 `;
