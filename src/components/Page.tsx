@@ -31,7 +31,7 @@ class Page extends React.Component<{}, IPageState> {
   render = () => {
     return (
       <>
-        <HeaderWrapper id="header" component="header" paddingBottom={4}>
+        <HeaderWrapper id="header" component="header" paddingBottom={12}>
           <Container maxWidth="lg">
             <Header
               lang={this.state.lang}
@@ -70,7 +70,6 @@ const HeaderWrapper: AnyStyledComponent = styled(Box)`
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  padding-bottom: 8rem;
 `;
 
 const FooterWrapper: AnyStyledComponent = styled(Box)`

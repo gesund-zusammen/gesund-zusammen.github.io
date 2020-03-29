@@ -29,14 +29,14 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
             alignItems="center"
             spacing={3}
           >
-            <Grid item xs={3} style={{ textAlign: "center" }}>
-              <img src={LogoFinleap}></img>
+            <Grid item xs={12} sm={3} style={{ textAlign: "center" }}>
+              <img src={LogoFinleap} style={{ height: "100%" }}></img>
             </Grid>
-            <Grid item xs={3} style={{ textAlign: "center" }}>
-              <img src={LogoWefox}></img>
+            <Grid item xs={12} sm={3} style={{ textAlign: "center" }}>
+              <img src={LogoWefox} style={{ height: "100%" }}></img>
             </Grid>
-            <Grid item xs={3} style={{ textAlign: "center" }}>
-              <img src={LogoVia}></img>
+            <Grid item xs={12} sm={3} style={{ textAlign: "center" }}>
+              <img src={LogoVia} style={{ height: "100%" }}></img>
             </Grid>
           </Grid>
         </Box>

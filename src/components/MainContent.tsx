@@ -42,8 +42,10 @@ class MainContent extends React.PureComponent<IMainContentProps, {}> {
 }
 
 const StyledMainContent: AnyStyledComponent = styled(Typography)`
-  column-count: 2;
-  column-gap: 1.7rem;
+  @media (min-width: 600px) {
+    column-count: 2;
+    column-gap: 1.6rem;
+  }
 `;
 
 export default MainContent;

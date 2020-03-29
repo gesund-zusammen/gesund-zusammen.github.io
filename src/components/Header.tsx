@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Switch } from "@material-ui/core";
+import { Box, Typography, Switch, Grid, Hidden } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
 import { translated } from "../util";
@@ -20,65 +20,69 @@ class Header extends React.PureComponent<IHeaderProps, {}> {
   render = () => {
     return (
       <>
-        <HeaderNav>
-          <img src={Logo} alt="#GesundZusammen"></img>
-          <HeaderNavItems>
-            <HeaderNavItem href="#">
-              {translated(this.props.lang).header.nav.initiative}
-            </HeaderNavItem>
-            <HeaderNavItem href="#">
-              {translated(this.props.lang).header.nav.projects}
-            </HeaderNavItem>
-            <HeaderNavItem href="#">
-              {translated(this.props.lang).header.nav.supporters}
-            </HeaderNavItem>
-            <HeaderNavItem href="https://docs.google.com/document/d/1v7Z7puca9oy7kG_AZmVCZyxVRcBqRC9cGd4e344aGaA">
-              {translated(this.props.lang).header.nav.faqs}
-            </HeaderNavItem>
-            <HeaderLangSwitch>
-              <LangSwitch
-                checked={this.props.lang === "de"}
-                onChange={this.handleLangChange}
-                disableRipple={true}
-                color="primary"
-                name="langSwitch"
-              ></LangSwitch>
-            </HeaderLangSwitch>
-            <HeaderLangDisplay>{this.props.lang}</HeaderLangDisplay>
-          </HeaderNavItems>
-        </HeaderNav>
-        <HeaderContent>
-          <Typography variant="h1" style={{ fontFamily: "inherit" }}>
-            {translated(this.props.lang).header.title}
-          </Typography>
-          <Typography
-            variant="body1"
-            style={{ fontFamily: "inherit", color: "#ffffff" }}
-          >
-            {translated(this.props.lang).header.content}
-          </Typography>
-          <Typography variant="caption" style={{ fontFamily: "inherit" }}>
-            {translated(this.props.lang).header.claim}
-          </Typography>
-        </HeaderContent>
-        <HeaderIllustration>
-          <img src={IlluHeader} alt="Patient 0"></img>
-        </HeaderIllustration>
+        <Box paddingBottom={4} marginTop={4}>
+          <Grid container spacing={0}>
+            <Grid item xs={12} sm={6}>
+              <img src={Logo} alt="#GesundZusammen"></img>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <HeaderNavItems>
+                <HeaderNavItem href="#">
+                  {translated(this.props.lang).header.nav.initiative}
+                </HeaderNavItem>
+                <HeaderNavItem href="#">
+                  {translated(this.props.lang).header.nav.projects}
+                </HeaderNavItem>
+                <HeaderNavItem href="#">
+                  {translated(this.props.lang).header.nav.supporters}
+                </HeaderNavItem>
+                <HeaderNavItem href="https://docs.google.com/document/d/1v7Z7puca9oy7kG_AZmVCZyxVRcBqRC9cGd4e344aGaA">
+                  {translated(this.props.lang).header.nav.faqs}
+                </HeaderNavItem>
+                <HeaderLangSwitch>
+                  <StyledSwitch
+                    checked={this.props.lang === "de"}
+                    onChange={this.handleLangChange}
+                    disableRipple={true}
+                    color="primary"
+                    name="langSwitch"
+                  ></StyledSwitch>
+                  <LangDisplay>{this.props.lang}</LangDisplay>
+                </HeaderLangSwitch>
+              </HeaderNavItems>
+            </Grid>
+          </Grid>
+        </Box>
+        <Box paddingBottom={4} marginTop={4}>
+          <Grid container spacing={4}>
+            <Grid item xs={12} sm={6}>
+              <Typography variant="h1" style={{ fontFamily: "inherit" }}>
+                {translated(this.props.lang).header.title}
+              </Typography>
+              <Typography
+                variant="body1"
+                style={{ fontFamily: "inherit", color: "#ffffff" }}
+              >
+                {translated(this.props.lang).header.content}
+              </Typography>
+              <Typography variant="caption" style={{ fontFamily: "inherit" }}>
+                {translated(this.props.lang).header.claim}
+              </Typography>
+            </Grid>
+            <Hidden xsDown>
+              <Grid item xs={12} sm={6}>
+                <HeaderIllustration
+                  src={IlluHeader}
+                  alt="Patient 0"
+                ></HeaderIllustration>
+              </Grid>
+            </Hidden>
+          </Grid>
+        </Box>
       </>
     );
   };
 }
-
-const HeaderNav: AnyStyledComponent = styled.div`
-  font-family: inherit;
-  display: block;
-  padding: 3rem 0 0 0;
-  overflow: hidden;
-
-  && img {
-    float: left;
-  }
-`;
 
 const HeaderNavItems: AnyStyledComponent = styled.div`
   font-family: inherit;
@@ -107,34 +111,20 @@ const HeaderLangSwitch: AnyStyledComponent = styled.div`
   margin-left: 1.3rem;
 `;
 
-const LangSwitch: AnyStyledComponent = styled(Switch)`
+const StyledSwitch: AnyStyledComponent = styled(Switch)`
   margin-top: -4px;
 `;
 
-const HeaderLangDisplay: AnyStyledComponent = styled.span`
+const LangDisplay: AnyStyledComponent = styled.span`
   display: inline-block;
   float: right;
   font-size: 1rem;
-  margin-top: 1.1rem;
+  margin-top: 0.7rem;
   text-transform: uppercase;
 `;
 
-const HeaderContent: AnyStyledComponent = styled(Box)`
-  float: left;
-  font-family: inherit;
-  margin: 7rem 0 0 0;
-  width: 50%;
-`;
-
-const HeaderIllustration: AnyStyledComponent = styled(Box)`
-  width: 50%;
-  overflow: hidden;
-  float: left;
-
-  & > img {
-    width: 100%;
-    margin: 5rem 0 10rem 0;
-  }
+const HeaderIllustration: AnyStyledComponent = styled.img`
+  width: 100%;
 `;
 
 export default Header;
