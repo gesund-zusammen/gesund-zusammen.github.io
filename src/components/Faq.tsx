@@ -20,7 +20,11 @@ class Faq extends React.PureComponent<IFaqProps, {}> {
         <Grid item xs={12} sm={4}>
           <FaqContentWrapper>
             <Typography variant="h3">Sie haben Fragen?</Typography>
-            <FaqButton color="primary" variant="outlined">
+            <FaqButton
+              color="primary"
+              variant="outlined"
+              href="https://docs.google.com/document/d/1v7Z7puca9oy7kG_AZmVCZyxVRcBqRC9cGd4e344aGaA"
+            >
               FAQs
             </FaqButton>
           </FaqContentWrapper>
