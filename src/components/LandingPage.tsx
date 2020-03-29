@@ -56,7 +56,7 @@ class LandingPage extends React.Component<{}, ILandingPageState> {
                 <HeaderNavItem href="#">
                   {this.translated().header.nav.initiative}
                 </HeaderNavItem>
-                <HeaderNavItem href="#">
+                <HeaderNavItem href="https://docs.google.com/document/d/1jIgISaBz1R0Sy_-1fOsy9JAmj--YB4IUfaUgmhWrLsk">
                   {this.translated().header.nav.projects}
                 </HeaderNavItem>
                 <HeaderNavItem href="#">
