@@ -1,0 +1,70 @@
+{
+  "de": {
+    "header": {
+      "nav": {
+        "initiative": "Initiative",
+        "projects": "Projekte",
+        "supporters": "Unterstützer"
+      },
+      "title": "Digitale Tools gegen Covid-19",
+      "content": "Eine offene Initiative, denn wir glauben fest daran:",
+      "claim": "Daten schützen Leben!"
+    },
+    "main": {
+      "title": "Die #GesundZusammen Initiative",
+      "content": "In der aktuellen Situation möchten wir gerne einen nachvollziehbaren und starken Schritt nach vorne gehen, um Digitale Tools zu bauen, die gegen die Ausbreitung der Covid-19 Pandemie effektiv helfen. Dabei ist unser oberstes Prinzip, den demokratischen mandatierten Vertretern möglichst gute Informationen zur Verfügung zu stellen, und die Entwicklung digitaler Tools zur Pandemie Bekämpfung unter Rücksicht auf die geltenden Datenschutz und Privatsphäre Gesetze in der Breite und in der Tiefe zu supporten."
+    },
+    "boxes": {
+      "initiative": {
+        "title": "Offene Initiative",
+        "content": "mit der Unterstützung von starken Tech Partnern, investieren wir in den Bau von Apps, welche innerhalb der geltenden Privatsphäre und Datenschutz Gesetzgebung, die Bekämpfung von COVID-19 und anderen Pandemien vereinfachen."
+      },
+      "support": {
+        "title": "Digitaler Support",
+        "content": "durch aktive Unterstützung von weiteren digitalen Initiativen mit unseren Ressourcen - um effektiv die Datenlage zu verbessern. Kontaktiert uns dazu - gerne mit Ideen und den geforderten Ressourcen."
+      },
+      "ecosystem": {
+        "title": "Ökosystem",
+        "content": "welches alle anderen privaten als auch offiziellen Digitalen Initiativen begrüßt, über die wir hier eine umfassende Liste veröffentlichen. Um mit regelmäßigen Updates über alle digitalen Initiativen eine Zusammenarbeit herzustellen."
+      }
+    },
+    "footer": {
+      "title": "Die Unterstützer",
+      "button": "Werde Teil der Initiative"
+    }
+  },
+  "en": {
+    "header": {
+      "nav": {
+        "initiative": "Initiative",
+        "projects": "Projekte",
+        "supporters": "Unterstützer"
+      },
+      "title": "Digitale Tools gegen Covid-19",
+      "content": "Eine offene Initiative, denn wir glauben fest daran:",
+      "claim": "Daten schützen Leben!"
+    },
+    "main": {
+      "title": "Die #GesundZusammen Initiative",
+      "content": "In der aktuellen Situation möchten wir gerne einen nachvollziehbaren und starken Schritt nach vorne gehen, um Digitale Tools zu bauen, die gegen die Ausbreitung der Covid-19 Pandemie effektiv helfen. Dabei ist unser oberstes Prinzip, den demokratischen mandatierten Vertretern möglichst gute Informationen zur Verfügung zu stellen, und die Entwicklung digitaler Tools zur Pandemie Bekämpfung unter Rücksicht auf die geltenden Datenschutz und Privatsphäre Gesetze in der Breite und in der Tiefe zu supporten."
+    },
+    "boxes": {
+      "initiative": {
+        "title": "Offene Initiative",
+        "content": "mit der Unterstützung von starken Tech Partnern, investieren wir in den Bau von Apps, welche innerhalb der geltenden Privatsphäre und Datenschutz Gesetzgebung, die Bekämpfung von COVID-19 und anderen Pandemien vereinfachen."
+      },
+      "support": {
+        "title": "Digitaler Support",
+        "content": "durch aktive Unterstützung von weiteren digitalen Initiativen mit unseren Ressourcen - um effektiv die Datenlage zu verbessern. Kontaktiert uns dazu - gerne mit Ideen und den geforderten Ressourcen."
+      },
+      "ecosystem": {
+        "title": "Ökosystem",
+        "content": "welches alle anderen privaten als auch offiziellen Digitalen Initiativen begrüßt, über die wir hier eine umfassende Liste veröffentlichen. Um mit regelmäßigen Updates über alle digitalen Initiativen eine Zusammenarbeit herzustellen."
+      }
+    },
+    "footer": {
+      "title": "Die Unterstützer",
+      "button": "Werde Teil der Initiative"
+    }
+  }
+}

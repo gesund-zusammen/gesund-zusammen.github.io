@@ -1,21 +1,39 @@
-# Gesund-Zusammen: Digitale Tools Gegen Covid 
+# finleap ce frontend
 
-eine Offene Initiative
+## Prerequisites
 
-mit Unterstützung von finleap, via, und weiteren Partnern
+- yarn
 
+## Local usage
 
-In der aktuellen Situation möchten wir gerne einen nachvollziehbaren und starken Schritt nach vorne gehen, um Digitale Tools zu bauen, die gegen die Ausbreitung der Covid Pandemie effektiv helfen. Dabei ist unser oberstes Prinzip, den demokratischen mandatierten Vertretern möglichst gute Informationen zur Verfügung zu stellen, und die Entwicklung digitaler Tools zur Pandemie Bekämpfung unter Rücksicht auf die geltenden Datenschutz und Privatsphäre Gesetze in der Breite und in der Tiefe zu supporten. Wir hoffen ultimativ, dass unsere Gesund-Zusammen Initiative sich schnell überholt - und manchem nur eine kleiner Anschub ist.
+- `yarn install` to install all necessary modules
+- `yarn start` to run the app, it's accessible via http://localhost:4040 in the browser
 
+### Optimized build
 
-## Digitale Initiativen von Gesund-Zusammen
+An optimized (minimized) build can be created locally with the following command:
 
--> TVA
+```
+yarn build:local
+```
 
-## Kommunikations Kanäle
+This creates the optimized app, using the `config/.env.local` configuration file. To serve the optimized app, run
 
-Twitter [@gesundzusammen](https://twitter.com/gesundzusammen) , Slack: [gesundzusammen.slack.com](https://gesundzusammen.slack.com/) , Github: [gesund-zusammen](https://github.com/gesund-zusammen)
+```
+yarn server:build
+```
 
-## Traeger und Unterstuetzer von Gesund-Zusammen:
+To build the app with production configuration (`config/.env.production`) run
 
-- Liste
+```
+yarn build
+```
+
+## Docker Image
+
+Creating a docker image to serve this app is also possible:
+
+```
+docker build --no-cache --build-arg NODE_ENV=[local|production] --build-arg OPTIMIZED_BUILD=[true|false] -t helios-admin:latest .
+docker run -p 80:4000 -d helios-admin:latest
+```
