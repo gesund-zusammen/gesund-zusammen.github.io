@@ -49,7 +49,7 @@ class LandingPage extends React.Component<{}, ILandingPageState> {
     return (
       <>
         <Header component="header">
-          <HeaderContainer maxWidth="md">
+          <HeaderContainer maxWidth="lg">
             <HeaderNav>
               <img src={Logo} alt="#GesundZusammen"></img>
               <HeaderNavItems>
@@ -78,7 +78,10 @@ class LandingPage extends React.Component<{}, ILandingPageState> {
               <Typography variant="h1" style={{ fontFamily: "inherit" }}>
                 {this.translated().header.title}
               </Typography>
-              <Typography variant="body1" style={{ fontFamily: "inherit" }}>
+              <Typography
+                variant="body1"
+                style={{ fontFamily: "inherit", color: "#ffffff" }}
+              >
                 {this.translated().header.content}
               </Typography>
               <Typography variant="caption" style={{ fontFamily: "inherit" }}>
@@ -88,15 +91,15 @@ class LandingPage extends React.Component<{}, ILandingPageState> {
           </HeaderContainer>
         </Header>
         <Box id="maincontent" paddingBottom={4} marginTop={4}>
-          <Container maxWidth="md">
+          <Container maxWidth="lg">
             <Typography variant="h2">{this.translated().main.title}</Typography>
-            <Typography variant="body1">
+            <MainContent variant="body1">
               {this.translated().main.content}
-            </Typography>
+            </MainContent>
           </Container>
         </Box>
         <Box id="infoboxes" paddingBottom={4} marginTop={4}>
-          <Container maxWidth="md">
+          <Container maxWidth="lg">
             <Grid container spacing={4}>
               <InfoBox
                 title={this.translated().boxes.initiative.title}
@@ -119,12 +122,12 @@ class LandingPage extends React.Component<{}, ILandingPageState> {
           marginTop={4}
           style={{ overflow: "hidden" }}
         >
-          <Container maxWidth="md">
+          <Container maxWidth="lg">
             <FaqImage src={IlluFaq} alt="FAQ"></FaqImage>
           </Container>
         </Box>
         <Footer component="footer">
-          <Container maxWidth="md">
+          <Container maxWidth="lg">
             <Typography variant="h3">
               {this.translated().footer.title}
             </Typography>
@@ -231,6 +234,11 @@ const HeaderContent: AnyStyledComponent = styled.div`
   margin-top: 5rem;
   padding-bottom: 8rem;
   width: 50%;
+`;
+
+const MainContent: AnyStyledComponent = styled(Typography)`
+  column-count: 2;
+  column-gap: 1.7rem;
 `;
 
 const FaqImage: AnyStyledComponent = styled.img`

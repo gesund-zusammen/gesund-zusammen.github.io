@@ -22,16 +22,26 @@ const theme = createMuiTheme({
     fontSize: 18,
     fontFamily: ['"Lato"', '"Helvetica"', '"Arial"', "sans-serif"].join(","),
     h1: {
+      fontFamily: ['"Open Sans"', '"Helvetica"', '"Arial"', "sans-serif"].join(
+        ",",
+      ),
       fontSize: "3.3rem",
       fontWeight: 600,
       marginBottom: "1.4rem",
     },
     h2: {
+      fontFamily: ['"Open Sans"', '"Helvetica"', '"Arial"', "sans-serif"].join(
+        ",",
+      ),
       fontSize: "2.4rem",
       fontWeight: 600,
       marginBottom: "1.2rem",
+      color: "#003269",
     },
     h3: {
+      fontFamily: ['"Open Sans"', '"Helvetica"', '"Arial"', "sans-serif"].join(
+        ",",
+      ),
       fontSize: "1.7rem",
       fontWeight: 600,
       marginBottom: "1.4rem",
@@ -40,6 +50,7 @@ const theme = createMuiTheme({
     body1: {
       fontSize: "1.2rem",
       fontWeight: "normal",
+      color: "#003269",
     },
     body2: {
       fontSize: "1rem",
