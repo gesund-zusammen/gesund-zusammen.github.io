@@ -51,6 +51,38 @@ const theme = createMuiTheme({
       fontWeight: 600,
     },
   },
+  overrides: {
+    MuiSwitch: {
+      root: {
+        height: "48px",
+      },
+      switchBase: {
+        padding: "16px",
+        "&$checked": {
+          transform: "translateX(10px)",
+        },
+      },
+      thumb: {
+        width: "16px",
+        height: "16px",
+      },
+      track: {
+        borderRadius: "10px",
+        backgroundColor: "#ffffff",
+        opacity: 1,
+      },
+      colorPrimary: {
+        color: "#003269",
+        "&$checked": {
+          color: "#003269",
+          "& + $track": {
+            backgroundColor: "#ffffff",
+            opacity: 1,
+          },
+        },
+      },
+    },
+  },
 });
 
 function Theme(props: IThemeProps) {

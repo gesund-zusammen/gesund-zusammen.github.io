@@ -63,13 +63,13 @@ class LandingPage extends React.Component<{}, ILandingPageState> {
                   {this.translated().header.nav.supporters}
                 </HeaderNavItem>
                 <HeaderLangSwitch>
-                  <Switch
+                  <LangSwitch
                     checked={this.state.lang === "de"}
                     onChange={this.handleLangChange}
                     disableRipple={true}
                     color="primary"
                     name="langSwitch"
-                  ></Switch>
+                  ></LangSwitch>
                 </HeaderLangSwitch>
                 <HeaderLangDisplay>{this.state.lang}</HeaderLangDisplay>
               </HeaderNavItems>
@@ -214,11 +214,15 @@ const HeaderLangSwitch: AnyStyledComponent = styled.div`
   margin-left: 1.3rem;
 `;
 
+const LangSwitch: AnyStyledComponent = styled(Switch)`
+  margin-top: -4px;
+`;
+
 const HeaderLangDisplay: AnyStyledComponent = styled.span`
   display: inline-block;
   float: right;
   font-size: 1rem;
-  margin-top: 1.2rem;
+  margin-top: 1.1rem;
   text-transform: uppercase;
 `;
 
