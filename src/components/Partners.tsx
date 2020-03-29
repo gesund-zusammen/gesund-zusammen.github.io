@@ -19,6 +19,7 @@ import LogoViaHealth from "../images/partners/viadata.svg";
 import LogoPersonio from "../images/partners/personio.png";
 import LogoTeamViewer from "../images/partners/teamviewer.svg";
 import LogoMrSpex from "../images/partners/mrspex.png";
+import LogoDatenschutzExperte from "../images/partners/datenschutzexperte.svg";
 
 interface IPartnersProps {
   lang: "de" | "en";
@@ -110,6 +111,11 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
             <Grid item xs={6} sm={3}>
               <a href="https://www.misterspex.de/">
                 <PartnerLogo src={LogoMrSpex}></PartnerLogo>
+              </a>
+            </Grid>
+            <Grid item xs={6} sm={3}>
+              <a href="https://www.datenschutzexperte.de/">
+                <PartnerLogo src={LogoDatenschutzExperte}></PartnerLogo>
               </a>
             </Grid>
           </Grid>
