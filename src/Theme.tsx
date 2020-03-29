@@ -46,6 +46,7 @@ const theme = createMuiTheme({
       fontWeight: 600,
       marginBottom: "1.6rem",
       lineHeight: "2.4rem",
+      color: "#003269",
     },
     h4: {
       fontFamily: ['"Open Sans"', '"Helvetica"', '"Arial"', "sans-serif"].join(

@@ -17,7 +17,7 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
   render = () => {
     return (
       <>
-        <Typography variant="h3">
+        <Typography variant="h3" style={{ color: "inherit" }}>
           {translated(this.props.lang).footer.title}
         </Typography>
 

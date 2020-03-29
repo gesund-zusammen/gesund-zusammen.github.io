@@ -20,7 +20,7 @@ class MainContent extends React.PureComponent<IMainContentProps, {}> {
         <StyledMainContent variant="body1">
           {translated(this.props.lang).main.content}
         </StyledMainContent>
-        <Box marginTop={4}>
+        <Box marginTop={6}>
           <Grid container spacing={4}>
             <InfoBox
               title={translated(this.props.lang).boxes.initiative.title}
