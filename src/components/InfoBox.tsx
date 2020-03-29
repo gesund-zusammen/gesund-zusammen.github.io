@@ -13,7 +13,7 @@ class InfoBox extends React.PureComponent<IInfoBoxProps, {}> {
       <Grid item xs={12} sm={6} md={4} xl={3}>
         <StyledCard elevation={0}>
           <StyledCardContent>
-            <Typography variant="h3">{this.props.title}</Typography>
+            <Typography variant="h4">{this.props.title}</Typography>
             <Typography variant="body2">{this.props.content}</Typography>
           </StyledCardContent>
         </StyledCard>

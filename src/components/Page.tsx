@@ -63,7 +63,7 @@ class Page extends React.Component<{}, IPageState> {
 }
 
 const HeaderWrapper: AnyStyledComponent = styled(Box)`
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   color: #ffffff;
   background-image: url(${BgHeader});
   background-position: bottom center;
@@ -74,9 +74,9 @@ const HeaderWrapper: AnyStyledComponent = styled(Box)`
 `;
 
 const FooterWrapper: AnyStyledComponent = styled(Box)`
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   color: #ffffff;
-  padding: 3rem 0 3rem 0;
+  padding: 5rem 0 2rem 0;
   background-image: url(${BgFooter});
   background-position: top center;
   background-repeat: no-repeat;

@@ -5,7 +5,7 @@
         "initiative": "Initiative",
         "projects": "Projekte",
         "supporters": "Unterstützer",
-        "faqs": "Fragen?"        
+        "faqs": "Fragen?"
       },
       "title": "Digitale Tools gegen Covid-19",
       "content": "Eine offene Initiative, denn wir glauben fest daran:",
@@ -31,7 +31,12 @@
     },
     "footer": {
       "title": "Die Unterstützer",
-      "button": "Werde Teil der Initiative"
+      "button": "Werde Teil der Initiative",
+      "nav": {
+        "privacy": "Datenschutzerklärung",
+        "vulnerability": "Schwachstelle melden",
+        "imprint": "Impressum"
+      }
     }
   },
   "en": {
@@ -40,7 +45,7 @@
         "initiative": "Initiative",
         "projects": "Projects",
         "supporters": "Supporters",
-        "faqs": "FAQs"        
+        "faqs": "FAQs"
       },
       "title": "Digital tools to fight Covid-19",
       "content": "Eine offene Initiative, denn wir glauben fest daran:",
@@ -66,7 +71,12 @@
     },
     "footer": {
       "title": "Die Unterstützer",
-      "button": "Werde Teil der Initiative"
+      "button": "Werde Teil der Initiative",
+      "nav": {
+        "privacy": "Privacy Policy",
+        "vulnerability": "Report Vulnerability",
+        "imprint": "Imprint"
+      }
     }
   }
 }

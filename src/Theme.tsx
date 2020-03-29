@@ -42,6 +42,15 @@ const theme = createMuiTheme({
       fontFamily: ['"Open Sans"', '"Helvetica"', '"Arial"', "sans-serif"].join(
         ",",
       ),
+      fontSize: "2.2rem",
+      fontWeight: 600,
+      marginBottom: "1.6rem",
+      lineHeight: "2.4rem",
+    },
+    h4: {
+      fontFamily: ['"Open Sans"', '"Helvetica"', '"Arial"', "sans-serif"].join(
+        ",",
+      ),
       fontSize: "1.7rem",
       fontWeight: 600,
       marginBottom: "1.4rem",

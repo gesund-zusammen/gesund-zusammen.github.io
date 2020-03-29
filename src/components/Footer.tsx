@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid, Button } from "@material-ui/core";
+import { Typography, Grid, Button, Box } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
 import { translated } from "../util";
@@ -20,29 +20,63 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
         <Typography variant="h3">
           {translated(this.props.lang).footer.title}
         </Typography>
-        <Grid
-          container
-          direction="row"
-          justify="center"
-          alignItems="center"
-          spacing={3}
-        >
-          <Grid item xs={3} style={{ textAlign: "center" }}>
-            <img src={LogoFinleap}></img>
+
+        <Box marginTop={4}>
+          <Grid
+            container
+            direction="row"
+            justify="space-between"
+            alignItems="center"
+            spacing={3}
+          >
+            <Grid item xs={3} style={{ textAlign: "center" }}>
+              <img src={LogoFinleap}></img>
+            </Grid>
+            <Grid item xs={3} style={{ textAlign: "center" }}>
+              <img src={LogoWefox}></img>
+            </Grid>
+            <Grid item xs={3} style={{ textAlign: "center" }}>
+              <img src={LogoVia}></img>
+            </Grid>
           </Grid>
-          <Grid item xs={3} style={{ textAlign: "center" }}>
-            <img src={LogoWefox}></img>
+        </Box>
+
+        <Box marginTop={4}>
+          <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+            spacing={0}
+          >
+            <Grid item xs={12} style={{ textAlign: "center" }}>
+              <Button
+                color="secondary"
+                variant="contained"
+                disableFocusRipple={true}
+              >
+                {translated(this.props.lang).footer.button}
+              </Button>
+            </Grid>
           </Grid>
-          <Grid item xs={3} style={{ textAlign: "center" }}>
-            <img src={LogoVia}></img>
-          </Grid>
-        </Grid>
-        <Button color="secondary" disableFocusRipple={true}>
-          {translated(this.props.lang).footer.button}
-        </Button>
+        </Box>
+
         <FooterNav>
           <img src={Logo} alt="#GesundZusammen"></img>
+          <FooterNavItems>
+            <FooterNavItem href="#">
+              {translated(this.props.lang).footer.nav.privacy}
+            </FooterNavItem>
+            <FooterNavItem href="#">
+              {translated(this.props.lang).footer.nav.vulnerability}
+            </FooterNavItem>
+            <FooterNavItem href="#">
+              {translated(this.props.lang).footer.nav.imprint}
+            </FooterNavItem>
+          </FooterNavItems>
         </FooterNav>
+
+        <CopyrightNote>&copy; 2020 finleap GmbH</CopyrightNote>
       </>
     );
   };
@@ -54,6 +88,34 @@ const FooterNav: AnyStyledComponent = styled.div`
   margin: 3rem 0 0 0;
   border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
+`;
+
+const FooterNavItems: AnyStyledComponent = styled.div`
+  font-family: inherit;
+  display: inline-bock;
+  float: right;
+`;
+
+const FooterNavItem: AnyStyledComponent = styled.a`
+  font-family: inherit;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: normal;
+  line-height: 160%;
+  margin-left: 2.8rem;
+  margin-top: 0.9rem;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+`;
+
+const CopyrightNote: AnyStyledComponent = styled.p`
+  font-size: 0.6rem;
+  padding: 1rem;
+  text-align: center;
 `;
 
 export default Footer;
