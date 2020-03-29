@@ -20,7 +20,7 @@ jobs:
           yarn install
           yarn build
 
-      - name: Add version info
+      - name: Add version info 📄
         id: version-info
         run: |
           node version-info-generator.js --branch=master --commit=$GITHUB_SHA --build=$GITHUB_RUN_NUMBER > build/version.json
