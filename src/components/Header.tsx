@@ -29,7 +29,7 @@ class Header extends React.PureComponent<IHeaderProps, {}> {
             <HeaderNavItem href="https://docs.google.com/document/d/1jIgISaBz1R0Sy_-1fOsy9JAmj--YB4IUfaUgmhWrLsk">
               {translated(this.props.lang).header.nav.projects}
             </HeaderNavItem>
-            <HeaderNavItem href="#">
+            <HeaderNavItem href="#footer">
               {translated(this.props.lang).header.nav.supporters}
             </HeaderNavItem>
             <HeaderNavItem href="https://docs.google.com/document/d/1v7Z7puca9oy7kG_AZmVCZyxVRcBqRC9cGd4e344aGaA">
