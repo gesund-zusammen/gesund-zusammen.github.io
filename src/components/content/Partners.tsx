@@ -22,6 +22,7 @@ import LogoDatenschutzExperte from "../../images/partners/datenschutzexperte.svg
 import LogoOneFootball from "../../images/partners/onefootball.svg";
 import LogoIoniq from "../../images/partners/ioniq.svg";
 import LogoHelloFresh from "../../images/partners/hellofresh.svg";
+import LogoUserCentrics from "../../images/partners/usercentrics.svg";
 
 interface IPartnersProps {
   lang: "de" | "en";
@@ -128,6 +129,11 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
             <Grid item xs={6} sm={3}>
               <a href="https://www.hellofresh.com/">
                 <PartnerLogo src={LogoHelloFresh}></PartnerLogo>
+              </a>
+            </Grid>
+            <Grid item xs={6} sm={3}>
+              <a href="https://usercentrics.com/">
+                <PartnerLogo src={LogoUserCentrics}></PartnerLogo>
               </a>
             </Grid>
           </Grid>
