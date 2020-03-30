@@ -7,18 +7,30 @@ import { translated } from "../../../util";
 
 import BgFooter from "../../../images/bg_footer.svg";
 import Logo from "../../../images/logo.svg";
+import IconWhatsApp from "../../../images/icon_whatsapp.svg";
+import IconMessenger from "../../../images/icon_messenger.svg";
+import IconEmail from "../../../images/icon_email.svg";
 
 interface IFooterProps {
   lang: "de" | "en";
 }
 
 class Footer extends React.PureComponent<IFooterProps, {}> {
+  copyToClipboard = (str: string) => {
+    const el = document.createElement("textarea");
+    el.value = str;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    document.body.removeChild(el);
+  };
+
   render = () => {
     return (
       <FooterWrapper id="footer" component="footer">
         <Container maxWidth="lg">
           <Box paddingBottom={8}>
-            <Grid container spacing={4}>
+            <Grid container spacing={8}>
               <Grid item xs={12} sm={6}>
                 <FooterContent>
                   <Typography variant="h2">Sharing is caring</Typography>
@@ -28,7 +40,37 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                   </Typography>
                 </FooterContent>
               </Grid>
-              <Grid item xs={12} sm={6}></Grid>
+              <Grid item xs={12} sm={6}>
+                <Typography variant="subtitle1">Share our link</Typography>
+                <CopyBox>
+                  <span>https://gesund-zusammen.de</span>
+                  <CopyLink
+                    onClick={() =>
+                      this.copyToClipboard("https://gesund-zusammen.de")
+                    }
+                  >
+                    Copy
+                  </CopyLink>
+                </CopyBox>
+                <ShareBox>
+                  <Typography variant="subtitle2">or share via</Typography>
+                  <img
+                    className="share-icon"
+                    src={IconWhatsApp}
+                    alt="Share with WhatsApp"
+                  ></img>
+                  <img
+                    className="share-icon"
+                    src={IconMessenger}
+                    alt="Share with Messenger"
+                  ></img>
+                  <img
+                    className="share-icon"
+                    src={IconEmail}
+                    alt="Share via Email"
+                  ></img>
+                </ShareBox>
+              </Grid>
             </Grid>
           </Box>
           <FooterNav>
@@ -70,6 +112,38 @@ const FooterWrapper: AnyStyledComponent = styled(Box)`
 `;
 
 const FooterContent: AnyStyledComponent = styled.div``;
+
+const CopyBox: AnyStyledComponent = styled.div`
+  display: block;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ced7db;
+  border-radius: 4px;
+  color: #3c3c3c;
+  background: #ffffff;
+`;
+
+const CopyLink: AnyStyledComponent = styled.span`
+  float: right;
+  color: #0a6eaa;
+  font-weight: 600;
+  cursor: pointer;
+`;
+
+const ShareBox: AnyStyledComponent = styled.div`
+  display: block;
+  text-align: center;
+  padding: 1rem;
+
+  & > .share-icon {
+    margin-left: 2rem;
+    margin-top: 1rem;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+`;
 
 const FooterLogo: AnyStyledComponent = styled.img`
   display: block;

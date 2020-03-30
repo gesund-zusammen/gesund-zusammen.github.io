@@ -5,7 +5,7 @@ import styled, { AnyStyledComponent } from "styled-components";
 import BgHeader from "../../../images/bg_header.svg";
 
 import Header from "./Header";
-import Footer from "../Common/Footer";
+import Footer from "../Shared/Footer";
 
 interface ILayoutLandingProps {
   lang: "de" | "en";

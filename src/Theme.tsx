@@ -84,6 +84,18 @@ const theme = responsiveFontSizes(
         fontSize: "1.4rem",
         fontWeight: 600,
       },
+      subtitle1: {
+        fontSize: "0.7rem",
+        fontWeight: "normal",
+        textTransform: "uppercase",
+        color: "#003269",
+      },
+      subtitle2: {
+        fontSize: "0.6rem",
+        fontWeight: "normal",
+        textTransform: "uppercase",
+        color: "#3C3C3C",
+      },
     },
     overrides: {
       MuiSwitch: {
