@@ -6,7 +6,7 @@ import BgHeader from "../../../images/bg_header.svg";
 import BgFooter from "../../../images/bg_footer.svg";
 
 import Header from "./Header";
-import Footer from "../common/Footer";
+import Footer from "../Shared/Footer";
 
 interface ILayoutLandingProps {
   lang: "de" | "en";
