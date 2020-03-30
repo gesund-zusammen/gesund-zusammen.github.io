@@ -41,15 +41,18 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
             <Grid container spacing={8}>
               <Grid item xs={12} sm={6}>
                 <FooterContent>
-                  <Typography variant="h2">Sharing is caring</Typography>
+                  <Typography variant="h2">
+                    {translated(this.props.lang).footer.title}
+                  </Typography>
                   <Typography variant="body1">
-                    Refer to your community who haven&apos;t heard about us yet.
-                    The more the faster to overcome this situation!
+                    {translated(this.props.lang).footer.claim}
                   </Typography>
                 </FooterContent>
               </Grid>
               <Grid item xs={12} sm={6}>
-                <Typography variant="subtitle1">Share our link</Typography>
+                <Typography variant="subtitle1">
+                  {translated(this.props.lang).footer.shareLink}
+                </Typography>
                 <CopyBox>
                   <span>https://gesund-zusammen.de</span>
                   <CopyLink
@@ -57,11 +60,13 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                       this.copyToClipboard("https://gesund-zusammen.de")
                     }
                   >
-                    Copy
+                    {translated(this.props.lang).footer.copy}
                   </CopyLink>
                 </CopyBox>
                 <ShareBox>
-                  <Typography variant="subtitle2">or share via</Typography>
+                  <Typography variant="subtitle2">
+                    {translated(this.props.lang).footer.shareVia}
+                  </Typography>
                   <img
                     className="share-icon"
                     src={IconWhatsApp}

@@ -39,6 +39,11 @@
       "button": "FAQs"
     },
     "footer": {
+      "title": "Sharing is caring",
+      "claim": "Refer to your community who haven't heard about us yet. The more the faster to overcome this situation!",
+      "shareLink": "Teile unseren Link",
+      "shareVia": "Oder teile mit",
+      "copy": "Kopieren",
       "nav": {
         "privacy": "Datenschutzerklärung",
         "vulnerability": "Schwachstelle melden",
@@ -86,6 +91,11 @@
       "button": "FAQs"
     },
     "footer": {
+      "title": "Sharing is caring",
+      "claim": "Refer to your community who haven't heard about us yet. The more the faster to overcome this situation!",
+      "shareLink": "Share our link",
+      "shareVia": "Or share via",
+      "copy": "Copy",
       "nav": {
         "privacy": "Privacy Policy",
         "vulnerability": "Report Vulnerability",
