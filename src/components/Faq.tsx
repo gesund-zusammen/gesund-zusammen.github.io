@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Button, Hidden, Grid } from "@material-ui/core";
+import { Typography, Button, Hidden, Grid, Box } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
 import IlluFaq from "../images/illu_faq.svg";
@@ -11,30 +11,32 @@ interface IFaqProps {
 class Faq extends React.PureComponent<IFaqProps, {}> {
   render = () => {
     return (
-      <Grid
-        container
-        direction="row"
-        justify="space-between"
-        alignItems="flex-end"
-      >
-        <Grid item xs={12} sm={4}>
-          <FaqContentWrapper>
-            <Typography variant="h3">Sie haben Fragen?</Typography>
-            <FaqButton
-              color="primary"
-              variant="outlined"
-              href="https://docs.google.com/document/d/1v7Z7puca9oy7kG_AZmVCZyxVRcBqRC9cGd4e344aGaA"
-            >
-              FAQs
-            </FaqButton>
-          </FaqContentWrapper>
-        </Grid>
-        <Hidden xsDown>
-          <Grid item xs={12} sm={8}>
-            <FaqImage src={IlluFaq} alt="FAQ"></FaqImage>
+      <Box id="faq" paddingBottom={4} marginTop={4}>
+        <Grid
+          container
+          direction="row"
+          justify="space-between"
+          alignItems="flex-end"
+        >
+          <Grid item xs={12} sm={4}>
+            <FaqContentWrapper>
+              <Typography variant="h3">Sie haben Fragen?</Typography>
+              <FaqButton
+                color="primary"
+                variant="outlined"
+                href="https://docs.google.com/document/d/1v7Z7puca9oy7kG_AZmVCZyxVRcBqRC9cGd4e344aGaA"
+              >
+                FAQs
+              </FaqButton>
+            </FaqContentWrapper>
           </Grid>
-        </Hidden>
-      </Grid>
+          <Hidden xsDown>
+            <Grid item xs={12} sm={8}>
+              <FaqImage src={IlluFaq} alt="FAQ"></FaqImage>
+            </Grid>
+          </Hidden>
+        </Grid>
+      </Box>
     );
   };
 }

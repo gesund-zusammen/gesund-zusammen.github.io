@@ -50,18 +50,20 @@ class Header extends React.PureComponent<IHeaderProps, {}> {
         <Box paddingBottom={4} marginTop={4}>
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6}>
-              <Typography variant="h1" style={{ fontFamily: "inherit" }}>
-                {translated(this.props.lang).header.title}
-              </Typography>
-              <Typography
-                variant="body1"
-                style={{ fontFamily: "inherit", color: "#ffffff" }}
-              >
-                {translated(this.props.lang).header.content}
-              </Typography>
-              <Typography variant="caption" style={{ fontFamily: "inherit" }}>
-                {translated(this.props.lang).header.claim}
-              </Typography>
+              <HeaderContent>
+                <Typography variant="h1" style={{ fontFamily: "inherit" }}>
+                  {translated(this.props.lang).header.title}
+                </Typography>
+                <Typography
+                  variant="body1"
+                  style={{ fontFamily: "inherit", color: "#ffffff" }}
+                >
+                  {translated(this.props.lang).header.content}
+                </Typography>
+                <Typography variant="caption" style={{ fontFamily: "inherit" }}>
+                  {translated(this.props.lang).header.claim}
+                </Typography>
+              </HeaderContent>
             </Grid>
             <Hidden xsDown>
               <Grid item xs={12} sm={6}>
@@ -147,6 +149,12 @@ const LangDisplay: AnyStyledComponent = styled.span`
   font-size: 1rem;
   margin-top: 0.7rem;
   text-transform: uppercase;
+`;
+
+const HeaderContent: AnyStyledComponent = styled.div`
+  @media (min-width: 600px) {
+    margin-top: 6rem;
+  }
 `;
 
 const HeaderIllustration: AnyStyledComponent = styled.img`

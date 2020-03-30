@@ -13,7 +13,7 @@ interface IMainContentProps {
 class MainContent extends React.PureComponent<IMainContentProps, {}> {
   render = () => {
     return (
-      <>
+      <Box id="content" paddingBottom={4} marginTop={4}>
         <Typography variant="h2">
           {translated(this.props.lang).main.title}
         </Typography>
@@ -36,7 +36,7 @@ class MainContent extends React.PureComponent<IMainContentProps, {}> {
             ></InfoBox>
           </Grid>
         </Box>
-      </>
+      </Box>
     );
   };
 }
