@@ -2,24 +2,24 @@ import React from "react";
 import { Box, Grid, Typography } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
-import { translated } from "../util";
+import { translated } from "../../util";
 
-import InfoBox from "./InfoBox";
+import InfoBox from "../common/InfoBox";
 
-interface IMainContentProps {
+interface IInitiativeProps {
   lang: "de" | "en";
 }
 
-class MainContent extends React.Component<IMainContentProps, {}> {
+class Initiative extends React.Component<IInitiativeProps, {}> {
   render = () => {
     return (
       <Box id="content" paddingBottom={4} marginTop={4}>
         <Typography variant="h2">
           {translated(this.props.lang).main.title}
         </Typography>
-        <StyledMainContent variant="body1">
+        <StyledContent variant="body1">
           {translated(this.props.lang).main.content}
-        </StyledMainContent>
+        </StyledContent>
         <Box marginTop={6}>
           <Grid container spacing={4}>
             <InfoBox
@@ -41,11 +41,11 @@ class MainContent extends React.Component<IMainContentProps, {}> {
   };
 }
 
-const StyledMainContent: AnyStyledComponent = styled(Typography)`
+const StyledContent: AnyStyledComponent = styled(Typography)`
   @media (min-width: 600px) {
     column-count: 2;
     column-gap: 1.6rem;
   }
 `;
 
-export default MainContent;
+export default Initiative;

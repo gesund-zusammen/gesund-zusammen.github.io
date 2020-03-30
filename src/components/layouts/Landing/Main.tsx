@@ -2,8 +2,8 @@ import React from "react";
 import { Box, Container } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
-import BgHeader from "../images/bg_header.svg";
-import BgFooter from "../images/bg_footer.svg";
+import BgHeader from "../../../images/bg_header.svg";
+import BgFooter from "../../../images/bg_footer.svg";
 
 import Header from "./Header";
 import Footer from "./Footer";

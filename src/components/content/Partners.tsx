@@ -2,23 +2,23 @@ import React from "react";
 import { Box, Grid, Typography, Button } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
-import { translated } from "../util";
+import { translated } from "../../util";
 
-import LogoOmio from "../images/partners/omio.png";
-import LogoBVDS from "../images/partners/bvds.png";
-import LogoWefox from "../images/partners/wefox.png";
-import LogoN26 from "../images/partners/n26.png";
-import LogoFinleap from "../images/partners/finleap.png";
-import LogoGetYourGuide from "../images/partners/getyourguide.png";
-import LogoFreightHub from "../images/partners/freighthub.png";
-import LogoDeliveryHero from "../images/partners/deliveryhero.png";
-import LogoCelonis from "../images/partners/celonis.png";
-import LogoAuto1 from "../images/partners/auto1.png";
-import LogoAdaHealth from "../images/partners/adahealth.png";
-import LogoViaHealth from "../images/partners/viadata.svg";
-import LogoPersonio from "../images/partners/personio.png";
-import LogoMrSpex from "../images/partners/mrspex.png";
-import LogoDatenschutzExperte from "../images/partners/datenschutzexperte.svg";
+import LogoOmio from "../../images/partners/omio.png";
+import LogoBVDS from "../../images/partners/bvds.png";
+import LogoWefox from "../../images/partners/wefox.png";
+import LogoN26 from "../../images/partners/n26.png";
+import LogoFinleap from "../../images/partners/finleap.png";
+import LogoGetYourGuide from "../../images/partners/getyourguide.png";
+import LogoFreightHub from "../../images/partners/freighthub.png";
+import LogoDeliveryHero from "../../images/partners/deliveryhero.png";
+import LogoCelonis from "../../images/partners/celonis.png";
+import LogoAuto1 from "../../images/partners/auto1.png";
+import LogoAdaHealth from "../../images/partners/adahealth.png";
+import LogoViaHealth from "../../images/partners/viadata.svg";
+import LogoPersonio from "../../images/partners/personio.png";
+import LogoMrSpex from "../../images/partners/mrspex.png";
+import LogoDatenschutzExperte from "../../images/partners/datenschutzexperte.svg";
 
 interface IPartnersProps {
   lang: "de" | "en";

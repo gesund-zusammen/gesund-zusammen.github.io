@@ -2,11 +2,11 @@ import React from "react";
 import { Box, Typography, Grid, Hidden } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
-import { translated } from "../util";
+import { translated } from "../../../util";
 
-import HeaderNav from "./HeaderNav";
+import HeaderNav from "../../HeaderNav";
 
-import IlluHeader from "../images/illu_header.svg";
+import IlluHeader from "../../../images/illu_header.svg";
 
 interface IHeaderProps {
   lang: "de" | "en";

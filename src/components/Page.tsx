@@ -1,9 +1,9 @@
 import React from "react";
 
-import LayoutLanding from "./LayoutLanding";
-import MainContent from "./MainContent";
-import Partners from "./Partners";
-import Faq from "./Faq";
+import LayoutLanding from "./layouts/Landing";
+import Initiative from "./content/Initiative";
+import Partners from "./content/Partners";
+import Faq from "./content/Faq";
 
 interface IPageState {
   lang: "de" | "en";
@@ -30,7 +30,7 @@ class Page extends React.Component<{}, IPageState> {
           lang={this.state.lang}
           langChangeCallback={this.handleLangChange}
         >
-          <MainContent lang={this.state.lang}></MainContent>
+          <Initiative lang={this.state.lang}></Initiative>
           <Partners lang={this.state.lang}></Partners>
           <Faq lang={this.state.lang}></Faq>
         </LayoutLanding>

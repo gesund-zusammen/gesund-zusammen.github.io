@@ -1,9 +1,9 @@
 import React from "react";
 import styled, { AnyStyledComponent } from "styled-components";
 
-import { translated } from "../util";
+import { translated } from "../../../util";
 
-import Logo from "../images/logo.svg";
+import Logo from "../../../images/logo.svg";
 
 interface IFooterProps {
   lang: "de" | "en";
