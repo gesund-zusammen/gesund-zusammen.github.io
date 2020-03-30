@@ -13,7 +13,7 @@ interface IInitiativeProps {
 class Initiative extends React.Component<IInitiativeProps, {}> {
   render = () => {
     return (
-      <Box id="content" paddingBottom={4} marginTop={4}>
+      <Box id="initiative" paddingBottom={4} marginTop={4}>
         <Typography variant="h2">
           {translated(this.props.lang).main.title}
         </Typography>

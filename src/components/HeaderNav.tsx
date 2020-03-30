@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
+import { Link } from "react-router-dom";
 
 import { translated } from "../util";
 
@@ -19,9 +20,11 @@ class HeaderNav extends React.Component<IHeaderProps, {}> {
   render = () => {
     return (
       <>
-        <HeaderLogo src={Logo} alt="#GesundZusammen"></HeaderLogo>
+        <Link to="/">
+          <HeaderLogo src={Logo} alt="#GesundZusammen"></HeaderLogo>
+        </Link>
         <HeaderNavItems>
-          <HeaderNavItem href="#">
+          <HeaderNavItem href="#initiative">
             {translated(this.props.lang).header.nav.initiative}
           </HeaderNavItem>
           <HeaderNavItem href="https://docs.google.com/document/d/1jIgISaBz1R0Sy_-1fOsy9JAmj--YB4IUfaUgmhWrLsk">

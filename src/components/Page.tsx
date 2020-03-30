@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import LayoutLanding from "./layouts/Landing";
 import Initiative from "./content/Initiative";
@@ -25,16 +26,20 @@ class Page extends React.Component<{}, IPageState> {
 
   render = () => {
     return (
-      <>
-        <LayoutLanding
-          lang={this.state.lang}
-          langChangeCallback={this.handleLangChange}
-        >
-          <Initiative lang={this.state.lang}></Initiative>
-          <Partners lang={this.state.lang}></Partners>
-          <Faq lang={this.state.lang}></Faq>
-        </LayoutLanding>
-      </>
+      <Router>
+        <Switch>
+          <Route exact={true} default={true} path="/">
+            <LayoutLanding
+              lang={this.state.lang}
+              langChangeCallback={this.handleLangChange}
+            >
+              <Initiative lang={this.state.lang}></Initiative>
+              <Partners lang={this.state.lang}></Partners>
+              <Faq lang={this.state.lang}></Faq>
+            </LayoutLanding>
+          </Route>
+        </Switch>
+      </Router>
     );
   };
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { AnyStyledComponent } from "styled-components";
+import { Link } from "react-router-dom";
 
 import { translated } from "../../../util";
 
@@ -14,7 +15,9 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
     return (
       <>
         <FooterNav>
-          <FooterLogo src={Logo} alt="#GesundZusammen"></FooterLogo>
+          <Link to="/">
+            <FooterLogo src={Logo} alt="#GesundZusammen"></FooterLogo>
+          </Link>
           <FooterNavItems>
             <FooterNavItem href="#">
               {translated(this.props.lang).footer.nav.privacy}
