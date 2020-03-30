@@ -67,21 +67,43 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                   <Typography variant="subtitle2">
                     {translated(this.props.lang).footer.shareVia}
                   </Typography>
-                  <img
-                    className="share-icon"
-                    src={IconWhatsApp}
-                    alt="Share with WhatsApp"
-                  ></img>
-                  <img
-                    className="share-icon"
-                    src={IconMessenger}
-                    alt="Share with Messenger"
-                  ></img>
-                  <img
-                    className="share-icon"
-                    src={IconEmail}
-                    alt="Share via Email"
-                  ></img>
+                  <a
+                    className="share-icon-link"
+                    href="whatsapp://send?text=https://gesund-zusammen.de"
+                    data-action="share/whatsapp/share"
+                  >
+                    <img
+                      className="share-icon"
+                      src={IconWhatsApp}
+                      alt="Share with WhatsApp"
+                    ></img>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://gesund-zusammen.de"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="share-icon-link"
+                  >
+                    <img
+                      className="share-icon"
+                      src={IconMessenger}
+                      alt="Share with Messenger"
+                    ></img>
+                  </a>
+                  <a
+                    href={`mailto:?subject=${encodeURIComponent(
+                      "#GesundZusammen",
+                    )}&body=${encodeURIComponent(
+                      "https://gesund-zusammen.de",
+                    )}`}
+                    className="share-icon-link"
+                  >
+                    <img
+                      className="share-icon"
+                      src={IconEmail}
+                      alt="Share via Email"
+                    ></img>
+                  </a>
                 </ShareBox>
               </Grid>
             </Grid>
@@ -172,7 +194,16 @@ const ShareBox: AnyStyledComponent = styled.div`
   text-align: center;
   padding: 1rem;
 
-  & > .share-icon {
+  & .share-icon {
+    margin-left: 2rem;
+    margin-top: 1rem;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+
+  & .share-icon-link {
     margin-left: 2rem;
     margin-top: 1rem;
 
