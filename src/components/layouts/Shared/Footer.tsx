@@ -92,7 +92,7 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                   </a>
                   <a
                     href={`mailto:?subject=${encodeURIComponent(
-                      "#GesundZusammen",
+                      "Guck dir mal gesund-zusammen.de an",
                     )}&body=${encodeURIComponent(
                       "https://gesund-zusammen.de",
                     )}`}
