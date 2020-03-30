@@ -3,10 +3,9 @@ import { Box, Container } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
 import BgHeader from "../../../images/bg_header.svg";
-import BgFooter from "../../../images/bg_footer.svg";
 
 import Header from "./Header";
-import Footer from "../common/Footer";
+import Footer from "../Shared/Footer";
 
 interface ILayoutLandingProps {
   lang: "de" | "en";
@@ -34,11 +33,7 @@ class LayoutLanding extends React.Component<ILayoutLandingProps, {}> {
           <Container maxWidth="lg">{this.props.children}</Container>
         </Box>
 
-        <FooterWrapper id="footer" component="footer">
-          <Container maxWidth="lg">
-            <Footer lang={this.props.lang}></Footer>
-          </Container>
-        </FooterWrapper>
+        <Footer lang={this.props.lang}></Footer>
       </>
     );
   };
@@ -56,20 +51,6 @@ const HeaderWrapper: AnyStyledComponent = styled(Box)`
 
   @media (min-width: 600px) {
     padding-botton: 10rem;
-  }
-`;
-
-const FooterWrapper: AnyStyledComponent = styled(Box)`
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-  color: #ffffff;
-  padding: 4rem 0 2rem 0;
-  background-image: url(${BgFooter});
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media (min-width: 600px) {
-    padding-top: 8rem;
   }
 `;
 
