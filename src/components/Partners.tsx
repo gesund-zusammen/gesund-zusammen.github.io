@@ -104,11 +104,6 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               </a>
             </Grid>
             <Grid item xs={6} sm={3}>
-              <a href="https://www.teamviewer.com/de/">
-                <PartnerLogo src={LogoTeamViewer}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
               <a href="https://www.misterspex.de/">
                 <PartnerLogo src={LogoMrSpex}></PartnerLogo>
               </a>
