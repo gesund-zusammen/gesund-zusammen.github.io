@@ -32,8 +32,6 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
   render = () => {
     return (
       <Box id="partners" paddingBottom={4} marginTop={4}>
-        <Typography variant="h2">Founding & Tech Partner</Typography>
-
         <StyledContent variant="body1">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet
           pretium a diam vestibulum urna eget neque posuere nisl. Elementum

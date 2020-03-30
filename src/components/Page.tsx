@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ScrollMemory from "react-router-scroll-memory";
+import { Typography } from "@material-ui/core";
 
 import LayoutLanding from "./layouts/Landing/Main";
 import LayoutSubPage from "./layouts/Sub/Main";
@@ -42,6 +43,7 @@ class Page extends React.Component<{}, IPageState> {
               langChangeCallback={this.handleLangChange}
             >
               <Initiative lang={this.state.lang}></Initiative>
+              <Typography variant="h2">Founding & Tech Partner</Typography>
               <Partners lang={this.state.lang}></Partners>
               <Faq lang={this.state.lang}></Faq>
             </LayoutLanding>

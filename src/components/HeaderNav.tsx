@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch } from "@material-ui/core";
-import styled, { AnyStyledComponent } from "styled-components";
+import styled, { css, AnyStyledComponent } from "styled-components";
 import { Link } from "react-router-dom";
 
 import { translated } from "../util";
@@ -24,18 +24,18 @@ class HeaderNav extends React.Component<IHeaderProps, {}> {
           <HeaderLogo src={Logo} alt="#GesundZusammen"></HeaderLogo>
         </Link>
         <HeaderNavItems>
-          <HeaderNavItem href="#initiative">
+          <HeaderNavAnchorItem href="#initiative">
             {translated(this.props.lang).header.nav.initiative}
-          </HeaderNavItem>
-          <HeaderNavItem href="https://docs.google.com/document/d/1jIgISaBz1R0Sy_-1fOsy9JAmj--YB4IUfaUgmhWrLsk">
+          </HeaderNavAnchorItem>
+          <HeaderNavAnchorItem href="https://docs.google.com/document/d/1jIgISaBz1R0Sy_-1fOsy9JAmj--YB4IUfaUgmhWrLsk">
             {translated(this.props.lang).header.nav.projects}
-          </HeaderNavItem>
-          <HeaderNavItem href="#partners">
+          </HeaderNavAnchorItem>
+          <HeaderNavLinkItem to="/partners">
             {translated(this.props.lang).header.nav.supporters}
-          </HeaderNavItem>
-          <HeaderNavItem href="https://docs.google.com/document/d/1v7Z7puca9oy7kG_AZmVCZyxVRcBqRC9cGd4e344aGaA">
+          </HeaderNavLinkItem>
+          <HeaderNavAnchorItem href="https://docs.google.com/document/d/1v7Z7puca9oy7kG_AZmVCZyxVRcBqRC9cGd4e344aGaA">
             {translated(this.props.lang).header.nav.faqs}
-          </HeaderNavItem>
+          </HeaderNavAnchorItem>
           <HeaderLangSwitch>
             <StyledSwitch
               checked={this.props.lang === "de"}
@@ -76,7 +76,7 @@ const HeaderNavItems: AnyStyledComponent = styled.div`
   }
 `;
 
-const HeaderNavItem: AnyStyledComponent = styled.a`
+const headerNavItemStyles = css`
   display: inline-block;
   width: 50%;
   font-family: inherit;
@@ -95,6 +95,14 @@ const HeaderNavItem: AnyStyledComponent = styled.a`
       margin-left: 0;
     }
   }
+`;
+
+const HeaderNavAnchorItem: AnyStyledComponent = styled.a`
+  ${headerNavItemStyles}
+`;
+
+const HeaderNavLinkItem: AnyStyledComponent = styled(Link)`
+  ${headerNavItemStyles}
 `;
 
 const HeaderLangSwitch: AnyStyledComponent = styled.div`
