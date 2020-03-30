@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Grid, Typography } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
-import { BecomePart } from "../Common";
+import BecomePart from "../common/BecomePart";
 
 import LogoOmio from "../../images/partners/omio.png";
 import LogoBVDS from "../../images/partners/bvds.png";
