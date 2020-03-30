@@ -156,7 +156,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://usercentrics.com/"
             ></PartnerCard>
             <PartnerCard
-              name="Birds & Birds"
+              name="Bird & Bird"
               image={LogoTwoBirds}
               link="https://www.twobirds.com/"
               color="#7c7c6e"
