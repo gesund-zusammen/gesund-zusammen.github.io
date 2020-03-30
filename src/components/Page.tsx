@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ScrollMemory from "react-router-scroll-memory";
 
 import LayoutLanding from "./layouts/Landing";
 import Initiative from "./content/Initiative";
@@ -27,6 +28,7 @@ class Page extends React.Component<{}, IPageState> {
   render = () => {
     return (
       <Router>
+        <ScrollMemory />
         <Switch>
           <Route exact={true} default={true} path="/">
             <LayoutLanding
