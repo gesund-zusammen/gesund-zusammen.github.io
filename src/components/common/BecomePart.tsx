@@ -29,6 +29,7 @@ class BecomePart extends React.PureComponent<IBecomePartProps, {}> {
               color="primary"
               variant="contained"
               disableFocusRipple={true}
+              href="mailto:partners@gesund-zusammen.de"
             >
               {translated(this.props.lang).partners.button}
             </PartnerButton>
@@ -63,6 +64,7 @@ const PartnerButton: AnyStyledComponent = styled(Button)`
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: none;
+    text-align: center;
     padding: 1rem auto;
     border-radius: 15px;
     padding: 1rem 0;
