@@ -10,7 +10,7 @@ interface IMainContentProps {
   lang: "de" | "en";
 }
 
-class MainContent extends React.PureComponent<IMainContentProps, {}> {
+class MainContent extends React.Component<IMainContentProps, {}> {
   render = () => {
     return (
       <Box id="content" paddingBottom={4} marginTop={4}>
