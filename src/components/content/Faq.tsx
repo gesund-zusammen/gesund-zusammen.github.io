@@ -5,7 +5,7 @@ import styled, { AnyStyledComponent } from "styled-components";
 import { translated } from "../../util";
 
 import IlluFaq from "../../images/illu_faq.svg";
-
+import FaqItem from "./FaqItem";
 interface IFaqProps {
   lang: "de" | "en";
 }
@@ -25,13 +25,7 @@ class Faq extends React.PureComponent<IFaqProps, {}> {
               <Typography variant="h3">
                 {translated(this.props.lang).faq.title}
               </Typography>
-              <FaqButton
-                color="primary"
-                variant="contained"
-                href="https://docs.google.com/document/d/1v7Z7puca9oy7kG_AZmVCZyxVRcBqRC9cGd4e344aGaA"
-              >
-                {translated(this.props.lang).faq.button}
-              </FaqButton>
+              <FaqItem lang={this.props.lang} />
             </FaqContentWrapper>
           </Grid>
           <Hidden xsDown>

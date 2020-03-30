@@ -37,23 +37,23 @@
       "title": "Sie haben Fragen?",
       "button": "FAQs",
       "content": [
-        { "header": "Über Uns", "content": "Wir sind ..." },
-        { "header": "Was wollt ihr erreichen?", "content": "Wir sind ..." },
-        { "header": "Wieso Gesund-Zusammen?", "content": "Wir sind ..." },
+        { "title": "Über Uns", "content": "Wir sind ..." },
+        { "title": "Was wollt ihr erreichen?", "content": "Wir sind ..." },
+        { "title": "Wieso Gesund-Zusammen?", "content": "Wir sind ..." },
         {
-          "header": "Wen und was wollt ihr unterstützen?",
+          "title": "Wen und was wollt ihr unterstützen?",
           "content": "Wir sind ..."
         },
         {
-          "header": "Sucht ihr nach weiteren Partner?",
+          "title": "Sucht ihr nach weiteren Partner?",
           "content": "Wir sind ..."
         },
         {
-          "header": "Wie steht ihr zur Arbeit von Gesundheitssystem, Ärzten und Pflegepersonal?",
+          "title": "Wie steht ihr zur Arbeit von Gesundheitssystem, Ärzten und Pflegepersonal?",
           "content": "Wir sind ..."
         },
         {
-          "header": "Unterstützt ihr digitale Tools auch finanziell aus der Initiative?",
+          "title": "Unterstützt ihr digitale Tools auch finanziell aus der Initiative?",
           "content": "Wir sind ..."
         }
       ],
@@ -105,23 +105,23 @@
       "title": "You have questions?",
       "button": "FAQs",
       "content": [
-        { "header": "Über Uns", "content": "Wir sind ..." },
-        { "header": "Was wollt ihr erreichen?", "content": "Wir sind ..." },
-        { "header": "Wieso Gesund-Zusammen?", "content": "Wir sind ..." },
+        { "title": "Über Uns", "content": "Wir sind ..." },
+        { "title": "Was wollt ihr erreichen?", "content": "Wir sind ..." },
+        { "title": "Wieso Gesund-Zusammen?", "content": "Wir sind ..." },
         {
-          "header": "Wen und was wollt ihr unterstützen?",
+          "title": "Wen und was wollt ihr unterstützen?",
           "content": "Wir sind ..."
         },
         {
-          "header": "Sucht ihr nach weiteren Partner?",
+          "title": "Sucht ihr nach weiteren Partner?",
           "content": "Wir sind ..."
         },
         {
-          "header": "Wie steht ihr zur Arbeit von Gesundheitssystem, Ärzten und Pflegepersonal?",
+          "title": "Wie steht ihr zur Arbeit von Gesundheitssystem, Ärzten und Pflegepersonal?",
           "content": "Wir sind ..."
         },
         {
-          "header": "Unterstützt ihr digitale Tools auch finanziell aus der Initiative?",
+          "title": "Unterstützt ihr digitale Tools auch finanziell aus der Initiative?",
           "content": "Wir sind ..."
         }
       ],
