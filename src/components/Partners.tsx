@@ -134,7 +134,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
                 variant="contained"
                 disableFocusRipple={true}
               >
-                {translated(this.props.lang).footer.button}
+                {translated(this.props.lang).partners.button}
               </PartnerButton>
             </Grid>
           </Grid>

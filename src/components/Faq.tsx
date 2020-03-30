@@ -2,6 +2,8 @@ import React from "react";
 import { Typography, Button, Hidden, Grid, Box } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
+import { translated } from "../util";
+
 import IlluFaq from "../images/illu_faq.svg";
 
 interface IFaqProps {
@@ -20,13 +22,15 @@ class Faq extends React.PureComponent<IFaqProps, {}> {
         >
           <Grid item xs={12} sm={4}>
             <FaqContentWrapper>
-              <Typography variant="h3">Sie haben Fragen?</Typography>
+              <Typography variant="h3">
+                {translated(this.props.lang).faq.title}
+              </Typography>
               <FaqButton
                 color="primary"
                 variant="contained"
                 href="https://docs.google.com/document/d/1v7Z7puca9oy7kG_AZmVCZyxVRcBqRC9cGd4e344aGaA"
               >
-                FAQs
+                {translated(this.props.lang).faq.button}
               </FaqButton>
             </FaqContentWrapper>
           </Grid>

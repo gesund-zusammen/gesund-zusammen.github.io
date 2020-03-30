@@ -29,9 +29,15 @@
         "content": "welches alle anderen privaten als auch offiziellen Digitalen Initiativen begrüßt, über die wir hier eine umfassende Liste veröffentlichen. Um mit regelmäßigen Updates über alle digitalen Initiativen eine Zusammenarbeit herzustellen."
       }
     },
+    "partners": {
+      "title": "Founding & Tech Partners",
+      "button": "Werde Teil der Initiative"
+    },
+    "faq": {
+      "title": "Sie haben Fragen?",
+      "button": "FAQs"
+    },
     "footer": {
-      "title": "Die Unterstützer",
-      "button": "Werde Teil der Initiative",
       "nav": {
         "privacy": "Datenschutzerklärung",
         "vulnerability": "Schwachstelle melden",
@@ -48,8 +54,8 @@
         "faqs": "FAQs"
       },
       "title": "Digital tools to fight Covid-19",
-      "content": "Eine offene Initiative, denn wir glauben fest daran:",
-      "claim": "Daten schützen Leben!"
+      "content": "An open initiative, because we believe:",
+      "claim": "Data can protect life!"
     },
     "main": {
       "title": "Die #GesundZusammen Initiative",
@@ -69,9 +75,15 @@
         "content": "welches alle anderen privaten als auch offiziellen Digitalen Initiativen begrüßt, über die wir hier eine umfassende Liste veröffentlichen. Um mit regelmäßigen Updates über alle digitalen Initiativen eine Zusammenarbeit herzustellen."
       }
     },
+    "partners": {
+      "title": "Founding & Tech Partners",
+      "button": "Become part of the initiative"
+    },
+    "faq": {
+      "title": "You have questions?",
+      "button": "FAQs"
+    },
     "footer": {
-      "title": "Die Unterstützer",
-      "button": "Werde Teil der Initiative",
       "nav": {
         "privacy": "Privacy Policy",
         "vulnerability": "Report Vulnerability",
