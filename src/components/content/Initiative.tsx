@@ -4,7 +4,7 @@ import styled, { AnyStyledComponent } from "styled-components";
 
 import { translated } from "../../util";
 
-import InfoBox from "../common/InfoBox";
+import { InfoBox } from "../Common";
 
 interface IInitiativeProps {
   lang: "de" | "en";

@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ScrollMemory from "react-router-scroll-memory";
 
-import LayoutLanding from "./layouts/landing";
+import LayoutLanding from "./layouts/Landing";
 
 import Initiative from "./content/Initiative";
 import Partners from "./content/Partners";
