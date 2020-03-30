@@ -6,6 +6,7 @@ interface IPartnerCardProps {
   image: string;
   name: string;
   link: string;
+  color?: string;
 }
 
 class PartnerCard extends React.PureComponent<IPartnerCardProps, {}> {
@@ -15,7 +16,10 @@ class PartnerCard extends React.PureComponent<IPartnerCardProps, {}> {
         <a href={this.props.link} target="_blank" rel="noopener noreferrer">
           <PartnerCardWrapper elevation={2}>
             <PartnerCardContent
-              style={{ backgroundImage: `url(${this.props.image})` }}
+              style={{
+                backgroundImage: `url(${this.props.image})`,
+                backgroundColor: this.props.color,
+              }}
             >
               <PartnerName variant="caption">{this.props.name}</PartnerName>
             </PartnerCardContent>

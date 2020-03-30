@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Grid, Typography } from "@material-ui/core";
-import styled, { AnyStyledComponent } from "styled-components";
 
 import PartnerCard from "../common/PartnerCard";
 import BecomePart from "../common/BecomePart";
@@ -23,6 +22,10 @@ import LogoDatenschutzExperte from "../../images/partners/datenschutzexperte.svg
 import LogoOneFootball from "../../images/partners/onefootball.svg";
 import LogoIoniq from "../../images/partners/ioniq.png";
 import LogoUserCentrics from "../../images/partners/usercentrics.svg";
+import LogoTier from "../../images/partners/tier.svg";
+import LogoTwoBirds from "../../images/partners/twobirds.png";
+import LogoReedSmith from "../../images/partners/reedsmith.svg";
+import LogoGlobalCitizen from "../../images/partners/globalcitizen.svg";
 
 interface IPartnersProps {
   lang: "de" | "en";
@@ -32,19 +35,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
   render = () => {
     return (
       <Box id="partners" paddingBottom={4} marginTop={4}>
-        <StyledContent variant="body1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet
-          pretium a diam vestibulum urna eget neque posuere nisl. Elementum
-          sodales risus egestas nisl donec urna pharetra. Tellus imperdiet duis
-          pellentesque pellentesque amet tortor. Velit consectetur turpis
-          mauris, vel sodales massa elit, diam, mauris.Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit. At etiam interdum in mollis
-          malesuada nibh posuere leo. In est elit ultricies blandit aliquam
-          nulla id amet quam. Non mollis sed malesuada dolor sagittis volutpat.
-          Rhoncus erat ullamcorper viverra nunc, lectus mollis tristique.
-        </StyledContent>
-
-        <Box paddingTop={4}>
+        <Box paddingTop={4} paddingBottom={4}>
           <Grid
             container
             direction="row"
@@ -66,6 +57,11 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="Via Data"
               image={LogoViaHealth}
               link="https://www.viadata.io/"
+            ></PartnerCard>
+            <PartnerCard
+              name="Global Citizen"
+              image={LogoGlobalCitizen}
+              link="https://www.globalcitizen.org/"
             ></PartnerCard>
             <PartnerCard
               name="BVDS"
@@ -133,6 +129,22 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://ioniq.com/"
             ></PartnerCard>
             <PartnerCard
+              name="Tier"
+              image={LogoTier}
+              link="https://ww.tier.app/"
+            ></PartnerCard>
+          </Grid>
+        </Box>
+        <Typography variant="h2">Privacy Partner</Typography>
+        <Box paddingTop={4}>
+          <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+            spacing={4}
+          >
+            <PartnerCard
               name="Datenschutzexperte"
               image={LogoDatenschutzExperte}
               link="https://www.datenschutzexperte.de/"
@@ -141,6 +153,18 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="UserCentrics"
               image={LogoUserCentrics}
               link="https://usercentrics.com/"
+            ></PartnerCard>
+            <PartnerCard
+              name="Birds & Birds"
+              image={LogoTwoBirds}
+              link="https://www.twobirds.com/"
+              color="#7c7c6e"
+            ></PartnerCard>
+            <PartnerCard
+              name="Reed Smith LLP"
+              image={LogoReedSmith}
+              link="https://www.reedsmith.com/"
+              color="#3d3c3c"
             ></PartnerCard>
           </Grid>
         </Box>
@@ -151,12 +175,5 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
     );
   };
 }
-
-const StyledContent: AnyStyledComponent = styled(Typography)`
-  @media (min-width: 600px) {
-    column-count: 2;
-    column-gap: 1.6rem;
-  }
-`;
 
 export default Partners;
