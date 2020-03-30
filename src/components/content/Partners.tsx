@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, Grid, Typography, Button } from "@material-ui/core";
+import { Box, Grid, Typography } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
-import { translated } from "../../util";
+import { BecomePart } from "../common";
 
 import LogoOmio from "../../images/partners/omio.png";
 import LogoBVDS from "../../images/partners/bvds.png";
@@ -133,23 +133,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
           </Grid>
         </Box>
         <Box marginTop={4}>
-          <Grid
-            container
-            direction="row"
-            justify="center"
-            alignItems="center"
-            spacing={0}
-          >
-            <Grid item xs={12} style={{ textAlign: "center" }}>
-              <PartnerButton
-                color="secondary"
-                variant="contained"
-                disableFocusRipple={true}
-              >
-                {translated(this.props.lang).partners.button}
-              </PartnerButton>
-            </Grid>
-          </Grid>
+          <BecomePart lang={this.props.lang}></BecomePart>
         </Box>
       </Box>
     );
@@ -161,16 +145,6 @@ const PartnerLogo: AnyStyledComponent = styled.img`
   max-height: 6rem;
   max-width: 100%;
   margin: 0 auto;
-`;
-
-const PartnerButton: AnyStyledComponent = styled(Button)`
-  && {
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-transform: none;
-    padding: 1rem 5rem;
-    border-radius: 15px;
-  }
 `;
 
 export default Partners;
