@@ -129,13 +129,16 @@ const theme = responsiveFontSizes(
         },
       },
       MuiExpansionPanelSummary: {
-        expanded: {
-          backgroundColor: "#0a6eaa",
+        root: {
+          borderRadius: "15px 15px 0px 0px",
+          "&$expanded": {
+            backgroundColor: "#0a6eaa",
+          },
         },
       },
       MuiExpansionPanelDetails: {
         root: {
-          borderRadius: "0px 0px 0px 0px",
+          borderRadius: "0px 0px 15px 15px",
         },
       },
       MuiExpansionPanel: {

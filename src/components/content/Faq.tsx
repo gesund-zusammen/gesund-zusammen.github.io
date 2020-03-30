@@ -1,10 +1,6 @@
 import React from "react";
-import { Typography, Button, Hidden, Grid, Box } from "@material-ui/core";
-import styled, { AnyStyledComponent } from "styled-components";
+import { Box } from "@material-ui/core";
 
-import { translated } from "../../util";
-
-import IlluFaq from "../../images/illu_faq.svg";
 import FaqItem from "./FaqItem";
 interface IFaqProps {
   lang: "de" | "en";

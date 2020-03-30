@@ -7,8 +7,6 @@ import {
 } from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add";
 import styled, { AnyStyledComponent } from "styled-components";
-import ExpandPlusIcon from "../../images/plus.svg";
-import ExpandMinusIcon from "../../../images/minus.svg";
 import { translated } from "../../util";
 
 interface IFaqItemProps {
@@ -31,10 +29,7 @@ class FaqItem extends React.PureComponent<IFaqItemProps, {}> {
         {getFaqContent(this.props.lang).map((faqItem, index) => {
           return (
             <ExpansionPanel key={"item" + index}>
-              <ExpansionPanelSummary
-                aria-controls="panel1a-content"
-                expandIcon={<AddIcon />}
-              >
+              <ExpansionPanelSummary expandIcon={<StyledAddIcon />}>
                 <Typography variant="h5">{faqItem.title}</Typography>
               </ExpansionPanelSummary>
               <ExpansionPanelDetails>
@@ -49,6 +44,10 @@ class FaqItem extends React.PureComponent<IFaqItemProps, {}> {
 }
 const FaqListWrapper: AnyStyledComponent = styled.div`
   text-align: left;
+`;
+
+const StyledAddIcon: AnyStyledComponent = styled(AddIcon)`
+  color: #0a6eaa;
 `;
 
 export default FaqItem;
