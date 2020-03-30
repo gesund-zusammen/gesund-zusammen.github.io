@@ -94,14 +94,14 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                 </Link>
               </Hidden>
               <FooterSocialIcons>
+                <a href="https://twitter.com/gesundzusammen">
+                  <img src={SocialIconTwitter} alt="Twitter"></img>
+                </a>
                 <a href="https://facebook.com">
                   <img src={SocialIconFacebook} alt="Facebook"></img>
                 </a>
                 <a href="https://invision.com">
                   <img src={SocialIconInvision} alt="Invision"></img>
-                </a>
-                <a href="https://twitter.com">
-                  <img src={SocialIconTwitter} alt="Twitter"></img>
                 </a>
                 <a href="https://youtube.com">
                   <img src={SocialIconYoutube} alt="Youtube"></img>
@@ -116,10 +116,10 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                 <FooterNavItem href="#">
                   {translated(this.props.lang).footer.nav.privacy}
                 </FooterNavItem>
-                <FooterNavItem href="#">
+                <FooterNavItem href="mailto:responsibledisclosure@gesund-zusammen.de">
                   {translated(this.props.lang).footer.nav.vulnerability}
                 </FooterNavItem>
-                <FooterNavItem href="#">
+                <FooterNavItem href="https://docs.google.com/document/d/1v2kkrdG3i15nlpf4unVyIYlivQI7CVGczSLNe_U7vPs">
                   {translated(this.props.lang).footer.nav.imprint}
                 </FooterNavItem>
               </FooterNavItems>
