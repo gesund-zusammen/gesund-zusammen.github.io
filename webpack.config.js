@@ -1,5 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
+const Dotenv = require("dotenv");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
@@ -7,6 +8,8 @@ const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const { NODE_ENV, OPTIMIZED_BUILD } = process.env;
+const webpackDotEnvPath = `./config/.env.${NODE_ENV}`;
+const webpackEnvVars = Dotenv.config({ path: webpackDotEnvPath }).parsed;
 const localEnvironment = NODE_ENV === "local";
 const isOptimized = OPTIMIZED_BUILD === "true" || NODE_ENV === "production";
 const webpackWatch = localEnvironment && !isOptimized;
@@ -84,6 +87,7 @@ const config = {
     new webpack.DefinePlugin({
       // We need NODE_ENV in the env object and as a separate expression
       // Otherwise, webpack will not build properly.
+      "process.env": JSON.stringify({ NODE_ENV, ...webpackEnvVars }),
       "process.env.NODE_ENV": JSON.stringify(NODE_ENV),
     }),
     new CleanWebpackPlugin(),
