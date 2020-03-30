@@ -23,7 +23,7 @@ class Faq extends React.PureComponent<IFaqProps, {}> {
               <Typography variant="h3">Sie haben Fragen?</Typography>
               <FaqButton
                 color="primary"
-                variant="outlined"
+                variant="contained"
                 href="https://docs.google.com/document/d/1v7Z7puca9oy7kG_AZmVCZyxVRcBqRC9cGd4e344aGaA"
               >
                 FAQs
@@ -51,8 +51,6 @@ const FaqContentWrapper: AnyStyledComponent = styled.div`
 
 const FaqButton: AnyStyledComponent = styled(Button)`
   && {
-    background: #0a6eaa;
-    color: #ffffff;
     font-size: 1.4rem;
     font-weight: 600;
     text-transform: none;

@@ -129,13 +129,13 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
             spacing={0}
           >
             <Grid item xs={12} style={{ textAlign: "center" }}>
-              <Button
+              <PartnerButton
                 color="secondary"
                 variant="contained"
                 disableFocusRipple={true}
               >
                 {translated(this.props.lang).footer.button}
-              </Button>
+              </PartnerButton>
             </Grid>
           </Grid>
         </Box>
@@ -149,6 +149,16 @@ const PartnerLogo: AnyStyledComponent = styled.img`
   max-height: 6rem;
   max-width: 100%;
   margin: 0 auto;
+`;
+
+const PartnerButton: AnyStyledComponent = styled(Button)`
+  && {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: none;
+    padding: 1rem 5rem;
+    border-radius: 15px;
+  }
 `;
 
 export default Partners;
