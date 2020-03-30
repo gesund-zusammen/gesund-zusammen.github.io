@@ -58,101 +58,85 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.finleap.com"
             ></PartnerCard>
             <PartnerCard
-              name="Omio"
-              image={LogoOmio}
-              link="https://www.omio.com"
-            ></PartnerCard>
-
-            <PartnerCard
-              name="BVDS"
-              image={LogoBVDS}
-              link="https://www.deutschestartups.org/"
-            ></PartnerCard>
-
-            <PartnerCard
               name="Wefox"
               image={LogoWefox}
               link="https://www.wefox.de/"
             ></PartnerCard>
-
-            <PartnerCard
-              name="N26"
-              image={LogoN26}
-              link="https://www.n26.de/"
-            ></PartnerCard>
-
-            <PartnerCard
-              name="GetYourGuide"
-              image={LogoGetYourGuide}
-              link="https://www.getyourguide.com/"
-            ></PartnerCard>
-
-            <PartnerCard
-              name="FreightHub"
-              image={LogoFreightHub}
-              link="https://www.freighthub.com/"
-            ></PartnerCard>
-
-            <PartnerCard
-              name="DeliveryHero"
-              image={LogoDeliveryHero}
-              link="https://www.deliveryhero.com/"
-            ></PartnerCard>
-
-            <PartnerCard
-              name="Celonis"
-              image={LogoCelonis}
-              link="https://www.celonis.com/"
-            ></PartnerCard>
-
-            <PartnerCard
-              name="Auto1 Group"
-              image={LogoAuto1}
-              link="https://www.auto1.com/"
-            ></PartnerCard>
-
-            <PartnerCard
-              name="Ada Health"
-              image={LogoAdaHealth}
-              link="https://ada.com/"
-            ></PartnerCard>
-
             <PartnerCard
               name="Via Data"
               image={LogoViaHealth}
               link="https://www.viadata.io/"
             ></PartnerCard>
-
+            <PartnerCard
+              name="BVDS"
+              image={LogoBVDS}
+              link="https://www.deutschestartups.org/"
+            ></PartnerCard>
+            <PartnerCard
+              name="Omio"
+              image={LogoOmio}
+              link="https://www.omio.com"
+            ></PartnerCard>
+            <PartnerCard
+              name="N26"
+              image={LogoN26}
+              link="https://www.n26.de/"
+            ></PartnerCard>
+            <PartnerCard
+              name="GetYourGuide"
+              image={LogoGetYourGuide}
+              link="https://www.getyourguide.com/"
+            ></PartnerCard>
+            <PartnerCard
+              name="FreightHub"
+              image={LogoFreightHub}
+              link="https://www.freighthub.com/"
+            ></PartnerCard>
+            <PartnerCard
+              name="DeliveryHero"
+              image={LogoDeliveryHero}
+              link="https://www.deliveryhero.com/"
+            ></PartnerCard>
+            <PartnerCard
+              name="Celonis"
+              image={LogoCelonis}
+              link="https://www.celonis.com/"
+            ></PartnerCard>
+            <PartnerCard
+              name="Auto1 Group"
+              image={LogoAuto1}
+              link="https://www.auto1.com/"
+            ></PartnerCard>
+            <PartnerCard
+              name="Ada Health"
+              image={LogoAdaHealth}
+              link="https://ada.com/"
+            ></PartnerCard>
             <PartnerCard
               name="Personio"
               image={LogoPersonio}
               link="https://www.personio.de/"
             ></PartnerCard>
-
             <PartnerCard
               name="MrSpex"
               image={LogoMrSpex}
               link="https://www.misterspex.de/"
             ></PartnerCard>
-
-            <PartnerCard
-              name="Datenschutzexperte"
-              image={LogoDatenschutzExperte}
-              link="https://www.datenschutzexperte.de/"
-            ></PartnerCard>
-
             <PartnerCard
               name="OneFootbal"
               image={LogoOneFootball}
               link="https://onefootball.com/"
             ></PartnerCard>
-
             <PartnerCard
               name="Ioniq"
               image={LogoIoniq}
               link="https://ioniq.com/"
             ></PartnerCard>
-
+            <PartnerCard
+              name="Datenschutzexperte"
+              image={LogoDatenschutzExperte}
+              link="https://www.datenschutzexperte.de/"
+            ></PartnerCard>
             <PartnerCard
               name="UserCentrics"
               image={LogoUserCentrics}
