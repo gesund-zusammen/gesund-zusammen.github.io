@@ -2,7 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ScrollMemory from "react-router-scroll-memory";
 
-import LayoutLanding from "./layouts/Landing";
+import LayoutLanding from "./layouts/landing";
+import LayoutFaq from "./layouts/faq";
+
 import Initiative from "./content/Initiative";
 import Partners from "./content/Partners";
 import Faq from "./content/Faq";
@@ -39,6 +41,14 @@ class Page extends React.Component<{}, IPageState> {
               <Partners lang={this.state.lang}></Partners>
               <Faq lang={this.state.lang}></Faq>
             </LayoutLanding>
+          </Route>
+          <Route path="/faq">
+            <LayoutFaq
+              lang={this.state.lang}
+              langChangeCallback={this.handleLangChange}
+            >
+              <Faq lang={this.state.lang}></Faq>
+            </LayoutFaq>
           </Route>
         </Switch>
       </Router>
