@@ -35,7 +35,29 @@
     },
     "faq": {
       "title": "Sie haben Fragen?",
-      "button": "FAQs"
+      "button": "FAQs",
+      "content": [
+        { "header": "Über Uns", "content": "Wir sind ..." },
+        { "header": "Was wollt ihr erreichen?", "content": "Wir sind ..." },
+        { "header": "Wieso Gesund-Zusammen?", "content": "Wir sind ..." },
+        {
+          "header": "Wen und was wollt ihr unterstützen?",
+          "content": "Wir sind ..."
+        },
+        {
+          "header": "Sucht ihr nach weiteren Partner?",
+          "content": "Wir sind ..."
+        },
+        {
+          "header": "Wie steht ihr zur Arbeit von Gesundheitssystem, Ärzten und Pflegepersonal?",
+          "content": "Wir sind ..."
+        },
+        {
+          "header": "Unterstützt ihr digitale Tools auch finanziell aus der Initiative?",
+          "content": "Wir sind ..."
+        }
+      ],
+      "contact": "Für weitere Fragen und stellvertretenden Kontakt, kontaktieren sie bitte: Solveig Rathenow <solveig.rathenow@finleap.com> "
     },
     "footer": {
       "nav": {
@@ -81,7 +103,29 @@
     },
     "faq": {
       "title": "You have questions?",
-      "button": "FAQs"
+      "button": "FAQs",
+      "content": [
+        { "header": "Über Uns", "content": "Wir sind ..." },
+        { "header": "Was wollt ihr erreichen?", "content": "Wir sind ..." },
+        { "header": "Wieso Gesund-Zusammen?", "content": "Wir sind ..." },
+        {
+          "header": "Wen und was wollt ihr unterstützen?",
+          "content": "Wir sind ..."
+        },
+        {
+          "header": "Sucht ihr nach weiteren Partner?",
+          "content": "Wir sind ..."
+        },
+        {
+          "header": "Wie steht ihr zur Arbeit von Gesundheitssystem, Ärzten und Pflegepersonal?",
+          "content": "Wir sind ..."
+        },
+        {
+          "header": "Unterstützt ihr digitale Tools auch finanziell aus der Initiative?",
+          "content": "Wir sind ..."
+        }
+      ],
+      "contact": "Für weitere Fragen und stellvertretenden Kontakt, kontaktieren sie bitte: Solveig Rathenow <solveig.rathenow@finleap.com> "
     },
     "footer": {
       "nav": {
