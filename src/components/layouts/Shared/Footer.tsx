@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Container, Grid, Typography, Hidden } from "@material-ui/core";
-import styled, { AnyStyledComponent } from "styled-components";
+import styled, { css, AnyStyledComponent } from "styled-components";
 import { Link } from "react-router-dom";
 
 import { translated } from "../../../util";
@@ -113,15 +113,15 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                 </a>
               </FooterEmailLink>
               <FooterNavItems>
-                <FooterNavItem href="#">
+                <FooterNavLinkItem to="/privacy">
                   {translated(this.props.lang).footer.nav.privacy}
-                </FooterNavItem>
-                <FooterNavItem href="mailto:responsibledisclosure@gesund-zusammen.de">
+                </FooterNavLinkItem>
+                <FooterNavAnchorItem href="mailto:responsibledisclosure@gesund-zusammen.de">
                   {translated(this.props.lang).footer.nav.vulnerability}
-                </FooterNavItem>
-                <FooterNavItem href="https://docs.google.com/document/d/1v2kkrdG3i15nlpf4unVyIYlivQI7CVGczSLNe_U7vPs">
+                </FooterNavAnchorItem>
+                <FooterNavAnchorItem href="https://docs.google.com/document/d/1v2kkrdG3i15nlpf4unVyIYlivQI7CVGczSLNe_U7vPs">
                   {translated(this.props.lang).footer.nav.imprint}
-                </FooterNavItem>
+                </FooterNavAnchorItem>
               </FooterNavItems>
               <CopyrightNote>&copy; 2020 finleap GmbH</CopyrightNote>
             </FooterNav>
@@ -256,7 +256,7 @@ const FooterNavItems: AnyStyledComponent = styled.div`
   }
 `;
 
-const FooterNavItem: AnyStyledComponent = styled.a`
+const footerLinkStyles = css`
   display: block;
   width: 100%;
   font-family: inherit;
@@ -275,6 +275,14 @@ const FooterNavItem: AnyStyledComponent = styled.a`
       margin-left: 0;
     }
   }
+`;
+
+const FooterNavAnchorItem: AnyStyledComponent = styled.a`
+  ${footerLinkStyles}
+`;
+
+const FooterNavLinkItem: AnyStyledComponent = styled(Link)`
+  ${footerLinkStyles}
 `;
 
 const CopyrightNote: AnyStyledComponent = styled.p`
