@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Grid, Typography } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
+import PartnerCard from "../common/PartnerCard";
 import BecomePart from "../common/BecomePart";
 
 import LogoOmio from "../../images/partners/omio.png";
@@ -20,7 +21,7 @@ import LogoPersonio from "../../images/partners/personio.png";
 import LogoMrSpex from "../../images/partners/mrspex.png";
 import LogoDatenschutzExperte from "../../images/partners/datenschutzexperte.svg";
 import LogoOneFootball from "../../images/partners/onefootball.svg";
-import LogoIoniq from "../../images/partners/ioniq.svg";
+import LogoIoniq from "../../images/partners/ioniq.png";
 import LogoUserCentrics from "../../images/partners/usercentrics.svg";
 
 interface IPartnersProps {
@@ -32,104 +33,133 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
     return (
       <Box id="partners" paddingBottom={4} marginTop={4}>
         <Typography variant="h2">Founding & Tech Partner</Typography>
+
+        <StyledContent variant="body1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet
+          pretium a diam vestibulum urna eget neque posuere nisl. Elementum
+          sodales risus egestas nisl donec urna pharetra. Tellus imperdiet duis
+          pellentesque pellentesque amet tortor. Velit consectetur turpis
+          mauris, vel sodales massa elit, diam, mauris.Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. At etiam interdum in mollis
+          malesuada nibh posuere leo. In est elit ultricies blandit aliquam
+          nulla id amet quam. Non mollis sed malesuada dolor sagittis volutpat.
+          Rhoncus erat ullamcorper viverra nunc, lectus mollis tristique.
+        </StyledContent>
+
         <Box paddingTop={4}>
           <Grid
             container
             direction="row"
-            justify="space-evenly"
-            alignItems="flex-start"
+            justify="center"
+            alignItems="center"
             spacing={4}
           >
-            <Grid item xs={6} sm={3}>
-              <a href="https://www.finleap.com">
-                <PartnerLogo src={LogoFinleap}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <a href="https://www.omio.com">
-                <PartnerLogo src={LogoOmio}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <a href="https://www.deutschestartups.org/">
-                <PartnerLogo src={LogoBVDS}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <a href="https://www.wefox.de/">
-                <PartnerLogo src={LogoWefox}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <a href="https://www.n26.de/">
-                <PartnerLogo src={LogoN26}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <a href="https://www.getyourguide.com/">
-                <PartnerLogo src={LogoGetYourGuide}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <a href="https://www.freighthub.com/">
-                <PartnerLogo src={LogoFreightHub}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <a href="https://www.deliveryhero.com/">
-                <PartnerLogo src={LogoDeliveryHero}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <a href="https://www.celonis.com/">
-                <PartnerLogo src={LogoCelonis}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <a href="https://www.auto1.com/">
-                <PartnerLogo src={LogoAuto1}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <a href="https://ada.com/de/">
-                <PartnerLogo src={LogoAdaHealth}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <a href="https://www.viadata.io/">
-                <PartnerLogo src={LogoViaHealth}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <a href="https://www.personio.de/">
-                <PartnerLogo src={LogoPersonio}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <a href="https://www.misterspex.de/">
-                <PartnerLogo src={LogoMrSpex}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <a href="https://www.datenschutzexperte.de/">
-                <PartnerLogo src={LogoDatenschutzExperte}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <a href="https://onefootball.com/">
-                <PartnerLogo src={LogoOneFootball}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <a href="https://ioniq.com/">
-                <PartnerLogo src={LogoIoniq}></PartnerLogo>
-              </a>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <a href="https://usercentrics.com/">
-                <PartnerLogo src={LogoUserCentrics}></PartnerLogo>
-              </a>
-            </Grid>
+            <PartnerCard
+              name="finleap"
+              image={LogoFinleap}
+              link="https://www.finleap.com"
+            ></PartnerCard>
+            <PartnerCard
+              name="Omio"
+              image={LogoOmio}
+              link="https://www.omio.com"
+            ></PartnerCard>
+
+            <PartnerCard
+              name="BVDS"
+              image={LogoBVDS}
+              link="https://www.deutschestartups.org/"
+            ></PartnerCard>
+
+            <PartnerCard
+              name="Wefox"
+              image={LogoWefox}
+              link="https://www.wefox.de/"
+            ></PartnerCard>
+
+            <PartnerCard
+              name="N26"
+              image={LogoN26}
+              link="https://www.n26.de/"
+            ></PartnerCard>
+
+            <PartnerCard
+              name="GetYourGuide"
+              image={LogoGetYourGuide}
+              link="https://www.getyourguide.com/"
+            ></PartnerCard>
+
+            <PartnerCard
+              name="FreightHub"
+              image={LogoFreightHub}
+              link="https://www.freighthub.com/"
+            ></PartnerCard>
+
+            <PartnerCard
+              name="DeliveryHero"
+              image={LogoDeliveryHero}
+              link="https://www.deliveryhero.com/"
+            ></PartnerCard>
+
+            <PartnerCard
+              name="Celonis"
+              image={LogoCelonis}
+              link="https://www.celonis.com/"
+            ></PartnerCard>
+
+            <PartnerCard
+              name="Auto1 Group"
+              image={LogoAuto1}
+              link="https://www.auto1.com/"
+            ></PartnerCard>
+
+            <PartnerCard
+              name="Ada Health"
+              image={LogoAdaHealth}
+              link="https://ada.com/"
+            ></PartnerCard>
+
+            <PartnerCard
+              name="Via Data"
+              image={LogoViaHealth}
+              link="https://www.viadata.io/"
+            ></PartnerCard>
+
+            <PartnerCard
+              name="Personio"
+              image={LogoPersonio}
+              link="https://www.personio.de/"
+            ></PartnerCard>
+
+            <PartnerCard
+              name="MrSpex"
+              image={LogoMrSpex}
+              link="https://www.misterspex.de/"
+            ></PartnerCard>
+
+            <PartnerCard
+              name="Datenschutzexperte"
+              image={LogoDatenschutzExperte}
+              link="https://www.datenschutzexperte.de/"
+            ></PartnerCard>
+
+            <PartnerCard
+              name="OneFootbal"
+              image={LogoOneFootball}
+              link="https://onefootball.com/"
+            ></PartnerCard>
+
+            <PartnerCard
+              name="Ioniq"
+              image={LogoIoniq}
+              link="https://ioniq.com/"
+            ></PartnerCard>
+
+            <PartnerCard
+              name="UserCentrics"
+              image={LogoUserCentrics}
+              link="https://usercentrics.com/"
+            ></PartnerCard>
           </Grid>
         </Box>
         <Box marginTop={4}>
@@ -140,11 +170,11 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
   };
 }
 
-const PartnerLogo: AnyStyledComponent = styled.img`
-  display: block;
-  max-height: 6rem;
-  max-width: 100%;
-  margin: 0 auto;
+const StyledContent: AnyStyledComponent = styled(Typography)`
+  @media (min-width: 600px) {
+    column-count: 2;
+    column-gap: 1.6rem;
+  }
 `;
 
 export default Partners;
