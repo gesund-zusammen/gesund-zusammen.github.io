@@ -47,7 +47,7 @@ class Page extends React.Component<{}, IPageState> {
             <LayoutSubPage
               lang={this.state.lang}
               langChangeCallback={this.handleLangChange}
-              title="Founding & Tech Partners"
+              title="Partners"
             >
               <Partners lang={this.state.lang}></Partners>
             </LayoutSubPage>
