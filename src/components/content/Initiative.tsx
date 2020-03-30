@@ -18,7 +18,11 @@ class Initiative extends React.Component<IInitiativeProps, {}> {
           {translated(this.props.lang).main.title}
         </Typography>
         <StyledContent variant="body1">
-          {translated(this.props.lang).main.content}
+          <div
+            dangerouslySetInnerHTML={{
+              __html: translated(this.props.lang).main.content,
+            }}
+          />
         </StyledContent>
         <Box marginTop={6}>
           <Grid container spacing={4}>
@@ -43,7 +47,7 @@ class Initiative extends React.Component<IInitiativeProps, {}> {
 
 const StyledContent: AnyStyledComponent = styled(Typography)`
   @media (min-width: 600px) {
-    column-count: 2;
+    column-count: 1;
     column-gap: 1.6rem;
   }
 `;
