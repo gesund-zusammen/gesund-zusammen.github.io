@@ -1,10 +1,11 @@
 import React from "react";
 import { Box, Typography } from "@material-ui/core";
+import styled, { AnyStyledComponent } from "styled-components";
 
 class PrivacyPolicy extends React.PureComponent {
   render = () => {
     return (
-      <Box paddingBottom={4}>
+      <PrivacyWrapper paddingBottom={4}>
         <Typography variant="body1">
           The protection of your personal data is very important to us. We treat
           this topic with a great deal of care and therefore inform you in the
@@ -71,9 +72,17 @@ class PrivacyPolicy extends React.PureComponent {
           the registration within three days, your information will be blocked
           and automatically deleted after one month.
         </Typography>
-      </Box>
+      </PrivacyWrapper>
     );
   };
 }
+
+const PrivacyWrapper: AnyStyledComponent = styled(Box)`
+  && {
+    @media (min-width: 600px) {
+      padding-right: 16rem;
+    }
+  }
+`;
 
 export default PrivacyPolicy;
