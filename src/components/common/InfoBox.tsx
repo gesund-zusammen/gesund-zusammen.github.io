@@ -13,7 +13,7 @@ class InfoBox extends React.PureComponent<IInfoBoxProps, {}> {
       <Grid item xs={12} sm={6} md={4} xl={3}>
         <StyledCard elevation={0}>
           <StyledCardContent>
-            <Typography variant="h4">{this.props.title}</Typography>
+            <StyledTitle variant="h4">{this.props.title}</StyledTitle>
             <Typography variant="body2" style={{ textAlign: "justify" }}>
               {this.props.content}
             </Typography>
@@ -23,6 +23,12 @@ class InfoBox extends React.PureComponent<IInfoBoxProps, {}> {
     );
   };
 }
+
+const StyledTitle: AnyStyledComponent = styled(Typography)`
+  && {
+    margin-bottom: 0.4rem;
+  }
+`;
 
 const StyledCard: AnyStyledComponent = styled(Card)`
   && {
@@ -35,10 +41,10 @@ const StyledCard: AnyStyledComponent = styled(Card)`
 
 const StyledCardContent: AnyStyledComponent = styled(CardContent)`
   && {
-    padding: 35px;
+    padding: 20px;
 
     &:last-child {
-      padding-bottom: 35px;
+      padding-bottom: 30px;
     }
   }
 `;

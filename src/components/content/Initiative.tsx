@@ -24,7 +24,7 @@ class Initiative extends React.Component<IInitiativeProps, {}> {
             }}
           />
         </StyledContent>
-        <Box marginTop={6}>
+        <Box marginTop={2}>
           <Grid container spacing={4}>
             <InfoBox
               title={translated(this.props.lang).boxes.initiative.title}
