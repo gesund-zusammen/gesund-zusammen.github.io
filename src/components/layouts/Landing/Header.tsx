@@ -62,7 +62,7 @@ class LandingHeader extends React.PureComponent<ILandingHeaderProps, {}> {
 
 const HeaderContent: AnyStyledComponent = styled.div`
   @media (min-width: 600px) {
-    margin-top: 6rem;
+    margin: 4rem 0 6rem 0;
   }
 `;
 
