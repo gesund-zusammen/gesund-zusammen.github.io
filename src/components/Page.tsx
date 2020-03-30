@@ -45,11 +45,20 @@ class Page extends React.Component<{}, IPageState> {
               <Partners lang={this.state.lang}></Partners>
             </LayoutLanding>
           </Route>
+          <Route path="/partners">
+            <LayoutSubPage
+              lang={this.state.lang}
+              langChangeCallback={this.handleLangChange}
+              title="Founding & Tech Partners"
+            >
+              <Partners lang={this.state.lang}></Partners>
+            </LayoutSubPage>
+          </Route>
           <Route path="/faq">
             <LayoutSubPage
               lang={this.state.lang}
               langChangeCallback={this.handleLangChange}
-              title="Fragen?"
+              title="Haben Sie Fragen?"
               image={IlluFaq}
             >
               <Faq lang={this.state.lang}></Faq>

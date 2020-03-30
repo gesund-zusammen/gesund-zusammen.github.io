@@ -34,12 +34,10 @@ class SubPageHeader extends React.PureComponent<ISubPageHeaderProps, {}> {
                 </Typography>
               </HeaderContent>
             </Grid>
+
             <Hidden xsDown>
               <Grid item xs={12} sm={4}>
-                <HeaderIllustration
-                  src={this.props.image}
-                  alt="Patient 0"
-                ></HeaderIllustration>
+                <HeaderIllustration src={this.props.image}></HeaderIllustration>
               </Grid>
             </Hidden>
           </Grid>
@@ -51,7 +49,7 @@ class SubPageHeader extends React.PureComponent<ISubPageHeaderProps, {}> {
 
 const HeaderContent: AnyStyledComponent = styled.div`
   @media (min-width: 600px) {
-    margin-top: 6rem;
+    margin: 6rem 0;
   }
 `;
 
