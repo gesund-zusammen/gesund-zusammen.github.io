@@ -5,9 +5,10 @@ import {
   ExpansionPanelSummary,
   ExpansionPanelDetails,
 } from "@material-ui/core";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import AddIcon from "@material-ui/icons/Add";
 import styled, { AnyStyledComponent } from "styled-components";
-
+import ExpandPlusIcon from "../../images/plus.svg";
+import ExpandMinusIcon from "../../../images/minus.svg";
 import { translated } from "../../util";
 
 interface IFaqItemProps {
@@ -20,7 +21,6 @@ interface IFaqContent {
 }
 
 const getFaqContent = (lang: "de" | "en"): Array<IFaqContent> => {
-  console.log("got FaqContent: ", translated(lang).faq.content);
   return translated(lang).faq.content;
 };
 
@@ -32,10 +32,10 @@ class FaqItem extends React.PureComponent<IFaqItemProps, {}> {
           return (
             <ExpansionPanel key={"item" + index}>
               <ExpansionPanelSummary
-                expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
+                expandIcon={<AddIcon />}
               >
-                <Typography variant="h4">{faqItem.title}</Typography>
+                <Typography variant="h5">{faqItem.title}</Typography>
               </ExpansionPanelSummary>
               <ExpansionPanelDetails>
                 <Typography variant="body2">{faqItem.content}</Typography>
@@ -48,11 +48,7 @@ class FaqItem extends React.PureComponent<IFaqItemProps, {}> {
   };
 }
 const FaqListWrapper: AnyStyledComponent = styled.div`
-  text-align: center;
-
-  @media (min-width: 600px) {
-    text-align: left;
-  }
+  text-align: left;
 `;
 
 export default FaqItem;
