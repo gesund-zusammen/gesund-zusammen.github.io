@@ -1,5 +1,4 @@
 import React from "react";
-import styled, { AnyStyledComponent } from "styled-components";
 
 import Initiative from "./Initiative";
 import Faq from "./Faq";

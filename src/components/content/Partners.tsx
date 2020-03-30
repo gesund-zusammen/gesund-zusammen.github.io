@@ -160,12 +160,14 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               image={LogoTwoBirds}
               link="https://www.twobirds.com/"
               color="#7c7c6e"
+              nameColorInverted={true}
             ></PartnerCard>
             <PartnerCard
               name="Reed Smith LLP"
               image={LogoReedSmith}
               link="https://www.reedsmith.com/"
               color="#3d3c3c"
+              nameColorInverted={true}
             ></PartnerCard>
           </Grid>
         </Box>
