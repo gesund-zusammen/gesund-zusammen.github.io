@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Grid, Typography } from "@material-ui/core";
+import { Box, Container, Grid, Typography, Hidden } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -7,9 +7,17 @@ import { translated } from "../../../util";
 
 import BgFooter from "../../../images/bg_footer.svg";
 import Logo from "../../../images/logo.svg";
+
 import IconWhatsApp from "../../../images/icon_whatsapp.svg";
 import IconMessenger from "../../../images/icon_messenger.svg";
 import IconEmail from "../../../images/icon_email.svg";
+
+import SocialIconFacebook from "../../../images/footer_icon_facebook.svg";
+import SocialIconInvision from "../../../images/footer_icon_invision.svg";
+import SocialIconTwitter from "../../../images/footer_icon_twitter.svg";
+import SocialIconYoutube from "../../../images/footer_icon_youtube.svg";
+
+import FooterIconEmail from "../../../images/footer_icon_email.svg";
 
 interface IFooterProps {
   lang: "de" | "en";
@@ -73,23 +81,46 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
               </Grid>
             </Grid>
           </Box>
-          <FooterNav>
-            <Link to="/">
-              <FooterLogo src={Logo} alt="#GesundZusammen"></FooterLogo>
-            </Link>
-            <FooterNavItems>
-              <FooterNavItem href="#">
-                {translated(this.props.lang).footer.nav.privacy}
-              </FooterNavItem>
-              <FooterNavItem href="#">
-                {translated(this.props.lang).footer.nav.vulnerability}
-              </FooterNavItem>
-              <FooterNavItem href="#">
-                {translated(this.props.lang).footer.nav.imprint}
-              </FooterNavItem>
-            </FooterNavItems>
-          </FooterNav>
-          <CopyrightNote>&copy; 2020 finleap GmbH</CopyrightNote>
+          <Box>
+            <FooterNav>
+              <Hidden xsDown>
+                <Link to="/" style={{ float: "left" }}>
+                  <FooterLogo src={Logo} alt="#GesundZusammen"></FooterLogo>
+                </Link>
+              </Hidden>
+              <FooterSocialIcons>
+                <a href="https://facebook.com">
+                  <img src={SocialIconFacebook} alt="Facebook"></img>
+                </a>
+                <a href="https://invision.com">
+                  <img src={SocialIconInvision} alt="Invision"></img>
+                </a>
+                <a href="https://twitter.com">
+                  <img src={SocialIconTwitter} alt="Twitter"></img>
+                </a>
+                <a href="https://youtube.com">
+                  <img src={SocialIconYoutube} alt="Youtube"></img>
+                </a>
+              </FooterSocialIcons>
+              <FooterEmailLink>
+                <a href="mailto:media@gesund-zusammen.de">
+                  media@gesund-zusammen.de
+                </a>
+              </FooterEmailLink>
+              <FooterNavItems>
+                <FooterNavItem href="#">
+                  {translated(this.props.lang).footer.nav.privacy}
+                </FooterNavItem>
+                <FooterNavItem href="#">
+                  {translated(this.props.lang).footer.nav.vulnerability}
+                </FooterNavItem>
+                <FooterNavItem href="#">
+                  {translated(this.props.lang).footer.nav.imprint}
+                </FooterNavItem>
+              </FooterNavItems>
+              <CopyrightNote>&copy; 2020 finleap GmbH</CopyrightNote>
+            </FooterNav>
+          </Box>
         </Container>
       </FooterWrapper>
     );
@@ -99,15 +130,16 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
 const FooterWrapper: AnyStyledComponent = styled(Box)`
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   color: #ffffff;
-  padding: 2rem 0 4rem 0;
+  padding: 2rem 0 1rem 0;
   background-color: #ccedf7;
   background-image: url(${BgFooter});
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto 70%;
 
   @media (min-width: 600px) {
     padding-top: 4rem;
+    background-size: contain;
   }
 `;
 
@@ -159,19 +191,62 @@ const FooterNav: AnyStyledComponent = styled.div`
   display: block;
   overflow: hidden;
   padding: 2rem 0;
-  margin: 3rem 0 0 0;
+  margin: 0;
+`;
+
+const FooterSocialIcons: AnyStyledComponent = styled.div`
+  text-align: center;
+
+  & > a {
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    & > img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  @media (min-width: 600px) {
+    text-align: right;
+  }
+`;
+
+const FooterEmailLink: AnyStyledComponent = styled.div`
+  margin: 2rem 0 0 0;
+  text-align: center;
+
+  & > a {
+    padding-left: 20px;
+    background-image: url(${FooterIconEmail});
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  @media (min-width: 600px) {
+    text-align: right;
+  }
 `;
 
 const FooterNavItems: AnyStyledComponent = styled.div`
   display: inline-block;
   width: 100%;
-  margin-top: 1rem;
+  margin: 1rem 0 0 0;
   text-align: center;
 
   @media (min-width: 600px) {
     float: right;
     width: auto;
-    margin: 0;
+    margin: 2rem 0 0 0;
     text-align: right;
   }
 `;
@@ -199,6 +274,12 @@ const FooterNavItem: AnyStyledComponent = styled.a`
 
 const CopyrightNote: AnyStyledComponent = styled.p`
   font-size: 0.6rem;
+  text-align: center;
+
+  @media (min-width: 600px) {
+    text-align: left;
+    float: left;
+  }
 `;
 
 export default Footer;
