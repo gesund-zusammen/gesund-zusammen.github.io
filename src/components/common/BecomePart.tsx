@@ -11,7 +11,7 @@ interface IBecomePartProps {
 class BecomePart extends React.PureComponent<IBecomePartProps, {}> {
   render = () => {
     return (
-      <StyledPaper elevation={2}>
+      <StyledPaper>
         <Grid
           container
           direction="row"
@@ -43,6 +43,8 @@ class BecomePart extends React.PureComponent<IBecomePartProps, {}> {
 const StyledPaper: AnyStyledComponent = styled(Paper)`
   && {
     padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 2px 24px #e3e6eb;
   }
 `;
 
