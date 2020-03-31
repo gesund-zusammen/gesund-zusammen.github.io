@@ -3,9 +3,9 @@ import { Switch } from "@material-ui/core";
 import styled, { css, AnyStyledComponent } from "styled-components";
 import { Link } from "react-router-dom";
 
-import { translated } from "../util";
+import { translated } from "../../../util";
 
-import Logo from "../images/logo.svg";
+import Logo from "../../../images/logo.svg";
 
 interface IHeaderProps {
   lang: "de" | "en";

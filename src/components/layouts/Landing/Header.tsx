@@ -4,7 +4,7 @@ import styled, { AnyStyledComponent } from "styled-components";
 
 import { translated } from "../../../util";
 
-import HeaderNav from "../../HeaderNav";
+import HeaderNav from "../Shared/HeaderNav";
 
 import IlluHeader from "../../../images/illu_header.svg";
 

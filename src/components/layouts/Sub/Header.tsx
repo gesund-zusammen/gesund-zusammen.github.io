@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography, Grid, Hidden } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
-import HeaderNav from "../../HeaderNav";
+import HeaderNav from "../Shared/HeaderNav";
 
 interface ISubPageHeaderProps {
   lang: "de" | "en";
