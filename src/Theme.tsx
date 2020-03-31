@@ -131,14 +131,22 @@ const theme = responsiveFontSizes(
       },
       MuiExpansionPanelSummary: {
         root: {
+          fontSize: "1.2rem",
+          fontWeight: 600,
+          padding: "1.5rem 2.8rem",
           borderRadius: "15px 15px 0px 0px",
+          color: "#003269",
           "&$expanded": {
             backgroundColor: "#0a6eaa",
+            color: "#ffffff",
           },
         },
       },
       MuiExpansionPanelDetails: {
         root: {
+          fontSize: "0.9rem",
+          color: "#0A6EAA",
+          padding: "1.5rem 2.8rem",
           borderRadius: "0px 0px 15px 15px",
         },
       },
@@ -147,6 +155,9 @@ const theme = responsiveFontSizes(
           boxShadow: "0px 6.26856px 25.0742px #F2F5FA",
           borderRadius: "15px 15px 15px 15px",
           marginBottom: "1.6rem",
+          "&:before": {
+            display: "none",
+          },
         },
         rounded: {
           borderRadius: "15px 15px 15px 15px",
