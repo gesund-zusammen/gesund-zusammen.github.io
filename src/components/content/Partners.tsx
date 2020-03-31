@@ -65,7 +65,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
             <PartnerCard
               name="Global Citizen Foundation"
               image={LogoGlobalCitizen}
-              link="https://www.globalcitizen.org/"
+              link="https://www.globalcitizenfoundation.org/"
             ></PartnerCard>
             <PartnerCard
               name="BVDS"
