@@ -56,12 +56,12 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.wefox.de/"
             ></PartnerCard>
             <PartnerCard
-              name="Via Data"
+              name="Via"
               image={LogoViaHealth}
               link="https://www.viadata.io/"
             ></PartnerCard>
             <PartnerCard
-              name="Global Citizen"
+              name="Global Citizen Foundation"
               image={LogoGlobalCitizen}
               link="https://www.globalcitizen.org/"
             ></PartnerCard>
