@@ -33,9 +33,9 @@ class HeaderNav extends React.Component<IHeaderProps, {}> {
           <HeaderNavLinkItem to="/partners">
             {translated(this.props.lang).header.nav.supporters}
           </HeaderNavLinkItem>
-          <HeaderNavAnchorItem href="https://docs.google.com/document/d/1v7Z7puca9oy7kG_AZmVCZyxVRcBqRC9cGd4e344aGaA">
+          <HeaderNavLinkItem to="/faq">
             {translated(this.props.lang).header.nav.faqs}
-          </HeaderNavAnchorItem>
+          </HeaderNavLinkItem>
           <HeaderLangSwitch>
             <StyledSwitch
               checked={this.props.lang === "de"}

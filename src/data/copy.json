@@ -36,7 +36,29 @@
     },
     "faq": {
       "title": "Sie haben Fragen?",
-      "button": "FAQs"
+      "button": "FAQs",
+      "content": [
+        { "title": "Über Uns", "content": "Wir sind ..." },
+        { "title": "Was wollt ihr erreichen?", "content": "Wir sind ..." },
+        { "title": "Wieso Gesund-Zusammen?", "content": "Wir sind ..." },
+        {
+          "title": "Wen und was wollt ihr unterstützen?",
+          "content": "Wir sind ..."
+        },
+        {
+          "title": "Sucht ihr nach weiteren Partner?",
+          "content": "Wir sind ..."
+        },
+        {
+          "title": "Wie steht ihr zur Arbeit von Gesundheitssystem, Ärzten und Pflegepersonal?",
+          "content": "Wir sind ..."
+        },
+        {
+          "title": "Unterstützt ihr digitale Tools auch finanziell aus der Initiative?",
+          "content": "Wir sind ..."
+        }
+      ],
+      "contact": "Für weitere Fragen und stellvertretenden Kontakt, kontaktieren sie bitte: Solveig Rathenow <solveig.rathenow@finleap.com> "
     },
     "footer": {
       "title": "Teile die Initiative",
@@ -88,7 +110,29 @@
     },
     "faq": {
       "title": "You have questions?",
-      "button": "FAQs"
+      "button": "FAQs",
+      "content": [
+        { "title": "Über Uns", "content": "Wir sind ..." },
+        { "title": "Was wollt ihr erreichen?", "content": "Wir sind ..." },
+        { "title": "Wieso Gesund-Zusammen?", "content": "Wir sind ..." },
+        {
+          "title": "Wen und was wollt ihr unterstützen?",
+          "content": "Wir sind ..."
+        },
+        {
+          "title": "Sucht ihr nach weiteren Partner?",
+          "content": "Wir sind ..."
+        },
+        {
+          "title": "Wie steht ihr zur Arbeit von Gesundheitssystem, Ärzten und Pflegepersonal?",
+          "content": "Wir sind ..."
+        },
+        {
+          "title": "Unterstützt ihr digitale Tools auch finanziell aus der Initiative?",
+          "content": "Wir sind ..."
+        }
+      ],
+      "contact": "Für weitere Fragen und stellvertretenden Kontakt, kontaktieren sie bitte: Solveig Rathenow <solveig.rathenow@finleap.com> "
     },
     "footer": {
       "title": "Sharing is caring",
