@@ -5,9 +5,11 @@ import ScrollMemory from "react-router-scroll-memory";
 import { translated } from "../util";
 
 import LayoutLanding from "./layouts/Landing/Main";
+import LayoutInitiativePage from "./layouts/Initiative/Main";
 import LayoutSubPage from "./layouts/Sub/Main";
 
 import Landing from "./content/Landing";
+import Initiative from "./content/Initiative";
 import Partners from "./content/Partners";
 import Faq from "./content/Faq";
 import PrivacyPolicy from "./content/Privacy";
@@ -45,6 +47,18 @@ class Page extends React.Component<{}, IPageState> {
             >
               <Landing lang={this.state.lang}></Landing>
             </LayoutLanding>
+          </Route>
+          <Route path="/initiative">
+            <LayoutInitiativePage
+              lang={this.state.lang}
+              langChangeCallback={this.handleLangChange}
+              title={translated(this.state.lang).header.nav.initiative}
+              content={
+                translated(this.state.lang).header.content.initiative.content
+              }
+            >
+              <Initiative lang={this.state.lang}></Initiative>
+            </LayoutInitiativePage>
           </Route>
           <Route path="/partners">
             <LayoutSubPage
