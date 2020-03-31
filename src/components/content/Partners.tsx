@@ -175,7 +175,6 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               image={LogoCMSLaw}
               link="https://cms.law/"
             ></PartnerCard>
-
           </Grid>
         </Box>
         <Box paddingBottom={4} marginTop={4}>

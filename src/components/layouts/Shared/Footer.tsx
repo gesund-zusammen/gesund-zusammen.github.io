@@ -9,7 +9,7 @@ import BgFooter from "../../../images/bg_footer.svg";
 import Logo from "../../../images/logo.svg";
 
 import IconWhatsApp from "../../../images/icon_whatsapp.svg";
-import IconMessenger from "../../../images/icon_messenger.svg";
+import IconFacebook from "../../../images/icon_facebook.svg";
 import IconEmail from "../../../images/icon_email.svg";
 
 import SocialIconFacebook from "../../../images/footer_icon_facebook.svg";
@@ -86,8 +86,8 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                   >
                     <img
                       className="share-icon"
-                      src={IconMessenger}
-                      alt="Share with Messenger"
+                      src={IconFacebook}
+                      alt="Share on Facebook"
                     ></img>
                   </a>
                   <a
