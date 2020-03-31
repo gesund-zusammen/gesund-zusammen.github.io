@@ -30,7 +30,7 @@ import LogoCMSLaw from "../../images/partners/cmslaw.svg";
 import LogoSKWSchwarz from "../../images/partners/skwschwarz.jpg";
 import LogoBCGDV from "../../images/partners/bcgdv.svg";
 import LogoDoctorly from "../../images/partners/doctorly.png";
-import LogoFischerAppelt from "../../images/partners/fischerappelt.svg";
+import LogoFischerAppelt from "../../images/partners/fischerappelt.jpg";
 import LogoDeloitte from "../../images/partners/deloitte.svg";
 
 interface IPartnersProps {
@@ -217,8 +217,6 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="fischerAppelt"
               image={LogoFischerAppelt}
               link="https://www.fischerappelt.de/"
-              color="black"
-              nameColorInverted={true}
             ></PartnerCard>
           </Grid>
         </Box>
