@@ -88,7 +88,7 @@ class Initiative extends React.Component<IInitiativeProps, IInitiativeState> {
 
   render = () => {
     return (
-      <Box marginTop={4} paddingBottom={4}>
+      <Box paddingBottom={4}>
         <Typography variant="h3">Filter by</Typography>
         <Box id="initiatives-filter">
           <CategoryChip
@@ -112,9 +112,14 @@ class Initiative extends React.Component<IInitiativeProps, IInitiativeState> {
             ></CategoryChip>
           ))}
         </Box>
-        <Box id="initiatives-list">
+        <Box id="initiatives-list" paddingBottom={4} marginTop={4}>
           {this.getInitiatives(this.state.selectedCategory).map(initiative => (
-            <InitiativeCardWrapper key={initiative.link} href={initiative.link}>
+            <InitiativeCardWrapper
+              key={initiative.link}
+              href={initiative.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <InitiativeCard>
                 <CardContent>
                   <Typography variant="subtitle2" color="secondary">
