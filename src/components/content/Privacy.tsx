@@ -117,6 +117,9 @@ class PrivacyPolicy extends React.PureComponent {
           like to point out that in this case you may not be able to use all
           functions of the Website in full.
         </Typography>
+        <Typography variant="body1">
+          <Link href="#uc-central-modal-show">Cookie Settings</Link>
+        </Typography>
         <Typography variant="h2" id="section4">
           4. Google Analytics
         </Typography>
