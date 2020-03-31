@@ -6,36 +6,119 @@ class PrivacyPolicy extends React.PureComponent {
   render = () => {
     return (
       <PrivacyWrapper paddingBottom={4}>
-        <Typography variant="body1">
-          #gesundZusammen (as defined in section 1 below) takes the protection
-          and confidentiality of your data very seriously. With the following
-          privacy policy (hereinafter: “Privacy Policy”), #gesundZusammen is
-          informing you about the collection, use and processing of personal
-          data when using #gesundZusammen’s website{" "}
-          <Link href="https://gesund-zusammen.de">
-            https://gesund-zusammen.de
-          </Link>{" "}
-          (hereinafter: “Website”) and #gesundZusammen’s newsletter (jointly:
-          “Services”).
+        <Typography variant="h2" id="section1">
+          Einleitung und allgemeine Angaben
         </Typography>
         <Typography variant="body1">
-          Unless explicitly defined otherwise in this Privacy Policy, used terms
-          shall have the meaning ascribed to them in Art. 4 of the Regulation
-          (EU) 2016/679 of the European Parliament and of the Council of 27
-          April 2016 on the protection of natural persons with regard to the
-          processing of personal data and on the free movement of such data, and
-          repealing Directive 95/46/EC (General Data Protection Regulation,
-          hereinafter: “GDPR”). In accordance with Art. 4 no. 1 GDPR, personal
-          data means all detailed information about personal or factual
-          circumstances of a specific or identifiable natural person, such as
-          e.g. your name, your telephone number or your address.
+          Vielen Dank für Ihr Interesse an unserer Website. Der Schutz Ihrer personenbezogenen Daten ist uns ein sehr wichtiges Anliegen. Im Folgenden finden Sie Informationen zum Umgang mit Ihren Daten, die durch Ihre Nutzung unserer Website erfasst werden. Die Verarbeitung Ihrer Daten erfolgt entsprechend den gesetzlichen Regelungen zum Datenschutz.
+        </Typography>
+        <Typography variant="h2" id="section1">
+          Verantwortlicher im Sinne der DSGVO
         </Typography>
         <Typography variant="body1">
-          You can access this Privacy Policy at any time on our Website at{" "}
-          <Link href="https://gesund-zusammen.de/privacy">
-            https://gesund-zusammen.de/privacy
-          </Link>
+          finleap GmbH<br />
+          Hardenbergerstraße 32<br />
+          10623 Berlin<br />
+          media@gesund-zusammen.de<br />
+          +49 (0) 30 609865290
         </Typography>
+        <Typography variant="h2" id="section1">
+          Kontaktdaten des Datenschutzbeauftragten
+        </Typography>
+        <Typography variant="body1">
+          Firmenname<br />
+          Anschrift (Straße, Hausnummer, PLZ, Ort)<br />
+          E-Mail-Adresse<br />
+          Telefonnummer<br />
+        </Typography>
+        <Typography variant="h2" id="section1">
+          Begriffsbestimmungen
+        </Typography>
+        <Typography variant="body1">
+          Unsere Datenschutzerklärung soll für jedermann einfach und verständlich sein. In dieser Datenschutzerklärung werden in der Regel die offiziellen Begriffe der Datenschutzgrundverordnung (DSGVO) verwendet. Die offiziellen Begriffsbestimmungen werden in Art. 4 DSGVO erläutert.
+        </Typography>
+        <Typography variant="h2" id="section1">
+          Server-Logfiles
+        </Typography>
+        <Typography variant="body1">
+          Wenn Sie unsere Website aufrufen, ist es technisch notwendig, dass über Ihren Internetbrowser Daten an unseren Webserver übermittelt werden. Folgende Daten werden während einer laufenden Verbindung zur Kommunikation zwischen Ihrem Internetbrowser und unserem Webserver aufgezeichnet:
+          <br /><br />
+          •	Datum und Uhrzeit der Anforderung<br />
+          •	Name der angeforderten Datei<br />
+          •	Seite, von der aus die Datei angefordert wurde<br />
+          •	Zugriffsstatus<br />
+          •	Verwendeter Webbrowser und verwendetes Betriebssystem<br />
+          •	(Vollständige) IP-Adresse des anfordernden Rechners<br />
+          •	Übertragene Datenmenge<br />
+          <br />
+          Die aufgelisteten Daten erheben wir, um einen reibungslosen Verbindungsaufbau der Website zu gewährleisten und eine komfortable Nutzung unserer Website durch die Nutzer zu ermöglichen. Zudem dient die Logdatei der Auswertung der Systemsicherheit und -stabilität sowie administrativen Zwecken. Rechtsgrundlage für die vorübergehende Speicherung der Daten bzw. der Logfiles ist Art. 6 Abs. 1 lit. f DSGVO.
+        </Typography>
+        <Typography variant="h2" id="section1">
+          Cookies
+        </Typography>
+        <Typography variant="body1">
+          Unsere Internetseite verwendet sogenannte „Cookies“. Cookies sind kleine Textdateien, die entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert werden. Session-Cookies werden nach Ende Ihres Besuchs automatisch gelöscht. Permanente Cookies bleiben auf Ihrem Endgerät gespeichert bis Sie diese selbst löschen oder eine automatische Lösung durch Ihren Webbrowser erfolgt.
+          <br />
+          Cookies haben verschiedene Funktionen. Zahlreiche Cookies sind technisch notwendig, da bestimmte Webseitenfunktionen ohne diese nicht funktionieren würden (z.B. die Warenkorbfunktion oder Spracheinstellungen). Andere Cookies dienen dazu, das Nutzerverhalten auszuwerten oder Werbung anzuzeigen.
+          <br />
+          Technisch notwendige Cookies werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert. Wir haben ein berechtigtes Interesse an der Speicherung von Cookies zur technisch fehlerfreien und optimierten Bereitstellung unserer Dienste. Andere Cookies werden nur mit Ihrer Einwilligung auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO gespeichert. Die Einwilligung ist jederzeit für die Zukunft widerrufbar. Die Rechtsgrundlage kann sich auch aus Art. 6 Abs. 1 lit. b DSGVO ergeben, falls die Verarbeitung für die Erfüllung eines Vertrags, dessen Vertragspartei die betroffene Person ist, oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist, die auf Anfrage der betroffenen Person erfolgen.
+          <br /><br />
+          Soweit Cookies zu Analysezwecken eingesetzt werden, werden wir Sie hierüber im Rahmen dieser Datenschutzerklärung gesondert informieren und eine Einwilligung einholen.
+          <br /><br />
+          Sie können es direkt über unsere <Link href="#uc-central-modal-show">Cookie Settings</Link> oder Ihren Browser so einstellen, dass Sie
+          <br />
+          •	über das Setzen von Cookies informiert werden,<br />
+          •	Cookies nur im Einzelfall erlauben,<br />
+          •	die Annahme von Cookies für bestimmte Fälle oder generell ausschließen,<br />
+          •	das automatische Löschen der Cookies beim Schließen des Browsers aktivieren.<br />
+          <br />
+          Die Cookie-Einstellungen können unter den folgenden Links für die jeweiligen Browser verwaltet werden:
+          <br /><br />
+          •	<Link href="http://support.google.com/chrome/bin/answer.py?hl=de&hlrm=en&answer=95647">Google Chrome</Link><br />
+          •	<Link href="https://support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen">Mozilla Firefox</Link><br />
+          •	<Link href="http://windows.microsoft.com/de-DE/windows-vista/Block-or-allow-cookies">Edge (Microsoft)</Link><br />
+          •	<Link href="https://support.apple.com/de-de/guide/safari/sfri11471/mac">Safari</Link><br />
+          •	<Link href="https://help.opera.com/en/latest/web-preferences/#cookies">Opera</Link><br />
+          <br />
+          Sie können Cookies vieler Unternehmen und Funktionen, die für Werbung eingesetzt werden, auch einzeln verwalten. Verwenden Sie dazu die entsprechenden Nutzer-Tools, abrufbar unter <Link href="https://www.aboutads.info/choices/">https://www.aboutads.info/choices/</Link> oder <Link href="http://www.youronlinechoices.com/uk/your-ad-choices">http://www.youronlinechoices.com/uk/your-ad-choices</Link>.<br />
+          Die meisten Browser bieten zudem eine sog. „Do-Not-Track-Funktion“ an. Wenn diese Funktion aktiviert ist, teilt der jeweilige Browser Werbenetzwerken, Websites und Anwendungen mit, dass Sie nicht zwecks verhaltensbasierter Werbung und Ähnlichem „verfolgt“ werden möchten.<br /><br />
+          Informationen und Anleitungen, wie Sie diese Funktion bearbeiten können, erhalten Sie je nach Anbieter Ihres Browsers, unter den nachfolgenden Links:
+          <br /><br />
+          •	<Link href="https://support.google.com/chrome/answer/2790761?co=GENIE.Platform%3DDesktop&hl=de">Google Chrome</Link><br />
+          •	<Link href="https://www.mozilla.org/de/firefox/dnt/">Mozilla Firefox</Link><br />
+          •	<Link href="https://support.microsoft.com/de-de/help/17288/windows-internet-explorer-11-use-do-not-track">Edge (Microsoft)</Link><br />
+          •	<Link href="https://support.apple.com/de-de/guide/safari/sfri40732/13.0/mac/10.15">Safari</Link><br />
+          •	<Link href="http://help.opera.com/Windows/12.10/de/notrack.html">Opera</Link><br />
+          <br />
+          Zusätzlich können Sie standardmäßig das Laden sog. Scripts verhindern. „NoScript“ erlaubt das Ausführen von JavaScripts, Java und anderen Plug-ins nur bei vertrauenswürdigen Domains Ihrer Wahl. Informationen und Anleitungen, wie Sie diese Funktion bearbeiten können, erhalten Sie über den Anbieter Ihres Browsers (z. B. für Mozilla Firefox unter: <Link href="https://addons.mozilla.org/de/firefox/addon/noscript/">https://addons.mozilla.org/de/firefox/addon/noscript/</Link>).
+          <br /><br />Bitte beachten Sie, dass bei der Deaktivierung von Cookies die Funktionalität unserer Website eingeschränkt sein kann.
+        </Typography>
+        <Typography variant="h2" id="section1">
+          Kontaktformular und Kontaktaufnahme per E-Mail
+        </Typography>
+        <Typography variant="body1">
+          Wenn Sie uns per Kontaktformular oder E-Mail-Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular bzw. Ihrer E-Mail inklusive der von Ihnen dort angegebenen Vor- und Nachname, Anrede, Postanschrift zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Die Angabe einer E-Mail-Adresse ist zur Kontaktangabe erforderlich, die Angabe Ihres Namens sowie Ihrer Telefonnummer ist freiwillig. Diese Daten geben wir in keinem Fall ohne Ihre Einwilligung weiter. Rechtsgrundlage für die Verarbeitung der Daten ist unser berechtigtes Interesse an der Beantwortung Ihres Anliegens gemäß Art. 6 Abs. 1 lit. f DSGVO sowie ggf. Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage auf den Abschluss eines Vertrages abzielt. Ihre Daten werden nach abschließender Bearbeitung Ihrer Anfrage gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen. Sie können im Falle von Art. 6 Abs. 1 lit. f DSGVO gegen die Verarbeitung Ihrer personenbezogenen Daten jederzeit Widerspruch einlegen.
+        </Typography>
+        <Typography variant="h2" id="section1">
+          Google Analytics
+        </Typography>
+        <Typography variant="body1">
+          Unsere Website benutzt Google Analytics, einen Webanalysedienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. („Google“). Google Analytics verwendet sogenannte Cookies. Das sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch das Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Wir setzen Google Analytics nur mit aktivierter IP-Anonymisierung ein. Das bedeutet, die IP-Adresse der Nutzer wird von Google innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum gekürzt, wodurch eine Personenbeziehbarkeit ausgeschlossen werden kann. Google ist für das US-europäische Datenschutzübereinkommen „Privacy Shield“ zertifiziert, welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.
+          Soweit Sie hierzu Ihre Einwilligung nach Art. 6 Abs. 1 S. 1 lit. a DSGVO erteilt haben, erfolgt die Verarbeitung auf dieser Website zum Zweck der Websiteanalyse.
+          Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. Die Nutzungsbedingungen von Google Analytics und Informationen zum Datenschutz können über die folgenden Links abgerufen werden: http://www.google.com/analytics/terms/de.html sowie unter https://www.google.de/intl/de/policies/.
+          <br />
+          Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem Sie das unter der URL https://tools.google.com/dlpage/gaoptout?hl=de verfügbare Browser-Plug-in herunterladen und installieren.
+          <br />
+          Ein Klick auf folgenden Link verhindert die Erfassung durch Google Analytics, indem ein sogenanntes Opt-out-Cookie gesetzt wird: Deaktivierung von Google Analytics
+          <br />
+        </Typography>
+
+
+
+
+
+
+
         <Typography variant="h2" id="section1">
           1. Identity and Contact Details of the Controller and the Data
           Protection Officer
