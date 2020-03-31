@@ -114,6 +114,12 @@ const CategoryChip: AnyStyledComponent = styled(Chip)`
     border: 1px solid #0a6eaa;
     margin: 0 1rem 1rem 0;
 
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-color: #003269 !important;
+    }
+
     &.selected {
       color: #ffffff;
       background: #0a6eaa;
