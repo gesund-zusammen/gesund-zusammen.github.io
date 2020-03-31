@@ -26,6 +26,7 @@ import LogoTier from "../../images/partners/tier.svg";
 import LogoTwoBirds from "../../images/partners/twobirds.png";
 import LogoReedSmith from "../../images/partners/reedsmith.svg";
 import LogoGlobalCitizen from "../../images/partners/globalcitizen.svg";
+import LogoCMSLaw from "../../images/partners/cmslaw.svg";
 
 interface IPartnersProps {
   lang: "de" | "en";
@@ -169,6 +170,12 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               color="#3d3c3c"
               nameColorInverted={true}
             ></PartnerCard>
+            <PartnerCard
+              name="CMS"
+              image={LogoCMSLaw}
+              link="https://cms.law/"
+            ></PartnerCard>
+
           </Grid>
         </Box>
         <Box paddingBottom={4} marginTop={4}>
