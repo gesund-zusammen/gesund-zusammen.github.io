@@ -18,7 +18,7 @@
       "slug": "infection_tracking_dashboards",
       "name": {
         "en": "Infection Tracking Dashboards",
-        "de": "Dashboards mit Infektionszahlen"
+        "de": "Infektions Verfolgung"
       }
     },
     {
@@ -60,6 +60,36 @@
         "en": "Aktuelle Zahlen der Infektionen und Corona-Online-Test"
       },
       "global": false
+    },
+    {
+      "name": "Covid Charite Questionnaire App",
+      "link": "https://covapp.charite.de/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Handlungsempfehlungen basierend auf einem Fragekatalog",
+        "en": "The CovApp is software developed by Charité in cooperation with Data4Life."
+      },
+      "global": false
+    },
+    {
+      "name": "Selfapy",
+      "link": "https://www.selfapy.de/",
+      "category": "digital_consultation",
+      "description": {
+        "de": "Soforthilfe bei psychischen Belastungen.",
+        "en": "Provides psychological support in stressful situations like the CoronaVirus via communication with qualified psychologists."
+      },
+      "global": true
+    },
+    {
+      "name": "Robert Koch Institute Case numbers in Germany and worldwide",
+      "link": "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html",
+      "category": "infection_tracking_dashboards",
+      "description": {
+        "de": "Deutschland & weltweit: Verfolgung der COVID-19 Infektionen",
+        "en": "Infection tracking in Germany and worldwide."
+      },
+      "global": true
     }
   ]
 }
