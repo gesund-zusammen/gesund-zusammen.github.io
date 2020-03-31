@@ -31,7 +31,7 @@ import LogoSKWSchwarz from "../../images/partners/skwschwarz.jpg";
 import LogoBCGDV from "../../images/partners/bcgdv.svg";
 import LogoDoctorly from "../../images/partners/doctorly.png";
 import LogoFischerAppelt from "../../images/partners/fischerappelt.jpg";
-import LogoDeloitte from "../../images/partners/deloitte.svg";
+import LogoDeloitte from "../../images/partners/deloitte.jpg";
 
 interface IPartnersProps {
   lang: "de" | "en";
@@ -170,8 +170,6 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="Deloitte"
               image={LogoDeloitte}
               link="https://www2.deloitte.com/"
-              color="black"
-              nameColorInverted={true}
             ></PartnerCard>
             <PartnerCard
               name="UserCentrics"
