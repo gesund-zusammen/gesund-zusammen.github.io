@@ -2,8 +2,7 @@
   "de": {
     "header": {
       "nav": {
-        "initiatives": "Initiatives",
-        "projects": "Projekte",
+        "initiatives": "Die Initiative",
         "supporters": "Partner",
         "faqs": "Haben Sie Fragen?"
       },
@@ -52,9 +51,18 @@
       "title": "Sie haben Fragen?",
       "button": "FAQs",
       "content": [
-        { "title": "Über Uns", "content": "Wir sind eine breite Allianz deutscher Tech-Unternehmen, wollen Gesellschaft, Politik und Wirtschaft aktiv dabei helfen, COVID-19 mit digitalen Lösungen einzudämmen. Dafür bauen wir auf eine der wichtigsten Ressourcen, die der Welt heute zur Verfügung steht: Information." },
-        { "title": "Wieso Gesund-Zusammen?", "content": "Wir bringen die Ressourcen der Digital Wirtschaft zusammen - um aktiv unseren Beitrag zu leisten." },
-        { "title": "Was wollt ihr erreichen?", "content": "Daten ermöglichen es uns, gemeinsam zu forschen, Menschen zu warnen, Leben zu retten. Und doch ist eine flächendeckende Datennutzung nicht risikolos: Angesichts der Krise mehren sich die Stimmen, Grundrechte zum Wohle der Gesundheit zu opfern. Gemeinsam werden wir den Beweis erbringen: Wir können beides haben – Infektionsschutz und Datenschutz." },
+        {
+          "title": "Über Uns",
+          "content": "Wir sind eine breite Allianz deutscher Tech-Unternehmen, wollen Gesellschaft, Politik und Wirtschaft aktiv dabei helfen, COVID-19 mit digitalen Lösungen einzudämmen. Dafür bauen wir auf eine der wichtigsten Ressourcen, die der Welt heute zur Verfügung steht: Information."
+        },
+        {
+          "title": "Wieso Gesund-Zusammen?",
+          "content": "Wir bringen die Ressourcen der Digital Wirtschaft zusammen - um aktiv unseren Beitrag zu leisten."
+        },
+        {
+          "title": "Was wollt ihr erreichen?",
+          "content": "Daten ermöglichen es uns, gemeinsam zu forschen, Menschen zu warnen, Leben zu retten. Und doch ist eine flächendeckende Datennutzung nicht risikolos: Angesichts der Krise mehren sich die Stimmen, Grundrechte zum Wohle der Gesundheit zu opfern. Gemeinsam werden wir den Beweis erbringen: Wir können beides haben – Infektionsschutz und Datenschutz."
+        },
         {
           "title": "Sucht ihr nach weiteren Partner?",
           "content": "Wir sind immer offen für weitere Partner um die Mission nach vorne zu bringen."
@@ -98,8 +106,7 @@
   "en": {
     "header": {
       "nav": {
-        "initiatives": "Initiatives",
-        "projects": "Projects",
+        "initiatives": "The Initiative",
         "supporters": "Partners",
         "faqs": "FAQs"
       },
@@ -148,9 +155,18 @@
       "title": "Sie haben Fragen?",
       "button": "FAQs",
       "content": [
-        { "title": "Über Uns", "content": "Wir sind eine breite Allianz deutscher Tech-Unternehmen, wollen Gesellschaft, Politik und Wirtschaft aktiv dabei helfen, COVID-19 mit digitalen Lösungen einzudämmen. Dafür bauen wir auf eine der wichtigsten Ressourcen, die der Welt heute zur Verfügung steht: Information." },
-        { "title": "Wieso Gesund-Zusammen?", "content": "Wir bringen die Ressourcen der Digital Wirtschaft zusammen - um aktiv unseren Beitrag zu leisten." },
-        { "title": "Was wollt ihr erreichen?", "content": "Daten ermöglichen es uns, gemeinsam zu forschen, Menschen zu warnen, Leben zu retten. Und doch ist eine flächendeckende Datennutzung nicht risikolos: Angesichts der Krise mehren sich die Stimmen, Grundrechte zum Wohle der Gesundheit zu opfern. Gemeinsam werden wir den Beweis erbringen: Wir können beides haben – Infektionsschutz und Datenschutz." },
+        {
+          "title": "Über Uns",
+          "content": "Wir sind eine breite Allianz deutscher Tech-Unternehmen, wollen Gesellschaft, Politik und Wirtschaft aktiv dabei helfen, COVID-19 mit digitalen Lösungen einzudämmen. Dafür bauen wir auf eine der wichtigsten Ressourcen, die der Welt heute zur Verfügung steht: Information."
+        },
+        {
+          "title": "Wieso Gesund-Zusammen?",
+          "content": "Wir bringen die Ressourcen der Digital Wirtschaft zusammen - um aktiv unseren Beitrag zu leisten."
+        },
+        {
+          "title": "Was wollt ihr erreichen?",
+          "content": "Daten ermöglichen es uns, gemeinsam zu forschen, Menschen zu warnen, Leben zu retten. Und doch ist eine flächendeckende Datennutzung nicht risikolos: Angesichts der Krise mehren sich die Stimmen, Grundrechte zum Wohle der Gesundheit zu opfern. Gemeinsam werden wir den Beweis erbringen: Wir können beides haben – Infektionsschutz und Datenschutz."
+        },
         {
           "title": "Sucht ihr nach weiteren Partner?",
           "content": "Wir sind immer offen für weitere Partner um die Mission nach vorne zu bringen."
