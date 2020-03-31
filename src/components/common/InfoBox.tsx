@@ -41,10 +41,10 @@ const StyledCard: AnyStyledComponent = styled(Card)`
 
 const StyledCardContent: AnyStyledComponent = styled(CardContent)`
   && {
-    padding: 20px;
+    padding: 0.5rem 1.5rem;
 
     &:last-child {
-      padding-bottom: 30px;
+      padding-bottom: padding: 0.5rem 1.5rem;
     }
   }
 `;

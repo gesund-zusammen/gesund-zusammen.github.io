@@ -29,7 +29,7 @@ class LandingHeader extends React.PureComponent<ILandingHeaderProps, {}> {
         </Box>
         <Box paddingBottom={4} marginTop={4}>
           <Grid container spacing={4}>
-            <Grid item xs={12} sm={5}>
+            <Grid item xs={12} sm={6}>
               <HeaderContent>
                 <Typography variant="h1" style={{ fontFamily: "inherit" }}>
                   {translated(this.props.lang).header.title}
@@ -61,8 +61,12 @@ class LandingHeader extends React.PureComponent<ILandingHeaderProps, {}> {
 }
 
 const HeaderContent: AnyStyledComponent = styled.div`
+  text-align: center;
+
   @media (min-width: 600px) {
+    text-align: left;
     margin: 4rem 0 6rem 0;
+    padding-right: 4rem;
   }
 `;
 

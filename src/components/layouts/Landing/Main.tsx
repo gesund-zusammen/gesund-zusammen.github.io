@@ -42,7 +42,7 @@ class LayoutLanding extends React.Component<ILayoutLandingProps, {}> {
 const HeaderWrapper: AnyStyledComponent = styled(Box)`
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   color: #ffffff;
-  padding: 0 0 12rem 0;
+  padding: 0 0 6rem 0;
   background-image: url(${BgHeader});
   background-position: bottom center;
   background-repeat: no-repeat;

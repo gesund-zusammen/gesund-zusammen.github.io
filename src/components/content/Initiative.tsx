@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Grid, Typography } from "@material-ui/core";
-import styled, { AnyStyledComponent } from "styled-components";
 
 import { translated } from "../../util";
 
@@ -17,14 +16,13 @@ class Initiative extends React.Component<IInitiativeProps, {}> {
         <Typography variant="h2">
           {translated(this.props.lang).main.title}
         </Typography>
-        <StyledContent variant="body1">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: translated(this.props.lang).main.content,
-            }}
-          />
-        </StyledContent>
-        <Box marginTop={2}>
+        <Typography
+          variant="body1"
+          dangerouslySetInnerHTML={{
+            __html: translated(this.props.lang).main.content,
+          }}
+        ></Typography>
+        <Box marginTop={4}>
           <Grid container spacing={4}>
             <InfoBox
               title={translated(this.props.lang).boxes.initiative.title}
@@ -44,12 +42,5 @@ class Initiative extends React.Component<IInitiativeProps, {}> {
     );
   };
 }
-
-const StyledContent: AnyStyledComponent = styled(Typography)`
-  @media (min-width: 600px) {
-    column-count: 1;
-    column-gap: 1.6rem;
-  }
-`;
 
 export default Initiative;
