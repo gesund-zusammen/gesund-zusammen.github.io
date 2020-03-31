@@ -31,10 +31,12 @@ interface IInitiativeProps {
 
 interface IInitiativeState {
   selectedCategory: string | undefined;
+  globalSelected: boolean;
 }
 
 const DEFAULT_STATE: IInitiativeState = {
   selectedCategory: undefined,
+  globalSelected: false,
 };
 
 class Initiative extends React.Component<IInitiativeProps, IInitiativeState> {
@@ -86,34 +88,61 @@ class Initiative extends React.Component<IInitiativeProps, IInitiativeState> {
     this.setState({ selectedCategory: categorySlug });
   };
 
+  handleRegionClick = (global: boolean) => {
+    this.setState({ globalSelected: global });
+  };
+
   render = () => {
     return (
       <Box paddingBottom={4}>
         <Typography variant="h3">Filter by</Typography>
         <Box id="initiatives-filter">
-          <CategoryChip
-            variant="outlined"
-            className={this.state.selectedCategory === undefined && "selected"}
-            key="all"
-            label={`All (${this.categoryInitiativesCount.all})`}
-            onClick={() => this.handleChipClick(undefined)}
-          ></CategoryChip>
-          {this.getCategories().map(category => (
+          <Box id="categories-filter">
             <CategoryChip
               variant="outlined"
               className={
-                this.state.selectedCategory === category.slug && "selected"
+                this.state.selectedCategory === undefined && "selected"
               }
-              key={category.slug}
-              label={`${category.name[this.props.lang]} (${
-                this.categoryInitiativesCount[category.slug]
-              })`}
-              onClick={() => this.handleChipClick(category.slug)}
+              key="all"
+              label={`All (${this.categoryInitiativesCount.all})`}
+              onClick={() => this.handleChipClick(undefined)}
             ></CategoryChip>
-          ))}
+            {this.getCategories().map(category => (
+              <CategoryChip
+                variant="outlined"
+                className={
+                  this.state.selectedCategory === category.slug && "selected"
+                }
+                key={category.slug}
+                label={`${category.name[this.props.lang]} (${
+                  this.categoryInitiativesCount[category.slug]
+                })`}
+                onClick={() => this.handleChipClick(category.slug)}
+              ></CategoryChip>
+            ))}
+          </Box>
+          <Box id="region-filter" paddingBottom={4} marginTop={4}>
+            <RegionSelect
+              variant="body2"
+              onClick={() => this.handleRegionClick(false)}
+              className={this.state.globalSelected === false ? "selected" : ""}
+            >
+              In Germany
+            </RegionSelect>
+            <RegionSelect
+              variant="body2"
+              onClick={() => this.handleRegionClick(true)}
+              className={this.state.globalSelected === true ? "selected" : ""}
+            >
+              Worldwide
+            </RegionSelect>
+          </Box>
         </Box>
         <Box id="initiatives-list" paddingBottom={4} marginTop={4}>
-          {this.getInitiatives(this.state.selectedCategory).map(initiative => (
+          {this.getInitiatives(
+            this.state.selectedCategory,
+            this.state.globalSelected,
+          ).map(initiative => (
             <InitiativeCardWrapper
               key={initiative.link}
               href={initiative.link}
@@ -163,6 +192,27 @@ const CategoryChip: AnyStyledComponent = styled(Chip)`
   }
 `;
 
+const RegionSelect: AnyStyledComponent = styled(Typography)`
+  && {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    color: #0a6eaa;
+    width: 50%;
+    padding: 0.5rem 0;
+    cursor: pointer;
+
+    &.selected {
+      border-bottom: 2px solid #0a6eaa;
+    }
+
+    @media (min-width: 600px) {
+      width: auto;
+      padding: 0.5rem 3rem;
+    }
+  }
+`;
+
 const InitiativeCardWrapper: AnyStyledComponent = styled.a`
   text-decoration: none;
 `;
@@ -181,7 +231,9 @@ const InitiativeCard: AnyStyledComponent = styled(Card)`
 
 const InitiativeCardTitle: AnyStyledComponent = styled(Typography)`
   && {
-    margin-bottom: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+    line-height: 1.4;
   }
 `;
 
