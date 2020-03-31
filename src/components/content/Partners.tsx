@@ -34,7 +34,7 @@ import LogoFischerAppelt from "../../images/partners/fischerappelt.jpg";
 import LogoDeloitte from "../../images/partners/deloitte.jpg";
 import LogoMyData from "../../images/partners/mydata.png";
 import LogoFreiraum from "../../images/partners/freiraum.jpg";
-import LogoStoryMachine from "../../images/partners/storymachine.ong";
+import LogoStoryMachine from "../../images/partners/storymachine.png";
 
 interface IPartnersProps {
   lang: "de" | "en";
