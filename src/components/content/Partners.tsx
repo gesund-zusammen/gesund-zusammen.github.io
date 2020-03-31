@@ -123,11 +123,6 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.personio.de/"
             ></PartnerCard>
             <PartnerCard
-              name="Mister Spex"
-              image={LogoMrSpex}
-              link="https://www.misterspex.de/"
-            ></PartnerCard>
-            <PartnerCard
               name="OneFootbal"
               image={LogoOneFootball}
               link="https://onefootball.com/"
