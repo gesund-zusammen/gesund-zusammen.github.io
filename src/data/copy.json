@@ -86,7 +86,8 @@
       "nav": {
         "privacy": "Datenschutzerklärung",
         "vulnerability": "Schwachstelle melden",
-        "imprint": "Impressum"
+        "imprint": "Impressum",
+        "press": "Presse & Kontakt"
       }
     }
   },
@@ -177,7 +178,8 @@
       "nav": {
         "privacy": "Privacy Policy",
         "vulnerability": "Report Vulnerability",
-        "imprint": "Imprint"
+        "imprint": "Imprint",
+        "press": "Press & Contact"
       }
     }
   }
