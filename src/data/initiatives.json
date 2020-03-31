@@ -58,7 +58,8 @@
       "description": {
         "de": "Coronavirus in Germany: Corona Online Test and Current Number of Infections",
         "en": "Aktuelle Zahlen der Infektionen und Corona-Online-Test"
-      }
+      },
+      "global": false
     }
   ]
 }
