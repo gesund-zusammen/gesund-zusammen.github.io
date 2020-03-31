@@ -57,20 +57,26 @@ const PartnerCardContent: AnyStyledComponent = styled.div`
   height: 100%;
   background-size: 80% auto;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 50% 40%;
 `;
 
 const PartnerName: AnyStyledComponent = styled(Typography)`
-  position: absolute;
-  bottom: 1rem;
-  left: 0;
-  right: 0;
-  color: #003269;
-  font-size: 1.2rem;
-  font-weight: normal;
+  && {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    color: #003269;
+    font-size: 1rem;
+    font-weight: normal;
 
-  &.inverted {
-    color: #ffffff;
+    &.inverted {
+      color: #ffffff;
+    }
+
+    @media (min-width: 600px) {
+      font-size: 1.2rem;
+    }
   }
 `;
 
