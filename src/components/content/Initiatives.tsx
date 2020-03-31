@@ -97,7 +97,9 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
   render = () => {
     return (
       <Box paddingBottom={4}>
-        <Typography variant="h3">Filter by</Typography>
+        <Typography variant="h3">
+          {translated(this.props.lang).initiative.filter.filterBy}
+        </Typography>
         <Box id="initiatives-filter">
           <Box id="categories-filter">
             <CategoryChip

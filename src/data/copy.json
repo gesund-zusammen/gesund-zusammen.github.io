@@ -42,6 +42,7 @@
     },
     "initiatives": {
       "filter": {
+        "filterBy": "Filtern",
         "all": "Alle",
         "global": "Weltweit",
         "germany": "In Deutschland"
@@ -129,6 +130,7 @@
     },
     "initiatives": {
       "filter": {
+        "filterBy": "Filtern",
         "all": "All",
         "global": "Worldwide",
         "germany": "In Germany"
