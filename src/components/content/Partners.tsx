@@ -117,7 +117,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.personio.de/"
             ></PartnerCard>
             <PartnerCard
-              name="MrSpex"
+              name="Mister Spex"
               image={LogoMrSpex}
               link="https://www.misterspex.de/"
             ></PartnerCard>
@@ -132,7 +132,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://ioniq.com/"
             ></PartnerCard>
             <PartnerCard
-              name="Tier"
+              name="Tier Mobility"
               image={LogoTier}
               link="https://ww.tier.app/"
             ></PartnerCard>
