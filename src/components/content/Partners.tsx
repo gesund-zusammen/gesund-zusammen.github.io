@@ -32,6 +32,7 @@ import LogoBCGDV from "../../images/partners/bcgdv.svg";
 import LogoDoctorly from "../../images/partners/doctorly.png";
 import LogoFischerAppelt from "../../images/partners/fischerappelt.jpg";
 import LogoDeloitte from "../../images/partners/deloitte.jpg";
+import LogoMyData from "../../images/partners/mydata.png";
 
 interface IPartnersProps {
   lang: "de" | "en";
@@ -170,6 +171,11 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="Deloitte"
               image={LogoDeloitte}
               link="https://www2.deloitte.com/"
+            ></PartnerCard>
+            <PartnerCard
+              name="MyData"
+              image={LogoMyData}
+              link="https://mydata.org/"
             ></PartnerCard>
             <PartnerCard
               name="UserCentrics"
