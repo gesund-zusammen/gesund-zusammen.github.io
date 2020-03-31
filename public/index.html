@@ -50,22 +50,19 @@
     <script
       type="text/plain"
       src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
-      onload="mailchimp()"
       data-dojo-config="usePlainJson: true, isDebug: false"
       data-usercentrics="Mailchimp"
     ></script>
 
     <script type="text/plain" data-usercentrics="Mailchimp">
-      function mailchimp() {
-        window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
-          L.start({
-            baseUrl: "mc.us19.list-manage.com",
-            uuid: "cad2329661c2775d063e682dc",
-            lid: "33fca6067e",
-            uniqueMethods: true,
-          });
+      window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
+        L.start({
+          baseUrl: "mc.us19.list-manage.com",
+          uuid: "cad2329661c2775d063e682dc",
+          lid: "33fca6067e",
+          uniqueMethods: true,
         });
-      }
+      });
     </script>
 
     <link
