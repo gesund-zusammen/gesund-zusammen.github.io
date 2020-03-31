@@ -473,8 +473,8 @@ class PrivacyPolicy extends React.PureComponent {
           We reserve the right to amend this Privacy Policy at any time to the
           extent legally possible. The current version of our Privacy Policy is
           always available at{" "}
-          <Link href="https://gesund-zusammen.de/privacy-policy.html">
-            https://gesund-zusammen.de/privacy-policy.html
+          <Link href="https://gesund-zusammen.de/privacy">
+            https://gesund-zusammen.de/privacy
           </Link>
           .
         </Typography>
