@@ -106,9 +106,9 @@ class Initiative extends React.Component<IInitiativeProps, IInitiativeState> {
                 this.state.selectedCategory === undefined && "selected"
               }
               key="all"
-              label={`${
-                translated(this.props.lang).initiative.filter.global
-              } (${this.categoryInitiativesCount.all})`}
+              label={`${translated(this.props.lang).initiative.filter.all} (${
+                this.categoryInitiativesCount.all
+              })`}
               onClick={() => this.handleChipClick(undefined)}
             ></CategoryChip>
             {this.getCategories().map(category => (
