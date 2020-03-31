@@ -698,6 +698,76 @@
         "en": "A remote monitoring platform for homebound patients with COVID-19, hospitalising only those with severe symptoms."
       },
       "global": true
+    },
+    {
+      "name": "Deutsche Zentrum für Infektionsforschung (DZIF)",
+      "link": "https://www.dzif.de/de/coronavirus-forscher-im-dzif-nutzen-die-ueberholspur",
+      "category": "research_and_government_sites",
+      "description": {
+        "de": "Das Deutsche Zentrum für Infektionsforschung (DZIF) arbeitet an der Entwicklung von Medikamente, Impfstoffe und Testmethoden zu entwickeln, um das SARS-Coronavirus-2 zu bekämpfen.",
+        "en": "The German Centre for Infection Research (DZIF) is working on the development of drugs, vaccines and test methods to combat the SARS coronavirus-2."
+      },
+      "global": false
+    },
+    {
+      "name": "John Hopkins Universität",
+      "link": "https://coronavirus.jhu.edu/",
+      "category": "research_and_government_sites",
+      "description": {
+        "de": "Die Experten der Johns Hopkins Universität sind in den Bereichen der globalen öffentlichen Gesundheit, Infektionskrankheiten und Notfallvorsorge auf COVID-19 an vorderster Front.",
+        "en": "Johns Hopkins experts in global public health, infectious disease, and emergency preparedness have been at the forefront of the international response to COVID-19."
+      },
+      "global": true
+    },
+    {
+      "name": "The Lancet: Covid-19 Resource Centre",
+      "link": "https://www.thelancet.com/coronavirus",
+      "category": "knowledge_resources",
+      "description": {
+        "de": "‘The Lancet’ hat ein Coronavirus-Ressourcenzentrum eingerichtet, um neue Inhalte aus den The Lancet Journals zusammenzuführen. Alle COVID-19-Inhalte sind frei zugänglich.",
+        "en": "The Lancet has created a Coronavirus Resource Centre to bring together new content from across The Lancet journals as it is published. All of our COVID-19 content is free to access."
+      },
+      "global": true
+    },
+    {
+      "name": "Deutsche Forschungsgemeinschaft",
+      "link": "https://www.dfg.de/",
+      "category": "research_and_government_sites",
+      "description": {
+        "de": "Die Deutsche Forschungsgemeinschaft (DFG) ist die zentrale Selbstverwaltungsorganisation der Wissenschaft in Deutschland. Sie dient der Wissenschaft in all ihren Zweigen durch die Förderung von Forschungsprojekten an Hochschulen und anderen Forschungseinrichtungen.",
+        "en": "The DFG is the self-governing organisation for science and research in Germany. It serves all branches of science and the humanities. In organisational terms, the DFG is an association under private law. Its membership consists of German research universities, non-university research institutions, scientific associations and the Academies of Science and the Humanities."
+      },
+      "global": false
+    },
+    {
+      "name": "Wir wollen Helfen",
+      "link": "https://wirwollenhelfen.com/",
+      "category": "initiatives",
+      "description": {
+        "de": "Wir helfen medizinischem und pflegerischem Fachpersonal sowie Freiwilligen und Ehrenamtlichen, Krankenhäuser und Einsatzmöglichkeiten zu finden, damit in der Corona-Krise jeder, der kann und möchte, seinen Beitrag leisten kann.",
+        "en": "Wir helfen medizinischem und pflegerischem Fachpersonal sowie Freiwilligen und Ehrenamtlichen, Krankenhäuser und Einsatzmöglichkeiten zu finden, damit in der Corona-Krise jeder, der kann und möchte, seinen Beitrag leisten kann."
+      },
+      "global": true
+    },
+    {
+      "name": "Amboss - Medical Knowledge Distilled",
+      "link": "https://www.amboss.com/us/knowledge/COVID-19_(Coronavirus_disease_2019)",
+      "category": "knowledge_resources",
+      "description": {
+        "de": "Das Programm vereint Lernsoftware und Nachschlagewerk zu einer adaptiven Plattform für Ärztinnen und Ärzte – vom ersten Tag an der Uni bis über die Facharztprüfung hinaus. AMBOSS liefert aktuelles Wissen in Sekundenschnelle und trägt so seit 2012 zu einer effizienten, evidenzbasierten Gesundheitsversorgung bei. Rund um den Globus verlassen sich heute mehr als 500.000 Mediziner/innen in Beruf, Studium und Lehre auf AMBOSS.",
+        "en": "At AMBOSS, our objective is to provide global access to a holistic platform for medical students to study and prepare for medical exams. This includes those with limited access to medical education due to socio-economic factors. To meet the needs of medical students worldwide, our platform is continually growing, with regularly added Learning Cards and new subject-optimized Qbank material released weekly."
+      },
+      "global": true
+    },
+    {
+      "name": "Bundesverband Deutsche Startups e.V. - SARS-CoV-2/COVID-19: Collected Best Practices",
+      "link": "https://docs.google.com/document/d/1UKRxxg3SiOH7hBUnS8Tn81zAqoG4KcWBpSPBTpfidzk/preview",
+      "category": "knowledge_resources",
+      "description": {
+        "de": "SARS-CoV-2/COVID-19: Collected Best Practices of the German Startup Scene",
+        "en": "SARS-CoV-2/COVID-19: Collected Best Practices of the German Startup Scene"
+      },
+      "global": false
     }
   ]
 }
