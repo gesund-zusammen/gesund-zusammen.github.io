@@ -48,8 +48,12 @@ class SubPageHeader extends React.PureComponent<ISubPageHeaderProps, {}> {
 }
 
 const HeaderContent: AnyStyledComponent = styled.div`
+  text-align: center;
+
   @media (min-width: 600px) {
-    margin: 4rem 0 6rem;
+    text-align: left;
+    margin: 4rem 0 6rem 0;
+    padding-right: 4rem;
   }
 `;
 
