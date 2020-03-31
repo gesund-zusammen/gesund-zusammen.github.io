@@ -150,7 +150,7 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
             this.state.globalSelected,
           ).map(initiative => (
             <InitiativeCardWrapper
-              key={initiative.link}
+              key={`${initiative.link}_${initiative.name}`}
               href={initiative.link}
               target="_blank"
               rel="noopener noreferrer"
