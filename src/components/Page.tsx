@@ -19,6 +19,7 @@ import Imprint from "./content/Imprint";
 import IlluPrivacy from "../images/illu_privacy.svg";
 import IlluFaq from "../images/illu_faq.svg";
 import IlluPressContact from "../images/illu_presscontact.svg";
+import IlluImprint from "../images/illu_imprint.svg";
 
 interface IPageState {
   lang: "de" | "en";
@@ -107,7 +108,7 @@ class Page extends React.Component<{}, IPageState> {
               lang={this.state.lang}
               langChangeCallback={this.handleLangChange}
               title={translated(this.state.lang).footer.nav.imprint}
-              image={IlluPrivacy}
+              image={IlluImprint}
             >
               <Imprint></Imprint>
             </LayoutSubPage>
