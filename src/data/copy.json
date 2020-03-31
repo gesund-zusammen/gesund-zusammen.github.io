@@ -38,6 +38,10 @@
       "title": "Sie haben Fragen?",
       "button": "FAQs"
     },
+    "press": {
+      "title": "PR Kontakt",
+      "pageHeader": "Schreiben Sie Uns"
+    },
     "footer": {
       "title": "Teile die Initiative",
       "claim": "Erzähle deinem Netzwerk von #gesundzusammen!",
@@ -89,6 +93,10 @@
     "faq": {
       "title": "You have questions?",
       "button": "FAQs"
+    },
+    "press": {
+      "title": "Press Contact",
+      "pageHeader": "Reach out to us"
     },
     "footer": {
       "title": "Sharing is caring",

@@ -8,9 +8,13 @@ import Landing from "./content/Landing";
 import Partners from "./content/Partners";
 import Faq from "./content/Faq";
 import PrivacyPolicy from "./content/Privacy";
+import Press from "./content/Press";
 
 import IlluPrivacy from "../images/illu_privacy.svg";
 import IlluFaq from "../images/illu_faq.svg";
+import IlluPressContact from "../images/illu_presscontact.svg";
+
+import { translated } from "../util";
 
 interface IPageState {
   lang: "de" | "en";
@@ -70,6 +74,16 @@ class Page extends React.Component<{}, IPageState> {
               image={IlluPrivacy}
             >
               <PrivacyPolicy></PrivacyPolicy>
+            </LayoutSubPage>
+          </Route>
+          <Route path="/press">
+            <LayoutSubPage
+              lang={this.state.lang}
+              langChangeCallback={this.handleLangChange}
+              title={translated(this.state.lang).press.title}
+              image={IlluPressContact}
+            >
+              <Press lang={this.state.lang}></Press>
             </LayoutSubPage>
           </Route>
         </Switch>
