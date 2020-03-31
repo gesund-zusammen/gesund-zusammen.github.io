@@ -46,7 +46,7 @@ const StyledCardContent: AnyStyledComponent = styled(CardContent)`
     &:last-child {
       padding-bottom: padding: 0.5rem 1.5rem;
     }
-  }
+  } 
 `;
 
 export default InfoBox;

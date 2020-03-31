@@ -17,8 +17,6 @@ import SocialIconInvision from "../../../images/footer_icon_invision.svg";
 import SocialIconTwitter from "../../../images/footer_icon_twitter.svg";
 import SocialIconYoutube from "../../../images/footer_icon_youtube.svg";
 
-import FooterIconEmail from "../../../images/footer_icon_email.svg";
-
 interface IFooterProps {
   lang: "de" | "en";
 }
@@ -37,7 +35,7 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
     return (
       <FooterWrapper id="footer" component="footer">
         <Container maxWidth="lg">
-          <Box paddingBottom={8}>
+          <Box paddingBottom={12}>
             <Grid container spacing={8}>
               <Grid item xs={12} sm={6}>
                 <FooterContent>
@@ -129,11 +127,6 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                   <img src={SocialIconYoutube} alt="Youtube"></img>
                 </a>
               </FooterSocialIcons>
-              <FooterEmailLink>
-                <a href="mailto:media@gesund-zusammen.de">
-                  media@gesund-zusammen.de
-                </a>
-              </FooterEmailLink>
               <FooterNavItems>
                 <FooterNavAnchorItem href="https://gesund-zusammen.de/privacy-policy.html">
                   {translated(this.props.lang).footer.nav.privacy}
@@ -141,6 +134,9 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                 <FooterNavAnchorItem href="mailto:responsibledisclosure@gesund-zusammen.de">
                   {translated(this.props.lang).footer.nav.vulnerability}
                 </FooterNavAnchorItem>
+                <FooterNavLinkItem to="/press">
+                  {translated(this.props.lang).footer.nav.press}
+                </FooterNavLinkItem>
                 <FooterNavLinkItem to="/imprint">
                   {translated(this.props.lang).footer.nav.imprint}
                 </FooterNavLinkItem>
@@ -260,27 +256,6 @@ const FooterSocialIcons: AnyStyledComponent = styled.div`
   }
 `;
 
-const FooterEmailLink: AnyStyledComponent = styled.div`
-  margin: 2rem 0 0 0;
-  text-align: center;
-
-  & > a {
-    padding-left: 20px;
-    background-image: url(${FooterIconEmail});
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
-    text-decoration: none;
-  }
-
-  @media (min-width: 600px) {
-    text-align: right;
-  }
-`;
-
 const FooterNavItems: AnyStyledComponent = styled.div`
   display: inline-block;
   width: 100%;
@@ -330,7 +305,6 @@ const CopyrightNote: AnyStyledComponent = styled.p`
 
   @media (min-width: 600px) {
     text-align: left;
-    float: left;
     margin-top: 3rem;
   }
 `;

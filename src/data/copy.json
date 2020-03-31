@@ -70,6 +70,17 @@
       ],
       "contact": "Für weitere Fragen und stellvertretenden Kontakt, kontaktieren sie bitte: Solveig Rathenow <solveig.rathenow@finleap.com> "
     },
+    "press": {
+      "title": "PR Kontakt",
+      "pageHeader": "Schreiben Sie Uns",
+      "pressContactName": "Solveigh Rathenow",
+      "pressContactTitle": "Head of Venture Communications",
+      "pressContactEmail": "presse@gesund-zusammen.de",
+      "downloadLogo": "Download Logo",
+      "resources": "Pressekit",
+      "resourcesLine1": "Download the GesundZusammen logo in various formats.",
+      "resourcesLine2": "Includes EPS, JPG, and PNG formats. For digital and print."
+    },
     "footer": {
       "title": "Aufruf zum Teilen",
       "claim": "Teilen Sie #gesundzusammen in Ihrem Netzwerk",
@@ -79,7 +90,8 @@
       "nav": {
         "privacy": "Datenschutzerklärung",
         "vulnerability": "Schwachstelle melden",
-        "imprint": "Impressum"
+        "imprint": "Impressum",
+        "press": "Presse & Kontakt"
       }
     }
   },
@@ -154,6 +166,17 @@
       ],
       "contact": "Für weitere Fragen und stellvertretenden Kontakt, kontaktieren sie bitte: Solveig Rathenow <solveig.rathenow@finleap.com> "
     },
+    "press": {
+      "title": "Press Contact",
+      "pageHeader": "Reach out to us",
+      "pressContactName": "Solveigh Rathenow",
+      "pressContactTitle": "Head of Venture Communications",
+      "pressContactEmail": "presse@gesund-zusammen.de",
+      "downloadLogo": "Download Logo",
+      "resources": "Resources",
+      "resourcesLine1": "Download the GesundZusammen logo in various formats.",
+      "resourcesLine2": "Includes EPS, JPG, and PNG formats. For digital and print."
+    },
     "footer": {
       "title": "Sharing is caring",
       "claim": "Refer to your community who haven't heard about us yet. The more the faster to overcome this situation!",
@@ -163,7 +186,8 @@
       "nav": {
         "privacy": "Privacy Policy",
         "vulnerability": "Report Vulnerability",
-        "imprint": "Imprint"
+        "imprint": "Imprint",
+        "press": "Press & Contact"
       }
     }
   }
