@@ -6,7 +6,7 @@ import BecomePart from "../common/BecomePart";
 
 import LogoOmio from "../../images/partners/omio.png";
 import LogoBVDS from "../../images/partners/bvds.png";
-import LogoWefox from "../../images/partners/wefox.png";
+import LogoWefoxGroup from "../../images/partners/wefoxgroup.png";
 import LogoN26 from "../../images/partners/n26.png";
 import LogoFinleap from "../../images/partners/finleap.png";
 import LogoGetYourGuide from "../../images/partners/getyourguide.png";
@@ -53,9 +53,9 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.finleap.com"
             ></PartnerCard>
             <PartnerCard
-              name="Wefox"
-              image={LogoWefox}
-              link="https://www.wefox.de/"
+              name="Wefox Group"
+              image={LogoWefoxGroup}
+              link="https://www.wefoxgroup.com/"
             ></PartnerCard>
             <PartnerCard
               name="Via"
