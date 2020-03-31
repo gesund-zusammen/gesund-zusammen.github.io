@@ -141,7 +141,7 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                 <FooterNavAnchorItem href="mailto:responsibledisclosure@gesund-zusammen.de">
                   {translated(this.props.lang).footer.nav.vulnerability}
                 </FooterNavAnchorItem>
-                <FooterNavAnchorItem href="https://docs.google.com/document/d/1v2kkrdG3i15nlpf4unVyIYlivQI7CVGczSLNe_U7vPs">
+                <FooterNavAnchorItem href="https://docs.google.com/document/d/1aTEos6JTST6jSFTi_N5s2B8vCUZXUETfdL8jyaFTTEI">
                   {translated(this.props.lang).footer.nav.imprint}
                 </FooterNavAnchorItem>
               </FooterNavItems>
