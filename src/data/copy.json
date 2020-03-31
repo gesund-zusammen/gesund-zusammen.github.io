@@ -40,7 +40,8 @@
     },
     "press": {
       "title": "PR Kontakt",
-      "pageHeader": "Schreiben Sie Uns"
+      "pageHeader": "Schreiben Sie Uns",
+      "pressContactName": "Solveigh Rathenow"
     },
     "footer": {
       "title": "Teile die Initiative",
@@ -96,7 +97,8 @@
     },
     "press": {
       "title": "Press Contact",
-      "pageHeader": "Reach out to us"
+      "pageHeader": "Reach out to us",
+      "pressContactName": "Solveigh Rathenow"
     },
     "footer": {
       "title": "Sharing is caring",

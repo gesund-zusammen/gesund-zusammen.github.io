@@ -129,6 +129,12 @@ const theme = responsiveFontSizes(
           },
         },
       },
+      MuiAvatar: {
+        root: {
+          width: "264px",
+          height: "264px",
+        },
+      },
     },
   }),
 );
