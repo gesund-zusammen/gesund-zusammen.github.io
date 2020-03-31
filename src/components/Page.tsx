@@ -6,6 +6,12 @@ import {
   Redirect,
 } from "react-router-dom";
 import ScrollMemory from "react-router-scroll-memory";
+import i18next from "i18next";
+import {
+  I18nextProvider,
+  WithTranslationProps,
+  withTranslation,
+} from "react-i18next";
 
 import { translated } from "../util";
 
@@ -34,8 +40,8 @@ const DEFAULT_STATE: IPageState = {
   lang: "de",
 };
 
-class Page extends React.Component<{}, IPageState> {
-  constructor(props: {}) {
+class Page extends React.Component<WithTranslationProps, IPageState> {
+  constructor(props: WithTranslationProps) {
     super(props);
     this.state = DEFAULT_STATE;
   }
@@ -46,83 +52,85 @@ class Page extends React.Component<{}, IPageState> {
 
   render = () => {
     return (
-      <Router>
-        <ScrollMemory />
-        <Switch>
-          <Route exact={true} default={true} path="/">
-            <LayoutLanding
-              lang={this.state.lang}
-              langChangeCallback={this.handleLangChange}
-            >
-              <Landing lang={this.state.lang}></Landing>
-            </LayoutLanding>
-          </Route>
-          <Route path="/initiatives">
-            <LayoutInitiativePage
-              lang={this.state.lang}
-              langChangeCallback={this.handleLangChange}
-              title={translated(this.state.lang).header.nav.initiatives}
-              content={
-                translated(this.state.lang).header.content.initiatives.content
-              }
-            >
-              <Initiatives lang={this.state.lang}></Initiatives>
-            </LayoutInitiativePage>
-          </Route>
-          <Route path="/partners">
-            <LayoutSubPage
-              lang={this.state.lang}
-              langChangeCallback={this.handleLangChange}
-              title={translated(this.state.lang).header.nav.supporters}
-            >
-              <Partners lang={this.state.lang}></Partners>
-            </LayoutSubPage>
-          </Route>
-          <Route path="/faq">
-            <LayoutSubPage
-              lang={this.state.lang}
-              langChangeCallback={this.handleLangChange}
-              title={translated(this.state.lang).header.nav.faqs}
-              image={IlluFaq}
-            >
-              <Faq lang={this.state.lang}></Faq>
-            </LayoutSubPage>
-          </Route>
-          <Route path="/privacy">
-            <LayoutSubPage
-              lang={this.state.lang}
-              langChangeCallback={this.handleLangChange}
-              title={translated(this.state.lang).footer.nav.privacy}
-              image={IlluPrivacy}
-            >
-              <PrivacyPolicy></PrivacyPolicy>
-            </LayoutSubPage>
-          </Route>
-          <Route path="/press">
-            <LayoutSubPage
-              lang={this.state.lang}
-              langChangeCallback={this.handleLangChange}
-              title={translated(this.state.lang).press.title}
-              image={IlluPressContact}
-            >
-              <Press lang={this.state.lang}></Press>
-            </LayoutSubPage>
-          </Route>
-          <Route path="/imprint">
-            <LayoutSubPage
-              lang={this.state.lang}
-              langChangeCallback={this.handleLangChange}
-              title={translated(this.state.lang).footer.nav.imprint}
-              image={IlluImprint}
-            >
-              <Imprint></Imprint>
-            </LayoutSubPage>
-          </Route>
-          <Redirect to="/" />
-        </Switch>
-      </Router>
+      <I18nextProvider i18n={i18next}>
+        <Router>
+          <ScrollMemory />
+          <Switch>
+            <Route exact={true} default={true} path="/">
+              <LayoutLanding
+                lang={this.state.lang}
+                langChangeCallback={this.handleLangChange}
+              >
+                <Landing lang={this.state.lang}></Landing>
+              </LayoutLanding>
+            </Route>
+            <Route path="/initiatives">
+              <LayoutInitiativePage
+                lang={this.state.lang}
+                langChangeCallback={this.handleLangChange}
+                title={translated(this.state.lang).header.nav.initiatives}
+                content={
+                  translated(this.state.lang).header.content.initiatives.content
+                }
+              >
+                <Initiatives lang={this.state.lang}></Initiatives>
+              </LayoutInitiativePage>
+            </Route>
+            <Route path="/partners">
+              <LayoutSubPage
+                lang={this.state.lang}
+                langChangeCallback={this.handleLangChange}
+                title={translated(this.state.lang).header.nav.supporters}
+              >
+                <Partners lang={this.state.lang}></Partners>
+              </LayoutSubPage>
+            </Route>
+            <Route path="/faq">
+              <LayoutSubPage
+                lang={this.state.lang}
+                langChangeCallback={this.handleLangChange}
+                title={translated(this.state.lang).header.nav.faqs}
+                image={IlluFaq}
+              >
+                <Faq lang={this.state.lang}></Faq>
+              </LayoutSubPage>
+            </Route>
+            <Route path="/privacy">
+              <LayoutSubPage
+                lang={this.state.lang}
+                langChangeCallback={this.handleLangChange}
+                title={translated(this.state.lang).footer.nav.privacy}
+                image={IlluPrivacy}
+              >
+                <PrivacyPolicy></PrivacyPolicy>
+              </LayoutSubPage>
+            </Route>
+            <Route path="/press">
+              <LayoutSubPage
+                lang={this.state.lang}
+                langChangeCallback={this.handleLangChange}
+                title={translated(this.state.lang).press.title}
+                image={IlluPressContact}
+              >
+                <Press lang={this.state.lang}></Press>
+              </LayoutSubPage>
+            </Route>
+            <Route path="/imprint">
+              <LayoutSubPage
+                lang={this.state.lang}
+                langChangeCallback={this.handleLangChange}
+                title={translated(this.state.lang).footer.nav.imprint}
+                image={IlluImprint}
+              >
+                <Imprint></Imprint>
+              </LayoutSubPage>
+            </Route>
+            <Redirect to="/" />
+          </Switch>
+        </Router>
+      </I18nextProvider>
     );
   };
 }
 
-export default Page;
+export default withTranslation()(Page);

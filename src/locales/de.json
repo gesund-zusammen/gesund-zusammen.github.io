@@ -1,0 +1,104 @@
+{
+  "header": {
+    "nav": {
+      "initiatives": "Die Initiative",
+      "supporters": "Partner",
+      "faqs": "Haben Sie Fragen?"
+    },
+    "content": {
+      "landing": {
+        "title": "Daten schützen. Leben retten.",
+        "content": "Digitale Lösungen gegen COVID-19"
+      },
+      "initiatives": {
+        "content": "In der aktuellen Situation möchten wir gerne einen nachvollziehbaren und starken Schritt nach vorne gehen, um Digitale Tools zu bauen, die gegen die Ausbreitung der Covid-19 Pandemie effektiv helfen. Dabei ist unser oberstes Prinzip, den demokratischen mandatierten Vertretern möglichst gute Informationen zur Verfügung zu stellen, und die Entwicklung digitaler Tools zur Pandemie Bekämpfung unter Rücksicht auf die geltenden Datenschutz und Privatsphäre Gesetze in der Breite und in der Tiefe zu supporten."
+      }
+    }
+  },
+  "main": {
+    "title": "#GesundZusammen – eine offene Initiative der Digitalwirtschaft",
+    "content": "Als breite Allianz deutscher Tech-Unternehmen wollen wir Gesellschaft, Politik und Wirtschaft aktiv dabei helfen, COVID-19 mit digitalen Lösungen einzudämmen. Dafür bauen wir auf eine der wichtigsten Ressourcen, die der Welt heute zur Verfügung steht: <font style=\"font-size:1.3rem; font-weight: bolder;\">Information</font>. <p>Daten ermöglichen es uns, gemeinsam zu forschen, Menschen zu warnen, Leben zu retten. Und doch ist eine flächendeckende Datennutzung nicht risikolos: Angesichts der Krise mehren sich die Stimmen, Grundrechte zum Wohle der Gesundheit zu opfern. Gemeinsam werden wir den Beweis erbringen: <font style=\"font-size:1.3rem; font-weight: bolder;\">Wir können beides haben – Infektionsschutz und Datenschutz.</font><p><font style=\"font-size:1.4rem; font-weight: bolder;\">Damit Privates privat bleibt</font><br />Auch in Krisenzeiten haben Freiheits- und Persönlichkeitsrechte der Menschen für unsere Technologie höchste Priorität.<p><font style=\"font-size:1.4rem; font-weight: bolder;\">Damit Deutschland gesund bleibt</font><br />Unsere Lösungen sollen helfen, Risikogruppen besser zu schützen und das Gesundheitssystem zu entlasten.<p><font style=\"font-size:1.4rem; font-weight: bolder;\">Damit die Wirtschaft in Fahrt kommt</font><br />Wir wollen Technologie einsetzen, um Gesundheitsrisiken in den Unternehmen zu senken und Produktivität wieder hochzufahren."
+  },
+  "boxes": {
+    "initiative": {
+      "title": "Agile Entwicklung",
+      "content": "Als starke Tech-Partner investieren wir gemeinsam in den Bau von Apps und Tools, die unser Land gerade braucht, nutzerfreundlich, open source, verantwortungsvoll, schnell."
+    },
+    "support": {
+      "title": "Digitaler Support",
+      "content": "Wir unterstützen andere digitale Initiativen mit unseren Ressourcen, um wirksam die Datenlage zu verbessern. Sprechen Sie uns mit Ideen und Bedarf an."
+    },
+    "ecosystem": {
+      "title": "Offenes Ökosystem",
+      "content": "Wir freuen uns auf den Austausch mit allen weiteren digitalen Initiativen, werden Kräfte bündeln und mit regelmäßigen Updates die Zusammenarbeit fördern."
+    }
+  },
+  "partners": {
+    "title": "Founding & Tech Partners",
+    "claim": "Sie wollen auch mitmachen?",
+    "button": "Werden Sie Teil der Initiative"
+  },
+  "initiatives": {
+    "filter": {
+      "filterBy": "Filtern",
+      "all": "Alle",
+      "global": "Weltweit",
+      "germany": "In Deutschland"
+    }
+  },
+  "faq": {
+    "title": "Sie haben Fragen?",
+    "button": "FAQs",
+    "content": [
+      {
+        "title": "Über Uns",
+        "content": "Wir sind eine breite Allianz deutscher Tech-Unternehmen, wollen Gesellschaft, Politik und Wirtschaft aktiv dabei helfen, COVID-19 mit digitalen Lösungen einzudämmen. Dafür bauen wir auf eine der wichtigsten Ressourcen, die der Welt heute zur Verfügung steht: Information."
+      },
+      {
+        "title": "Wieso Gesund-Zusammen?",
+        "content": "Wir bringen die Ressourcen der Digital Wirtschaft zusammen - um aktiv unseren Beitrag zu leisten."
+      },
+      {
+        "title": "Was wollt ihr erreichen?",
+        "content": "Daten ermöglichen es uns, gemeinsam zu forschen, Menschen zu warnen, Leben zu retten. Und doch ist eine flächendeckende Datennutzung nicht risikolos: Angesichts der Krise mehren sich die Stimmen, Grundrechte zum Wohle der Gesundheit zu opfern. Gemeinsam werden wir den Beweis erbringen: Wir können beides haben – Infektionsschutz und Datenschutz."
+      },
+      {
+        "title": "Sucht ihr nach weiteren Partner?",
+        "content": "Wir sind immer offen für weitere Partner um die Mission nach vorne zu bringen."
+      },
+      {
+        "title": "Wie steht ihr zur Arbeit von Gesundheitssystem, Ärzten und Pflegepersonal?",
+        "content": "Wir bewundern und unterstützen die Arbeit aller im Gesundheitssystem. "
+      },
+      {
+        "title": "Unterstützt ihr digitale Tools auch finanziell aus der Initiative?",
+        "content": "Wir versuchen teilweise spezifische Digitale Tools unkompliziert mit Ressourcen schneller nach vorne zu bringen."
+      }
+    ],
+    "contact": "Für weitere Fragen und stellvertretenden Kontakt, kontaktieren sie bitte: Solveig Rathenow <solveig.rathenow@finleap.com> "
+  },
+  "press": {
+    "title": "PR Kontakt",
+    "pageHeader": "Schreiben Sie Uns",
+    "pressContactName": "Solveigh Rathenow",
+    "pressContactTitle": "Head of Venture Communications",
+    "pressContactEmail": "media@gesund-zusammen.de",
+    "downloadLogo": "Download Logo",
+    "resources": "Pressekit",
+    "resourcesLine1": "Download the GesundZusammen logo in various formats.",
+    "resourcesLine2": "Includes EPS, JPG, and PNG formats. For digital and print."
+  },
+  "footer": {
+    "title": "Aufruf zum Teilen",
+    "claim": "Teilen Sie #gesundzusammen in Ihrem Netzwerk",
+    "shareLink": "Teile unseren Link",
+    "shareVia": "Oder teile mit",
+    "copy": "Kopieren",
+    "nav": {
+      "privacy": "Datenschutzerklärung",
+      "vulnerability": "Schwachstelle melden",
+      "imprint": "Impressum",
+      "press": "Presse & Kontakt"
+    }
+  }
+}

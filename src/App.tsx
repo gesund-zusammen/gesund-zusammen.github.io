@@ -4,6 +4,8 @@ import ReactGA from "react-ga";
 import AppTheme from "./Theme";
 import Page from "./components/Page";
 
+import "./i18n";
+
 const { GA_TRACKING_ID } = process.env;
 
 class App extends React.Component {
