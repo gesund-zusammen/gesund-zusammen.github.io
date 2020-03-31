@@ -1,6 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ScrollMemory from "react-router-scroll-memory";
+
+import { translated } from "../util";
+
 import LayoutLanding from "./layouts/Landing/Main";
 import LayoutSubPage from "./layouts/Sub/Main";
 
@@ -47,7 +50,7 @@ class Page extends React.Component<{}, IPageState> {
             <LayoutSubPage
               lang={this.state.lang}
               langChangeCallback={this.handleLangChange}
-              title="Partners"
+              title={translated(this.state.lang).header.nav.supporters}
             >
               <Partners lang={this.state.lang}></Partners>
             </LayoutSubPage>
@@ -56,7 +59,7 @@ class Page extends React.Component<{}, IPageState> {
             <LayoutSubPage
               lang={this.state.lang}
               langChangeCallback={this.handleLangChange}
-              title="Haben Sie Fragen?"
+              title={translated(this.state.lang).header.nav.faqs}
               image={IlluFaq}
             >
               <Faq lang={this.state.lang}></Faq>
@@ -66,7 +69,7 @@ class Page extends React.Component<{}, IPageState> {
             <LayoutSubPage
               lang={this.state.lang}
               langChangeCallback={this.handleLangChange}
-              title="Privacy Policy"
+              title={translated(this.state.lang).footer.nav.privacy}
               image={IlluPrivacy}
             >
               <PrivacyPolicy></PrivacyPolicy>
