@@ -29,7 +29,7 @@ import LogoGlobalCitizen from "../../images/partners/globalcitizen.svg";
 import LogoCMSLaw from "../../images/partners/cmslaw.svg";
 import LogoSKWSchwarz from "../../images/partners/skwschwarz.jpg";
 import LogoBCGDV from "../../images/partners/bcgdv.svg";
-import LogoDoctorly from "../../images/partners/doctorly.png"
+import LogoDoctorly from "../../images/partners/doctorly.png";
 
 interface IPartnersProps {
   lang: "de" | "en";
