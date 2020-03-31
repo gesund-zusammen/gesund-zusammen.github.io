@@ -26,6 +26,7 @@ import LogoTier from "../../images/partners/tier.svg";
 import LogoTwoBirds from "../../images/partners/twobirds.png";
 import LogoReedSmith from "../../images/partners/reedsmith.svg";
 import LogoGlobalCitizen from "../../images/partners/globalcitizen.svg";
+import LogoCMSLaw from "../../images/partners/cmslaw.svg";
 
 interface IPartnersProps {
   lang: "de" | "en";
@@ -55,12 +56,12 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.wefox.de/"
             ></PartnerCard>
             <PartnerCard
-              name="Via Data"
+              name="Via"
               image={LogoViaHealth}
               link="https://www.viadata.io/"
             ></PartnerCard>
             <PartnerCard
-              name="Global Citizen"
+              name="Global Citizen Foundation"
               image={LogoGlobalCitizen}
               link="https://www.globalcitizen.org/"
             ></PartnerCard>
@@ -168,6 +169,11 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.reedsmith.com/"
               color="#3d3c3c"
               nameColorInverted={true}
+            ></PartnerCard>
+            <PartnerCard
+              name="CMS"
+              image={LogoCMSLaw}
+              link="https://cms.law/"
             ></PartnerCard>
           </Grid>
         </Box>
