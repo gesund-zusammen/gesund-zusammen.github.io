@@ -2,6 +2,8 @@ import React from "react";
 import { Box, Card, CardContent, Typography, Chip } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
+import { translated } from "../../util";
+
 import IconArrowRight from "../../images/icon_arrow_right.svg";
 
 import InitiativeData from "../../data/initiatives.json";
@@ -104,7 +106,9 @@ class Initiative extends React.Component<IInitiativeProps, IInitiativeState> {
                 this.state.selectedCategory === undefined && "selected"
               }
               key="all"
-              label={`All (${this.categoryInitiativesCount.all})`}
+              label={`${
+                translated(this.props.lang).initiative.filter.global
+              } (${this.categoryInitiativesCount.all})`}
               onClick={() => this.handleChipClick(undefined)}
             ></CategoryChip>
             {this.getCategories().map(category => (
@@ -127,14 +131,14 @@ class Initiative extends React.Component<IInitiativeProps, IInitiativeState> {
               onClick={() => this.handleRegionClick(false)}
               className={this.state.globalSelected === false ? "selected" : ""}
             >
-              In Germany
+              {translated(this.props.lang).initiative.filter.germany}
             </RegionSelect>
             <RegionSelect
               variant="body2"
               onClick={() => this.handleRegionClick(true)}
               className={this.state.globalSelected === true ? "selected" : ""}
             >
-              Worldwide
+              {translated(this.props.lang).initiative.filter.global}
             </RegionSelect>
           </Box>
         </Box>

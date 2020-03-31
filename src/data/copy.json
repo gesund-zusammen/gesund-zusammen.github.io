@@ -40,6 +40,13 @@
       "claim": "Sie wollen auch mitmachen?",
       "button": "Werden Sie Teil der Initiative"
     },
+    "initiative": {
+      "filter": {
+        "all": "Alle",
+        "global": "Weltweit",
+        "germany": "In Deutschland"
+      }
+    },
     "faq": {
       "title": "Sie haben Fragen?",
       "button": "FAQs",
@@ -119,6 +126,13 @@
       "title": "Founding & Tech Partners",
       "claim": "Want to help make a difference?",
       "button": "Become part of the initiative"
+    },
+    "initiative": {
+      "filter": {
+        "all": "All",
+        "global": "Worldwide",
+        "germany": "In Germany"
+      }
     },
     "faq": {
       "title": "You have questions?",
