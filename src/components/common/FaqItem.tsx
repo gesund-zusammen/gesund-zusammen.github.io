@@ -25,7 +25,7 @@ class FaqItem extends React.PureComponent<IFaqItemProps, {}> {
           <Typography variant="h5">{this.props.item.title}</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography variant="body2">{this.props.item.content}</Typography>
+          <Typography variant="body1">{this.props.item.content}</Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     );
