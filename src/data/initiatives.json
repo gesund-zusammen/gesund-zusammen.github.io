@@ -52,14 +52,32 @@
   ],
   "initiatives": [
     {
+      "name": "IchHabs - Die Covid-19 Tracing-App",
+      "link": "https://ichhabs.app/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Verfolgt nicht dich. Nur das Virus. Du bist positiv auf Covid-19 getestet? Jetzt kannst du andere Menschen schützen indem du anonym deine Bewegungsdaten spendest. Wir verfolgen das Virus – niemals dich.",
+        "en": "Verfolgt nicht dich. Nur das Virus. Du bist positiv auf Covid-19 getestet? Jetzt kannst du andere Menschen schützen indem du anonym deine Bewegungsdaten spendest. Wir verfolgen das Virus – niemals dich."
+      },
+      "global": true
+    },{
+      "name": "Robert Koch Institute Case numbers in Germany and worldwide",
+      "link": "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html",
+      "category": "infection_tracking_dashboards",
+      "description": {
+        "de": "COVID-19: Fallzahlen in Deutschland und weltweit",
+        "en": "COVID-19: Infections in Germany and worldwide"
+      },
+      "global": true
+    },
+    {
       "name": "Data4Life Online Corona Test & Dashboard Germany",
       "link": "https://www.data4life.care/en/corona/",
       "category": "digital_tools",
       "description": {
-        "de": "Coronavirus in Germany: Corona Online Test and Current Number of Infections",
-        "en": "Aktuelle Zahlen der Infektionen und Corona-Online-Test"
-      },
-      "global": false
+        "de": "Coronavirus in Deutschland: aktuelle Zahlen der Infektionen und Corona-Online-Test",
+        "en": "Coronavirus in Germany: Corona online test and current number of infections"
+      }
     },
     {
       "name": "Covid Charite Questionnaire App",
@@ -72,24 +90,554 @@
       "global": false
     },
     {
-      "name": "Selfapy",
-      "link": "https://www.selfapy.de/",
-      "category": "digital_consultation",
+      "name": "COVID-19 Risiko Selbsttest",
+      "link": "https://www.gospring.de/covid-19",
+      "category": "digital_tools",
       "description": {
-        "de": "Soforthilfe bei psychischen Belastungen.",
-        "en": "Provides psychological support in stressful situations like the CoronaVirus via communication with qualified psychologists."
+        "de": "Erstellung eines Risikoprofils basierend auf einem Fragebogen",
+        "en": "Online COVID-19 risk assessment tool"
+      },
+      "global": false
+    },
+    {
+      "name": "COVID-19 Risiko Selbsttest und Informationen",
+      "link": "https://corona.docyet.com/client/index.html",
+      "category": "digital_tools",
+      "description": {
+        "de": "Online chat mit persönlicher Risikoprüfung und Informationen zu Corona",
+        "en": "Online chat with self-assessment and information about Corona"
+      },
+      "global": false
+    },
+    {
+      "name": "Climedo",
+      "link": "https://climedo.de/blog/climedo-plattform-klinische-datenerhebung-covid-19-projekte-zur-verfuegung/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Kostenlose Plattform für klinische Datenerhebung für COVID-19-bezogene Projekte",
+        "en": "Free Clinical Data Capture Platform for COVID-19 Projects"
+      },
+      "global": false
+    },
+    {
+      "name": "DIVI Intensivregister",
+      "link": "https://www.divi.de/register/intensivregister",
+      "category": "digital_tools",
+      "description": {
+        "de": "Verfügbarkeit von Intensivbetten mit Beatmungsplätzen",
+        "en": "Information about hospitals and their capacity of intensive care beds with ventilators"
+      },
+      "global": false
+    },
+    {
+      "name": "geoHealthApp",
+      "link": "https://www.divi.de/register/intensivregister",
+      "category": "digital_tools",
+      "description": {
+        "de": "Bestimmung des individuellen Infektionsrisikos anhand von Aufenthaltsorten",
+        "en": "Determines the individual infection risk based on your whereabouts within the past 14 days anonymously"
+      },
+      "global": false
+    },
+    {
+      "name": "COVID-19 Patienten App",
+      "link": "https://bs-sd.de/corona/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Abfrage der COVID-19 Testergebnisse via App",
+        "en": "Patients tested for Coronavirus are informed of their test results as quickly as possible via partnerships with testing laboratories in Germany"
+      },
+      "global": false
+    },
+    {
+      "name": "VirusAssist App",
+      "link": "https://apps.apple.com/de/app/virusassist/id1501096154",
+      "category": "digital_tools",
+      "description": {
+        "de": "Aktuelle Informationen zum Geschehen rund um COVID-19",
+        "en": "Provides current information about the virus including news and landscape of infections"
       },
       "global": true
     },
     {
-      "name": "Robert Koch Institute Case numbers in Germany and worldwide",
-      "link": "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html",
-      "category": "infection_tracking_dashboards",
+      "name": "COVID Symptom Tracker (UK)",
+      "link": "https://covid.joinzoe.com/",
+      "category": "digital_tools",
       "description": {
-        "de": "Deutschland & weltweit: Verfolgung der COVID-19 Infektionen",
-        "en": "Infection tracking in Germany and worldwide."
+        "de": "COVID-19 Symptom-Tracker App von Ärzten und Wissenschaftlern des King's College London entwickelt.",
+        "en": "The app was created by doctors and scientists at King's College London in partnership with ZOE. It is one of the top apps in the UK App Store."
       },
       "global": true
+    },
+    {
+      "name": "HEALTHLYNKED COVID-19 Tracker (US)",
+      "link": "https://apps.apple.com/us/app/healthlynked-covid-19-tracker/id1500575377",
+      "category": "digital_tools",
+      "description": {
+        "de": "COVID-19 Verbreitungs-App, basierend auf den Daten der WHO. Nutzer können Ihre eigene Daten hinzufügen.",
+        "en": "A disease tracker app that displays infection data from the WHO. Users can also self-report by adding location and answering a couple of questions."
+      },
+      "global": true
+    },
+    {
+      "name": "COVID-19 Screening Tool (US)",
+      "link": "https://www.apple.com/covid19/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Appel entwickelte gemeinsam mit Partnern diese Lösung um den Zugang zu vertrauenswürdigen Informationen und Verhaltensempfehlungen zu erleichtern",
+        "en": "Created by Apple in partnership with the Centers for Disease Control and Prevention to make it easy for people across the United States to get trusted information and guidance on COVID-19."
+      },
+      "global": true
+    },
+    {
+      "name": "SafePaths(US)",
+      "link": "https://safepaths.mit.edu/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Eine vom MIT veröffentlichte open-source Technologie zur Verfolgung von Kontakten mit COVID-19 infizierten.",
+        "en": "A free, open-source contact-tracing technology that provides individual users with information on their interaction with diagnosed COVID-19 carriers in the United States."
+      },
+      "global": true
+    },
+    {
+      "name": "TraceTogether (Singapore)",
+      "link": "https://www.tracetogether.gov.sg/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Eine App der Regierung in Singapore um die Ausbreitung des COVID-19 Virus durch Kontaktverfolgung einzudämmen.",
+        "en": "A mobile app that supports Singapore's efforts to mitigate the spread of COVID-19 through community-driven contact tracing."
+      },
+      "global": true
+    },
+    {
+      "name": "Contact Tracing App (China)",
+      "link": "https://www.newsweek.com/china-government-coronavirus-smartphone-app-close-contact-detector-trace-infected-citizens-1486885",
+      "category": "digital_tools",
+      "description": {
+        "de": "China führt eine farbkodierte Gesundheitsbewertung via Alipay ein, um Bürger anhand Ihrer Reisebewegungen und Ihrem Gesundheitszustand zu segmentieren",
+        "en": "China deploys colour coded health ratings via Alipay, segmenting its citizens based on travel history and medical condition."
+      },
+      "global": true
+    },
+    {
+      "name": "Selfapy",
+      "link": "https://www.selfapy.de/",
+      "category": "digital_consultation",
+      "description": {
+        "de": "Soforthilfe bei psychischen Belastungen durch ein Online-Programm",
+        "en": "Provides psychological support in stressful situations like the CoronaVirus via communication with qualified psychologists."
+      },
+      "global": false
+    },
+    {
+      "name": "Jameda",
+      "link": "https://www.jameda.de/videosprechstunde/",
+      "category": "digital_consultation",
+      "description": {
+        "de": "Video-Sprechstunden mit Ärzten verschiedener Fachrichtungen.",
+        "en": "Offers online video consultations with doctors of various specialties."
+      },
+      "global": false
+    },
+    {
+      "name": "Kry",
+      "link": "https://www.kry.de/",
+      "category": "digital_consultation",
+      "description": {
+        "de": "Video-Sprechstunden zur Entlastung des Gesundheitssystems",
+        "en": "Talk to a doctor - Free video consultations are offered for all patients with COVID-19 symptoms."
+      },
+      "global": false
+    },
+    {
+      "name": "Clickdoc für Ärzte",
+      "link": "https://clickdoc.de/cms-de/news/virus-videosprechstunde-kostenlos/",
+      "category": "digital_consultation",
+      "description": {
+        "de": "CompuGroup Medical (CGM)stellt Ihre Software für die Durchführung von Video-Sprechstunden kostenlos zur Verfügung.",
+        "en": "CompuGroup Medical (CGM) provides clickdoc video consultation to all doctors, psychotherapists, midwives and healthcare professionals free of charge."
+      },
+      "global": false
+    },
+    {
+      "name": "The Coronavirus App",
+      "link": "https://coronavirus.app/map",
+      "category": "infection_tracking",
+      "description": {
+        "de": "Weltweite Echtzeit Verfolgung der COVID-19 Infektionen",
+        "en": "Worldwide real time infection tracking"
+      },
+      "global": true
+    },
+    {
+      "name": "nCoV2019.live",
+      "link": "https://ncov2019.live/data",
+      "category": "infection_tracking",
+      "description": {
+        "de": "Weltweite Echtzeit Verfolgung der COVID-19 Infektionen",
+        "en": "Worldwide real time infection tracking"
+      },
+      "global": true
+    },
+    {
+      "name": "Worldometer",
+      "link": "https://ncov2019.live/data",
+      "category": "infection_tracking",
+      "description": {
+        "de": "Weltweite Echtzeit Verfolgung der COVID-19 Infektionen",
+        "en": "Worldwide real time infection tracking"
+      },
+      "global": true
+    },
+    {
+      "name": "Windy.app",
+      "link": "https://windy.app/coronavirus_map",
+      "category": "infection_tracking",
+      "description": {
+        "de": "Erweiterung einer iOS-Wetter-App zur Verfolgung der COVID-19 Fälle.",
+        "en": "Coronavirus live map extension."
+      },
+      "global": false
+    },
+    {
+      "name": "COVID-19 Italia",
+      "link": "https://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1",
+      "category": "infection_tracking",
+      "description": {
+        "de": "COVID-19: Fallzahlen in Italien",
+        "en": "Infection tracking in Italy"
+      },
+      "global": true
+    },
+    {
+      "name": "Mar 25 - Apr 10, 2020: Give a Breath Challenge",
+      "link": "https://give-a-breath-challenge.innosabi.com",
+      "category": "hackathons",
+      "description": {
+        "de": "Eine Herausforderung, das beste 3D-druckbare Design zu finden, um die sofortige, dezentrale Produktion von Notfallbeatmungsgeräten zu ermöglichen.",
+        "en": "A challenge to identify the best 3D-printable design to enable the immediate, decentralised production of emergency ventilation equipment."
+      },
+      "global": true
+    },
+    {
+      "name": "Mar 20 - Apr 27, 2020: 2020 Call for Code Global Challenge",
+      "link": "https://developer.ibm.com/callforcode/",
+      "category": "hackathons",
+      "description": {
+        "de": "Die Hackathon-Reihe hat ihren Schwerpunkt erweitert und befasst sich mit COVID-19. Sie lädt Problemlöser und Entwickler ein, Open-Source-Lösungen zu erstellen.",
+        "en": "The hackathon series expanded its focus on climate change to take on COVID-19. It invites problem solvers and developers to build open source solutions."
+      },
+      "global": true
+    },
+    {
+      "name": "Mar 23 - Apr 12, 2020: Hack Quarantine",
+      "link": "https://hackquarantine.com/",
+      "category": "hackathons",
+      "description": {
+        "de": "Ein Hackathon, der zur Bekämpfung der Probleme beiträgt mit denen die Welt durch die COVID-19-Pandemie konfrontiert ist.",
+        "en": "A hackathon bringing people together to use their skills to help combat the issues the world is facing with the COVID-19 pandemic."
+      },
+      "global": true
+    },
+    {
+      "name": "Mar 23 - Apr 10, 2020: #BuildforCOVID19 Global Online Hackathon",
+      "link": "https://covid-global-hackathon.devpost.com/",
+      "category": "hackathons",
+      "description": {
+        "de": "Unterstützt von Technologie-Giganten (AWS und Facebook) lädt der Hackathon Entwickler ein, Softwarelösungen für die identifizierten Schlüssel Herausforderungen zu entwickeln: Gesundheit, anfällige Bevölkerungsgruppen, Unternehmen, Gemeinschaft, Bildung und Unterhaltung.",
+        "en": "Supported by tech giants e.g. AWS and Facebook, the hackathon invites developers to build software solutions related to key challenges identified: Health, Vulnerable Populations, Businesses, Community, Education and Entertainment."
+      },
+      "global": true
+    },
+    {
+      "name": "Mar 28 - Apr 4, 2020: COVID-19 Global Church Hackathon",
+      "link": "https://www.covidhack.com/",
+      "category": "hackathons",
+      "description": {
+        "de": "Ein einwöchiger Online-Hackathon für Christen weltweit zur Bewältigung der Herausforderung des Gottesdienstes während der Korona-Krise.",
+        "en": "A one-week online hackathon for Christians worldwide to tackle the challenge of worship during the Corona crisis."
+      },
+      "global": true
+    },
+    {
+      "name": "Mar 26 - Apr 15, 2020: Covid-19 Virtual Hackathon",
+      "link": "https://gitlab.com/covidhack/covidhack/",
+      "category": "hackathons",
+      "description": {
+        "de": "AWS, Fairwinds, Gitlab und Datadog haben sich zusammengetan, um eine End-to-End-Infrastrukturlösung zu schaffen, die eine Anwendung ermöglicht, die die Pandemie in den Griff bekommt. Mach einen Vorschlag!",
+        "en": "AWS, Fairwinds, Gitlab, and Datadog have teamed up to provide an end-to-end infrastructure solution to enable an application that addresses the pandemic. They are looking for proposals."
+      },
+      "global": true
+    },
+    {
+      "name": "Apr 3-5, 2020: #VersusVirus Hackathon",
+      "link": "https://www.en.versusvirus.ch/",
+      "category": "hackathons",
+      "description": {
+        "de": "Ein schweizweiter virtueller Hackathon mit dem Ziel, neue Ideen und Lösungen für den Umgang mit dem Coronavirus zu entwickeln.",
+        "en": "A Swiss-wide virtual hackathon that aims to develop fresh ideas and solutions for dealing with the coronavirus."
+      },
+      "global": true
+    },
+    {
+      "name": "Apr 2-4, 2020: Hack The Crisis Kosova",
+      "link": "https://hackthecrisiskosova.com/",
+      "category": "hackathons",
+      "description": {
+        "de": "Projektthemen: Gesundheit und Notfall, sozialer und psychologischer Status, Bildung und Lernen, Wirtschaft und die Zukunft der Wirtschaft, staatliche Lösungen",
+        "en": "Project themes: Health and emergency, social and psychological status, education and learning, economy and the future of business, government solutions"
+      },
+      "global": true
+    },
+    {
+      "name": "Apr 3-5, 2020: Hack The Crisis Australia",
+      "link": "https://hack-the-crisis-australia.devpost.com/",
+      "category": "hackathons",
+      "description": {
+        "de": "Projektthemen: Verbesserung von Leben, Gesundheit und Wohlbefinden",
+        "en": "Project themes: Improve life, health, and wellness"
+      },
+      "global": true
+    },
+    {
+      "name": "Apr 3-5, 2020: Hack The Crisis Denmark",
+      "link": "https://campaign.greatercph.com/hack-the-crisis",
+      "category": "hackathons",
+      "description": {
+        "de": "Projektthemen: Eindämmung von COVID-19 mit der Absicht (nicht-medizinische) Lösungen für die Bewältigung der Folgen zu entwickeln",
+        "en": "Project themes: Containment of COVID-19 with intent to develop (non-medical) solutions to deal with its aftermath"
+      },
+      "global": true
+    },
+    {
+      "name": "Apr 3-5, 2020: Hack The Crisis Cyprus",
+      "link": "https://hackthecrisis.hackcyprus.com/",
+      "category": "hackathons",
+      "description": {
+        "de": "Projektthemen: Leben, Gemeinschaften, Unternehmen, Wohlstand retten",
+        "en": "Project themes: Save lives, save communities, save businesses, save mental well-being"
+      },
+      "global": true
+    },
+    {
+      "name": "Apr 3-5, 2020: Hack The Crisis Netherlands",
+      "link": "https://www.hackthecrisis.nl/en/",
+      "category": "hackathons",
+      "description": {
+        "de": "Projektthemen: Offener Hackathon mit Fokus auf Schutz von Patienten und Medizinischen Potential",
+        "en": "Project themes: Open-ended, suggested themes include patient care, protection for medical and sanitary staff at hospitals, virus containment and digital solutions for people and business in quarantine"
+      },
+      "global": true
+    },
+    {
+      "name": "Apr 3-6, 2020: Hack The Crisis Sweden",
+      "link": "https://www.hackthecrisis.se/",
+      "category": "hackathons",
+      "description": {
+        "de": "Projektthemen: Leben, Gemeinschaften, Unternehmen, Wohlstand retten",
+        "en": "Project themes: Save lives, save communities, save businesses"
+      },
+      "global": true
+    },
+    {
+      "name": "Apr 4-5, 2020: HackfromHome COVID-19",
+      "link": "https://www.hackfromhome.com/",
+      "category": "hackathons",
+      "description": {
+        "de": "Befähigt jeden, zum Kampf gegen COVID-19 beizutragen, indem er Technologien entwickelt und seine persönlichen Daten auf ethische Art und Weise nutzt. Gesponsert von: NSX und Dataswift.io",
+        "en": "Empowers everyone to contribute to the struggle against COVID-19 by building technologies and leveraging their personal data in an ethical way. It is sponsored by NSX and Dataswift.io"
+      },
+      "global": true
+    },
+    {
+      "name": "Apr 9-12, 2020: The Global Hack",
+      "link": "https://www.hackfromhome.com/",
+      "category": "hackathons",
+      "description": {
+        "de": "Organisiert von den Machern hinter der “Hack the Crisis-Bewegung”. The Global Hack ist ein Online-Hackathon, der die Probleme löst, mit denen wir als globale Gesellschaft konfrontiert sind, nachdem die unmittelbare Korona-Krise vorbei ist.",
+        "en": "Organised by the folks behind the Hack the Crisis Movement, The Global Hack is an online hackathon solving the problems we are facing as a global society after the immediate corona crisis is over."
+      },
+      "global": true
+    },
+    {
+      "name": "Mar 20-22, 2020: Germany #WirVsVirus",
+      "link": "https://wirvsvirushackathon.org/",
+      "category": "hackathons",
+      "description": {
+        "de": "Ein Hackathon, der von der deutschen Regierung und Partnern organisiert wurde, um die identifizierten Schlüsselherausforderungen zu lösen. Ergebnisse: https://www.youtube.com/results?search_query=%231_008_corona_tracking",
+        "en": "A hackathon brought together by the German Government and partners to solve key challenges identified due to the Corona crisis. Results: https://www.youtube.com/results?search_query=%231_008_corona_tracking"
+      },
+      "global": false
+    },
+    {
+      "name": "Mar 25-27, 2020: Shopware COVID-19 Hackathon",
+      "link": "https://www.shopware.com/en/news/shopware-hosts-covid-19-hackathon/",
+      "category": "hackathons",
+      "description": {
+        "de": "Shopware schafft ein Online-Portal, das lokalen Unternehmen und Verbrauchern dabei helfen soll, Communities zu gründen und online zu verkaufen und kaufen. Es ist open-source und steht den lokalen Regierungen und Städten zur Teilnahme offen.",
+        "en": "Shopware is creating an online portal to help local businesses and consumers recreate communities, as well as sell and buy online. It is open source and is open to local governments and cities to participate."
+      },
+      "global": true
+    },
+    {
+      "name": "Mar 27-29, 2020: ETHZurich and HackZurich #CodeVsCOVID19",
+      "link": "https://www.codevscovid19.org/",
+      "category": "hackathons",
+      "description": {
+        "de": "Ein 72-stündiger Online-Hackathon, der von HackZürich organisiert wurde, um Open-Source-Prototypen zur Lösung der Herausforderungen der COVID-19-Krise zu entwickeln.",
+        "en": "An 72-hour online hackathon organised by HackZurich to develop open source prototypes to solve challenges in the COVID-19 crisis."
+      },
+      "global": true
+    },
+    {
+      "name": "Mar 27, 2020 #HacktheCrisisNorway",
+      "link": "https://www.hackthecrisisnorway.com/",
+      "category": "hackathons",
+      "description": {
+        "de": "Ein Online-Hackathon, der von Freiwilligen aus der Tech- und Startup-Community in Norwegen organisiert wurde.",
+        "en": "An online hackathon organised by volunteers from the tech and startup community in Norway."
+      },
+      "global": true
+    },
+    {
+      "name": "Aktuelles zur Corona-Pandemie der Bundesregierung",
+      "link": "https://www.bundesregierung.de/breg-de/themen/coronavirus/coronavirus-1725960",
+      "category": "research_and_government_sites",
+      "description": {
+        "de": "Aktuelles zur Corona-Pandemie der Bundesregierung (Regeln, Maßnahmen, Verordnungen & Tipps)",
+        "en": "Find out here about new rules, measures, ordinances and tips from the federal government."
+      },
+      "global": false
+    },
+    {
+      "name": "Zusammen gegen Corona",
+      "link": "https://www.zusammengegencorona.de/",
+      "category": "research_and_government_sites",
+      "description": {
+        "de": "Zusammen gegen Corona: Verlässliche Antworten und konkrete Informationen zum eigenen Schutz und um anderen zu helfen.",
+        "en": "Reliable answers and concrete information on how to protect yourself and help others from the German government."
+      },
+      "global": false
+    },
+    {
+      "name": "Federal Center for Health Education (BZgA)",
+      "link": "https://www.infektionsschutz.de/",
+      "category": "research_and_government_sites",
+      "description": {
+        "de": "Aktuelle und fachlich gesicherte Informationen rund um das Coronavirus.",
+        "en": "Up-to-date and technically reliable Information about Covid-19."
+      },
+      "global": false
+    },
+    {
+      "name": "Information from the World Health Organisation",
+      "link": "https://www.who.int/health-topics/coronavirus#tab=tab_1",
+      "category": "research_and_government_sites",
+      "description": {
+        "de": "Offizielle Informationen über das COVID-19-Virus, einschließlich Prävention, Anleitung und Zahlen in Echtzeit.",
+        "en": "Official information about COVID-19 virus including prevention, guidance and real time numbers."
+      },
+      "global": true
+    },
+    {
+      "name": "WHO Covid-19 What's App Service",
+      "link": "https://api.whatsapp.com/send?phone=41794752209&text=hi&source=&data=",
+      "category": "research_and_government_sites",
+      "description": {
+        "de": "WhatsApp Service der WHO mit Informationen rund um COVID-19.",
+        "en": "The World Health Organization (WHO) sends users information about the coronavirus via Whatsapp. This is intended to counter fake news."
+      },
+      "global": true
+    },
+    {
+      "name": "Funding the research activities of German university medicine to deal with the current pandemic crisis",
+      "link": "https://www.charite.de/die_charite/themen/charite_koordiniert_netzwerk_der_deutschen_universitaetsmedizin_zur_erforschung_von_covid_19/",
+      "category": "research_and_government_sites",
+      "description": {
+        "de": "Aufbau eines Forschungsnetzwerks zur Bewältigung der Pandemie, koordiniert von der Charité Berlin.",
+        "en": "Charité - Universitätsmedizin Berlin, the Federal Ministry of Education and Research (BMBF) are funding the development of a research network with 150 million euros to bundle and strengthen the research activities of German university medicine to deal with the current pandemic crisis."
+      },
+      "global": false
+    },
+    {
+      "name": "Open Government Approaches to COVID-19",
+      "link": "https://www.opengovpartnership.org/collecting-open-government-approaches-to-covid-19/",
+      "category": "research_and_government_sites",
+      "description": {
+        "de": "Übersicht über alle weltweiten Ansätze von Regierungen, Zivilgesellschaften, Bürgern und des privaten Sektors.",
+        "en": "Open Government Partnership has created an open space for the community to share where they see open government approaches to tackling COVID-19 being implemented, either by governments themselves or civil society, citizens or the private sector."
+      },
+      "global": true
+    },
+    {
+      "name": "Initiative Gegen Corona (powered by Noventi)",
+      "link": "https://www.initiative-gegen-corona.de/",
+      "category": "initiatives",
+      "description": {
+        "de": "Initiative zur Aufklärung der Bevölkerung.",
+        "en": "Goal is to educate the general public on the Corona Virus using strong communications."
+      },
+      "global": false
+    },
+    {
+      "name": "Gegen den Virus",
+      "link": "https://gegen-den-virus.de/",
+      "category": "initiatives",
+      "description": {
+        "de": "Die Brücke zwischen digitalen Hilfsangeboten und analogen Bedürftigen. Damit alle das Corona Virus gut überstehen, müssen wir einander helfen. Menschen aus Risikogruppen brauchen eure Hilfe. Hier stellen wir digitale Hilfsmittel zur Verfügung, welche die Brücke zwischen den digitalen Hilfsangeboten und den zumeist analogen Bedürftigen schlagen.",
+        "en": "A platform that provides digital aids that bridge the gap between digital support and the offline world. This project is part of KrisenKultur.de"
+      },
+      "global": false
+    },
+    {
+      "name": "Teststationen in Deutschland",
+      "link": "https://www.deutschlandfunk.de/covid-19-immer-mehr-drive-in-teststationen-in-deutschland.1939.de.html?drn:news_id=1115195",
+      "category": "initiatives",
+      "description": {
+        "de": "Zunehmende Anzahl von “Drive-In” Teststationen in Deutschland.",
+        "en": "Testing: Drive-Through Finder Deutschland"
+      },
+      "global": false
+    },
+    {
+      "name": "Patienten Hotline 116117",
+      "link": "https://www.116117.de/de/coronavirus.php",
+      "category": "initiatives",
+      "description": {
+        "de": "Der Patienten Service: Aktuelle Hinweise zu COVID-19.",
+        "en": "The German patient service."
+      },
+      "global": false
+    },
+    {
+      "name": "United Nations: Global Call to Creatives",
+      "link": "https://docs.google.com/presentation/d/1uR9gq1nC_ZYlGHkyaU7bRivTJ0gmtaxqZ5_4BvzcGnM/preview?slide=id.g71869a2fb1_0_0",
+      "category": "initiatives",
+      "description": {
+        "de": "Ein Offener Brief, der von der UNO an Kreative auf der ganzen Welt lanciert wurde. Diese sollen bei der Verbreitung von Botschaften im Bereich der öffentlichen Gesundheit helfen und diese effektiver, zugänglicher und teilbar mache, um so die Kurve in der Korona-Krise abzuflachen.",
+        "en": "An Open Brief launched by the UN to creatives everywhere to help spread public health messages to be more effective, accessible and shareable."
+      },
+      "global": true
+    },
+    {
+      "name": "Covid-19 Counterfeit Medication Detection",
+      "link": "https://www.tag24.de/chemnitz/chemnitz-medikamente-schwarzmarkt-corona-virus-covid19-app-technologie-1473067",
+      "category": "initiatives",
+      "description": {
+        "de": "Blockchain-Lösung zur zukünftigen Erkennung von COVID-19 Medikament Fälschungen (Authentic Network)",
+        "en": "Counterfeit detection that works via blockchain technology. By scanning a QR code on the medication, the app shows whether the drug is real or counterfeit."
+      },
+      "global": false
+    },
+    {
+      "name": "Law Support by CMS",
+      "link": "https://cms.law/de/deu/insight/covid-19",
+      "category": "initiatives",
+      "description": {
+        "de": "Unterstützung von Unternehmen bei Fragen zum Umgang mit der aktuellen Lage und deren Auswirkungen kann anwaltliche Unterstützung hinzugezogen werden.",
+        "en": "Support for companies in questions of how to deal with the current situation and its effects, obtained by legal counsel."
+      },
+      "global": false
     }
   ]
 }
