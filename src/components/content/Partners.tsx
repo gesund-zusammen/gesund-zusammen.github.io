@@ -27,7 +27,7 @@ import LogoTwoBirds from "../../images/partners/twobirds.png";
 import LogoReedSmith from "../../images/partners/reedsmith.svg";
 import LogoGlobalCitizen from "../../images/partners/globalcitizen.svg";
 import LogoCMSLaw from "../../images/partners/cmslaw.svg";
-import LogoSKWSchwarz from "../../images/partners/skwschwarz.svg";
+import LogoSKWSchwarz from "../../images/partners/skwschwarz.jpg";
 
 interface IPartnersProps {
   lang: "de" | "en";
