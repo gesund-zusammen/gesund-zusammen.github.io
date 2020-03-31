@@ -33,6 +33,8 @@ import LogoDoctorly from "../../images/partners/doctorly.png";
 import LogoFischerAppelt from "../../images/partners/fischerappelt.jpg";
 import LogoDeloitte from "../../images/partners/deloitte.jpg";
 import LogoMyData from "../../images/partners/mydata.png";
+import LogoFreiraum from "../../images/partners/freiraum.jpg";
+import LogoStoryMachine from "../../images/partners/storymachine.ong";
 
 interface IPartnersProps {
   lang: "de" | "en";
@@ -223,6 +225,16 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="fischerAppelt"
               image={LogoFischerAppelt}
               link="https://www.fischerappelt.de/"
+            ></PartnerCard>
+            <PartnerCard
+              name="Freiraum"
+              image={LogoFreiraum}
+              link="http://www.freiraum-berlin.org/"
+            ></PartnerCard>
+            <PartnerCard
+              name="Story Machine"
+              image={LogoStoryMachine}
+              link="https://www.storymachine.de/"
             ></PartnerCard>
           </Grid>
         </Box>
