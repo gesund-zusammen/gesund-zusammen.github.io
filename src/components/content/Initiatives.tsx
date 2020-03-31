@@ -41,7 +41,7 @@ const DEFAULT_STATE: IInitiativeState = {
   globalSelected: false,
 };
 
-class Initiative extends React.Component<IInitiativeProps, IInitiativeState> {
+class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
   categoryInitiativesCount: { [slug: string]: number };
 
   constructor(props: IInitiativeProps) {
@@ -106,7 +106,7 @@ class Initiative extends React.Component<IInitiativeProps, IInitiativeState> {
                 this.state.selectedCategory === undefined && "selected"
               }
               key="all"
-              label={`${translated(this.props.lang).initiative.filter.all} (${
+              label={`${translated(this.props.lang).initiatives.filter.all} (${
                 this.categoryInitiativesCount.all
               })`}
               onClick={() => this.handleChipClick(undefined)}
@@ -131,14 +131,14 @@ class Initiative extends React.Component<IInitiativeProps, IInitiativeState> {
               onClick={() => this.handleRegionClick(false)}
               className={this.state.globalSelected === false ? "selected" : ""}
             >
-              {translated(this.props.lang).initiative.filter.germany}
+              {translated(this.props.lang).initiatives.filter.germany}
             </RegionSelect>
             <RegionSelect
               variant="body2"
               onClick={() => this.handleRegionClick(true)}
               className={this.state.globalSelected === true ? "selected" : ""}
             >
-              {translated(this.props.lang).initiative.filter.global}
+              {translated(this.props.lang).initiatives.filter.global}
             </RegionSelect>
           </Box>
         </Box>
@@ -244,4 +244,4 @@ const InitiativeCardTitle: AnyStyledComponent = styled(Typography)`
   }
 `;
 
-export default Initiative;
+export default Initiatives;

@@ -2,7 +2,7 @@
   "de": {
     "header": {
       "nav": {
-        "initiative": "Initiative",
+        "initiatives": "Initiatives",
         "projects": "Projekte",
         "supporters": "Partner",
         "faqs": "Haben Sie Fragen?"
@@ -12,7 +12,7 @@
           "title": "Daten schützen. Leben retten.",
           "content": "Digitale Lösungen gegen COVID-19"
         },
-        "initiative": {
+        "initiatives": {
           "content": "In der aktuellen Situation möchten wir gerne einen nachvollziehbaren und starken Schritt nach vorne gehen, um Digitale Tools zu bauen, die gegen die Ausbreitung der Covid-19 Pandemie effektiv helfen. Dabei ist unser oberstes Prinzip, den demokratischen mandatierten Vertretern möglichst gute Informationen zur Verfügung zu stellen, und die Entwicklung digitaler Tools zur Pandemie Bekämpfung unter Rücksicht auf die geltenden Datenschutz und Privatsphäre Gesetze in der Breite und in der Tiefe zu supporten."
         }
       }
@@ -40,7 +40,7 @@
       "claim": "Sie wollen auch mitmachen?",
       "button": "Werden Sie Teil der Initiative"
     },
-    "initiative": {
+    "initiatives": {
       "filter": {
         "all": "Alle",
         "global": "Weltweit",
@@ -89,7 +89,7 @@
   "en": {
     "header": {
       "nav": {
-        "initiative": "Initiative",
+        "initiatives": "Initiatives",
         "projects": "Projects",
         "supporters": "Partners",
         "faqs": "FAQs"
@@ -99,7 +99,7 @@
           "title": "Protect data. Save lifes.",
           "content": "Digital tools to fight Covid-19"
         },
-        "initiative": {
+        "initiatives": {
           "content": "In der aktuellen Situation möchten wir gerne einen nachvollziehbaren und starken Schritt nach vorne gehen, um Digitale Tools zu bauen, die gegen die Ausbreitung der Covid-19 Pandemie effektiv helfen. Dabei ist unser oberstes Prinzip, den demokratischen mandatierten Vertretern möglichst gute Informationen zur Verfügung zu stellen, und die Entwicklung digitaler Tools zur Pandemie Bekämpfung unter Rücksicht auf die geltenden Datenschutz und Privatsphäre Gesetze in der Breite und in der Tiefe zu supporten."
         }
       }
@@ -127,7 +127,7 @@
       "claim": "Want to help make a difference?",
       "button": "Become part of the initiative"
     },
-    "initiative": {
+    "initiatives": {
       "filter": {
         "all": "All",
         "global": "Worldwide",
