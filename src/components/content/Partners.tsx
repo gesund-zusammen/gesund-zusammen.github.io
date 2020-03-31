@@ -6,7 +6,8 @@ import BecomePart from "../common/BecomePart";
 
 import LogoOmio from "../../images/partners/omio.png";
 import LogoBVDS from "../../images/partners/bvds.png";
-import LogoWefox from "../../images/partners/wefox.png";
+import LogoData4Life from "../../images/partners/data4life.svg";
+import LogoWefoxGroup from "../../images/partners/wefoxgroup.png";
 import LogoN26 from "../../images/partners/n26.png";
 import LogoFinleap from "../../images/partners/finleap.png";
 import LogoGetYourGuide from "../../images/partners/getyourguide.png";
@@ -17,7 +18,6 @@ import LogoAuto1 from "../../images/partners/auto1.png";
 import LogoAdaHealth from "../../images/partners/adahealth.png";
 import LogoViaHealth from "../../images/partners/viadata.svg";
 import LogoPersonio from "../../images/partners/personio.png";
-import LogoMrSpex from "../../images/partners/mrspex.png";
 import LogoDatenschutzExperte from "../../images/partners/datenschutzexperte.svg";
 import LogoOneFootball from "../../images/partners/onefootball.svg";
 import LogoIoniq from "../../images/partners/ioniq.png";
@@ -28,6 +28,7 @@ import LogoReedSmith from "../../images/partners/reedsmith.svg";
 import LogoGlobalCitizen from "../../images/partners/globalcitizen.svg";
 import LogoCMSLaw from "../../images/partners/cmslaw.svg";
 import LogoSKWSchwarz from "../../images/partners/skwschwarz.jpg";
+import LogoBCGDV from "../../images/partners/bcgdv.svg";
 
 interface IPartnersProps {
   lang: "de" | "en";
@@ -52,9 +53,9 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.finleap.com"
             ></PartnerCard>
             <PartnerCard
-              name="Wefox"
-              image={LogoWefox}
-              link="https://www.wefox.de/"
+              name="Wefox Group"
+              image={LogoWefoxGroup}
+              link="https://www.wefoxgroup.com/"
             ></PartnerCard>
             <PartnerCard
               name="Via"
@@ -64,7 +65,12 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
             <PartnerCard
               name="Global Citizen Foundation"
               image={LogoGlobalCitizen}
-              link="https://www.globalcitizen.org/"
+              link="https://www.globalcitizenfoundation.org/"
+            ></PartnerCard>
+            <PartnerCard
+              name="Data4Life"
+              image={LogoData4Life}
+              link="https://www.data4life.care/"
             ></PartnerCard>
             <PartnerCard
               name="BVDS"
@@ -97,6 +103,11 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.deliveryhero.com/"
             ></PartnerCard>
             <PartnerCard
+              name="BCG DV"
+              image={LogoBCGDV}
+              link="https://www.bcgdv.com"
+            ></PartnerCard>
+            <PartnerCard
               name="Celonis"
               image={LogoCelonis}
               link="https://www.celonis.com/"
@@ -115,11 +126,6 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="Personio"
               image={LogoPersonio}
               link="https://www.personio.de/"
-            ></PartnerCard>
-            <PartnerCard
-              name="Mister Spex"
-              image={LogoMrSpex}
-              link="https://www.misterspex.de/"
             ></PartnerCard>
             <PartnerCard
               name="OneFootbal"

@@ -12,6 +12,7 @@ import Partners from "./content/Partners";
 import Faq from "./content/Faq";
 import PrivacyPolicy from "./content/Privacy";
 import Press from "./content/Press";
+import Imprint from "./content/Imprint";
 
 import IlluPrivacy from "../images/illu_privacy.svg";
 import IlluFaq from "../images/illu_faq.svg";
@@ -85,6 +86,15 @@ class Page extends React.Component<{}, IPageState> {
               image={IlluPressContact}
             >
               <Press lang={this.state.lang}></Press>
+          </Route>
+          <Route path="/imprint">
+            <LayoutSubPage
+              lang={this.state.lang}
+              langChangeCallback={this.handleLangChange}
+              title={translated(this.state.lang).footer.nav.imprint}
+              image={IlluPrivacy}
+            >
+              <Imprint></Imprint>
             </LayoutSubPage>
           </Route>
         </Switch>

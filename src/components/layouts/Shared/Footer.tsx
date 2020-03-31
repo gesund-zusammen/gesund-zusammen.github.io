@@ -135,13 +135,13 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                 </a>
               </FooterEmailLink>
               <FooterNavItems>
-                <FooterNavLinkItem to="/privacy">
+                <FooterNavAnchorItem href="https://gesund-zusammen.de/privacy-policy.html">
                   {translated(this.props.lang).footer.nav.privacy}
-                </FooterNavLinkItem>
+                </FooterNavAnchorItem>
                 <FooterNavAnchorItem href="mailto:responsibledisclosure@gesund-zusammen.de">
                   {translated(this.props.lang).footer.nav.vulnerability}
                 </FooterNavAnchorItem>
-                <FooterNavAnchorItem href="https://docs.google.com/document/d/1v2kkrdG3i15nlpf4unVyIYlivQI7CVGczSLNe_U7vPs">
+                <FooterNavAnchorItem href="/imprint">
                   {translated(this.props.lang).footer.nav.imprint}
                 </FooterNavAnchorItem>
               </FooterNavItems>

@@ -158,7 +158,7 @@ const theme = responsiveFontSizes(
       },
       MuiExpansionPanel: {
         root: {
-          //boxShadow: "0px 6.26856px 25.0742px #F2F5FA",
+          boxShadow: "0px 2px 24px #E3E6EB",
           borderRadius: "15px 15px 15px 15px",
           marginBottom: "1.6rem",
           "&:before": {

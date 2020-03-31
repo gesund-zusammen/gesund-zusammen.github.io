@@ -15,7 +15,7 @@ class PartnerCard extends React.PureComponent<IPartnerCardProps, {}> {
     return (
       <Grid item xs={6} sm={3}>
         <a href={this.props.link} target="_blank" rel="noopener noreferrer">
-          <PartnerCardWrapper elevation={2}>
+          <PartnerCardWrapper>
             <PartnerCardContent
               style={{
                 backgroundImage: `url(${this.props.image})`,
@@ -42,6 +42,8 @@ const PartnerCardWrapper: AnyStyledComponent = styled(Card)`
   && {
     position: relative;
     text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 2px 24px #e3e6eb;
 
     &:after {
       content: "";
