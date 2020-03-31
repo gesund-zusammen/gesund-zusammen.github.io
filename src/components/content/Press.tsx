@@ -1,127 +1,112 @@
 import React from "react";
 import { Box, Typography, Avatar, Grid, Link } from "@material-ui/core";
+import { Email, GetApp } from "@material-ui/icons";
 import styled, { AnyStyledComponent } from "styled-components";
 import { translated } from "../../util";
 import PressContactPhoto from "../../images/solveigh_rathenow.png";
-import Logo from "../../images/logo.svg";
 import BecomePart from "../common/BecomePart";
-import EmailIcon from "@material-ui/icons/Email";
-import PhoneIcon from "@material-ui/icons/Phone";
-import GetAppIcon from "@material-ui/icons/GetApp";
+
+import PressKitLogo from "../../images/presskit_logo.svg";
+
 interface IPressProps {
   lang: "de" | "en";
 }
+
 class PressContact extends React.PureComponent<IPressProps, {}> {
   render = () => {
     return (
-      <PressContactWrapper>
-        <Typography variant="h2">
-          {translated(this.props.lang).press.pageHeader}
-        </Typography>
-        <Grid container spacing={5} justify="flex-start" alignItems="center">
-          <Grid item xs={12} sm={6}>
-            <StyledAvatar alt="Solveigh Ratenow" src={PressContactPhoto} />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Grid container direction="row" alignItems="center">
+      <>
+        <PressContactWrapper paddingBottom={4}>
+          <Typography variant="h2">
+            {translated(this.props.lang).press.pageHeader}
+          </Typography>
+          <Grid container spacing={5} justify="flex-start" alignItems="center">
+            <Grid item xs={12} sm={4}>
+              <StyledAvatar alt="Solveigh Ratenow" src={PressContactPhoto} />
+            </Grid>
+            <Grid item xs={12} sm={8}>
               <Typography variant="body1">
                 {translated(this.props.lang).press.pressContactTitle}
               </Typography>
-            </Grid>
-            <Grid container direction="row" alignItems="center">
-              <Grid item>
-                <Typography variant="h5">
-                  {translated(this.props.lang).press.pressContactName}
-                </Typography>
-              </Grid>
-            </Grid>
-            <Grid container direction="row" alignItems="center">
-              <Grid item>
-                <StyledEmailIcon />
-              </Grid>
-              <Grid item>
-                <Typography variant="body1">
-                  {translated(this.props.lang).press.pressContactEmail}
-                </Typography>
-              </Grid>
-            </Grid>
-          </Grid>
-        </Grid>
-        <hr></hr>
-        <Box paddingBottom={4} marginTop={4}>
-          <Typography variant="h2">
-            {translated(this.props.lang).press.resources}
-          </Typography>
-          <Typography variant="body1">
-            {translated(this.props.lang).press.resourcesLine1}
-          </Typography>
-          <Typography variant="body1">
-            <Link href="/PressKit.zip">
-              <DownloadLogo src={Logo} alt="#GesundZusammen"></DownloadLogo>
-            </Link>
-          </Typography>
-          <Typography variant="body1">
-            {translated(this.props.lang).press.resourcesLine2}
-          </Typography>
-          <Grid container direction="row" alignItems="center">
-            <Grid item>
-              <StyledGetAppIcon />
-            </Grid>
-            <Grid item>
+              <Typography variant="h4" color="primary">
+                {translated(this.props.lang).press.pressContactName}
+              </Typography>
               <Typography variant="body1">
-                <Link href="/PressKit.zip">
-                  {translated(this.props.lang).press.downloadLogo}
-                </Link>
+                <StyledEmailIcon color="primary" fontSize="small" />
+                {translated(this.props.lang).press.pressContactEmail}
               </Typography>
             </Grid>
           </Grid>
-        </Box>
+          <Box
+            paddingBottom={4}
+            paddingTop={8}
+            marginTop={8}
+            style={{ borderTop: "1px solid #CED7DB" }}
+          >
+            <Typography variant="h2">
+              {translated(this.props.lang).press.resources}
+            </Typography>
+            <Typography variant="body2" color="primary">
+              {translated(this.props.lang).press.resourcesLine1}
+            </Typography>
+            <Link href="/PressKit.zip">
+              <StyledPressKitImage src={PressKitLogo}></StyledPressKitImage>
+            </Link>
+            <Typography variant="body2" color="primary">
+              {translated(this.props.lang).press.resourcesLine2}
+            </Typography>
+            <StyledDownloadLink href="/PressKit.zip">
+              <Typography variant="body2" color="primary">
+                <StyledDownloadButton color="primary" fontSize="small" />
+                {translated(this.props.lang).press.downloadLogo}
+              </Typography>
+            </StyledDownloadLink>
+          </Box>
+        </PressContactWrapper>
         <Box paddingBottom={4} marginTop={4}>
           <BecomePart lang={this.props.lang}></BecomePart>
         </Box>
-      </PressContactWrapper>
+      </>
     );
   };
 }
 
 const PressContactWrapper: AnyStyledComponent = styled(Box)`
   && {
-    @media (min-width: 595px) {
+    @media (min-width: 600px) {
       padding-right: 16rem;
     }
   }
-  text-align: left;
 `;
 
 const StyledAvatar: AnyStyledComponent = styled(Avatar)`
   border: 8px solid rgba(0, 170, 200, 0.3);
 `;
 
-const StyledEmailIcon: AnyStyledComponent = styled(EmailIcon)`
-  color: #0a6eaa;
-  padding-right: 1rem;
-`;
-const StyledPhoneIcon: AnyStyledComponent = styled(PhoneIcon)`
-  color: #0a6eaa;
-  padding-right: 1rem;
-`;
-
-const StyledGetAppIcon: AnyStyledComponent = styled(GetAppIcon)`
-  color: #0a6eaa;
-  padding-right: 1rem;
-`;
-
-const DownloadLogo: AnyStyledComponent = styled.img`
-  display: block;
-  margin: 0 auto;
-  background-color: #003269;
-  border-radius: 4px;
-  width: 368px;
-  height: 200px;
-  @media (min-width: 600px) {
-    margin: 0;
+const StyledEmailIcon: AnyStyledComponent = styled(Email)`
+  && {
+    margin: 0.3rem 0.5rem 0 0;
     float: left;
   }
+`;
+
+const StyledDownloadLink: AnyStyledComponent = styled(Link)`
+  && {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+`;
+
+const StyledDownloadButton: AnyStyledComponent = styled(GetApp)`
+  && {
+    margin: 0.2rem 0.5rem 0 0;
+    float: left;
+  }
+`;
+
+const StyledPressKitImage: AnyStyledComponent = styled.img`
+  margin: 2rem 0;
+  max-width: 100%;
 `;
 
 export default PressContact;
