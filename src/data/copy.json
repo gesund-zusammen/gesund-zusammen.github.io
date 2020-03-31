@@ -52,24 +52,20 @@
       "title": "Sie haben Fragen?",
       "button": "FAQs",
       "content": [
-        { "title": "Über Uns", "content": "Wir sind ..." },
-        { "title": "Was wollt ihr erreichen?", "content": "Wir sind ..." },
-        { "title": "Wieso Gesund-Zusammen?", "content": "Wir sind ..." },
-        {
-          "title": "Wen und was wollt ihr unterstützen?",
-          "content": "Wir sind ..."
-        },
+        { "title": "Über Uns", "content": "Wir sind eine breite Allianz deutscher Tech-Unternehmen, wollen Gesellschaft, Politik und Wirtschaft aktiv dabei helfen, COVID-19 mit digitalen Lösungen einzudämmen. Dafür bauen wir auf eine der wichtigsten Ressourcen, die der Welt heute zur Verfügung steht: Information." },
+        { "title": "Wieso Gesund-Zusammen?", "content": "Wir bringen die Ressourcen der Digital Wirtschaft zusammen - um aktiv unseren Beitrag zu leisten." },
+        { "title": "Was wollt ihr erreichen?", "content": "Daten ermöglichen es uns, gemeinsam zu forschen, Menschen zu warnen, Leben zu retten. Und doch ist eine flächendeckende Datennutzung nicht risikolos: Angesichts der Krise mehren sich die Stimmen, Grundrechte zum Wohle der Gesundheit zu opfern. Gemeinsam werden wir den Beweis erbringen: Wir können beides haben – Infektionsschutz und Datenschutz." },
         {
           "title": "Sucht ihr nach weiteren Partner?",
-          "content": "Wir sind ..."
+          "content": "Wir sind immer offen für weitere Partner um die Mission nach vorne zu bringen."
         },
         {
           "title": "Wie steht ihr zur Arbeit von Gesundheitssystem, Ärzten und Pflegepersonal?",
-          "content": "Wir sind ..."
+          "content": "Wir bewundern und unterstützen die Arbeit aller im Gesundheitssystem. "
         },
         {
           "title": "Unterstützt ihr digitale Tools auch finanziell aus der Initiative?",
-          "content": "Wir sind ..."
+          "content": "Wir versuchen teilweise spezifische Digitale Tools unkompliziert mit Ressourcen schneller nach vorne zu bringen."
         }
       ],
       "contact": "Für weitere Fragen und stellvertretenden Kontakt, kontaktieren sie bitte: Solveig Rathenow <solveig.rathenow@finleap.com> "
@@ -137,27 +133,23 @@
       }
     },
     "faq": {
-      "title": "You have questions?",
+      "title": "Sie haben Fragen?",
       "button": "FAQs",
       "content": [
-        { "title": "Über Uns", "content": "Wir sind ..." },
-        { "title": "Was wollt ihr erreichen?", "content": "Wir sind ..." },
-        { "title": "Wieso Gesund-Zusammen?", "content": "Wir sind ..." },
-        {
-          "title": "Wen und was wollt ihr unterstützen?",
-          "content": "Wir sind ..."
-        },
+        { "title": "Über Uns", "content": "Wir sind eine breite Allianz deutscher Tech-Unternehmen, wollen Gesellschaft, Politik und Wirtschaft aktiv dabei helfen, COVID-19 mit digitalen Lösungen einzudämmen. Dafür bauen wir auf eine der wichtigsten Ressourcen, die der Welt heute zur Verfügung steht: Information." },
+        { "title": "Wieso Gesund-Zusammen?", "content": "Wir bringen die Ressourcen der Digital Wirtschaft zusammen - um aktiv unseren Beitrag zu leisten." },
+        { "title": "Was wollt ihr erreichen?", "content": "Daten ermöglichen es uns, gemeinsam zu forschen, Menschen zu warnen, Leben zu retten. Und doch ist eine flächendeckende Datennutzung nicht risikolos: Angesichts der Krise mehren sich die Stimmen, Grundrechte zum Wohle der Gesundheit zu opfern. Gemeinsam werden wir den Beweis erbringen: Wir können beides haben – Infektionsschutz und Datenschutz." },
         {
           "title": "Sucht ihr nach weiteren Partner?",
-          "content": "Wir sind ..."
+          "content": "Wir sind immer offen für weitere Partner um die Mission nach vorne zu bringen."
         },
         {
           "title": "Wie steht ihr zur Arbeit von Gesundheitssystem, Ärzten und Pflegepersonal?",
-          "content": "Wir sind ..."
+          "content": "Wir bewundern und unterstützen die Arbeit aller im Gesundheitssystem. "
         },
         {
           "title": "Unterstützt ihr digitale Tools auch finanziell aus der Initiative?",
-          "content": "Wir sind ..."
+          "content": "Wir versuchen teilweise spezifische Digitale Tools unkompliziert mit Ressourcen schneller nach vorne zu bringen."
         }
       ],
       "contact": "Für weitere Fragen und stellvertretenden Kontakt, kontaktieren sie bitte: Solveig Rathenow <solveig.rathenow@finleap.com> "
