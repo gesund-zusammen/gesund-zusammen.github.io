@@ -1,0 +1,22 @@
+{
+  "categories": [
+    {
+      "slug": "digital_tools",
+      "name": {
+        "en": "Digital Tools",
+        "de": "Digitale Tools"
+      }
+    }
+  ],
+  "initiatives": [
+    {
+      "name": "Data4Life Online Corona Test & Dashboard Germany",
+      "link": "https://www.data4life.care/en/corona/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Coronavirus in Germany: Corona Online Test and Current Number of Infections",
+        "en": "Aktuelle Zahlen der Infektionen und Corona-Online-Test"
+      }
+    }
+  ]
+}
