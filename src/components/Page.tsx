@@ -86,6 +86,7 @@ class Page extends React.Component<{}, IPageState> {
               image={IlluPressContact}
             >
               <Press lang={this.state.lang}></Press>
+            </LayoutSubPage>
           </Route>
           <Route path="/imprint">
             <LayoutSubPage

@@ -45,16 +45,6 @@ class PressContact extends React.PureComponent<IPressProps, {}> {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid container direction="row" alignItems="center">
-              <Grid item>
-                <StyledPhoneIcon />
-              </Grid>
-              <Grid item>
-                <Typography variant="body1">
-                  {translated(this.props.lang).press.pressContactPhone}
-                </Typography>
-              </Grid>
-            </Grid>
           </Grid>
         </Grid>
         <hr></hr>
