@@ -1,0 +1,38 @@
+/* TEAM */
+  Mastermind: Florian Resatsch
+  Contact: florian.resatsch [at] finleap.com
+
+  Project Manager: Daniel Manzke
+  Contact: daniel.manzke [at] finleap.com
+
+  Research: Christina Renz
+  Contact: christina.renz [at] finleap.com
+
+  Product: Christian Wöhlke
+  Contact: christian.woehlke [at] finleap.com
+
+	Developer: Andreas Jantschnig
+  Contact: andreas.jantschnig [at] finleap.com
+	Twitter: @andi_jay
+
+  Developer: Sebastian Weikart
+  Contact: sebastian.weikart [at] finleap.com
+	Twitter: @sebbbulon
+
+  Designer: Iris Lee
+	Contact: iris.lee [at] finleap.com
+
+  Designer: Samantha Lim
+  Contact: samantha.lim [at] finleap.com
+
+	Designer: Yuanzhi Chen
+  Contact: yuanzhi.chen [at] finleap.com
+
+	Design: Cecilia Luduena
+  Contact: cecilia.luduena [at] finleap.com
+
+/* THANKS */
+
+/* SITE */
+	Language: Deutsch / English
+	Doctype:HTML5
