@@ -15,10 +15,10 @@
       }
     },
     {
-      "slug": "infection_tracking_dashboards",
+      "slug": "infection_tracking",
       "name": {
         "en": "Infection Tracking Dashboards",
-        "de": "Infektions Verfolgung"
+        "de": "Infektions Verfolgung Übersichten"
       }
     },
     {
@@ -63,7 +63,7 @@
     },{
       "name": "Robert Koch Institute Case numbers in Germany and worldwide",
       "link": "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html",
-      "category": "infection_tracking_dashboards",
+      "category": "infection_tracking",
       "description": {
         "de": "COVID-19: Fallzahlen in Deutschland und weltweit",
         "en": "COVID-19: Infections in Germany and worldwide"
@@ -682,7 +682,7 @@
     {
       "name": "Cutii der Roboter (Frankreich)",
       "link": "https://www.cutii.io/en/",
-      "category": "initiatives_other_countries",
+      "category": "digital_tools",
       "description": {
         "de": "Der Roboter 'Cutii' hilft älteren Menschen virtuell mit ihren Betreuern zu interagieren.",
         "en": "Cutii is a telepresence robot that helps the elderly to interact with their caregivers virtually. They are offered to support retirement homes for free."
