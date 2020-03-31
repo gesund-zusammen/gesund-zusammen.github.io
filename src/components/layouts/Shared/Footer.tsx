@@ -163,6 +163,7 @@ const FooterWrapper: AnyStyledComponent = styled(Box)`
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: auto 70%;
+  overflow: hidden;
 
   @media (min-width: 600px) {
     padding-top: 4rem;
