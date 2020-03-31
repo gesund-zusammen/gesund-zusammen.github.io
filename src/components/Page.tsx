@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import ScrollMemory from "react-router-scroll-memory";
 
 import { translated } from "../util";
@@ -113,6 +118,7 @@ class Page extends React.Component<{}, IPageState> {
               <Imprint></Imprint>
             </LayoutSubPage>
           </Route>
+          <Redirect to="/" />
         </Switch>
       </Router>
     );
