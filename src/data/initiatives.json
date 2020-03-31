@@ -574,8 +574,8 @@
       "link": "https://www.initiative-gegen-corona.de/",
       "category": "initiatives",
       "description": {
-        "de": "Initiative zur Aufklärung der Bevölkerung.",
-        "en": "Goal is to educate the general public on the Corona Virus using strong communications."
+        "de": "Das Ziel ist es die breite Bevölkerung mit aufmerksamkeitsstarken Motiven aufzuklären.",
+        "en": "Goal is to educate the general public on the Corona Virus using strong communications"
       },
       "global": false
     },
@@ -584,18 +584,18 @@
       "link": "https://gegen-den-virus.de/",
       "category": "initiatives",
       "description": {
-        "de": "Die Brücke zwischen digitalen Hilfsangeboten und analogen Bedürftigen. Damit alle das Corona Virus gut überstehen, müssen wir einander helfen. Menschen aus Risikogruppen brauchen eure Hilfe. Hier stellen wir digitale Hilfsmittel zur Verfügung, welche die Brücke zwischen den digitalen Hilfsangeboten und den zumeist analogen Bedürftigen schlagen.",
-        "en": "A platform that provides digital aids that bridge the gap between digital support and the offline world. This project is part of KrisenKultur.de"
+        "de": "Eine Plattform, die digitale Hilfsmittel zur Verfügung stellt um die Kluft zwischen digitaler Unterstützung und der Offline-Welt zu überbrücken.",
+        "en": "A platform that provides digital aids that bridge the gap between digital support and the offline world."
       },
       "global": false
     },
     {
-      "name": "Teststationen in Deutschland",
+      "name": "COVID-19 Drive-In Teststationen in Deutschland",
       "link": "https://www.deutschlandfunk.de/covid-19-immer-mehr-drive-in-teststationen-in-deutschland.1939.de.html?drn:news_id=1115195",
       "category": "initiatives",
       "description": {
         "de": "Zunehmende Anzahl von “Drive-In” Teststationen in Deutschland.",
-        "en": "Testing: Drive-Through Finder Deutschland"
+        "en": "Increasing number of drive through testing stations in Germany"
       },
       "global": false
     },
@@ -620,17 +620,17 @@
       "global": true
     },
     {
-      "name": "Covid-19 Counterfeit Medication Detection",
+      "name": "Kampf gegen Medikamente Schwarzmarkt",
       "link": "https://www.tag24.de/chemnitz/chemnitz-medikamente-schwarzmarkt-corona-virus-covid19-app-technologie-1473067",
       "category": "initiatives",
       "description": {
-        "de": "Blockchain-Lösung zur zukünftigen Erkennung von COVID-19 Medikament Fälschungen (Authentic Network)",
+        "de": "Eine Blockchain-Lösung zur zukünftigen Erkennung von COVID-19 Medikamenten Fälschungen von Authentic Network",
         "en": "Counterfeit detection that works via blockchain technology. By scanning a QR code on the medication, the app shows whether the drug is real or counterfeit."
       },
       "global": false
     },
     {
-      "name": "Law Support by CMS",
+      "name": "Rechtliche Unterstützung durch CMS",
       "link": "https://cms.law/de/deu/insight/covid-19",
       "category": "initiatives",
       "description": {
@@ -638,6 +638,66 @@
         "en": "Support for companies in questions of how to deal with the current situation and its effects, obtained by legal counsel."
       },
       "global": false
+    },
+    {
+      "name": "The Color COVID-19 Testing Initiative",
+      "link": "https://www.color.com/covid",
+      "category": "initiatives",
+      "description": {
+        "de": "Unterstützung von Unternehmen bei Fragen zum Umgang mit der aktuellen Lage und deren Auswirkungen kann anwaltliche Unterstützung hinzugezogen werden.",
+        "en": "Today, we’re launching a high throughput, CLIA-certified COVID-19 testing laboratory integrated with public health tools. The testing facility, based in Burlingame, CA, will begin processing clinical samples to support public health efforts over the coming week, with a near-term goal of performing 10,000 tests per day."
+      },
+      "global": true
+    },
+    {
+      "name": "Kontakt Tagebuch (Österreich)",
+      "link": "https://www.roteskreuz.at/site/faq-app-stopp-corona/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Unterbrechung der Infektionskette mittels eines anonymisiert gespeicherten 'digitalen Handshakes'",
+        "en": "Interruption of the chain of infection by storing an anonymous 'digital handshake'"
+      },
+      "global": true
+    },
+    {
+      "name": "KATWARN App (Österreich)",
+      "link": "https://warnungen.katwarn.de/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Das Katastrophenwarnsystem liefert Updates rund um COVID-19.",
+        "en": "A system that transmits information and warnings from various authorities to mobile devices based on location or event / topic."
+      },
+      "global": true
+    },
+    {
+      "name": "Tracking App (Island)",
+      "link": "https://www.icelandreview.com/sci-tech/tracking-app-may-assist-iceland-with-coronavirus-contact-tracing/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Die isländische Regierung veröffentlicht eine App um COVID-19 Kontaktpersonen schneller aufzufinden.",
+        "en": "Icelandic authorities are creating an app to help contact trace coronavirus cases."
+      },
+      "global": true
+    },
+    {
+      "name": "Cutii der Roboter (Frankreich)",
+      "link": "https://www.cutii.io/en/",
+      "category": "initiatives_other_countries",
+      "description": {
+        "de": "Der Roboter 'Cutii' hilft älteren Menschen virtuell mit ihren Betreuern zu interagieren.",
+        "en": "Cutii is a telepresence robot that helps the elderly to interact with their caregivers virtually. They are offered to support retirement homes for free."
+      },
+      "global": true
+    },
+    {
+      "name": "Fernüberwachung von Patienten in Quarantäne (Frankreich)",
+      "link": "https://blog.lifen.fr/posts/covid-19-une-application-pour-diagnostiquer-les-patients-depuis-leur-domicile",
+      "category": "digital_tools",
+      "description": {
+        "de": "Eine Plattform zur Beobachtung von COVID-19 Patienten in Isolation.",
+        "en": "A remote monitoring platform for homebound patients with COVID-19, hospitalising only those with severe symptoms."
+      },
+      "global": true
     }
   ]
 }
