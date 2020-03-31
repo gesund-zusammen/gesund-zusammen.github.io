@@ -331,6 +331,7 @@ const CopyrightNote: AnyStyledComponent = styled.p`
   @media (min-width: 600px) {
     text-align: left;
     float: left;
+    margin-top: 3rem;
   }
 `;
 
