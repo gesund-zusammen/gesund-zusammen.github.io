@@ -171,7 +171,14 @@ const FooterWrapper: AnyStyledComponent = styled(Box)`
   }
 `;
 
-const FooterContent: AnyStyledComponent = styled.div``;
+const FooterContent: AnyStyledComponent = styled.div`
+  text-align: center;
+  padding-bottom: 0;
+
+  @media (min-width: 600px) {
+    text-align: left;
+  }
+`;
 
 const CopyBox: AnyStyledComponent = styled.div`
   display: block;
