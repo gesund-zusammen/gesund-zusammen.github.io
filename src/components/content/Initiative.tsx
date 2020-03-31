@@ -1,6 +1,8 @@
 import React from "react";
-import { Box, Typography, Chip } from "@material-ui/core";
+import { Box, Card, CardContent, Typography, Chip } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
+
+import IconArrowRight from "../../images/icon_arrow_right.svg";
 
 import InitiativeData from "../../data/initiatives.json";
 
@@ -57,6 +59,16 @@ class Initiative extends React.Component<IInitiativeProps, IInitiativeState> {
     return InitiativeData.categories;
   };
 
+  getCategoryName = (slug: string): string => {
+    for (let i = 0; i < InitiativeData.categories.length; i++) {
+      if (InitiativeData.categories[i].slug === slug) {
+        return InitiativeData.categories[i].name[this.props.lang];
+      }
+    }
+
+    return "Unknown";
+  };
+
   getInitiatives = (categorySlug?: string, global?: boolean): IInitiative[] => {
     let initiatives = InitiativeData.initiatives;
     if (categorySlug) {
@@ -100,6 +112,25 @@ class Initiative extends React.Component<IInitiativeProps, IInitiativeState> {
             ></CategoryChip>
           ))}
         </Box>
+        <Box id="initiatives-list">
+          {this.getInitiatives(this.state.selectedCategory).map(initiative => (
+            <InitiativeCardWrapper key={initiative.link} href={initiative.link}>
+              <InitiativeCard>
+                <CardContent>
+                  <Typography variant="subtitle2" color="secondary">
+                    {this.getCategoryName(initiative.category)}
+                  </Typography>
+                  <InitiativeCardTitle variant="h4" color="primary">
+                    {initiative.name}
+                  </InitiativeCardTitle>
+                  <Typography variant="body2" color="primary">
+                    {initiative.description[this.props.lang]}
+                  </Typography>
+                </CardContent>
+              </InitiativeCard>
+            </InitiativeCardWrapper>
+          ))}
+        </Box>
       </Box>
     );
   };
@@ -124,6 +155,28 @@ const CategoryChip: AnyStyledComponent = styled(Chip)`
       color: #ffffff;
       background: #0a6eaa;
     }
+  }
+`;
+
+const InitiativeCardWrapper: AnyStyledComponent = styled.a`
+  text-decoration: none;
+`;
+
+const InitiativeCard: AnyStyledComponent = styled(Card)`
+  && {
+    border-radius: 15px;
+    box-shadow: 0px 2px 24px #e3e6eb;
+    margin-bottom: 2rem;
+    padding: 2.2rem;
+    background-image: url(${IconArrowRight});
+    background-position: right 2rem center;
+    background-repeat: no-repeat;
+  }
+`;
+
+const InitiativeCardTitle: AnyStyledComponent = styled(Typography)`
+  && {
+    margin-bottom: 0;
   }
 `;
 
