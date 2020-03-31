@@ -6,6 +6,48 @@
         "en": "Digital Tools",
         "de": "Digitale Tools"
       }
+    },
+    {
+      "slug": "digital_consultation",
+      "name": {
+        "en": "Digital Consultation",
+        "de": "Digitale Konsultation"
+      }
+    },
+    {
+      "slug": "infection_tracking_dashboards",
+      "name": {
+        "en": "Infection Tracking Dashboards",
+        "de": "Dashboards mit Infektionszahlen"
+      }
+    },
+    {
+      "slug": "initiatives",
+      "name": {
+        "en": "Initiatives",
+        "de": "Initiativen"
+      }
+    },
+    {
+      "slug": "hackathons",
+      "name": {
+        "en": "Hackathons",
+        "de": "Hackathons"
+      }
+    },
+    {
+      "slug": "knowledge_resources",
+      "name": {
+        "en": "Knowledge Resources",
+        "de": "Wissensdatenbanken"
+      }
+    },
+    {
+      "slug": "research_and_government_sites",
+      "name": {
+        "en": "Research & Government Sites",
+        "de": "Forschungs- und Regierungsseiten"
+      }
     }
   ],
   "initiatives": [
