@@ -1,7 +1,6 @@
 import React from "react";
 
 import Initiative from "./Initiative";
-import Faq from "./Faq";
 
 import Partners from "./Partners";
 
