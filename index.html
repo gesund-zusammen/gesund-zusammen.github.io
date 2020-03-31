@@ -25,14 +25,43 @@
       id="eh_8f6LgQ"
     ></script>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
-      rel="stylesheet"
-    />
+    <script type="text/plain" async="" data-usercentrics="Google Fonts">
+      var head  = document.getElementsByTagName('head')[0];
+      var link  = document.createElement('link');
+      link.rel  = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'https://fonts.googleapis.com/css?family=Lato:400&display=swap';
+      head.appendChild(link);
+    </script>
+
+    <script type="text/plain" async="" data-usercentrics="Google Fonts">
+      var head  = document.getElementsByTagName('head')[0];
+      var link  = document.createElement('link');
+      link.rel  = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap';
+      head.appendChild(link);
+    </script>
+
+    <script
+      type="text/plain"
+      async=""
+      src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+      data-dojo-config="usePlainJson: true, isDebug: false"
+      data-usercentrics="Mailchimp"
+    ></script>
+
+    <script type="text/plain" async="" data-usercentrics="Mailchimp">
+      window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
+        L.start({
+          baseUrl: "mc.us19.list-manage.com",
+          uuid: "cad2329661c2775d063e682dc",
+          lid: "33fca6067e",
+          uniqueMethods: true,
+        });
+      });
+    </script>
+
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       rel="stylesheet"
@@ -77,23 +106,6 @@
       })(window.location);
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
-
-    <script
-      type="text/plain"
-      src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
-      data-dojo-config="usePlainJson: true, isDebug: false"
-      data-usercentrics="Mailchimp"
-    ></script>
-    <script type="text/plain" data-usercentrics="Mailchimp">
-      window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
-        L.start({
-          baseUrl: "mc.us19.list-manage.com",
-          uuid: "cad2329661c2775d063e682dc",
-          lid: "33fca6067e",
-          uniqueMethods: true,
-        });
-      });
-    </script>
 
     <meta
       name="viewport"
