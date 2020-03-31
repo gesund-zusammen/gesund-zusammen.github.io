@@ -30,6 +30,7 @@ import LogoCMSLaw from "../../images/partners/cmslaw.svg";
 import LogoSKWSchwarz from "../../images/partners/skwschwarz.jpg";
 import LogoBCGDV from "../../images/partners/bcgdv.svg";
 import LogoDoctorly from "../../images/partners/doctorly.png";
+import LogoFischerAppelt from "../../images/partners/fischerappelt.svg";
 
 interface IPartnersProps {
   lang: "de" | "en";
@@ -194,6 +195,22 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               color="black"
               nameColorInverted={true}
               link="https://www.skwschwarz.de/"
+            ></PartnerCard>
+          </Grid>
+        </Box>
+        <Typography variant="h2">Agency Partner</Typography>
+        <Box paddingTop={4}>
+          <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+            spacing={4}
+          >
+            <PartnerCard
+              name="fischerAppelt"
+              image={LogoFischerAppelt}
+              link="https://www.fischerappelt.de/"
             ></PartnerCard>
           </Grid>
         </Box>
