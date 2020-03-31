@@ -10,8 +10,8 @@ const theme = responsiveFontSizes(
   createMuiTheme({
     palette: {
       primary: {
-        main: "#0A6EAA",
-        dark: "#003269",
+        main: "#003269",
+        contrastText: "#ffffff",
       },
       secondary: {
         main: "#00AAC8",
@@ -74,6 +74,7 @@ const theme = responsiveFontSizes(
         fontSize: "1.2rem",
         fontWeight: "normal",
         color: "#003269",
+        marginBottom: "1.2rem",
       },
       body2: {
         fontSize: "1rem",

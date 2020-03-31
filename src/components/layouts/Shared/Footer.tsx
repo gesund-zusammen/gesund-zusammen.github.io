@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Container, Grid, Typography, Hidden } from "@material-ui/core";
-import styled, { AnyStyledComponent } from "styled-components";
+import styled, { css, AnyStyledComponent } from "styled-components";
 import { Link } from "react-router-dom";
 
 import { translated } from "../../../util";
@@ -67,21 +67,43 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                   <Typography variant="subtitle2">
                     {translated(this.props.lang).footer.shareVia}
                   </Typography>
-                  <img
-                    className="share-icon"
-                    src={IconWhatsApp}
-                    alt="Share with WhatsApp"
-                  ></img>
-                  <img
-                    className="share-icon"
-                    src={IconMessenger}
-                    alt="Share with Messenger"
-                  ></img>
-                  <img
-                    className="share-icon"
-                    src={IconEmail}
-                    alt="Share via Email"
-                  ></img>
+                  <a
+                    className="share-icon-link"
+                    href="whatsapp://send?text=https://gesund-zusammen.de"
+                    data-action="share/whatsapp/share"
+                  >
+                    <img
+                      className="share-icon"
+                      src={IconWhatsApp}
+                      alt="Share with WhatsApp"
+                    ></img>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://gesund-zusammen.de"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="share-icon-link"
+                  >
+                    <img
+                      className="share-icon"
+                      src={IconMessenger}
+                      alt="Share with Messenger"
+                    ></img>
+                  </a>
+                  <a
+                    href={`mailto:?subject=${encodeURIComponent(
+                      "Guck dir mal gesund-zusammen.de an",
+                    )}&body=${encodeURIComponent(
+                      "https://gesund-zusammen.de",
+                    )}`}
+                    className="share-icon-link"
+                  >
+                    <img
+                      className="share-icon"
+                      src={IconEmail}
+                      alt="Share via Email"
+                    ></img>
+                  </a>
                 </ShareBox>
               </Grid>
             </Grid>
@@ -94,14 +116,14 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                 </Link>
               </Hidden>
               <FooterSocialIcons>
+                <a href="https://twitter.com/gesundzusammen">
+                  <img src={SocialIconTwitter} alt="Twitter"></img>
+                </a>
                 <a href="https://facebook.com">
                   <img src={SocialIconFacebook} alt="Facebook"></img>
                 </a>
                 <a href="https://invision.com">
                   <img src={SocialIconInvision} alt="Invision"></img>
-                </a>
-                <a href="https://twitter.com">
-                  <img src={SocialIconTwitter} alt="Twitter"></img>
                 </a>
                 <a href="https://youtube.com">
                   <img src={SocialIconYoutube} alt="Youtube"></img>
@@ -113,15 +135,15 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                 </a>
               </FooterEmailLink>
               <FooterNavItems>
-                <FooterNavItem href="#">
+                <FooterNavLinkItem to="/privacy">
                   {translated(this.props.lang).footer.nav.privacy}
-                </FooterNavItem>
-                <FooterNavItem href="#">
+                </FooterNavLinkItem>
+                <FooterNavAnchorItem href="mailto:responsibledisclosure@gesund-zusammen.de">
                   {translated(this.props.lang).footer.nav.vulnerability}
-                </FooterNavItem>
-                <FooterNavItem href="#">
+                </FooterNavAnchorItem>
+                <FooterNavAnchorItem href="https://docs.google.com/document/d/1v2kkrdG3i15nlpf4unVyIYlivQI7CVGczSLNe_U7vPs">
                   {translated(this.props.lang).footer.nav.imprint}
-                </FooterNavItem>
+                </FooterNavAnchorItem>
               </FooterNavItems>
               <CopyrightNote>&copy; 2020 finleap GmbH</CopyrightNote>
             </FooterNav>
@@ -141,6 +163,7 @@ const FooterWrapper: AnyStyledComponent = styled(Box)`
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: auto 70%;
+  overflow: hidden;
 
   @media (min-width: 600px) {
     padding-top: 4rem;
@@ -148,7 +171,14 @@ const FooterWrapper: AnyStyledComponent = styled(Box)`
   }
 `;
 
-const FooterContent: AnyStyledComponent = styled.div``;
+const FooterContent: AnyStyledComponent = styled.div`
+  text-align: center;
+  padding-bottom: 0;
+
+  @media (min-width: 600px) {
+    text-align: left;
+  }
+`;
 
 const CopyBox: AnyStyledComponent = styled.div`
   display: block;
@@ -172,7 +202,16 @@ const ShareBox: AnyStyledComponent = styled.div`
   text-align: center;
   padding: 1rem;
 
-  & > .share-icon {
+  & .share-icon {
+    margin-left: 2rem;
+    margin-top: 1rem;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+
+  & .share-icon-link {
     margin-left: 2rem;
     margin-top: 1rem;
 
@@ -256,7 +295,7 @@ const FooterNavItems: AnyStyledComponent = styled.div`
   }
 `;
 
-const FooterNavItem: AnyStyledComponent = styled.a`
+const footerLinkStyles = css`
   display: block;
   width: 100%;
   font-family: inherit;
@@ -275,6 +314,14 @@ const FooterNavItem: AnyStyledComponent = styled.a`
       margin-left: 0;
     }
   }
+`;
+
+const FooterNavAnchorItem: AnyStyledComponent = styled.a`
+  ${footerLinkStyles}
+`;
+
+const FooterNavLinkItem: AnyStyledComponent = styled(Link)`
+  ${footerLinkStyles}
 `;
 
 const CopyrightNote: AnyStyledComponent = styled.p`
