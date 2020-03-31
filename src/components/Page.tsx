@@ -11,6 +11,7 @@ import Landing from "./content/Landing";
 import Partners from "./content/Partners";
 import Faq from "./content/Faq";
 import PrivacyPolicy from "./content/Privacy";
+import Imprint from "./content/Imprint";
 
 import IlluPrivacy from "../images/illu_privacy.svg";
 import IlluFaq from "../images/illu_faq.svg";
@@ -73,6 +74,16 @@ class Page extends React.Component<{}, IPageState> {
               image={IlluPrivacy}
             >
               <PrivacyPolicy></PrivacyPolicy>
+            </LayoutSubPage>
+          </Route>
+          <Route path="/imprint">
+            <LayoutSubPage
+              lang={this.state.lang}
+              langChangeCallback={this.handleLangChange}
+              title={translated(this.state.lang).footer.nav.imprint}
+              image={IlluPrivacy}
+            >
+              <Imprint></Imprint>
             </LayoutSubPage>
           </Route>
         </Switch>
