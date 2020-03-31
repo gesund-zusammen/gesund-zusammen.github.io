@@ -15,7 +15,6 @@ class Landing extends React.PureComponent<ILandingProps, {}> {
       <>
         <Initiative lang={this.props.lang}></Initiative>
         <Partners lang={this.props.lang}></Partners>
-        <Faq lang={this.props.lang}></Faq>
       </>
     );
   };

@@ -26,6 +26,8 @@ import LogoTier from "../../images/partners/tier.svg";
 import LogoTwoBirds from "../../images/partners/twobirds.png";
 import LogoReedSmith from "../../images/partners/reedsmith.svg";
 import LogoGlobalCitizen from "../../images/partners/globalcitizen.svg";
+import LogoCMSLaw from "../../images/partners/cmslaw.svg";
+import LogoSKWSchwarz from "../../images/partners/skwschwarz.jpg";
 
 interface IPartnersProps {
   lang: "de" | "en";
@@ -55,12 +57,12 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.wefox.de/"
             ></PartnerCard>
             <PartnerCard
-              name="Via Data"
+              name="Via"
               image={LogoViaHealth}
               link="https://www.viadata.io/"
             ></PartnerCard>
             <PartnerCard
-              name="Global Citizen"
+              name="Global Citizen Foundation"
               image={LogoGlobalCitizen}
               link="https://www.globalcitizen.org/"
             ></PartnerCard>
@@ -115,7 +117,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.personio.de/"
             ></PartnerCard>
             <PartnerCard
-              name="MrSpex"
+              name="Mister Spex"
               image={LogoMrSpex}
               link="https://www.misterspex.de/"
             ></PartnerCard>
@@ -130,7 +132,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://ioniq.com/"
             ></PartnerCard>
             <PartnerCard
-              name="Tier"
+              name="Tier Mobility"
               image={LogoTier}
               link="https://ww.tier.app/"
             ></PartnerCard>
@@ -168,6 +170,18 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.reedsmith.com/"
               color="#3d3c3c"
               nameColorInverted={true}
+            ></PartnerCard>
+            <PartnerCard
+              name="CMS"
+              image={LogoCMSLaw}
+              link="https://cms.law/"
+            ></PartnerCard>
+            <PartnerCard
+              name="SKW Schwarz"
+              image={LogoSKWSchwarz}
+              color="black"
+              nameColorInverted={true}
+              link="https://www.skwschwarz.de/"
             ></PartnerCard>
           </Grid>
         </Box>
