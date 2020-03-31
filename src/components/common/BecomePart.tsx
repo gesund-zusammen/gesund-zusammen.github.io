@@ -20,7 +20,7 @@ class BecomePart extends React.PureComponent<IBecomePartProps, {}> {
           spacing={0}
         >
           <Grid item xs={12} sm={7}>
-            <StyledClaim variant="h2">
+            <StyledClaim variant="h4" color="primary">
               {translated(this.props.lang).partners.claim}
             </StyledClaim>
           </Grid>
@@ -65,9 +65,8 @@ const PartnerButton: AnyStyledComponent = styled(Button)`
     font-weight: 600;
     text-transform: none;
     text-align: center;
-    padding: 1rem auto;
-    border-radius: 15px;
-    padding: 1rem 0;
+    border-radius: 4px;
+    padding: 1rem;
     margin: 2rem auto 0 auto;
 
     @media (min-width: 600px) {

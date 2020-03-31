@@ -59,7 +59,7 @@ const FaqButton: AnyStyledComponent = styled(Button)`
     font-weight: 600;
     text-transform: none;
     padding: 1rem 5rem;
-    border-radius: 15px;
+    border-radius: 4px;
   }
 `;
 

@@ -171,7 +171,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
             ></PartnerCard>
           </Grid>
         </Box>
-        <Box marginTop={4}>
+        <Box paddingBottom={4} marginTop={4}>
           <BecomePart lang={this.props.lang}></BecomePart>
         </Box>
       </Box>
