@@ -31,6 +31,7 @@ import LogoSKWSchwarz from "../../images/partners/skwschwarz.jpg";
 import LogoBCGDV from "../../images/partners/bcgdv.svg";
 import LogoDoctorly from "../../images/partners/doctorly.png";
 import LogoFischerAppelt from "../../images/partners/fischerappelt.svg";
+import LogoDeloitte from "../../images/partners/deloitte.svg";
 
 interface IPartnersProps {
   lang: "de" | "en";
@@ -80,9 +81,9 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.deutschestartups.org/"
             ></PartnerCard>
             <PartnerCard
-              name="Omio"
-              image={LogoOmio}
-              link="https://www.omio.com"
+              name="BCG DV"
+              image={LogoBCGDV}
+              link="https://www.bcgdv.com"
             ></PartnerCard>
             <PartnerCard
               name="N26"
@@ -105,9 +106,9 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.deliveryhero.com/"
             ></PartnerCard>
             <PartnerCard
-              name="BCG DV"
-              image={LogoBCGDV}
-              link="https://www.bcgdv.com"
+              name="Omio"
+              image={LogoOmio}
+              link="https://www.omio.com"
             ></PartnerCard>
             <PartnerCard
               name="Celonis"
@@ -152,7 +153,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
           </Grid>
         </Box>
         <Typography variant="h2">Privacy Partner</Typography>
-        <Box paddingTop={4}>
+        <Box paddingTop={4} paddingBottom={4}>
           <Grid
             container
             direction="row"
@@ -164,6 +165,11 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="Datenschutzexperte"
               image={LogoDatenschutzExperte}
               link="https://www.datenschutzexperte.de/"
+            ></PartnerCard>
+            <PartnerCard
+              name="Deloitte"
+              image={LogoDeloitte}
+              link="https://www2.deloitte.com/"
             ></PartnerCard>
             <PartnerCard
               name="UserCentrics"
@@ -199,7 +205,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
           </Grid>
         </Box>
         <Typography variant="h2">Agency Partner</Typography>
-        <Box paddingTop={4}>
+        <Box paddingTop={4} paddingBottom={4}>
           <Grid
             container
             direction="row"
@@ -211,6 +217,8 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="fischerAppelt"
               image={LogoFischerAppelt}
               link="https://www.fischerappelt.de/"
+              color="black"
+              nameColorInverted={true}
             ></PartnerCard>
           </Grid>
         </Box>
