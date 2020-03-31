@@ -52,15 +52,6 @@
   ],
   "initiatives": [
     {
-      "name": "IchHabs - Die Covid-19 Tracing-App",
-      "link": "https://ichhabs.app/",
-      "category": "digital_tools",
-      "description": {
-        "de": "Verfolgt nicht dich. Nur das Virus. Du bist positiv auf Covid-19 getestet? Jetzt kannst du andere Menschen schützen indem du anonym deine Bewegungsdaten spendest. Wir verfolgen das Virus – niemals dich.",
-        "en": "Verfolgt nicht dich. Nur das Virus. Du bist positiv auf Covid-19 getestet? Jetzt kannst du andere Menschen schützen indem du anonym deine Bewegungsdaten spendest. Wir verfolgen das Virus – niemals dich."
-      },
-      "global": true
-    },{
       "name": "Robert Koch Institute Case numbers in Germany and worldwide",
       "link": "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html",
       "category": "infection_tracking",
