@@ -223,9 +223,12 @@ const InitiativeCard: AnyStyledComponent = styled(Card)`
     box-shadow: 0px 2px 24px #e3e6eb;
     margin-bottom: 2rem;
     padding: 2.2rem;
-    background-image: url(${IconArrowRight});
-    background-position: right 2rem center;
-    background-repeat: no-repeat;
+
+    &:hover {
+      background-image: url(${IconArrowRight});
+      background-position: right 2rem center;
+      background-repeat: no-repeat;
+    }
   }
 `;
 
