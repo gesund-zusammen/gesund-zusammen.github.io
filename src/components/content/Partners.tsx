@@ -28,7 +28,7 @@ import LogoReedSmith from "../../images/partners/reedsmith.svg";
 import LogoGlobalCitizen from "../../images/partners/globalcitizen.svg";
 import LogoCMSLaw from "../../images/partners/cmslaw.svg";
 import LogoSKWSchwarz from "../../images/partners/skwschwarz.jpg";
-import LogoBCGDV from "../../images/partners/bcgdv.jpg";
+import LogoBCGDV from "../../images/partners/bcgdv.svg";
 
 interface IPartnersProps {
   lang: "de" | "en";
