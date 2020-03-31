@@ -170,6 +170,8 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="Deloitte"
               image={LogoDeloitte}
               link="https://www2.deloitte.com/"
+              color="black"
+              nameColorInverted={true}
             ></PartnerCard>
             <PartnerCard
               name="UserCentrics"
