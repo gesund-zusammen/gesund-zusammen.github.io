@@ -163,7 +163,7 @@ const FooterWrapper: AnyStyledComponent = styled(Box)`
 
   @media (min-width: 600px) {
     padding-top: 4rem;
-    background-size: contain;
+    background-size: auto 60%;
   }
 `;
 
