@@ -179,6 +179,8 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
             <PartnerCard
               name="SKW Schwarz"
               image={LogoSKWSchwarz}
+              color="black"
+              nameColorInverted={true}
               link="https://www.skwschwarz.de/"
             ></PartnerCard>
           </Grid>
