@@ -24,12 +24,9 @@ class HeaderNav extends React.Component<IHeaderProps, {}> {
           <HeaderLogo src={Logo} alt="#GesundZusammen"></HeaderLogo>
         </Link>
         <HeaderNavItems>
-          <HeaderNavAnchorItem href="#initiative">
-            {translated(this.props.lang).header.nav.initiative}
-          </HeaderNavAnchorItem>
-          <HeaderNavAnchorItem href="https://docs.google.com/document/d/1jIgISaBz1R0Sy_-1fOsy9JAmj--YB4IUfaUgmhWrLsk">
-            {translated(this.props.lang).header.nav.projects}
-          </HeaderNavAnchorItem>
+          <HeaderNavLinkItem to="/initiatives">
+            {translated(this.props.lang).header.nav.initiatives}
+          </HeaderNavLinkItem>
           <HeaderNavLinkItem to="/partners">
             {translated(this.props.lang).header.nav.supporters}
           </HeaderNavLinkItem>
@@ -95,10 +92,6 @@ const headerNavItemStyles = css`
       margin-left: 0;
     }
   }
-`;
-
-const HeaderNavAnchorItem: AnyStyledComponent = styled.a`
-  ${headerNavItemStyles}
 `;
 
 const HeaderNavLinkItem: AnyStyledComponent = styled(Link)`

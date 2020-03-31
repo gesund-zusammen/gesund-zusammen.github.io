@@ -29,6 +29,7 @@ import LogoGlobalCitizen from "../../images/partners/globalcitizen.svg";
 import LogoCMSLaw from "../../images/partners/cmslaw.svg";
 import LogoSKWSchwarz from "../../images/partners/skwschwarz.jpg";
 import LogoBCGDV from "../../images/partners/bcgdv.svg";
+import LogoDoctorly from "../../images/partners/doctorly.png"
 
 interface IPartnersProps {
   lang: "de" | "en";
@@ -141,6 +142,11 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="Tier Mobility"
               image={LogoTier}
               link="https://ww.tier.app/"
+            ></PartnerCard>
+            <PartnerCard
+              name="doctorly"
+              image={LogoDoctorly}
+              link="https://www.doctorly.de/"
             ></PartnerCard>
           </Grid>
         </Box>
