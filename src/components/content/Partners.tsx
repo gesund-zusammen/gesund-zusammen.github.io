@@ -28,6 +28,7 @@ import LogoReedSmith from "../../images/partners/reedsmith.svg";
 import LogoGlobalCitizen from "../../images/partners/globalcitizen.svg";
 import LogoCMSLaw from "../../images/partners/cmslaw.svg";
 import LogoSKWSchwarz from "../../images/partners/skwschwarz.jpg";
+import LogoBCGDV from "../../images/partners/bcgdv.jpg";
 
 interface IPartnersProps {
   lang: "de" | "en";
@@ -95,6 +96,11 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="DeliveryHero"
               image={LogoDeliveryHero}
               link="https://www.deliveryhero.com/"
+            ></PartnerCard>
+            <PartnerCard
+              name="BCG DV"
+              image={LogoBCGDV}
+              link="https://www.bcgdv.com"
             ></PartnerCard>
             <PartnerCard
               name="Celonis"
