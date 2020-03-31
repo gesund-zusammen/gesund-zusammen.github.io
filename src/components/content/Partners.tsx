@@ -27,6 +27,7 @@ import LogoTwoBirds from "../../images/partners/twobirds.png";
 import LogoReedSmith from "../../images/partners/reedsmith.svg";
 import LogoGlobalCitizen from "../../images/partners/globalcitizen.svg";
 import LogoCMSLaw from "../../images/partners/cmslaw.svg";
+import LogoSKWSchwarz from "../../images/partners/skwschwarz.svg";
 
 interface IPartnersProps {
   lang: "de" | "en";
@@ -174,6 +175,13 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="CMS"
               image={LogoCMSLaw}
               link="https://cms.law/"
+            ></PartnerCard>
+            <PartnerCard
+              name="SKW Schwarz"
+              image={LogoSKWSchwarz}
+              color="black"
+              nameColorInverted={true}
+              link="https://www.skwschwarz.de/"
             ></PartnerCard>
           </Grid>
         </Box>
