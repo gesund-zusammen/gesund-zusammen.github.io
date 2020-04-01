@@ -42,16 +42,15 @@ class PrivacyPolicy extends React.PureComponent<IPrivacyProps, {}> {
             Kontaktdaten des Datenschutzbeauftragten
           </Typography>
           <Typography variant="body1">
-            Firmenname
+            PROLIANCE GmbH / www.datenschutzexperte.de
             <br />
-            Anschrift (Straße, Hausnummer, PLZ, Ort)
+            Datenschutzbeauftragter
             <br />
-            E-Mail-Adresse:{" "}
-            <Link href="mailto:privacy@gesund-zusammen.de">
-              privacy@gesund-zusammen.de
+            Leopoldstr. 21, 80802 München
+            <br />
+            <Link href="mailto:datenschutzbeauftragter@datenschutzexperte.de">
+              datenschutzbeauftragter@datenschutzexperte.de
             </Link>
-            <br />
-            Telefonnummer
             <br />
           </Typography>
           <Typography variant="h2" id="section1">
@@ -542,7 +541,7 @@ class PrivacyPolicy extends React.PureComponent<IPrivacyProps, {}> {
             Besuch gilt die jeweils aktuellste Fassung.
           </Typography>
           <Typography variant="body1">
-            Stand dieser Datenschutzerklärung: 31.03.2020
+            Stand dieser Datenschutzerklärung: 01.04.2020
           </Typography>
         </PrivacyWrapper>
         <Box paddingBottom={4} marginTop={4}>
