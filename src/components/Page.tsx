@@ -27,6 +27,16 @@ import IlluFaq from "../images/illu_faq.svg";
 import IlluPressContact from "../images/illu_presscontact.svg";
 import IlluImprint from "../images/illu_imprint.svg";
 
+const getBootLang = (): "de" | "en" => {
+  const userLang: string = window.navigator.language;
+  if (userLang.substr(0, 2) === "de") {
+    return "de";
+  }
+  return "en";
+};
+
+const DEFAULT_LANG = getBootLang();
+
 class Page extends React.Component<
   RouteComponentProps<{ lang: "de" | "en" }>,
   {}
@@ -140,11 +150,11 @@ class LangWrapper extends React.Component {
               supportedLanguages.includes(props.match.params.lang) ? (
                 <Page {...props}></Page>
               ) : (
-                <Redirect to="/de/" />
+                <Redirect to={`/${DEFAULT_LANG}/`} />
               )
             }
           ></Route>
-          <Redirect to="/de/"></Redirect>
+          <Redirect to={`/${DEFAULT_LANG}/`}></Redirect>
         </Switch>
       </Router>
     );
