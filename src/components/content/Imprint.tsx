@@ -6,13 +6,37 @@ class PrivacyPolicy extends React.PureComponent {
   render = () => {
     return (
       <PrivacyWrapper paddingBottom={4}>
+        Address
+
+        Gesund Zusammen gGmbH i.G.
+
+        Urbanstr. 71
+
+        10967 Berlin, Germany
+
+
+
+        Contact
+
+        Tel .: +49 (0) 30 609865290
+
+        Email: media@gesund-zusammen.de
+
+
+
+        Managing Directors
+
+        Ramin Niroumand
+
+        Julian Bernhard Edward Teicke
+
         <Typography variant="h2">Address</Typography>
         <Typography variant="body1">
-          finleap GmbH
+          Gesund Zusammen gGmbH i.G.
           <br />
-          Hardenbergstraße 32
+          Urbanstr. 71
           <br />
-          10623 Berlin, Germany
+          10967 Berlin, Germany
         </Typography>
         <Typography variant="h2">Contact</Typography>
         <Typography variant="body1">
@@ -23,16 +47,14 @@ class PrivacyPolicy extends React.PureComponent {
         <Typography variant="h2">Managing Directors</Typography>
         <Typography variant="body1">
           Ramin Niroumand <br />
-          Michael Hock <br />
-          Dr. Florian Resatsch <br />
-          Dr. Birte Sewing <br />
+          Julian Bernhard Edward Teicke<br />
         </Typography>
         <Typography variant="h2">Commercial Register</Typography>
         <Typography variant="body1">
           Amtsgericht Charlottenburg
           <br />
-          HRB 159534 B <br />
-          VAT ID: DE296042460
+          HRB [Aktualisierung nach erfolgreicher Eintragung] B <br />
+          VAT ID: [Aktualisierung nach erfolgreicher Eintragung]
           <br />
         </Typography>
         <Typography variant="h2">
