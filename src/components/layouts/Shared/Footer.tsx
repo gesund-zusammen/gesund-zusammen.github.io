@@ -12,10 +12,7 @@ import IconWhatsApp from "../../../images/icon_whatsapp.svg";
 import IconFacebook from "../../../images/icon_facebook.svg";
 import IconEmail from "../../../images/icon_email.svg";
 
-import SocialIconFacebook from "../../../images/footer_icon_facebook.svg";
-import SocialIconInvision from "../../../images/footer_icon_invision.svg";
 import SocialIconTwitter from "../../../images/footer_icon_twitter.svg";
-import SocialIconYoutube from "../../../images/footer_icon_youtube.svg";
 
 interface IFooterProps {
   lang: "de" | "en";
@@ -116,15 +113,6 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
               <FooterSocialIcons>
                 <a href="https://twitter.com/gesundzusammen">
                   <img src={SocialIconTwitter} alt="Twitter"></img>
-                </a>
-                <a href="https://facebook.com">
-                  <img src={SocialIconFacebook} alt="Facebook"></img>
-                </a>
-                <a href="https://invision.com">
-                  <img src={SocialIconInvision} alt="Invision"></img>
-                </a>
-                <a href="https://youtube.com">
-                  <img src={SocialIconYoutube} alt="Youtube"></img>
                 </a>
               </FooterSocialIcons>
               <FooterNavItems>
