@@ -10,6 +10,8 @@ import {
 } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
+import { translated } from "../../../util";
+
 import IlluNewsletter from "../../../images/illu_newsletter.svg";
 
 interface INewsletterSignupProps {
@@ -30,17 +32,19 @@ class NewsletterSignup extends React.Component<INewsletterSignupProps, {}> {
               </Grid>
             </Hidden>
             <Grid item xs={12} sm={6}>
-              <Typography variant="h2">Subscribe to our Newsletter</Typography>
+              <Typography variant="h2">
+                {translated(this.props.lang).newsletter.title}
+              </Typography>
               <Typography variant="body1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Hendrerit urna adipiscing neque sociis volutpat quis facilisis
-                fames.
+                {translated(this.props.lang).newsletter.content}
               </Typography>
               <Grid container spacing={2}>
                 <Grid item xs={8}>
                   <EmailField
                     variant="outlined"
-                    placeholder="E-Mail"
+                    placeholder={
+                      translated(this.props.lang).newsletter.inputPlaceholder
+                    }
                     fullWidth={true}
                   ></EmailField>
                 </Grid>
@@ -51,7 +55,7 @@ class NewsletterSignup extends React.Component<INewsletterSignupProps, {}> {
                     disableFocusRipple={true}
                     fullWidth={true}
                   >
-                    Subscribe
+                    {translated(this.props.lang).newsletter.cta}
                   </SubscribeButton>
                 </Grid>
               </Grid>
