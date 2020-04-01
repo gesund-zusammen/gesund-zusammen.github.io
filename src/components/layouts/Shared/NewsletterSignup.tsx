@@ -32,10 +32,10 @@ class NewsletterSignup extends React.Component<INewsletterSignupProps, {}> {
               </Grid>
             </Hidden>
             <Grid item xs={12} sm={6}>
-              <Typography variant="h2">
+              <Typography variant="h2" color="textSecondary">
                 {translated(this.props.lang).newsletter.title}
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body1" color="textSecondary">
                 {translated(this.props.lang).newsletter.content}
               </Typography>
               <Grid container spacing={2}>
@@ -95,6 +95,7 @@ const SubscribeButton: AnyStyledComponent = styled(Button)`
     display: block;
     width: 100%;
     height: 100%;
+    background-color: #0a6eaa;
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: none;

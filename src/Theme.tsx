@@ -9,7 +9,12 @@ interface IThemeProps {
 const theme = responsiveFontSizes(
   createMuiTheme({
     palette: {
+      text: {
+        primary: "#003269",
+        secondary: "#0A6EAA",
+      },
       primary: {
+        light: "#0A6EAA",
         main: "#003269",
         contrastText: "#ffffff",
       },
