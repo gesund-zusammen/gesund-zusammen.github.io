@@ -38,7 +38,13 @@
       "title": "Founding & Tech Partners",
       "claim": "Sie wollen auch mitmachen?",
       "cta": "Werden Sie Teil der Initiative",
-      "link": "mailto:partners@gesund-zusammen.de"
+      "link": "mailto:partners@gesund-zusammen.de",
+      "type" : {
+        "founders": "Founding & Tech Partner",
+        "privacy": "Privacy Partner",
+        "agencies": "Agentur Partner",
+        "further": "Weitere Partner"
+      }
     },
     "privacy": {
       "claim": "Sie haben noch eine Frage?",
@@ -157,7 +163,13 @@
       "title": "Founding & Tech Partners",
       "claim": "Want to help make a difference?",
       "cta": "Become part of the initiative",
-      "link": "mailto:partners@gesund-zusammen.de"
+      "link": "mailto:partners@gesund-zusammen.de",
+      "type" : {
+        "founders": "Founding & Tech Partner",
+        "privacy": "Privacy Partner",
+        "agencies": "Agency Partner",
+        "further": "Further Partner"
+      }
     },
     "privacy": {
       "claim": "You have another question?",
