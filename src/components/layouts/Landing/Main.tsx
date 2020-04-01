@@ -4,6 +4,7 @@ import styled, { AnyStyledComponent } from "styled-components";
 
 import LandingHeader from "./Header";
 import Footer from "../Shared/Footer";
+import NewsletterSignup from "../Shared/NewsletterSignup";
 import { HeaderBox, MainContentContainer } from "../Shared/StyledComponents";
 
 interface ILayoutLandingProps {
@@ -34,11 +35,7 @@ class LayoutLanding extends React.Component<ILayoutLandingProps, {}> {
           </MainContentContainer>
         </Box>
 
-        <NewsletterSignupBox id="newsletter-signup" marginTop={4}>
-          <NewsletterSignupContainer maxWidth="lg">
-            TEST
-          </NewsletterSignupContainer>
-        </NewsletterSignupBox>
+        <NewsletterSignup lang={this.props.lang}></NewsletterSignup>
 
         <Footer lang={this.props.lang}></Footer>
       </>
@@ -48,14 +45,6 @@ class LayoutLanding extends React.Component<ILayoutLandingProps, {}> {
 
 const LandingHeaderBox: AnyStyledComponent = styled(HeaderBox)`
   padding: 0 0 6rem 0;
-`;
-
-const NewsletterSignupBox: AnyStyledComponent = styled(Box)`
-  background-color: #e9e6e6;
-`;
-
-const NewsletterSignupContainer: AnyStyledComponent = styled(Container)`
-  padding: 2rem 0;
 `;
 
 export default LayoutLanding;
