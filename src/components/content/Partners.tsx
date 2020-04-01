@@ -4,6 +4,8 @@ import { Box, Grid, Typography } from "@material-ui/core";
 import PartnerCard from "../common/PartnerCard";
 import CTABox from "../common/CTABox";
 
+import { translated } from "../../util";
+
 import LogoOmio from "../../images/partners/omio.png";
 import LogoBVDS from "../../images/partners/bvds.png";
 import LogoData4Life from "../../images/partners/data4life.svg";
@@ -34,8 +36,7 @@ import LogoDeloitte from "../../images/partners/deloitte.jpg";
 import LogoMyData from "../../images/partners/mydata.png";
 import LogoFreiraum from "../../images/partners/freiraum.jpg";
 import LogoStoryMachine from "../../images/partners/storymachine.png";
-import LogoJoliBerlin from "../../images/partners/joliberlin.jpeg";
-import { translated } from "../../util";
+import LogoJoliBerlin from "../../images/partners/joliberlin.jpg";
 
 interface IPartnersProps {
   lang: "de" | "en";
