@@ -1,5 +1,9 @@
 {
   "de": {
+    "language": {
+      "de": "Deutsch",
+      "en": "Englisch"
+    },
     "header": {
       "nav": {
         "initiatives": "Initiativen",
@@ -102,7 +106,13 @@
       "downloadLogo": "Download Logo",
       "resources": "Pressekit",
       "resourcesLine1": "Download the GesundZusammen logo in various formats.",
-      "resourcesLine2": "Includes EPS, JPG, and PNG formats. For digital and print."
+      "resourcesLine2": "Includes EPS, JPG, and PNG formats. For digital and print.",
+      "release": "Presse Release",
+      "releaseLine1": "Laden Sie the GesundZusammen Press Release and Partner Map.",
+      "releaseTitle": "“Gesund-Zusammen”: Die Digitale Wirtschaft stellt sich dem Kampf gegen COVID-19 ",
+      "releaseHrefPDF": "187534-20200401090213000000000-gesund-zusammen-die-digitale-wirtschaft-s.pdf",
+      "releaseHrefImage": "187534-20200401090213000000000-gesund-zusammen-die-digitale-wirtschaft-s.png",
+      "releaseHrefURL": "https://finleap.pr.co/187534-gesund-zusammen-die-digitale-wirtschaft-stellt-sich-dem-kampf-gegen-covid-19/"
     },
     "footer": {
       "title": "Aufruf zum Teilen",
@@ -119,6 +129,10 @@
     }
   },
   "en": {
+    "language": {
+      "de": "German",
+      "en": "English"
+    },
     "header": {
       "nav": {
         "initiatives": "Further initiatives",
@@ -221,7 +235,13 @@
       "downloadLogo": "Download Logo",
       "resources": "Resources",
       "resourcesLine1": "Download the GesundZusammen logo in various formats.",
-      "resourcesLine2": "Includes EPS, JPG, and PNG formats. For digital and print."
+      "resourcesLine2": "Includes EPS, JPG, and PNG formats. For digital and print.",
+      "release": "Press Release",
+      "releaseLine1": "Download the GesundZusammen Press Release and Partner Map.",
+      "releaseTitle": "\"Gesund-Zusammen\": Tech coalition formed to combat Covid-19",
+      "releaseHrefPDF": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.pdf",
+      "releaseHrefImage": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.png",
+      "releaseHrefURL": "https://finleap.pr.co/187535-gesund-zusammen-tech-coalition-formed-to-combat-covid-19/"
     },
     "footer": {
       "title": "Sharing is caring",

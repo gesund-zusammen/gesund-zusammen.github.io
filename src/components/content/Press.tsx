@@ -7,6 +7,8 @@ import PressContactPhoto from "../../images/solveigh_rathenow.png";
 import CTABox from "../common/CTABox";
 
 import PressKitLogo from "../../images/presskit_logo.svg";
+import ReleaseEnLogo from "../../../public/187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.png";
+import ReleaseDeLogo from "../../../public/187534-20200401090213000000000-gesund-zusammen-die-digitale-wirtschaft-s.png";
 
 interface IPressProps {
   lang: "de" | "en";
@@ -62,6 +64,39 @@ class PressContact extends React.PureComponent<IPressProps, {}> {
               </Typography>
             </StyledDownloadLink>
           </Box>
+          <Box
+            paddingBottom={4}
+            paddingTop={8}
+            marginTop={8}
+            style={{ borderTop: "1px solid #CED7DB" }}
+          >
+            <Typography variant="h2">
+              {translated(this.props.lang).press.release}
+            </Typography>
+            <Typography variant="body2" color="primary">
+              {translated(this.props.lang).press.releaseLine1}
+            </Typography>
+            <br />
+            <Link href={translated(this.props.lang).press.releaseHrefURL}>
+              {"Link: " + translated(this.props.lang).press.releaseTitle}
+            </Link>
+            <br />
+            <br />
+            <Link href={translated(this.props.lang).press.releaseHrefPDF}>
+              {"PDF: " + translated(this.props.lang).press.releaseTitle}
+            </Link>
+            <br />
+            <br />
+            <Link href={translated(this.props.lang).press.releaseHrefImage}>
+              {"PNG: " + translated(this.props.lang).press.downloadLogo}
+            </Link>
+            <br />
+            <Link href={translated(this.props.lang).press.releaseHrefImage}>
+              <StyledPressReleaseImage
+                src={this.props.lang == "de" ? ReleaseDeLogo : ReleaseEnLogo}
+              ></StyledPressReleaseImage>
+            </Link>
+          </Box>
         </PressContactWrapper>
         <Box paddingBottom={4} marginTop={4}>
           <CTABox
@@ -106,6 +141,11 @@ const StyledDownloadButton: AnyStyledComponent = styled(GetApp)`
     margin: 0.2rem 0.5rem 0 0;
     float: left;
   }
+`;
+
+const StyledPressReleaseImage: AnyStyledComponent = styled.img`
+  margin: 2rem 0;
+  max-width: 368px;
 `;
 
 const StyledPressKitImage: AnyStyledComponent = styled.img`
