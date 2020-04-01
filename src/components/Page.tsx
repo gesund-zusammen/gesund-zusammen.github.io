@@ -4,6 +4,7 @@ import {
   Switch,
   Route,
   Redirect,
+  RouteComponentProps,
 } from "react-router-dom";
 import ScrollMemory from "react-router-scroll-memory";
 
@@ -26,103 +27,142 @@ import IlluFaq from "../images/illu_faq.svg";
 import IlluPressContact from "../images/illu_presscontact.svg";
 import IlluImprint from "../images/illu_imprint.svg";
 
-interface IPageState {
-  lang: "de" | "en";
-}
-
-const DEFAULT_STATE: IPageState = {
-  lang: "de",
+const getBootLang = (): "de" | "en" => {
+  const userLang: string = window.navigator.language;
+  if (userLang.substr(0, 2) === "de") {
+    return "de";
+  }
+  return "en";
 };
 
-class Page extends React.Component<{}, IPageState> {
-  constructor(props: {}) {
-    super(props);
-    this.state = DEFAULT_STATE;
-  }
+const DEFAULT_LANG = getBootLang();
 
+class Page extends React.Component<
+  RouteComponentProps<{ lang: "de" | "en" }>,
+  {}
+> {
   handleLangChange = (lang: "de" | "en") => {
-    this.setState({ lang });
+    const pathSegments = this.props.location.pathname.split("/");
+    const [, , ...path] = pathSegments;
+    this.props.history.push(`/${lang}/${path.join("/")}`);
   };
 
   render = () => {
+    const layoutProps = {
+      ...this.props,
+      lang: this.props.match.params.lang,
+      langChangeCallback: this.handleLangChange,
+    };
     return (
       <Router>
-        <ScrollMemory />
         <Switch>
-          <Route exact={true} default={true} path="/">
-            <LayoutLanding
-              lang={this.state.lang}
-              langChangeCallback={this.handleLangChange}
-            >
-              <Landing lang={this.state.lang}></Landing>
-            </LayoutLanding>
-          </Route>
-          <Route path="/initiatives">
+          <Route path="/:lang/initiatives">
             <LayoutInitiativePage
-              lang={this.state.lang}
-              langChangeCallback={this.handleLangChange}
-              title={translated(this.state.lang).header.nav.initiatives}
+              {...layoutProps}
+              title={
+                translated(this.props.match.params.lang).header.nav.initiatives
+              }
               content={
-                translated(this.state.lang).header.content.initiatives.content
+                translated(this.props.match.params.lang).header.content
+                  .initiatives.content
               }
             >
-              <Initiatives lang={this.state.lang}></Initiatives>
+              <Initiatives lang={this.props.match.params.lang}></Initiatives>
             </LayoutInitiativePage>
           </Route>
-          <Route path="/partners">
+          <Route path="/:lang/partners">
             <LayoutSubPage
-              lang={this.state.lang}
-              langChangeCallback={this.handleLangChange}
-              title={translated(this.state.lang).header.nav.supporters}
+              {...layoutProps}
+              title={
+                translated(this.props.match.params.lang).header.nav.supporters
+              }
             >
-              <Partners lang={this.state.lang}></Partners>
+              <Partners lang={this.props.match.params.lang}></Partners>
             </LayoutSubPage>
           </Route>
-          <Route path="/faq">
+          <Route path="/:lang/faq">
             <LayoutSubPage
-              lang={this.state.lang}
-              langChangeCallback={this.handleLangChange}
-              title={translated(this.state.lang).header.nav.faqs}
+              {...layoutProps}
+              title={translated(this.props.match.params.lang).header.nav.faqs}
               image={IlluFaq}
             >
-              <Faq lang={this.state.lang}></Faq>
+              <Faq lang={this.props.match.params.lang}></Faq>
             </LayoutSubPage>
           </Route>
-          <Route path="/privacy">
+          <Route path="/:lang/privacy">
             <LayoutSubPage
-              lang={this.state.lang}
-              langChangeCallback={this.handleLangChange}
-              title={translated(this.state.lang).footer.nav.privacy}
+              {...layoutProps}
+              title={
+                translated(this.props.match.params.lang).footer.nav.privacy
+              }
               image={IlluPrivacy}
             >
-              <PrivacyPolicy lang={this.state.lang}></PrivacyPolicy>
+              <PrivacyPolicy
+                lang={this.props.match.params.lang}
+              ></PrivacyPolicy>
             </LayoutSubPage>
           </Route>
-          <Route path="/press">
+          <Route path="/:lang/press">
             <LayoutSubPage
-              lang={this.state.lang}
+              lang={this.props.match.params.lang}
               langChangeCallback={this.handleLangChange}
-              title={translated(this.state.lang).press.title}
+              title={translated(this.props.match.params.lang).press.title}
               image={IlluPressContact}
             >
-              <Press lang={this.state.lang}></Press>
+              <Press lang={this.props.match.params.lang}></Press>
             </LayoutSubPage>
           </Route>
-          <Route path="/imprint">
+          <Route path="/:lang/imprint">
             <LayoutSubPage
-              lang={this.state.lang}
-              langChangeCallback={this.handleLangChange}
-              title={translated(this.state.lang).footer.nav.imprint}
+              {...layoutProps}
+              title={
+                translated(this.props.match.params.lang).footer.nav.imprint
+              }
               image={IlluImprint}
             >
               <Imprint></Imprint>
             </LayoutSubPage>
           </Route>
-          <Redirect to="/" />
+          <Route path="/:lang/" exact={true} default={true}>
+            <LayoutLanding {...layoutProps}>
+              <Landing lang={this.props.match.params.lang}></Landing>
+            </LayoutLanding>
+          </Route>
+          <Redirect to={`/${DEFAULT_LANG}/`}></Redirect>
         </Switch>
       </Router>
     );
   };
 }
 
-export default Page;
+class LangWrapper extends React.Component {
+  replaceLang = (pathname: string, lang: "de" | "en") => {
+    const pathSegments = pathname.split("/");
+    const [, , ...path] = pathSegments;
+    return `/${lang}/${path.join("/")}`;
+  };
+
+  render = () => {
+    const supportedLanguages = ["de", "en"];
+    return (
+      <Router>
+        <ScrollMemory />
+        <Switch>
+          <Route
+            path="/:lang/"
+            render={props =>
+              supportedLanguages.includes(props.match.params.lang) ? (
+                <Page {...props}></Page>
+              ) : (
+                <Redirect to={`/${DEFAULT_LANG}${props.location.pathname}`} />
+              )
+            }
+          ></Route>
+          <Redirect to={`/${DEFAULT_LANG}/`}></Redirect>
+        </Switch>
+      </Router>
+    );
+  };
+}
+
+export default LangWrapper;

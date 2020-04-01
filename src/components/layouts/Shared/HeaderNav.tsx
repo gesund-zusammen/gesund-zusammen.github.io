@@ -20,17 +20,17 @@ class HeaderNav extends React.Component<IHeaderProps, {}> {
   render = () => {
     return (
       <>
-        <Link to="/">
+        <Link to={`/${this.props.lang}/`}>
           <HeaderLogo src={Logo} alt="#GesundZusammen"></HeaderLogo>
         </Link>
         <HeaderNavItems>
-          <HeaderNavLinkItem to="/initiatives">
+          <HeaderNavLinkItem to={`/${this.props.lang}/initiatives`}>
             {translated(this.props.lang).header.nav.initiatives}
           </HeaderNavLinkItem>
-          <HeaderNavLinkItem to="/partners">
+          <HeaderNavLinkItem to={`/${this.props.lang}/partners`}>
             {translated(this.props.lang).header.nav.supporters}
           </HeaderNavLinkItem>
-          <HeaderNavLinkItem to="/faq">
+          <HeaderNavLinkItem to={`/${this.props.lang}/faq`}>
             {translated(this.props.lang).header.nav.faqs}
           </HeaderNavLinkItem>
           <HeaderLangSwitch>
