@@ -12,7 +12,23 @@ interface IFooterShareBoxProps {
   lang: "de" | "en";
 }
 
-class FooterShareBox extends React.PureComponent<IFooterShareBoxProps, {}> {
+interface IFooterShareBoxState {
+  linkCopied: boolean;
+}
+
+const DEFAULT_STATE = {
+  linkCopied: false,
+};
+
+class FooterShareBox extends React.PureComponent<
+  IFooterShareBoxProps,
+  IFooterShareBoxState
+> {
+  constructor(props: IFooterShareBoxProps) {
+    super(props);
+    this.state = DEFAULT_STATE;
+  }
+
   copyToClipboard = (str: string) => {
     const el = document.createElement("textarea");
     el.value = str;
