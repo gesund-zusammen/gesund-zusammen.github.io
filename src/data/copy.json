@@ -112,7 +112,7 @@
     },
     "newsletter": {
       "title": "Melden Sie sich für unseren Newsletter an",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit urna adipiscing neque sociis volutpat quis facilisis fames.",
+      "content": "Wir halten Sie auf dem Laufenden über neue Apps, Initiativen, Hackathons usw.",
       "inputPlaceholder": "E-Mail",
       "cta": "Anmelden"
     },
@@ -243,7 +243,7 @@
     },
     "newsletter": {
       "title": "Subscribe to our Newsletter",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit urna adipiscing neque sociis volutpat quis facilisis fames.",
+      "content": "We will keep you posted about new tools, dashboards, initiatives etc.",
       "inputPlaceholder": "E-Mail",
       "cta": "Subscribe"
     },
