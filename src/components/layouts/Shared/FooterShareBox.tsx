@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
+import { Done } from "@material-ui/icons";
 import styled, { AnyStyledComponent } from "styled-components";
 
 import { translated } from "../../../util";
@@ -48,6 +49,7 @@ class FooterShareBox extends React.PureComponent<
         </Typography>
         <CopyBox>
           <span>https://gesund-zusammen.de</span>
+          {this.state.linkCopied && <CopiedIndicator />}
           <CopyLink
             onClick={() => this.copyToClipboard("https://gesund-zusammen.de")}
           >
@@ -116,6 +118,12 @@ const CopyLink: AnyStyledComponent = styled.span`
   color: #0a6eaa;
   font-weight: 600;
   cursor: pointer;
+`;
+
+const CopiedIndicator: AnyStyledComponent = styled(Done)`
+  float: right;
+  color: #0a6eaa;
+  margin: -0.4rem 0 0 0.5rem;
 `;
 
 const ShareBox: AnyStyledComponent = styled.div`
