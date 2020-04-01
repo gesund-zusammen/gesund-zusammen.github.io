@@ -6,30 +6,6 @@ class PrivacyPolicy extends React.PureComponent {
   render = () => {
     return (
       <PrivacyWrapper paddingBottom={4}>
-        Address
-
-        Gesund Zusammen gGmbH i.G.
-
-        Urbanstr. 71
-
-        10967 Berlin, Germany
-
-
-
-        Contact
-
-        Tel .: +49 (0) 30 609865290
-
-        Email: media@gesund-zusammen.de
-
-
-
-        Managing Directors
-
-        Ramin Niroumand
-
-        Julian Bernhard Edward Teicke
-
         <Typography variant="h2">Address</Typography>
         <Typography variant="body1">
           Gesund Zusammen gGmbH i.G.
@@ -47,7 +23,8 @@ class PrivacyPolicy extends React.PureComponent {
         <Typography variant="h2">Managing Directors</Typography>
         <Typography variant="body1">
           Ramin Niroumand <br />
-          Julian Bernhard Edward Teicke<br />
+          Julian Bernhard Edward Teicke
+          <br />
         </Typography>
         <Typography variant="h2">Commercial Register</Typography>
         <Typography variant="body1">
