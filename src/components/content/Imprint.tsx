@@ -61,7 +61,7 @@ class PrivacyPolicy extends React.PureComponent {
         <Typography variant="body1">
           All product names mentioned on this website, product names, brand
           names and logos are trademarks and / or property of their respective
-          owners. All text and graphics on this site: &copy; finleap GmbH or the
+          owners. All text and graphics on this site: &copy; Gesund Zusammen gGmbH i.G. or the
           copyright holders.
         </Typography>
       </PrivacyWrapper>
