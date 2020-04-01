@@ -110,7 +110,6 @@ class NewsletterSignup extends React.Component<
                   <input
                     type="email"
                     name="b_email"
-                    value=""
                     placeholder="youremail@gmail.com"
                     id="b_email"
                   />
