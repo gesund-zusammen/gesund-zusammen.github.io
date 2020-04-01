@@ -6,11 +6,9 @@ import FaqItems from "./FaqItems";
 import { translated } from "../../util";
 import CTABox from "../common/CTABox";
 
-
 interface IFaqProps {
   lang: "de" | "en";
 }
-
 
 class Faq extends React.PureComponent<IFaqProps, {}> {
   render = () => {
