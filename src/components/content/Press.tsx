@@ -73,24 +73,24 @@ class PressContact extends React.PureComponent<IPressProps, {}> {
             <Typography variant="h2">
               {translated(this.props.lang).press.release}
             </Typography>
-            <Typography variant="body2" color="primary">
+            <Typography variant="body1" color="primary">
               {translated(this.props.lang).press.releaseLine1}
             </Typography>
-            <br />
-            <Link href={translated(this.props.lang).press.releaseHrefURL}>
-              {"Link: " + translated(this.props.lang).press.releaseTitle}
-            </Link>
-            <br />
-            <br />
-            <Link href={translated(this.props.lang).press.releaseHrefPDF}>
-              {"PDF: " + translated(this.props.lang).press.releaseTitle}
-            </Link>
-            <br />
-            <br />
-            <Link href={translated(this.props.lang).press.releaseHrefImage}>
-              {"PNG: " + translated(this.props.lang).press.downloadLogo}
-            </Link>
-            <br />
+            <Typography variant="body2">
+              <Link href={translated(this.props.lang).press.releaseHrefURL}>
+                {"Link: " + translated(this.props.lang).press.releaseTitle}
+              </Link>
+            </Typography>
+            <Typography variant="body2">
+              <Link href={translated(this.props.lang).press.releaseHrefPDF}>
+                {"PDF: " + translated(this.props.lang).press.releaseTitle}
+              </Link>
+            </Typography>
+            <Typography variant="body2">
+              <Link href={translated(this.props.lang).press.releaseHrefImage}>
+                {"PNG: " + translated(this.props.lang).press.downloadLogo}
+              </Link>
+            </Typography>
             <Link href={translated(this.props.lang).press.releaseHrefImage}>
               <StyledPressReleaseImage
                 src={this.props.lang == "de" ? ReleaseDeLogo : ReleaseEnLogo}
