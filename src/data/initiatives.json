@@ -52,7 +52,7 @@
   ],
   "initiatives": [
     {
-      "name": "Robert Koch Institute Case numbers in Germany and worldwide",
+      "name": "Robert Koch Institut - Fallzahlen",
       "link": "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html",
       "category": "infection_tracking",
       "description": {
@@ -62,16 +62,16 @@
       "global": true
     },
     {
-      "name": "Data4Life Online Corona Test & Dashboard Germany",
-      "link": "https://www.data4life.care/en/corona/",
+      "name": "Data4Life Online Corona Test & aktuelle Zahlen der Infektionen",
+      "link": "https://www.data4life.care/de/corona/",
       "category": "digital_tools",
       "description": {
-        "de": "Coronavirus in Deutschland: aktuelle Zahlen der Infektionen und Corona-Online-Test",
-        "en": "Coronavirus in Germany: Corona online test and current number of infections"
+        "de": "Coronavirus in Deutschland: aktuelle Statistiken zu Corona und wie erkenne ich eine mögliche Infektion",
+        "en": "Coronavirus in Germany: current statistics on corona and how to recognize a possible infection"
       }
     },
     {
-      "name": "CovApp - Die für Handlungsempfehlungen und Informationen von der Charite",
+      "name": "CovApp der Charité - Handlungsempfehlungen und Informationen zum Coronavirus",
       "link": "https://covapp.charite.de/",
       "category": "digital_tools",
       "description": {
@@ -105,7 +105,7 @@
       "link": "https://climedo.de/blog/climedo-plattform-klinische-datenerhebung-covid-19-projekte-zur-verfuegung/",
       "category": "digital_tools",
       "description": {
-        "de": "Kostenlose Plattform für klinische Datenerhebung für COVID-19-bezogene Projekte",
+        "de": "Kostenfreie Plattform für klinische Datenerhebung im Zusammenhang mit COVID-19 für Praxen, Kliniken, Forschungsinstitute und gemeinnützige Organisationen",
         "en": "Free Clinical Data Capture Platform for COVID-19 Projects"
       },
       "global": false
@@ -115,7 +115,7 @@
       "link": "https://www.divi.de/register/intensivregister",
       "category": "digital_tools",
       "description": {
-        "de": "Verfügbarkeit von Intensivbetten mit Beatmungsplätzen",
+        "de": "Übersicht über Kliniken und deren Verfügbarkeit von Intensivbetten mit Beatmungsplätzen",
         "en": "Information about hospitals and their capacity of intensive care beds with ventilators"
       },
       "global": false
@@ -135,7 +135,7 @@
       "link": "https://bs-sd.de/corona/",
       "category": "digital_tools",
       "description": {
-        "de": "Abfrage der COVID-19 Testergebnisse via App",
+        "de": "App, mit der auf Corona getestete Patienten schnellstmöglich über ihre Testergebnisse informiert werden",
         "en": "Patients tested for Coronavirus are informed of their test results as quickly as possible via partnerships with testing laboratories in Germany"
       },
       "global": false
@@ -175,13 +175,13 @@
       "link": "https://www.apple.com/covid19/",
       "category": "digital_tools",
       "description": {
-        "de": "Appel entwickelte gemeinsam mit Partnern diese Lösung um den Zugang zu vertrauenswürdigen Informationen und Verhaltensempfehlungen zu erleichtern",
+        "de": "Appel entwickelte gemeinsam mit Partnern diese Lösung um den Zugang zu vertrauenswürdigen Informationen und Verhaltensempfehlungen zu erleichtern.",
         "en": "Created by Apple in partnership with the Centers for Disease Control and Prevention to make it easy for people across the United States to get trusted information and guidance on COVID-19."
       },
       "global": true
     },
     {
-      "name": "SafePaths(US)",
+      "name": "SafePaths (US)",
       "link": "https://safepaths.mit.edu/",
       "category": "digital_tools",
       "description": {
@@ -205,7 +205,7 @@
       "link": "https://www.newsweek.com/china-government-coronavirus-smartphone-app-close-contact-detector-trace-infected-citizens-1486885",
       "category": "digital_tools",
       "description": {
-        "de": "China führt eine farbkodierte Gesundheitsbewertung via Alipay ein, um Bürger anhand Ihrer Reisebewegungen und Ihrem Gesundheitszustand zu segmentieren",
+        "de": "China führt eine farbkodierte Gesundheitsbewertung via Alipay ein, um Bürger anhand Ihrer Reisebewegungen und Ihrem Gesundheitszustand zu segmentieren.",
         "en": "China deploys colour coded health ratings via Alipay, segmenting its citizens based on travel history and medical condition."
       },
       "global": true
@@ -215,7 +215,7 @@
       "link": "https://www.selfapy.de/",
       "category": "digital_consultation",
       "description": {
-        "de": "Soforthilfe bei psychischen Belastungen durch ein Online-Programm",
+        "de": "Soforthilfe bei psychischen Belastungen durch ein Online-Programm.",
         "en": "Provides psychological support in stressful situations like the CoronaVirus via communication with qualified psychologists."
       },
       "global": false
@@ -225,7 +225,7 @@
       "link": "https://www.jameda.de/videosprechstunde/",
       "category": "digital_consultation",
       "description": {
-        "de": "Video-Sprechstunden mit Ärzten verschiedener Fachrichtungen.",
+        "de": "Video-Sprechstunden: Online-Arztbesuch bei Ärzten aus ganz Deutschland.",
         "en": "Offers online video consultations with doctors of various specialties."
       },
       "global": false
@@ -235,17 +235,17 @@
       "link": "https://www.kry.de/",
       "category": "digital_consultation",
       "description": {
-        "de": "Video-Sprechstunden zur Entlastung des Gesundheitssystems",
+        "de": "Video-Sprechstunden -  kostenfrei für alle Patienten mit COVID-19 Symptomen",
         "en": "Talk to a doctor - Free video consultations are offered for all patients with COVID-19 symptoms."
       },
       "global": false
     },
     {
-      "name": "Clickdoc für Ärzte",
+      "name": "Clickdoc für Ärzte und Behandler",
       "link": "https://clickdoc.de/cms-de/news/virus-videosprechstunde-kostenlos/",
       "category": "digital_consultation",
       "description": {
-        "de": "CompuGroup Medical (CGM)stellt Ihre Software für die Durchführung von Video-Sprechstunden kostenlos zur Verfügung.",
+        "de": "CompuGroup Medical (CGM) stellt Ihre Software für die Durchführung von Video-Sprechstunden kostenlos zur Verfügung.",
         "en": "CompuGroup Medical (CGM) provides clickdoc video consultation to all doctors, psychotherapists, midwives and healthcare professionals free of charge."
       },
       "global": false
@@ -311,7 +311,7 @@
       "global": true
     },
     {
-      "name": "Mar 20 - Apr 27, 2020: 2020 Call for Code Global Challenge",
+      "name": "Mar 20 - Apr 27, 2020:Call for Code Global Challenge",
       "link": "https://developer.ibm.com/callforcode/",
       "category": "hackathons",
       "description": {
@@ -481,7 +481,7 @@
       "global": true
     },
     {
-      "name": "Mar 27, 2020 #HacktheCrisisNorway",
+      "name": "Mar 27, 2020: Hack The Crisis Norway",
       "link": "https://www.hackthecrisisnorway.com/",
       "category": "hackathons",
       "description": {
@@ -531,7 +531,7 @@
       "global": true
     },
     {
-      "name": "WHO Covid-19 What's App Service",
+      "name": "WHO: Covid-19 What's App Service",
       "link": "https://api.whatsapp.com/send?phone=41794752209&text=hi&source=&data=",
       "category": "research_and_government_sites",
       "description": {
@@ -541,11 +541,11 @@
       "global": true
     },
     {
-      "name": "Funding the research activities of German university medicine to deal with the current pandemic crisis",
+      "name": "Forschungsnetzwerks zur Bündelung der Forschungsaktivitäten der deutschen Universitätsmedizin",
       "link": "https://www.charite.de/die_charite/themen/charite_koordiniert_netzwerk_der_deutschen_universitaetsmedizin_zur_erforschung_von_covid_19/",
       "category": "research_and_government_sites",
       "description": {
-        "de": "Aufbau eines Forschungsnetzwerks zur Bewältigung der Pandemie, koordiniert von der Charité Berlin.",
+        "de": "Das Forschungsnetzwerk, ein Verbund aus perspektivisch allen deutschen Universitätskliniken, wird von der Charité Berlin koordiniert.",
         "en": "Charité - Universitätsmedizin Berlin, the Federal Ministry of Education and Research (BMBF) are funding the development of a research network with 150 million euros to bundle and strengthen the research activities of German university medicine to deal with the current pandemic crisis."
       },
       "global": false
@@ -561,7 +561,7 @@
       "global": true
     },
     {
-      "name": "Initiative Gegen Corona (powered by Noventi)",
+      "name": "Initiative Gegen Corona",
       "link": "https://www.initiative-gegen-corona.de/",
       "category": "initiatives",
       "description": {
@@ -575,7 +575,7 @@
       "link": "https://gegen-den-virus.de/",
       "category": "initiatives",
       "description": {
-        "de": "Eine Plattform, die digitale Hilfsmittel zur Verfügung stellt um die Kluft zwischen digitaler Unterstützung und der Offline-Welt zu überbrücken.",
+        "de": "Eine Plattform, die digitale Hilfsmittel zur Verfügung stellt um die Brücke zwischen digitaler Unterstützung und den meist analogen Bedürftigen zu schlagen.",
         "en": "A platform that provides digital aids that bridge the gap between digital support and the offline world."
       },
       "global": false
@@ -601,7 +601,7 @@
       "global": false
     },
     {
-      "name": "United Nations: Global Call to Creatives",
+      "name": "United Nations (UN): Global Call to Creatives",
       "link": "https://docs.google.com/presentation/d/1uR9gq1nC_ZYlGHkyaU7bRivTJ0gmtaxqZ5_4BvzcGnM/preview?slide=id.g71869a2fb1_0_0",
       "category": "initiatives",
       "description": {
@@ -611,7 +611,7 @@
       "global": true
     },
     {
-      "name": "Kampf gegen Medikamente Schwarzmarkt",
+      "name": "Kampf gegen den Medikamenten-Schwarzmarkt",
       "link": "https://www.tag24.de/chemnitz/chemnitz-medikamente-schwarzmarkt-corona-virus-covid19-app-technologie-1473067",
       "category": "initiatives",
       "description": {
@@ -621,22 +621,22 @@
       "global": false
     },
     {
-      "name": "Rechtliche Unterstützung durch CMS",
+      "name": "Rechtliche Unterstützung bei wirtschaftlichen Fragestellungen",
       "link": "https://cms.law/de/deu/insight/covid-19",
       "category": "initiatives",
       "description": {
-        "de": "Unterstützung von Unternehmen bei Fragen zum Umgang mit der aktuellen Lage und deren Auswirkungen kann anwaltliche Unterstützung hinzugezogen werden.",
+        "de": "Anwaltliche Unterstützung von Unternehmen bei Fragen zum Umgang mit der aktuellen Lage und deren Auswirkungen.",
         "en": "Support for companies in questions of how to deal with the current situation and its effects, obtained by legal counsel."
       },
       "global": false
     },
     {
-      "name": "The Color COVID-19 Testing Initiative",
+      "name": "The Color COVID-19 Testing Initiative (US)",
       "link": "https://www.color.com/covid",
       "category": "initiatives",
       "description": {
-        "de": "Unterstützung von Unternehmen bei Fragen zum Umgang mit der aktuellen Lage und deren Auswirkungen kann anwaltliche Unterstützung hinzugezogen werden.",
-        "en": "Today, we’re launching a high throughput, CLIA-certified COVID-19 testing laboratory integrated with public health tools. The testing facility, based in Burlingame, CA, will begin processing clinical samples to support public health efforts over the coming week, with a near-term goal of performing 10,000 tests per day."
+        "de": "Die COVID-19-Testplattform umfasst eine integrierte Softwareplattform für Gesundheitsbehörden zur Verwaltung von Risiko-Screening, Testbestellung, Ergebnislieferung, Fallmanagement, Kontaktverfolgung und Fallberichterstattung der Gesundheitsbehörden.",
+        "en": "COVID-19 testing platform including an integrated software platform for public health agencies to manage risk screening, test ordering, results delivery, case management, contact tracing, and public health agency case reporting." 
       },
       "global": true
     },
@@ -645,8 +645,8 @@
       "link": "https://www.roteskreuz.at/site/faq-app-stopp-corona/",
       "category": "digital_tools",
       "description": {
-        "de": "Unterbrechung der Infektionskette mittels eines anonymisiert gespeicherten 'digitalen Handshakes'",
-        "en": "Interruption of the chain of infection by storing an anonymous 'digital handshake'"
+        "de": "Unterbrechung der Infektionskette mittels eines anonymisiert gespeicherten 'digitalen Handshakes'.",
+        "en": "Interruption of the chain of infection by storing an anonymous 'digital handshake'."
       },
       "global": true
     },
@@ -695,7 +695,7 @@
       "link": "https://www.dzif.de/de/coronavirus-forscher-im-dzif-nutzen-die-ueberholspur",
       "category": "research_and_government_sites",
       "description": {
-        "de": "Das Deutsche Zentrum für Infektionsforschung (DZIF) arbeitet an der Entwicklung von Medikamente, Impfstoffe und Testmethoden zu entwickeln, um das SARS-Coronavirus-2 zu bekämpfen.",
+        "de": "Das Deutsche Zentrum für Infektionsforschung (DZIF) arbeitet an der Entwicklung von Medikamente, Impfstoffe und Testmethoden, um das SARS-Coronavirus-2 zu bekämpfen.",
         "en": "The German Centre for Infection Research (DZIF) is working on the development of drugs, vaccines and test methods to combat the SARS coronavirus-2."
       },
       "global": false
@@ -715,7 +715,7 @@
       "link": "https://www.thelancet.com/coronavirus",
       "category": "knowledge_resources",
       "description": {
-        "de": "‘The Lancet’ hat ein Coronavirus-Ressourcenzentrum eingerichtet, um neue Inhalte aus den The Lancet Journals zusammenzuführen. Alle COVID-19-Inhalte sind frei zugänglich.",
+        "de": "‘The Lancet’ hat ein Coronavirus-Ressourcenzentrum eingerichtet, um neue Inhalte aus den 'The Lancet' Journals zusammenzuführen. Alle COVID-19-Inhalte sind frei zugänglich.",
         "en": "The Lancet has created a Coronavirus Resource Centre to bring together new content from across The Lancet journals as it is published. All of our COVID-19 content is free to access."
       },
       "global": true
@@ -736,7 +736,7 @@
       "category": "initiatives",
       "description": {
         "de": "Wir helfen medizinischem und pflegerischem Fachpersonal sowie Freiwilligen und Ehrenamtlichen, Krankenhäuser und Einsatzmöglichkeiten zu finden, damit in der Corona-Krise jeder, der kann und möchte, seinen Beitrag leisten kann.",
-        "en": "Wir helfen medizinischem und pflegerischem Fachpersonal sowie Freiwilligen und Ehrenamtlichen, Krankenhäuser und Einsatzmöglichkeiten zu finden, damit in der Corona-Krise jeder, der kann und möchte, seinen Beitrag leisten kann."
+        "en": "We help medical and nursing staff as well as volunteers and volunteers to find hospitals and job opportunities so that in the Corona crisis everyone who can and wants to contribute can do so."
       },
       "global": true
     },
