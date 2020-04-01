@@ -6,6 +6,7 @@ import {
   ExpansionPanelDetails,
 } from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add";
+import MinimizeIcon from "@material-ui/icons/Minimize";
 import styled, { AnyStyledComponent } from "styled-components";
 import { translated } from "../../util";
 
@@ -30,7 +31,7 @@ const DEFAULT_STATE: IFaqItemsState = {
 };
 
 const getFaqContent = (lang: "de" | "en"): Array<IFaqContent> => {
-  return translated(lang).faq.content;
+  return translated(lang).faqs.content;
 };
 
 class FaqItems extends React.Component<IFaqItemProps, IFaqItemsState> {
@@ -48,13 +49,19 @@ class FaqItems extends React.Component<IFaqItemProps, IFaqItemsState> {
     return (
       <FaqListWrapper>
         {getFaqContent(this.props.lang).map((faqItem, index) => {
+          const panelKey: string = "panel" + index;
+          const expanded = this.state.panel === panelKey;
           return (
             <ExpansionPanel
-              key={"panel" + index}
-              expanded={this.state.panel === "panel" + index}
-              onChange={() => this.handleExpansionChange("panel" + index)}
+              key={panelKey}
+              expanded={expanded}
+              onChange={() => this.handleExpansionChange(panelKey)}
             >
-              <ExpansionPanelSummary expandIcon={<StyledAddIcon />}>
+              <ExpansionPanelSummary
+                expandIcon={
+                  expanded ? <StyledMinimizeIcon /> : <StyledAddIcon />
+                }
+              >
                 <Typography variant="h5">{faqItem.title}</Typography>
               </ExpansionPanelSummary>
               <ExpansionPanelDetails>
@@ -71,7 +78,9 @@ class FaqItems extends React.Component<IFaqItemProps, IFaqItemsState> {
 const StyledAddIcon: AnyStyledComponent = styled(AddIcon)`
   color: #0a6eaa;
 `;
-
+const StyledMinimizeIcon: AnyStyledComponent = styled(MinimizeIcon)`
+  color: #ffffff;
+`;
 const FaqListWrapper: AnyStyledComponent = styled.div`
   text-align: left;
 `;
