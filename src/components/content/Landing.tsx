@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Grid, Typography } from "@material-ui/core";
+import { Box, Container, Grid, Typography } from "@material-ui/core";
+import styled, { AnyStyledComponent } from "styled-components";
 
 import { translated } from "../../util";
 
@@ -41,6 +42,7 @@ class Landing extends React.PureComponent<ILandingProps, {}> {
             </Grid>
           </Box>
         </Box>
+
         <Partners lang={this.props.lang}></Partners>
       </>
     );
