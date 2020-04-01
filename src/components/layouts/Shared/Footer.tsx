@@ -5,12 +5,10 @@ import { Link } from "react-router-dom";
 
 import { translated } from "../../../util";
 
+import FooterShareBox from "../Shared/FooterShareBox";
+
 import BgFooter from "../../../images/bg_footer.svg";
 import Logo from "../../../images/logo.svg";
-
-import IconWhatsApp from "../../../images/icon_whatsapp.svg";
-import IconFacebook from "../../../images/icon_facebook.svg";
-import IconEmail from "../../../images/icon_email.svg";
 
 import SocialIconTwitter from "../../../images/footer_icon_twitter.svg";
 
@@ -45,61 +43,7 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                 </FooterContent>
               </Grid>
               <Grid item xs={12} sm={6}>
-                <Typography variant="subtitle1">
-                  {translated(this.props.lang).footer.shareLink}
-                </Typography>
-                <CopyBox>
-                  <span>https://gesund-zusammen.de</span>
-                  <CopyLink
-                    onClick={() =>
-                      this.copyToClipboard("https://gesund-zusammen.de")
-                    }
-                  >
-                    {translated(this.props.lang).footer.copy}
-                  </CopyLink>
-                </CopyBox>
-                <ShareBox>
-                  <Typography variant="subtitle2">
-                    {translated(this.props.lang).footer.shareVia}
-                  </Typography>
-                  <a
-                    className="share-icon-link"
-                    href="whatsapp://send?text=https://gesund-zusammen.de"
-                    data-action="share/whatsapp/share"
-                  >
-                    <img
-                      className="share-icon"
-                      src={IconWhatsApp}
-                      alt="Share with WhatsApp"
-                    ></img>
-                  </a>
-                  <a
-                    href="https://www.facebook.com/sharer/sharer.php?u=https://gesund-zusammen.de"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="share-icon-link"
-                  >
-                    <img
-                      className="share-icon"
-                      src={IconFacebook}
-                      alt="Share on Facebook"
-                    ></img>
-                  </a>
-                  <a
-                    href={`mailto:?subject=${encodeURIComponent(
-                      "Guck dir mal gesund-zusammen.de an",
-                    )}&body=${encodeURIComponent(
-                      "https://gesund-zusammen.de",
-                    )}`}
-                    className="share-icon-link"
-                  >
-                    <img
-                      className="share-icon"
-                      src={IconEmail}
-                      alt="Share via Email"
-                    ></img>
-                  </a>
-                </ShareBox>
+                <FooterShareBox lang={this.props.lang}></FooterShareBox>
               </Grid>
             </Grid>
           </Box>
