@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Grid, Typography } from "@material-ui/core";
 
 import PartnerCard from "../common/PartnerCard";
-import BecomePart from "../common/BecomePart";
+import CTABox from "../common/CTABox";
 
 import LogoOmio from "../../images/partners/omio.png";
 import LogoBVDS from "../../images/partners/bvds.png";
@@ -34,6 +34,7 @@ import LogoDeloitte from "../../images/partners/deloitte.jpg";
 import LogoMyData from "../../images/partners/mydata.png";
 import LogoFreiraum from "../../images/partners/freiraum.jpg";
 import LogoStoryMachine from "../../images/partners/storymachine.png";
+import { translated } from "../../util";
 
 interface IPartnersProps {
   lang: "de" | "en";
@@ -128,7 +129,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.personio.de/"
             ></PartnerCard>
             <PartnerCard
-              name="OneFootbal"
+              name="OneFootball"
               image={LogoOneFootball}
               link="https://onefootball.com/"
             ></PartnerCard>
@@ -233,7 +234,11 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
           </Grid>
         </Box>
         <Box paddingBottom={4} marginTop={4}>
-          <BecomePart lang={this.props.lang}></BecomePart>
+          <CTABox
+            claim={translated(this.props.lang).partners.claim}
+            cta={translated(this.props.lang).partners.cta}
+            href={translated(this.props.lang).partners.link}
+          ></CTABox>
         </Box>
       </Box>
     );

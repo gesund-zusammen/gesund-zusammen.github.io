@@ -7,6 +7,7 @@ import { translated } from "../../util";
 import IconArrowRight from "../../images/icon_arrow_right.svg";
 
 import InitiativeData from "../../data/initiatives.json";
+import CTABox from "../common/CTABox";
 
 interface ICategory {
   slug: string;
@@ -170,6 +171,13 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
               </InitiativeCard>
             </InitiativeCardWrapper>
           ))}
+        </Box>
+        <Box paddingBottom={4} marginTop={4}>
+          <CTABox
+            claim={translated(this.props.lang).initiatives.claim}
+            cta={translated(this.props.lang).initiatives.cta}
+            href={translated(this.props.lang).initiatives.link}
+          ></CTABox>
         </Box>
       </Box>
     );
