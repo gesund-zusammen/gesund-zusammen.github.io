@@ -141,7 +141,9 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                   {translated(this.props.lang).footer.nav.imprint}
                 </FooterNavLinkItem>
               </FooterNavItems>
-              <CopyrightNote>&copy; 2020 finleap GmbH</CopyrightNote>
+              <CopyrightNote>
+                &copy; 2020 Gesund Zusammen gGmbH i.G.
+              </CopyrightNote>
             </FooterNav>
           </Box>
         </Container>
