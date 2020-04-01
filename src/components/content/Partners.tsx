@@ -166,7 +166,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
             <PartnerCard
               name="Deloitte"
               image={LogoDeloitte}
-              link="https://www2.deloitte.com/"
+              link="https://www2.deloitte.com/dl/de/services/legal.html"
             ></PartnerCard>
             <PartnerCard
               name="MyData"
