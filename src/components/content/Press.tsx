@@ -4,7 +4,7 @@ import { Email, GetApp } from "@material-ui/icons";
 import styled, { AnyStyledComponent } from "styled-components";
 import { translated } from "../../util";
 import PressContactPhoto from "../../images/solveigh_rathenow.png";
-import BecomePart from "../common/BecomePart";
+import CTABox from "../common/CTABox";
 
 import PressKitLogo from "../../images/presskit_logo.svg";
 
@@ -64,7 +64,11 @@ class PressContact extends React.PureComponent<IPressProps, {}> {
           </Box>
         </PressContactWrapper>
         <Box paddingBottom={4} marginTop={4}>
-          <BecomePart lang={this.props.lang}></BecomePart>
+          <CTABox
+            claim={translated(this.props.lang).press.claim}
+            cta={translated(this.props.lang).press.cta}
+            href={translated(this.props.lang).press.link}
+          ></CTABox>
         </Box>
       </>
     );

@@ -95,7 +95,7 @@ class Page extends React.Component<{}, IPageState> {
               title={translated(this.state.lang).footer.nav.privacy}
               image={IlluPrivacy}
             >
-              <PrivacyPolicy></PrivacyPolicy>
+              <PrivacyPolicy lang={this.state.lang}></PrivacyPolicy>
             </LayoutSubPage>
           </Route>
           <Route path="/press">

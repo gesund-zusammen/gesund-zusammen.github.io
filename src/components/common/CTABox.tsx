@@ -2,13 +2,13 @@ import React from "react";
 import { Button, Paper, Typography, Grid } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
-import { translated } from "../../util";
-
-interface IBecomePartProps {
-  lang: "de" | "en";
+interface ICTABoxProps {
+  href: string;
+  cta: string;
+  claim: string;
 }
 
-class BecomePart extends React.PureComponent<IBecomePartProps, {}> {
+class CTABox extends React.PureComponent<ICTABoxProps, {}> {
   render = () => {
     return (
       <StyledPaper>
@@ -21,7 +21,7 @@ class BecomePart extends React.PureComponent<IBecomePartProps, {}> {
         >
           <Grid item xs={12} sm={7}>
             <StyledClaim variant="h4" color="primary">
-              {translated(this.props.lang).partners.claim}
+              {this.props.claim}
             </StyledClaim>
           </Grid>
           <Grid item xs={12} sm={5}>
@@ -29,9 +29,9 @@ class BecomePart extends React.PureComponent<IBecomePartProps, {}> {
               color="primary"
               variant="contained"
               disableFocusRipple={true}
-              href="mailto:partners@gesund-zusammen.de"
+              href={this.props.href}
             >
-              {translated(this.props.lang).partners.button}
+              {this.props.cta}
             </PartnerButton>
           </Grid>
         </Grid>
@@ -78,4 +78,4 @@ const PartnerButton: AnyStyledComponent = styled(Button)`
   }
 `;
 
-export default BecomePart;
+export default CTABox;

@@ -5,7 +5,7 @@ import styled, { AnyStyledComponent } from "styled-components";
 import { translated } from "../../util";
 
 import FaqItem from "../common/FaqItem";
-import BecomePart from "../common/BecomePart";
+import CTABox from "../common/CTABox";
 
 interface IFaqProps {
   lang: "de" | "en";
@@ -17,7 +17,7 @@ interface IFaqContent {
 }
 
 const getFaqContent = (lang: "de" | "en"): Array<IFaqContent> => {
-  return translated(lang).faq.content;
+  return translated(lang).faqs.content;
 };
 
 class Faq extends React.PureComponent<IFaqProps, {}> {
@@ -32,7 +32,11 @@ class Faq extends React.PureComponent<IFaqProps, {}> {
           </FaqListWrapper>
         </Box>
         <Box paddingBottom={4} marginTop={4}>
-          <BecomePart lang={this.props.lang}></BecomePart>
+          <CTABox
+            claim={translated(this.props.lang).faqs.claim}
+            cta={translated(this.props.lang).faqs.cta}
+            href={translated(this.props.lang).faqs.link}
+          ></CTABox>
         </Box>
       </>
     );

@@ -1,8 +1,14 @@
 import React from "react";
 import { Box, Typography, Link } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
+import CTABox from "../common/CTABox";
+import { translated } from "../../util";
 
-class PrivacyPolicy extends React.PureComponent {
+interface IPrivacyProps {
+  lang: "de" | "en";
+}
+
+class PrivacyPolicy extends React.PureComponent<IPrivacyProps, {}> {
   render = () => {
     return (
       <PrivacyWrapper paddingBottom={4}>
@@ -532,6 +538,13 @@ class PrivacyPolicy extends React.PureComponent {
         <Typography variant="body1">
           Stand dieser Datenschutzerklärung: 31.03.2020
         </Typography>
+        <Box paddingBottom={4} marginTop={4}>
+          <CTABox
+            claim={translated(this.props.lang).privacy.claim}
+            cta={translated(this.props.lang).privacy.cta}
+            href={translated(this.props.lang).privacy.link}
+          ></CTABox>
+        </Box>
       </PrivacyWrapper>
     );
   };
