@@ -31,9 +31,13 @@ class LandingHeader extends React.PureComponent<ILandingHeaderProps, {}> {
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6}>
               <HeaderContent>
-                <Typography variant="h1" style={{ fontFamily: "inherit" }}>
-                  {translated(this.props.lang).header.content.landing.title}
-                </Typography>
+                <Typography
+                  variant="h1"
+                  dangerouslySetInnerHTML={{
+                    __html: translated(this.props.lang).header.content.landing
+                      .title,
+                  }}
+                ></Typography>
                 <Typography
                   variant="body1"
                   style={{ fontFamily: "inherit", color: "#ffffff" }}
