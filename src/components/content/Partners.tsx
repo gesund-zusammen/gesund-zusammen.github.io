@@ -14,7 +14,6 @@ import LogoGetYourGuide from "../../images/partners/getyourguide.png";
 import LogoFreightHub from "../../images/partners/freighthub.png";
 import LogoDeliveryHero from "../../images/partners/deliveryhero.png";
 import LogoCelonis from "../../images/partners/celonis.png";
-import LogoAuto1 from "../../images/partners/auto1.png";
 import LogoAdaHealth from "../../images/partners/adahealth.png";
 import LogoViaHealth from "../../images/partners/viadata.svg";
 import LogoPersonio from "../../images/partners/personio.png";
@@ -117,11 +116,6 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="Celonis"
               image={LogoCelonis}
               link="https://www.celonis.com/"
-            ></PartnerCard>
-            <PartnerCard
-              name="Auto1 Group"
-              image={LogoAuto1}
-              link="https://www.auto1.com/"
             ></PartnerCard>
             <PartnerCard
               name="Ada Health"
