@@ -5,8 +5,7 @@ import {
   ExpansionPanelSummary,
   ExpansionPanelDetails,
 } from "@material-ui/core";
-import AddIcon from "@material-ui/icons/Add";
-import MinimizeIcon from "@material-ui/icons/Minimize";
+import { Add, Minimize } from "@material-ui/icons";
 import styled, { AnyStyledComponent } from "styled-components";
 import { translated } from "../../util";
 
@@ -75,11 +74,14 @@ class FaqItems extends React.Component<IFaqItemProps, IFaqItemsState> {
   };
 }
 
-const StyledAddIcon: AnyStyledComponent = styled(AddIcon)`
+const StyledAddIcon: AnyStyledComponent = styled(Add)`
   color: #0a6eaa;
 `;
-const StyledMinimizeIcon: AnyStyledComponent = styled(MinimizeIcon)`
-  color: #ffffff;
+const StyledMinimizeIcon: AnyStyledComponent = styled(Minimize)`
+  && {
+    color: #ffffff;
+    margin-top: -0.5rem;
+  }
 `;
 const FaqListWrapper: AnyStyledComponent = styled.div`
   text-align: left;

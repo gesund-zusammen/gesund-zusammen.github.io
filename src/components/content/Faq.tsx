@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@material-ui/core";
 
-import FaqItems from "./FaqItems";
+import FaqItems from "../common/FaqItems";
 
 import { translated } from "../../util";
 import CTABox from "../common/CTABox";
