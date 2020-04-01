@@ -34,6 +34,7 @@ import LogoDeloitte from "../../images/partners/deloitte.jpg";
 import LogoMyData from "../../images/partners/mydata.png";
 import LogoFreiraum from "../../images/partners/freiraum.jpg";
 import LogoStoryMachine from "../../images/partners/storymachine.png";
+import LogoJoliBerlin from "../../images/partners/joliberlin.jpeg";
 import { translated } from "../../util";
 
 interface IPartnersProps {
@@ -231,6 +232,11 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="Story Machine"
               image={LogoStoryMachine}
               link="https://www.storymachine.de/"
+            ></PartnerCard>
+            <PartnerCard
+              name="JOLI BERLIN"
+              image={LogoJoliBerlin}
+              link="https://www.joliberlin.com/"
             ></PartnerCard>
           </Grid>
         </Box>
