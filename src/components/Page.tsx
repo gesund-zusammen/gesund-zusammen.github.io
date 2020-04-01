@@ -123,10 +123,7 @@ class Page extends React.Component<
             </LayoutSubPage>
           </Route>
           <Route path="/:lang/" exact={true} default={true}>
-            <LayoutLanding
-              lang={this.props.match.params.lang}
-              langChangeCallback={this.handleLangChange}
-            >
+            <LayoutLanding {...props}>
               <Landing lang={this.props.match.params.lang}></Landing>
             </LayoutLanding>
           </Route>
