@@ -48,13 +48,16 @@ class Page extends React.Component<
   };
 
   render = () => {
+    const props = {
+      lang: this.props.match.params.lang,
+      langChangeCallback: this.handleLangChange,
+    };
     return (
       <Router>
         <Switch>
           <Route path="/:lang/initiatives">
             <LayoutInitiativePage
-              lang={this.props.match.params.lang}
-              langChangeCallback={this.handleLangChange}
+              {...props}
               title={
                 translated(this.props.match.params.lang).header.nav.initiatives
               }
@@ -68,8 +71,7 @@ class Page extends React.Component<
           </Route>
           <Route path="/:lang/partners">
             <LayoutSubPage
-              lang={this.props.match.params.lang}
-              langChangeCallback={this.handleLangChange}
+              {...props}
               title={
                 translated(this.props.match.params.lang).header.nav.supporters
               }
@@ -79,8 +81,7 @@ class Page extends React.Component<
           </Route>
           <Route path="/:lang/faq">
             <LayoutSubPage
-              lang={this.props.match.params.lang}
-              langChangeCallback={this.handleLangChange}
+              {...props}
               title={translated(this.props.match.params.lang).header.nav.faqs}
               image={IlluFaq}
             >
@@ -89,8 +90,7 @@ class Page extends React.Component<
           </Route>
           <Route path="/:lang/privacy">
             <LayoutSubPage
-              lang={this.props.match.params.lang}
-              langChangeCallback={this.handleLangChange}
+              {...props}
               title={
                 translated(this.props.match.params.lang).footer.nav.privacy
               }
@@ -113,8 +113,7 @@ class Page extends React.Component<
           </Route>
           <Route path="/:lang/imprint">
             <LayoutSubPage
-              lang={this.props.match.params.lang}
-              langChangeCallback={this.handleLangChange}
+              {...props}
               title={
                 translated(this.props.match.params.lang).footer.nav.imprint
               }
@@ -123,7 +122,7 @@ class Page extends React.Component<
               <Imprint></Imprint>
             </LayoutSubPage>
           </Route>
-          <Route path="/:lang/">
+          <Route path="/:lang/" exact={true} default={true}>
             <LayoutLanding
               lang={this.props.match.params.lang}
               langChangeCallback={this.handleLangChange}
@@ -131,6 +130,7 @@ class Page extends React.Component<
               <Landing lang={this.props.match.params.lang}></Landing>
             </LayoutLanding>
           </Route>
+          <Redirect to={`/${DEFAULT_LANG}/`}></Redirect>
         </Switch>
       </Router>
     );
