@@ -28,11 +28,11 @@ class PrivacyPolicy extends React.PureComponent<IPrivacyProps, {}> {
             Verantwortlicher im Sinne der DSGVO
           </Typography>
           <Typography variant="body1">
-            finleap GmbH
+            Gesund Zusammen gGmbH i.G.
             <br />
-            Hardenbergerstraße 32
+            Urbanstr. 71
             <br />
-            10623 Berlin
+            10967 Berlin, Germany
             <br />
             media@gesund-zusammen.de
             <br />
