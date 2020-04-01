@@ -42,7 +42,13 @@
       "title": "Founding & Tech Partners",
       "claim": "Sie wollen auch mitmachen?",
       "cta": "Werden Sie Teil der Initiative",
-      "link": "mailto:partners@gesund-zusammen.de"
+      "link": "mailto:partners@gesund-zusammen.de",
+      "type" : {
+        "founders": "Founding & Tech Partner",
+        "privacy": "Privacy Partner",
+        "agencies": "Agentur Partner",
+        "further": "Weitere Partner"
+      }
     },
     "privacy": {
       "claim": "Sie haben noch eine Frage?",
@@ -114,6 +120,12 @@
       "releaseHrefImage": "187534-20200401090213000000000-gesund-zusammen-die-digitale-wirtschaft-s.png",
       "releaseHrefURL": "https://finleap.pr.co/187534-gesund-zusammen-die-digitale-wirtschaft-stellt-sich-dem-kampf-gegen-covid-19/"
     },
+    "newsletter": {
+      "title": "Melden Sie sich für unseren Newsletter an",
+      "content": "Wir halten Sie auf dem Laufenden über neue Apps, Initiativen, Hackathons usw.",
+      "inputPlaceholder": "E-Mail",
+      "cta": "Anmelden"
+    },
     "footer": {
       "title": "Aufruf zum Teilen",
       "claim": "Teilen Sie #gesundzusammen in Ihrem Netzwerk",
@@ -171,7 +183,13 @@
       "title": "Founding & Tech Partners",
       "claim": "Want to help make a difference?",
       "cta": "Become part of the initiative",
-      "link": "mailto:partners@gesund-zusammen.de"
+      "link": "mailto:partners@gesund-zusammen.de",
+      "type" : {
+        "founders": "Founding & Tech Partner",
+        "privacy": "Privacy Partner",
+        "agencies": "Agency Partner",
+        "further": "Further Partner"
+      }
     },
     "privacy": {
       "claim": "You have another question?",
@@ -242,6 +260,12 @@
       "releaseHrefPDF": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.pdf",
       "releaseHrefImage": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.png",
       "releaseHrefURL": "https://finleap.pr.co/187535-gesund-zusammen-tech-coalition-formed-to-combat-covid-19/"
+    },
+    "newsletter": {
+      "title": "Subscribe to our Newsletter",
+      "content": "We will keep you posted about new tools, dashboards, initiatives etc.",
+      "inputPlaceholder": "E-Mail",
+      "cta": "Subscribe"
     },
     "footer": {
       "title": "Sharing is caring",
