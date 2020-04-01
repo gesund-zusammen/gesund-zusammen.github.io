@@ -36,6 +36,8 @@ class FooterShareBox extends React.PureComponent<
     el.select();
     document.execCommand("copy");
     document.body.removeChild(el);
+
+    this.setState({ linkCopied: true });
   };
 
   render = () => {
@@ -49,7 +51,9 @@ class FooterShareBox extends React.PureComponent<
           <CopyLink
             onClick={() => this.copyToClipboard("https://gesund-zusammen.de")}
           >
-            {translated(this.props.lang).footer.copy}
+            {this.state.linkCopied
+              ? translated(this.props.lang).footer.copied
+              : translated(this.props.lang).footer.copy}
           </CopyLink>
         </CopyBox>
         <ShareBox>

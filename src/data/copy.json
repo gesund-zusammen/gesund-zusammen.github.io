@@ -43,7 +43,7 @@
       "claim": "Sie wollen auch mitmachen?",
       "cta": "Werden Sie Teil der Initiative",
       "link": "mailto:partners@gesund-zusammen.de",
-      "type" : {
+      "type": {
         "founders": "Founding & Tech Partner",
         "privacy": "Privacy Partner",
         "agencies": "Agentur Partner",
@@ -132,6 +132,7 @@
       "shareLink": "Teile unseren Link",
       "shareVia": "Oder teile mit",
       "copy": "Kopieren",
+      "copied": "Kopiert",
       "nav": {
         "privacy": "Datenschutzerklärung",
         "vulnerability": "Schwachstelle melden",
@@ -184,7 +185,7 @@
       "claim": "Want to help make a difference?",
       "cta": "Become part of the initiative",
       "link": "mailto:partners@gesund-zusammen.de",
-      "type" : {
+      "type": {
         "founders": "Founding & Tech Partner",
         "privacy": "Privacy Partner",
         "agencies": "Agency Partner",
@@ -273,6 +274,7 @@
       "shareLink": "Share our link",
       "shareVia": "Or share via",
       "copy": "Copy",
+      "copied": "Copied",
       "nav": {
         "privacy": "Privacy Policy",
         "vulnerability": "Report Vulnerability",
