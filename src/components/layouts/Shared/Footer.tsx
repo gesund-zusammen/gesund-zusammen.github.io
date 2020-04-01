@@ -110,47 +110,6 @@ const FooterContent: AnyStyledComponent = styled.div`
   }
 `;
 
-const CopyBox: AnyStyledComponent = styled.div`
-  display: block;
-  padding: 1rem;
-  font-size: 1rem;
-  border: 1px solid #ced7db;
-  border-radius: 4px;
-  color: #3c3c3c;
-  background: #ffffff;
-`;
-
-const CopyLink: AnyStyledComponent = styled.span`
-  float: right;
-  color: #0a6eaa;
-  font-weight: 600;
-  cursor: pointer;
-`;
-
-const ShareBox: AnyStyledComponent = styled.div`
-  display: block;
-  text-align: center;
-  padding: 1rem;
-
-  & .share-icon {
-    margin-left: 2rem;
-    margin-top: 1rem;
-
-    &:first-of-type {
-      margin-left: 0;
-    }
-  }
-
-  & .share-icon-link {
-    margin-left: 2rem;
-    margin-top: 1rem;
-
-    &:first-of-type {
-      margin-left: 0;
-    }
-  }
-`;
-
 const FooterLogo: AnyStyledComponent = styled.img`
   display: block;
   margin: 0 auto;
