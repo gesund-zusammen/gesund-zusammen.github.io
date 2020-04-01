@@ -76,7 +76,7 @@
           "content": "Unsere wertvollste Ressource sind unsere kompetenten, in agilen Teams arbeitenden Mitarbeiter. Sie jetzt in den Dienst der Allgemeinheit zu stellen, ist unser Beitrag zur Bewältigung dieser Krise. Sie haben ein Problem, das Sie lösen wollen? Sprechen Sie uns an."
         }
       ],
-      "contact": "Für weitere Fragen und stellvertretenden Kontakt, kontaktieren sie bitte: Solveig Rathenow <solveig.rathenow@finleap.com>"
+      "contact": "Für weitere Fragen und stellvertretenden Kontakt, kontaktieren sie bitte: Solveig Rathenow <media@gesund-zusammen.de>"
     },
     "press": {
       "title": "PR Kontakt",
@@ -121,20 +121,20 @@
       }
     },
     "main": {
-      "title": "#GesundZusammen – eine offene Initiative der Digitalwirtschaft",
+      "title": "#GesundZusammen – an open initiative led by the digital economy",
       "content": "Als breite Allianz deutscher Tech-Unternehmen wollen wir Gesellschaft, Politik und Wirtschaft aktiv dabei helfen, COVID-19 mit digitalen Lösungen einzudämmen. Dafür bauen wir auf eine der wichtigsten Ressourcen, die der Welt heute zur Verfügung steht: <font style=\"font-size:1.3rem; font-weight: bolder;\">Information</font>. <p>Daten ermöglichen es uns, gemeinsam zu forschen, Menschen zu warnen, Leben zu retten. Und doch ist eine flächendeckende Datennutzung nicht risikolos: Angesichts der Krise mehren sich die Stimmen, Grundrechte zum Wohle der Gesundheit zu opfern. Gemeinsam werden wir den Beweis erbringen: <font style=\"font-size:1.3rem; font-weight: bolder;\">Wir können beides haben – Infektionsschutz und Datenschutz.</font><p><font style=\"font-size:1.4rem; font-weight: bolder;\">Damit Privates privat bleibt</font><br />Auch in Krisenzeiten haben Freiheits- und Persönlichkeitsrechte der Menschen für unsere Technologie höchste Priorität.<p><font style=\"font-size:1.4rem; font-weight: bolder;\">Damit Deutschland gesund bleibt</font><br />Unsere Lösungen sollen helfen, Risikogruppen besser zu schützen und das Gesundheitssystem zu entlasten.<p><font style=\"font-size:1.4rem; font-weight: bolder;\">Damit die Wirtschaft in Fahrt kommt</font><br />Wir wollen Technologie einsetzen, um Gesundheitsrisiken in den Unternehmen zu senken und Produktivität wieder hochzufahren."
     },
     "boxes": {
       "initiative": {
-        "title": "Agile Entwicklung",
+        "title": "Agile Development",
         "content": "Als starke Tech-Partner investieren wir gemeinsam in den Bau von Apps und Tools, die unser Land gerade braucht, nutzerfreundlich, open source, schnell."
       },
       "support": {
-        "title": "Digitaler Support",
+        "title": "Digital Support",
         "content": "Wir unterstützen andere digitale Initiativen mit unseren Ressourcen, um wirksam die Datenlage zu verbessern. Sprechen Sie uns mit Ideen und Bedarf an."
       },
       "ecosystem": {
-        "title": "Offenes Ökosystem",
+        "title": "Open Ecosystem",
         "content": "Wir freuen uns auf den Austausch mit allen weiteren digitalen Initiativen, werden Kräfte bündeln und mit regelmäßigen Updates die Zusammenarbeit fördern."
       }
     },
@@ -145,30 +145,30 @@
     },
     "initiatives": {
       "filter": {
-        "filterBy": "Filtern",
+        "filterBy": "Filter by",
         "all": "All",
         "global": "Worldwide",
         "germany": "In Germany"
       }
     },
     "faq": {
-      "title": "Sie haben Fragen?",
+      "title": "Questions?",
       "button": "FAQs",
       "content": [
         {
-          "title": "Über uns",
+          "title": "About us",
           "content": "Wir sind eine breite Allianz deutscher Tech-Unternehmen, wollen Gesellschaft, Politik und Wirtschaft aktiv dabei helfen, COVID-19 mit digitalen Lösungen einzudämmen. Dafür bauen wir auf eine der wichtigsten Ressourcen, die der Welt heute zur Verfügung steht: Information."
         },
         {
-          "title": "Wieso GesundZusammen?",
+          "title": "Why GesundZusammen?",
           "content": "Um COVID-19 einzudämmen, entsteht gerade ein weltweiter Wettbewerb von Ideen, maßgeblich beschleunigt unter anderem von der Tech-Industrie. Wir bringen nicht nur die Ressourcen und Fähigkeiten der deutschen Digitalwirtschaft zusammen. Wir suchen und fördern gleichzeitig den offenen Austausch mit anderen digitalen Initiativen, damit sich die Ideen mit dem größten Potenzial durchsetzen."
         },
         {
-          "title": "Was wollt ihr erreichen?",
+          "title": "What is your goal?",
           "content": "Daten ermöglichen es uns, gemeinsam zu forschen, Menschen zu warnen, Leben zu retten. Und doch ist eine flächendeckende Datennutzung nicht risikolos: Angesichts der Krise mehren sich die Stimmen, Grundrechte zum Wohle der Gesundheit zu opfern. Gemeinsam werden wir den Beweis erbringen: Wir können beides haben – Infektionsschutz und Datenschutz."
         },
         {
-          "title": "Sucht ihr nach weiteren Partnern?",
+          "title": "Are you looking for more partners?",
           "content": "Wir sind immer offen für weitere Partner, die ihre Kompetenzen und Ressourcen gern zum Gesundheitsschutz der Gesellschaft einbringen wollen."
         },
         {
@@ -180,7 +180,7 @@
           "content": "Unsere wertvollste Ressource sind unsere kompetenten, in agilen Teams arbeitenden Mitarbeiter. Sie jetzt in den Dienst der Allgemeinheit zu stellen, ist unser Beitrag zur Bewältigung dieser Krise. Sie haben ein Problem, das Sie lösen wollen? Sprechen Sie uns an."
         }
       ],
-      "contact": "Für weitere Fragen und stellvertretenden Kontakt, kontaktieren sie bitte: Solveig Rathenow <solveig.rathenow@finleap.com>"
+      "contact": "For more questions, please contact: Solveig Rathenow <media@gesund-zusammen.de>"
     },
     "press": {
       "title": "Press Contact",
