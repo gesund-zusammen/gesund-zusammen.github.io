@@ -1,6 +1,5 @@
 import React from "react";
-import { Box, Container, Grid, Typography } from "@material-ui/core";
-import styled, { AnyStyledComponent } from "styled-components";
+import { Box, Grid, Typography } from "@material-ui/core";
 
 import { translated } from "../../util";
 

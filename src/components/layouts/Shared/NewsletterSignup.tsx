@@ -18,7 +18,23 @@ interface INewsletterSignupProps {
   lang: "de" | "en";
 }
 
-class NewsletterSignup extends React.Component<INewsletterSignupProps, {}> {
+interface INewsletterSignupState {
+  userEmail: string;
+}
+
+const DEFAULT_STATE = {
+  userEmail: "",
+};
+
+class NewsletterSignup extends React.Component<
+  INewsletterSignupProps,
+  INewsletterSignupState
+> {
+  constructor(props: INewsletterSignupProps) {
+    super(props);
+    this.state = DEFAULT_STATE;
+  }
+
   render = () => {
     return (
       <NewsletterSignupBox id="newsletter-signup" marginTop={4}>
@@ -38,27 +54,68 @@ class NewsletterSignup extends React.Component<INewsletterSignupProps, {}> {
               <Typography variant="body1" color="textSecondary">
                 {translated(this.props.lang).newsletter.content}
               </Typography>
-              <Grid container spacing={2}>
-                <Grid item xs={8}>
-                  <EmailField
-                    variant="outlined"
-                    placeholder={
-                      translated(this.props.lang).newsletter.inputPlaceholder
-                    }
-                    fullWidth={true}
-                  ></EmailField>
+              <form
+                action="https://gesund-zusammen.us19.list-manage.com/subscribe/post"
+                method="POST"
+                target="_blank"
+                noValidate
+              >
+                <input
+                  type="hidden"
+                  name="u"
+                  value="cad2329661c2775d063e682dc"
+                />
+                <input type="hidden" name="id" value="33fca6067e" />
+                <Grid container spacing={2}>
+                  <Grid item xs={8}>
+                    <EmailField
+                      variant="outlined"
+                      placeholder={
+                        translated(this.props.lang).newsletter.inputPlaceholder
+                      }
+                      fullWidth={true}
+                      type="email"
+                      name="EMAIL"
+                      id="MERGE0"
+                      value={this.state.userEmail}
+                      autoCapitalize="off"
+                      autoCorrect="off"
+                      onChange={(
+                        event: React.ChangeEvent<HTMLInputElement>,
+                      ) => {
+                        this.setState({ userEmail: event.target.value });
+                      }}
+                    ></EmailField>
+                  </Grid>
+                  <Grid item xs={4}>
+                    <SubscribeButton
+                      type="submit"
+                      variant="contained"
+                      color="primary"
+                      disableFocusRipple={true}
+                      fullWidth={true}
+                      name="subscribe"
+                      id="mc-embedded-subscribe"
+                    >
+                      {translated(this.props.lang).newsletter.cta}
+                    </SubscribeButton>
+                  </Grid>
                 </Grid>
-                <Grid item xs={4}>
-                  <SubscribeButton
-                    variant="contained"
-                    color="primary"
-                    disableFocusRipple={true}
-                    fullWidth={true}
-                  >
-                    {translated(this.props.lang).newsletter.cta}
-                  </SubscribeButton>
-                </Grid>
-              </Grid>
+                <div
+                  style={{ position: "absolute", left: "-5000px" }}
+                  aria-hidden="true"
+                  aria-label="Please leave the following three fields empty"
+                >
+                  <label htmlFor="b_email">Email: </label>
+                  <input
+                    type="email"
+                    name="b_email"
+                    value=""
+                    placeholder="youremail@gmail.com"
+                    id="b_email"
+                  />
+                </div>
+              </form>
             </Grid>
           </Grid>
         </NewsletterSignupContainer>
