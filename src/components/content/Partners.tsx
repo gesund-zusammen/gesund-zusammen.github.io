@@ -222,14 +222,25 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.fischerappelt.de/"
             ></PartnerCard>
             <PartnerCard
-              name="Freiraum"
-              image={LogoFreiraum}
-              link="http://www.freiraum-berlin.org/"
-            ></PartnerCard>
-            <PartnerCard
               name="Story Machine"
               image={LogoStoryMachine}
               link="https://www.storymachine.de/"
+            ></PartnerCard>
+          </Grid>
+        </Box>
+        <Typography variant="h2">Weitere Partner</Typography>
+        <Box paddingTop={4} paddingBottom={4}>
+          <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+            spacing={4}
+          >
+            <PartnerCard
+              name="Freiraum"
+              image={LogoFreiraum}
+              link="http://www.freiraum-berlin.org/"
             ></PartnerCard>
           </Grid>
         </Box>
