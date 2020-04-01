@@ -144,7 +144,7 @@ const theme = responsiveFontSizes(
         root: {
           fontSize: "1.2rem",
           fontWeight: 600,
-          padding: "1.5rem 2.8rem",
+          padding: "0.5rem 2.8rem",
           borderRadius: "15px 15px 0px 0px",
           color: "#003269",
           "&$expanded": {
@@ -157,7 +157,7 @@ const theme = responsiveFontSizes(
         root: {
           fontSize: "0.9rem",
           color: "#0A6EAA",
-          padding: "1.5rem 2.8rem",
+          padding: "1.2rem 2.8rem 0.5rem",
           borderRadius: "0px 0px 15px 15px",
         },
       },

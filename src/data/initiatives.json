@@ -1,6 +1,12 @@
 {
   "categories": [
     {
+      "slug": "gesund_zusammen_initiative",
+      "name": {
+        "en": "GesundZuammen Initiative",
+        "de": "GesundZuammen Initiative"
+      }
+    },{
       "slug": "digital_tools",
       "name": {
         "en": "Digital Tools",
@@ -52,6 +58,26 @@
   ],
   "initiatives": [
     {
+      "name": "\"Gesund-Zusammen\": Die Digitale Wirtschaft stellt sich dem Kampf gegen COVID-19",
+      "link": "http://finleap.pr.co/187534-gesund-zusammen-die-digitale-wirtschaft-stellt-sich-dem-kampf-gegen-covid-19",
+      "category": "gesund_zusammen_initiative",
+      "description": {
+        "de": "Führende Start-ups der Digitalbranche haben unter dem Namen “Gesund-Zusammen” eine Initiative gestartet, um ihren Teil zur aktiven Bekämpfung der Pandemie beizutragen. Ziel ist die Unterstützung von digitalen Lösungen, die helfen sollen, Risikogruppen besser zu schützen und das Gesundheitssystem zu entlasten. Dabei hat der Datenschutz oberste Priorität, um auch in Krisenzeiten Freiheits- und Persönlichkeitsrechte zu schützen.",
+        "en": "Leading tech companies in Europe have joined forces to launch an initiative called \"Gesund Zusammen\" (Healthy Together) to combat the pandemic. The aim is to support digital solutions that help to better protect risk groups and reduce the burden on the health system. Data protection is the highest priority in order to protect freedom and personal rights even in times of crisis."
+      },
+      "global": false
+    },
+    {
+      "name": "\"Gesund-Zusammen\": Tech coalition formed to combat Covid-19",
+      "link": "https://finleap.pr.co/187535-gesund-zusammen-tech-coalition-formed-to-combat-covid-19/",
+      "category": "gesund_zusammen_initiative",
+      "description": {
+        "de": "Führende Start-ups der Digitalbranche haben unter dem Namen “Gesund-Zusammen” eine Initiative gestartet, um ihren Teil zur aktiven Bekämpfung der Pandemie beizutragen. Ziel ist die Unterstützung von digitalen Lösungen, die helfen sollen, Risikogruppen besser zu schützen und das Gesundheitssystem zu entlasten. Dabei hat der Datenschutz oberste Priorität, um auch in Krisenzeiten Freiheits- und Persönlichkeitsrechte zu schützen.",
+        "en": "Leading tech companies in Europe have joined forces to launch an initiative called \"Gesund Zusammen\" (Healthy Together) to combat the pandemic. The aim is to support digital solutions that help to better protect risk groups and reduce the burden on the health system. Data protection is the highest priority in order to protect freedom and personal rights even in times of crisis."
+      },
+      "global": true
+    },
+    {
       "name": "Robert Koch Institut - Fallzahlen",
       "link": "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html",
       "category": "infection_tracking",
@@ -59,7 +85,7 @@
         "de": "COVID-19: Fallzahlen in Deutschland und weltweit",
         "en": "COVID-19: Infections in Germany and worldwide"
       },
-      "global": true
+      "global": false
     },
     {
       "name": "Data4Life Online Corona Test & aktuelle Zahlen der Infektionen",
@@ -636,7 +662,7 @@
       "category": "initiatives",
       "description": {
         "de": "Die COVID-19-Testplattform umfasst eine integrierte Softwareplattform für Gesundheitsbehörden zur Verwaltung von Risiko-Screening, Testbestellung, Ergebnislieferung, Fallmanagement, Kontaktverfolgung und Fallberichterstattung der Gesundheitsbehörden.",
-        "en": "COVID-19 testing platform including an integrated software platform for public health agencies to manage risk screening, test ordering, results delivery, case management, contact tracing, and public health agency case reporting." 
+        "en": "COVID-19 testing platform including an integrated software platform for public health agencies to manage risk screening, test ordering, results delivery, case management, contact tracing, and public health agency case reporting."
       },
       "global": true
     },

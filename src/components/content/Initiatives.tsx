@@ -7,6 +7,7 @@ import { translated } from "../../util";
 import IconArrowRight from "../../images/icon_arrow_right.svg";
 
 import InitiativeData from "../../data/initiatives.json";
+import CTABox from "../common/CTABox";
 
 interface ICategory {
   slug: string;
@@ -43,6 +44,8 @@ const DEFAULT_STATE: IInitiativeState = {
 
 class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
   categoryInitiativesCount: { [slug: string]: number };
+  germanInitiativesCount = 0;
+  globalInitiativesCount = 0;
 
   constructor(props: IInitiativeProps) {
     super(props);
@@ -73,15 +76,15 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
     return "Unknown";
   };
 
-  getInitiatives = (categorySlug?: string, global?: boolean): IInitiative[] => {
+  getInitiatives = (categorySlug?: string, global = true): IInitiative[] => {
     let initiatives = InitiativeData.initiatives;
     if (categorySlug) {
       initiatives = initiatives.filter(
         initiative => initiative.category === categorySlug,
       );
     }
-    if (global) {
-      initiatives = initiatives.filter(initiative => initiative.global);
+    if (!global) {
+      initiatives = initiatives.filter(initiative => !initiative.global);
     }
     return initiatives;
   };
@@ -133,14 +136,18 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
               onClick={() => this.handleRegionClick(false)}
               className={this.state.globalSelected === false ? "selected" : ""}
             >
-              {translated(this.props.lang).initiatives.filter.germany}
+              {`${translated(this.props.lang).initiatives.filter.germany} (${
+                this.getInitiatives(this.state.selectedCategory, false).length
+              })`}
             </RegionSelect>
             <RegionSelect
               variant="body2"
               onClick={() => this.handleRegionClick(true)}
               className={this.state.globalSelected === true ? "selected" : ""}
             >
-              {translated(this.props.lang).initiatives.filter.global}
+              {`${translated(this.props.lang).initiatives.filter.global} (${
+                this.getInitiatives(this.state.selectedCategory, true).length
+              })`}
             </RegionSelect>
           </Box>
         </Box>
@@ -171,6 +178,13 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
             </InitiativeCardWrapper>
           ))}
         </Box>
+        <Box paddingBottom={4} marginTop={4}>
+          <CTABox
+            claim={translated(this.props.lang).initiatives.claim}
+            cta={translated(this.props.lang).initiatives.cta}
+            href={translated(this.props.lang).initiatives.link}
+          ></CTABox>
+        </Box>
       </Box>
     );
   };
@@ -178,9 +192,9 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
 
 const CategoryChip: AnyStyledComponent = styled(Chip)`
   && {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.7rem;
-    padding: 1rem 2rem;
+    padding: 1rem;
     color: #0a6eaa;
     border: 1px solid #0a6eaa;
     margin: 0 1rem 1rem 0;
@@ -194,6 +208,11 @@ const CategoryChip: AnyStyledComponent = styled(Chip)`
     &.selected {
       color: #ffffff;
       background: #0a6eaa;
+    }
+
+    @media (min-width: 600px) {
+      font-size: 1.1rem;
+      padding: 1rem 2rem;
     }
   }
 `;
@@ -228,12 +247,16 @@ const InitiativeCard: AnyStyledComponent = styled(Card)`
     border-radius: 15px;
     box-shadow: 0px 2px 24px #e3e6eb;
     margin-bottom: 2rem;
-    padding: 2.2rem;
+    padding: 1.5rem;
 
-    &:hover {
-      background-image: url(${IconArrowRight});
-      background-position: right 2rem center;
-      background-repeat: no-repeat;
+    @media (min-width: 600px) {
+      padding: 2.2rem 6rem 2.2rem 2.2rem;
+
+      &:hover {
+        background-image: url(${IconArrowRight});
+        background-position: right 2rem center;
+        background-repeat: no-repeat;
+      }
     }
   }
 `;

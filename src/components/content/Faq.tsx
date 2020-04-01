@@ -2,11 +2,15 @@ import React from "react";
 import { Box } from "@material-ui/core";
 
 import FaqItems from "./FaqItems";
-import BecomePart from "../common/BecomePart";
+
+import { translated } from "../../util";
+import CTABox from "../common/CTABox";
+
 
 interface IFaqProps {
   lang: "de" | "en";
 }
+
 
 class Faq extends React.PureComponent<IFaqProps, {}> {
   render = () => {
@@ -16,7 +20,11 @@ class Faq extends React.PureComponent<IFaqProps, {}> {
           <FaqItems lang={this.props.lang}></FaqItems>
         </Box>
         <Box paddingBottom={4} marginTop={4}>
-          <BecomePart lang={this.props.lang}></BecomePart>
+          <CTABox
+            claim={translated(this.props.lang).faqs.claim}
+            cta={translated(this.props.lang).faqs.cta}
+            href={translated(this.props.lang).faqs.link}
+          ></CTABox>
         </Box>
       </>
     );
