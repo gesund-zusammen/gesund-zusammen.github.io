@@ -50,7 +50,7 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
           <Box>
             <FooterNav>
               <Hidden xsDown>
-                <Link to="/" style={{ float: "left" }}>
+                <Link to={`/${this.props.lang}/`} style={{ float: "left" }}>
                   <FooterLogo src={Logo} alt="#GesundZusammen"></FooterLogo>
                 </Link>
               </Hidden>
@@ -60,16 +60,16 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                 </a>
               </FooterSocialIcons>
               <FooterNavItems>
-                <FooterNavLinkItem to="/privacy">
+                <FooterNavLinkItem to={`/${this.props.lang}/privacy`}>
                   {translated(this.props.lang).footer.nav.privacy}
                 </FooterNavLinkItem>
                 <FooterNavAnchorItem href="mailto:responsibledisclosure@gesund-zusammen.de">
                   {translated(this.props.lang).footer.nav.vulnerability}
                 </FooterNavAnchorItem>
-                <FooterNavLinkItem to="/press">
+                <FooterNavLinkItem to={`/${this.props.lang}/press`}>
                   {translated(this.props.lang).footer.nav.press}
                 </FooterNavLinkItem>
-                <FooterNavLinkItem to="/imprint">
+                <FooterNavLinkItem to={`/${this.props.lang}/imprint`}>
                   {translated(this.props.lang).footer.nav.imprint}
                 </FooterNavLinkItem>
               </FooterNavItems>
