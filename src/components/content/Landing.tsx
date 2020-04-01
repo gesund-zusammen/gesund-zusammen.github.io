@@ -41,6 +41,7 @@ class Landing extends React.PureComponent<ILandingProps, {}> {
             </Grid>
           </Box>
         </Box>
+
         <Partners lang={this.props.lang}></Partners>
       </>
     );

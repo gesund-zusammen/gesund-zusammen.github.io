@@ -110,6 +110,12 @@
       "resourcesLine1": "Download the GesundZusammen logo in various formats.",
       "resourcesLine2": "Includes EPS, JPG, and PNG formats. For digital and print."
     },
+    "newsletter": {
+      "title": "Melden Sie sich für unseren Newsletter an",
+      "content": "Wir halten Sie auf dem Laufenden über neue Apps, Initiativen, Hackathons usw.",
+      "inputPlaceholder": "E-Mail",
+      "cta": "Anmelden"
+    },
     "footer": {
       "title": "Aufruf zum Teilen",
       "claim": "Teilen Sie #gesundzusammen in Ihrem Netzwerk",
@@ -234,6 +240,12 @@
       "resources": "Resources",
       "resourcesLine1": "Download the GesundZusammen logo in various formats.",
       "resourcesLine2": "Includes EPS, JPG, and PNG formats. For digital and print."
+    },
+    "newsletter": {
+      "title": "Subscribe to our Newsletter",
+      "content": "We will keep you posted about new tools, dashboards, initiatives etc.",
+      "inputPlaceholder": "E-Mail",
+      "cta": "Subscribe"
     },
     "footer": {
       "title": "Sharing is caring",
