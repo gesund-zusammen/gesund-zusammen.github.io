@@ -44,7 +44,9 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
   render = () => {
     return (
       <Box id="partners" paddingBottom={4} marginTop={4}>
-        <Typography variant="h2">Founding & Tech Partner</Typography>
+        <Typography variant="h2">
+          {translated(this.props.lang).partners.type.founders}
+        </Typography>
         <Box paddingTop={4} paddingBottom={4}>
           <Grid
             container
@@ -150,7 +152,9 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
             ></PartnerCard>
           </Grid>
         </Box>
-        <Typography variant="h2">Privacy Partner</Typography>
+        <Typography variant="h2">
+          {translated(this.props.lang).partners.type.privacy}
+        </Typography>
         <Box paddingTop={4} paddingBottom={4}>
           <Grid
             container
@@ -207,7 +211,9 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
             ></PartnerCard>
           </Grid>
         </Box>
-        <Typography variant="h2">Agency Partner</Typography>
+        <Typography variant="h2">
+          {translated(this.props.lang).partners.type.agencies}
+        </Typography>
         <Box paddingTop={4} paddingBottom={4}>
           <Grid
             container
@@ -222,14 +228,27 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.fischerappelt.de/"
             ></PartnerCard>
             <PartnerCard
-              name="Freiraum"
-              image={LogoFreiraum}
-              link="http://www.freiraum-berlin.org/"
-            ></PartnerCard>
-            <PartnerCard
               name="Story Machine"
               image={LogoStoryMachine}
               link="https://www.storymachine.de/"
+            ></PartnerCard>
+          </Grid>
+        </Box>
+        <Typography variant="h2">
+          {translated(this.props.lang).partners.type.further}
+        </Typography>
+        <Box paddingTop={4} paddingBottom={4}>
+          <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+            spacing={4}
+          >
+            <PartnerCard
+              name="Freiraum"
+              image={LogoFreiraum}
+              link="http://www.freiraum-berlin.org/"
             ></PartnerCard>
           </Grid>
         </Box>
