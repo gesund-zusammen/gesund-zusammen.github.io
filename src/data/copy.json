@@ -64,14 +64,14 @@
       },
       "claim": "Es fehlt noch eine Initiative?",
       "cta": "Geben Sie uns bescheid",
-      "link": "mailto:partners@gesund-zusammen.de"
+      "link": "mailto:initiatives@gesund-zusammen.de"
     },
     "faqs": {
       "title": "Sie haben Fragen?",
       "button": "FAQs",
       "cta": "Schreiben Sie uns",
       "claim": "Sie haben noch eine Frage?",
-      "link": "mailto:media@gesund-zusammen.de",
+      "link": "mailto:faqs@gesund-zusammen.de",
       "content": [
         {
           "title": "Über uns",
@@ -154,7 +154,7 @@
       },
       "content": {
         "landing": {
-          "title": "Protect data.<br />Save lifes.",
+          "title": "Protect data.<br />Save lives.",
           "content": "Digital tools to fight Covid-19"
         },
         "initiatives": {
@@ -200,7 +200,7 @@
     "initiatives": {
       "claim": "An initiative is missing?",
       "cta": "Contact us",
-      "link": "mailto:media@gesund-zusammen.de",
+      "link": "mailto:initiatives@gesund-zusammen.de",
       "filter": {
         "filterBy": "Filter by",
         "all": "All",
@@ -213,7 +213,7 @@
       "button": "FAQs",
       "claim": "You have another question?",
       "cta": "Contact us",
-      "link": "mailto:media@gesund-zusammen.de",
+      "link": "mailto:faqs@gesund-zusammen.de",
       "content": [
         {
           "title": "About us",
