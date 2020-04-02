@@ -11,7 +11,7 @@
     },
     "content": {
       "landing": {
-        "title": "Protect data.<br />Save lifes.",
+        "title": "Protect data.<br />Save lives.",
         "content": "Digital tools to fight Covid-19"
       },
       "initiatives": {
@@ -57,7 +57,9 @@
   "initiatives": {
     "claim": "An initiative is missing?",
     "cta": "Contact us",
-    "link": "mailto:media@gesund-zusammen.de",
+    "link": "mailto:initiatives@gesund-zusammen.de",
+    "unknownCategory": "Unknown",
+    "showMore": "Show more",
     "filter": {
       "filterBy": "Filter by",
       "all": "All",
@@ -70,7 +72,7 @@
     "button": "FAQs",
     "claim": "You have another question?",
     "cta": "Contact us",
-    "link": "mailto:media@gesund-zusammen.de",
+    "link": "mailto:faqs@gesund-zusammen.de",
     "content": [
       {
         "title": "About us",
