@@ -39,7 +39,7 @@ class Landing extends React.PureComponent<ILandingProps, {}> {
           </Box>
         </Box>
 
-        <Partners lang={this.props.lang}></Partners>
+        <Partners></Partners>
       </>
     );
   };

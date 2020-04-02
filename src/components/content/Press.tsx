@@ -90,7 +90,11 @@ class PressContact extends React.PureComponent<WithTranslation, {}> {
             </Typography>
             <Link href={this.props.t("press.releaseHrefImage")}>
               <StyledPressReleaseImage
-                src={this.props.lang == "de" ? ReleaseDeLogo : ReleaseEnLogo}
+                src={
+                  this.props.i18n.language == "de"
+                    ? ReleaseDeLogo
+                    : ReleaseEnLogo
+                }
               ></StyledPressReleaseImage>
             </Link>
           </Box>
