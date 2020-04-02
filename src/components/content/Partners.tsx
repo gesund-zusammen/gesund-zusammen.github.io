@@ -224,7 +224,8 @@ class Partners extends React.PureComponent<WithTranslation, {}> {
               name="The Delta"
               image={LogoTheDelta}
               link="https://www.thedelta.io/"
-            /><PartnerCard
+            />
+            <PartnerCard
               name="fischerAppelt"
               image={LogoFischerAppelt}
               link="https://www.fischerappelt.de/"
