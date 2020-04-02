@@ -1,12 +1,12 @@
 import React from "react";
 import { Box } from "@material-ui/core";
+import { withTranslation, WithTranslation } from "react-i18next";
 
 import FaqItems from "../common/FaqItems";
 
-import { translated } from "../../util";
 import CTABox from "../common/CTABox";
 
-interface IFaqProps {
+interface IFaqProps extends WithTranslation {
   lang: "de" | "en";
 }
 
@@ -19,9 +19,9 @@ class Faq extends React.PureComponent<IFaqProps, {}> {
         </Box>
         <Box paddingBottom={4} marginTop={4}>
           <CTABox
-            claim={translated(this.props.lang).faqs.claim}
-            cta={translated(this.props.lang).faqs.cta}
-            href={translated(this.props.lang).faqs.link}
+            claim={this.props.t("faqs.claim")}
+            cta={this.props.t("faqs.cta")}
+            href={this.props.t("faqs.link")}
           ></CTABox>
         </Box>
       </>
@@ -29,4 +29,4 @@ class Faq extends React.PureComponent<IFaqProps, {}> {
   };
 }
 
-export default Faq;
+export default withTranslation()(Faq);
