@@ -6,7 +6,8 @@
         "en": "GesundZuammen Initiative",
         "de": "GesundZuammen Initiative"
       }
-    },{
+    },
+    {
       "slug": "digital_tools",
       "name": {
         "en": "Digital Tools",
@@ -267,6 +268,16 @@
       "global": false
     },
     {
+      "name": "Teleclinic",
+      "link": "https://www.teleclinic.com/",
+      "category": "digital_consultation",
+      "description": {
+        "de": "Online-Arzt - Das Ärztenetzwerk steht für ein kostenfreies Corona Arztgespräch zur Verfügung.",
+        "en": "Talk to a doctor - The network of doctors is available for a free COVID-19 doctor consultation."
+      },
+      "global": false
+    },
+    {
       "name": "Clickdoc für Ärzte und Behandler",
       "link": "https://clickdoc.de/cms-de/news/virus-videosprechstunde-kostenlos/",
       "category": "digital_consultation",
@@ -298,7 +309,7 @@
     },
     {
       "name": "Worldometer",
-      "link": "https://ncov2019.live/data",
+      "link": "https://www.worldometers.info/coronavirus/",
       "category": "infection_tracking",
       "description": {
         "de": "Weltweite Echtzeit Verfolgung der COVID-19 Infektionen",
@@ -623,6 +634,16 @@
       "description": {
         "de": "Der Patienten Service: Aktuelle Hinweise zu COVID-19.",
         "en": "The German patient service."
+      },
+      "global": false
+    },
+    {
+      "name": "Nachbarn helfen",
+      "link": "https://nachbarn-helfen.org/",
+      "category": "initiatives",
+      "description": {
+        "de": "Das Portal hat das Ziel den Kontakt zwischen Helfer und Hilfesuchende schnell und unkompliziert herzustellen. Die Inserate & Hilfegesuche nach Regionalität geprüft und anschließend werden die Menschen bei einem Match in Kontakt gebracht.",
+        "en": "The portal has the goal to initiate the contact between helper and help-seeker based on regionality."
       },
       "global": false
     },

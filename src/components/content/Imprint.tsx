@@ -8,11 +8,11 @@ class PrivacyPolicy extends React.PureComponent {
       <PrivacyWrapper paddingBottom={4}>
         <Typography variant="h2">Address</Typography>
         <Typography variant="body1">
-          finleap GmbH
+          Gesund Zusammen gGmbH i.G.
           <br />
-          Hardenbergstraße 32
+          Urbanstr. 71
           <br />
-          10623 Berlin, Germany
+          10967 Berlin, Germany
         </Typography>
         <Typography variant="h2">Contact</Typography>
         <Typography variant="body1">
@@ -23,16 +23,15 @@ class PrivacyPolicy extends React.PureComponent {
         <Typography variant="h2">Managing Directors</Typography>
         <Typography variant="body1">
           Ramin Niroumand <br />
-          Michael Hock <br />
-          Dr. Florian Resatsch <br />
-          Dr. Birte Sewing <br />
+          Julian Bernhard Edward Teicke
+          <br />
         </Typography>
         <Typography variant="h2">Commercial Register</Typography>
         <Typography variant="body1">
           Amtsgericht Charlottenburg
           <br />
-          HRB 159534 B <br />
-          VAT ID: DE296042460
+          HRB [Aktualisierung nach erfolgreicher Eintragung] B <br />
+          VAT ID: [Aktualisierung nach erfolgreicher Eintragung]
           <br />
         </Typography>
         <Typography variant="h2">
@@ -62,8 +61,8 @@ class PrivacyPolicy extends React.PureComponent {
         <Typography variant="body1">
           All product names mentioned on this website, product names, brand
           names and logos are trademarks and / or property of their respective
-          owners. All text and graphics on this site: &copy; finleap GmbH or the
-          copyright holders.
+          owners. All text and graphics on this site: &copy; Gesund Zusammen
+          gGmbH i.G. or the copyright holders.
         </Typography>
       </PrivacyWrapper>
     );

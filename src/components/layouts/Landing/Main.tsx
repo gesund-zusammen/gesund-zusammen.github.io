@@ -4,6 +4,7 @@ import styled, { AnyStyledComponent } from "styled-components";
 
 import LandingHeader from "./Header";
 import Footer from "../Shared/Footer";
+import NewsletterSignup from "../Shared/NewsletterSignup";
 import { HeaderBox, MainContentContainer } from "../Shared/StyledComponents";
 
 interface ILayoutLandingProps {
@@ -33,6 +34,8 @@ class LayoutLanding extends React.Component<ILayoutLandingProps, {}> {
             {this.props.children}
           </MainContentContainer>
         </Box>
+
+        <NewsletterSignup lang={this.props.lang}></NewsletterSignup>
 
         <Footer lang={this.props.lang}></Footer>
       </>
