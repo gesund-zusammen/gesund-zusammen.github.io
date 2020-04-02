@@ -6,7 +6,8 @@
         "en": "GesundZuammen Initiative",
         "de": "GesundZuammen Initiative"
       }
-    },{
+    },
+    {
       "slug": "digital_tools",
       "name": {
         "en": "Digital Tools",
@@ -266,7 +267,7 @@
       },
       "global": false
     },
-     {
+    {
       "name": "Teleclinic",
       "link": "https://www.teleclinic.com/",
       "category": "digital_consultation",
@@ -275,7 +276,7 @@
         "en": "Talk to a doctor - The network of doctors is available for a free COVID-19 doctor consultation."
       },
       "global": false
-    },   
+    },
     {
       "name": "Clickdoc für Ärzte und Behandler",
       "link": "https://clickdoc.de/cms-de/news/virus-videosprechstunde-kostenlos/",
@@ -308,7 +309,7 @@
     },
     {
       "name": "Worldometer",
-      "link": "https://ncov2019.live/data",
+      "link": "https://www.worldometers.info/coronavirus/",
       "category": "infection_tracking",
       "description": {
         "de": "Weltweite Echtzeit Verfolgung der COVID-19 Infektionen",
@@ -636,7 +637,7 @@
       },
       "global": false
     },
-        {
+    {
       "name": "Nachbarn helfen",
       "link": "https://nachbarn-helfen.org/",
       "category": "initiatives",
