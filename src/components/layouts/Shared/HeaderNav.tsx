@@ -1,14 +1,22 @@
 import React from "react";
 import { Switch } from "@material-ui/core";
 import styled, { css, AnyStyledComponent } from "styled-components";
+import { withRouter, RouteComponentProps } from "react-router";
 import { Link } from "react-router-dom";
 import { withTranslation, WithTranslation } from "react-i18next";
 
 import Logo from "../../../images/logo.svg";
 
-class HeaderNav extends React.Component<WithTranslation, {}> {
+interface IHeaderNavProps extends RouteComponentProps, WithTranslation {}
+
+class HeaderNav extends React.Component<IHeaderNavProps, {}> {
   handleLangChange = () => {
-    this.props.i18n.changeLanguage("de" ? "en" : "de");
+    const newLang = this.props.i18n.language === "de" ? "en" : "de";
+    this.props.i18n.changeLanguage(newLang, () => {
+      const pathSegments = this.props.location.pathname.split("/");
+      const [, , ...path] = pathSegments;
+      this.props.history.push(`/${newLang}/${path.join("/")}`);
+    });
   };
 
   render = () => {
@@ -113,4 +121,4 @@ const LangDisplay: AnyStyledComponent = styled.span`
   text-transform: uppercase;
 `;
 
-export default withTranslation()(HeaderNav);
+export default withRouter(withTranslation()(HeaderNav));

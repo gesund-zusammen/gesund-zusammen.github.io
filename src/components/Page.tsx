@@ -33,12 +33,8 @@ interface IPageProps
     WithTranslation {}
 
 class Page extends React.Component<IPageProps, {}> {
-  handleLangChange = (lang: "de" | "en") => {
-    this.props.i18n.changeLanguage(lang, () => {
-      const pathSegments = this.props.location.pathname.split("/");
-      const [, , ...path] = pathSegments;
-      this.props.history.push(`/${lang}/${path.join("/")}`);
-    });
+  componentDidMount = () => {
+    this.props.i18n.changeLanguage(this.props.match.params.lang);
   };
 
   render = () => {
@@ -121,15 +117,7 @@ class LangWrapper extends React.Component {
               supportedLanguages.includes(props.match.params.lang) ? (
                 <Translation>
                   {(t, { i18n, lng }, ready) => (
-                    <Page
-                      {...{
-                        t,
-                        i18n,
-                        lng,
-                        tReady: ready,
-                        ...props,
-                      }}
-                    />
+                    <Page {...{ t, i18n, lng, tReady: ready, ...props }} />
                   )}
                 </Translation>
               ) : (
