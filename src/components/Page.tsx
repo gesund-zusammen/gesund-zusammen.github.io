@@ -34,7 +34,11 @@ interface IPageProps
 
 class Page extends React.Component<IPageProps, {}> {
   componentDidMount = () => {
-    this.props.i18n.changeLanguage(this.props.match.params.lang);
+    if (this.props.match.params.lang !== this.props.i18n.language) {
+      setTimeout(() => {
+        this.props.i18n.changeLanguage(this.props.match.params.lang);
+      });
+    }
   };
 
   render = () => {

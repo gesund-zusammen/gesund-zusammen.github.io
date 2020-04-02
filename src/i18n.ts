@@ -22,6 +22,7 @@ i18n
   .init({
     lng: DEFAULT_LANG,
     fallbackLng: "en",
+    whitelist: ["de", "en"],
     resources: {
       en: {
         translation: TranslationsEN,
