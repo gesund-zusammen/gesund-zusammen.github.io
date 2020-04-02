@@ -2,8 +2,7 @@ import React from "react";
 import { Box, Container, Grid, Typography, Hidden } from "@material-ui/core";
 import styled, { css, AnyStyledComponent } from "styled-components";
 import { Link } from "react-router-dom";
-
-import { translated } from "../../../util";
+import { withTranslation, WithTranslation } from "react-i18next";
 
 import FooterShareBox from "../Shared/FooterShareBox";
 
@@ -12,7 +11,7 @@ import Logo from "../../../images/logo.svg";
 
 import SocialIconTwitter from "../../../images/footer_icon_twitter.svg";
 
-interface IFooterProps {
+interface IFooterProps extends WithTranslation {
   lang: "de" | "en";
 }
 
@@ -35,10 +34,10 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
               <Grid item xs={12} sm={6}>
                 <FooterContent>
                   <Typography variant="h2">
-                    {translated(this.props.lang).footer.title}
+                    {this.props.t("footer.title")}
                   </Typography>
                   <Typography variant="body1">
-                    {translated(this.props.lang).footer.claim}
+                    {this.props.t("footer.claim")}
                   </Typography>
                 </FooterContent>
               </Grid>
@@ -61,16 +60,16 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
               </FooterSocialIcons>
               <FooterNavItems>
                 <FooterNavLinkItem to={`/${this.props.lang}/privacy`}>
-                  {translated(this.props.lang).footer.nav.privacy}
+                  {this.props.t("footer.nav.privacy")}
                 </FooterNavLinkItem>
                 <FooterNavAnchorItem href="mailto:responsibledisclosure@gesund-zusammen.de">
-                  {translated(this.props.lang).footer.nav.vulnerability}
+                  {this.props.t("footer.nav.vulnerability")}
                 </FooterNavAnchorItem>
                 <FooterNavLinkItem to={`/${this.props.lang}/press`}>
-                  {translated(this.props.lang).footer.nav.press}
+                  {this.props.t("footer.nav.press")}
                 </FooterNavLinkItem>
                 <FooterNavLinkItem to={`/${this.props.lang}/imprint`}>
-                  {translated(this.props.lang).footer.nav.imprint}
+                  {this.props.t("footer.nav.imprint")}
                 </FooterNavLinkItem>
               </FooterNavItems>
               <CopyrightNote>
@@ -202,4 +201,4 @@ const CopyrightNote: AnyStyledComponent = styled.p`
   }
 `;
 
-export default Footer;
+export default withTranslation()(Footer);
