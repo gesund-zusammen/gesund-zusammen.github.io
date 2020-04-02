@@ -4,14 +4,24 @@ import { initReactI18next } from "react-i18next";
 import TranslationsDE from "./locales/de.json";
 import TranslationsEN from "./locales/en.json";
 
+const getBootLang = (): "de" | "en" => {
+  const userLang: string = window.navigator.language;
+  if (userLang.substr(0, 2) === "de") {
+    return "de";
+  }
+  return "en";
+};
+
+const DEFAULT_LANG = getBootLang();
+
 i18n
   // pass the i18n instance to react-i18next.
   .use(initReactI18next)
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
-    lng: "de",
-    fallbackLng: "de",
+    lng: DEFAULT_LANG,
+    fallbackLng: "en",
     resources: {
       en: {
         translation: TranslationsEN,
@@ -26,3 +36,4 @@ i18n
   });
 
 export default i18n;
+export { DEFAULT_LANG };

@@ -26,15 +26,7 @@ import IlluFaq from "../images/illu_faq.svg";
 import IlluPressContact from "../images/illu_presscontact.svg";
 import IlluImprint from "../images/illu_imprint.svg";
 
-const getBootLang = (): "de" | "en" => {
-  const userLang: string = window.navigator.language;
-  if (userLang.substr(0, 2) === "de") {
-    return "de";
-  }
-  return "en";
-};
-
-const DEFAULT_LANG = getBootLang();
+import { DEFAULT_LANG } from "../i18n";
 
 interface IPageProps
   extends RouteComponentProps<{ lang: "de" | "en" }>,
@@ -47,10 +39,6 @@ class Page extends React.Component<IPageProps, {}> {
       const [, , ...path] = pathSegments;
       this.props.history.push(`/${lang}/${path.join("/")}`);
     });
-  };
-
-  componentDidMount = () => {
-    this.props.i18n.changeLanguage(DEFAULT_LANG);
   };
 
   render = () => {
