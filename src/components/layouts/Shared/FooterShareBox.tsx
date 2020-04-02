@@ -2,14 +2,13 @@ import React from "react";
 import { Typography } from "@material-ui/core";
 import { Done } from "@material-ui/icons";
 import styled, { AnyStyledComponent } from "styled-components";
-
-import { translated } from "../../../util";
+import { withTranslation, WithTranslation } from "react-i18next";
 
 import IconWhatsApp from "../../../images/icon_whatsapp.svg";
 import IconFacebook from "../../../images/icon_facebook.svg";
 import IconEmail from "../../../images/icon_email.svg";
 
-interface IFooterShareBoxProps {
+interface IFooterShareBoxProps extends WithTranslation {
   lang: "de" | "en";
 }
 
@@ -45,7 +44,7 @@ class FooterShareBox extends React.PureComponent<
     return (
       <>
         <Typography variant="subtitle1">
-          {translated(this.props.lang).footer.shareLink}
+          {this.props.t("footer.shareLink")}
         </Typography>
         <CopyBox>
           <span>https://gesund-zusammen.de</span>
@@ -54,13 +53,13 @@ class FooterShareBox extends React.PureComponent<
             onClick={() => this.copyToClipboard("https://gesund-zusammen.de")}
           >
             {this.state.linkCopied
-              ? translated(this.props.lang).footer.copied
-              : translated(this.props.lang).footer.copy}
+              ? this.props.t("footer.copied")
+              : this.props.t("footer.copy")}
           </CopyLink>
         </CopyBox>
         <ShareBox>
           <Typography variant="subtitle2">
-            {translated(this.props.lang).footer.shareVia}
+            {this.props.t("footer.shareVia")}
           </Typography>
           <a
             className="share-icon-link"
@@ -150,4 +149,4 @@ const ShareBox: AnyStyledComponent = styled.div`
   }
 `;
 
-export default FooterShareBox;
+export default withTranslation()(FooterShareBox);
