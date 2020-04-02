@@ -21,13 +21,11 @@ variable "aws-secret-key" {
 variable "bucket_name" {
   description = "name of the S3 bucket where the static website will be hosted, e.g. \"demo.com\""
   type        = string
-  default     = "gesundzusammen-staging.finleap.tech"
 }
 
 variable "domain_name" {
   description = "domain for the cloudfront distribution e.g. \"demo.com\""
   type        = string
-  default     = "gesundzusammen-staging.finleap.tech"
 }
 
 variable "zone_id" {

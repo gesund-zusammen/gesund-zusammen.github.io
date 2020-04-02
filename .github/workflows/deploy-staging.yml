@@ -47,10 +47,3 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           STAGING_AWS_CLOUDFRONT_DIST: ${{ secrets.STAGING_AWS_CLOUDFRONT_DIST }}
-      - name: Comment to PR
-        uses: unsplash/comment-on-pr@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
-        with:
-          msg: "Staging Deployment Successful, check it out on this URL: http://gesundzusammen-staging.finleap.tech.s3.eu-central-1.amazonaws.com/index.html"
-          check_for_duplicate_msg: false # OPTIONAL
