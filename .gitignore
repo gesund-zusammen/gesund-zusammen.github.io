@@ -3,3 +3,11 @@ node_modules
 build
 *.log
 .DS_Store
+
+
+
+# Terraform state and files that should not be part of Git
+.terraform
+secrets.tfvars 
+plan.out
+*.tfstate
