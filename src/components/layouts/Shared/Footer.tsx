@@ -11,6 +11,7 @@ import BgFooter from "../../../images/bg_footer.svg";
 import Logo from "../../../images/logo.svg";
 
 import SocialIconTwitter from "../../../images/footer_icon_twitter.svg";
+import LogoGithub from "../../../images/logo_github.svg";
 
 interface IFooterProps {
   lang: "de" | "en";
@@ -57,6 +58,9 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
               <FooterSocialIcons>
                 <a href="https://twitter.com/gesundzusammen">
                   <img src={SocialIconTwitter} alt="Twitter"></img>
+                </a>
+                <a href="https://github.com/gesund-zusammen/gesund-zusammen.github.io">
+                  <img src={LogoGithub} alt="Github"></img>
                 </a>
               </FooterSocialIcons>
               <FooterNavItems>

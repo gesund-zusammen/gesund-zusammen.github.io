@@ -62,9 +62,11 @@
         "global": "Weltweit",
         "germany": "In Deutschland"
       },
+      "unknownCategory": "Unbekannt",
+      "showMore": "Zeige mehr",
       "claim": "Es fehlt noch eine Initiative?",
       "cta": "Geben Sie uns bescheid",
-      "link": "mailto:partners@gesund-zusammen.de"
+      "link": "mailto:initiatives@gesund-zusammen.de"
     },
     "faqs": {
       "title": "Sie haben Fragen?",
@@ -200,7 +202,9 @@
     "initiatives": {
       "claim": "An initiative is missing?",
       "cta": "Contact us",
-      "link": "mailto:media@gesund-zusammen.de",
+      "link": "mailto:initiatives@gesund-zusammen.de",
+      "unknownCategory": "Unknown",
+      "showMore": "Show more",
       "filter": {
         "filterBy": "Filter by",
         "all": "All",
