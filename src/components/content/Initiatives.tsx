@@ -131,7 +131,7 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
                 this.categoryInitiativesCount.all
               })`}
               onClick={() => this.handleChipClick(undefined)}
-            ></CategoryChip>
+            />
             {this.getCategories().map(category => (
               <CategoryChip
                 variant="outlined"
@@ -143,7 +143,7 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
                   this.categoryInitiativesCount[category.slug]
                 })`}
                 onClick={() => this.handleChipClick(category.slug)}
-              ></CategoryChip>
+              />
             ))}
           </Box>
           <Box id="region-filter" paddingBottom={4} marginTop={4}>
@@ -217,7 +217,7 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
             claim={this.props.t("initiatives.claim")}
             cta={this.props.t("initiatives.cta")}
             href={this.props.t("initiatives.link")}
-          ></CTABox>
+          />
         </Box>
       </Box>
     );

@@ -23,7 +23,7 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
     return (
       <>
         <Link to={`/${this.props.i18n.language}/`}>
-          <HeaderLogo src={Logo} alt="#GesundZusammen"></HeaderLogo>
+          <HeaderLogo src={Logo} alt="#GesundZusammen" />
         </Link>
         <HeaderNavItems>
           <HeaderNavLinkItem to={`/${this.props.i18n.language}/initiatives`}>
@@ -42,7 +42,7 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
               disableRipple={true}
               color="primary"
               name="langSwitch"
-            ></StyledSwitch>
+            />
             <LangDisplay>{this.props.i18n.language}</LangDisplay>
           </HeaderLangSwitch>
         </HeaderNavItems>

@@ -49,7 +49,7 @@ class PressContact extends React.PureComponent<WithTranslation, {}> {
               {this.props.t("press.resourcesLine1")}
             </Typography>
             <Link href="/PressKit.zip">
-              <StyledPressKitImage src={PressKitLogo}></StyledPressKitImage>
+              <StyledPressKitImage src={PressKitLogo} />
             </Link>
             <Typography variant="body2" color="primary">
               {this.props.t("press.resourcesLine2")}
@@ -95,7 +95,7 @@ class PressContact extends React.PureComponent<WithTranslation, {}> {
                     ? ReleaseDeLogo
                     : ReleaseEnLogo
                 }
-              ></StyledPressReleaseImage>
+              />
             </Link>
           </Box>
         </PressContactWrapper>
@@ -104,7 +104,7 @@ class PressContact extends React.PureComponent<WithTranslation, {}> {
             claim={this.props.t("press.claim")}
             cta={this.props.t("press.cta")}
             href={this.props.t("press.link")}
-          ></CTABox>
+          />
         </Box>
       </>
     );

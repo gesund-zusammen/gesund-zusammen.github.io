@@ -14,7 +14,7 @@ class SubPageHeader extends React.PureComponent<ISubPageHeaderProps, {}> {
     return (
       <>
         <Box paddingBottom={4} marginTop={4}>
-          <HeaderNav></HeaderNav>
+          <HeaderNav />
         </Box>
         <Box paddingBottom={4} marginTop={4}>
           <Grid container spacing={4}>
@@ -28,7 +28,7 @@ class SubPageHeader extends React.PureComponent<ISubPageHeaderProps, {}> {
 
             <Hidden xsDown>
               <Grid item xs={12} sm={4}>
-                <HeaderIllustration src={this.props.image}></HeaderIllustration>
+                <HeaderIllustration src={this.props.image} />
               </Grid>
             </Hidden>
           </Grid>

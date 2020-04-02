@@ -39,7 +39,7 @@ class Footer extends React.PureComponent<WithTranslation, {}> {
                 </FooterContent>
               </Grid>
               <Grid item xs={12} sm={6}>
-                <FooterShareBox></FooterShareBox>
+                <FooterShareBox />
               </Grid>
             </Grid>
           </Box>
@@ -50,15 +50,15 @@ class Footer extends React.PureComponent<WithTranslation, {}> {
                   to={`/${this.props.i18n.language}/`}
                   style={{ float: "left" }}
                 >
-                  <FooterLogo src={Logo} alt="#GesundZusammen"></FooterLogo>
+                  <FooterLogo src={Logo} alt="#GesundZusammen" />
                 </Link>
               </Hidden>
               <FooterSocialIcons>
                 <a href="https://twitter.com/gesundzusammen">
-                  <img src={SocialIconTwitter} alt="Twitter"></img>
+                  <img src={SocialIconTwitter} alt="Twitter" />
                 </a>
                 <a href="https://github.com/gesund-zusammen/gesund-zusammen.github.io">
-                  <img src={LogoGithub} alt="Github"></img>
+                  <img src={LogoGithub} alt="Github" />
                 </a>
               </FooterSocialIcons>
               <FooterNavItems>

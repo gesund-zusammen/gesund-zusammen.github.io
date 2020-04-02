@@ -37,9 +37,7 @@ class NewsletterSignup extends React.Component<
           <Grid container spacing={4}>
             <Hidden xsDown>
               <Grid item xs={12} sm={6}>
-                <NewsletterIllustration
-                  src={IlluNewsletter}
-                ></NewsletterIllustration>
+                <NewsletterIllustration src={IlluNewsletter} />
               </Grid>
             </Hidden>
             <Grid item xs={12} sm={6}>
@@ -78,7 +76,7 @@ class NewsletterSignup extends React.Component<
                       ) => {
                         this.setState({ userEmail: event.target.value });
                       }}
-                    ></EmailField>
+                    />
                   </Grid>
                   <Grid item xs={12} sm={4}>
                     <SubscribeButton

@@ -16,10 +16,7 @@ class LayoutSubPage extends React.Component<ILayoutSubPageProps, {}> {
       <>
         <HeaderBox id="header" component="header">
           <Container maxWidth="lg">
-            <SubPageHeader
-              title={this.props.title}
-              image={this.props.image}
-            ></SubPageHeader>
+            <SubPageHeader title={this.props.title} image={this.props.image} />
           </Container>
         </HeaderBox>
 
@@ -29,7 +26,7 @@ class LayoutSubPage extends React.Component<ILayoutSubPageProps, {}> {
           </MainContentContainer>
         </Box>
 
-        <Footer></Footer>
+        <Footer />
       </>
     );
   };

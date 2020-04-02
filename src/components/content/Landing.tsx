@@ -16,26 +16,26 @@ class Landing extends React.PureComponent<WithTranslation, {}> {
             dangerouslySetInnerHTML={{
               __html: this.props.t("main.content"),
             }}
-          ></Typography>
+          />
           <Box marginTop={4}>
             <Grid container spacing={4}>
               <InfoBox
                 title={this.props.t("boxes.initiative.title")}
                 content={this.props.t("boxes.initiative.content")}
-              ></InfoBox>
+              />
               <InfoBox
                 title={this.props.t("boxes.support.title")}
                 content={this.props.t("boxes.support.content")}
-              ></InfoBox>
+              />
               <InfoBox
                 title={this.props.t("boxes.ecosystem.title")}
                 content={this.props.t("boxes.ecosystem.content")}
-              ></InfoBox>
+              />
             </Grid>
           </Box>
         </Box>
 
-        <Partners></Partners>
+        <Partners />
       </>
     );
   };

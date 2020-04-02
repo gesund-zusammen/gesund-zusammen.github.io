@@ -13,7 +13,7 @@ class LayoutLanding extends React.Component {
       <>
         <LandingHeaderBox id="header" component="header">
           <Container maxWidth="lg">
-            <LandingHeader></LandingHeader>
+            <LandingHeader />
           </Container>
         </LandingHeaderBox>
 
@@ -23,9 +23,9 @@ class LayoutLanding extends React.Component {
           </MainContentContainer>
         </Box>
 
-        <NewsletterSignup></NewsletterSignup>
+        <NewsletterSignup />
 
-        <Footer></Footer>
+        <Footer />
       </>
     );
   };

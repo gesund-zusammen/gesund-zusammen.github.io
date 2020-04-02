@@ -12,7 +12,7 @@ class LandingHeader extends React.PureComponent<WithTranslation, {}> {
     return (
       <>
         <Box paddingBottom={4} marginTop={4}>
-          <HeaderNav></HeaderNav>
+          <HeaderNav />
         </Box>
         <Box paddingBottom={4} marginTop={4}>
           <Grid container spacing={4}>
@@ -23,7 +23,7 @@ class LandingHeader extends React.PureComponent<WithTranslation, {}> {
                   dangerouslySetInnerHTML={{
                     __html: this.props.t("header.content.landing.title"),
                   }}
-                ></Typography>
+                />
                 <Typography
                   variant="body1"
                   style={{ fontFamily: "inherit", color: "#ffffff" }}
@@ -34,10 +34,7 @@ class LandingHeader extends React.PureComponent<WithTranslation, {}> {
             </Grid>
             <Hidden xsDown>
               <Grid item xs={12} sm={6}>
-                <HeaderIllustration
-                  src={IlluHeader}
-                  alt="Patient 0"
-                ></HeaderIllustration>
+                <HeaderIllustration src={IlluHeader} alt="Patient 0" />
               </Grid>
             </Hidden>
           </Grid>

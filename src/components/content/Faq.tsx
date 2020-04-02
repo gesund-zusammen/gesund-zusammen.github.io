@@ -11,14 +11,14 @@ class Faq extends React.PureComponent<WithTranslation, {}> {
     return (
       <>
         <Box id="faq" paddingBottom={4} marginTop={4}>
-          <FaqItems></FaqItems>
+          <FaqItems />
         </Box>
         <Box paddingBottom={4} marginTop={4}>
           <CTABox
             claim={this.props.t("faqs.claim")}
             cta={this.props.t("faqs.cta")}
             href={this.props.t("faqs.link")}
-          ></CTABox>
+          />
         </Box>
       </>
     );

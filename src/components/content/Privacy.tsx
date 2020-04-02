@@ -546,7 +546,7 @@ class PrivacyPolicy extends React.PureComponent<WithTranslation, {}> {
             claim={this.props.t("privacy.claim")}
             cta={this.props.t("privacy.cta")}
             href={this.props.t("privacy.link")}
-          ></CTABox>
+          />
         </Box>
       </>
     );

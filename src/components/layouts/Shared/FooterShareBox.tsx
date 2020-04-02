@@ -66,7 +66,7 @@ class FooterShareBox extends React.PureComponent<
               className="share-icon"
               src={IconWhatsApp}
               alt="Share with WhatsApp"
-            ></img>
+            />
           </a>
           <a
             href="https://www.facebook.com/sharer/sharer.php?u=https://gesund-zusammen.de"
@@ -78,7 +78,7 @@ class FooterShareBox extends React.PureComponent<
               className="share-icon"
               src={IconFacebook}
               alt="Share on Facebook"
-            ></img>
+            />
           </a>
           <a
             href={`mailto:?subject=${encodeURIComponent(
@@ -86,11 +86,7 @@ class FooterShareBox extends React.PureComponent<
             )}&body=${encodeURIComponent("https://gesund-zusammen.de")}`}
             className="share-icon-link"
           >
-            <img
-              className="share-icon"
-              src={IconEmail}
-              alt="Share via Email"
-            ></img>
+            <img className="share-icon" src={IconEmail} alt="Share via Email" />
           </a>
         </ShareBox>
       </>

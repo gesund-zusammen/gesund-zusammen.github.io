@@ -22,7 +22,7 @@ class LayoutInitiativePage extends React.Component<
             <InitiativePageHeader
               title={this.props.title}
               content={this.props.content}
-            ></InitiativePageHeader>
+            />
           </Container>
         </HeaderBox>
 
@@ -32,7 +32,7 @@ class LayoutInitiativePage extends React.Component<
           </MainContentContainer>
         </Box>
 
-        <Footer></Footer>
+        <Footer />
       </>
     );
   };
