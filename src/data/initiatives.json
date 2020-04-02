@@ -279,6 +279,16 @@
       "global": false
     },
     {
+      "name": "HelloBetter",
+      "link": "https://hellobetter.de/hellobetter/",
+      "category": "digital_consultation",
+      "description": {
+        "de": "Beratung bei psychischen Belastungen in der Corona-Krisensituation über die HelloBetter Hotline.",
+        "en": "Provides psychological support in the corona crisis via the HelloBetter Hotline."
+      },
+      "global": false
+    },   
+    {
       "name": "Jameda",
       "link": "https://www.jameda.de/videosprechstunde/",
       "category": "digital_consultation",
