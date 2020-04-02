@@ -42,73 +42,61 @@ class Page extends React.Component<IPageProps, {}> {
   };
 
   render = () => {
-    const layoutProps = {
-      ...this.props,
-      langChangeCallback: this.handleLangChange,
-    };
     return (
       <Router>
         <ScrollMemory />
         <Switch>
           <Route path="/:lang/initiatives">
             <LayoutInitiativePage
-              {...layoutProps}
               title={this.props.t("header.nav.initiatives")}
               content={this.props.t("header.content.initiatives.content")}
             >
-              <Initiatives></Initiatives>
+              <Initiatives />
             </LayoutInitiativePage>
           </Route>
           <Route path="/:lang/partners">
-            <LayoutSubPage
-              {...layoutProps}
-              title={this.props.t("header.nav.supporters")}
-            >
-              <Partners></Partners>
+            <LayoutSubPage title={this.props.t("header.nav.supporters")}>
+              <Partners />
             </LayoutSubPage>
           </Route>
           <Route path="/:lang/faq">
             <LayoutSubPage
-              {...layoutProps}
               title={this.props.t("header.nav.faqs")}
               image={IlluFaq}
             >
-              <Faq></Faq>
+              <Faq />
             </LayoutSubPage>
           </Route>
           <Route path="/:lang/privacy">
             <LayoutSubPage
-              {...layoutProps}
               title={this.props.t("footer.nav.privacy")}
               image={IlluPrivacy}
             >
-              <PrivacyPolicy></PrivacyPolicy>
+              <PrivacyPolicy />
             </LayoutSubPage>
           </Route>
           <Route path="/:lang/press">
             <LayoutSubPage
-              langChangeCallback={this.handleLangChange}
               title={this.props.t("press.title")}
               image={IlluPressContact}
             >
-              <Press></Press>
+              <Press />
             </LayoutSubPage>
           </Route>
           <Route path="/:lang/imprint">
             <LayoutSubPage
-              {...layoutProps}
               title={this.props.t("footer.nav.imprint")}
               image={IlluImprint}
             >
-              <Imprint></Imprint>
+              <Imprint />
             </LayoutSubPage>
           </Route>
           <Route path="/:lang/" exact={true} default={true}>
-            <LayoutLanding {...layoutProps}>
-              <Landing lang={this.props.match.params.lang}></Landing>
+            <LayoutLanding>
+              <Landing />
             </LayoutLanding>
           </Route>
-          <Redirect to={`/${DEFAULT_LANG}/`}></Redirect>
+          <Redirect to={`/${DEFAULT_LANG}/`} />
         </Switch>
       </Router>
     );
@@ -141,15 +129,15 @@ class LangWrapper extends React.Component {
                         tReady: ready,
                         ...props,
                       }}
-                    ></Page>
+                    />
                   )}
                 </Translation>
               ) : (
                 <Redirect to={`/${DEFAULT_LANG}${props.location.pathname}`} />
               )
             }
-          ></Route>
-          <Redirect to={`/${DEFAULT_LANG}/`}></Redirect>
+          />
+          <Redirect to={`/${DEFAULT_LANG}/`} />
         </Switch>
       </Router>
     );

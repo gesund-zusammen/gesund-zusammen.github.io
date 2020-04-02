@@ -6,15 +6,9 @@ import { withTranslation, WithTranslation } from "react-i18next";
 
 import Logo from "../../../images/logo.svg";
 
-interface IHeaderProps extends WithTranslation {
-  langChangeCallback: (lang: "de" | "en") => void;
-}
-
-class HeaderNav extends React.Component<IHeaderProps, {}> {
+class HeaderNav extends React.Component<WithTranslation, {}> {
   handleLangChange = () => {
-    this.props.langChangeCallback(
-      this.props.i18n.language === "de" ? "en" : "de",
-    );
+    this.props.i18n.changeLanguage("de" ? "en" : "de");
   };
 
   render = () => {

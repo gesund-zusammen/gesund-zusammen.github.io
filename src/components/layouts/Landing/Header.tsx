@@ -7,20 +7,12 @@ import HeaderNav from "../Shared/HeaderNav";
 
 import IlluHeader from "../../../images/illu_header.svg";
 
-interface ILandingHeaderProps extends WithTranslation {
-  langChangeCallback: (lang: "de" | "en") => void;
-}
-
-class LandingHeader extends React.PureComponent<ILandingHeaderProps, {}> {
-  handleLangChange = (lang: "de" | "en") => {
-    this.props.langChangeCallback(lang);
-  };
-
+class LandingHeader extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <>
         <Box paddingBottom={4} marginTop={4}>
-          <HeaderNav langChangeCallback={this.handleLangChange}></HeaderNav>
+          <HeaderNav></HeaderNav>
         </Box>
         <Box paddingBottom={4} marginTop={4}>
           <Grid container spacing={4}>

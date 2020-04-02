@@ -5,7 +5,6 @@ import styled, { AnyStyledComponent } from "styled-components";
 import HeaderNav from "../Shared/HeaderNav";
 
 interface IInitiativePageHeaderProps {
-  langChangeCallback: (lang: "de" | "en") => void;
   title: string;
   content: string;
 }
@@ -14,15 +13,11 @@ class InitiativePageHeader extends React.PureComponent<
   IInitiativePageHeaderProps,
   {}
 > {
-  handleLangChange = (lang: "de" | "en") => {
-    this.props.langChangeCallback(lang);
-  };
-
   render = () => {
     return (
       <>
         <Box paddingBottom={4} marginTop={4}>
-          <HeaderNav langChangeCallback={this.handleLangChange}></HeaderNav>
+          <HeaderNav />
         </Box>
         <Box paddingBottom={4} marginTop={4}>
           <Grid container spacing={4}>

@@ -5,11 +5,7 @@ import { withTranslation, WithTranslation } from "react-i18next";
 import InfoBox from "../common/InfoBox";
 import Partners from "./Partners";
 
-interface ILandingProps extends WithTranslation {
-  lang: "de" | "en";
-}
-
-class Landing extends React.PureComponent<ILandingProps, {}> {
+class Landing extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <>
