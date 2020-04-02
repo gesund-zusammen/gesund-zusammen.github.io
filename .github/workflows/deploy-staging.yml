@@ -2,12 +2,11 @@ name: Deploy to Staging
 
 on:
   push:
-    branches-ignore:
-      - master
+    branches:
       - source
 
 jobs:
-  build-and-deploy:
+  build-and-deploy-staging:
     runs-on: ubuntu-latest
 
     steps:
@@ -53,5 +52,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
         with:
-          msg: "Staging Deployment Successful, check it out on this URL: gesundzusammen-staging.finleap.tech.s3.eu-central-1.amazonaws.com/index.html"
+          msg: "Staging Deployment Successful, check it out on this URL: http://gesundzusammen-staging.finleap.tech.s3.eu-central-1.amazonaws.com/index.html"
           check_for_duplicate_msg: false # OPTIONAL

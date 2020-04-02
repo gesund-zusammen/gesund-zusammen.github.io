@@ -11,3 +11,4 @@ build
 secrets.tfvars 
 plan.out
 *.tfstate
+*.tfstate.backup
