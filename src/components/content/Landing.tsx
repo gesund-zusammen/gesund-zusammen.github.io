@@ -1,12 +1,11 @@
 import React from "react";
 import { Box, Grid, Typography } from "@material-ui/core";
-
-import { translated } from "../../util";
+import { withTranslation, WithTranslation } from "react-i18next";
 
 import InfoBox from "../common/InfoBox";
 import Partners from "./Partners";
 
-interface ILandingProps {
+interface ILandingProps extends WithTranslation {
   lang: "de" | "en";
 }
 
@@ -15,28 +14,26 @@ class Landing extends React.PureComponent<ILandingProps, {}> {
     return (
       <>
         <Box id="initiative" paddingBottom={4} marginTop={4}>
-          <Typography variant="h2">
-            {translated(this.props.lang).main.title}
-          </Typography>
+          <Typography variant="h2">{this.props.t("main.title")}</Typography>
           <Typography
             variant="body1"
             dangerouslySetInnerHTML={{
-              __html: translated(this.props.lang).main.content,
+              __html: this.props.t("main.content"),
             }}
           ></Typography>
           <Box marginTop={4}>
             <Grid container spacing={4}>
               <InfoBox
-                title={translated(this.props.lang).boxes.initiative.title}
-                content={translated(this.props.lang).boxes.initiative.content}
+                title={this.props.t("boxes.initiative.title")}
+                content={this.props.t("boxes.initiative.content")}
               ></InfoBox>
               <InfoBox
-                title={translated(this.props.lang).boxes.support.title}
-                content={translated(this.props.lang).boxes.support.content}
+                title={this.props.t("boxes.support.title")}
+                content={this.props.t("boxes.support.content")}
               ></InfoBox>
               <InfoBox
-                title={translated(this.props.lang).boxes.ecosystem.title}
-                content={translated(this.props.lang).boxes.ecosystem.content}
+                title={this.props.t("boxes.ecosystem.title")}
+                content={this.props.t("boxes.ecosystem.content")}
               ></InfoBox>
             </Grid>
           </Box>
@@ -48,4 +45,4 @@ class Landing extends React.PureComponent<ILandingProps, {}> {
   };
 }
 
-export default Landing;
+export default withTranslation()(Landing);
