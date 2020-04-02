@@ -43,7 +43,12 @@ const PartnerCardWrapper: AnyStyledComponent = styled(Card)`
     position: relative;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0px 2px 24px #e3e6eb;
+    box-shadow: 0px 1px 4px #e3e6eb;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 2px 24px #e3e6eb;
+    }
 
     &:after {
       content: "";

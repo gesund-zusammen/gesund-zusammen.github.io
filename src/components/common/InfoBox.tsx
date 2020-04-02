@@ -11,7 +11,7 @@ class InfoBox extends React.PureComponent<IInfoBoxProps, {}> {
   render = () => {
     return (
       <Grid item xs={12} sm={6} md={4} xl={3}>
-        <StyledCard elevation={0}>
+        <StyledCard>
           <StyledCardContent>
             <StyledTitle variant="h4">{this.props.title}</StyledTitle>
             <Typography variant="body2" style={{ textAlign: "left" }}>
@@ -36,17 +36,18 @@ const StyledCard: AnyStyledComponent = styled(Card)`
     background-color: #0a6eaa;
     color: #ffffff;
     height: 100%;
+    box-shadow: 0px 2px 24px #e3e6eb;
   }
 `;
 
 const StyledCardContent: AnyStyledComponent = styled(CardContent)`
   && {
-    padding: 0.5rem 1.5rem;
+    padding: 1.5rem 2rem 2rem 1.5rem;
 
     &:last-child {
-      padding-bottom: padding: 0.5rem 1.5rem;
+      padding-bottom: 2rem;
     }
-  } 
+  }
 `;
 
 export default InfoBox;
