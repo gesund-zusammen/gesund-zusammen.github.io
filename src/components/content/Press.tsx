@@ -6,7 +6,7 @@ import { withTranslation, WithTranslation } from "react-i18next";
 
 import CTABox from "../common/CTABox";
 
-import PressContactPhoto from "../../images/solveigh_rathenow.png";
+import PressContactPhoto from "../../images/solveig_rathenow.png";
 import PressKitLogo from "../../images/presskit_logo.svg";
 import ReleaseEnLogo from "../../../public/187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.png";
 import ReleaseDeLogo from "../../../public/187534-20200401090213000000000-gesund-zusammen-die-digitale-wirtschaft-s.png";
@@ -21,7 +21,7 @@ class PressContact extends React.PureComponent<WithTranslation, {}> {
           </Typography>
           <Grid container spacing={5} justify="flex-start" alignItems="center">
             <Grid item xs={12} sm={4}>
-              <StyledAvatar alt="Solveigh Ratenow" src={PressContactPhoto} />
+              <StyledAvatar alt="Solveig Ratenow" src={PressContactPhoto} />
             </Grid>
             <Grid item xs={12} sm={8}>
               <Typography variant="body1">
