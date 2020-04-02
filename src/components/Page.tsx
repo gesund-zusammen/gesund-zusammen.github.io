@@ -9,8 +9,6 @@ import {
 import ScrollMemory from "react-router-scroll-memory";
 import { Translation, WithTranslation } from "react-i18next";
 
-import { translated } from "../util";
-
 import LayoutLanding from "./layouts/Landing/Main";
 import LayoutInitiativePage from "./layouts/Initiatives/Main";
 import LayoutSubPage from "./layouts/Sub/Main";
@@ -44,10 +42,15 @@ interface IPageProps
 
 class Page extends React.Component<IPageProps, {}> {
   handleLangChange = (lang: "de" | "en") => {
-    const pathSegments = this.props.location.pathname.split("/");
-    const [, , ...path] = pathSegments;
-    this.props.history.push(`/${lang}/${path.join("/")}`);
-    this.props.i18n.changeLanguage(lang);
+    this.props.i18n.changeLanguage(lang, () => {
+      const pathSegments = this.props.location.pathname.split("/");
+      const [, , ...path] = pathSegments;
+      this.props.history.push(`/${lang}/${path.join("/")}`);
+    });
+  };
+
+  componentDidMount = () => {
+    this.props.i18n.changeLanguage(DEFAULT_LANG);
   };
 
   render = () => {
