@@ -1,10 +1,11 @@
 import React from "react";
 import { Box, Typography, Link } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
-import CTABox from "../common/CTABox";
-import { translated } from "../../util";
+import { withTranslation, WithTranslation } from "react-i18next";
 
-interface IPrivacyProps {
+import CTABox from "../common/CTABox";
+
+interface IPrivacyProps extends WithTranslation {
   lang: "de" | "en";
 }
 
@@ -546,9 +547,9 @@ class PrivacyPolicy extends React.PureComponent<IPrivacyProps, {}> {
         </PrivacyWrapper>
         <Box paddingBottom={4} marginTop={4}>
           <CTABox
-            claim={translated(this.props.lang).privacy.claim}
-            cta={translated(this.props.lang).privacy.cta}
-            href={translated(this.props.lang).privacy.link}
+            claim={this.props.t("privacy.claim")}
+            cta={this.props.t("privacy.cta")}
+            href={this.props.t("privacy.link")}
           ></CTABox>
         </Box>
       </>
@@ -564,4 +565,4 @@ const PrivacyWrapper: AnyStyledComponent = styled(Box)`
   }
 `;
 
-export default PrivacyPolicy;
+export default withTranslation()(PrivacyPolicy);
