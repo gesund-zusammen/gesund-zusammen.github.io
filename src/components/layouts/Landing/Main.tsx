@@ -7,25 +7,13 @@ import Footer from "../Shared/Footer";
 import NewsletterSignup from "../Shared/NewsletterSignup";
 import { HeaderBox, MainContentContainer } from "../Shared/StyledComponents";
 
-interface ILayoutLandingProps {
-  lang: "de" | "en";
-  langChangeCallback: (lang: "de" | "en") => void;
-}
-
-class LayoutLanding extends React.Component<ILayoutLandingProps, {}> {
-  handleLangChange = (lang: "de" | "en") => {
-    this.props.langChangeCallback(lang);
-  };
-
+class LayoutLanding extends React.Component {
   render = () => {
     return (
       <>
         <LandingHeaderBox id="header" component="header">
           <Container maxWidth="lg">
-            <LandingHeader
-              lang={this.props.lang}
-              langChangeCallback={this.handleLangChange}
-            ></LandingHeader>
+            <LandingHeader />
           </Container>
         </LandingHeaderBox>
 
@@ -35,9 +23,9 @@ class LayoutLanding extends React.Component<ILayoutLandingProps, {}> {
           </MainContentContainer>
         </Box>
 
-        <NewsletterSignup lang={this.props.lang}></NewsletterSignup>
+        <NewsletterSignup />
 
-        <Footer lang={this.props.lang}></Footer>
+        <Footer />
       </>
     );
   };

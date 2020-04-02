@@ -1,10 +1,9 @@
 import React from "react";
 import { Box, Grid, Typography } from "@material-ui/core";
+import { withTranslation, WithTranslation } from "react-i18next";
 
 import PartnerCard from "../common/PartnerCard";
 import CTABox from "../common/CTABox";
-
-import { translated } from "../../util";
 
 import LogoOmio from "../../images/partners/omio.png";
 import LogoBVDS from "../../images/partners/bvds.png";
@@ -38,16 +37,12 @@ import LogoFreiraum from "../../images/partners/freiraum.jpg";
 import LogoStoryMachine from "../../images/partners/storymachine.png";
 import LogoJoliBerlin from "../../images/partners/joliberlin.jpg";
 
-interface IPartnersProps {
-  lang: "de" | "en";
-}
-
-class Partners extends React.PureComponent<IPartnersProps, {}> {
+class Partners extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <Box id="partners" paddingBottom={4} marginTop={4}>
         <Typography variant="h2">
-          {translated(this.props.lang).partners.type.founders}
+          {this.props.t("partners.type.founders")}
         </Typography>
         <Box paddingTop={4} paddingBottom={4}>
           <Grid
@@ -61,101 +56,101 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="finleap"
               image={LogoFinleap}
               link="https://www.finleap.com"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="Wefox Group"
               image={LogoWefoxGroup}
               link="https://www.wefoxgroup.com/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="Via"
               image={LogoViaHealth}
               link="https://www.viadata.io/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="Global Citizen Foundation"
               image={LogoGlobalCitizen}
               link="https://www.globalcitizenfoundation.org/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="Data4Life"
               image={LogoData4Life}
               link="https://www.data4life.care/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="BVDS"
               image={LogoBVDS}
               link="https://www.deutschestartups.org/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="BCG DV"
               image={LogoBCGDV}
               link="https://www.bcgdv.com"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="N26"
               image={LogoN26}
               link="https://www.n26.de/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="GetYourGuide"
               image={LogoGetYourGuide}
               link="https://www.getyourguide.com/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="FreightHub"
               image={LogoFreightHub}
               link="https://www.freighthub.com/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="DeliveryHero"
               image={LogoDeliveryHero}
               link="https://www.deliveryhero.com/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="Omio"
               image={LogoOmio}
               link="https://www.omio.com"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="Celonis"
               image={LogoCelonis}
               link="https://www.celonis.com/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="Ada Health"
               image={LogoAdaHealth}
               link="https://ada.com/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="Personio"
               image={LogoPersonio}
               link="https://www.personio.de/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="OneFootball"
               image={LogoOneFootball}
               link="https://onefootball.com/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="Ioniq"
               image={LogoIoniq}
               link="https://ioniq.com/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="Tier Mobility"
               image={LogoTier}
               link="https://ww.tier.app/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="doctorly"
               image={LogoDoctorly}
               link="https://www.doctorly.de/"
-            ></PartnerCard>
+            />
           </Grid>
         </Box>
         <Typography variant="h2">
-          {translated(this.props.lang).partners.type.privacy}
+          {this.props.t("partners.type.privacy")}
         </Typography>
         <Box paddingTop={4} paddingBottom={4}>
           <Grid
@@ -169,52 +164,52 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="Datenschutzexperte"
               image={LogoDatenschutzExperte}
               link="https://www.datenschutzexperte.de/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="Deloitte"
               image={LogoDeloitte}
               link="https://www2.deloitte.com/dl/de/services/legal.html"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="MyData"
               image={LogoMyData}
               link="https://mydata.org/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="UserCentrics"
               image={LogoUserCentrics}
               link="https://usercentrics.com/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="Bird & Bird"
               image={LogoTwoBirds}
               link="https://www.twobirds.com/"
               color="#7c7c6e"
               nameColorInverted={true}
-            ></PartnerCard>
+            />
             <PartnerCard
               name="Reed Smith LLP"
               image={LogoReedSmith}
               link="https://www.reedsmith.com/"
               color="#3d3c3c"
               nameColorInverted={true}
-            ></PartnerCard>
+            />
             <PartnerCard
               name="CMS"
               image={LogoCMSLaw}
               link="https://cms.law/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="SKW Schwarz"
               image={LogoSKWSchwarz}
               color="black"
               nameColorInverted={true}
               link="https://www.skwschwarz.de/"
-            ></PartnerCard>
+            />
           </Grid>
         </Box>
         <Typography variant="h2">
-          {translated(this.props.lang).partners.type.agencies}
+          {this.props.t("partners.type.agencies")}
         </Typography>
         <Box paddingTop={4} paddingBottom={4}>
           <Grid
@@ -228,21 +223,21 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="fischerAppelt"
               image={LogoFischerAppelt}
               link="https://www.fischerappelt.de/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="Story Machine"
               image={LogoStoryMachine}
               link="https://www.storymachine.de/"
-            ></PartnerCard>
+            />
             <PartnerCard
               name="JOLI BERLIN"
               image={LogoJoliBerlin}
               link="https://www.joliberlin.com/"
-            ></PartnerCard>
+            />
           </Grid>
         </Box>
         <Typography variant="h2">
-          {translated(this.props.lang).partners.type.further}
+          {this.props.t("partners.type.further")}
         </Typography>
         <Box paddingTop={4} paddingBottom={4}>
           <Grid
@@ -256,19 +251,19 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               name="Freiraum"
               image={LogoFreiraum}
               link="http://www.freiraum-berlin.org/"
-            ></PartnerCard>
+            />
           </Grid>
         </Box>
         <Box paddingBottom={4} marginTop={4}>
           <CTABox
-            claim={translated(this.props.lang).partners.claim}
-            cta={translated(this.props.lang).partners.cta}
-            href={translated(this.props.lang).partners.link}
-          ></CTABox>
+            claim={this.props.t("partners.claim")}
+            cta={this.props.t("partners.cta")}
+            href={this.props.t("partners.link")}
+          />
         </Box>
       </Box>
     );
   };
 }
 
-export default Partners;
+export default withTranslation()(Partners);

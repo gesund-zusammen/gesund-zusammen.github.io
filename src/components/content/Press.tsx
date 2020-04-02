@@ -2,25 +2,22 @@ import React from "react";
 import { Box, Typography, Avatar, Grid, Link } from "@material-ui/core";
 import { Email, GetApp } from "@material-ui/icons";
 import styled, { AnyStyledComponent } from "styled-components";
-import { translated } from "../../util";
-import PressContactPhoto from "../../images/solveigh_rathenow.png";
+import { withTranslation, WithTranslation } from "react-i18next";
+
 import CTABox from "../common/CTABox";
 
+import PressContactPhoto from "../../images/solveigh_rathenow.png";
 import PressKitLogo from "../../images/presskit_logo.svg";
 import ReleaseEnLogo from "../../../public/187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.png";
 import ReleaseDeLogo from "../../../public/187534-20200401090213000000000-gesund-zusammen-die-digitale-wirtschaft-s.png";
 
-interface IPressProps {
-  lang: "de" | "en";
-}
-
-class PressContact extends React.PureComponent<IPressProps, {}> {
+class PressContact extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <>
         <PressContactWrapper paddingBottom={4}>
           <Typography variant="h2">
-            {translated(this.props.lang).press.pageHeader}
+            {this.props.t("press.pageHeader")}
           </Typography>
           <Grid container spacing={5} justify="flex-start" alignItems="center">
             <Grid item xs={12} sm={4}>
@@ -28,14 +25,14 @@ class PressContact extends React.PureComponent<IPressProps, {}> {
             </Grid>
             <Grid item xs={12} sm={8}>
               <Typography variant="body1">
-                {translated(this.props.lang).press.pressContactTitle}
+                {this.props.t("press.pressContactTitle")}
               </Typography>
               <Typography variant="h4" color="primary">
-                {translated(this.props.lang).press.pressContactName}
+                {this.props.t("press.pressContactName")}
               </Typography>
               <Typography variant="body1">
                 <StyledEmailIcon color="primary" fontSize="small" />
-                {translated(this.props.lang).press.pressContactEmail}
+                {this.props.t("press.pressContactEmail")}
               </Typography>
             </Grid>
           </Grid>
@@ -46,21 +43,21 @@ class PressContact extends React.PureComponent<IPressProps, {}> {
             style={{ borderTop: "1px solid #CED7DB" }}
           >
             <Typography variant="h2">
-              {translated(this.props.lang).press.resources}
+              {this.props.t("press.resources")}
             </Typography>
             <Typography variant="body2" color="primary">
-              {translated(this.props.lang).press.resourcesLine1}
+              {this.props.t("press.resourcesLine1")}
             </Typography>
             <Link href="/PressKit.zip">
-              <StyledPressKitImage src={PressKitLogo}></StyledPressKitImage>
+              <StyledPressKitImage src={PressKitLogo} />
             </Link>
             <Typography variant="body2" color="primary">
-              {translated(this.props.lang).press.resourcesLine2}
+              {this.props.t("press.resourcesLine2")}
             </Typography>
             <StyledDownloadLink href="/PressKit.zip">
               <Typography variant="body2" color="primary">
                 <StyledDownloadButton color="primary" fontSize="small" />
-                {translated(this.props.lang).press.downloadLogo}
+                {this.props.t("press.downloadLogo")}
               </Typography>
             </StyledDownloadLink>
           </Box>
@@ -71,39 +68,43 @@ class PressContact extends React.PureComponent<IPressProps, {}> {
             style={{ borderTop: "1px solid #CED7DB" }}
           >
             <Typography variant="h2">
-              {translated(this.props.lang).press.release}
+              {this.props.t("press.release")}
             </Typography>
             <Typography variant="body1" color="primary">
-              {translated(this.props.lang).press.releaseLine1}
+              {this.props.t("press.releaseLine1")}
             </Typography>
             <Typography variant="body2">
-              <Link href={translated(this.props.lang).press.releaseHrefURL}>
-                {"Link: " + translated(this.props.lang).press.releaseTitle}
+              <Link href={this.props.t("press.releaseHrefURL")}>
+                {"Link: " + this.props.t("press.releaseTitle")}
               </Link>
             </Typography>
             <Typography variant="body2">
-              <Link href={translated(this.props.lang).press.releaseHrefPDF}>
-                {"PDF: " + translated(this.props.lang).press.releaseTitle}
+              <Link href={this.props.t("press.releaseHrefPDF")}>
+                {"PDF: " + this.props.t("press.releaseTitle")}
               </Link>
             </Typography>
             <Typography variant="body2">
-              <Link href={translated(this.props.lang).press.releaseHrefImage}>
-                {"PNG: " + translated(this.props.lang).press.downloadLogo}
+              <Link href={this.props.t("press.releaseHrefImage")}>
+                {"PNG: " + this.props.t("press.downloadLogo")}
               </Link>
             </Typography>
-            <Link href={translated(this.props.lang).press.releaseHrefImage}>
+            <Link href={this.props.t("press.releaseHrefImage")}>
               <StyledPressReleaseImage
-                src={this.props.lang == "de" ? ReleaseDeLogo : ReleaseEnLogo}
-              ></StyledPressReleaseImage>
+                src={
+                  this.props.i18n.language == "de"
+                    ? ReleaseDeLogo
+                    : ReleaseEnLogo
+                }
+              />
             </Link>
           </Box>
         </PressContactWrapper>
         <Box paddingBottom={4} marginTop={4}>
           <CTABox
-            claim={translated(this.props.lang).press.claim}
-            cta={translated(this.props.lang).press.cta}
-            href={translated(this.props.lang).press.link}
-          ></CTABox>
+            claim={this.props.t("press.claim")}
+            cta={this.props.t("press.cta")}
+            href={this.props.t("press.link")}
+          />
         </Box>
       </>
     );
@@ -153,4 +154,4 @@ const StyledPressKitImage: AnyStyledComponent = styled.img`
   max-width: 100%;
 `;
 
-export default PressContact;
+export default withTranslation()(PressContact);

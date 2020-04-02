@@ -3,6 +3,8 @@ import React from "react";
 import AppTheme from "./Theme";
 import Page from "./components/Page";
 
+import "./i18n";
+
 class App extends React.Component {
   render = () => {
     return (

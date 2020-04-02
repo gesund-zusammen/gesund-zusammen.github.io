@@ -9,14 +9,9 @@ import {
   Typography,
 } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
-
-import { translated } from "../../../util";
+import { withTranslation, WithTranslation } from "react-i18next";
 
 import IlluNewsletter from "../../../images/illu_newsletter.svg";
-
-interface INewsletterSignupProps {
-  lang: "de" | "en";
-}
 
 interface INewsletterSignupState {
   userEmail: string;
@@ -27,10 +22,10 @@ const DEFAULT_STATE = {
 };
 
 class NewsletterSignup extends React.Component<
-  INewsletterSignupProps,
+  WithTranslation,
   INewsletterSignupState
 > {
-  constructor(props: INewsletterSignupProps) {
+  constructor(props: WithTranslation) {
     super(props);
     this.state = DEFAULT_STATE;
   }
@@ -42,17 +37,15 @@ class NewsletterSignup extends React.Component<
           <Grid container spacing={4}>
             <Hidden xsDown>
               <Grid item xs={12} sm={6}>
-                <NewsletterIllustration
-                  src={IlluNewsletter}
-                ></NewsletterIllustration>
+                <NewsletterIllustration src={IlluNewsletter} />
               </Grid>
             </Hidden>
             <Grid item xs={12} sm={6}>
               <Typography variant="h2" color="textSecondary">
-                {translated(this.props.lang).newsletter.title}
+                {this.props.t("newsletter.title")}
               </Typography>
               <Typography variant="body1" color="textSecondary">
-                {translated(this.props.lang).newsletter.content}
+                {this.props.t("newsletter.content")}
               </Typography>
               <form
                 action="https://gesund-zusammen.us19.list-manage.com/subscribe/post"
@@ -70,9 +63,7 @@ class NewsletterSignup extends React.Component<
                   <Grid item xs={12} sm={8}>
                     <EmailField
                       variant="outlined"
-                      placeholder={
-                        translated(this.props.lang).newsletter.inputPlaceholder
-                      }
+                      placeholder={this.props.t("newsletter.inputPlaceholder")}
                       fullWidth={true}
                       type="email"
                       name="EMAIL"
@@ -85,7 +76,7 @@ class NewsletterSignup extends React.Component<
                       ) => {
                         this.setState({ userEmail: event.target.value });
                       }}
-                    ></EmailField>
+                    />
                   </Grid>
                   <Grid item xs={12} sm={4}>
                     <SubscribeButton
@@ -97,7 +88,7 @@ class NewsletterSignup extends React.Component<
                       name="subscribe"
                       id="mc-embedded-subscribe"
                     >
-                      {translated(this.props.lang).newsletter.cta}
+                      {this.props.t("newsletter.cta")}
                     </SubscribeButton>
                   </Grid>
                 </Grid>
@@ -166,4 +157,4 @@ const SubscribeButton: AnyStyledComponent = styled(Button)`
   }
 `;
 
-export default NewsletterSignup;
+export default withTranslation()(NewsletterSignup);

@@ -7,15 +7,19 @@ import {
 } from "@material-ui/core";
 import { Add, Minimize } from "@material-ui/icons";
 import styled, { AnyStyledComponent } from "styled-components";
-import { translated } from "../../util";
+import { withTranslation, WithTranslation } from "react-i18next";
+
+import ContentDE from "../../locales/de.json";
+import ContentEN from "../../locales/en.json";
+
+const CONTENT = {
+  de: ContentDE,
+  en: ContentEN,
+};
 
 interface IFaqContent {
   title: string;
   content: string;
-}
-
-interface IFaqItemProps {
-  lang: "de" | "en";
 }
 
 interface IFaqContent {
@@ -29,15 +33,15 @@ const DEFAULT_STATE: IFaqItemsState = {
   panel: "",
 };
 
-const getFaqContent = (lang: "de" | "en"): Array<IFaqContent> => {
-  return translated(lang).faqs.content;
-};
-
-class FaqItems extends React.Component<IFaqItemProps, IFaqItemsState> {
-  constructor(props: IFaqItemProps) {
+class FaqItems extends React.Component<WithTranslation, IFaqItemsState> {
+  constructor(props: WithTranslation) {
     super(props);
     this.state = DEFAULT_STATE;
   }
+
+  getFaqContent = (): Array<IFaqContent> => {
+    return CONTENT[this.props.i18n.language].faqs.content;
+  };
 
   handleExpansionChange = (panel: string) => {
     this.state.panel === panel
@@ -47,7 +51,7 @@ class FaqItems extends React.Component<IFaqItemProps, IFaqItemsState> {
   render = () => {
     return (
       <FaqListWrapper>
-        {getFaqContent(this.props.lang).map((faqItem, index) => {
+        {this.getFaqContent().map((faqItem, index) => {
           const panelKey: string = "panel" + index;
           const expanded = this.state.panel === panelKey;
           return (
@@ -87,4 +91,4 @@ const FaqListWrapper: AnyStyledComponent = styled.div`
   text-align: left;
 `;
 
-export default FaqItems;
+export default withTranslation()(FaqItems);

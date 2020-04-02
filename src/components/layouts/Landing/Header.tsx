@@ -1,31 +1,18 @@
 import React from "react";
 import { Box, Typography, Grid, Hidden } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
-
-import { translated } from "../../../util";
+import { withTranslation, WithTranslation } from "react-i18next";
 
 import HeaderNav from "../Shared/HeaderNav";
 
 import IlluHeader from "../../../images/illu_header.svg";
 
-interface ILandingHeaderProps {
-  lang: "de" | "en";
-  langChangeCallback: (lang: "de" | "en") => void;
-}
-
-class LandingHeader extends React.PureComponent<ILandingHeaderProps, {}> {
-  handleLangChange = (lang: "de" | "en") => {
-    this.props.langChangeCallback(lang);
-  };
-
+class LandingHeader extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <>
         <Box paddingBottom={4} marginTop={4}>
-          <HeaderNav
-            lang={this.props.lang}
-            langChangeCallback={this.handleLangChange}
-          ></HeaderNav>
+          <HeaderNav />
         </Box>
         <Box paddingBottom={4} marginTop={4}>
           <Grid container spacing={4}>
@@ -34,24 +21,20 @@ class LandingHeader extends React.PureComponent<ILandingHeaderProps, {}> {
                 <Typography
                   variant="h1"
                   dangerouslySetInnerHTML={{
-                    __html: translated(this.props.lang).header.content.landing
-                      .title,
+                    __html: this.props.t("header.content.landing.title"),
                   }}
-                ></Typography>
+                />
                 <Typography
                   variant="body1"
                   style={{ fontFamily: "inherit", color: "#ffffff" }}
                 >
-                  {translated(this.props.lang).header.content.landing.content}
+                  {this.props.t("header.content.landing.content")}
                 </Typography>
               </HeaderContent>
             </Grid>
             <Hidden xsDown>
               <Grid item xs={12} sm={6}>
-                <HeaderIllustration
-                  src={IlluHeader}
-                  alt="Patient 0"
-                ></HeaderIllustration>
+                <HeaderIllustration src={IlluHeader} alt="Patient 0" />
               </Grid>
             </Hidden>
           </Grid>
@@ -75,4 +58,4 @@ const HeaderIllustration: AnyStyledComponent = styled.img`
   width: 100%;
 `;
 
-export default LandingHeader;
+export default withTranslation()(LandingHeader);

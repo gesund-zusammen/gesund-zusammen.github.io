@@ -5,25 +5,16 @@ import styled, { AnyStyledComponent } from "styled-components";
 import HeaderNav from "../Shared/HeaderNav";
 
 interface ISubPageHeaderProps {
-  lang: "de" | "en";
-  langChangeCallback: (lang: "de" | "en") => void;
   title: string;
   image?: string;
 }
 
 class SubPageHeader extends React.PureComponent<ISubPageHeaderProps, {}> {
-  handleLangChange = (lang: "de" | "en") => {
-    this.props.langChangeCallback(lang);
-  };
-
   render = () => {
     return (
       <>
         <Box paddingBottom={4} marginTop={4}>
-          <HeaderNav
-            lang={this.props.lang}
-            langChangeCallback={this.handleLangChange}
-          ></HeaderNav>
+          <HeaderNav />
         </Box>
         <Box paddingBottom={4} marginTop={4}>
           <Grid container spacing={4}>
@@ -37,7 +28,7 @@ class SubPageHeader extends React.PureComponent<ISubPageHeaderProps, {}> {
 
             <Hidden xsDown>
               <Grid item xs={12} sm={4}>
-                <HeaderIllustration src={this.props.image}></HeaderIllustration>
+                <HeaderIllustration src={this.props.image} />
               </Grid>
             </Hidden>
           </Grid>

@@ -1,47 +1,49 @@
 import React from "react";
 import { Switch } from "@material-ui/core";
 import styled, { css, AnyStyledComponent } from "styled-components";
+import { withRouter, RouteComponentProps } from "react-router";
 import { Link } from "react-router-dom";
-
-import { translated } from "../../../util";
+import { withTranslation, WithTranslation } from "react-i18next";
 
 import Logo from "../../../images/logo.svg";
 
-interface IHeaderProps {
-  lang: "de" | "en";
-  langChangeCallback: (lang: "de" | "en") => void;
-}
+interface IHeaderNavProps extends RouteComponentProps, WithTranslation {}
 
-class HeaderNav extends React.Component<IHeaderProps, {}> {
+class HeaderNav extends React.Component<IHeaderNavProps, {}> {
   handleLangChange = () => {
-    this.props.langChangeCallback(this.props.lang === "de" ? "en" : "de");
+    const newLang = this.props.i18n.language === "de" ? "en" : "de";
+    this.props.i18n.changeLanguage(newLang, () => {
+      const pathSegments = this.props.location.pathname.split("/");
+      const [, , ...path] = pathSegments;
+      this.props.history.push(`/${newLang}/${path.join("/")}`);
+    });
   };
 
   render = () => {
     return (
       <>
-        <Link to={`/${this.props.lang}/`}>
-          <HeaderLogo src={Logo} alt="#GesundZusammen"></HeaderLogo>
+        <Link to={`/${this.props.i18n.language}/`}>
+          <HeaderLogo src={Logo} alt="#GesundZusammen" />
         </Link>
         <HeaderNavItems>
-          <HeaderNavLinkItem to={`/${this.props.lang}/initiatives`}>
-            {translated(this.props.lang).header.nav.initiatives}
+          <HeaderNavLinkItem to={`/${this.props.i18n.language}/initiatives`}>
+            {this.props.t("header.nav.initiatives")}
           </HeaderNavLinkItem>
-          <HeaderNavLinkItem to={`/${this.props.lang}/partners`}>
-            {translated(this.props.lang).header.nav.supporters}
+          <HeaderNavLinkItem to={`/${this.props.i18n.language}/partners`}>
+            {this.props.t("header.nav.supporters")}
           </HeaderNavLinkItem>
-          <HeaderNavLinkItem to={`/${this.props.lang}/faq`}>
-            {translated(this.props.lang).header.nav.faqs}
+          <HeaderNavLinkItem to={`/${this.props.i18n.language}/faq`}>
+            {this.props.t("header.nav.faqs")}
           </HeaderNavLinkItem>
           <HeaderLangSwitch>
             <StyledSwitch
-              checked={this.props.lang === "de"}
+              checked={this.props.i18n.language === "de"}
               onChange={this.handleLangChange}
               disableRipple={true}
               color="primary"
               name="langSwitch"
-            ></StyledSwitch>
-            <LangDisplay>{this.props.lang === "de" ? "en" : "de"}</LangDisplay>
+            />
+            <LangDisplay>{this.props.i18n.language}</LangDisplay>
           </HeaderLangSwitch>
         </HeaderNavItems>
       </>
@@ -119,4 +121,4 @@ const LangDisplay: AnyStyledComponent = styled.span`
   text-transform: uppercase;
 `;
 
-export default HeaderNav;
+export default withRouter(withTranslation()(HeaderNav));

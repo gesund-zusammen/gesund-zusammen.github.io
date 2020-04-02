@@ -2,8 +2,7 @@ import React from "react";
 import { Box, Container, Grid, Typography, Hidden } from "@material-ui/core";
 import styled, { css, AnyStyledComponent } from "styled-components";
 import { Link } from "react-router-dom";
-
-import { translated } from "../../../util";
+import { withTranslation, WithTranslation } from "react-i18next";
 
 import FooterShareBox from "../Shared/FooterShareBox";
 
@@ -13,11 +12,7 @@ import Logo from "../../../images/logo.svg";
 import SocialIconTwitter from "../../../images/footer_icon_twitter.svg";
 import LogoGithub from "../../../images/logo_github.svg";
 
-interface IFooterProps {
-  lang: "de" | "en";
-}
-
-class Footer extends React.PureComponent<IFooterProps, {}> {
+class Footer extends React.PureComponent<WithTranslation, {}> {
   copyToClipboard = (str: string) => {
     const el = document.createElement("textarea");
     el.value = str;
@@ -36,45 +31,48 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
               <Grid item xs={12} sm={6}>
                 <FooterContent>
                   <Typography variant="h2">
-                    {translated(this.props.lang).footer.title}
+                    {this.props.t("footer.title")}
                   </Typography>
                   <Typography variant="body1">
-                    {translated(this.props.lang).footer.claim}
+                    {this.props.t("footer.claim")}
                   </Typography>
                 </FooterContent>
               </Grid>
               <Grid item xs={12} sm={6}>
-                <FooterShareBox lang={this.props.lang}></FooterShareBox>
+                <FooterShareBox />
               </Grid>
             </Grid>
           </Box>
           <Box>
             <FooterNav>
               <Hidden xsDown>
-                <Link to={`/${this.props.lang}/`} style={{ float: "left" }}>
-                  <FooterLogo src={Logo} alt="#GesundZusammen"></FooterLogo>
+                <Link
+                  to={`/${this.props.i18n.language}/`}
+                  style={{ float: "left" }}
+                >
+                  <FooterLogo src={Logo} alt="#GesundZusammen" />
                 </Link>
               </Hidden>
               <FooterSocialIcons>
                 <a href="https://twitter.com/gesundzusammen">
-                  <img src={SocialIconTwitter} alt="Twitter"></img>
+                  <img src={SocialIconTwitter} alt="Twitter" />
                 </a>
                 <a href="https://github.com/gesund-zusammen/gesund-zusammen.github.io">
-                  <img src={LogoGithub} alt="Github"></img>
+                  <img src={LogoGithub} alt="Github" />
                 </a>
               </FooterSocialIcons>
               <FooterNavItems>
-                <FooterNavLinkItem to={`/${this.props.lang}/privacy`}>
-                  {translated(this.props.lang).footer.nav.privacy}
+                <FooterNavLinkItem to={`/${this.props.i18n.language}/privacy`}>
+                  {this.props.t("footer.nav.privacy")}
                 </FooterNavLinkItem>
                 <FooterNavAnchorItem href="mailto:responsibledisclosure@gesund-zusammen.de">
-                  {translated(this.props.lang).footer.nav.vulnerability}
+                  {this.props.t("footer.nav.vulnerability")}
                 </FooterNavAnchorItem>
-                <FooterNavLinkItem to={`/${this.props.lang}/press`}>
-                  {translated(this.props.lang).footer.nav.press}
+                <FooterNavLinkItem to={`/${this.props.i18n.language}/press`}>
+                  {this.props.t("footer.nav.press")}
                 </FooterNavLinkItem>
-                <FooterNavLinkItem to={`/${this.props.lang}/imprint`}>
-                  {translated(this.props.lang).footer.nav.imprint}
+                <FooterNavLinkItem to={`/${this.props.i18n.language}/imprint`}>
+                  {this.props.t("footer.nav.imprint")}
                 </FooterNavLinkItem>
               </FooterNavItems>
               <CopyrightNote>
@@ -206,4 +204,4 @@ const CopyrightNote: AnyStyledComponent = styled.p`
   }
 `;
 
-export default Footer;
+export default withTranslation()(Footer);

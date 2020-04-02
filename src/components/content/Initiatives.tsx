@@ -8,8 +8,7 @@ import {
   Button,
 } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
-
-import { translated } from "../../util";
+import { withTranslation, WithTranslation } from "react-i18next";
 
 import IconArrowRight from "../../images/icon_arrow_right.svg";
 
@@ -38,10 +37,6 @@ interface IInitiative {
   global?: boolean;
 }
 
-interface IInitiativeProps {
-  lang: "de" | "en";
-}
-
 interface IInitiativeState {
   selectedCategory: string | undefined;
   globalSelected: boolean;
@@ -54,12 +49,12 @@ const DEFAULT_STATE: IInitiativeState = {
   listLength: INITIAL_LIST_LENGTH,
 };
 
-class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
+class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
   categoryInitiativesCount: { [slug: string]: number };
   germanInitiativesCount = 0;
   globalInitiativesCount = 0;
 
-  constructor(props: IInitiativeProps) {
+  constructor(props: WithTranslation) {
     super(props);
     this.state = DEFAULT_STATE;
 
@@ -81,11 +76,11 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
   getCategoryName = (slug: string): string => {
     for (let i = 0; i < InitiativeData.categories.length; i++) {
       if (InitiativeData.categories[i].slug === slug) {
-        return InitiativeData.categories[i].name[this.props.lang];
+        return InitiativeData.categories[i].name[this.props.i18n.language];
       }
     }
 
-    return translated(this.props.lang).initiatives.unknownCategory;
+    return this.props.t("initiatives.unknownCategory");
   };
 
   getInitiatives = (categorySlug?: string, global = true): IInitiative[] => {
@@ -122,7 +117,7 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
     return (
       <Box paddingBottom={4}>
         <Typography variant="h3">
-          {translated(this.props.lang).initiatives.filter.filterBy}
+          {this.props.t("initiatives.filter.filterBy")}
         </Typography>
         <Box id="initiatives-filter">
           <Box id="categories-filter">
@@ -132,11 +127,11 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
                 this.state.selectedCategory === undefined && "selected"
               }
               key="all"
-              label={`${translated(this.props.lang).initiatives.filter.all} (${
+              label={`${this.props.t("initiatives.filter.all")} (${
                 this.categoryInitiativesCount.all
               })`}
               onClick={() => this.handleChipClick(undefined)}
-            ></CategoryChip>
+            />
             {this.getCategories().map(category => (
               <CategoryChip
                 variant="outlined"
@@ -144,11 +139,11 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
                   this.state.selectedCategory === category.slug && "selected"
                 }
                 key={category.slug}
-                label={`${category.name[this.props.lang]} (${
+                label={`${category.name[this.props.i18n.language]} (${
                   this.categoryInitiativesCount[category.slug]
                 })`}
                 onClick={() => this.handleChipClick(category.slug)}
-              ></CategoryChip>
+              />
             ))}
           </Box>
           <Box id="region-filter" paddingBottom={4} marginTop={4}>
@@ -157,7 +152,7 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
               onClick={() => this.handleRegionClick(false)}
               className={this.state.globalSelected === false ? "selected" : ""}
             >
-              {`${translated(this.props.lang).initiatives.filter.germany} (${
+              {`${this.props.t("initiatives.filter.germany")} (${
                 this.getInitiatives(this.state.selectedCategory, false).length
               })`}
             </RegionSelect>
@@ -166,7 +161,7 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
               onClick={() => this.handleRegionClick(true)}
               className={this.state.globalSelected === true ? "selected" : ""}
             >
-              {`${translated(this.props.lang).initiatives.filter.global} (${
+              {`${this.props.t("initiatives.filter.global")} (${
                 this.getInitiatives(this.state.selectedCategory, true).length
               })`}
             </RegionSelect>
@@ -194,7 +189,7 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
                         {initiative.name}
                       </InitiativeCardTitle>
                       <Typography variant="body2" color="primary">
-                        {initiative.description[this.props.lang]}
+                        {initiative.description[this.props.i18n.language]}
                       </Typography>
                     </InitiativeCardContent>
                   </InitiativeCard>
@@ -213,16 +208,16 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
               disableFocusRipple={true}
               onClick={this.handleShowMore}
             >
-              {translated(this.props.lang).initiatives.showMore}
+              {this.props.t("initiatives.showMore")}
             </ShowMoreButton>
           )}
         </Box>
         <Box paddingBottom={4} marginTop={4}>
           <CTABox
-            claim={translated(this.props.lang).initiatives.claim}
-            cta={translated(this.props.lang).initiatives.cta}
-            href={translated(this.props.lang).initiatives.link}
-          ></CTABox>
+            claim={this.props.t("initiatives.claim")}
+            cta={this.props.t("initiatives.cta")}
+            href={this.props.t("initiatives.link")}
+          />
         </Box>
       </Box>
     );
@@ -333,4 +328,4 @@ const ShowMoreButton: AnyStyledComponent = styled(Button)`
   }
 `;
 
-export default Initiatives;
+export default withTranslation()(Initiatives);
