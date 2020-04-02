@@ -132,8 +132,8 @@
       "link": "https://climedo.de/blog/climedo-plattform-klinische-datenerhebung-covid-19-projekte-zur-verfuegung/",
       "category": "digital_tools",
       "description": {
-        "de": "Kostenfreie Plattform für klinische Datenerhebung im Zusammenhang mit COVID-19 für Praxen, Kliniken, Forschungsinstitute und gemeinnützige Organisationen",
-        "en": "Free Clinical Data Capture Platform for COVID-19 Projects"
+        "de": "Kostenfreie Plattform für klinische Datenerhebung und Patiententagebücher im Zusammenhang mit COVID-19-Projekten.",
+        "en": "Free platform for clinical data capture and patient eDiaries for COVID-19-related projects."
       },
       "global": false
     },
@@ -497,6 +497,16 @@
       },
       "global": false
     },
+        {
+      "name": "Die 20 Besten Projekte gegen Corona beim Hackathon der Bundesregierung #WirVsVirus",
+      "link": "https://www.bundesregierung.de/breg-de/themen/coronavirus/hackathon-ehrung-1738080",
+      "category": "hackathons",
+      "description": {
+        "de": "Erfahrt mehr zu den geehrten Ideen die bei der Bewältigung der Corona-Pandemie helfen sollen.",
+        "en": "Learn more about the winning ideas to help tackle the Corona pandemic."
+      },
+      "global": false
+    }, 
     {
       "name": "Mar 25-27, 2020: Shopware COVID-19 Hackathon",
       "link": "https://www.shopware.com/en/news/shopware-hosts-covid-19-hackathon/",

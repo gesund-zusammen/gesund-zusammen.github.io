@@ -1,5 +1,12 @@
 import React from "react";
-import { Box, Card, CardContent, Typography, Chip } from "@material-ui/core";
+import {
+  Box,
+  Card,
+  CardContent,
+  Typography,
+  Chip,
+  Button,
+} from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 import { withTranslation, WithTranslation } from "react-i18next";
 
@@ -7,6 +14,9 @@ import IconArrowRight from "../../images/icon_arrow_right.svg";
 
 import InitiativeData from "../../data/initiatives.json";
 import CTABox from "../common/CTABox";
+
+const INITIAL_LIST_LENGTH = 10;
+const LIST_LENGTH_INCREMENT = 10;
 
 interface ICategory {
   slug: string;
@@ -30,11 +40,13 @@ interface IInitiative {
 interface IInitiativeState {
   selectedCategory: string | undefined;
   globalSelected: boolean;
+  listLength: number;
 }
 
 const DEFAULT_STATE: IInitiativeState = {
   selectedCategory: undefined,
   globalSelected: false,
+  listLength: INITIAL_LIST_LENGTH,
 };
 
 class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
@@ -68,7 +80,7 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
       }
     }
 
-    return "Unknown";
+    return this.props.t("initiatives.unknownCategory");
   };
 
   getInitiatives = (categorySlug?: string, global = true): IInitiative[] => {
@@ -84,12 +96,21 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
     return initiatives;
   };
 
+  handleShowMore = () => {
+    this.setState({
+      listLength: this.state.listLength + LIST_LENGTH_INCREMENT,
+    });
+  };
+
   handleChipClick = (categorySlug: string | undefined) => {
-    this.setState({ selectedCategory: categorySlug });
+    this.setState({
+      selectedCategory: categorySlug,
+      listLength: INITIAL_LIST_LENGTH,
+    });
   };
 
   handleRegionClick = (global: boolean) => {
-    this.setState({ globalSelected: global });
+    this.setState({ globalSelected: global, listLength: INITIAL_LIST_LENGTH });
   };
 
   render = () => {
@@ -150,28 +171,46 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
           {this.getInitiatives(
             this.state.selectedCategory,
             this.state.globalSelected,
-          ).map(initiative => (
-            <InitiativeCardWrapper
-              key={`${initiative.link}_${initiative.name}`}
-              href={initiative.link}
-              target="_blank"
-              rel="noopener noreferrer"
+          ).map(
+            (initiative, index) =>
+              index < this.state.listLength && (
+                <InitiativeCardWrapper
+                  key={`${initiative.link}_${initiative.name}`}
+                  href={initiative.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <InitiativeCard>
+                    <InitiativeCardContent>
+                      <Typography variant="subtitle2" color="secondary">
+                        {this.getCategoryName(initiative.category)}
+                      </Typography>
+                      <InitiativeCardTitle variant="h4" color="primary">
+                        {initiative.name}
+                      </InitiativeCardTitle>
+                      <Typography variant="body2" color="primary">
+                        {initiative.description[this.props.i18n.language]}
+                      </Typography>
+                    </InitiativeCardContent>
+                  </InitiativeCard>
+                </InitiativeCardWrapper>
+              ),
+          )}
+        </Box>
+        <Box paddingBottom={4}>
+          {this.getInitiatives(
+            this.state.selectedCategory,
+            this.state.globalSelected,
+          ).length > this.state.listLength && (
+            <ShowMoreButton
+              variant="contained"
+              color="primary"
+              disableFocusRipple={true}
+              onClick={this.handleShowMore}
             >
-              <InitiativeCard>
-                <InitiativeCardContent>
-                  <Typography variant="subtitle2" color="secondary">
-                    {this.getCategoryName(initiative.category)}
-                  </Typography>
-                  <InitiativeCardTitle variant="h4" color="primary">
-                    {initiative.name}
-                  </InitiativeCardTitle>
-                  <Typography variant="body2" color="primary">
-                    {initiative.description[this.props.i18n.language]}
-                  </Typography>
-                </InitiativeCardContent>
-              </InitiativeCard>
-            </InitiativeCardWrapper>
-          ))}
+              {this.props.t("initiatives.showMore")}
+            </ShowMoreButton>
+          )}
         </Box>
         <Box paddingBottom={4} marginTop={4}>
           <CTABox
@@ -267,6 +306,25 @@ const InitiativeCardTitle: AnyStyledComponent = styled(Typography)`
 const InitiativeCardContent: AnyStyledComponent = styled(CardContent)`
   && {
     max-width: 680px;
+  }
+`;
+
+const ShowMoreButton: AnyStyledComponent = styled(Button)`
+  && {
+    display: block;
+    background-color: #0a6eaa;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: none;
+    text-align: center;
+    border-radius: 4px;
+    margin: 0 auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+    @media (min-width: 600px) {
+      font-size: 1.4rem;
+    }
   }
 `;
 
