@@ -13,10 +13,6 @@ import { withTranslation, WithTranslation } from "react-i18next";
 
 import IlluNewsletter from "../../../images/illu_newsletter.svg";
 
-interface INewsletterSignupProps extends WithTranslation {
-  lang: "de" | "en";
-}
-
 interface INewsletterSignupState {
   userEmail: string;
 }
@@ -26,10 +22,10 @@ const DEFAULT_STATE = {
 };
 
 class NewsletterSignup extends React.Component<
-  INewsletterSignupProps,
+  WithTranslation,
   INewsletterSignupState
 > {
-  constructor(props: INewsletterSignupProps) {
+  constructor(props: WithTranslation) {
     super(props);
     this.state = DEFAULT_STATE;
   }

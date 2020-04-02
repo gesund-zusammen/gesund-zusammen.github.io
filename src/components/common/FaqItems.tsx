@@ -22,10 +22,6 @@ interface IFaqContent {
   content: string;
 }
 
-interface IFaqItemProps extends WithTranslation {
-  lang: "de" | "en";
-}
-
 interface IFaqContent {
   title: string;
   content: string;
@@ -37,8 +33,8 @@ const DEFAULT_STATE: IFaqItemsState = {
   panel: "",
 };
 
-class FaqItems extends React.Component<IFaqItemProps, IFaqItemsState> {
-  constructor(props: IFaqItemProps) {
+class FaqItems extends React.Component<WithTranslation, IFaqItemsState> {
+  constructor(props: WithTranslation) {
     super(props);
     this.state = DEFAULT_STATE;
   }

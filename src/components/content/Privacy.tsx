@@ -5,11 +5,7 @@ import { withTranslation, WithTranslation } from "react-i18next";
 
 import CTABox from "../common/CTABox";
 
-interface IPrivacyProps extends WithTranslation {
-  lang: "de" | "en";
-}
-
-class PrivacyPolicy extends React.PureComponent<IPrivacyProps, {}> {
+class PrivacyPolicy extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <>

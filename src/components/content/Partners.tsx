@@ -37,11 +37,7 @@ import LogoFreiraum from "../../images/partners/freiraum.jpg";
 import LogoStoryMachine from "../../images/partners/storymachine.png";
 import LogoJoliBerlin from "../../images/partners/joliberlin.jpg";
 
-interface IPartnersProps extends WithTranslation {
-  lang: "de" | "en";
-}
-
-class Partners extends React.PureComponent<IPartnersProps, {}> {
+class Partners extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <Box id="partners" paddingBottom={4} marginTop={4}>

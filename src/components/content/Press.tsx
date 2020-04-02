@@ -11,11 +11,7 @@ import PressKitLogo from "../../images/presskit_logo.svg";
 import ReleaseEnLogo from "../../../public/187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.png";
 import ReleaseDeLogo from "../../../public/187534-20200401090213000000000-gesund-zusammen-die-digitale-wirtschaft-s.png";
 
-interface IPressProps extends WithTranslation {
-  lang: "de" | "en";
-}
-
-class PressContact extends React.PureComponent<IPressProps, {}> {
+class PressContact extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <>

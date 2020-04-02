@@ -11,11 +11,7 @@ import Logo from "../../../images/logo.svg";
 
 import SocialIconTwitter from "../../../images/footer_icon_twitter.svg";
 
-interface IFooterProps extends WithTranslation {
-  lang: "de" | "en";
-}
-
-class Footer extends React.PureComponent<IFooterProps, {}> {
+class Footer extends React.PureComponent<WithTranslation, {}> {
   copyToClipboard = (str: string) => {
     const el = document.createElement("textarea");
     el.value = str;
@@ -42,14 +38,17 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                 </FooterContent>
               </Grid>
               <Grid item xs={12} sm={6}>
-                <FooterShareBox lang={this.props.lang}></FooterShareBox>
+                <FooterShareBox></FooterShareBox>
               </Grid>
             </Grid>
           </Box>
           <Box>
             <FooterNav>
               <Hidden xsDown>
-                <Link to={`/${this.props.lang}/`} style={{ float: "left" }}>
+                <Link
+                  to={`/${this.props.i18n.language}/`}
+                  style={{ float: "left" }}
+                >
                   <FooterLogo src={Logo} alt="#GesundZusammen"></FooterLogo>
                 </Link>
               </Hidden>
@@ -59,16 +58,16 @@ class Footer extends React.PureComponent<IFooterProps, {}> {
                 </a>
               </FooterSocialIcons>
               <FooterNavItems>
-                <FooterNavLinkItem to={`/${this.props.lang}/privacy`}>
+                <FooterNavLinkItem to={`/${this.props.i18n.language}/privacy`}>
                   {this.props.t("footer.nav.privacy")}
                 </FooterNavLinkItem>
                 <FooterNavAnchorItem href="mailto:responsibledisclosure@gesund-zusammen.de">
                   {this.props.t("footer.nav.vulnerability")}
                 </FooterNavAnchorItem>
-                <FooterNavLinkItem to={`/${this.props.lang}/press`}>
+                <FooterNavLinkItem to={`/${this.props.i18n.language}/press`}>
                   {this.props.t("footer.nav.press")}
                 </FooterNavLinkItem>
-                <FooterNavLinkItem to={`/${this.props.lang}/imprint`}>
+                <FooterNavLinkItem to={`/${this.props.i18n.language}/imprint`}>
                   {this.props.t("footer.nav.imprint")}
                 </FooterNavLinkItem>
               </FooterNavItems>

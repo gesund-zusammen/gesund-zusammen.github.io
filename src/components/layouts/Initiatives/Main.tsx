@@ -6,7 +6,6 @@ import Footer from "../Shared/Footer";
 import { HeaderBox, MainContentContainer } from "../Shared/StyledComponents";
 
 interface ILayoutInitiativePageProps {
-  lang: "de" | "en";
   langChangeCallback: (lang: "de" | "en") => void;
   title: string;
   content: string;
@@ -26,7 +25,6 @@ class LayoutInitiativePage extends React.Component<
         <HeaderBox id="header" component="header">
           <Container maxWidth="lg">
             <InitiativePageHeader
-              lang={this.props.lang}
               langChangeCallback={this.handleLangChange}
               title={this.props.title}
               content={this.props.content}
@@ -40,7 +38,7 @@ class LayoutInitiativePage extends React.Component<
           </MainContentContainer>
         </Box>
 
-        <Footer lang={this.props.lang}></Footer>
+        <Footer></Footer>
       </>
     );
   };

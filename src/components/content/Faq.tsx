@@ -6,16 +6,12 @@ import FaqItems from "../common/FaqItems";
 
 import CTABox from "../common/CTABox";
 
-interface IFaqProps extends WithTranslation {
-  lang: "de" | "en";
-}
-
-class Faq extends React.PureComponent<IFaqProps, {}> {
+class Faq extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <>
         <Box id="faq" paddingBottom={4} marginTop={4}>
-          <FaqItems lang={this.props.lang}></FaqItems>
+          <FaqItems></FaqItems>
         </Box>
         <Box paddingBottom={4} marginTop={4}>
           <CTABox

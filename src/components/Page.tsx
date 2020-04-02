@@ -44,7 +44,6 @@ class Page extends React.Component<IPageProps, {}> {
   render = () => {
     const layoutProps = {
       ...this.props,
-      lang: this.props.match.params.lang,
       langChangeCallback: this.handleLangChange,
     };
     return (
@@ -57,7 +56,7 @@ class Page extends React.Component<IPageProps, {}> {
               title={this.props.t("header.nav.initiatives")}
               content={this.props.t("header.content.initiatives.content")}
             >
-              <Initiatives lang={this.props.match.params.lang}></Initiatives>
+              <Initiatives></Initiatives>
             </LayoutInitiativePage>
           </Route>
           <Route path="/:lang/partners">
@@ -65,7 +64,7 @@ class Page extends React.Component<IPageProps, {}> {
               {...layoutProps}
               title={this.props.t("header.nav.supporters")}
             >
-              <Partners lang={this.props.match.params.lang}></Partners>
+              <Partners></Partners>
             </LayoutSubPage>
           </Route>
           <Route path="/:lang/faq">
@@ -74,7 +73,7 @@ class Page extends React.Component<IPageProps, {}> {
               title={this.props.t("header.nav.faqs")}
               image={IlluFaq}
             >
-              <Faq lang={this.props.match.params.lang}></Faq>
+              <Faq></Faq>
             </LayoutSubPage>
           </Route>
           <Route path="/:lang/privacy">
@@ -83,19 +82,16 @@ class Page extends React.Component<IPageProps, {}> {
               title={this.props.t("footer.nav.privacy")}
               image={IlluPrivacy}
             >
-              <PrivacyPolicy
-                lang={this.props.match.params.lang}
-              ></PrivacyPolicy>
+              <PrivacyPolicy></PrivacyPolicy>
             </LayoutSubPage>
           </Route>
           <Route path="/:lang/press">
             <LayoutSubPage
-              lang={this.props.match.params.lang}
               langChangeCallback={this.handleLangChange}
               title={this.props.t("press.title")}
               image={IlluPressContact}
             >
-              <Press lang={this.props.match.params.lang}></Press>
+              <Press></Press>
             </LayoutSubPage>
           </Route>
           <Route path="/:lang/imprint">

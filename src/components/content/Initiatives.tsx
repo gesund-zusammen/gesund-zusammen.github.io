@@ -27,10 +27,6 @@ interface IInitiative {
   global?: boolean;
 }
 
-interface IInitiativeProps extends WithTranslation {
-  lang: "de" | "en";
-}
-
 interface IInitiativeState {
   selectedCategory: string | undefined;
   globalSelected: boolean;
@@ -41,12 +37,12 @@ const DEFAULT_STATE: IInitiativeState = {
   globalSelected: false,
 };
 
-class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
+class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
   categoryInitiativesCount: { [slug: string]: number };
   germanInitiativesCount = 0;
   globalInitiativesCount = 0;
 
-  constructor(props: IInitiativeProps) {
+  constructor(props: WithTranslation) {
     super(props);
     this.state = DEFAULT_STATE;
 
@@ -68,7 +64,7 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
   getCategoryName = (slug: string): string => {
     for (let i = 0; i < InitiativeData.categories.length; i++) {
       if (InitiativeData.categories[i].slug === slug) {
-        return InitiativeData.categories[i].name[this.props.lang];
+        return InitiativeData.categories[i].name[this.props.i18n.language];
       }
     }
 
@@ -122,7 +118,7 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
                   this.state.selectedCategory === category.slug && "selected"
                 }
                 key={category.slug}
-                label={`${category.name[this.props.lang]} (${
+                label={`${category.name[this.props.i18n.language]} (${
                   this.categoryInitiativesCount[category.slug]
                 })`}
                 onClick={() => this.handleChipClick(category.slug)}
@@ -170,7 +166,7 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
                     {initiative.name}
                   </InitiativeCardTitle>
                   <Typography variant="body2" color="primary">
-                    {initiative.description[this.props.lang]}
+                    {initiative.description[this.props.i18n.language]}
                   </Typography>
                 </InitiativeCardContent>
               </InitiativeCard>

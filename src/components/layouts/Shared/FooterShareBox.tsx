@@ -8,10 +8,6 @@ import IconWhatsApp from "../../../images/icon_whatsapp.svg";
 import IconFacebook from "../../../images/icon_facebook.svg";
 import IconEmail from "../../../images/icon_email.svg";
 
-interface IFooterShareBoxProps extends WithTranslation {
-  lang: "de" | "en";
-}
-
 interface IFooterShareBoxState {
   linkCopied: boolean;
 }
@@ -21,10 +17,10 @@ const DEFAULT_STATE = {
 };
 
 class FooterShareBox extends React.PureComponent<
-  IFooterShareBoxProps,
+  WithTranslation,
   IFooterShareBoxState
 > {
-  constructor(props: IFooterShareBoxProps) {
+  constructor(props: WithTranslation) {
     super(props);
     this.state = DEFAULT_STATE;
   }
