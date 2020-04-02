@@ -1,8 +1,7 @@
 import React from "react";
 import { Box, Card, CardContent, Typography, Chip } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
-
-import { translated } from "../../util";
+import { withTranslation, WithTranslation } from "react-i18next";
 
 import IconArrowRight from "../../images/icon_arrow_right.svg";
 
@@ -28,7 +27,7 @@ interface IInitiative {
   global?: boolean;
 }
 
-interface IInitiativeProps {
+interface IInitiativeProps extends WithTranslation {
   lang: "de" | "en";
 }
 
@@ -101,7 +100,7 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
     return (
       <Box paddingBottom={4}>
         <Typography variant="h3">
-          {translated(this.props.lang).initiatives.filter.filterBy}
+          {this.props.t("initiatives.filter.filterBy")}
         </Typography>
         <Box id="initiatives-filter">
           <Box id="categories-filter">
@@ -111,7 +110,7 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
                 this.state.selectedCategory === undefined && "selected"
               }
               key="all"
-              label={`${translated(this.props.lang).initiatives.filter.all} (${
+              label={`${this.props.t("initiatives.filter.all")} (${
                 this.categoryInitiativesCount.all
               })`}
               onClick={() => this.handleChipClick(undefined)}
@@ -136,7 +135,7 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
               onClick={() => this.handleRegionClick(false)}
               className={this.state.globalSelected === false ? "selected" : ""}
             >
-              {`${translated(this.props.lang).initiatives.filter.germany} (${
+              {`${this.props.t("initiatives.filter.germany")} (${
                 this.getInitiatives(this.state.selectedCategory, false).length
               })`}
             </RegionSelect>
@@ -145,7 +144,7 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
               onClick={() => this.handleRegionClick(true)}
               className={this.state.globalSelected === true ? "selected" : ""}
             >
-              {`${translated(this.props.lang).initiatives.filter.global} (${
+              {`${this.props.t("initiatives.filter.global")} (${
                 this.getInitiatives(this.state.selectedCategory, true).length
               })`}
             </RegionSelect>
@@ -180,9 +179,9 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
         </Box>
         <Box paddingBottom={4} marginTop={4}>
           <CTABox
-            claim={translated(this.props.lang).initiatives.claim}
-            cta={translated(this.props.lang).initiatives.cta}
-            href={translated(this.props.lang).initiatives.link}
+            claim={this.props.t("initiatives.claim")}
+            cta={this.props.t("initiatives.cta")}
+            href={this.props.t("initiatives.link")}
           ></CTABox>
         </Box>
       </Box>
@@ -275,4 +274,4 @@ const InitiativeCardContent: AnyStyledComponent = styled(CardContent)`
   }
 `;
 
-export default Initiatives;
+export default withTranslation()(Initiatives);
