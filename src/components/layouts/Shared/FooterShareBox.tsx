@@ -82,7 +82,7 @@ class FooterShareBox extends React.PureComponent<
           </a>
           <a
             href={`mailto:?subject=${encodeURIComponent(
-              "Guck dir mal gesund-zusammen.de an",
+              this.props.t("footer.emailShareSubject").toString(),
             )}&body=${encodeURIComponent("https://gesund-zusammen.de")}`}
             className="share-icon-link"
           >
