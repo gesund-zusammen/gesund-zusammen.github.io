@@ -55,6 +55,7 @@ class Page extends React.Component<
     };
     return (
       <Router>
+        <ScrollMemory />
         <Switch>
           <Route path="/:lang/initiatives">
             <LayoutInitiativePage
@@ -146,7 +147,6 @@ class LangWrapper extends React.Component {
     const supportedLanguages = ["de", "en"];
     return (
       <Router>
-        <ScrollMemory />
         <Switch>
           <Route
             path="/:lang/"
