@@ -36,7 +36,7 @@ import LogoMyData from "../../images/partners/mydata.png";
 import LogoFreiraum from "../../images/partners/freiraum.jpg";
 import LogoStoryMachine from "../../images/partners/storymachine.png";
 import LogoJoliBerlin from "../../images/partners/joliberlin.jpg";
-import LogoTheDelta from "../../images/partners/thedelta.jpg";
+import LogoTheDelta from "../../images/partners/thedelta.svg";
 
 class Partners extends React.PureComponent<WithTranslation, {}> {
   render = () => {

@@ -506,7 +506,7 @@
         "en": "Learn more about the winning ideas to help tackle the Corona pandemic."
       },
       "global": false
-    }, 
+    },
     {
       "name": "Mar 25-27, 2020: Shopware COVID-19 Hackathon",
       "link": "https://www.shopware.com/en/news/shopware-hosts-covid-19-hackathon/",
@@ -816,6 +816,16 @@
         "en": "SARS-CoV-2/COVID-19: Collected Best Practices of the German Startup Scene"
       },
       "global": false
+    },
+    {
+      "name": "Pan-European Privacy-Preserving Proximity Tracing",
+      "link": "https://www.pepp-pt.org/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Pan-European Privacy-Preserving Proximity Tracing (PEPP-PT) makes it possible to interrupt new chains of SARS-CoV-2 transmission rapidly and effectively by informing potentially exposed people.",
+        "en": "Pan-European Privacy-Preserving Proximity Tracing (PEPP-PT) makes it possible to interrupt new chains of SARS-CoV-2 transmission rapidly and effectively by informing potentially exposed people."
+      },
+      "global": true
     }
   ]
 }
