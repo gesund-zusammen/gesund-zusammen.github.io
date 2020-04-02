@@ -36,7 +36,7 @@ import LogoMyData from "../../images/partners/mydata.png";
 import LogoFreiraum from "../../images/partners/freiraum.jpg";
 import LogoStoryMachine from "../../images/partners/storymachine.png";
 import LogoJoliBerlin from "../../images/partners/joliberlin.jpg";
-import LogoTheDelta from "../../images/partners/thedelta.svg";
+import LogoTheDelta from "../../images/partners/thedelta.png";
 
 class Partners extends React.PureComponent<WithTranslation, {}> {
   render = () => {
@@ -175,6 +175,7 @@ class Partners extends React.PureComponent<WithTranslation, {}> {
               name="MyData"
               image={LogoMyData}
               link="https://mydata.org/"
+              imageXL={true}
             />
             <PartnerCard
               name="UserCentrics"
@@ -224,6 +225,7 @@ class Partners extends React.PureComponent<WithTranslation, {}> {
               name="The Delta"
               image={LogoTheDelta}
               link="https://www.thedelta.io/"
+              imageXL={true}
             />
             <PartnerCard
               name="fischerAppelt"

@@ -7,6 +7,7 @@ interface IPartnerCardProps {
   name: string;
   link: string;
   color?: string;
+  imageXL?: boolean;
   nameColorInverted?: boolean;
 }
 
@@ -20,17 +21,15 @@ class PartnerCard extends React.PureComponent<IPartnerCardProps, {}> {
               style={{
                 backgroundImage: `url(${this.props.image})`,
                 backgroundColor: this.props.color,
+                backgroundSize: this.props.imageXL ? "40% auto" : "80% auto",
               }}
+            ></PartnerCardContent>
+            <PartnerName
+              variant="caption"
+              className={this.props.nameColorInverted ? "inverted" : "regular"}
             >
-              <PartnerName
-                variant="caption"
-                className={
-                  this.props.nameColorInverted ? "inverted" : "regular"
-                }
-              >
-                {this.props.name}
-              </PartnerName>
-            </PartnerCardContent>
+              {this.props.name}
+            </PartnerName>
           </PartnerCardWrapper>
         </a>
       </Grid>
@@ -62,7 +61,6 @@ const PartnerCardContent: AnyStyledComponent = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background-size: 80% auto;
   background-repeat: no-repeat;
   background-position: 50% 40%;
 `;
