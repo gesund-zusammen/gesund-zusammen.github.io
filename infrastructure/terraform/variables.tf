@@ -33,11 +33,9 @@ variable "domain_name" {
 variable "zone_id" {
   description = "id of the route53 zone"
   type        = string
-  default     = "ZWT8GGMPHPMSM"
 }
 
 variable "cert_arn" {
   description = "The ARN of the certificate that the CloudFront distribution uses for https"
   type        = string
-  default     = "arn:aws:acm:us-east-1:804609905630:certificate/1f6dc9e3-adf5-4f5f-974d-bf58dcb96a92"
 }
