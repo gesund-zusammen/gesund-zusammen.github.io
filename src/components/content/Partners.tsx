@@ -1,10 +1,9 @@
 import React from "react";
 import { Box, Grid, Typography } from "@material-ui/core";
+import { withTranslation, WithTranslation } from "react-i18next";
 
 import PartnerCard from "../common/PartnerCard";
 import CTABox from "../common/CTABox";
-
-import { translated } from "../../util";
 
 import LogoOmio from "../../images/partners/omio.png";
 import LogoBVDS from "../../images/partners/bvds.png";
@@ -38,7 +37,7 @@ import LogoFreiraum from "../../images/partners/freiraum.jpg";
 import LogoStoryMachine from "../../images/partners/storymachine.png";
 import LogoJoliBerlin from "../../images/partners/joliberlin.jpg";
 
-interface IPartnersProps {
+interface IPartnersProps extends WithTranslation {
   lang: "de" | "en";
 }
 
@@ -47,7 +46,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
     return (
       <Box id="partners" paddingBottom={4} marginTop={4}>
         <Typography variant="h2">
-          {translated(this.props.lang).partners.type.founders}
+          {this.props.t("partners.type.founders")}
         </Typography>
         <Box paddingTop={4} paddingBottom={4}>
           <Grid
@@ -155,7 +154,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
           </Grid>
         </Box>
         <Typography variant="h2">
-          {translated(this.props.lang).partners.type.privacy}
+          {this.props.t("partners.type.privacy")}
         </Typography>
         <Box paddingTop={4} paddingBottom={4}>
           <Grid
@@ -214,7 +213,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
           </Grid>
         </Box>
         <Typography variant="h2">
-          {translated(this.props.lang).partners.type.agencies}
+          {this.props.t("partners.type.agencies")}
         </Typography>
         <Box paddingTop={4} paddingBottom={4}>
           <Grid
@@ -242,7 +241,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
           </Grid>
         </Box>
         <Typography variant="h2">
-          {translated(this.props.lang).partners.type.further}
+          {this.props.t("partners.type.further")}
         </Typography>
         <Box paddingTop={4} paddingBottom={4}>
           <Grid
@@ -261,9 +260,9 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
         </Box>
         <Box paddingBottom={4} marginTop={4}>
           <CTABox
-            claim={translated(this.props.lang).partners.claim}
-            cta={translated(this.props.lang).partners.cta}
-            href={translated(this.props.lang).partners.link}
+            claim={this.props.t("partners.claim")}
+            cta={this.props.t("partners.cta")}
+            href={this.props.t("partners.link")}
           ></CTABox>
         </Box>
       </Box>
@@ -271,4 +270,4 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
   };
 }
 
-export default Partners;
+export default withTranslation()(Partners);
