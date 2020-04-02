@@ -85,7 +85,7 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
       }
     }
 
-    return "Unknown";
+    return translated(this.props.lang).initiatives.unknownCategory;
   };
 
   getInitiatives = (categorySlug?: string, global = true): IInitiative[] => {
@@ -213,7 +213,7 @@ class Initiatives extends React.Component<IInitiativeProps, IInitiativeState> {
               disableFocusRipple={true}
               onClick={this.handleShowMore}
             >
-              Show more
+              {translated(this.props.lang).initiatives.showMore}
             </ShowMoreButton>
           )}
         </Box>
