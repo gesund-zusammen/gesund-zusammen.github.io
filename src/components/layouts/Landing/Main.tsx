@@ -2,10 +2,10 @@ import React from "react";
 import { Box, Container } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
-import BgHeader from "../../../images/bg_header.svg";
-
 import LandingHeader from "./Header";
 import Footer from "../Shared/Footer";
+import NewsletterSignup from "../Shared/NewsletterSignup";
+import { HeaderBox, MainContentContainer } from "../Shared/StyledComponents";
 
 interface ILayoutLandingProps {
   lang: "de" | "en";
@@ -20,18 +20,22 @@ class LayoutLanding extends React.Component<ILayoutLandingProps, {}> {
   render = () => {
     return (
       <>
-        <HeaderWrapper id="header" component="header">
+        <LandingHeaderBox id="header" component="header">
           <Container maxWidth="lg">
             <LandingHeader
               lang={this.props.lang}
               langChangeCallback={this.handleLangChange}
             ></LandingHeader>
           </Container>
-        </HeaderWrapper>
+        </LandingHeaderBox>
 
         <Box id="content" paddingBottom={4} marginTop={4}>
-          <Container maxWidth="lg">{this.props.children}</Container>
+          <MainContentContainer maxWidth="lg">
+            {this.props.children}
+          </MainContentContainer>
         </Box>
+
+        <NewsletterSignup lang={this.props.lang}></NewsletterSignup>
 
         <Footer lang={this.props.lang}></Footer>
       </>
@@ -39,19 +43,8 @@ class LayoutLanding extends React.Component<ILayoutLandingProps, {}> {
   };
 }
 
-const HeaderWrapper: AnyStyledComponent = styled(Box)`
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-  color: #ffffff;
+const LandingHeaderBox: AnyStyledComponent = styled(HeaderBox)`
   padding: 0 0 6rem 0;
-  background-image: url(${BgHeader});
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-
-  @media (min-width: 600px) {
-    padding-bottom: 10rem;
-  }
 `;
 
 export default LayoutLanding;

@@ -2,7 +2,9 @@ import React from "react";
 import { Box, Grid, Typography } from "@material-ui/core";
 
 import PartnerCard from "../common/PartnerCard";
-import BecomePart from "../common/BecomePart";
+import CTABox from "../common/CTABox";
+
+import { translated } from "../../util";
 
 import LogoOmio from "../../images/partners/omio.png";
 import LogoBVDS from "../../images/partners/bvds.png";
@@ -14,7 +16,6 @@ import LogoGetYourGuide from "../../images/partners/getyourguide.png";
 import LogoFreightHub from "../../images/partners/freighthub.png";
 import LogoDeliveryHero from "../../images/partners/deliveryhero.png";
 import LogoCelonis from "../../images/partners/celonis.png";
-import LogoAuto1 from "../../images/partners/auto1.png";
 import LogoAdaHealth from "../../images/partners/adahealth.png";
 import LogoViaHealth from "../../images/partners/viadata.svg";
 import LogoPersonio from "../../images/partners/personio.png";
@@ -31,7 +32,11 @@ import LogoSKWSchwarz from "../../images/partners/skwschwarz.jpg";
 import LogoBCGDV from "../../images/partners/bcgdv.svg";
 import LogoDoctorly from "../../images/partners/doctorly.png";
 import LogoFischerAppelt from "../../images/partners/fischerappelt.jpg";
-import LogoDeloitte from "../../images/partners/deloitte.svg";
+import LogoDeloitte from "../../images/partners/deloitte.jpg";
+import LogoMyData from "../../images/partners/mydata.png";
+import LogoFreiraum from "../../images/partners/freiraum.jpg";
+import LogoStoryMachine from "../../images/partners/storymachine.png";
+import LogoJoliBerlin from "../../images/partners/joliberlin.jpg";
 
 interface IPartnersProps {
   lang: "de" | "en";
@@ -41,7 +46,9 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
   render = () => {
     return (
       <Box id="partners" paddingBottom={4} marginTop={4}>
-        <Typography variant="h2">Founding & Tech Partner</Typography>
+        <Typography variant="h2">
+          {translated(this.props.lang).partners.type.founders}
+        </Typography>
         <Box paddingTop={4} paddingBottom={4}>
           <Grid
             container
@@ -116,11 +123,6 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.celonis.com/"
             ></PartnerCard>
             <PartnerCard
-              name="Auto1 Group"
-              image={LogoAuto1}
-              link="https://www.auto1.com/"
-            ></PartnerCard>
-            <PartnerCard
               name="Ada Health"
               image={LogoAdaHealth}
               link="https://ada.com/"
@@ -131,7 +133,7 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               link="https://www.personio.de/"
             ></PartnerCard>
             <PartnerCard
-              name="OneFootbal"
+              name="OneFootball"
               image={LogoOneFootball}
               link="https://onefootball.com/"
             ></PartnerCard>
@@ -152,7 +154,9 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
             ></PartnerCard>
           </Grid>
         </Box>
-        <Typography variant="h2">Privacy Partner</Typography>
+        <Typography variant="h2">
+          {translated(this.props.lang).partners.type.privacy}
+        </Typography>
         <Box paddingTop={4} paddingBottom={4}>
           <Grid
             container
@@ -169,7 +173,12 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
             <PartnerCard
               name="Deloitte"
               image={LogoDeloitte}
-              link="https://www2.deloitte.com/"
+              link="https://www2.deloitte.com/dl/de/services/legal.html"
+            ></PartnerCard>
+            <PartnerCard
+              name="MyData"
+              image={LogoMyData}
+              link="https://mydata.org/"
             ></PartnerCard>
             <PartnerCard
               name="UserCentrics"
@@ -204,7 +213,9 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
             ></PartnerCard>
           </Grid>
         </Box>
-        <Typography variant="h2">Agency Partner</Typography>
+        <Typography variant="h2">
+          {translated(this.props.lang).partners.type.agencies}
+        </Typography>
         <Box paddingTop={4} paddingBottom={4}>
           <Grid
             container
@@ -218,10 +229,42 @@ class Partners extends React.PureComponent<IPartnersProps, {}> {
               image={LogoFischerAppelt}
               link="https://www.fischerappelt.de/"
             ></PartnerCard>
+            <PartnerCard
+              name="Story Machine"
+              image={LogoStoryMachine}
+              link="https://www.storymachine.de/"
+            ></PartnerCard>
+            <PartnerCard
+              name="JOLI BERLIN"
+              image={LogoJoliBerlin}
+              link="https://www.joliberlin.com/"
+            ></PartnerCard>
+          </Grid>
+        </Box>
+        <Typography variant="h2">
+          {translated(this.props.lang).partners.type.further}
+        </Typography>
+        <Box paddingTop={4} paddingBottom={4}>
+          <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+            spacing={4}
+          >
+            <PartnerCard
+              name="Freiraum"
+              image={LogoFreiraum}
+              link="http://www.freiraum-berlin.org/"
+            ></PartnerCard>
           </Grid>
         </Box>
         <Box paddingBottom={4} marginTop={4}>
-          <BecomePart lang={this.props.lang}></BecomePart>
+          <CTABox
+            claim={translated(this.props.lang).partners.claim}
+            cta={translated(this.props.lang).partners.cta}
+            href={translated(this.props.lang).partners.link}
+          ></CTABox>
         </Box>
       </Box>
     );

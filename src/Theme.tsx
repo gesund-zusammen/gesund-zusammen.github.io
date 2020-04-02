@@ -9,7 +9,12 @@ interface IThemeProps {
 const theme = responsiveFontSizes(
   createMuiTheme({
     palette: {
+      text: {
+        primary: "#003269",
+        secondary: "#0A6EAA",
+      },
       primary: {
+        light: "#0A6EAA",
         main: "#003269",
         contrastText: "#ffffff",
       },
@@ -86,13 +91,13 @@ const theme = responsiveFontSizes(
         fontWeight: 600,
       },
       subtitle1: {
-        fontSize: "0.7rem",
+        fontSize: "0.8rem",
         fontWeight: "normal",
         textTransform: "uppercase",
         color: "#003269",
       },
       subtitle2: {
-        fontSize: "0.6rem",
+        fontSize: "0.8rem",
         fontWeight: "normal",
         textTransform: "uppercase",
         color: "#3C3C3C",
@@ -144,7 +149,7 @@ const theme = responsiveFontSizes(
         root: {
           fontSize: "1.2rem",
           fontWeight: 600,
-          padding: "1.5rem 2.8rem",
+          padding: "0.5rem 2.8rem",
           borderRadius: "15px 15px 0px 0px",
           color: "#003269",
           "&$expanded": {
@@ -157,7 +162,7 @@ const theme = responsiveFontSizes(
         root: {
           fontSize: "0.9rem",
           color: "#0A6EAA",
-          padding: "1.5rem 2.8rem",
+          padding: "1.2rem 2.8rem 0.5rem",
           borderRadius: "0px 0px 15px 15px",
         },
       },
