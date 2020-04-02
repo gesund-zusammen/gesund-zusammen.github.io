@@ -91,13 +91,13 @@ const theme = responsiveFontSizes(
         fontWeight: 600,
       },
       subtitle1: {
-        fontSize: "0.7rem",
+        fontSize: "0.8rem",
         fontWeight: "normal",
         textTransform: "uppercase",
         color: "#003269",
       },
       subtitle2: {
-        fontSize: "0.6rem",
+        fontSize: "0.8rem",
         fontWeight: "normal",
         textTransform: "uppercase",
         color: "#3C3C3C",
