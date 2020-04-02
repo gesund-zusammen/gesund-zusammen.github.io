@@ -1,84 +1,109 @@
 {
+  "language": {
+    "de": "German",
+    "en": "English"
+  },
   "header": {
     "nav": {
-      "initiatives": "The Initiative",
+      "initiatives": "Further initiatives",
       "supporters": "Partners",
       "faqs": "FAQs"
     },
     "content": {
       "landing": {
-        "title": "Protect data. Save lifes.",
+        "title": "Protect data.<br />Save lifes.",
         "content": "Digital tools to fight Covid-19"
       },
       "initiatives": {
-        "content": "In der aktuellen Situation möchten wir gerne einen nachvollziehbaren und starken Schritt nach vorne gehen, um Digitale Tools zu bauen, die gegen die Ausbreitung der Covid-19 Pandemie effektiv helfen. Dabei ist unser oberstes Prinzip, den demokratischen mandatierten Vertretern möglichst gute Informationen zur Verfügung zu stellen, und die Entwicklung digitaler Tools zur Pandemie Bekämpfung unter Rücksicht auf die geltenden Datenschutz und Privatsphäre Gesetze in der Breite und in der Tiefe zu supporten."
+        "content": "In order to contain COVID-19, a worldwide competition of ideas is emerging, significantly accelerated by the tech industry and others. We are not only bringing together the resources and capabilities of the German digital economy. We also seek and promote open exchange with other digital initiatives so that the ideas with the greatest potential can prevail. \n\n Here you will find exciting digital initiatives and technologies from around the world - continuously updated. If you would like to add more projects to this showcase, please contact us."
       }
     }
   },
   "main": {
-    "title": "#GesundZusammen – eine offene Initiative der Digitalwirtschaft",
-    "content": "Als breite Allianz deutscher Tech-Unternehmen wollen wir Gesellschaft, Politik und Wirtschaft aktiv dabei helfen, COVID-19 mit digitalen Lösungen einzudämmen. Dafür bauen wir auf eine der wichtigsten Ressourcen, die der Welt heute zur Verfügung steht: <font style=\"font-size:1.3rem; font-weight: bolder;\">Information</font>. <p>Daten ermöglichen es uns, gemeinsam zu forschen, Menschen zu warnen, Leben zu retten. Und doch ist eine flächendeckende Datennutzung nicht risikolos: Angesichts der Krise mehren sich die Stimmen, Grundrechte zum Wohle der Gesundheit zu opfern. Gemeinsam werden wir den Beweis erbringen: <font style=\"font-size:1.3rem; font-weight: bolder;\">Wir können beides haben – Infektionsschutz und Datenschutz.</font><p><font style=\"font-size:1.4rem; font-weight: bolder;\">Damit Privates privat bleibt</font><br />Auch in Krisenzeiten haben Freiheits- und Persönlichkeitsrechte der Menschen für unsere Technologie höchste Priorität.<p><font style=\"font-size:1.4rem; font-weight: bolder;\">Damit Deutschland gesund bleibt</font><br />Unsere Lösungen sollen helfen, Risikogruppen besser zu schützen und das Gesundheitssystem zu entlasten.<p><font style=\"font-size:1.4rem; font-weight: bolder;\">Damit die Wirtschaft in Fahrt kommt</font><br />Wir wollen Technologie einsetzen, um Gesundheitsrisiken in den Unternehmen zu senken und Produktivität wieder hochzufahren."
+    "title": "#GesundZusammen – an open initiative led by the digital economy",
+    "content": "As broad alliance of German tech companies, we want to actively help society, politics and business to contain COVID-19 with digital solutions. We build up on one of the most important resources available to the world today: <font style=\"font-size:1.3rem; font-weight: bolder;\">Information</font>. <p>data enables us to do research together, warn people, save lives. And yet, widespread use of data is not without risk: In the face of the crisis, there are growing voices in favour of sacrificing basic rights for the good of health. Together we will prove the case: <font style=\"font-size:1.3rem; font-weight: bolder;\">we can have both - infection control and data protection.</font><p><font style=\"font-size:1. 4rem; font-weight: bolder;\">so that private things remain private.</font><br />Even in times of crisis, people's freedom and personal rights are top priority for our technology.<p><font style=\"font-size:1. 4rem; font-weight: bolder;\">To keep Germany healthy</font><br />Our solutions are designed to help protect risk groups better and relieve the burden on the healthcare system.<p><font style=\"font-size:1.4rem; font-weight: bolder;\">To get the economy moving</font><br />We want to use technology to reduce health risks in companies and boost productivity again."
   },
   "boxes": {
     "initiative": {
-      "title": "Agile Entwicklung",
-      "content": "Als starke Tech-Partner investieren wir gemeinsam in den Bau von Apps und Tools, die unser Land gerade braucht, nutzerfreundlich, open source, verantwortungsvoll, schnell."
+      "title": "Agile Development",
+      "content": "As strong tech partners, we invest together in building the apps and tools our country needs right now, user-friendly, open source, fast."
     },
     "support": {
-      "title": "Digitaler Support",
-      "content": "Wir unterstützen andere digitale Initiativen mit unseren Ressourcen, um wirksam die Datenlage zu verbessern. Sprechen Sie uns mit Ideen und Bedarf an."
+      "title": "Digital Support",
+      "content": "We support other digital initiatives with our resources to effectively improve the data situation. Contact us with ideas and needs."
     },
     "ecosystem": {
-      "title": "Offenes Ökosystem",
-      "content": "Wir freuen uns auf den Austausch mit allen weiteren digitalen Initiativen, werden Kräfte bündeln und mit regelmäßigen Updates die Zusammenarbeit fördern."
+      "title": "Open Ecosystem",
+      "content": "We are looking forward to exchange with all other digital initiatives, to join forces and promote cooperation with regular updates."
     }
   },
   "partners": {
     "title": "Founding & Tech Partners",
     "claim": "Want to help make a difference?",
-    "button": "Become part of the initiative"
+    "cta": "Become part of the initiative",
+    "link": "mailto:partners@gesund-zusammen.de",
+    "type": {
+      "founders": "Founding & Tech Partner",
+      "privacy": "Privacy Partner",
+      "agencies": "Agency Partner",
+      "further": "Further Partner"
+    }
+  },
+  "privacy": {
+    "claim": "You have another question?",
+    "cta": "Contact us",
+    "link": "mailto:privacy@gesund-zusammen.de"
   },
   "initiatives": {
+    "claim": "An initiative is missing?",
+    "cta": "Contact us",
+    "link": "mailto:media@gesund-zusammen.de",
     "filter": {
-      "filterBy": "Filtern",
+      "filterBy": "Filter by",
       "all": "All",
       "global": "Worldwide",
       "germany": "In Germany"
     }
   },
-  "faq": {
-    "title": "Sie haben Fragen?",
+  "faqs": {
+    "title": "Questions?",
     "button": "FAQs",
+    "claim": "You have another question?",
+    "cta": "Contact us",
+    "link": "mailto:media@gesund-zusammen.de",
     "content": [
       {
-        "title": "Über Uns",
-        "content": "Wir sind eine breite Allianz deutscher Tech-Unternehmen, wollen Gesellschaft, Politik und Wirtschaft aktiv dabei helfen, COVID-19 mit digitalen Lösungen einzudämmen. Dafür bauen wir auf eine der wichtigsten Ressourcen, die der Welt heute zur Verfügung steht: Information."
+        "title": "About us",
+        "content": "We as a broad alliance of German Tech companies, want to actively help society, politics and economy to contain COVID-19 with digital solutions. To achieve this, we are building on one of the most important resources available to the world today: Information."
       },
       {
-        "title": "Wieso Gesund-Zusammen?",
-        "content": "Wir bringen die Ressourcen der Digital Wirtschaft zusammen - um aktiv unseren Beitrag zu leisten."
+        "title": "Why GesundZusammen?",
+        "content": "In order to contain COVID-19, a worldwide competition of ideas is emerging, significantly accelerated by the tech industry and others. We are not only bringing together the resources and capabilities of the German digital economy. We also seek and promote open exchange with other digital initiatives so that the ideas with the greatest potential can prevail."
       },
       {
-        "title": "Was wollt ihr erreichen?",
-        "content": "Daten ermöglichen es uns, gemeinsam zu forschen, Menschen zu warnen, Leben zu retten. Und doch ist eine flächendeckende Datennutzung nicht risikolos: Angesichts der Krise mehren sich die Stimmen, Grundrechte zum Wohle der Gesundheit zu opfern. Gemeinsam werden wir den Beweis erbringen: Wir können beides haben – Infektionsschutz und Datenschutz."
+        "title": "What is your goal?",
+        "content": "Data enables us to do research together, warn people, save lives. And yet the widespread use of data is not without risk: in the face of the crisis, there are increasing voices calling for fundamental rights to be sacrificed for the benefit of health. Together we will prove the point: We can have both infection control and privacy."
       },
       {
-        "title": "Sucht ihr nach weiteren Partner?",
-        "content": "Wir sind immer offen für weitere Partner um die Mission nach vorne zu bringen."
+        "title": "Are you looking for more partners?",
+        "content": "We are always open to other partners who would like to contribute their skills and resources to protect the health of society."
       },
       {
-        "title": "Wie steht ihr zur Arbeit von Gesundheitssystem, Ärzten und Pflegepersonal?",
-        "content": "Wir bewundern und unterstützen die Arbeit aller im Gesundheitssystem. "
+        "title": "What do you think about the work of the health system, doctors and nursing staff?",
+        "content": "We admire and support the work of everyone in the health system. This is why we want to contribute together to improving their work situation and the data basis of their daily decisions through technology."
       },
       {
-        "title": "Unterstützt ihr digitale Tools auch finanziell aus der Initiative?",
-        "content": "Wir versuchen teilweise spezifische Digitale Tools unkompliziert mit Ressourcen schneller nach vorne zu bringen."
+        "title": "Do you support digital tools also financially from the initiative?",
+        "content": "Our most valuable resource is our competent employees working in agile teams. Putting them at the service of the community now is our contribution for overcoming this crisis. Do you have a problem you want to solve? Please contact us."
       }
     ],
-    "contact": "Für weitere Fragen und stellvertretenden Kontakt, kontaktieren sie bitte: Solveig Rathenow <solveig.rathenow@finleap.com> "
+    "contact": "For more questions, please contact: Solveig Rathenow <media@gesund-zusammen.de>"
   },
   "press": {
     "title": "Press Contact",
+    "claim": "You have another question?",
+    "cta": "Contact us",
+    "link": "mailto:media@gesund-zusammen.de",
     "pageHeader": "Reach out to us",
     "pressContactName": "Solveigh Rathenow",
     "pressContactTitle": "Head of Venture Communications",
@@ -86,7 +111,19 @@
     "downloadLogo": "Download Logo",
     "resources": "Resources",
     "resourcesLine1": "Download the GesundZusammen logo in various formats.",
-    "resourcesLine2": "Includes EPS, JPG, and PNG formats. For digital and print."
+    "resourcesLine2": "Includes EPS, JPG, and PNG formats. For digital and print.",
+    "release": "Press Release",
+    "releaseLine1": "Download the GesundZusammen Press Release and Partner Map.",
+    "releaseTitle": "\"Gesund-Zusammen\": Tech coalition formed to combat Covid-19",
+    "releaseHrefPDF": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.pdf",
+    "releaseHrefImage": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.png",
+    "releaseHrefURL": "https://finleap.pr.co/187535-gesund-zusammen-tech-coalition-formed-to-combat-covid-19/"
+  },
+  "newsletter": {
+    "title": "Subscribe to our Newsletter",
+    "content": "We will keep you posted about new tools, dashboards, initiatives etc.",
+    "inputPlaceholder": "E-Mail",
+    "cta": "Subscribe"
   },
   "footer": {
     "title": "Sharing is caring",
@@ -94,6 +131,7 @@
     "shareLink": "Share our link",
     "shareVia": "Or share via",
     "copy": "Copy",
+    "copied": "Copied",
     "nav": {
       "privacy": "Privacy Policy",
       "vulnerability": "Report Vulnerability",
