@@ -1,4 +1,4 @@
-# finleap ce frontend
+# gesundZusammen website
 
 ## Prerequisites
 
