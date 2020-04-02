@@ -95,7 +95,8 @@
       "description": {
         "de": "Coronavirus in Deutschland: aktuelle Statistiken zu Corona und wie erkenne ich eine mögliche Infektion",
         "en": "Coronavirus in Germany: current statistics on corona and how to recognize a possible infection"
-      }
+      },
+      "global": false
     },
     {
       "name": "CovApp der Charité - Handlungsempfehlungen und Informationen zum Coronavirus",
@@ -168,6 +169,16 @@
       "global": false
     },
     {
+      "name": "Online Befund für COVID-19 Ergebnisse",
+      "link": "https://www.doctorbox.de/covid19.jsp",
+      "category": "digital_tools",
+      "description": {
+        "de": "Die App unterstützt bei der Online-Befundabfrage für COVID-19 Test-Ergebnisse.",
+        "en": "The app supports an online query for COVID-19 test results."
+      },
+      "global": false
+    },
+    {
       "name": "VirusAssist App",
       "link": "https://apps.apple.com/de/app/virusassist/id1501096154",
       "category": "digital_tools",
@@ -176,7 +187,7 @@
         "en": "Provides current information about the virus including news and landscape of infections"
       },
       "global": true
-    },
+    },  
     {
       "name": "COVID Symptom Tracker (UK)",
       "link": "https://covid.joinzoe.com/",
@@ -238,6 +249,26 @@
       "global": true
     },
     {
+      "name": "Contact Tracing App (PEPP-PT)",
+      "link": "https://www.pepp-pt.org/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Pan-European Privacy-Preserving Proximity Tracing (PEPP-PT) ermöglicht es, neue Übertragungsketten von SARS-CoV-2 schnell und effektiv zu unterbrechen, indem potenziell gefährdete Personen informiert werden.",
+        "en": "Pan-European Privacy-Preserving Proximity Tracing (PEPP-PT) makes it possible to interrupt new chains of SARS-CoV-2 transmission rapidly and effectively by informing potentially exposed people."
+      },
+      "global": true
+    },        
+    {
+      "name": "Contact Tracing App (Europe)",
+      "link": "https://www.boniglobal.com/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Die App protokolliert die sozialen Interaktionen um frühstmöglich auf eine mögliche Infektion hinzuweisen falls eine Interaktion mit einer - potenziell - COVID-19 positiven Person stattfand.",
+        "en": "The app logs the social interactions and can indicate a possible infection as early as possible when an interaction with a - potentially - COVID-19 positive person has taken place."
+      },
+      "global": true
+    },    
+    {
       "name": "Selfapy",
       "link": "https://www.selfapy.de/",
       "category": "digital_consultation",
@@ -294,6 +325,26 @@
       "description": {
         "de": "CompuGroup Medical (CGM) stellt Ihre Software für die Durchführung von Video-Sprechstunden kostenlos zur Verfügung.",
         "en": "CompuGroup Medical (CGM) provides clickdoc video consultation to all doctors, psychotherapists, midwives and healthcare professionals free of charge."
+      },
+      "global": false
+    },
+    {
+      "name": "App für Krankenhäuser und Patienten",
+      "link": "https://www.andaman7.com/en/covid-19",
+      "category": "digital_tools",
+      "description": {
+        "de": "Andaman 7 stellt ein kostenloses In-App-Pandemie-Modul (Triage, Selbsttest und Datensammlung), um Fachkräfte und Krankenhäuser bei der Bewältigung der COVID-19-Krise zu unterstützen.",
+        "en": "Andaman 7 provides a free in-app pandemic module that includes a triage, self-test and data collection to help healthcare professionals and hospitals to through the COVID-19 crisis."
+      },
+      "global": false
+    },
+    {
+      "name": "Effiziente Forschungssoftware zur Pandemiebekämpfung ",
+      "link": "	https://datadesk.de/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Kostenfreie Nutzung der Datdesk Software für COVID-19-bezogene Forschungsthemen zur Beschleunigung der Forschung durch die Bereitstellung einer einfachen Datenerfassungs- und Analyseplattform.",
+        "en": "Free use of the Datadesk software for COVID-19 related research topics. The software empowers to speed up research by providing an easy data capture and analytics platform.."
       },
       "global": false
     },
@@ -507,7 +558,7 @@
       },
       "global": false
     },
-        {
+    {
       "name": "Die 20 Besten Projekte gegen Corona beim Hackathon der Bundesregierung #WirVsVirus",
       "link": "https://www.bundesregierung.de/breg-de/themen/coronavirus/hackathon-ehrung-1738080",
       "category": "hackathons",
@@ -516,7 +567,7 @@
         "en": "Learn more about the winning ideas to help tackle the Corona pandemic."
       },
       "global": false
-    },
+    }, 
     {
       "name": "Mar 25-27, 2020: Shopware COVID-19 Hackathon",
       "link": "https://www.shopware.com/en/news/shopware-hosts-covid-19-hackathon/",
@@ -707,6 +758,26 @@
       },
       "global": true
     },
+      {
+      "name": "Scoutbee (US)",
+      "link": "https://scoutbee.com/",
+      "category": "initiatives",
+      "description": {
+        "de": "Die Lieferantensuche-Plattform bietet ein kostenfreies Tool an, das Unternehmen dabei hilft, Lieferanten für dringend benötigte medizinische Geräte und Materialien, wie z.B. chirurgische Masken, Schutzanzüge, Tupfer und Schläuche, Hände Desinfektionsmittel usw., 75% schneller zu finden.",
+        "en": "The supplier discovery platform, has rolled out a free tool to help organizations find suppliers 75% faster for critically needed medical equipment and supplies, such as surgical masks, hazmat suits, swabs and tubes, hand sanitizers etc."
+      },
+      "global": true
+    },
+    {
+      "name": "Soforthilfen & Kredite",
+      "link": "https://www.openpetition.de/petition/online/seiteanseite-soforthilfen-kredite-fuer-kleine-unternehmen-freiberufler-selbstaendige-startups",
+      "category": "initiatives",
+      "description": {
+        "de": "Seite an Seite steht Penta mit kleinen Unternehmen, Freiberufler, Selbstständige und Start-ups um deren Weiterbestand zu sichern.",
+        "en": "Penta stands side by side with small companies, freelancers, self-employed and start-ups to ensure their continued existence."
+      },
+      "global": true
+    },        
     {
       "name": "Kontakt Tagebuch (Österreich)",
       "link": "https://www.roteskreuz.at/site/faq-app-stopp-corona/",
@@ -826,16 +897,6 @@
         "en": "SARS-CoV-2/COVID-19: Collected Best Practices of the German Startup Scene"
       },
       "global": false
-    },
-    {
-      "name": "Pan-European Privacy-Preserving Proximity Tracing",
-      "link": "https://www.pepp-pt.org/",
-      "category": "digital_tools",
-      "description": {
-        "de": "Pan-European Privacy-Preserving Proximity Tracing (PEPP-PT) makes it possible to interrupt new chains of SARS-CoV-2 transmission rapidly and effectively by informing potentially exposed people.",
-        "en": "Pan-European Privacy-Preserving Proximity Tracing (PEPP-PT) makes it possible to interrupt new chains of SARS-CoV-2 transmission rapidly and effectively by informing potentially exposed people."
-      },
-      "global": true
     }
   ]
 }
