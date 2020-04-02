@@ -1,0 +1,49 @@
+name: Deploy to Staging
+
+on:
+  push:
+    branches:
+      - source
+
+jobs:
+  build-and-deploy-staging:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        with:
+          persist-credentials: false
+      - name: Configure AWS credentials
+        id: configure-credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-central-1
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          yarn install
+          yarn build
+
+      - name: Add version info 📄
+        id: version-info
+        run: |
+          node version-info-generator.js --branch=master --commit=$GITHUB_SHA --build=$GITHUB_RUN_NUMBER > build/version.json
+
+      - name: Upload to Staging S3 bucket
+        id: upload-to-s3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: eu-central-1
+          AWS_S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
+        run: |
+          bash s3_sync.sh --bucket=$AWS_S3_BUCKET_NAME --source-folder=build
+      - name: Invalidate Cloudfront distribution
+        run: |
+          aws cloudfront create-invalidation --distribution-id $STAGING_AWS_CLOUDFRONT_DIST --paths "/*"
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          STAGING_AWS_CLOUDFRONT_DIST: ${{ secrets.STAGING_AWS_CLOUDFRONT_DIST }}

@@ -1,12 +1,11 @@
-name: Build and Deploy
+name: Build and Deploy Production
 
 on:
-  push:
-    branches:
-      - source
+  release:
+    type: published
 
 jobs:
-  build-and-deploy:
+  build-and-deploy-production:
     runs-on: ubuntu-latest
 
     steps:
