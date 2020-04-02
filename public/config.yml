@@ -1,0 +1,41 @@
+backend:
+  name: github
+  repo: sebbsan/gesund-zusammen.github.io
+publish_mode: editorial_workflow
+media_folder: "src/images"
+public_folder: "/public"
+collections:
+  - name: "Content"
+    label: "Content"
+    files:
+      - label: "Frequently Asked Questions"
+        name: "faqs"
+        file: "src/data/faq.json"
+        create: true
+        filter: { field: "language", value: "en" }
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Button, name: button, widget: markdown }
+          - {
+              label: "Language",
+              name: "language",
+              widget: "select",
+              options: ["en", "de"],
+            }
+          - label: Questions
+            name: questions
+            widget: list
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Content", name: "content", widget: "markdown" }
+  - name: "pages" # Used in routes, e.g., /admin/collections/blog
+    label: "Pages" # Used in the UI
+    files:
+      - label: "privacy"
+        name: "Privacy Page"
+        file: "src/data/privacy.json"
+        create: true # Allow users to create new documents in this collection
+        slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+        fields: # The fields for each document, usually in front matter
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "content", widget: "markdown" }
