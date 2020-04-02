@@ -75,10 +75,6 @@ resource "aws_cloudfront_distribution" "cdn" {
     forwarded_values {
       query_string = true
       headers      = ["Origin", "Access-Control-Request-Headers", "Access-Control-Request-Method"]
-
-      cookies {
-        forward = "none"
-      }
     }
 
     viewer_protocol_policy = "redirect-to-https"
@@ -86,7 +82,12 @@ resource "aws_cloudfront_distribution" "cdn" {
     default_ttl            = 3600
     max_ttl                = 86400
   }
-
+  custom_error_response {
+    error_caching_min_ttl = 3000
+    error_code            = 404
+    response_code         = 200
+    response_page_path    = "/index.html"
+  }
   price_class = "PriceClass_100"
 
   restrictions {
