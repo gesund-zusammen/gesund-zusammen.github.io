@@ -497,6 +497,16 @@
       },
       "global": false
     },
+        {
+      "name": "Die 20 Besten Projekte gegen Corona beim Hackathon der Bundesregierung #WirVsVirus",
+      "link": "https://www.bundesregierung.de/breg-de/themen/coronavirus/hackathon-ehrung-1738080",
+      "category": "hackathons",
+      "description": {
+        "de": "Erfahrt mehr zu den geehrten Ideen die bei der Bewältigung der Corona-Pandemie helfen sollen.",
+        "en": "Learn more about the winning ideas to help tackle the Corona pandemic."
+      },
+      "global": false
+    }, 
     {
       "name": "Mar 25-27, 2020: Shopware COVID-19 Hackathon",
       "link": "https://www.shopware.com/en/news/shopware-hosts-covid-19-hackathon/",
