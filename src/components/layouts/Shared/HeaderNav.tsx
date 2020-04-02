@@ -2,12 +2,11 @@ import React from "react";
 import { Switch } from "@material-ui/core";
 import styled, { css, AnyStyledComponent } from "styled-components";
 import { Link } from "react-router-dom";
-
-import { translated } from "../../../util";
+import { withTranslation, WithTranslation } from "react-i18next";
 
 import Logo from "../../../images/logo.svg";
 
-interface IHeaderProps {
+interface IHeaderProps extends WithTranslation {
   lang: "de" | "en";
   langChangeCallback: (lang: "de" | "en") => void;
 }
@@ -25,13 +24,13 @@ class HeaderNav extends React.Component<IHeaderProps, {}> {
         </Link>
         <HeaderNavItems>
           <HeaderNavLinkItem to={`/${this.props.lang}/initiatives`}>
-            {translated(this.props.lang).header.nav.initiatives}
+            {this.props.t("header.nav.initiatives")}
           </HeaderNavLinkItem>
           <HeaderNavLinkItem to={`/${this.props.lang}/partners`}>
-            {translated(this.props.lang).header.nav.supporters}
+            {this.props.t("header.nav.supporters")}
           </HeaderNavLinkItem>
           <HeaderNavLinkItem to={`/${this.props.lang}/faq`}>
-            {translated(this.props.lang).header.nav.faqs}
+            {this.props.t("header.nav.faqs")}
           </HeaderNavLinkItem>
           <HeaderLangSwitch>
             <StyledSwitch
@@ -119,4 +118,4 @@ const LangDisplay: AnyStyledComponent = styled.span`
   text-transform: uppercase;
 `;
 
-export default HeaderNav;
+export default withTranslation()(HeaderNav);
