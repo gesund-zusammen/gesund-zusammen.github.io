@@ -95,7 +95,8 @@
       "description": {
         "de": "Coronavirus in Deutschland: aktuelle Statistiken zu Corona und wie erkenne ich eine mögliche Infektion",
         "en": "Coronavirus in Germany: current statistics on corona and how to recognize a possible infection"
-      }
+      },
+      "global": false
     },
     {
       "name": "CovApp der Charité - Handlungsempfehlungen und Informationen zum Coronavirus",
@@ -167,7 +168,6 @@
       },
       "global": false
     },
-        },
     {
       "name": "Online Befund für COVID-19 Ergebnisse",
       "link": "https://www.doctorbox.de/covid19.jsp",
@@ -248,7 +248,7 @@
       },
       "global": true
     },
-       {
+    {
       "name": "Contact Tracing App (PEPP-PT)",
       "link": "https://www.pepp-pt.org/",
       "category": "digital_tools",
@@ -258,7 +258,7 @@
       },
       "global": true
     },        
-      {
+    {
       "name": "Contact Tracing App (Europe)",
       "link": "https://www.boniglobal.com/",
       "category": "digital_tools",
@@ -318,20 +318,20 @@
       },
       "global": false
     },
-        {
+    {
       "name": "App für Krankenhäuser und Patienten",
       "link": "https://www.andaman7.com/en/covid-19",
-      "category": "digital_tool",
+      "category": "digital_tools",
       "description": {
         "de": "Andaman 7 stellt ein kostenloses In-App-Pandemie-Modul (Triage, Selbsttest und Datensammlung), um Fachkräfte und Krankenhäuser bei der Bewältigung der COVID-19-Krise zu unterstützen.",
         "en": "Andaman 7 provides a free in-app pandemic module that includes a triage, self-test and data collection to help healthcare professionals and hospitals to through the COVID-19 crisis."
       },
       "global": false
     },
-            {
+    {
       "name": "Effiziente Forschungssoftware zur Pandemiebekämpfung ",
       "link": "	https://datadesk.de/",
-      "category": "digital_tool",
+      "category": "digital_tools",
       "description": {
         "de": "Kostenfreie Nutzung der Datdesk Software für COVID-19-bezogene Forschungsthemen zur Beschleunigung der Forschung durch die Bereitstellung einer einfachen Datenerfassungs- und Analyseplattform.",
         "en": "Free use of the Datadesk software for COVID-19 related research topics. The software empowers to speed up research by providing an easy data capture and analytics platform.."
@@ -548,7 +548,7 @@
       },
       "global": false
     },
-        {
+    {
       "name": "Die 20 Besten Projekte gegen Corona beim Hackathon der Bundesregierung #WirVsVirus",
       "link": "https://www.bundesregierung.de/breg-de/themen/coronavirus/hackathon-ehrung-1738080",
       "category": "hackathons",
@@ -758,7 +758,7 @@
       },
       "global": true
     },
-         {
+    {
       "name": "Soforthilfen & Kredite",
       "link": "https://www.openpetition.de/petition/online/seiteanseite-soforthilfen-kredite-fuer-kleine-unternehmen-freiberufler-selbstaendige-startups",
       "category": "initiatives",
