@@ -36,6 +36,7 @@ import LogoMyData from "../../images/partners/mydata.png";
 import LogoFreiraum from "../../images/partners/freiraum.jpg";
 import LogoStoryMachine from "../../images/partners/storymachine.png";
 import LogoJoliBerlin from "../../images/partners/joliberlin.jpg";
+import LogoTheDelta from "../../images/partners/thedelta.jpg";
 
 class Partners extends React.PureComponent<WithTranslation, {}> {
   render = () => {
@@ -220,6 +221,10 @@ class Partners extends React.PureComponent<WithTranslation, {}> {
             spacing={4}
           >
             <PartnerCard
+              name="The Delta"
+              image={LogoTheDelta}
+              link="https://www.thedelta.io/"
+            /><PartnerCard
               name="fischerAppelt"
               image={LogoFischerAppelt}
               link="https://www.fischerappelt.de/"
