@@ -1,14 +1,13 @@
 import React from "react";
 import { Box, Typography, Grid, Hidden } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
-
-import { translated } from "../../../util";
+import { withTranslation, WithTranslation } from "react-i18next";
 
 import HeaderNav from "../Shared/HeaderNav";
 
 import IlluHeader from "../../../images/illu_header.svg";
 
-interface ILandingHeaderProps {
+interface ILandingHeaderProps extends WithTranslation {
   lang: "de" | "en";
   langChangeCallback: (lang: "de" | "en") => void;
 }
@@ -34,15 +33,14 @@ class LandingHeader extends React.PureComponent<ILandingHeaderProps, {}> {
                 <Typography
                   variant="h1"
                   dangerouslySetInnerHTML={{
-                    __html: translated(this.props.lang).header.content.landing
-                      .title,
+                    __html: this.props.t("header.content.landing.title"),
                   }}
                 ></Typography>
                 <Typography
                   variant="body1"
                   style={{ fontFamily: "inherit", color: "#ffffff" }}
                 >
-                  {translated(this.props.lang).header.content.landing.content}
+                  {this.props.t("header.content.landing.content")}
                 </Typography>
               </HeaderContent>
             </Grid>
@@ -75,4 +73,4 @@ const HeaderIllustration: AnyStyledComponent = styled.img`
   width: 100%;
 `;
 
-export default LandingHeader;
+export default withTranslation()(LandingHeader);
