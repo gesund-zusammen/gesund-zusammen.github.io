@@ -41,7 +41,7 @@ class HeaderNav extends React.Component<IHeaderProps, {}> {
               color="primary"
               name="langSwitch"
             ></StyledSwitch>
-            <LangDisplay>{this.props.lang}</LangDisplay>
+            <LangDisplay>{this.props.lang === "de" ? "en" : "de"}</LangDisplay>
           </HeaderLangSwitch>
         </HeaderNavItems>
       </>
