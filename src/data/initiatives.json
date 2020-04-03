@@ -55,12 +55,12 @@
         "en": "Research & Government Sites",
         "de": "Forschungs- und Regierungsseiten"
       }
-    }
-        {
-      "slug": "waerables_and_IoT",
+    },
+    {
+      "slug": "wearables_and_iot",
       "name": {
-        "en": "Research & Government Sites",
-        "de": "Forschungs- und Regierungsseiten"
+        "en": "Wearables & IoT",
+        "de": "Wearables & IoT"
       }
     }
   ],
@@ -274,7 +274,7 @@
         "en": "The smart way of social distancing: Check online how many people are shopping at your supermarket or pharmacy at the moment to avoid crowds."
       },
       "global": true
-    },   
+    },
     {
       "name": "Contact Tracing App (Europe)",
       "link": "https://www.boniglobal.com/",
@@ -374,7 +374,7 @@
         "en": "With PICC, physicians, hospitals, and many other stakeholders can share their knowledge and solutions simultaneously in 26 languages. The software provides directly validated and actionable solutions and is a symbiosis between artificial and human intelligence."
       },
       "global": false
-    }, 
+    },
       {
       "name": "Zeitlicher Verlauf der Corona SARS Cov. 19 Pandemie in Deutschland",
       "link": "http://risklayer-explorer.com/event/100/detail",
@@ -384,7 +384,7 @@
         "en": "The maps offer a quick overview of the spread of the virus in Germany and worldwide, and risk areas down to the district level. "
       },
       "global": true
-    },   
+    },
     {
       "name": "The Coronavirus App",
       "link": "https://coronavirus.app/map",
@@ -794,7 +794,7 @@
         "en": "The booking system makes COVID19 tests faster and safer for everyone due to the elimination of testing waiting time for infected and non-infected ones. Winners of the #WirvsVirus Hackathon."
       },
       "global": true
-    },   
+    },
      {
       "name": "Epitrack - Entlastung der Gesundheitsämter",
       "link": "Epitrack.de",
@@ -804,7 +804,7 @@
         "en": "Employees in health authorities are being relieved in the administration of quarantine and isolation measures with an online-symptom diary. An idea of the #WirvsVirus Hackathon."
       },
       "global": true
-    },    
+    },
      {
       "name": "Dr. Coronata",
       "link": "https://devpost.com/software/dr-coronata",
@@ -814,7 +814,7 @@
         "en": "The app measures the corona infection risk on a local level and displays it as a heat map, down to the neighborhood level. Idea from the Devpost Hackathon."
       },
       "global": true
-    },   
+    },
      {
       "name": "Proof of Health (US)",
       "link": "https://estimote.com/wearable/",
@@ -835,16 +835,16 @@
       },
       "global": true
     },
-       {
+    {
       "name": "Zensors",
-      "link": "	https://www.zensors.com/",
+      "link": "https://www.zensors.com/",
       "category": "intiatives",
       "description": {
         "de": "Zensors stellt seine Plattform Flughäfen und anderen Orten, die systematische Maßnahmen gegen das Infektionsrisiko ergreifen wollen, kostenlos zur Verfügung.",
         "en": "Zensors is making its platform available for free to airports and other places desperate to take systematic measures against infection."
       },
       "global": true
-    },   
+    },
     {
       "name": "The Color COVID-19 Testing Initiative (US)",
       "link": "https://www.color.com/covid",
@@ -984,7 +984,7 @@
         "en": "Help locally, buy vouchers and strengthen the shop around the corner. Together we can help and support your favourite shops!"
       },
       "global": true
-    },  
+    },
     {
       "name": "Amboss - Medical Knowledge Distilled",
       "link": "https://www.amboss.com/us/knowledge/COVID-19_(Coronavirus_disease_2019)",
