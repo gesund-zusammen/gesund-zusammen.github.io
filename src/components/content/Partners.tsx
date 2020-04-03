@@ -38,6 +38,8 @@ import LogoStoryMachine from "../../images/partners/storymachine.png";
 import LogoJoliBerlin from "../../images/partners/joliberlin.jpg";
 import LogoTheDelta from "../../images/partners/thedelta.png";
 import LogoAtaiLife from "../../images/partners/atailifesciences.png";
+import LogoHeartBeatLabs from "../../images/partners/heartbeatlabs.svg";
+import LogoPAIRFinance from "../../images/partners/pairfinance.png";
 
 class Partners extends React.PureComponent<WithTranslation, {}> {
   render = () => {
@@ -149,6 +151,17 @@ class Partners extends React.PureComponent<WithTranslation, {}> {
               image={LogoDoctorly}
               link="https://www.doctorly.de/"
             />
+            <PartnerCard
+              name="PAIR Finance"
+              image={LogoPAIRFinance}
+              link="https://www.pairfinance.com/"
+            />
+            <PartnerCard
+              name="The Delta"
+              image={LogoTheDelta}
+              link="https://www.thedelta.io/"
+              imageXL={true}
+            />
           </Grid>
         </Box>
         <Typography variant="h2">
@@ -184,6 +197,11 @@ class Partners extends React.PureComponent<WithTranslation, {}> {
               link="https://usercentrics.com/"
             />
             <PartnerCard
+              name="CMS"
+              image={LogoCMSLaw}
+              link="https://cms.law/"
+            />
+            <PartnerCard
               name="Bird & Bird"
               image={LogoTwoBirds}
               link="https://www.twobirds.com/"
@@ -196,11 +214,6 @@ class Partners extends React.PureComponent<WithTranslation, {}> {
               link="https://www.reedsmith.com/"
               color="#3d3c3c"
               nameColorInverted={true}
-            />
-            <PartnerCard
-              name="CMS"
-              image={LogoCMSLaw}
-              link="https://cms.law/"
             />
             <PartnerCard
               name="SKW Schwarz"
@@ -223,6 +236,13 @@ class Partners extends React.PureComponent<WithTranslation, {}> {
             spacing={4}
           >
             <PartnerCard
+              name="HEARTBEAT LABS"
+              image={LogoHeartBeatLabs}
+              color="#002f4e"
+              nameColorInverted={true}
+              link="https://heartbeatlabs.com/"
+            />
+            <PartnerCard
               name="ATAI Life Sciences"
               image={LogoAtaiLife}
               link="https://www.atai.life/"
@@ -241,12 +261,6 @@ class Partners extends React.PureComponent<WithTranslation, {}> {
             alignItems="center"
             spacing={4}
           >
-            <PartnerCard
-              name="The Delta"
-              image={LogoTheDelta}
-              link="https://www.thedelta.io/"
-              imageXL={true}
-            />
             <PartnerCard
               name="fischerAppelt"
               image={LogoFischerAppelt}
