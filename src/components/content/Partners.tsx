@@ -37,6 +37,7 @@ import LogoFreiraum from "../../images/partners/freiraum.jpg";
 import LogoStoryMachine from "../../images/partners/storymachine.png";
 import LogoJoliBerlin from "../../images/partners/joliberlin.jpg";
 import LogoTheDelta from "../../images/partners/thedelta.png";
+import LogoAtaiLife from "../../images/partners/atailifesciences.png";
 
 class Partners extends React.PureComponent<WithTranslation, {}> {
   render = () => {
@@ -207,6 +208,25 @@ class Partners extends React.PureComponent<WithTranslation, {}> {
               color="black"
               nameColorInverted={true}
               link="https://www.skwschwarz.de/"
+            />
+          </Grid>
+        </Box>
+        <Typography variant="h2">
+          {this.props.t("partners.type.health")}
+        </Typography>
+        <Box paddingTop={4} paddingBottom={4}>
+          <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+            spacing={4}
+          >
+            <PartnerCard
+              name="ATAI Life Sciences"
+              image={LogoAtaiLife}
+              link="https://www.atai.life/"
+              imageXL={false}
             />
           </Grid>
         </Box>

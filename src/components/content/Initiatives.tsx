@@ -203,8 +203,8 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
             this.state.globalSelected,
           ).length > this.state.listLength && (
             <ShowMoreButton
-              variant="contained"
               color="primary"
+              variant="outlined"
               disableFocusRipple={true}
               onClick={this.handleShowMore}
             >
@@ -312,9 +312,8 @@ const InitiativeCardContent: AnyStyledComponent = styled(CardContent)`
 const ShowMoreButton: AnyStyledComponent = styled(Button)`
   && {
     display: block;
-    background-color: #0a6eaa;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 500;
     text-transform: none;
     text-align: center;
     border-radius: 4px;
@@ -324,6 +323,11 @@ const ShowMoreButton: AnyStyledComponent = styled(Button)`
 
     @media (min-width: 600px) {
       font-size: 1.4rem;
+    }
+
+    &:hover {
+      color: #ffffff;
+      background-color: #003269 !important;
     }
   }
 `;

@@ -64,11 +64,11 @@ const PartnerButton: AnyStyledComponent = styled(Button)`
     display: block;
     width: 100%;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: none;
     text-align: center;
     border-radius: 4px;
-    padding: 1rem;
+    padding: 0.8rem;
     margin: 2rem auto 0 auto;
 
     @media (min-width: 600px) {
