@@ -56,6 +56,13 @@
         "de": "Forschungs- und Regierungsseiten"
       }
     }
+        {
+      "slug": "waerables_and_IoT",
+      "name": {
+        "en": "Research & Government Sites",
+        "de": "Forschungs- und Regierungsseiten"
+      }
+    }
   ],
   "initiatives": [
     {
@@ -249,15 +256,25 @@
       "global": true
     },
     {
-      "name": "Contact Tracing App (PEPP-PT)",
+      "name": "Contact Tracing App by PEPP-PT (Europe)",
       "link": "https://www.pepp-pt.org/",
       "category": "digital_tools",
       "description": {
-        "de": "Pan-European Privacy-Preserving Proximity Tracing (PEPP-PT) ermöglicht es, neue Übertragungsketten von SARS-CoV-2 schnell und effektiv zu unterbrechen, indem potenziell gefährdete Personen informiert werden.",
-        "en": "Pan-European Privacy-Preserving Proximity Tracing (PEPP-PT) makes it possible to interrupt new chains of SARS-CoV-2 transmission rapidly and effectively by informing potentially exposed people."
+        "de": "Die Initiative verfolgt 'einen vollständig die Privatsphäre wahrenden Ansatz', um Coronavirus-Infektionsketten über die Grenzen Europas hinweg zu verfolgen und neue Ketten schnell und effektiv zu unterbrechen, indem potentiell exponierte Personen informiert werden.",
+        "en": "The initiative follows 'a fully privacy-preserving approach' to tracking coronavirus infection chains across borders in Europe and to interrupt new chains rapidly and effectively by informing potentially exposed people."
       },
       "global": true
     },
+        {
+      "name": "CoroNow.app",
+      "link": "https://coronow.ch/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Der clevere Weg der sozialen Distanzierung: Online-Check wie viele Personen im Supermarkt oder in der Apotheke einkaufen sind um Menschenmassen zu vermeiden.",
+        "en": "The smart way of social distancing: Check online how many people are shopping at your supermarket or pharmacy at the moment to avoid crowds."
+      },
+      "global": true
+    },   
     {
       "name": "Contact Tracing App (Europe)",
       "link": "https://www.boniglobal.com/",
@@ -329,12 +346,12 @@
       "global": false
     },
     {
-      "name": "App für Krankenhäuser und Patienten",
+      "name": "Andaman7 für Krankenhäuser und Patienten",
       "link": "https://www.andaman7.com/en/covid-19",
       "category": "digital_tools",
       "description": {
-        "de": "Andaman 7 stellt ein kostenloses In-App-Pandemie-Modul (Triage, Selbsttest und Datensammlung), um Fachkräfte und Krankenhäuser bei der Bewältigung der COVID-19-Krise zu unterstützen.",
-        "en": "Andaman 7 provides a free in-app pandemic module that includes a triage, self-test and data collection to help healthcare professionals and hospitals to through the COVID-19 crisis."
+        "de": "Die App stellt ein kostenloses Pandemie-Modul (Triage, Selbsttest und Datensammlung) zur Verfügung, um die Kommunikation zwischen Patienten und Krankenhäuser zu vereinfachen und bei der Bewältigung der COVID-19-Krise zu unterstützen.",
+        "en": "The app provides a free pandemic module (triage, self-test and data collection) to ease the communication between patients and actors of the health sector through the COVID-19 crisis."
       },
       "global": false
     },
@@ -344,10 +361,30 @@
       "category": "digital_tools",
       "description": {
         "de": "Kostenfreie Nutzung der Datdesk Software für COVID-19-bezogene Forschungsthemen zur Beschleunigung der Forschung durch die Bereitstellung einer einfachen Datenerfassungs- und Analyseplattform.",
-        "en": "Free use of the Datadesk software for COVID-19 related research topics. The software empowers to speed up research by providing an easy data capture and analytics platform.."
+        "en": "Free use of the Datadesk software for COVID-19 related research topics. The software empowers to speed up research by providing an easy data capture and analytics platform."
       },
       "global": false
     },
+        {
+      "name": "Effizientes Wissensmanagement zur Pandemiebekämpfung ",
+      "link": "https://krs.solutions/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Mit PICC können Mediziner, Krankenhäuser, und viele weitere Akteure in 26 Sprachen gleichzeitig ihr Wissen und ihre Lösungen teilen. Die Software stellt validierte und handlungsfähige Lösungen zur Verfügung - eine Symbiose zwischen künstlicher und menschlicher Intelligenz.",
+        "en": "With PICC, physicians, hospitals, and many other stakeholders can share their knowledge and solutions simultaneously in 26 languages. The software provides directly validated and actionable solutions and is a symbiosis between artificial and human intelligence."
+      },
+      "global": false
+    }, 
+      {
+      "name": "Zeitlicher Verlauf der Corona SARS Cov. 19 Pandemie in Deutschland",
+      "link": "http://risklayer-explorer.com/event/100/detail",
+      "category": "infection_tracking",
+      "description": {
+        "de": "Die Karten bieten einen schnellen Überblick über die Ausbreitung des Virus in Deutschland und weltweit sowie über die Risikogebiete bis hinunter auf die Kreisebene.",
+        "en": "The maps offer a quick overview of the spread of the virus in Germany and worldwide, and risk areas down to the district level. "
+      },
+      "global": true
+    },   
     {
       "name": "The Coronavirus App",
       "link": "https://coronavirus.app/map",
@@ -748,10 +785,70 @@
       },
       "global": false
     },
+     {
+      "name": "Sicher Test",
+      "link": "https://www.sichertest.com/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Das Buchungssystem macht COVID19-Tests für alle schneller und sicherer. Gemeinsame Wartezeiten von Infizierten & Nicht-Infizierten werden durch Test-Buchungen vermieden. Gewinner des #WirvsVirus-Hackathons.",
+        "en": "The booking system makes COVID19 tests faster and safer for everyone due to the elimination of testing waiting time for infected and non-infected ones. Winners of the #WirvsVirus Hackathon."
+      },
+      "global": true
+    },   
+     {
+      "name": "Epitrack - Entlastung der Gesundheitsämter",
+      "link": "Epitrack.de",
+      "category": "digital_tools",
+      "description": {
+        "de": "Entlastung der Mitarbeiter in Gesundheitsämtern bei der Verwaltung von Quarantäne- und Isolationsmaßnahmen durch ein Online-Symptomtagebuch. Eine Idee aus dem #WirvsVirus-Hackathon.",
+        "en": "Employees in health authorities are being relieved in the administration of quarantine and isolation measures with an online-symptom diary. An idea of the #WirvsVirus Hackathon."
+      },
+      "global": true
+    },    
+     {
+      "name": "Dr. Coronata",
+      "link": "https://devpost.com/software/dr-coronata",
+      "category": "digital_tools",
+      "description": {
+        "de": "Die App kann auf lokaler Ebene das Corona-Infektionsrisiko messen und als Heatmap auf einer Karte anzeigen, bis auf Nachbarschafts-Ebene. Idee aus dem Devpost Hackathon.",
+        "en": "The app measures the corona infection risk on a local level and displays it as a heat map, down to the neighborhood level. Idea from the Devpost Hackathon."
+      },
+      "global": true
+    },   
+     {
+      "name": "Proof of Health (US)",
+      "link": "https://estimote.com/wearable/",
+      "category": "waerables_and_IoT",
+      "description": {
+        "de": "Die Geräte ermöglichen eine Kontaktverfolgung an einer lokalen Arbeitsplatzeinrichtung. Die Absicht ist, den Arbeitgebern eine Möglichkeit zu geben eine lokale Ausbreitung einzudämmen, bevor sie zu einem übergroßen Risiko wird.",
+        "en": "The devices provide contact tracing at the level of a local workplace facility. The intention is to give employers the ability to hopefully curtail any local spread before it becomes an outsized risk."
+      },
+      "global": true
+    },
+     {
+      "name": "How we feel app (US)",
+      "link": "https://www.howwefeel.org/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Die App macht es sehr einfach zu berichten, ob du dich wohl fühlst oder nicht - wie viele Menschen in der Nähe Symptome melden, und um Wissenschaftlern und Ärzten bei der Verfolgung und Bekämpfung des Virus zu helfen.",
+        "en": "The mobile app makes it very easy to self-report whether or not you feel well, to see how many people are reporting symptoms near you and help scientists and doctors track and fight the virus."
+      },
+      "global": true
+    },
+       {
+      "name": "Zensors",
+      "link": "	https://www.zensors.com/",
+      "category": "intiatives",
+      "description": {
+        "de": "Zensors stellt seine Plattform Flughäfen und anderen Orten, die systematische Maßnahmen gegen das Infektionsrisiko ergreifen wollen, kostenlos zur Verfügung.",
+        "en": "Zensors is making its platform available for free to airports and other places desperate to take systematic measures against infection."
+      },
+      "global": true
+    },   
     {
       "name": "The Color COVID-19 Testing Initiative (US)",
       "link": "https://www.color.com/covid",
-      "category": "initiatives",
+      "category": "digital_tools",
       "description": {
         "de": "Die COVID-19-Testplattform umfasst eine integrierte Softwareplattform für Gesundheitsbehörden zur Verwaltung von Risiko-Screening, Testbestellung, Ergebnislieferung, Fallmanagement, Kontaktverfolgung und Fallberichterstattung der Gesundheitsbehörden.",
         "en": "COVID-19 testing platform including an integrated software platform for public health agencies to manage risk screening, test ordering, results delivery, case management, contact tracing, and public health agency case reporting."
@@ -878,6 +975,16 @@
       },
       "global": true
     },
+        {
+      "name": "HilfeLokal",
+      "link": "https://www.hilfelokal.de/",
+      "category": "initiatives",
+      "description": {
+        "de": "Hilf lokal, Gutschein kaufen und den Laden um die Ecke stärken. Gemeinsam können wir helfen und deine Lieblingsgeschäfte unterstützen!",
+        "en": "Help locally, buy vouchers and strengthen the shop around the corner. Together we can help and support your favourite shops!"
+      },
+      "global": true
+    },  
     {
       "name": "Amboss - Medical Knowledge Distilled",
       "link": "https://www.amboss.com/us/knowledge/COVID-19_(Coronavirus_disease_2019)",
