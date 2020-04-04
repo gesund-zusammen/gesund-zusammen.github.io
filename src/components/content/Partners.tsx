@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Grid, Typography } from "@material-ui/core";
 import { withTranslation, WithTranslation } from "react-i18next";
-import Fade from "react-reveal/Fade";
+import Fade from "react-reveal";
 
 import PartnerCard from "../common/PartnerCard";
 import CTABox from "../common/CTABox";

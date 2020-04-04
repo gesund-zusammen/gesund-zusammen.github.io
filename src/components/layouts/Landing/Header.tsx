@@ -20,13 +20,19 @@ class LandingHeader extends React.PureComponent<WithTranslation, {}> {
               <HeaderContent>
                 <Typography
                   variant="h1"
-                  dangerouslySetInnerHTML={{
-                    __html: this.props.t("header.content.landing.title"),
+                  style={{
+                    whiteSpace: "pre-line",
                   }}
-                />
+                >
+                  {this.props.t("header.content.landing.title")}
+                </Typography>
                 <Typography
                   variant="body1"
-                  style={{ fontFamily: "inherit", color: "#ffffff" }}
+                  style={{
+                    fontFamily: "inherit",
+                    color: "#ffffff",
+                    whiteSpace: "pre-line",
+                  }}
                 >
                   {this.props.t("header.content.landing.content")}
                 </Typography>

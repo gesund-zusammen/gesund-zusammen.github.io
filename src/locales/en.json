@@ -11,8 +11,8 @@
     },
     "content": {
       "landing": {
-        "title": "Protect data.<br />Save lives.",
-        "content": "Digital tools to fight Covid-19"
+        "title": "Protect data.\nSave lives.",
+        "content": "Accelerator for Digital Tools vs Covid-19 helping them getting to the public faster"
       },
       "initiatives": {
         "content": "In order to contain COVID-19, a worldwide competition of ideas is emerging, significantly accelerated by the tech industry and others. We are not only bringing together the resources and capabilities of the German digital economy. We also seek and promote open exchange with other digital initiatives so that the ideas with the greatest potential can prevail. \n\n Here you will find exciting digital initiatives and technologies from around the world - continuously updated. If you would like to add more projects to this showcase, please contact us."
@@ -20,21 +20,21 @@
     }
   },
   "main": {
-    "title": "#GesundZusammen – an open initiative led by the digital economy",
-    "content": "As broad alliance of German tech companies, we want to actively help society, politics and business to contain COVID-19 with digital solutions. We build up on one of the most important resources available to the world today: <font style=\"font-size:1.3rem; font-weight: bolder;\">Information</font>. <p>data enables us to do research together, warn people, save lives. And yet, widespread use of data is not without risk: In the face of the crisis, there are growing voices in favour of sacrificing basic rights for the good of health. Together we will prove the case: <font style=\"font-size:1.3rem; font-weight: bolder;\">we can have both - infection control and data protection.</font><p><font style=\"font-size:1. 4rem; font-weight: bolder;\">so that private things remain private.</font><br />Even in times of crisis, people's freedom and personal rights are top priority for our technology.<p><font style=\"font-size:1. 4rem; font-weight: bolder;\">To keep Germany healthy</font><br />Our solutions are designed to help protect risk groups better and relieve the burden on the healthcare system.<p><font style=\"font-size:1.4rem; font-weight: bolder;\">To get the economy moving</font><br />We want to use technology to reduce health risks in companies and boost productivity again."
+    "title": "#GesundZusammen – \nan Accelerator initiated by the digital economy",
+    "content": "As broad alliance of German tech companies, we want to actively help society, politics and business to contain COVID-19 with digital solutions. We have founded an Accelerator program that provide resources to bring promising Digital Tools to the public faster.<p><font style=\"font-size:1. 4rem; font-weight: bolder;\">So that private things remain private.</font><br />Even in times of crisis, people's freedom and personal rights are top priority for our technology.<p><font style=\"font-size:1. 4rem; font-weight: bolder;\">To keep Germany healthy</font><br />The Digital Tools supported in the Accelerator program are designed to help protect risk groups better and relieve the burden on the healthcare system.<p><font style=\"font-size:1.4rem; font-weight: bolder;\">To get the economy moving</font><br />Technology can be employed to reduce health risks in companies and help boost economic activity again."
   },
   "boxes": {
     "initiative": {
-      "title": "Agile Development",
-      "content": "As strong tech partners, we invest together in building the apps and tools our country needs right now, user-friendly, open source, fast."
+      "title": "Our Program",
+      "content": "A number of 6-10 digital projects are supported by the targeted #Gesundzusammen Accelerator program."
     },
     "support": {
-      "title": "Digital Support",
-      "content": "We support other digital initiatives with our resources to effectively improve the data situation. Contact us with ideas and needs."
+      "title": "Support System",
+      "content": "Through the contributing partners we're offering a wide range of support services from tech to marketing and institutional access to all participants."
     },
     "ecosystem": {
       "title": "Open Ecosystem",
-      "content": "We are looking forward to exchange with all other digital initiatives, to join forces and promote cooperation with regular updates."
+      "content": "We are investing into building an active Ecosystem by providing a database of all relevant Covid-19 initiatives, and other outreach activities."
     }
   },
   "partners": {

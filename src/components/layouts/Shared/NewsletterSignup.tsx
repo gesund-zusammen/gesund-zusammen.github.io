@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 import { withTranslation, WithTranslation } from "react-i18next";
-import Fade from "react-reveal/Fade";
+import Fade from "react-reveal";
 
 import IlluNewsletter from "../../../images/illu_newsletter.svg";
 

@@ -10,9 +10,17 @@ class Landing extends React.PureComponent<WithTranslation, {}> {
     return (
       <>
         <Box id="initiative" paddingBottom={4} marginTop={4}>
-          <Typography variant="h2">{this.props.t("main.title")}</Typography>
+          <Typography
+            variant="h2"
+            style={{
+              whiteSpace: "pre-line",
+            }}
+          >
+            {this.props.t("main.title")}
+          </Typography>
           <Typography
             variant="body1"
+            style={{ maxWidth: "920px", textAlign: "justify" }}
             dangerouslySetInnerHTML={{
               __html: this.props.t("main.content"),
             }}
