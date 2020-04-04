@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Grid, Typography } from "@material-ui/core";
 import { withTranslation, WithTranslation } from "react-i18next";
+import Fade from "react-reveal/Fade";
 
 import PartnerCard from "../common/PartnerCard";
 import CTABox from "../common/CTABox";
@@ -45,257 +46,259 @@ class Partners extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <Box id="partners" paddingBottom={4} marginTop={4}>
-        <Typography variant="h2">
-          {this.props.t("partners.type.founders")}
-        </Typography>
-        <Box paddingTop={4} paddingBottom={4}>
-          <Grid
-            container
-            direction="row"
-            justify="center"
-            alignItems="center"
-            spacing={4}
-          >
-            <PartnerCard
-              name="finleap"
-              image={LogoFinleap}
-              link="https://www.finleap.com"
-            />
-            <PartnerCard
-              name="Wefox Group"
-              image={LogoWefoxGroup}
-              link="https://www.wefoxgroup.com/"
-            />
-            <PartnerCard
-              name="Via"
-              image={LogoViaHealth}
-              link="https://www.viadata.io/"
-            />
-            <PartnerCard
-              name="Global Citizen Foundation"
-              image={LogoGlobalCitizen}
-              link="https://www.globalcitizenfoundation.org/"
-            />
-            <PartnerCard
-              name="Data4Life"
-              image={LogoData4Life}
-              link="https://www.data4life.care/"
-            />
-            <PartnerCard
-              name="BVDS"
-              image={LogoBVDS}
-              link="https://www.deutschestartups.org/"
-            />
-            <PartnerCard
-              name="BCG DV"
-              image={LogoBCGDV}
-              link="https://www.bcgdv.com"
-            />
-            <PartnerCard
-              name="N26"
-              image={LogoN26}
-              link="https://www.n26.de/"
-            />
-            <PartnerCard
-              name="GetYourGuide"
-              image={LogoGetYourGuide}
-              link="https://www.getyourguide.com/"
-            />
-            <PartnerCard
-              name="FreightHub"
-              image={LogoFreightHub}
-              link="https://www.freighthub.com/"
-            />
-            <PartnerCard
-              name="DeliveryHero"
-              image={LogoDeliveryHero}
-              link="https://www.deliveryhero.com/"
-            />
-            <PartnerCard
-              name="Omio"
-              image={LogoOmio}
-              link="https://www.omio.com"
-            />
-            <PartnerCard
-              name="Celonis"
-              image={LogoCelonis}
-              link="https://www.celonis.com/"
-            />
-            <PartnerCard
-              name="Ada Health"
-              image={LogoAdaHealth}
-              link="https://ada.com/"
-            />
-            <PartnerCard
-              name="Personio"
-              image={LogoPersonio}
-              link="https://www.personio.de/"
-            />
-            <PartnerCard
-              name="OneFootball"
-              image={LogoOneFootball}
-              link="https://onefootball.com/"
-            />
-            <PartnerCard
-              name="Ioniq"
-              image={LogoIoniq}
-              link="https://ioniq.com/"
-            />
-            <PartnerCard
-              name="Tier Mobility"
-              image={LogoTier}
-              link="https://ww.tier.app/"
-            />
-            <PartnerCard
-              name="doctorly"
-              image={LogoDoctorly}
-              link="https://www.doctorly.de/"
-            />
-            <PartnerCard
-              name="PAIR Finance"
-              image={LogoPAIRFinance}
-              link="https://www.pairfinance.com/"
-            />
-            <PartnerCard
-              name="The Delta"
-              image={LogoTheDelta}
-              link="https://www.thedelta.io/"
-              imageXL={true}
-            />
-          </Grid>
-        </Box>
-        <Typography variant="h2">
-          {this.props.t("partners.type.privacy")}
-        </Typography>
-        <Box paddingTop={4} paddingBottom={4}>
-          <Grid
-            container
-            direction="row"
-            justify="center"
-            alignItems="center"
-            spacing={4}
-          >
-            <PartnerCard
-              name="Datenschutzexperte"
-              image={LogoDatenschutzExperte}
-              link="https://www.datenschutzexperte.de/"
-            />
-            <PartnerCard
-              name="Deloitte"
-              image={LogoDeloitte}
-              link="https://www2.deloitte.com/dl/de/services/legal.html"
-            />
-            <PartnerCard
-              name="MyData"
-              image={LogoMyData}
-              link="https://mydata.org/"
-              imageXL={true}
-            />
-            <PartnerCard
-              name="UserCentrics"
-              image={LogoUserCentrics}
-              link="https://usercentrics.com/"
-            />
-            <PartnerCard
-              name="CMS"
-              image={LogoCMSLaw}
-              link="https://cms.law/"
-            />
-            <PartnerCard
-              name="Bird & Bird"
-              image={LogoTwoBirds}
-              link="https://www.twobirds.com/"
-              color="#7c7c6e"
-              nameColorInverted={true}
-            />
-            <PartnerCard
-              name="Reed Smith LLP"
-              image={LogoReedSmith}
-              link="https://www.reedsmith.com/"
-              color="#3d3c3c"
-              nameColorInverted={true}
-            />
-            <PartnerCard
-              name="SKW Schwarz"
-              image={LogoSKWSchwarz}
-              color="black"
-              nameColorInverted={true}
-              link="https://www.skwschwarz.de/"
-            />
-          </Grid>
-        </Box>
-        <Typography variant="h2">
-          {this.props.t("partners.type.health")}
-        </Typography>
-        <Box paddingTop={4} paddingBottom={4}>
-          <Grid
-            container
-            direction="row"
-            justify="center"
-            alignItems="center"
-            spacing={4}
-          >
-            <PartnerCard
-              name="HEARTBEAT LABS"
-              image={LogoHeartBeatLabs}
-              color="#002f4e"
-              nameColorInverted={true}
-              link="https://heartbeatlabs.com/"
-            />
-            <PartnerCard
-              name="ATAI Life Sciences"
-              image={LogoAtaiLife}
-              link="https://www.atai.life/"
-              imageXL={false}
-            />
-          </Grid>
-        </Box>
-        <Typography variant="h2">
-          {this.props.t("partners.type.agencies")}
-        </Typography>
-        <Box paddingTop={4} paddingBottom={4}>
-          <Grid
-            container
-            direction="row"
-            justify="center"
-            alignItems="center"
-            spacing={4}
-          >
-            <PartnerCard
-              name="fischerAppelt"
-              image={LogoFischerAppelt}
-              link="https://www.fischerappelt.de/"
-            />
-            <PartnerCard
-              name="Story Machine"
-              image={LogoStoryMachine}
-              link="https://www.storymachine.de/"
-            />
-            <PartnerCard
-              name="JOLI BERLIN"
-              image={LogoJoliBerlin}
-              link="https://www.joliberlin.com/"
-            />
-          </Grid>
-        </Box>
-        <Typography variant="h2">
-          {this.props.t("partners.type.further")}
-        </Typography>
-        <Box paddingTop={4} paddingBottom={4}>
-          <Grid
-            container
-            direction="row"
-            justify="center"
-            alignItems="center"
-            spacing={4}
-          >
-            <PartnerCard
-              name="Freiraum"
-              image={LogoFreiraum}
-              link="http://www.freiraum-berlin.org/"
-            />
-          </Grid>
-        </Box>
+        <Fade right cascade>
+          <Typography variant="h2">
+            {this.props.t("partners.type.founders")}
+          </Typography>
+          <Box paddingTop={4} paddingBottom={4}>
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              spacing={4}
+            >
+              <PartnerCard
+                name="finleap"
+                image={LogoFinleap}
+                link="https://www.finleap.com"
+              />
+              <PartnerCard
+                name="Wefox Group"
+                image={LogoWefoxGroup}
+                link="https://www.wefoxgroup.com/"
+              />
+              <PartnerCard
+                name="Via"
+                image={LogoViaHealth}
+                link="https://www.viadata.io/"
+              />
+              <PartnerCard
+                name="Global Citizen Foundation"
+                image={LogoGlobalCitizen}
+                link="https://www.globalcitizenfoundation.org/"
+              />
+              <PartnerCard
+                name="Data4Life"
+                image={LogoData4Life}
+                link="https://www.data4life.care/"
+              />
+              <PartnerCard
+                name="BVDS"
+                image={LogoBVDS}
+                link="https://www.deutschestartups.org/"
+              />
+              <PartnerCard
+                name="BCG DV"
+                image={LogoBCGDV}
+                link="https://www.bcgdv.com"
+              />
+              <PartnerCard
+                name="N26"
+                image={LogoN26}
+                link="https://www.n26.de/"
+              />
+              <PartnerCard
+                name="GetYourGuide"
+                image={LogoGetYourGuide}
+                link="https://www.getyourguide.com/"
+              />
+              <PartnerCard
+                name="FreightHub"
+                image={LogoFreightHub}
+                link="https://www.freighthub.com/"
+              />
+              <PartnerCard
+                name="DeliveryHero"
+                image={LogoDeliveryHero}
+                link="https://www.deliveryhero.com/"
+              />
+              <PartnerCard
+                name="Omio"
+                image={LogoOmio}
+                link="https://www.omio.com"
+              />
+              <PartnerCard
+                name="Celonis"
+                image={LogoCelonis}
+                link="https://www.celonis.com/"
+              />
+              <PartnerCard
+                name="Ada Health"
+                image={LogoAdaHealth}
+                link="https://ada.com/"
+              />
+              <PartnerCard
+                name="Personio"
+                image={LogoPersonio}
+                link="https://www.personio.de/"
+              />
+              <PartnerCard
+                name="OneFootball"
+                image={LogoOneFootball}
+                link="https://onefootball.com/"
+              />
+              <PartnerCard
+                name="Ioniq"
+                image={LogoIoniq}
+                link="https://ioniq.com/"
+              />
+              <PartnerCard
+                name="Tier Mobility"
+                image={LogoTier}
+                link="https://ww.tier.app/"
+              />
+              <PartnerCard
+                name="doctorly"
+                image={LogoDoctorly}
+                link="https://www.doctorly.de/"
+              />
+              <PartnerCard
+                name="PAIR Finance"
+                image={LogoPAIRFinance}
+                link="https://www.pairfinance.com/"
+              />
+              <PartnerCard
+                name="The Delta"
+                image={LogoTheDelta}
+                link="https://www.thedelta.io/"
+                imageXL={true}
+              />
+            </Grid>
+          </Box>
+          <Typography variant="h2">
+            {this.props.t("partners.type.privacy")}
+          </Typography>
+          <Box paddingTop={4} paddingBottom={4}>
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              spacing={4}
+            >
+              <PartnerCard
+                name="Datenschutzexperte"
+                image={LogoDatenschutzExperte}
+                link="https://www.datenschutzexperte.de/"
+              />
+              <PartnerCard
+                name="Deloitte"
+                image={LogoDeloitte}
+                link="https://www2.deloitte.com/dl/de/services/legal.html"
+              />
+              <PartnerCard
+                name="MyData"
+                image={LogoMyData}
+                link="https://mydata.org/"
+                imageXL={true}
+              />
+              <PartnerCard
+                name="UserCentrics"
+                image={LogoUserCentrics}
+                link="https://usercentrics.com/"
+              />
+              <PartnerCard
+                name="CMS"
+                image={LogoCMSLaw}
+                link="https://cms.law/"
+              />
+              <PartnerCard
+                name="Bird & Bird"
+                image={LogoTwoBirds}
+                link="https://www.twobirds.com/"
+                color="#7c7c6e"
+                nameColorInverted={true}
+              />
+              <PartnerCard
+                name="Reed Smith LLP"
+                image={LogoReedSmith}
+                link="https://www.reedsmith.com/"
+                color="#3d3c3c"
+                nameColorInverted={true}
+              />
+              <PartnerCard
+                name="SKW Schwarz"
+                image={LogoSKWSchwarz}
+                color="black"
+                nameColorInverted={true}
+                link="https://www.skwschwarz.de/"
+              />
+            </Grid>
+          </Box>
+          <Typography variant="h2">
+            {this.props.t("partners.type.health")}
+          </Typography>
+          <Box paddingTop={4} paddingBottom={4}>
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              spacing={4}
+            >
+              <PartnerCard
+                name="HEARTBEAT LABS"
+                image={LogoHeartBeatLabs}
+                color="#002f4e"
+                nameColorInverted={true}
+                link="https://heartbeatlabs.com/"
+              />
+              <PartnerCard
+                name="ATAI Life Sciences"
+                image={LogoAtaiLife}
+                link="https://www.atai.life/"
+                imageXL={false}
+              />
+            </Grid>
+          </Box>
+          <Typography variant="h2">
+            {this.props.t("partners.type.agencies")}
+          </Typography>
+          <Box paddingTop={4} paddingBottom={4}>
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              spacing={4}
+            >
+              <PartnerCard
+                name="fischerAppelt"
+                image={LogoFischerAppelt}
+                link="https://www.fischerappelt.de/"
+              />
+              <PartnerCard
+                name="Story Machine"
+                image={LogoStoryMachine}
+                link="https://www.storymachine.de/"
+              />
+              <PartnerCard
+                name="JOLI BERLIN"
+                image={LogoJoliBerlin}
+                link="https://www.joliberlin.com/"
+              />
+            </Grid>
+          </Box>
+          <Typography variant="h2">
+            {this.props.t("partners.type.further")}
+          </Typography>
+          <Box paddingTop={4} paddingBottom={4}>
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              spacing={4}
+            >
+              <PartnerCard
+                name="Freiraum"
+                image={LogoFreiraum}
+                link="http://www.freiraum-berlin.org/"
+              />
+            </Grid>
+          </Box>
+        </Fade>
         <Box paddingBottom={4} marginTop={4}>
           <CTABox
             claim={this.props.t("partners.claim")}

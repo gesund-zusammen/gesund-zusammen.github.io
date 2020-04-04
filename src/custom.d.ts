@@ -1,4 +1,5 @@
 declare module "react-router-scroll-memory";
+declare module "react-reveal";
 
 declare module "*.svg";
 declare module "*.png";
