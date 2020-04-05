@@ -30,6 +30,7 @@ import IlluImprint from "../images/illu_imprint.svg";
 
 import { DEFAULT_LANG } from "../i18n";
 import Program from "./content/Program";
+import Apply from "./content/Apply";
 
 interface IPageProps
   extends RouteComponentProps<{ lang: "de" | "en" }>,
@@ -63,6 +64,14 @@ class Page extends React.Component<IPageProps, {}> {
               image={IlluProgram}
             >
               <Program />
+            </LayoutSubPage>
+          </Route>
+          <Route path="/:lang/apply">
+            <LayoutSubPage
+              title={this.props.t("program.header.title")}
+              image={IlluProgram}
+            >
+              <Apply />
             </LayoutSubPage>
           </Route>
           <Route path="/:lang/partners">
