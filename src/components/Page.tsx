@@ -50,7 +50,7 @@ class Page extends React.Component<IPageProps, {}> {
       <Router>
         <ScrollMemory />
         <Switch>
-          <Route path="/:lang/initiatives">
+          <Route path="/:lang/(initiatives|database)">
             <LayoutInitiativePage
               title={this.props.t("header.nav.initiatives")}
               content={this.props.t("header.content.initiatives.content")}
