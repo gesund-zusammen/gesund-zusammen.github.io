@@ -27,7 +27,7 @@ class SubPageHeader extends React.PureComponent<ISubPageHeaderProps, {}> {
             </Grid>
 
             <Hidden xsDown>
-              <Grid item xs={12} sm={4}>
+              <Grid item xs={4} sm={3}>
                 <HeaderIllustration src={this.props.image} />
               </Grid>
             </Hidden>
@@ -43,13 +43,13 @@ const HeaderContent: AnyStyledComponent = styled.div`
 
   @media (min-width: 600px) {
     text-align: left;
-    margin: 4rem 0 6rem 0;
+    margin: 2rem 0 0 0;
     padding-right: 4rem;
   }
 `;
 
 const HeaderIllustration: AnyStyledComponent = styled.img`
-  width: 100%;
+  width: 80%;
 `;
 
 export default SubPageHeader;

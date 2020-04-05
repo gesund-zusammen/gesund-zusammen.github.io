@@ -40,9 +40,9 @@ class LandingHeader extends React.PureComponent<WithTranslation, {}> {
                   color="primary"
                   variant="contained"
                   disableFocusRipple={true}
-                  href={this.props.t("accelerator.link")}
+                  href={this.props.t("program.link")}
                 >
-                  {this.props.t("accelerator.cta")}
+                  {this.props.t("program.cta")}
                 </ApplyButton>
               </HeaderContent>
             </Grid>

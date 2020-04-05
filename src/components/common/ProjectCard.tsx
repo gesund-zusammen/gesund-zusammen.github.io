@@ -82,10 +82,6 @@ const ProjectName: AnyStyledComponent = styled(Typography)`
     @media (min-width: 600px) {
       font-size: 1.2rem;
     }
-
-    @media (max-width: 768px) {
-      display: none;
-    }
   }
 `;
 

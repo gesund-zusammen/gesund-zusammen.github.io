@@ -63,7 +63,7 @@ class Footer extends React.PureComponent<WithTranslation, {}> {
               </FooterSocialIcons>
               <FooterNavItems>
                 <FooterNavAnchorItem href="https://gesundzusammen.paperform.co/">
-                  {this.props.t("accelerator.cta")}
+                  {this.props.t("program.cta")}
                 </FooterNavAnchorItem>
                 <FooterNavLinkItem to={`/${this.props.i18n.language}/privacy`}>
                   {this.props.t("footer.nav.privacy")}

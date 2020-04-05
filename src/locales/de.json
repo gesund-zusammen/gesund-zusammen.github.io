@@ -50,18 +50,18 @@
       "health": "Health Partner"
     }
   },
-  "accelerator": {
+  "program": {
     "header": {
-      "title": "Accelerator",
+      "title": "Programm",
       "content": "Accelerator um Digitale Tools vs COVID-19 schneller an die \nÖffentlichkeit zu bringen"
     },
-    "title": "Accelerator Title",
-    "content": "Accelerator Description",
+    "title": "Das #Gesundzusammen Accelerator Programm",
+    "content": "- Finanziert 6-10 Digitale Projekte mit jeweils 20.000€ , ohne Geschäftsanteile oder sonstige rechtlichen Ansprüche. \n- Lädt ab dem 6ten April Digitale Projekte die im Kampf gg Covid-19 helfen sich zu bewerben.\n- Entscheidet durch eine Jury schnell und unkompliziert die Gewinner und Teilnehmer, am 7ten April.\n- Stellt weitere kostenlose Ressourcen (Produkte & Services) über die Accelerator Partner zur Verfügung.\n- Stellt Beratung von Sachthemen Experten über die Accelerator Partner und Zugang zu Institutionen zur Verfügung.\n- Hat ein Media und Reichweiten Netzwerk das Aufmerksamkeit auf die geförderten Projekte garantiert.\n- Erstellt wöchentlich Updates, und einen Monatlichen Demo Day für die Öffentlichkeit und das Fachpublikum.\n-> das Programm #1 endet am 31ten Mai 2020.\n",
     "claim": "Du brauchst Unterstützung?",
     "cta": "Bewirb dich jetzt",
     "link": "https://gesundzusammen.paperform.co/",
     "type": {
-      "apps": "Apps"
+      "companies": "Unternehmen im Accelerator"
     }
   },
   "privacy": {

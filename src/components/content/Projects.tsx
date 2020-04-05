@@ -3,7 +3,7 @@ import { Box, Grid, Typography } from "@material-ui/core";
 import { withTranslation, WithTranslation } from "react-i18next";
 import Fade from "react-reveal";
 
-import LogoFinleap from "../../images/partners/finleap.png";
+import LogoComingSoon from "../../images/coming_soon_mobile.svg";
 import ProjectCard from "../common/ProjectCard";
 
 class Projects extends React.PureComponent<WithTranslation, {}> {
@@ -12,7 +12,7 @@ class Projects extends React.PureComponent<WithTranslation, {}> {
       <Box id="partners" paddingBottom={4} marginTop={4}>
         <Fade right cascade>
           <Typography variant="h2">
-            {this.props.t("accelerator.type.apps")}
+            {this.props.t("program.type.companies")}
           </Typography>
           <Box paddingTop={4} paddingBottom={4}>
             <Grid
@@ -24,7 +24,7 @@ class Projects extends React.PureComponent<WithTranslation, {}> {
             >
               <ProjectCard
                 name="Coming soon"
-                image={LogoFinleap}
+                image={LogoComingSoon}
                 link="coming soon"
               />
             </Grid>

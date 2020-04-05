@@ -42,7 +42,7 @@ class InitiativePageHeader extends React.PureComponent<
 
 const HeaderTitle: AnyStyledComponent = styled.div`
   @media (min-width: 600px) {
-    margin: 4rem 0 6rem 0;
+    margin: 2rem 0 0 0;
     padding-right: 4rem;
   }
 `;
@@ -50,10 +50,9 @@ const HeaderTitle: AnyStyledComponent = styled.div`
 const HeaderContent: AnyStyledComponent = styled(Typography)`
   && {
     color: #ffffff;
-    margin: 0 0 6rem 0;
 
     @media (min-width: 600px) {
-      margin: 4rem 0;
+      margin: 2rem 0 6rem 0;
     }
   }
 `;

@@ -23,12 +23,13 @@ import Imprint from "./content/Imprint";
 
 import IlluPrivacy from "../images/illu_privacy.svg";
 import IlluFaq from "../images/illu_faq.svg";
+import IlluProgram from "../images/illu_program.svg";
+import IlluPartner from "../images/illu_partner.svg";
 import IlluPressContact from "../images/illu_presscontact.svg";
 import IlluImprint from "../images/illu_imprint.svg";
 
 import { DEFAULT_LANG } from "../i18n";
-import LayoutAcceleratorPage from "./layouts/Accelerator/Main";
-import Accelerator from "./content/Accelerator";
+import Program from "./content/Program";
 
 interface IPageProps
   extends RouteComponentProps<{ lang: "de" | "en" }>,
@@ -56,16 +57,19 @@ class Page extends React.Component<IPageProps, {}> {
               <Initiatives />
             </LayoutInitiativePage>
           </Route>
-          <Route path="/:lang/accelerator">
-            <LayoutAcceleratorPage
-              title={this.props.t("accelerator.header.title")}
-              content={this.props.t("accelerator.header.content")}
+          <Route path="/:lang/program">
+            <LayoutSubPage
+              title={this.props.t("program.header.title")}
+              image={IlluProgram}
             >
-              <Accelerator />
-            </LayoutAcceleratorPage>
+              <Program />
+            </LayoutSubPage>
           </Route>
           <Route path="/:lang/partners">
-            <LayoutSubPage title={this.props.t("header.nav.supporters")}>
+            <LayoutSubPage
+              title={this.props.t("header.nav.supporters")}
+              image={IlluPartner}
+            >
               <Partners />
             </LayoutSubPage>
           </Route>
