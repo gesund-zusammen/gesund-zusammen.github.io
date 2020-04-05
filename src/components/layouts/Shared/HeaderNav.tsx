@@ -26,6 +26,9 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
           <HeaderLogo src={Logo} alt="#GesundZusammen" />
         </Link>
         <HeaderNavItems>
+          <HeaderNavLinkItem to={`/${this.props.i18n.language}/program`}>
+            {this.props.t("program.header.title")}
+          </HeaderNavLinkItem>
           <HeaderNavLinkItem to={`/${this.props.i18n.language}/initiatives`}>
             {this.props.t("header.nav.initiatives")}
           </HeaderNavLinkItem>

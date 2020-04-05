@@ -37,6 +37,20 @@
       "content": "We are investing into building an active Ecosystem by providing a database of all relevant Covid-19 initiatives, and other outreach activities."
     }
   },
+  "program": {
+    "header": {
+      "title": "Program",
+      "content": "Accelerator for Digital Tools vs Covid-19 helping them getting to the public faster"
+    },
+    "title": "The #Gesundzusammen Accelerator Program ",
+    "content": "- Finance a minimum of six new ideas with €20,000 each of equity-free capital. Possibly expanding the scope to 10 ideas.\n- Launch an open call for digital tools addressing the COVID-19 crisis by April 6th. \n- Decide quickly with a jury board, and fast track applications on a rolling basis, with the goal of having all program participants announced by April 10th.\n- Provide free resources (products & services) through the partners involved. \n- Provide mentorship by topic experts (C- and VP-Level) through the partners involved.\n- Amplify reach by combining partner channels and media network.\n- Provide Weekly Updates, and a 30th of April and 31st of May Demo Day.\n-> End of Batch #1 is 31st of May.\n",
+    "claim": "You need support?",
+    "cta": "Apply now",
+    "link": "https://gesundzusammen.paperform.co/",
+    "type": {
+      "companies": "Companies in the Accelerator"
+    }
+  },
   "partners": {
     "title": "Founding & Tech Partners",
     "claim": "Want to help make a difference?",
