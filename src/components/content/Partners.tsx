@@ -41,6 +41,7 @@ import LogoTheDelta from "../../images/partners/thedelta.png";
 import LogoAtaiLife from "../../images/partners/atailifesciences.png";
 import LogoHeartBeatLabs from "../../images/partners/heartbeatlabs.svg";
 import LogoPAIRFinance from "../../images/partners/pairfinance.png";
+import LogoTOA from "../../images/partners/toa.png";
 
 class Partners extends React.PureComponent<WithTranslation, {}> {
   render = () => {
@@ -87,6 +88,11 @@ class Partners extends React.PureComponent<WithTranslation, {}> {
                 name="BVDS"
                 image={LogoBVDS}
                 link="https://www.deutschestartups.org/"
+              />
+              <PartnerCard
+                name="TOA"
+                image={LogoTOA}
+                link="https://toa.berlin//"
               />
               <PartnerCard
                 name="BCG DV"
