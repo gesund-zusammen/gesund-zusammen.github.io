@@ -30,7 +30,7 @@ import IlluImprint from "../images/illu_imprint.svg";
 
 import { DEFAULT_LANG } from "../i18n";
 import Program from "./content/Program";
-import Apply from "./content/Apply";
+import PaperForm from "./common/PaperForm";
 
 interface IPageProps
   extends RouteComponentProps<{ lang: "de" | "en" }>,
@@ -71,7 +71,15 @@ class Page extends React.Component<IPageProps, {}> {
               title={this.props.t("program.header.title")}
               image={IlluProgram}
             >
-              <Apply />
+              <PaperForm paperform="gesundzusammen" />
+            </LayoutSubPage>
+          </Route>
+          <Route path="/:lang/support">
+            <LayoutSubPage
+              title={this.props.t("header.nav.supporters")}
+              image={IlluPartner}
+            >
+              <PaperForm paperform="support-gesundzusammen" />
             </LayoutSubPage>
           </Route>
           <Route path="/:lang/partners">
