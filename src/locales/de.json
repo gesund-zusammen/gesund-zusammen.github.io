@@ -50,6 +50,20 @@
       "health": "Health Partner"
     }
   },
+  "accelerator": {
+    "header": {
+      "title": "Accelerator",
+      "content": "Accelerator um Digitale Tools vs COVID-19 schneller an die \nÖffentlichkeit zu bringen"
+    },
+    "title": "Accelerator Title",
+    "content": "Accelerator Description",
+    "claim": "Du brauchst Unterstützung?",
+    "cta": "Bewirb dich jetzt",
+    "link": "https://gesundzusammen.paperform.co/",
+    "type": {
+      "apps": "Apps"
+    }
+  },
   "privacy": {
     "claim": "Sie haben noch eine Frage?",
     "cta": "Schreiben Sie uns",

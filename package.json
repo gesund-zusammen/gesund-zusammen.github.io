@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "env NODE_ENV=local webpack-dev-server --inline --progress --port 4040",
+    "start": "env NODE_ENV=local webpack-dev-server --inline --progress --port 4040 --host 192.168.2.127",
     "build": "env NODE_ENV=production yarn locales:check && webpack --profile",
     "build:local": "env NODE_ENV=local OPTIMIZED_BUILD=true yarn locales:check && webpack --profile --progress",
     "server:build": "node express --port 4000 --base build --silent",

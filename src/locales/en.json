@@ -37,6 +37,20 @@
       "content": "We are investing into building an active Ecosystem by providing a database of all relevant Covid-19 initiatives, and other outreach activities."
     }
   },
+  "accelerator": {
+    "header": {
+      "title": "Accelerator",
+      "content": "TEXT NEEDED"
+    },
+    "title": "Accelerator Title",
+    "content": "Accelerator Description",
+    "claim": "Sie wollen auch mitmachen?",
+    "cta": "Apply now",
+    "link": "https://gesundzusammen.paperform.co/",
+    "type": {
+      "apps": "Apps"
+    }
+  },
   "partners": {
     "title": "Founding & Tech Partners",
     "claim": "Want to help make a difference?",

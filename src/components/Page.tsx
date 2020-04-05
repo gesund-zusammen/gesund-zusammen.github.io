@@ -27,6 +27,8 @@ import IlluPressContact from "../images/illu_presscontact.svg";
 import IlluImprint from "../images/illu_imprint.svg";
 
 import { DEFAULT_LANG } from "../i18n";
+import LayoutAcceleratorPage from "./layouts/Accelerator/Main";
+import Accelerator from "./content/Accelerator";
 
 interface IPageProps
   extends RouteComponentProps<{ lang: "de" | "en" }>,
@@ -53,6 +55,14 @@ class Page extends React.Component<IPageProps, {}> {
             >
               <Initiatives />
             </LayoutInitiativePage>
+          </Route>
+          <Route path="/:lang/accelerator">
+            <LayoutAcceleratorPage
+              title={this.props.t("accelerator.header.title")}
+              content={this.props.t("accelerator.header.content")}
+            >
+              <Accelerator />
+            </LayoutAcceleratorPage>
           </Route>
           <Route path="/:lang/partners">
             <LayoutSubPage title={this.props.t("header.nav.supporters")}>
