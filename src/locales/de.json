@@ -43,7 +43,8 @@
     "cta": "Werden Sie Teil der Initiative",
     "link": "/support",
     "type": {
-      "founders": "Founding & Tech Partner",
+      "founders": "Founding Partner",
+      "tech": "Tech Partner",
       "privacy": "Privacy Partner",
       "agencies": "Agentur Partner",
       "further": "Weitere Partner",
