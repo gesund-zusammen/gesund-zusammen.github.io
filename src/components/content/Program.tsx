@@ -9,7 +9,20 @@ class Program extends React.Component<WithTranslation, {}> {
   render = () => {
     return (
       <Box paddingBottom={4}>
-        <Markdown>{this.props.t("program.content")}</Markdown>
+        <Markdown
+          options={{
+            overrides: {
+              p: {
+                component: Typography,
+                props: {
+                  variant: "body1",
+                },
+              },
+            },
+          }}
+        >
+          {this.props.t("program.content")}
+        </Markdown>
 
         <Projects />
 
