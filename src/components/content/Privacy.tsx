@@ -132,7 +132,7 @@ class PrivacyPolicy extends React.PureComponent<WithTranslation, {}> {
               informieren und eine Einwilligung einholen.
               <br />
               <br />
-              Sie können es direkt über unsere
+              Sie können es direkt über unsere{" "}
               <Link href="#uc-central-modal-show">Cookie Settings</Link> oder
               Ihren Browser so einstellen, dass Sie
               <br />

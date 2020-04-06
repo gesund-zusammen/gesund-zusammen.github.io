@@ -1,10 +1,82 @@
 import React from "react";
+import { FontFace } from "csstype";
 import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
+
+import OpenSansRegularTtf from "../fonts/open-sans/open-sans-v17-latin-regular.ttf";
+import OpenSansRegularWoff from "../fonts/open-sans/open-sans-v17-latin-regular.woff";
+import OpenSansRegularWoff2 from "../fonts/open-sans/open-sans-v17-latin-regular.woff2";
+
+import OpenSans600Ttf from "../fonts/open-sans/open-sans-v17-latin-600.ttf";
+import OpenSans600Woff from "../fonts/open-sans/open-sans-v17-latin-600.woff";
+import OpenSans600Woff2 from "../fonts/open-sans/open-sans-v17-latin-600.woff2";
+
+import OpenSans700Ttf from "../fonts/open-sans/open-sans-v17-latin-700.ttf";
+import OpenSans700Woff from "../fonts/open-sans/open-sans-v17-latin-700.woff";
+import OpenSans700Woff2 from "../fonts/open-sans/open-sans-v17-latin-700.woff2";
+
+import LatoRegularTtf from "../fonts/lato/lato-v16-latin-regular.ttf";
+import LatoRegularWoff from "../fonts/lato/lato-v16-latin-regular.woff";
+import LatoRegularWoff2 from "../fonts/lato/lato-v16-latin-regular.woff2";
 
 interface IThemeProps {
   children: any;
 }
+
+const LatoRegular: FontFace = {
+  fontFamily: "Lato",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontDisplay: "swap",
+  src: `
+    local('Lato Regular'), local('Lato-Regular'),
+    url(${LatoRegularTtf}) format('ttf'),
+    url(${LatoRegularWoff}) format('woff'),
+    url(${LatoRegularWoff2}) format('woff2')
+  `,
+};
+
+const OpenSansRegular: FontFace = {
+  fontFamily: "Open Sans",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontDisplay: "swap",
+  src: `
+    local('Open Sans Regular'),
+    local('OpenSans-Regular'),
+    url(${OpenSansRegularTtf}) format('ttf'),
+    url(${OpenSansRegularWoff}) format('woff'),
+    url(${OpenSansRegularWoff2}) format('woff2')
+  `,
+};
+
+const OpenSans600: FontFace = {
+  fontFamily: "Open Sans",
+  fontStyle: "normal",
+  fontWeight: 600,
+  fontDisplay: "swap",
+  src: `
+    local('Open Sans SemiBold'),
+    local('OpenSans-SemiBold'),
+    url(${OpenSans600Ttf}) format('ttf'),
+    url(${OpenSans600Woff}) format('woff'),
+    url(${OpenSans600Woff2}) format('woff2')
+  `,
+};
+
+const OpenSans700: FontFace = {
+  fontFamily: "Open Sans",
+  fontStyle: "normal",
+  fontWeight: 700,
+  fontDisplay: "swap",
+  src: `
+    local('Open Sans Bold'),
+    local('OpenSans-Bold'),
+    url(${OpenSans700Ttf}) format('ttf'),
+    url(${OpenSans700Woff}) format('woff'),
+    url(${OpenSans700Woff2}) format('woff2')
+  `,
+};
 
 const theme = responsiveFontSizes(
   createMuiTheme({
@@ -104,6 +176,16 @@ const theme = responsiveFontSizes(
       },
     },
     overrides: {
+      MuiCssBaseline: {
+        "@global": {
+          "@font-face": [
+            OpenSansRegular,
+            OpenSans600,
+            OpenSans700,
+            LatoRegular,
+          ],
+        },
+      },
       MuiLink: {
         root: {
           color: "#00AAC8",
