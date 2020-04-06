@@ -15,9 +15,26 @@ import OpenSans700Ttf from "../fonts/open-sans/open-sans-v17-latin-700.ttf";
 import OpenSans700Woff from "../fonts/open-sans/open-sans-v17-latin-700.woff";
 import OpenSans700Woff2 from "../fonts/open-sans/open-sans-v17-latin-700.woff2";
 
+import LatoRegularTtf from "../fonts/lato/lato-v16-latin-regular.ttf";
+import LatoRegularWoff from "../fonts/lato/lato-v16-latin-regular.woff";
+import LatoRegularWoff2 from "../fonts/lato/lato-v16-latin-regular.woff2";
+
 interface IThemeProps {
   children: any;
 }
+
+const LatoRegular: FontFace = {
+  fontFamily: "Lato",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontDisplay: "swap",
+  src: `
+    local('Lato Regular'), local('Lato-Regular'),
+    url(${LatoRegularTtf}) format('ttf'),
+    url(${LatoRegularWoff}) format('woff'),
+    url(${LatoRegularWoff2}) format('woff2')
+  `,
+};
 
 const OpenSansRegular: FontFace = {
   fontFamily: "Open Sans",
@@ -161,7 +178,12 @@ const theme = responsiveFontSizes(
     overrides: {
       MuiCssBaseline: {
         "@global": {
-          "@font-face": [OpenSansRegular, OpenSans600, OpenSans700],
+          "@font-face": [
+            OpenSansRegular,
+            OpenSans600,
+            OpenSans700,
+            LatoRegular,
+          ],
         },
       },
       MuiLink: {
