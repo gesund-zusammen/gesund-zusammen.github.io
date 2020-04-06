@@ -1,4 +1,5 @@
 import React from "react";
+import { CssBaseline } from "@material-ui/core";
 
 import AppTheme from "./Theme";
 import Page from "./components/Page";
@@ -9,7 +10,9 @@ class App extends React.Component {
   render = () => {
     return (
       <AppTheme>
-        <Page />
+        <CssBaseline>
+          <Page />
+        </CssBaseline>
       </AppTheme>
     );
   };
