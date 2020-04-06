@@ -20,12 +20,12 @@ interface IThemeProps {
 }
 
 const OpenSansRegular: FontFace = {
-  fontFamily: "OpenSans",
+  fontFamily: "Open Sans",
   fontStyle: "normal",
   fontWeight: 400,
   fontDisplay: "swap",
   src: `
-    local('OpenSans'),
+    local('Open Sans Regular'),
     local('OpenSans-Regular'),
     url(${OpenSansRegularTtf}) format('ttf'),
     url(${OpenSansRegularWoff}) format('woff'),
@@ -34,13 +34,13 @@ const OpenSansRegular: FontFace = {
 };
 
 const OpenSans600: FontFace = {
-  fontFamily: "OpenSans",
+  fontFamily: "Open Sans",
   fontStyle: "normal",
   fontWeight: 600,
   fontDisplay: "swap",
   src: `
-    local('OpenSans'),
-    local('OpenSans-600'),
+    local('Open Sans SemiBold'),
+    local('OpenSans-SemiBold'),
     url(${OpenSans600Ttf}) format('ttf'),
     url(${OpenSans600Woff}) format('woff'),
     url(${OpenSans600Woff2}) format('woff2')
@@ -48,13 +48,13 @@ const OpenSans600: FontFace = {
 };
 
 const OpenSans700: FontFace = {
-  fontFamily: "OpenSans",
+  fontFamily: "Open Sans",
   fontStyle: "normal",
   fontWeight: 700,
   fontDisplay: "swap",
   src: `
-    local('OpenSans'),
-    local('OpenSans-700'),
+    local('Open Sans Bold'),
+    local('OpenSans-Bold'),
     url(${OpenSans700Ttf}) format('ttf'),
     url(${OpenSans700Woff}) format('woff'),
     url(${OpenSans700Woff2}) format('woff2')
