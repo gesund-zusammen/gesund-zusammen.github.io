@@ -70,6 +70,24 @@ class Partners extends React.PureComponent<WithTranslation, {}> {
                 link="https://www.wefoxgroup.com/"
               />
               <PartnerCard
+                name="TOA"
+                image={LogoTOA}
+                link="https://toa.berlin//"
+              />
+            </Grid>
+          </Box>
+          <Typography variant="h2">
+            {this.props.t("partners.type.tech")}
+          </Typography>
+          <Box paddingTop={4} paddingBottom={4}>
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              spacing={4}
+            >
+              <PartnerCard
                 name="Via"
                 image={LogoViaHealth}
                 link="https://www.viadata.io/"
@@ -88,11 +106,6 @@ class Partners extends React.PureComponent<WithTranslation, {}> {
                 name="BVDS"
                 image={LogoBVDS}
                 link="https://www.deutschestartups.org/"
-              />
-              <PartnerCard
-                name="TOA"
-                image={LogoTOA}
-                link="https://toa.berlin//"
               />
               <PartnerCard
                 name="BCG DV"
