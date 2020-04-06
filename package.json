@@ -8,8 +8,8 @@
   "private": true,
   "scripts": {
     "start": "env NODE_ENV=local webpack-dev-server --inline --progress --port 4040",
-    "build": "env NODE_ENV=production yarn locales:check && webpack --profile",
-    "build:local": "env NODE_ENV=local OPTIMIZED_BUILD=true yarn locales:check && webpack --profile --progress",
+    "build": " yarn locales:check && env NODE_ENV=production webpack --profile",
+    "build:local": " yarn locales:check && env NODE_ENV=local OPTIMIZED_BUILD=true webpack --profile --progress",
     "server:build": "node express --port 4000 --base build --silent",
     "lint": "eslint --ext .ts,.tsx,.js,.tsx src",
     "lint:apply": "eslint --ext .ts,.tsx,.js,.tsx src --fix",
