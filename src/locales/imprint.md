@@ -1,46 +1,24 @@
-#Address<br />
+#Das #Gesundzusammen Accelerator Programm
 
-Gesund Zusammen gGmbH i.G.<br />
+Der #Gesundzusammen Accelerator wird von TOA, wefox & finleap organisiert, mit Unterstützung vieler Technologie-Unternehmen (i.e. N26, DeliveryHero, Celonis, Ada Health) sowie dem Bundesverband Deutscher Startups.
 
-Urbanstr. 71<br />
-10967 Berlin, Germany<br />
+###Das Programm bietet:
 
-##Contact
-Tel .: +49 (0) 30 609865290<br />
-Email: media@gesund-zusammen.de
+- €20,000 Kapital (ohne Equity)
+- Kostenlose Ressourcen (Produkte & Services) unserer Partner
+- 6 Wochen Acceleration-Programm für die Entwicklung eurer Produkte, Aufbau von Partnerschaften, Nutzer-Akquise & Weiterfinanzierung
+- Zugang zu Mentoren und Experten aus dem Partner-Netzwerk
 
-##Managing Directors
-Ramin Niroumand<br />
-Julian Bernhard Edward Teicke<br />
+**Bewerben können sich alle (Unternehmen, Forscher, Erfinder) jeder Größe.
+Bewerbungsfrist endet am 13. April, 2020.**
 
-##Commercial Register
-Amtsgericht Charlottenburg
-<br />
-HRB [Aktualisierung nach erfolgreicher Eintragung] B <br />
-VAT ID: [Aktualisierung nach erfolgreicher Eintragung]
-<br />
+###Batch #1 des Accelerator Programms wird:
 
-##The following information is legally required according to German law
-Responsible for content according to § 55 RStV Abs. 2: Ramin
-Niroumand, see address above. Note on external links: In a judgment
-dated 12 May 1998, “Liability for Links” (312 O 85/98) the regional
-court (LG) of Hamburg decided that the owner of a website is
-responsible for the contents on linked pages of external websites.
-This can only be prevented by explicitly distancing oneself from these
-contents. We hereby disclaim responsibility for the contents of all
-linked pages on our website and declare that we do not adopt this
-content as its own.
+- 6-10 Innovative, Digitale Projekte finanzieren
+- alle Bewerbungen von einer hochkarätigen Jury (schnell) bewerten lassen - wobei Projekte “on a rolling basis” angenommen werden können
+- das Netzwerk an Partnern konstant erweitern
 
-##Disclaimer
-The information provided on this website has been carefully checked
-and is updated regularly. However, no guarantee can be given that all
-information is always complete, correct and / or up to date. This
-applies especially to all links to other websites, which are directly
-or indirectly. We reserve all information to supplement without prior
-notice, to remove and / or modify.
 
-##Copyright
-All product names mentioned on this website, product names, brand
-names and logos are trademarks and / or property of their respective
-owners. All text and graphics on this site: &copy; Gesund Zusammen
-gGmbH i.G. or the copyright holders.
+Batch #1 endet mit einem virtuellen Demo Day am 25.Mai, 2020.
+
+*Ihr habt noch kein Unternehmen oder juristische Person registriert? Kein Problem, wir helfen euch beim Setup!
