@@ -4,6 +4,8 @@ import { withTranslation, WithTranslation } from "react-i18next";
 import CTABox from "../common/CTABox";
 import Projects from "./Projects";
 import Markdown from "markdown-to-jsx";
+import ContentDE from "../../data/program/program_de.md";
+import ContentEN from "../../data/program/program_en.md";
 
 class Program extends React.Component<WithTranslation, {}> {
   render = () => {
@@ -21,7 +23,7 @@ class Program extends React.Component<WithTranslation, {}> {
             },
           }}
         >
-          {this.props.t("program.content")}
+          {this.props.i18n.language === "de" ? ContentDE : ContentEN}
         </Markdown>
 
         <Projects />

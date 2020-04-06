@@ -19,10 +19,6 @@
       }
     }
   },
-  "main": {
-    "title": "#GesundZusammen – \nan Accelerator initiated by the digital economy",
-    "content": "As broad alliance of German tech companies, we want to actively help society, politics and business to contain COVID-19 with digital solutions. We have founded an Accelerator program that provide resources to bring promising Digital Tools to the public faster.<p><font style=\"font-size:1. 4rem; font-weight: bolder;\">So that private things remain private.</font><br />Even in times of crisis, people's freedom and personal rights are top priority for our technology.<p><font style=\"font-size:1. 4rem; font-weight: bolder;\">To keep Germany healthy</font><br />The Digital Tools supported in the Accelerator program are designed to help protect risk groups better and relieve the burden on the healthcare system.<p><font style=\"font-size:1.4rem; font-weight: bolder;\">To get the economy moving</font><br />Technology can be employed to reduce health risks in companies and help boost economic activity again."
-  },
   "boxes": {
     "initiative": {
       "title": "Our Program",
@@ -43,7 +39,6 @@
       "content": "Accelerator for Digital Tools vs Covid-19 helping them getting to the public faster"
     },
     "title": "The #Gesundzusammen Accelerator Program ",
-    "content": "#The #Gesundzusammen Accelerator Program\n\nThe #Gesundzusammen Accelerator is organized by TOA, wefox & finleap, with many leading ecosystem players (i.e. N26, BVDS, DeliveryHero, Celonis, Ada Health) supporting.\n\n###The program offers:\n\n- €20,000 of equity-free capital, no strings attached.\n- Free resources (products & services) through the partners involved.\n- 6 weeks of acceleration to develop your product, build partnerships and acquire customers & financing through access to our network.\n- Access to mentors and experts for best-in-industry coaching.\n\n**The open call is aimed at teams of all sizes, stages and backgrounds (startup, researchers, inventors, tinkerers) and is open until April 13th, 2020.**\n\n###Batch #1 of the program will:\n\n- Finance a minimum of six innovative solutions, possibly expanding the scope to 10\n- Review all applications by an acclaimed jury on a rolling basis\n- Constantly expand the network of partners involved\n\nThe program for Batch #1 will end with a virtual demo day on May 25th, 2020.\n\n*No legal entity? No worries, we’ll help you set one up.",
     "claim": "You need support?",
     "cta": "Apply now",
     "link": "/apply",
@@ -142,9 +137,6 @@
     "content": "We will keep you posted about new tools, dashboards, initiatives etc.",
     "inputPlaceholder": "E-Mail",
     "cta": "Subscribe"
-  },
-  "imprint": {
-    "content": "#Address<br />\nGesund Zusammen gGmbH i.G.<br />\nUrbanstr. 71<br />\n10967 Berlin, Germany\n\n##Contact<br />\nTel .: +49 (0) 30 609865290<br />\nEmail: media@gesund-zusammen.de\n\n##Managing Directors<br />\nRamin Niroumand<br />\nJulian Bernhard Edward Teicke\n\n##Commercial Register\nAmtsgericht Charlottenburg\n<br />\nHRB [Aktualisierung nach erfolgreicher Eintragung] B <br />\nVAT ID: [Aktualisierung nach erfolgreicher Eintragung]\n\n##The following information is legally required according to German law<br />\n Responsible for content according to § 55 RStV Abs. 2: Ramin Niroumand, see address above. Note on external links: In a judgment dated 12 May 1998, “Liability for Links” (312 O 85/98) the regional court (LG) of Hamburg decided that the owner of a website is responsible for the contents on linked pages of external websites. This can only be prevented by explicitly distancing oneself from these contents. We hereby disclaim responsibility for the contents of all linked pages on our website and declare that we do not adopt this content as its own.\n\n##Disclaimer<br />\nThe information provided on this website has been carefully checked and is updated regularly. However, no guarantee can be given that all information is always complete, correct and / or up to date. This applies especially to all links to other websites, which are directly\nor indirectly. We reserve all information to supplement without prior\nnotice, to remove and / or modify.\n\n##Copyright\nAll product names mentioned on this website, product names, brand names and logos are trademarks and / or property of their respective owners. All text and graphics on this site: &copy; Gesund Zusammen gGmbH i.G. or the copyright holders."
   },
   "footer": {
     "title": "Sharing is caring",
