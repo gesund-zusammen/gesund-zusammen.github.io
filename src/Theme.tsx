@@ -1,10 +1,65 @@
 import React from "react";
+import { FontFace } from "csstype";
 import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
+
+import OpenSansRegularTtf from "../fonts/open-sans/open-sans-v17-latin-regular.ttf";
+import OpenSansRegularWoff from "../fonts/open-sans/open-sans-v17-latin-regular.woff";
+import OpenSansRegularWoff2 from "../fonts/open-sans/open-sans-v17-latin-regular.woff2";
+
+import OpenSans600Ttf from "../fonts/open-sans/open-sans-v17-latin-600.ttf";
+import OpenSans600Woff from "../fonts/open-sans/open-sans-v17-latin-600.woff";
+import OpenSans600Woff2 from "../fonts/open-sans/open-sans-v17-latin-600.woff2";
+
+import OpenSans700Ttf from "../fonts/open-sans/open-sans-v17-latin-700.ttf";
+import OpenSans700Woff from "../fonts/open-sans/open-sans-v17-latin-700.woff";
+import OpenSans700Woff2 from "../fonts/open-sans/open-sans-v17-latin-700.woff2";
 
 interface IThemeProps {
   children: any;
 }
+
+const OpenSansRegular: FontFace = {
+  fontFamily: "OpenSans",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontDisplay: "swap",
+  src: `
+    local('OpenSans'),
+    local('OpenSans-Regular'),
+    url(${OpenSansRegularTtf}) format('ttf'),
+    url(${OpenSansRegularWoff}) format('woff'),
+    url(${OpenSansRegularWoff2}) format('woff2')
+  `,
+};
+
+const OpenSans600: FontFace = {
+  fontFamily: "OpenSans",
+  fontStyle: "normal",
+  fontWeight: 600,
+  fontDisplay: "swap",
+  src: `
+    local('OpenSans'),
+    local('OpenSans-600'),
+    url(${OpenSans600Ttf}) format('ttf'),
+    url(${OpenSans600Woff}) format('woff'),
+    url(${OpenSans600Woff2}) format('woff2')
+  `,
+};
+
+const OpenSans700: FontFace = {
+  fontFamily: "OpenSans",
+  fontStyle: "normal",
+  fontWeight: 700,
+  fontDisplay: "swap",
+  src: `
+    local('OpenSans'),
+    local('OpenSans-700'),
+    url(${OpenSans700Ttf}) format('ttf'),
+    url(${OpenSans700Woff}) format('woff'),
+    url(${OpenSans700Woff2}) format('woff2')
+  `,
+};
 
 const theme = responsiveFontSizes(
   createMuiTheme({
@@ -104,6 +159,11 @@ const theme = responsiveFontSizes(
       },
     },
     overrides: {
+      MuiCssBaseline: {
+        "@global": {
+          "@font-face": [OpenSansRegular, OpenSans600, OpenSans700],
+        },
+      },
       MuiLink: {
         root: {
           color: "#00AAC8",
