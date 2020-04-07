@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Container } from "@material-ui/core";
 
 import InitiativePageHeader from "./Header";
+import Social from "../Shared/Social";
 import Footer from "../Shared/Footer";
 import { HeaderBox, MainContentContainer } from "../Shared/StyledComponents";
 
@@ -31,6 +32,8 @@ class LayoutInitiativePage extends React.Component<
             {this.props.children}
           </MainContentContainer>
         </Box>
+
+        <Social />
 
         <Footer />
       </>

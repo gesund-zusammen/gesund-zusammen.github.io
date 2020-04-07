@@ -120,7 +120,7 @@ const CopiedIndicator: AnyStyledComponent = styled(Done)`
 const ShareBox: AnyStyledComponent = styled.div`
   display: block;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 0;
 
   & .share-icon {
     margin-left: 2rem;
@@ -138,6 +138,10 @@ const ShareBox: AnyStyledComponent = styled.div`
     &:first-of-type {
       margin-left: 0;
     }
+  }
+
+  @media (min-width: 600px) {
+    text-align: left;
   }
 `;
 

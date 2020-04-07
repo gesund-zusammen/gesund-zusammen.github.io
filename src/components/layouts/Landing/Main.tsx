@@ -3,6 +3,7 @@ import { Box, Container } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
 import LandingHeader from "./Header";
+import Social from "../Shared/Social";
 import Footer from "../Shared/Footer";
 import NewsletterSignup from "../Shared/NewsletterSignup";
 import { HeaderBox, MainContentContainer } from "../Shared/StyledComponents";
@@ -24,6 +25,8 @@ class LayoutLanding extends React.Component {
         </Box>
 
         <NewsletterSignup />
+
+        <Social />
 
         <Footer />
       </>
