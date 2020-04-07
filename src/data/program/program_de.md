@@ -15,7 +15,7 @@ Der #Gesundzusammen Accelerator wird von TOA, wefox & finleap organisiert, mit U
 
 #### Batch #1 des Accelerator Programms wird:
 
-- 6-10 Innovative, Digitale Projekte finanzieren
+- min. 5 Innovative, Digitale Projekte finanzieren
 - alle Bewerbungen von einer hochkarätigen Jury (schnell) bewerten lassen - wobei Projekte “on a rolling basis” angenommen werden können
 - das Netzwerk an Partnern konstant erweitern
 
