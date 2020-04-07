@@ -128,3 +128,63 @@ collections:
             fields:
               - { label: Title, name: title, widget: string }
               - { label: Content, name: content, widget: string }
+  - name: "initiatives" # Used in routes, e.g., /admin/collections/blog
+    label: "Initiatives" # Used in the UI
+    create: false # Allow users to create new documents in this collection
+    files:
+      - label: "Initiatives Page"
+        name: "InitiativesPage"
+        file: "src/data/initiatives.json"
+        fields:
+          - label: Categories
+            name: categories
+            widget: list
+            fields:
+              - label: Slug
+                name: slug
+                widget: string
+              - label: Name
+                name: name
+                widget: object
+                fields:
+                  - { label: "Name German", name: "de", widget: "string" }
+                  - { label: "Name English", name: "en", widget: "string" }
+          - label: Initiatives
+            name: initiatives
+            widget: list
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Link
+                name: link
+                widget: string
+                pattern:
+                  [
+                    '[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)',
+                    "Must be a valid URL",
+                  ]
+              - label: Category
+                name: category
+                widget: select
+                options:
+                  [
+                    "gesund_zusammen_initiative",
+                    "digital_tools",
+                    "digital_consultation",
+                    "infection_tracking",
+                    "initiatives",
+                    "hackathons",
+                    "knowledge_resources",
+                    "research_and_government_sites",
+                    "wearables_and_iot",
+                  ]
+              - label: Description
+                name: description
+                widget: object
+                fields:
+                  - { label: "Description German", name: "de", widget: "text" }
+                  - { label: "Description English", name: "en", widget: "text" }
+              - label: Global
+                name: global
+                widget: boolean
