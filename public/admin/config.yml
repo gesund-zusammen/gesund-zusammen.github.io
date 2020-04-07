@@ -1,0 +1,38 @@
+backend:
+  name: github
+  repo: gesund-zusammen/gesund-zusammen.github.io
+  branch: source
+publish_mode: editorial_workflow
+media_folder: "src/images"
+public_folder: "/images"
+collections:
+  - name: "pages" # Used in routes, e.g., /admin/collections/blog
+    label: "Pages" # Used in the UI
+    extension: md
+    format: yaml-frontmatter
+    create: false # Allow users to create new documents in this collection
+    files:
+      - label: "Privacy German"
+        name: "Privacy Page German"
+        file: "src/data/privacy/pricacy_de.md"
+        filter: { field: "language", value: "de" }
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Language",
+              name: "language",
+              widget: "select",
+              options: ["en", "de"],
+            }
+      - label: "Privacy English"
+        name: "Privacy Page English"
+        file: "src/data/privacy/pricacy_en.md"
+        filter: { field: "language", value: "en" }
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Language",
+              name: "language",
+              widget: "select",
+              options: ["en", "de"],
+            }

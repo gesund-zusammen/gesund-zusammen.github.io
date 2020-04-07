@@ -1,3 +1,8 @@
+---
+title: "Imprint"
+language: "en"
+---
+
 ## Introduction and general information
 
 Thank you for your interest in our website. The protection of your personal data is very important to us. Below you will find information on how we handle your data that is collected through your use of our website. Your data will be processed in accordance with the GDPR.
