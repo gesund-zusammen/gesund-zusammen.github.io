@@ -1,17 +1,19 @@
-#The #Gesundzusammen Accelerator Program
+## The #Gesundzusammen Accelerator Program
 
 The #Gesundzusammen Accelerator is organized by TOA, wefox & finleap, with many leading ecosystem players (i.e. N26, BVDS, DeliveryHero, Celonis, Ada Health) supporting.
 
-###The program offers:
+#### The program offers:
 
 - €20,000 of equity-free capital, no strings attached.
 - Free resources (products & services) through the partners involved.
 - 6 weeks of acceleration to develop your product, build partnerships and acquire customers & financing through access to our network.
 - Access to mentors and experts for best-in-industry coaching.
 
-**The open call is aimed at teams of all sizes, stages° and backgrounds (startup, researchers, inventors, tinkerers) and is open until April 13th, 2020.**
+<br />
+**The open call is aimed at teams of all sizes, stages\* and backgrounds (startup, researchers, inventors, tinkerers).** <br />
+**Call is open until April 13th, 2020.**
 
-###Batch #1 of the program will:
+#### Batch #1 of the program will:
 
 - Finance a minimum of six innovative solutions, possibly expanding the scope to 10
 - Review all applications by an acclaimed jury on a rolling basis
@@ -19,4 +21,4 @@ The #Gesundzusammen Accelerator is organized by TOA, wefox & finleap, with many 
 
 The program for Batch #1 will end with a virtual demo day on May 27th, 2020.
 
-°No legal entity? No worries, we’ll help you set one up.
+\*No legal entity? No worries, we’ll help you set one up.
