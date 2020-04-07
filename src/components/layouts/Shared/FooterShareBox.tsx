@@ -54,7 +54,7 @@ class FooterShareBox extends React.PureComponent<
           </CopyLink>
         </CopyBox>
         <ShareBox>
-          <Typography variant="subtitle2">
+          <Typography variant="subtitle2" style={{ color: "#ffffff" }}>
             {this.props.t("footer.shareVia")}
           </Typography>
           <a
@@ -138,6 +138,10 @@ const ShareBox: AnyStyledComponent = styled.div`
     &:first-of-type {
       margin-left: 0;
     }
+  }
+
+  @media (min-width: 600px) {
+    text-align: left;
   }
 `;
 

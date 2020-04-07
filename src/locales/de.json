@@ -120,6 +120,9 @@
     "emailShareSubject": "Guck dir mal gesund-zusammen.de an",
     "copy": "Kopieren",
     "copied": "Kopiert",
+    "twitter": {
+      "title": "Bleibe auch auf Twitter auf dem Laufenden"
+    },
     "nav": {
       "privacy": "Datenschutzerklärung",
       "vulnerability": "Schwachstelle melden",

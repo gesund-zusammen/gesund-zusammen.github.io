@@ -3,6 +3,7 @@ import { Box, Container, Grid, Typography, Hidden } from "@material-ui/core";
 import styled, { css, AnyStyledComponent } from "styled-components";
 import { Link } from "react-router-dom";
 import { withTranslation, WithTranslation } from "react-i18next";
+import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 import FooterShareBox from "../Shared/FooterShareBox";
 
@@ -30,16 +31,26 @@ class Footer extends React.PureComponent<WithTranslation, {}> {
             <Grid container spacing={8}>
               <Grid item xs={12} sm={6}>
                 <FooterContent>
-                  <Typography variant="h2">
+                  <Typography variant="h2" style={{ color: "#ffffff" }}>
                     {this.props.t("footer.title")}
                   </Typography>
-                  <Typography variant="body1">
+                  <Typography variant="body1" style={{ color: "#ffffff" }}>
                     {this.props.t("footer.claim")}
                   </Typography>
                 </FooterContent>
+                <FooterShareBox />
               </Grid>
               <Grid item xs={12} sm={6}>
-                <FooterShareBox />
+                <TwitterTimelineEmbedWrapper>
+                  <Typography variant="h2" style={{ color: "#ffffff" }}>
+                    {this.props.t("footer.twitter.title")}
+                  </Typography>
+                  <TwitterTimelineEmbed
+                    sourceType="profile"
+                    screenName="gesundzusammen"
+                    options={{ height: "100%" }}
+                  />
+                </TwitterTimelineEmbedWrapper>
               </Grid>
             </Grid>
           </Box>
@@ -93,7 +104,7 @@ const FooterWrapper: AnyStyledComponent = styled(Box)`
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   color: #ffffff;
   padding: 2rem 0 1rem 0;
-  background-color: #ccedf7;
+  background-color: #003269;
   background-image: url(${BgFooter});
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -107,6 +118,7 @@ const FooterWrapper: AnyStyledComponent = styled(Box)`
 `;
 
 const FooterContent: AnyStyledComponent = styled.div`
+  color: #ffffff;
   text-align: center;
   padding-bottom: 0;
 
@@ -206,5 +218,7 @@ const CopyrightNote: AnyStyledComponent = styled.p`
     margin-top: 3rem;
   }
 `;
+
+const TwitterTimelineEmbedWrapper: AnyStyledComponent = styled.div``;
 
 export default withTranslation()(Footer);
