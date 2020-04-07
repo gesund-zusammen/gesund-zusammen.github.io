@@ -108,7 +108,7 @@ const theme = responsiveFontSizes(
         ].join(","),
         fontSize: "3.3rem",
         fontWeight: 600,
-        marginBottom: "1.4rem",
+        marginBottom: "1rem",
       },
       h2: {
         fontFamily: [
@@ -119,7 +119,7 @@ const theme = responsiveFontSizes(
         ].join(","),
         fontSize: "2.4rem",
         fontWeight: 600,
-        marginBottom: "1.2rem",
+        marginBottom: "1rem",
         color: "#003269",
       },
       h3: {
@@ -131,7 +131,7 @@ const theme = responsiveFontSizes(
         ].join(","),
         fontSize: "2.2rem",
         fontWeight: 600,
-        marginBottom: "1.6rem",
+        marginBottom: "1rem",
         lineHeight: 2.4,
         color: "#003269",
       },
@@ -144,7 +144,7 @@ const theme = responsiveFontSizes(
         ].join(","),
         fontSize: "1.7rem",
         fontWeight: 600,
-        marginBottom: "1.4rem",
+        marginBottom: "1rem",
         lineHeight: 2.4,
       },
       body1: {
