@@ -29,13 +29,17 @@ const config = {
   target: "web",
   devtool: webpackDevtool,
   resolve: {
-    extensions: [".js", ".jsx", ".tsx", ".ts", "woff", "woff2", "ttf"],
+    extensions: [".md", ".js", ".jsx", ".tsx", ".ts", "woff", "woff2", "ttf"],
   },
   module: {
     rules: [
       {
         test: /\.css$/,
         use: [{ loader: "style-loader" }, { loader: "css-loader" }],
+      },
+      {
+        test: /\.md$/i,
+        use: 'raw-loader',
       },
       {
         test: /\.(ts|tsx)?$/,

@@ -4,27 +4,30 @@ import { withTranslation, WithTranslation } from "react-i18next";
 
 import InfoBox from "../common/InfoBox";
 import Partners from "./Partners";
+import Markdown from "markdown-to-jsx";
+import ContentDE from "../../data/landing/landing_de.md";
+import ContentEN from "../../data/landing/landing_en.md";
+import styled, { AnyStyledComponent } from "styled-components";
 
 class Landing extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <>
         <Box id="initiative" paddingBottom={4} marginTop={4}>
-          <Typography
-            variant="h2"
-            style={{
-              whiteSpace: "pre-line",
+          <Markdown
+            options={{
+              overrides: {
+                p: {
+                  component: Typography,
+                  props: {
+                    variant: "body1",
+                  },
+                },
+              },
             }}
           >
-            {this.props.t("main.title")}
-          </Typography>
-          <Typography
-            variant="body1"
-            style={{ maxWidth: "920px", textAlign: "justify" }}
-            dangerouslySetInnerHTML={{
-              __html: this.props.t("main.content"),
-            }}
-          />
+            {this.props.i18n.language === "de" ? ContentDE : ContentEN}
+          </Markdown>
           <Box marginTop={4}>
             <Grid container spacing={4}>
               <InfoBox

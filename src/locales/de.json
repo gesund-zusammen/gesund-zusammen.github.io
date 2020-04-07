@@ -19,10 +19,6 @@
       }
     }
   },
-  "main": {
-    "title": "#Gesundzusammen – \nein Accelerator initiiert von der Digitalwirtschaft",
-    "content": "Als breite Allianz deutscher Tech-Unternehmen wollen wir Gesellschaft, Politik und Wirtschaft aktiv dabei helfen, COVID-19 mit digitalen Lösungen einzudämmen. Dafür haben wir einen Accelerator gegründet der gezielt digitale Projekte mit Ressourcen unterstützt.<p><font style=\"font-size:1.4rem; font-weight: bolder;\">Damit Privates privat bleibt</font><br />Auch in Krisenzeiten haben Freiheits- und Persönlichkeitsrechte der Menschen höchste Priorität.<p><font style=\"font-size:1.4rem; font-weight: bolder;\">Damit Deutschland gesund bleibt</font><br />Die digitalen Tools im Accelerator sollen mit ihren Lösungen helfen, Risikogruppen besser zu schützen und das Gesundheitssystem zu entlasten.<p><font style=\"font-size:1.4rem; font-weight: bolder;\">Damit die Wirtschaft in Fahrt kommt</font><br />Digitale Technologie wird helfen Gesundheitsrisiken in den Unternehmen zu senken und Produktivität effizienter hochzufahren."
-  },
   "boxes": {
     "initiative": {
       "title": "Unser Accelerator",
@@ -57,7 +53,6 @@
       "content": "Accelerator um Digitale Tools vs COVID-19 schneller an die \nÖffentlichkeit zu bringen"
     },
     "title": "Das #Gesundzusammen Accelerator Programm",
-    "content": "#Das #Gesundzusammen Accelerator Programm\n\nDer #Gesundzusammen Accelerator wird von TOA, wefox & finleap organisiert, mit Unterstützung vieler Technologie-Unternehmen (i.e. N26, DeliveryHero, Celonis, Ada Health) sowie dem Bundesverband Deutscher Startups.\n\n###Das Programm bietet:\n\n- €20,000 Kapital (ohne Equity)\n- Kostenlose Ressourcen (Produkte & Services) unserer Partner\n- 6 Wochen Acceleration-Programm für die Entwicklung eurer Produkte, Aufbau von Partnerschaften, Nutzer-Akquise & Weiterfinanzierung\n- Zugang zu Mentoren und Experten aus dem Partner-Netzwerk\n\n**Bewerben können sich alle (Unternehmen, Forscher, Erfinder) jeder Größe.**\n\n**Bewerbungsfrist endet am 13. April, 2020.**\n\n###Batch #1 des Accelerator Programms wird:\n\n- 6-10 Innovative, Digitale Projekte finanzieren\n- alle Bewerbungen von einer hochkarätigen Jury (schnell) bewerten lassen - wobei Projekte “on a rolling basis” angenommen werden können\n- das Netzwerk an Partnern konstant erweitern\n\n\nBatch #1 endet mit einem virtuellen Demo Day am 25.Mai, 2020.\n\n*Ihr habt noch kein Unternehmen oder juristische Person registriert? Kein Problem, wir helfen euch beim Setup!",
     "claim": "Du brauchst Unterstützung?",
     "cta": "Bewirb dich jetzt",
     "link": "/apply",
@@ -142,9 +137,6 @@
     "content": "Wir halten Sie auf dem Laufenden über neue Apps, Initiativen, Hackathons usw.",
     "inputPlaceholder": "E-Mail",
     "cta": "Anmelden"
-  },
-  "imprint": {
-    "content": "#Adresse<br />\nGesund Zusammen gGmbH i.G.<br />\nUrbanstr. 71<br />\n10967 Berlin, Germany\n\n##Kontakt<br />\nTel .: +49 (0) 30 609865290<br />\nEmail: media@gesund-zusammen.de\n\n##Managing Directors<br />\nRamin Niroumand<br />\nJulian Bernhard Edward Teicke\n\n##Commercial Register\nAmtsgericht Charlottenburg\n<br />\nHRB [Aktualisierung nach erfolgreicher Eintragung] B <br />\nVAT ID: [Aktualisierung nach erfolgreicher Eintragung]\n\n##The following information is legally required according to German law<br />\n Responsible for content according to § 55 RStV Abs. 2: Ramin Niroumand, see address above. Note on external links: In a judgment dated 12 May 1998, “Liability for Links” (312 O 85/98) the regional court (LG) of Hamburg decided that the owner of a website is responsible for the contents on linked pages of external websites. This can only be prevented by explicitly distancing oneself from these contents. We hereby disclaim responsibility for the contents of all linked pages on our website and declare that we do not adopt this content as its own.\n\n##Disclaimer<br />\nThe information provided on this website has been carefully checked and is updated regularly. However, no guarantee can be given that all information is always complete, correct and / or up to date. This applies especially to all links to other websites, which are directly\nor indirectly. We reserve all information to supplement without prior\nnotice, to remove and / or modify.\n\n##Copyright\nAll product names mentioned on this website, product names, brand names and logos are trademarks and / or property of their respective owners. All text and graphics on this site: &copy; Gesund Zusammen gGmbH i.G. or the copyright holders."
   },
   "footer": {
     "title": "Aufruf zum Teilen",
