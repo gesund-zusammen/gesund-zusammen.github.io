@@ -84,32 +84,6 @@
     "cta": "Schreiben Sie uns",
     "claim": "Sie haben noch eine Frage?",
     "link": "mailto:faqs@gesund-zusammen.de",
-    "content": [
-      {
-        "title": "Über uns",
-        "content": "Wir sind eine breite Allianz deutscher Tech-Unternehmen, wollen Gesellschaft, Politik und Wirtschaft aktiv dabei helfen, COVID-19 mit digitalen Lösungen einzudämmen. Dafür bauen wir auf eine der wichtigsten Ressourcen, die der Welt heute zur Verfügung steht: Information."
-      },
-      {
-        "title": "Wieso GesundZusammen?",
-        "content": "Um COVID-19 einzudämmen, entsteht gerade ein weltweiter Wettbewerb von Ideen, maßgeblich beschleunigt unter anderem von der Tech-Industrie. Wir bringen nicht nur die Ressourcen und Fähigkeiten der deutschen Digitalwirtschaft zusammen. Wir suchen und fördern gleichzeitig den offenen Austausch mit anderen digitalen Initiativen, damit sich die Ideen mit dem größten Potenzial durchsetzen."
-      },
-      {
-        "title": "Was wollt ihr erreichen?",
-        "content": "Daten ermöglichen es uns, gemeinsam zu forschen, Menschen zu warnen, Leben zu retten. Und doch ist eine flächendeckende Datennutzung nicht risikolos: Angesichts der Krise mehren sich die Stimmen, Grundrechte zum Wohle der Gesundheit zu opfern. Gemeinsam werden wir den Beweis erbringen: Wir können beides haben – Infektionsschutz und Datenschutz."
-      },
-      {
-        "title": "Sucht ihr nach weiteren Partnern?",
-        "content": "Wir sind immer offen für weitere Partner, die ihre Kompetenzen und Ressourcen gern zum Gesundheitsschutz der Gesellschaft einbringen wollen."
-      },
-      {
-        "title": "Wie steht ihr zur Arbeit von Gesundheitssystem, Ärzten und Pflegepersonal?",
-        "content": "Wir bewundern und unterstützen die Arbeit aller im Gesundheitssystem. Deshalb wollen wir gemeinsam dazu beitragen, ihre Arbeitssituation und die Datenlage ihrer täglichen Entscheidungen durch Technologie zu verbessern."
-      },
-      {
-        "title": "Unterstützt ihr digitale Tools auch finanziell aus der Initiative?",
-        "content": "Unsere wertvollste Ressource sind unsere kompetenten, in agilen Teams arbeitenden Mitarbeiter. Sie jetzt in den Dienst der Allgemeinheit zu stellen, ist unser Beitrag zur Bewältigung dieser Krise. Sie haben ein Problem, das Sie lösen wollen? Sprechen Sie uns an."
-      }
-    ],
     "contact": "Für weitere Fragen schreiben Sie bitte an: media@gesund-zusammen.de"
   },
   "press": {
