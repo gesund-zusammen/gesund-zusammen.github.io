@@ -24,7 +24,7 @@ class Footer extends React.PureComponent<WithTranslation, {}> {
     return (
       <FooterWrapper id="footer" component="footer">
         <Container maxWidth="lg">
-          <FooterNav>
+          <FooterLinks>
             <Hidden xsDown>
               <Link
                 to={`/${this.props.i18n.language}/`}
@@ -41,6 +41,8 @@ class Footer extends React.PureComponent<WithTranslation, {}> {
                 <img src={LogoGithub} alt="Github" />
               </a>
             </FooterSocialIcons>
+          </FooterLinks>
+          <FooterNav>
             <FooterNavItems>
               <FooterNavLinkItem to={`/${this.props.i18n.language}/apply`}>
                 {this.props.t("program.cta")}
@@ -71,7 +73,7 @@ class Footer extends React.PureComponent<WithTranslation, {}> {
 const FooterWrapper: AnyStyledComponent = styled(Box)`
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   color: #ffffff;
-  padding: 2rem 0 0 0;
+  padding: 4rem 0 2rem 0;
   background-color: #ccedf7;
   background-image: url(${BgFooter});
   background-position: bottom left;
@@ -80,9 +82,16 @@ const FooterWrapper: AnyStyledComponent = styled(Box)`
   overflow: hidden;
 
   @media (min-width: 600px) {
-    padding-top: 4rem;
+    padding: 6rem 0 2rem 0;
     background-position: top center;
   }
+`;
+
+const FooterLinks: AnyStyledComponent = styled.div`
+  display: block;
+  overflow: hidden;
+  padding: 0 0 2rem 0;
+  margin: 0;
 `;
 
 const FooterLogo: AnyStyledComponent = styled.img`
@@ -98,15 +107,14 @@ const FooterLogo: AnyStyledComponent = styled.img`
 const FooterNav: AnyStyledComponent = styled.div`
   display: block;
   overflow: hidden;
-  padding: 2rem 0;
   margin: 0;
 `;
 
 const FooterSocialIcons: AnyStyledComponent = styled.div`
   text-align: center;
+  margin: 1rem 0;
 
   & > a {
-    margin-top: 2rem;
     margin-left: 2rem;
 
     &:first-of-type {
@@ -127,13 +135,11 @@ const FooterSocialIcons: AnyStyledComponent = styled.div`
 const FooterNavItems: AnyStyledComponent = styled.div`
   display: inline-block;
   width: 100%;
-  margin: 1rem 0 0 0;
   text-align: center;
 
   @media (min-width: 600px) {
     float: right;
     width: auto;
-    margin: 2rem 0 0 0;
     text-align: right;
   }
 `;
@@ -168,12 +174,13 @@ const FooterNavLinkItem: AnyStyledComponent = styled(Link)`
 `;
 
 const CopyrightNote: AnyStyledComponent = styled.p`
+  float: left;
   font-size: 0.6rem;
   text-align: center;
+  margin-top: 1rem;
 
   @media (min-width: 600px) {
     text-align: left;
-    margin-top: 3rem;
   }
 `;
 
