@@ -1,0 +1,54 @@
+{
+  "de": [
+    {
+      "title": "Über uns",
+      "content": "Wir sind eine breite Allianz deutscher Tech-Unternehmen, wollen Gesellschaft, Politik und Wirtschaft aktiv dabei helfen, COVID-19 mit digitalen Lösungen einzudämmen. Dafür bauen wir auf eine der wichtigsten Ressourcen, die der Welt heute zur Verfügung steht: Information."
+    },
+    {
+      "title": "Wieso GesundZusammen?",
+      "content": "Um COVID-19 einzudämmen, entsteht gerade ein weltweiter Wettbewerb von Ideen, maßgeblich beschleunigt unter anderem von der Tech-Industrie. Wir bringen nicht nur die Ressourcen und Fähigkeiten der deutschen Digitalwirtschaft zusammen. Wir suchen und fördern gleichzeitig den offenen Austausch mit anderen digitalen Initiativen, damit sich die Ideen mit dem größten Potenzial durchsetzen."
+    },
+    {
+      "title": "Was wollt ihr erreichen?",
+      "content": "Daten ermöglichen es uns, gemeinsam zu forschen, Menschen zu warnen, Leben zu retten. Und doch ist eine flächendeckende Datennutzung nicht risikolos: Angesichts der Krise mehren sich die Stimmen, Grundrechte zum Wohle der Gesundheit zu opfern. Gemeinsam werden wir den Beweis erbringen: Wir können beides haben – Infektionsschutz und Datenschutz."
+    },
+    {
+      "title": "Sucht ihr nach weiteren Partnern?",
+      "content": "Wir sind immer offen für weitere Partner, die ihre Kompetenzen und Ressourcen gern zum Gesundheitsschutz der Gesellschaft einbringen wollen."
+    },
+    {
+      "title": "Wie steht ihr zur Arbeit von Gesundheitssystem, Ärzten und Pflegepersonal?",
+      "content": "Wir bewundern und unterstützen die Arbeit aller im Gesundheitssystem. Deshalb wollen wir gemeinsam dazu beitragen, ihre Arbeitssituation und die Datenlage ihrer täglichen Entscheidungen durch Technologie zu verbessern."
+    },
+    {
+      "title": "Unterstützt ihr digitale Tools auch finanziell aus der Initiative?",
+      "content": "Unsere wertvollste Ressource sind unsere kompetenten, in agilen Teams arbeitenden Mitarbeiter. Sie jetzt in den Dienst der Allgemeinheit zu stellen, ist unser Beitrag zur Bewältigung dieser Krise. Sie haben ein Problem, das Sie lösen wollen? Sprechen Sie uns an."
+    }
+  ],
+  "en": [
+    {
+      "title": "About us",
+      "content": "We as a broad alliance of German Tech companies, want to actively help society, politics and economy to contain COVID-19 with digital solutions. To achieve this, we are building on one of the most important resources available to the world today: Information."
+    },
+    {
+      "title": "Why GesundZusammen?",
+      "content": "In order to contain COVID-19, a worldwide competition of ideas is emerging, significantly accelerated by the tech industry and others. We are not only bringing together the resources and capabilities of the German digital economy. We also seek and promote open exchange with other digital initiatives so that the ideas with the greatest potential can prevail."
+    },
+    {
+      "title": "What is your goal?",
+      "content": "Data enables us to do research together, warn people, save lives. And yet the widespread use of data is not without risk: in the face of the crisis, there are increasing voices calling for fundamental rights to be sacrificed for the benefit of health. Together we will prove the point: We can have both infection control and privacy."
+    },
+    {
+      "title": "Are you looking for more partners?",
+      "content": "We are always open to other partners who would like to contribute their skills and resources to protect the health of society."
+    },
+    {
+      "title": "What do you think about the work of the health system, doctors and nursing staff?",
+      "content": "We admire and support the work of everyone in the health system. This is why we want to contribute together to improving their work situation and the data basis of their daily decisions through technology."
+    },
+    {
+      "title": "Do you support digital tools also financially from the initiative?",
+      "content": "Our most valuable resource is our competent employees working in agile teams. Putting them at the service of the community now is our contribution for overcoming this crisis. Do you have a problem you want to solve? Please contact us."
+    }
+  ]
+}
