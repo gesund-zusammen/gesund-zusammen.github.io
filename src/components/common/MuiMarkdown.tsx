@@ -8,11 +8,6 @@ interface IMuiMarkdownProps {
 
 class MuiMarkdown extends React.PureComponent<IMuiMarkdownProps, {}> {
   render = () => {
-    const frontMatterRegExp = /(\-\-\-(.|\n)*\-\-\-)/;
-    const sanitisedMarkdown = this.props.markdown.replace(
-      frontMatterRegExp,
-      "",
-    );
     return (
       <Markdown
         options={{
@@ -65,7 +60,7 @@ class MuiMarkdown extends React.PureComponent<IMuiMarkdownProps, {}> {
           },
         }}
       >
-        {sanitisedMarkdown}
+        {this.props.markdown}
       </Markdown>
     );
   };
