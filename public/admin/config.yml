@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: gesund-zusammen/gesund-zusammen.github.io
-  branch: AddNetlifyCMSNew
+  branch: source
 publish_mode: editorial_workflow
 media_folder: "src/images"
 public_folder: "/images"
@@ -72,7 +72,7 @@ collections:
               options: ["de", "en"],
               default: "en",
             }
-      - label: "Landng Page English"
+      - label: "Landing Page English"
         name: "LandingEnglish"
         file: "src/data/landing/landing_en.md"
         fields:
