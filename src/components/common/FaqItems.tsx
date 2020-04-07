@@ -9,13 +9,7 @@ import { Add, Minimize } from "@material-ui/icons";
 import styled, { AnyStyledComponent } from "styled-components";
 import { withTranslation, WithTranslation } from "react-i18next";
 
-import ContentDE from "../../locales/de.json";
-import ContentEN from "../../locales/en.json";
-
-const CONTENT = {
-  de: ContentDE,
-  en: ContentEN,
-};
+import FaqData from "../../data/faq.json";
 
 interface IFaqContent {
   title: string;
@@ -40,7 +34,7 @@ class FaqItems extends React.Component<WithTranslation, IFaqItemsState> {
   }
 
   getFaqContent = (): Array<IFaqContent> => {
-    return CONTENT[this.props.i18n.language].faqs.content;
+    return FaqData[this.props.i18n.language];
   };
 
   handleExpansionChange = (panel: string) => {
