@@ -72,7 +72,7 @@ const FooterWrapper: AnyStyledComponent = styled(Box)`
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   color: #ffffff;
   padding: 2rem 0 0 0;
-  background-color: #003269;
+  background-color: #ccedf7;
   background-image: url(${BgFooter});
   background-position: bottom left;
   background-repeat: no-repeat;

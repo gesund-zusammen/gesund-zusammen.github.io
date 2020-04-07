@@ -23,10 +23,10 @@ class Social extends React.PureComponent<WithTranslation, {}> {
           <Grid container spacing={8}>
             <Grid item xs={12} sm={6}>
               <SocialContent>
-                <Typography variant="h2" style={{ color: "#ffffff" }}>
+                <Typography variant="h2">
                   {this.props.t("footer.title")}
                 </Typography>
-                <Typography variant="body1" style={{ color: "#ffffff" }}>
+                <Typography variant="body1">
                   {this.props.t("footer.claim")}
                 </Typography>
               </SocialContent>
@@ -34,7 +34,7 @@ class Social extends React.PureComponent<WithTranslation, {}> {
             </Grid>
             <Grid item xs={12} sm={6}>
               <TwitterTimelineEmbedWrapper>
-                <Typography variant="h2" style={{ color: "#ffffff" }}>
+                <Typography variant="h2">
                   {this.props.t("footer.twitter.title")}
                 </Typography>
                 <TwitterTimelineEmbed
@@ -55,7 +55,7 @@ const SocialWrapper: AnyStyledComponent = styled(Box)`
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   color: #ffffff;
   padding: 2rem 0 0 0;
-  background-color: #003269;
+  background-color: #ccedf7;
   overflow: hidden;
 
   @media (min-width: 600px) {
