@@ -18,42 +18,22 @@ variable "aws-secret-key" {
   type = string
 }
 
-variable "bucket_name_staging" {
+variable "bucket_name" {
   description = "name of the S3 bucket where the static website will be hosted, e.g. \"demo.com\""
   type        = string
 }
 
-variable "bucket_name_production" {
-  description = "name of the S3 bucket where the static website will be hosted, e.g. \"demo.com\""
-  type        = string
-}
-
-variable "domain_name_staging" {
+variable "domain_name" {
   description = "domain for the cloudfront distribution e.g. \"demo.com\""
   type        = string
 }
 
-variable "domain_name_production" {
-  description = "domain for the cloudfront distribution e.g. \"demo.com\""
-  type        = string
-}
-
-variable "zone_id_staging" {
+variable "zone_id" {
   description = "id of the route53 zone"
   type        = string
 }
 
-variable "cert_arn_staging" {
-  description = "The ARN of the certificate that the CloudFront distribution uses for https"
-  type        = string
-}
-
-variable "zone_id_production" {
-  description = "id of the route53 zone"
-  type        = string
-}
-
-variable "cert_arn_production" {
+variable "cert_arn" {
   description = "The ARN of the certificate that the CloudFront distribution uses for https"
   type        = string
 }
