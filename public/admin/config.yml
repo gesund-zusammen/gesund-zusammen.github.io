@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: gesund-zusammen/gesund-zusammen.github.io
-  branch: source
+  branch: AddNetlifyCMSNew
 publish_mode: editorial_workflow
 media_folder: "src/images"
 public_folder: "/images"
@@ -13,26 +13,46 @@ collections:
     create: false # Allow users to create new documents in this collection
     files:
       - label: "Privacy German"
-        name: "Privacy Page German"
-        file: "src/data/privacy/pricacy_de.md"
-        filter: { field: "language", value: "de" }
+        name: "PrivacyGerman"
+        file: "src/data/privacy/privacy_de.md"
         fields:
           - { label: "Body", name: "body", widget: "markdown" }
           - {
               label: "Language",
               name: "language",
-              widget: "select",
-              options: ["en", "de"],
+              widget: "string",
+              options: ["de", "en"],
+              default: "en",
             }
       - label: "Privacy English"
-        name: "Privacy Page English"
-        file: "src/data/privacy/pricacy_en.md"
-        filter: { field: "language", value: "en" }
+        name: "PrivacyEnglish"
+        file: "src/data/privacy/privacy_en.md"
         fields:
           - { label: "Body", name: "body", widget: "markdown" }
           - {
               label: "Language",
               name: "language",
               widget: "select",
-              options: ["en", "de"],
+              options: ["de", "en"],
+              default: "en",
             }
+  - name: "faqs" # Used in routes, e.g., /admin/collections/blog
+    label: "FAQs" # Used in the UI
+    create: false # Allow users to create new documents in this collection
+    files:
+      - label: "FAQ Page"
+        name: "FAQPage"
+        file: "src/data/faq.json"
+        fields:
+          - label: FAQs in German
+            name: de
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Content, name: content, widget: string }
+          - label: FAQs in English
+            name: en
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Content, name: content, widget: string }

@@ -1,5 +1,5 @@
 ---
-title: "Imprint"
+title: "Privacy German"
 language: "en"
 ---
 
