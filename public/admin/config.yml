@@ -1,0 +1,130 @@
+backend:
+  name: github
+  repo: gesund-zusammen/gesund-zusammen.github.io
+  branch: source
+publish_mode: editorial_workflow
+media_folder: "src/images"
+public_folder: "/images"
+collections:
+  - name: "pages" # Used in routes, e.g., /admin/collections/blog
+    label: "Pages" # Used in the UI
+    extension: md
+    format: yaml-frontmatter
+    create: false # Allow users to create new documents in this collection
+    files:
+      - label: "Privacy German"
+        name: "PrivacyGerman"
+        file: "src/data/privacy/privacy_de.md"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Language",
+              name: "language",
+              widget: "string",
+              options: ["de", "en"],
+              default: "en",
+            }
+      - label: "Privacy English"
+        name: "PrivacyEnglish"
+        file: "src/data/privacy/privacy_en.md"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Language",
+              name: "language",
+              widget: "select",
+              options: ["de", "en"],
+              default: "en",
+            }
+      - label: "Imprint German"
+        name: "ImprintGerman"
+        file: "src/data/imprint/imprint_de.md"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Language",
+              name: "language",
+              widget: "string",
+              options: ["de", "en"],
+              default: "en",
+            }
+      - label: "Imprint English"
+        name: "ImprintEnglish"
+        file: "src/data/imnprint/imprint_en.md"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Language",
+              name: "language",
+              widget: "select",
+              options: ["de", "en"],
+              default: "en",
+            }
+      - label: "Landing Page German"
+        name: "LandingGerman"
+        file: "src/data/landing/landing_de.md"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Language",
+              name: "language",
+              widget: "string",
+              options: ["de", "en"],
+              default: "en",
+            }
+      - label: "Landing Page English"
+        name: "LandingEnglish"
+        file: "src/data/landing/landing_en.md"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Language",
+              name: "language",
+              widget: "select",
+              options: ["de", "en"],
+              default: "en",
+            }
+      - label: "Program German"
+        name: "ProgramGerman"
+        file: "src/data/program/program_de.md"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Language",
+              name: "language",
+              widget: "string",
+              options: ["de", "en"],
+              default: "en",
+            }
+      - label: "Program English"
+        name: "ProgramEnglish"
+        file: "src/data/program/program_en.md"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Language",
+              name: "language",
+              widget: "select",
+              options: ["de", "en"],
+              default: "en",
+            }
+  - name: "faqs" # Used in routes, e.g., /admin/collections/blog
+    label: "FAQs" # Used in the UI
+    create: false # Allow users to create new documents in this collection
+    files:
+      - label: "FAQ Page"
+        name: "FAQPage"
+        file: "src/data/faq.json"
+        fields:
+          - label: FAQs in German
+            name: de
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Content, name: content, widget: string }
+          - label: FAQs in English
+            name: en
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Content, name: content, widget: string }

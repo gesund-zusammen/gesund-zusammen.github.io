@@ -18,6 +18,7 @@ jobs:
         run: |
           yarn install
           yarn build
+          rm -rf /build/admin
 
       - name: Add version info 📄
         id: version-info

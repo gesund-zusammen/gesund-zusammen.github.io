@@ -12,9 +12,9 @@ class PrivacyPolicy extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <PrivacyWrapper paddingBottom={4}>
-        <MuiMarkdown>
-          {this.props.i18n.language === "de" ? ContentDE : ContentEN}
-        </MuiMarkdown>
+        <MuiMarkdown
+          markdown={this.props.i18n.language === "de" ? ContentDE : ContentEN}
+        ></MuiMarkdown>
       </PrivacyWrapper>
     );
   };
