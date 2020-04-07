@@ -2,7 +2,16 @@ import React from "react";
 import { Link, Typography } from "@material-ui/core";
 import Markdown from "markdown-to-jsx";
 
-class MuiMarkdown extends React.PureComponent {
+interface IMuiMarkdownProps {
+  markdown: string;
+}
+class MuiMarkdown extends React.PureComponent<IMuiMarkdownProps, {}> {
+  sanitisedMarkdown: string;
+  constructor(props: IMuiMarkdownProps) {
+    super(props);
+    const frontMatterRegExp = /(\-\-\-(.|\n)*\-\-\-)/;
+    this.sanitisedMarkdown = this.props.markdown.replace(frontMatterRegExp, "");
+  }
   render = () => {
     return (
       <Markdown
@@ -56,7 +65,7 @@ class MuiMarkdown extends React.PureComponent {
           },
         }}
       >
-        {this.props.children}
+        {this.sanitisedMarkdown}
       </Markdown>
     );
   };

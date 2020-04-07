@@ -13,9 +13,9 @@ class Program extends React.Component<WithTranslation, {}> {
   render = () => {
     return (
       <Box paddingBottom={4}>
-        <MuiMarkdown>
-          {this.props.i18n.language === "de" ? ContentDE : ContentEN}
-        </MuiMarkdown>
+        <MuiMarkdown
+          markdown={this.props.i18n.language === "de" ? ContentDE : ContentEN}
+        ></MuiMarkdown>
 
         <Projects />
 

@@ -14,9 +14,9 @@ class PrivacyPolicy extends React.PureComponent<WithTranslation, {}> {
     return (
       <>
         <PrivacyWrapper paddingBottom={4}>
-          <MuiMarkdown>
-            {this.props.i18n.language === "de" ? ContentDE : ContentEN}
-          </MuiMarkdown>
+          <MuiMarkdown
+            markdown={this.props.i18n.language === "de" ? ContentDE : ContentEN}
+          ></MuiMarkdown>
         </PrivacyWrapper>
         <Box paddingBottom={4} marginTop={4}>
           <CTABox
