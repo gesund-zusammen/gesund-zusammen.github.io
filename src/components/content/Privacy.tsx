@@ -11,24 +11,22 @@ import ContentEN from "../../data/privacy/privacy_en.md";
 
 class PrivacyPolicy extends React.PureComponent<WithTranslation, {}> {
   render = () => {
-    if (this.props.i18n.language === "de") {
-      return (
-        <>
-          <PrivacyWrapper paddingBottom={4}>
-            <MuiMarkdown>
-              {this.props.i18n.language === "de" ? ContentDE : ContentEN}
-            </MuiMarkdown>
-          </PrivacyWrapper>
-          <Box paddingBottom={4} marginTop={4}>
-            <CTABox
-              claim={this.props.t("privacy.claim")}
-              cta={this.props.t("privacy.cta")}
-              href={this.props.t("privacy.link")}
-            />
-          </Box>
-        </>
-      );
-    }
+    return (
+      <>
+        <PrivacyWrapper paddingBottom={4}>
+          <MuiMarkdown>
+            {this.props.i18n.language === "de" ? ContentDE : ContentEN}
+          </MuiMarkdown>
+        </PrivacyWrapper>
+        <Box paddingBottom={4} marginTop={4}>
+          <CTABox
+            claim={this.props.t("privacy.claim")}
+            cta={this.props.t("privacy.cta")}
+            href={this.props.t("privacy.link")}
+          />
+        </Box>
+      </>
+    );
   };
 }
 
