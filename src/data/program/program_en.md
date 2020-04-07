@@ -9,14 +9,14 @@ The #Gesundzusammen Accelerator is organized by TOA, wefox & finleap, with many 
 - 6 weeks of acceleration to develop your product, build partnerships and acquire customers & financing through access to our network.
 - Access to mentors and experts for best-in-industry coaching.
 
-**The open call is aimed at teams of all sizes, stages and backgrounds (startup, researchers, inventors, tinkerers) and is open until April 13th, 2020.**
+**The open call is aimed at teams of all sizes, stages° and backgrounds (startup, researchers, inventors, tinkerers) and is open until April 13th, 2020.**
 
 ### Batch #1 of the program will:
 
-Finance a minimum of six innovative solutions, possibly expanding the scope to 10
-Review all applications by an acclaimed jury on a rolling basis
-Constantly expand the network of partners involved
+- Finance a minimum of six innovative solutions, possibly expanding the scope to 10
+- Review all applications by an acclaimed jury on a rolling basis
+- Constantly expand the network of partners involved
 
-The program for Batch #1 will end with a virtual demo day on May 25th, 2020.
+The program for Batch #1 will end with a virtual demo day on May 27th, 2020.
 
 \*No legal entity? No worries, we’ll help you set one up.

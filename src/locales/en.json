@@ -11,8 +11,8 @@
     },
     "content": {
       "landing": {
-        "title": "Data saves lives",
-        "content": "Digital tools against the COVID-19 crisis. Faster."
+        "title": "Technology saving lives.",
+        "content": "An accelerator program to boost solutions against the COVID-19 crisis."
       },
       "initiatives": {
         "content": "In order to contain COVID-19, a worldwide competition of ideas is emerging, significantly accelerated by the tech industry and others. We are not only bringing together the resources and capabilities of the German digital economy. We also seek and promote open exchange with other digital initiatives so that the ideas with the greatest potential can prevail. \n\n Here you will find exciting digital initiatives and technologies from around the world - continuously updated. If you would like to add more projects to this showcase, please contact us."
@@ -21,8 +21,8 @@
   },
   "boxes": {
     "initiative": {
-      "title": "Our Program",
-      "content": "A number of 6-10 digital projects are supported by the targeted #Gesundzusammen Accelerator program."
+      "title": "Accelerator",
+      "content": "A mininum of 5 solutions are supported with €20,000 of equity-free capital, mentorship and reach."
     },
     "support": {
       "title": "Support System",
@@ -30,7 +30,7 @@
     },
     "ecosystem": {
       "title": "Open Ecosystem",
-      "content": "We are investing into building an active Ecosystem by providing a database of all relevant Covid-19 initiatives, and other outreach activities."
+      "content": "We are investing into building an active Ecosystem by providing a database of all relevant COVID-19 initiatives, and other outreach activities."
     }
   },
   "program": {
