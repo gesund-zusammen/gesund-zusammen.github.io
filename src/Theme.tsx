@@ -186,6 +186,16 @@ const theme = responsiveFontSizes(
           ],
         },
       },
+      MuiContainer: {
+        root: {
+          paddingLeft: "24px",
+          paddingRight: "24px",
+          "@media (min-width: 600px)": {
+            paddingLeft: "48px",
+            paddingRight: "48px",
+          },
+        },
+      },
       MuiLink: {
         root: {
           color: "#00AAC8",
