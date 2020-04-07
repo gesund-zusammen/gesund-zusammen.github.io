@@ -5,14 +5,14 @@ import Markdown from "markdown-to-jsx";
 interface IMuiMarkdownProps {
   markdown: string;
 }
+
 class MuiMarkdown extends React.PureComponent<IMuiMarkdownProps, {}> {
-  sanitisedMarkdown: string;
-  constructor(props: IMuiMarkdownProps) {
-    super(props);
-    const frontMatterRegExp = /(\-\-\-(.|\n)*\-\-\-)/;
-    this.sanitisedMarkdown = this.props.markdown.replace(frontMatterRegExp, "");
-  }
   render = () => {
+    const frontMatterRegExp = /(\-\-\-(.|\n)*\-\-\-)/;
+    const sanitisedMarkdown = this.props.markdown.replace(
+      frontMatterRegExp,
+      "",
+    );
     return (
       <Markdown
         options={{
@@ -65,7 +65,7 @@ class MuiMarkdown extends React.PureComponent<IMuiMarkdownProps, {}> {
           },
         }}
       >
-        {this.sanitisedMarkdown}
+        {sanitisedMarkdown}
       </Markdown>
     );
   };
