@@ -39,7 +39,19 @@ const config = {
       },
       {
         test: /\.md$/i,
-        use: 'raw-loader',
+        use: [
+          {
+            loader: "raw-loader",
+          },
+          {
+            loader: "string-replace-loader",
+            options: {
+              search: "(---(.|\n)*---)",
+              replace: "",
+              flags: "g",
+            },
+          },
+        ],
       },
       {
         test: /\.(ts|tsx)?$/,
@@ -82,7 +94,7 @@ const config = {
               },
               gifsicle: {
                 interlaced: false,
-              }
+              },
             },
           },
         ],

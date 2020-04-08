@@ -1,3 +1,8 @@
+---
+title: "Imprint German"
+language: "de"
+---
+
 ## Adresse
 
 Gesund Zusammen gGmbH i.G.<br />

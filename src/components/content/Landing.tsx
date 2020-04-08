@@ -14,9 +14,9 @@ class Landing extends React.PureComponent<WithTranslation, {}> {
     return (
       <>
         <Box id="initiative" paddingBottom={4} marginTop={4}>
-          <MuiMarkdown>
-            {this.props.i18n.language === "de" ? ContentDE : ContentEN}
-          </MuiMarkdown>
+          <MuiMarkdown
+            markdown={this.props.i18n.language === "de" ? ContentDE : ContentEN}
+          ></MuiMarkdown>
           <Box marginTop={4}>
             <Grid container spacing={4}>
               <InfoBox
