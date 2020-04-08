@@ -15,6 +15,7 @@ import LogoFinleap from "../../images/partners/finleap.png";
 import LogoGetYourGuide from "../../images/partners/getyourguide.png";
 import LogoFreightHub from "../../images/partners/freighthub.png";
 import LogoDeliveryHero from "../../images/partners/deliveryhero.png";
+import LogoCelonis from "../../images/partners/celonis.png";
 import LogoAdaHealth from "../../images/partners/adahealth.png";
 import LogoViaHealth from "../../images/partners/viadata.svg";
 import LogoPersonio from "../../images/partners/personio.png";
@@ -135,6 +136,11 @@ class Partners extends React.PureComponent<WithTranslation, {}> {
                 name="Omio"
                 image={LogoOmio}
                 link="https://www.omio.com"
+              />
+              <PartnerCard
+                name="Celonis"
+                image={LogoCelonis}
+                link="https://www.celonis.com/"
               />
               <PartnerCard
                 name="Ada Health"
