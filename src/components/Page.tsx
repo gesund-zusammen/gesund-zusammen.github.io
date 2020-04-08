@@ -74,6 +74,14 @@ class Page extends React.Component<IPageProps, {}> {
               <PaperForm paperform="gesundzusammen" />
             </LayoutSubPage>
           </Route>
+          <Route path="/:lang/mentor">
+            <LayoutSubPage
+              title={this.props.t("program.header.title")}
+              image={IlluProgram}
+            >
+              <PaperForm paperform="mentor-gz" />
+            </LayoutSubPage>
+          </Route>
           <Route path="/:lang/support">
             <LayoutSubPage
               title={this.props.t("header.nav.supporters")}
