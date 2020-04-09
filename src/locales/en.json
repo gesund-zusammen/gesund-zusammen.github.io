@@ -47,6 +47,7 @@
     }
   },
   "partners": {
+    "unknownCategory": "Unknown",
     "title": "Founding & Tech Partners",
     "claim": "Want to help make a difference?",
     "cta": "Become part of the initiative",
