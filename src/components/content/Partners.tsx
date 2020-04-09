@@ -42,6 +42,7 @@ import LogoAtaiLife from "../../images/partners/atailifesciences.png";
 import LogoHeartBeatLabs from "../../images/partners/heartbeatlabs.svg";
 import LogoPAIRFinance from "../../images/partners/pairfinance.png";
 import LogoTOA from "../../images/partners/toa.png";
+import LogoKoehlerInvestment from "../../images/partners/koehlerinvestment.jpeg";
 
 class Partners extends React.PureComponent<WithTranslation, {}> {
   render = () => {
@@ -314,6 +315,11 @@ class Partners extends React.PureComponent<WithTranslation, {}> {
                 name="Freiraum"
                 image={LogoFreiraum}
                 link="http://www.freiraum-berlin.org/"
+              />
+              <PartnerCard
+                name="Koehler Investment"
+                image={LogoKoehlerInvestment}
+                link="https://www.koehler-investment.com/"
               />
             </Grid>
           </Box>
