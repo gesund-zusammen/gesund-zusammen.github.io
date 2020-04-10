@@ -34,6 +34,7 @@
     }
   },
   "partners": {
+    "unknownCategory": "Unbekannt",
     "title": "Founding & Tech Partners",
     "claim": "Sie wollen auch mitmachen?",
     "cta": "Werden Sie Teil der Initiative",
