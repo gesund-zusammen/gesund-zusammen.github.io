@@ -5,7 +5,6 @@ import { withTranslation, WithTranslation } from "react-i18next";
 import PartnerData from "../../data/partners.json";
 import Fade from "react-reveal";
 import PartnerCard from "./PartnerCard";
-import LogoFinleap from "../../images/partners/finleap.png";
 
 interface ICategory {
   slug: string;
@@ -30,27 +29,17 @@ class PartnerItems extends React.Component<WithTranslation, {}> {
 
   constructor(props: WithTranslation) {
     super(props);
+
     this.partnerData.partners = this.partnerData.partners.map(partner => {
       return {
         ...partner,
         image: require(`../../images/partners/${partner.image}`).default,
       };
     });
-    console.warn(this.partnerData);
   }
 
   getCategories = (): ICategory[] => {
     return this.partnerData.categories;
-  };
-
-  getCategoryName = (slug: string): string => {
-    for (let i = 0; i < this.partnerData.categories.length; i++) {
-      if (this.partnerData.categories[i].slug === slug) {
-        return this.partnerData.categories[i].name[this.props.i18n.language];
-      }
-    }
-
-    return this.props.t("partners.unknownCategory");
   };
 
   getPartners = (categorySlug?: string): IPartner[] => {

@@ -174,7 +174,8 @@
       "name": "The Delta",
       "slug": "tech",
       "image": "thedelta.png",
-      "link": "https://www.thedelta.io"
+      "link": "https://www.thedelta.io",
+      "imageXL": true
     },
     {
       "name": "Datenschutzexperte",
@@ -242,7 +243,7 @@
     {
       "name": "ATAI Life Sciences",
       "slug": "health",
-      "image": "heartbeatlabs.svg",
+      "image": "atailifesciences.png",
       "link": "https://www.atai.life"
     },
     {

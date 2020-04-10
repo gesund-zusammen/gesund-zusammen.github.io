@@ -31,7 +31,6 @@ import IlluImprint from "../images/illu_imprint.svg";
 import { DEFAULT_LANG } from "../i18n";
 import Program from "./content/Program";
 import PaperForm from "./common/PaperForm";
-import NewPartnerPage from "./content/NewPartnerPage";
 
 interface IPageProps
   extends RouteComponentProps<{ lang: "de" | "en" }>,
@@ -97,14 +96,6 @@ class Page extends React.Component<IPageProps, {}> {
               image={IlluPartner}
             >
               <Partners />
-            </LayoutSubPage>
-          </Route>
-          <Route path="/:lang/newpartners">
-            <LayoutSubPage
-              title={this.props.t("header.nav.supporters")}
-              image={IlluPartner}
-            >
-              <NewPartnerPage />
             </LayoutSubPage>
           </Route>
           <Route path="/:lang/faq">
