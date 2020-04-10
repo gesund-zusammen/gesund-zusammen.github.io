@@ -27,17 +27,6 @@ interface IPartner {
 class PartnerItems extends React.Component<WithTranslation, {}> {
   partnerData: { categories: ICategory[]; partners: IPartner[] } = PartnerData;
 
-  constructor(props: WithTranslation) {
-    super(props);
-
-    this.partnerData.partners = this.partnerData.partners.map(partner => {
-      return {
-        ...partner,
-        image: require(`../../images/partners/${partner.image}`).default,
-      };
-    });
-  }
-
   getCategories = (): ICategory[] => {
     return this.partnerData.categories;
   };
@@ -77,7 +66,10 @@ class PartnerItems extends React.Component<WithTranslation, {}> {
                           <PartnerCard
                             key={partnerCardKey}
                             name={partner.name}
-                            image={partner.image}
+                            image={
+                              require(`../../images/partners/${partner.image}`)
+                                .default
+                            }
                             link={partner.link}
                             color={partner.color}
                             imageXL={partner.imageXL}
