@@ -7,6 +7,13 @@ import Fade from "react-reveal";
 import PartnerCard from "./PartnerCard";
 import LogoFinleap from "../../images/partners/finleap.png";
 
+const importAll = r => r.keys().map(r);
+const images = importAll(
+  require.context("../../images/partners", false, /\.(png|jpe?g|gif|svg)$/),
+)
+  .sort()
+  .reverse();
+
 interface ICategory {
   slug: string;
   name: {
@@ -26,6 +33,10 @@ interface IPartner {
 }
 
 class PartnerItems extends React.Component<WithTranslation, {}> {
+  componentDidMount(): void {
+    images.map(file => console.log(file));
+  }
+
   getCategories = (): ICategory[] => {
     return PartnerData.categories;
   };
@@ -52,9 +63,10 @@ class PartnerItems extends React.Component<WithTranslation, {}> {
     return (
       <Box id="partners" paddingBottom={4} marginTop={4}>
         <Fade right cascade>
-          {this.getCategories().map(category => {
+          {this.getCategories().map((category, index) => {
+            const categoryKey: string = "category-" + index;
             return (
-              <>
+              <div key={categoryKey}>
                 <Typography variant="h2">
                   {category.name[this.props.i18n.language]}
                 </Typography>
@@ -66,18 +78,26 @@ class PartnerItems extends React.Component<WithTranslation, {}> {
                     alignItems="center"
                     spacing={4}
                   >
-                    {this.getPartners(category.slug).map(partner => {
-                      return (
-                        <PartnerCard
-                          name={partner.name}
-                          image={LogoFinleap}
-                          link={partner.link}
-                        />
-                      );
-                    })}
+                    {this.getPartners(category.slug).map(
+                      (partner, partnerIndex) => {
+                        const partnerCardKey: string =
+                          "category-" + index + "-partner-" + partnerIndex;
+                        return (
+                          <PartnerCard
+                            key={partnerCardKey}
+                            name={partner.name}
+                            image={LogoFinleap}
+                            link={partner.link}
+                            color={partner.color}
+                            imageXL={partner.imageXL}
+                            nameColorInverted={partner.nameColorInverted}
+                          />
+                        );
+                      },
+                    )}
                   </Grid>
                 </Box>
-              </>
+              </div>
             );
           })}
           ;
