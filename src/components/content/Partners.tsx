@@ -42,7 +42,7 @@ import LogoAtaiLife from "../../images/partners/atailifesciences.png";
 import LogoHeartBeatLabs from "../../images/partners/heartbeatlabs.svg";
 import LogoPAIRFinance from "../../images/partners/pairfinance.png";
 import LogoTOA from "../../images/partners/toa.png";
-import LogoKoehlerInvestment from "../../images/partners/koehlerinvestment.jpeg";
+import LogoKoehlerInvestment from "../../images/partners/koehlerinvestment.jpg";
 
 class Partners extends React.PureComponent<WithTranslation, {}> {
   render = () => {

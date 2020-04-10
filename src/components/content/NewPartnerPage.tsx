@@ -6,7 +6,7 @@ import PartnerItems from "../common/PartnerItems";
 
 import CTABox from "../common/CTABox";
 
-class Faq extends React.PureComponent<WithTranslation, {}> {
+class NewPartners extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <>
@@ -27,4 +27,4 @@ class Faq extends React.PureComponent<WithTranslation, {}> {
   };
 }
 
-export default withTranslation()(Faq);
+export default withTranslation()(NewPartners);

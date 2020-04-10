@@ -7,13 +7,6 @@ import Fade from "react-reveal";
 import PartnerCard from "./PartnerCard";
 import LogoFinleap from "../../images/partners/finleap.png";
 
-const importAll = r => r.keys().map(r);
-const images = importAll(
-  require.context("../../images/partners", false, /\.(png|jpe?g|gif|svg)$/),
-)
-  .sort()
-  .reverse();
-
 interface ICategory {
   slug: string;
   name: {
@@ -33,18 +26,27 @@ interface IPartner {
 }
 
 class PartnerItems extends React.Component<WithTranslation, {}> {
-  componentDidMount(): void {
-    images.map(file => console.log(file));
+  partnerData: { categories: ICategory[]; partners: IPartner[] } = PartnerData;
+
+  constructor(props: WithTranslation) {
+    super(props);
+    this.partnerData.partners = this.partnerData.partners.map(partner => {
+      return {
+        ...partner,
+        image: require(`../../images/partners/${partner.image}`).default,
+      };
+    });
+    console.warn(this.partnerData);
   }
 
   getCategories = (): ICategory[] => {
-    return PartnerData.categories;
+    return this.partnerData.categories;
   };
 
   getCategoryName = (slug: string): string => {
-    for (let i = 0; i < PartnerData.categories.length; i++) {
-      if (PartnerData.categories[i].slug === slug) {
-        return PartnerData.categories[i].name[this.props.i18n.language];
+    for (let i = 0; i < this.partnerData.categories.length; i++) {
+      if (this.partnerData.categories[i].slug === slug) {
+        return this.partnerData.categories[i].name[this.props.i18n.language];
       }
     }
 
@@ -52,7 +54,7 @@ class PartnerItems extends React.Component<WithTranslation, {}> {
   };
 
   getPartners = (categorySlug?: string): IPartner[] => {
-    let partners = PartnerData.partners;
+    let partners = this.partnerData.partners;
     if (categorySlug) {
       partners = partners.filter(partner => partner.slug === categorySlug);
     }
@@ -86,7 +88,7 @@ class PartnerItems extends React.Component<WithTranslation, {}> {
                           <PartnerCard
                             key={partnerCardKey}
                             name={partner.name}
-                            image={LogoFinleap}
+                            image={partner.image}
                             link={partner.link}
                             color={partner.color}
                             imageXL={partner.imageXL}

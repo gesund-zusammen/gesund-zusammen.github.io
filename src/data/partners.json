@@ -212,7 +212,7 @@
       "slug": "privacy",
       "image": "twobirds.png",
       "link": "https://www.twobirds.com",
-      "color":"#7c7c6e",
+      "color": "#7c7c6e",
       "nameColorInverted": true
     },
     {
@@ -220,7 +220,7 @@
       "slug": "privacy",
       "image": "reedsmith.svg",
       "link": "https://www.reedsmith.com",
-      "color":"#3d3c3c",
+      "color": "#3d3c3c",
       "nameColorInverted": true
     },
     {
@@ -228,7 +228,7 @@
       "slug": "privacy",
       "image": "skwschwarz.jpg",
       "link": "https://www.skwschwarz.de",
-      "color":"black",
+      "color": "black",
       "nameColorInverted": true
     },
     {
@@ -236,7 +236,7 @@
       "slug": "health",
       "image": "heartbeatlabs.svg",
       "link": "https://heartbeatlabs.com",
-      "color":"#002f4e",
+      "color": "#002f4e",
       "nameColorInverted": true
     },
     {
@@ -272,7 +272,7 @@
     {
       "name": "Koehler Investment",
       "slug": "further",
-      "image": "koehlerinvestment.jpeg",
+      "image": "koehlerinvestment.jpg",
       "link": "https://www.koehler-investment.com"
     }
   ]
