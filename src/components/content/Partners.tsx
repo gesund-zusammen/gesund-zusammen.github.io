@@ -14,13 +14,11 @@ class NewPartners extends React.PureComponent<WithTranslation, {}> {
           <PartnerItems />
         </Box>
         <Box paddingBottom={4} marginTop={4}>
-          <Box paddingBottom={4} marginTop={4}>
-            <CTABox
-              claim={this.props.t("partners.claim")}
-              cta={this.props.t("partners.cta")}
-              href={this.props.t("partners.link")}
-            />
-          </Box>
+          <CTABox
+            claim={this.props.t("partners.claim")}
+            cta={this.props.t("partners.cta")}
+            href={this.props.t("partners.link")}
+          />
         </Box>
       </>
     );
