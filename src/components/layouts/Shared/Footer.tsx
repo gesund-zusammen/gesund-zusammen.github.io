@@ -61,7 +61,7 @@ class Footer extends React.PureComponent<WithTranslation, {}> {
               </FooterNavLinkItem>
             </FooterNavItems>
             <CopyrightNote>
-              &copy; 2020 Gesund Zusammen gGmbH i.G.
+              &copy; 2020 Gesund Zusammen gGmbH
             </CopyrightNote>
           </FooterNav>
         </Container>
