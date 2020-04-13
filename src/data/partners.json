@@ -15,6 +15,13 @@
       }
     },
     {
+      "slug": "ambassador",
+      "name": {
+        "en": "Ambassador Partners",
+        "de": "Ambassador Partner"
+      }
+    },
+    {
       "slug": "further",
       "name": {
         "en": "Further Partner",
@@ -245,7 +252,7 @@
     },
     {
       "name": "APX",
-      "slug": "tech",
+      "slug": "ambassador",
       "image": "apx.png",
       "link": "https://https://apx.ac"
     },
