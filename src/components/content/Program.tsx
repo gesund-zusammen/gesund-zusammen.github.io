@@ -8,13 +8,31 @@ import Projects from "./Projects";
 
 import ContentDE from "../../data/program/program_de.md";
 import ContentEN from "../../data/program/program_en.md";
+import ContentFR from "../../data/program/program_fr.md";
+import ContentIT from "../../data/program/program_it.md";
+import ContentES from "../../data/program/program_es.md";
 
 class Program extends React.Component<WithTranslation, {}> {
+  getMarkdown(language: string) {
+    switch (language) {
+      case "de":
+        return ContentDE;
+      case "fr":
+        return ContentFR;
+      case "it":
+        return ContentIT;
+      case "es":
+        return ContentES;
+      default:
+        return ContentEN;
+    }
+  }
+
   render = () => {
     return (
       <Box paddingBottom={4}>
         <MuiMarkdown
-          markdown={this.props.i18n.language === "de" ? ContentDE : ContentEN}
+          markdown={this.getMarkdown(this.props.i18n.language)}
         ></MuiMarkdown>
 
         <Projects />

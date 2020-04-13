@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch } from "@material-ui/core";
-import styled, { css, AnyStyledComponent } from "styled-components";
+import styled, { AnyStyledComponent } from "styled-components";
 import { withRouter, RouteComponentProps } from "react-router";
 import { Link } from "react-router-dom";
 import { withTranslation, WithTranslation } from "react-i18next";
@@ -30,18 +30,6 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
           />
         </Link>
         <HeaderNavItems>
-          <HeaderNavLinkItem to={`/${this.props.i18n.language}/program`}>
-            {this.props.t("program.header.title")}
-          </HeaderNavLinkItem>
-          <HeaderNavLinkItem to={`/${this.props.i18n.language}/database`}>
-            {this.props.t("header.nav.initiatives")}
-          </HeaderNavLinkItem>
-          <HeaderNavLinkItem to={`/${this.props.i18n.language}/partners`}>
-            {this.props.t("header.nav.supporters")}
-          </HeaderNavLinkItem>
-          <HeaderNavLinkItem to={`/${this.props.i18n.language}/faq`}>
-            {this.props.t("header.nav.faqs")}
-          </HeaderNavLinkItem>
           <HeaderLangSwitch>
             <StyledSwitch
               checked={this.props.i18n.language === "de"}
@@ -82,31 +70,6 @@ const HeaderNavItems: AnyStyledComponent = styled.div`
     margin-top: 0;
     text-align: right;
   }
-`;
-
-const headerNavItemStyles = css`
-  display: inline-block;
-  width: 50%;
-  font-family: inherit;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 600;
-  line-height: 3rem;
-
-  @media (min-width: 600px) {
-    display: inline-block;
-    width: auto;
-    margin-left: 2rem;
-
-    &:first-of-type {
-      margin-left: 0;
-    }
-  }
-`;
-
-const HeaderNavLinkItem: AnyStyledComponent = styled(Link)`
-  ${headerNavItemStyles}
 `;
 
 const HeaderLangSwitch: AnyStyledComponent = styled.div`

@@ -4,12 +4,18 @@ import { initReactI18next } from "react-i18next";
 import TranslationsDE from "./locales/de.json";
 import TranslationsEN from "./locales/en.json";
 
-const getBootLang = (): "de" | "en" => {
+const getBootLang = (): "de" | "en" | "fr" | "it" | "es" => {
   const userLang: string = window.navigator.language;
-  if (userLang.substr(0, 2) === "de") {
-    return "de";
+  const locale: string = userLang.substr(0, 2);
+  switch (locale) {
+    case "de":
+    case "fr":
+    case "it":
+    case "es":
+      return locale;
+    default:
+      return "en";
   }
-  return "en";
 };
 
 const DEFAULT_LANG = getBootLang();

@@ -5,14 +5,14 @@ import { withTranslation, WithTranslation } from "react-i18next";
 import MuiMarkdown from "../common/MuiMarkdown";
 import InfoBox from "../common/InfoBox";
 
-import CountryInitiatives from "./CountryInitiatives";
 import ContentDE from "../../data/landing/landing_de.md";
 import ContentEN from "../../data/landing/landing_en.md";
 import ContentFR from "../../data/landing/landing_fr.md";
 import ContentIT from "../../data/landing/landing_it.md";
 import ContentES from "../../data/landing/landing_es.md";
+import Partners from "./Partners";
 
-class Landing extends React.PureComponent<WithTranslation, {}> {
+class Initiative extends React.PureComponent<WithTranslation, {}> {
   getMarkdown(language: string) {
     switch (language) {
       case "de":
@@ -31,7 +31,7 @@ class Landing extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <>
-        <Box id="landing" paddingBottom={4} marginTop={4}>
+        <Box id="initiative" paddingBottom={4} marginTop={4}>
           <MuiMarkdown
             markdown={this.getMarkdown(this.props.i18n.language)}
           ></MuiMarkdown>
@@ -53,10 +53,10 @@ class Landing extends React.PureComponent<WithTranslation, {}> {
           </Box>
         </Box>
 
-        <CountryInitiatives />
+        <Partners />
       </>
     );
   };
 }
 
-export default withTranslation()(Landing);
+export default withTranslation()(Initiative);

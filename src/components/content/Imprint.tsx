@@ -9,11 +9,19 @@ import ContentDE from "../../data/imprint/imprint_de.md";
 import ContentEN from "../../data/imprint/imprint_en.md";
 
 class PrivacyPolicy extends React.PureComponent<WithTranslation, {}> {
+  getMarkdown(language: string) {
+    switch (language) {
+      case "de":
+        return ContentDE;
+      default:
+        return ContentEN;
+    }
+  }
   render = () => {
     return (
       <PrivacyWrapper paddingBottom={4}>
         <MuiMarkdown
-          markdown={this.props.i18n.language === "de" ? ContentDE : ContentEN}
+          markdown={this.getMarkdown(this.props.i18n.language)}
         ></MuiMarkdown>
       </PrivacyWrapper>
     );
