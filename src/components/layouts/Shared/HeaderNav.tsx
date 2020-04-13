@@ -30,6 +30,9 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
           />
         </Link>
         <HeaderNavItems>
+          <HeaderNavLinkItem to={`/${this.props.i18n.language}/initiative`}>
+            {this.props.t("header.nav.initiative")}
+          </HeaderNavLinkItem>
           <HeaderNavLinkItem to={`/${this.props.i18n.language}/program`}>
             {this.props.t("program.header.title")}
           </HeaderNavLinkItem>
