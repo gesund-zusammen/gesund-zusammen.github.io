@@ -5,10 +5,11 @@ import { Link } from "react-router-dom";
 import { withTranslation, WithTranslation } from "react-i18next";
 
 import BgFooter from "../../../images/bg_footer.svg";
-import Logo from "../../../images/logo.svg";
 
 import SocialIconTwitter from "../../../images/footer_icon_twitter.svg";
 import LogoGithub from "../../../images/logo_github.svg";
+import LogoDE from "../../../images/logo.svg";
+import LogoEN from "../../../images/logo_en.svg";
 
 class Footer extends React.PureComponent<WithTranslation, {}> {
   copyToClipboard = (str: string) => {
@@ -30,7 +31,10 @@ class Footer extends React.PureComponent<WithTranslation, {}> {
                 to={`/${this.props.i18n.language}/`}
                 style={{ float: "left" }}
               >
-                <FooterLogo src={Logo} alt="#GesundZusammen" />
+                <FooterLogo
+                  src={this.props.i18n.language === "de" ? LogoDE : LogoEN}
+                  alt="#GesundZusammen"
+                />
               </Link>
             </Hidden>
             <FooterSocialIcons>
