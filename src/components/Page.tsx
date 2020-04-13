@@ -146,13 +146,13 @@ class Page extends React.Component<IPageProps, {}> {
           </Route>
           <Route path="/:lang/" exact={true} default={true}>
             {window.location.hostname === "gesund-zusammen.de" ? (
-              <LayoutLanding>
-                <Landing />
-              </LayoutLanding>
-            ) : (
               <LayoutAccelerator>
                 <Accelerator />
               </LayoutAccelerator>
+            ) : (
+              <LayoutLanding>
+                <Landing />
+              </LayoutLanding>
             )}
           </Route>
           <Redirect to={`/${DEFAULT_LANG}/`} />
