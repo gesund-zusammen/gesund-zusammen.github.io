@@ -7,7 +7,7 @@ import HeaderNav from "../Shared/HeaderNav";
 
 import IlluHeader from "../../../images/illu_header.svg";
 
-class InitiativeHeader extends React.PureComponent<WithTranslation, {}> {
+class AcceleratorHeader extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <>
@@ -24,7 +24,7 @@ class InitiativeHeader extends React.PureComponent<WithTranslation, {}> {
                     whiteSpace: "pre-line",
                   }}
                 >
-                  {this.props.t("initiative.landing.title")}
+                  {this.props.t("accelerator.landing.title")}
                 </Typography>
                 <Typography
                   variant="body1"
@@ -34,7 +34,7 @@ class InitiativeHeader extends React.PureComponent<WithTranslation, {}> {
                     whiteSpace: "pre-line",
                   }}
                 >
-                  {this.props.t("initiative.landing.content")}
+                  {this.props.t("accelerator.landing.content")}
                 </Typography>
                 <ApplyButton
                   color="primary"
@@ -89,4 +89,4 @@ const HeaderIllustration: AnyStyledComponent = styled.img`
   width: 100%;
 `;
 
-export default withTranslation()(InitiativeHeader);
+export default withTranslation()(AcceleratorHeader);

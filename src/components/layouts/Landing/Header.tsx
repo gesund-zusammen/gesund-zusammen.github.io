@@ -1,9 +1,9 @@
 import React from "react";
-import { Box, Typography, Grid, Hidden, Button } from "@material-ui/core";
+import { Box, Typography, Grid, Hidden } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 import { withTranslation, WithTranslation } from "react-i18next";
 
-import HeaderNav from "../Shared/HeaderNav";
+import HeaderNav from "./HeaderNav";
 
 import IlluHeader from "../../../images/illu_header.svg";
 
@@ -24,7 +24,7 @@ class LandingHeader extends React.PureComponent<WithTranslation, {}> {
                     whiteSpace: "pre-line",
                   }}
                 >
-                  {this.props.t("header.content.landing.title")}
+                  {this.props.t("initiative.landing.title")}
                 </Typography>
                 <Typography
                   variant="body1"
@@ -34,16 +34,8 @@ class LandingHeader extends React.PureComponent<WithTranslation, {}> {
                     whiteSpace: "pre-line",
                   }}
                 >
-                  {this.props.t("header.content.landing.content")}
+                  {this.props.t("initiative.landing.content")}
                 </Typography>
-                <ApplyButton
-                  color="primary"
-                  variant="contained"
-                  disableFocusRipple={true}
-                  href={this.props.t("program.link")}
-                >
-                  {this.props.t("program.cta")}
-                </ApplyButton>
               </HeaderContent>
             </Grid>
             <Hidden xsDown>
@@ -57,23 +49,6 @@ class LandingHeader extends React.PureComponent<WithTranslation, {}> {
     );
   };
 }
-
-const ApplyButton: AnyStyledComponent = styled(Button)`
-  && {
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: none;
-    text-align: center;
-    border-radius: 4px;
-    margin: 0 auto;
-    padding-right: 2rem;
-    padding-left: 2rem;
-
-    @media (min-width: 600px) {
-      font-size: 1.4rem;
-    }
-  }
-`;
 
 const HeaderContent: AnyStyledComponent = styled.div`
   text-align: center;

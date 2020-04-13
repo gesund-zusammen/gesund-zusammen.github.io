@@ -31,7 +31,7 @@
       },
       "slug": "country_initiatives",
       "image": "italy.svg",
-      "link": "https://healthy-together.eu/it"
+      "link": "https://healthy-together.eu/it/initiative"
     },
     {
       "name": {
@@ -43,7 +43,7 @@
       },
       "slug": "country_initiatives",
       "image": "spain.svg",
-      "link": "https://healthy-together.eu/es"
+      "link": "https://healthy-together.eu/es/initiative"
     },
     {
       "name": {
@@ -55,7 +55,7 @@
       },
       "slug": "country_initiatives",
       "image": "france.svg",
-      "link": "https://healthy-together.eu/fr"
+      "link": "https://healthy-together.eu/fr/initiative"
     }
   ]
 }

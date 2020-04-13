@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch } from "@material-ui/core";
-import styled, { css, AnyStyledComponent } from "styled-components";
+import styled, { AnyStyledComponent } from "styled-components";
 import { withRouter, RouteComponentProps } from "react-router";
 import { Link } from "react-router-dom";
 import { withTranslation, WithTranslation } from "react-i18next";
@@ -69,27 +69,6 @@ const HeaderNavItems: AnyStyledComponent = styled.div`
     width: auto;
     margin-top: 0;
     text-align: right;
-  }
-`;
-
-const headerNavItemStyles = css`
-  display: inline-block;
-  width: 50%;
-  font-family: inherit;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 600;
-  line-height: 3rem;
-
-  @media (min-width: 600px) {
-    display: inline-block;
-    width: auto;
-    margin-left: 2rem;
-
-    &:first-of-type {
-      margin-left: 0;
-    }
   }
 `;
 

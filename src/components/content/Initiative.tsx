@@ -7,35 +7,53 @@ import InfoBox from "../common/InfoBox";
 
 import ContentDE from "../../data/landing/landing_de.md";
 import ContentEN from "../../data/landing/landing_en.md";
-import CountryInitiatives from "./CountryInitiatives";
+import ContentFR from "../../data/landing/landing_fr.md";
+import ContentIT from "../../data/landing/landing_it.md";
+import ContentES from "../../data/landing/landing_es.md";
+import Partners from "./Partners";
 
 class Initiative extends React.PureComponent<WithTranslation, {}> {
+  getMarkdown(language: string) {
+    switch (language) {
+      case "de":
+        return ContentDE;
+      case "fr":
+        return ContentFR;
+      case "it":
+        return ContentIT;
+      case "es":
+        return ContentES;
+      default:
+        return ContentEN;
+    }
+  }
+
   render = () => {
     return (
       <>
         <Box id="initiative" paddingBottom={4} marginTop={4}>
           <MuiMarkdown
-            markdown={this.props.i18n.language === "de" ? ContentDE : ContentEN}
+            markdown={this.getMarkdown(this.props.i18n.language)}
           ></MuiMarkdown>
           <Box marginTop={4}>
             <Grid container spacing={4}>
               <InfoBox
-                title={this.props.t("boxes.initiative.title")}
-                content={this.props.t("boxes.initiative.content")}
+                title={this.props.t("initiative.box1.title")}
+                content={this.props.t("initiative.box1.content")}
               />
               <InfoBox
-                title={this.props.t("boxes.support.title")}
-                content={this.props.t("boxes.support.content")}
+                title={this.props.t("initiative.box2.title")}
+                content={this.props.t("initiative.box2.content")}
               />
               <InfoBox
-                title={this.props.t("boxes.ecosystem.title")}
-                content={this.props.t("boxes.ecosystem.content")}
+                title={this.props.t("initiative.box3.title")}
+                content={this.props.t("initiative.box3.content")}
               />
             </Grid>
           </Box>
         </Box>
 
-        <CountryInitiatives />
+        <Partners />
       </>
     );
   };

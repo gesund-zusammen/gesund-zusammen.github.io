@@ -8,14 +8,32 @@ import CTABox from "../common/CTABox";
 
 import ContentDE from "../../data/privacy/privacy_de.md";
 import ContentEN from "../../data/privacy/privacy_en.md";
+import ContentFR from "../../data/privacy/privacy_fr.md";
+import ContentIT from "../../data/privacy/privacy_it.md";
+import ContentES from "../../data/privacy/privacy_es.md";
 
 class PrivacyPolicy extends React.PureComponent<WithTranslation, {}> {
+  getMarkdown(language: string) {
+    switch (language) {
+      case "de":
+        return ContentDE;
+      case "fr":
+        return ContentFR;
+      case "it":
+        return ContentIT;
+      case "es":
+        return ContentES;
+      default:
+        return ContentEN;
+    }
+  }
+
   render = () => {
     return (
       <>
         <PrivacyWrapper paddingBottom={4}>
           <MuiMarkdown
-            markdown={this.props.i18n.language === "de" ? ContentDE : ContentEN}
+            markdown={this.getMarkdown(this.props.i18n.language)}
           ></MuiMarkdown>
         </PrivacyWrapper>
         <Box paddingBottom={4} marginTop={4}>

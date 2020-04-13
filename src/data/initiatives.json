@@ -3,64 +3,91 @@
     {
       "slug": "gesund_zusammen_initiative",
       "name": {
+        "de": "GesundZuammen Initiative",
         "en": "GesundZuammen Initiative",
-        "de": "GesundZuammen Initiative"
+        "fr": "GesundZuammen Initiative",
+        "it": "GesundZuammen Initiative",
+        "es": "GesundZuammen Initiative"
       }
     },
     {
       "slug": "digital_tools",
       "name": {
+        "de": "Digitale Tools",
         "en": "Digital Tools",
-        "de": "Digitale Tools"
+        "fr": "Digital Tools",
+        "it": "Digital Tools",
+        "es": "Digital Tools"
       }
     },
     {
       "slug": "digital_consultation",
       "name": {
+        "de": "Digitale Konsultation",
         "en": "Digital Consultation",
-        "de": "Digitale Konsultation"
+        "fr": "Digital Consultation",
+        "it": "Digital Consultation",
+        "es": "Digital Consultation"
       }
     },
     {
       "slug": "infection_tracking",
       "name": {
+        "de": "Infektions Verfolgung Übersichten",
         "en": "Infection Tracking Dashboards",
-        "de": "Infektions Verfolgung Übersichten"
+        "fr": "Infection Tracking Dashboards",
+        "it": "Infection Tracking Dashboards",
+        "es": "Infection Tracking Dashboards"
       }
     },
     {
       "slug": "initiatives",
       "name": {
+        "de": "Weitere Initiativen",
         "en": "Futher Initiatives",
-        "de": "Weitere Initiativen"
+        "fr": "Futher Initiatives",
+        "it": "Futher Initiatives",
+        "es": "Futher Initiatives"
       }
     },
     {
       "slug": "hackathons",
       "name": {
+        "de": "Hackathons",
         "en": "Hackathons",
-        "de": "Hackathons"
+        "fr": "Hackathons",
+        "it": "Hackathons",
+        "es": "Hackathons"
       }
     },
     {
       "slug": "knowledge_resources",
       "name": {
+        "de": "Wissensdatenbanken",
         "en": "Knowledge Resources",
-        "de": "Wissensdatenbanken"
+        "fr": "Knowledge Resources",
+        "it": "Knowledge Resources",
+        "es": "Knowledge Resources"
       }
     },
     {
       "slug": "research_and_government_sites",
       "name": {
+        "de": "Forschungs- und Regierungsseiten",
         "en": "Research & Government Sites",
-        "de": "Forschungs- und Regierungsseiten"
+        "fr": "Research & Government Sites",
+        "it": "Research & Government Sites",
+        "es": "Research & Government Sites"
       }
     },
     {
       "slug": "wearables_and_iot",
       "name": {
+        "de": "Wearables & IoT",
         "en": "Wearables & IoT",
-        "de": "Wearables & IoT"
+        "fr": "Wearables & IoT",
+        "it": "Wearables & IoT",
+        "es": "Wearables & IoT"
       }
     }
   ],

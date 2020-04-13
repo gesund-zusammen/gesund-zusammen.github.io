@@ -62,7 +62,7 @@ collections:
             }
       - label: "Landing Page German"
         name: "LandingGerman"
-        file: "src/data/landing/landing_de.md"
+        file: "src/data/landing/accelerator_de.md"
         fields:
           - { label: "Body", name: "body", widget: "markdown" }
           - {
@@ -74,7 +74,7 @@ collections:
             }
       - label: "Landing Page English"
         name: "LandingEnglish"
-        file: "src/data/landing/landing_en.md"
+        file: "src/data/landing/accelerator_en.md"
         fields:
           - { label: "Body", name: "body", widget: "markdown" }
           - {

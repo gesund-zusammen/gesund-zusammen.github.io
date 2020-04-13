@@ -189,8 +189,13 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
                         {initiative.name}
                       </InitiativeCardTitle>
                       <Typography variant="body2" color="primary">
-                        {initiative.description[this.props.i18n.language]}
+                        {
+                          initiative.description[
+                            this.props.i18n.language === "de" ? "de" : "en"
+                          ]
+                        }
                       </Typography>
+                      s
                     </InitiativeCardContent>
                   </InitiativeCard>
                 </InitiativeCardWrapper>

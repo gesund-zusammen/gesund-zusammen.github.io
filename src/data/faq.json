@@ -50,5 +50,83 @@
       "title": "Do you support digital tools also financially from the initiative?",
       "content": "Our most valuable resource is our competent employees working in agile teams. Putting them at the service of the community now is our contribution for overcoming this crisis. Do you have a problem you want to solve? Please contact us."
     }
+  ],
+  "its": [
+    {
+      "title": "About us",
+      "content": "We as a broad alliance of German Tech companies, want to actively help society, politics and economy to contain COVID-19 with digital solutions. To achieve this, we are building on one of the most important resources available to the world today: Information."
+    },
+    {
+      "title": "Why GesundZusammen?",
+      "content": "In order to contain COVID-19, a worldwide competition of ideas is emerging, significantly accelerated by the tech industry and others. We are not only bringing together the resources and capabilities of the German digital economy. We also seek and promote open exchange with other digital initiatives so that the ideas with the greatest potential can prevail."
+    },
+    {
+      "title": "What is your goal?",
+      "content": "Data enables us to do research together, warn people, save lives. And yet the widespread use of data is not without risk: in the face of the crisis, there are increasing voices calling for fundamental rights to be sacrificed for the benefit of health. Together we will prove the point: We can have both infection control and privacy."
+    },
+    {
+      "title": "Are you looking for more partners?",
+      "content": "We are always open to other partners who would like to contribute their skills and resources to protect the health of society."
+    },
+    {
+      "title": "What do you think about the work of the health system, doctors and nursing staff?",
+      "content": "We admire and support the work of everyone in the health system. This is why we want to contribute together to improving their work situation and the data basis of their daily decisions through technology."
+    },
+    {
+      "title": "Do you support digital tools also financially from the initiative?",
+      "content": "Our most valuable resource is our competent employees working in agile teams. Putting them at the service of the community now is our contribution for overcoming this crisis. Do you have a problem you want to solve? Please contact us."
+    }
+  ],
+  "fr": [
+    {
+      "title": "About us",
+      "content": "We as a broad alliance of German Tech companies, want to actively help society, politics and economy to contain COVID-19 with digital solutions. To achieve this, we are building on one of the most important resources available to the world today: Information."
+    },
+    {
+      "title": "Why GesundZusammen?",
+      "content": "In order to contain COVID-19, a worldwide competition of ideas is emerging, significantly accelerated by the tech industry and others. We are not only bringing together the resources and capabilities of the German digital economy. We also seek and promote open exchange with other digital initiatives so that the ideas with the greatest potential can prevail."
+    },
+    {
+      "title": "What is your goal?",
+      "content": "Data enables us to do research together, warn people, save lives. And yet the widespread use of data is not without risk: in the face of the crisis, there are increasing voices calling for fundamental rights to be sacrificed for the benefit of health. Together we will prove the point: We can have both infection control and privacy."
+    },
+    {
+      "title": "Are you looking for more partners?",
+      "content": "We are always open to other partners who would like to contribute their skills and resources to protect the health of society."
+    },
+    {
+      "title": "What do you think about the work of the health system, doctors and nursing staff?",
+      "content": "We admire and support the work of everyone in the health system. This is why we want to contribute together to improving their work situation and the data basis of their daily decisions through technology."
+    },
+    {
+      "title": "Do you support digital tools also financially from the initiative?",
+      "content": "Our most valuable resource is our competent employees working in agile teams. Putting them at the service of the community now is our contribution for overcoming this crisis. Do you have a problem you want to solve? Please contact us."
+    }
+  ],
+  "es": [
+    {
+      "title": "About us",
+      "content": "We as a broad alliance of German Tech companies, want to actively help society, politics and economy to contain COVID-19 with digital solutions. To achieve this, we are building on one of the most important resources available to the world today: Information."
+    },
+    {
+      "title": "Why GesundZusammen?",
+      "content": "In order to contain COVID-19, a worldwide competition of ideas is emerging, significantly accelerated by the tech industry and others. We are not only bringing together the resources and capabilities of the German digital economy. We also seek and promote open exchange with other digital initiatives so that the ideas with the greatest potential can prevail."
+    },
+    {
+      "title": "What is your goal?",
+      "content": "Data enables us to do research together, warn people, save lives. And yet the widespread use of data is not without risk: in the face of the crisis, there are increasing voices calling for fundamental rights to be sacrificed for the benefit of health. Together we will prove the point: We can have both infection control and privacy."
+    },
+    {
+      "title": "Are you looking for more partners?",
+      "content": "We are always open to other partners who would like to contribute their skills and resources to protect the health of society."
+    },
+    {
+      "title": "What do you think about the work of the health system, doctors and nursing staff?",
+      "content": "We admire and support the work of everyone in the health system. This is why we want to contribute together to improving their work situation and the data basis of their daily decisions through technology."
+    },
+    {
+      "title": "Do you support digital tools also financially from the initiative?",
+      "content": "Our most valuable resource is our competent employees working in agile teams. Putting them at the service of the community now is our contribution for overcoming this crisis. Do you have a problem you want to solve? Please contact us."
+    }
   ]
 }
