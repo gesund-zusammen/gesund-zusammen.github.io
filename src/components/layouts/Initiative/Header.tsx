@@ -36,14 +36,6 @@ class InitiativeHeader extends React.PureComponent<WithTranslation, {}> {
                 >
                   {this.props.t("initiative.landing.content")}
                 </Typography>
-                <ApplyButton
-                  color="primary"
-                  variant="contained"
-                  disableFocusRipple={true}
-                  href={this.props.t("program.link")}
-                >
-                  {this.props.t("program.cta")}
-                </ApplyButton>
               </HeaderContent>
             </Grid>
             <Hidden xsDown>
