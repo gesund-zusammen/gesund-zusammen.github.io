@@ -4,7 +4,7 @@ import styled, { AnyStyledComponent } from "styled-components";
 
 import LandingHeader from "./Header";
 import Social from "../Shared/Social";
-import Footer from "./Footer";
+import Footer from "../Shared/Footer";
 import NewsletterSignup from "../Shared/NewsletterSignup";
 import { HeaderBox, MainContentContainer } from "../Shared/StyledComponents";
 
