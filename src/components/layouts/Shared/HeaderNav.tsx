@@ -30,12 +30,12 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
           />
         </Link>
         <HeaderNavItems>
-          {(window.location.hostname !== "gesund-zusammen.de") && (
+          {window.location.hostname !== "gesund-zusammen.de" && (
             <HeaderNavLinkItem to={`/${this.props.i18n.language}/initiative`}>
               {this.props.t("header.nav.initiative")}
             </HeaderNavLinkItem>
           )}
-          {(window.location.hostname === "gesund-zusammen.de") && (
+          {window.location.hostname === "gesund-zusammen.de" && (
             <HeaderNavLinkItem to={`/${this.props.i18n.language}/program`}>
               {this.props.t("program.header.title")}
             </HeaderNavLinkItem>
