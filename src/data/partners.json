@@ -251,6 +251,12 @@
       "link": "https://www.joliberlin.com"
     },
     {
+      "name": "FORWARD31",
+      "slug": "tech",
+      "image": "forward31.png",
+      "link": "https://www.forward31.com"
+    },
+    {
       "name": "APX",
       "slug": "ambassador",
       "image": "apx.png",
