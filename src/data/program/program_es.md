@@ -3,27 +3,27 @@ title: "Program Spanish"
 language: "es"
 ---
 
-## The #Gesundzusammen Accelerator Program
+## El Programa de Aceleración de SaludJuntos
 
-The #Gesundzusammen Accelerator is organized by TOA, wefox & finleap, with many leading ecosystem players (i.e. N26, BVDS, DeliveryHero, Celonis, Ada Health) supporting.
+El programa de aceleración #SaludJuntos está organizado por TOA, wefox y finleap, con el apoyo de muchos de los principales actores del ecosistema (es decir, N26, BVDS, DeliveryHero, Celonis, Ada Health).
 
-#### The program offers:
+#### El programa ofrece:
 
-- €20,000 of equity-free capital, no strings attached.
-- Free resources (products & services) through the partners involved.
-- 6 weeks of acceleration to develop your product, build partnerships and acquire customers & financing through access to our network.
-- Access to mentors and experts for best-in-industry coaching.
+- 20.000 euros de capital, libre de condiciones.
+- Recursos gratuitos (productos y servicios) a través de los socios implicados.
+- 6 semanas de aceleración para desarrollar el producto, crear colaboraciones, adquirir clientes y financiación a través del acceso a nuestra red.
+- Acceso a mentores y expertos para el mejor entrenamiento en la industria.
 
 <br />
-**The open call is aimed at teams of all sizes, stages\* and backgrounds (startup, researchers, inventors, tinkerers).** <br />
-**Call is open until April 17th, 2020.**
+**La convocatoria está dirigida a equipos de todos los tamaños, etapas y antecedentes (startups, investigadores, inventores, trabajadores).**
+**La convocatoria está abierta hasta el 17 de abril de 2020**
 
-#### Batch #1 of the program will:
+#### La primera cosecha del programa obtendrá:
 
-- Finance a minimum of 5 innovative solutions, possibly expanding the scope to 10
-- Review all applications by an acclaimed jury on a rolling basis
-- Constantly expand the network of partners involved
+- Financiación a un mínimo de 5 soluciones innovadoras, posiblemente ampliando el alcance a 10
+- Revisión de todas las solicitudes por un aclamado jurado de forma continua
+- Ampliación constante de la red de socios involucrados
 
-The program for Batch #1 will end with a virtual demo day on June 1st, 2020.
+El programa de la primera cosecha terminará con un Demo Day virtual el 1 de junio de 2020.
 
-\*No legal entity? No worries, we’ll help you set one up.
+\*¿Sin entidad legal? No te preocupes, te ayudaremos a crear una.

@@ -3,20 +3,21 @@ title: "Landing Spanish"
 language: "es"
 ---
 
-## GesundZusammen –
+## SanosJuntos -
 
-## an Accelerator initiated by the digital economy
+## un programa de Aceleración iniciado por la economía digital
 
-As broad alliance of european tech companies, we want to actively help society, politics and business to contain COVID-19 with digital solutions. We have founded an Accelerator program that provide resources to bring promising Digital Tools to the public faster.
+A partir de la alianza de empresas tecnológicas alemanas, queremos ayudar activamente a la sociedad, los gobiernos y las empresas, a contener la pandemia del COVID-19 con soluciones digitales. Hemos fundado un programa de Aceleración que proporciona recursos para llevar a la ciudadanía herramientas digitales más rápidamente.
 
-#### So that private things remain private.
+#### Para que las cosas privadas sigan siendo privadas.
 
-Even in times of crisis, people's freedom and personal rights are top priority for our technology.
+Incluso en tiempos de crisis, la libertad y los derechos personales de las personas individuales son la prioridad principal de nuestra tecnología.
 
-#### To keep Europa healthy
+#### Para mantener a Alemania saludable
 
-The Digital Tools supported in the Accelerator program are designed to help protect risk groups better and relieve the burden on the healthcare system.
+Las Herramientas Digitales apoyadas en el programa de Aceleración están diseñadas para ayudar a proteger mejor a los grupos de riesgo y aliviar la carga del sistema de salud.
 
-#### To get the economy moving
+#### Para poner en marcha la economía
 
-Technology can be employed to reduce health risks in companies and help boost economic activity again.
+La tecnología puede emplearse para reducir los riesgos para la salud en las empresas y ayudar a impulsar nuevamente la actividad económica.
+
