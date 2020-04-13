@@ -260,7 +260,13 @@
       "name": "APX",
       "slug": "ambassador",
       "image": "apx.png",
-      "link": "https://https://apx.ac"
+      "link": "https://www.apx.ac"
+    },
+    {
+      "name": "Factory",
+      "slug": "ambassador",
+      "image": "factory.png",
+      "link": "https://www.factoryberlin.com"
     },
     {
       "name": "Freiraum",
