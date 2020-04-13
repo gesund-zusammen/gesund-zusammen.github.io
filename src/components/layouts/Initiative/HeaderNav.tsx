@@ -5,7 +5,7 @@ import { withRouter, RouteComponentProps } from "react-router";
 import { Link } from "react-router-dom";
 import { withTranslation, WithTranslation } from "react-i18next";
 
-import Logo from "../../../images/logo.svg";
+import LogoDE from "../../../images/logo.svg";
 import LogoEN from "../../../images/logo_en.svg";
 
 interface IHeaderNavProps extends RouteComponentProps, WithTranslation {}
@@ -25,7 +25,7 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
       <>
         <Link to={`/${this.props.i18n.language}/`}>
           <HeaderLogo
-            src={this.props.i18n.language === "de" ? Logo : LogoEN}
+            src={this.props.i18n.language === "de" ? LogoDE : LogoEN}
             alt="#GesundZusammen"
           />
         </Link>

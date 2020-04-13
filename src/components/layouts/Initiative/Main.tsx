@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Container } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
-import LandingHeader from "./Header";
+import InitiativeHeader from "./Header";
 import Social from "../Shared/Social";
 import Footer from "./Footer";
 import NewsletterSignup from "../Shared/NewsletterSignup";
@@ -12,11 +12,11 @@ class LayoutInitiative extends React.Component {
   render = () => {
     return (
       <>
-        <LandingHeaderBox id="header" component="header">
+        <InitiativeHeaderBox id="header" component="header">
           <Container maxWidth="lg">
-            <LandingHeader />
+            <InitiativeHeader />
           </Container>
-        </LandingHeaderBox>
+        </InitiativeHeaderBox>
 
         <Box id="content" paddingBottom={4} marginTop={4}>
           <MainContentContainer maxWidth="lg">
@@ -34,7 +34,7 @@ class LayoutInitiative extends React.Component {
   };
 }
 
-const LandingHeaderBox: AnyStyledComponent = styled(HeaderBox)`
+const InitiativeHeaderBox: AnyStyledComponent = styled(HeaderBox)`
   padding: 0 0 6rem 0;
 `;
 
