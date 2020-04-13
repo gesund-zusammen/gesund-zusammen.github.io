@@ -6,7 +6,6 @@ import { withTranslation, WithTranslation } from "react-i18next";
 import HeaderNav from "../Shared/HeaderNav";
 
 import IlluHeader from "../../../images/illu_header.svg";
-import CTABox from "../../common/CTABox";
 
 class InitiativeHeader extends React.PureComponent<WithTranslation, {}> {
   render = () => {
