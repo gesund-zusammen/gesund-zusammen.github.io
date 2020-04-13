@@ -3,36 +3,15 @@
     {
       "slug": "founders",
       "name": {
-        "en": "Founding Partner",
+        "en": "Founding Partners",
         "de": "Founding Partner"
       }
     },
     {
       "slug": "tech",
       "name": {
-        "en": "Tech Partner",
-        "de": "Tech Partner"
-      }
-    },
-    {
-      "slug": "privacy",
-      "name": {
-        "en": "Privacy Partner",
-        "de": "Privacy Partner"
-      }
-    },
-    {
-      "slug": "health",
-      "name": {
-        "en": "Health Partner",
-        "de": "Health Partner"
-      }
-    },
-    {
-      "slug": "agency",
-      "name": {
-        "en": "Agency Partner",
-        "de": "Agentur Partner"
+        "en": "Strategic Partners",
+        "de": "Strategic Partner"
       }
     },
     {
@@ -179,38 +158,38 @@
     },
     {
       "name": "Datenschutzexperte",
-      "slug": "privacy",
+      "slug": "tech",
       "image": "datenschutzexperte.svg",
       "link": "https://www.datenschutzexperte.de"
     },
     {
       "name": "Deloitte",
-      "slug": "privacy",
+      "slug": "tech",
       "image": "deloitte.jpg",
       "link": "https://www2.deloitte.com/dl/de/services/legal.html"
     },
     {
       "name": "MyData",
-      "slug": "privacy",
+      "slug": "tech",
       "image": "mydata.png",
       "link": "https://mydata.org",
       "imageXL": true
     },
     {
       "name": "UserCentrics",
-      "slug": "privacy",
+      "slug": "tech",
       "image": "usercentrics.svg",
       "link": "https://usercentrics.com"
     },
     {
       "name": "CMS",
-      "slug": "privacy",
+      "slug": "tech",
       "image": "cmslaw.svg",
       "link": "https://cms.law"
     },
     {
       "name": "Bird & Bird",
-      "slug": "privacy",
+      "slug": "tech",
       "image": "twobirds.png",
       "link": "https://www.twobirds.com",
       "color": "#7c7c6e",
@@ -218,7 +197,7 @@
     },
     {
       "name": "Reed Smith LLP",
-      "slug": "privacy",
+      "slug": "tech",
       "image": "reedsmith.svg",
       "link": "https://www.reedsmith.com",
       "color": "#3d3c3c",
@@ -226,7 +205,7 @@
     },
     {
       "name": "SKW Schwarz",
-      "slug": "privacy",
+      "slug": "tech",
       "image": "skwschwarz.jpg",
       "link": "https://www.skwschwarz.de",
       "color": "black",
@@ -234,7 +213,7 @@
     },
     {
       "name": "HEARTBEAT LABS",
-      "slug": "health",
+      "slug": "tech",
       "image": "heartbeatlabs.svg",
       "link": "https://heartbeatlabs.com",
       "color": "#002f4e",
@@ -242,25 +221,25 @@
     },
     {
       "name": "ATAI Life Sciences",
-      "slug": "health",
+      "slug": "tech",
       "image": "atailifesciences.png",
       "link": "https://www.atai.life"
     },
     {
       "name": "fischerAppelt",
-      "slug": "agency",
+      "slug": "tech",
       "image": "fischerappelt.jpg",
       "link": "https://www.fischerappelt.de"
     },
     {
       "name": "Story Machine",
-      "slug": "agency",
+      "slug": "tech",
       "image": "storymachine.png",
       "link": "https://www.storymachine.de"
     },
     {
       "name": "JOLI BERLIN",
-      "slug": "agency",
+      "slug": "tech",
       "image": "joliberlin.jpg",
       "link": "https://www.joliberlin.com"
     },
