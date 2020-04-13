@@ -7,13 +7,13 @@ language: "it"
 
 ## an Accelerator initiated by the digital economy
 
-As broad alliance of German tech companies, we want to actively help society, politics and business to contain COVID-19 with digital solutions. We have founded an Accelerator program that provide resources to bring promising Digital Tools to the public faster.
+As broad alliance of european tech companies, we want to actively help society, politics and business to contain COVID-19 with digital solutions. We have founded an Accelerator program that provide resources to bring promising Digital Tools to the public faster.
 
 #### So that private things remain private.
 
 Even in times of crisis, people's freedom and personal rights are top priority for our technology.
 
-#### To keep Germany healthy
+#### To keep Europa healthy
 
 The Digital Tools supported in the Accelerator program are designed to help protect risk groups better and relieve the burden on the healthcare system.
 
