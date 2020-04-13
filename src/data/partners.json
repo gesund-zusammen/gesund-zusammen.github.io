@@ -243,6 +243,12 @@
       "image": "joliberlin.jpg",
       "link": "https://www.joliberlin.com"
     },
+       {
+      "name": "APX",
+      "slug": "tech",
+      "image": "apx.png",
+      "link": "https://https://apx.ac"
+    },
     {
       "name": "Freiraum",
       "slug": "further",
