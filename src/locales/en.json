@@ -34,19 +34,19 @@
   "initiative": {
     "landing": {
       "title": "Technology saving lives.",
-      "content": "An accelerator program to boost solutions against the COVID-19 crisis."
+      "content": "Digital tools to fight Covid-19"
     },
     "box1": {
-      "title": "Accelerator",
-      "content": "A minimum of 5 solutions are supported with €20,000 of equity-free capital each, mentorship and reach."
+      "title": "Agile Development",
+      "content": "As strong tech partners, we invest together in building the apps and tools our country needs right now, user-friendly, open source, fast."
     },
     "box2": {
-      "title": "Support System",
-      "content": "Through the contributing partners we're offering a wide range of support services from tech to marketing and institutional access to all participants."
+      "title": "Digital Support",
+      "content": "We support other digital initiatives with our resources to effectively improve the data situation. Contact us with ideas and needs."
     },
     "box3": {
       "title": "Open Ecosystem",
-      "content": "We are investing into building an active Ecosystem by providing a database of all relevant COVID-19 initiatives, and other outreach activities."
+      "content": "We are looking forward to exchange with all other digital initiatives, to join forces and promote cooperation with regular updates."
     }
   },
   "program": {

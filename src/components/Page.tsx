@@ -145,7 +145,7 @@ class Page extends React.Component<IPageProps, {}> {
             </LayoutSubPage>
           </Route>
           <Route path="/:lang/" exact={true} default={true}>
-            {window.location.hostname === "localhost" ? (
+            {window.location.hostname === "gesund-zusammen.de" ? (
               <LayoutLanding>
                 <Landing />
               </LayoutLanding>

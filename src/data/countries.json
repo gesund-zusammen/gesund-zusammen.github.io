@@ -4,7 +4,10 @@
       "slug": "country_initiatives",
       "name": {
         "en": "Country-specific Initiatives",
-        "de": "Länder-spezifische Initiativen"
+        "de": "Länder-spezifische Initiativen",
+        "it": "Country-specific Initiatives",
+        "fr": "Country-specific Initiatives",
+        "es": "Country-specific Initiatives"
       }
     }
   ],

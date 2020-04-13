@@ -3,29 +3,41 @@
     {
       "slug": "founders",
       "name": {
+        "de": "Founding Partner",
         "en": "Founding Partners",
-        "de": "Founding Partner"
+        "fr": "Founding Partners",
+        "it": "Founding Partners",
+        "ess": "Founding Partners"
       }
     },
     {
       "slug": "tech",
       "name": {
+        "de": "Strategic Partner",
         "en": "Strategic Partners",
-        "de": "Strategic Partner"
+        "fr": "Strategic Partners",
+        "it": "Strategic Partners",
+        "es": "Strategic Partners"
       }
     },
     {
       "slug": "ambassador",
       "name": {
+        "de": "Ambassador Partner",
         "en": "Ambassador Partners",
-        "de": "Ambassador Partner"
+        "fr": "Ambassador Partners",
+        "it": "Ambassador Partners",
+        "es": "Ambassador Partners"
       }
     },
     {
       "slug": "further",
       "name": {
+        "de": "Weitere Partner",
         "en": "Further Partner",
-        "de": "Weitere Partner"
+        "fr": "Further Partner",
+        "it": "Further Partner",
+        "es": "Further Partner"
       }
     }
   ],
@@ -267,12 +279,6 @@
       "slug": "ambassador",
       "image": "apx.png",
       "link": "https://www.apx.ac"
-    },
-    {
-      "name": "Factory",
-      "slug": "ambassador",
-      "image": "factory.png",
-      "link": "https://www.factoryberlin.com"
     },
     {
       "name": "Freiraum",

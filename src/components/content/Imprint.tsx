@@ -7,21 +7,12 @@ import MuiMarkdown from "../common/MuiMarkdown";
 
 import ContentDE from "../../data/imprint/imprint_de.md";
 import ContentEN from "../../data/imprint/imprint_en.md";
-import ContentFR from "../../data/imprint/imprint_fr.md";
-import ContentIT from "../../data/imprint/imprint_it.md";
-import ContentES from "../../data/imprint/imprint_es.md";
 
 class PrivacyPolicy extends React.PureComponent<WithTranslation, {}> {
   getMarkdown(language: string) {
     switch (language) {
       case "de":
         return ContentDE;
-      case "fr":
-        return ContentFR;
-      case "it":
-        return ContentIT;
-      case "es":
-        return ContentES;
       default:
         return ContentEN;
     }
