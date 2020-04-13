@@ -275,22 +275,22 @@
       "link": "https://www.land-der-ideen.de"
     },
     {
-      "name": "APX",
-      "slug": "ambassador",
-      "image": "apx.png",
-      "link": "https://www.apx.ac"
-    },
-    {
       "name": "Freiraum",
-      "slug": "further",
+      "slug": "tech",
       "image": "freiraum.jpg",
       "link": "http://www.freiraum-berlin.org"
     },
     {
       "name": "Koehler Investment",
-      "slug": "further",
+      "slug": "tech",
       "image": "koehlerinvestment.jpg",
       "link": "https://www.koehler-investment.com"
+    },
+    {
+      "name": "APX",
+      "slug": "ambassador",
+      "image": "apx.png",
+      "link": "https://www.apx.ac"
     }
   ]
 }
