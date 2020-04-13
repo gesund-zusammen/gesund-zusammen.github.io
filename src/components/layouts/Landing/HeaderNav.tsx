@@ -12,8 +12,8 @@ import Select from "@material-ui/core/Select";
 interface IHeaderNavProps extends RouteComponentProps, WithTranslation {}
 
 class HeaderNav extends React.Component<IHeaderNavProps, {}> {
-  handleLangChange = () => {
-    const newLang = this.props.i18n.language === "de" ? "en" : "de";
+  handleLangChange = (selected: any) => {
+    const newLang = selected.target.value;
     this.props.i18n.changeLanguage(newLang, () => {
       const pathSegments = this.props.location.pathname.split("/");
       const [, , ...path] = pathSegments;
