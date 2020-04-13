@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch } from "@material-ui/core";
+import { MenuItem } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 import { withRouter, RouteComponentProps } from "react-router";
 import { Link } from "react-router-dom";
@@ -7,6 +7,7 @@ import { withTranslation, WithTranslation } from "react-i18next";
 
 import LogoDE from "../../../images/logo.svg";
 import LogoEN from "../../../images/logo_en.svg";
+import Select from "@material-ui/core/Select";
 
 interface IHeaderNavProps extends RouteComponentProps, WithTranslation {}
 
@@ -31,16 +32,20 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
         </Link>
         <HeaderNavItems>
           <HeaderLangSwitch>
-            <StyledSwitch
-              checked={this.props.i18n.language === "de"}
-              onChange={this.handleLangChange}
-              disableRipple={true}
-              color="primary"
-              name="langSwitch"
-            />
-            <LangDisplay>
-              {this.props.i18n.language === "de" ? "en" : "de"}
-            </LangDisplay>
+            <HeaderLangSwitch>
+              <Select
+                value={this.props.i18n.language}
+                onChange={this.handleLangChange}
+                label="Language"
+                disableUnderline
+              >
+                <MenuItem value={"en"}>EN</MenuItem>
+                <MenuItem value={"de"}>DE</MenuItem>
+                <MenuItem value={"fr"}>FR</MenuItem>
+                <MenuItem value={"it"}>IT</MenuItem>
+                <MenuItem value={"es"}>ES</MenuItem>
+              </Select>
+            </HeaderLangSwitch>
           </HeaderLangSwitch>
         </HeaderNavItems>
       </>
@@ -80,17 +85,6 @@ const HeaderLangSwitch: AnyStyledComponent = styled.div`
     width: auto;
     margin-left: 1.3rem;
   }
-`;
-
-const StyledSwitch: AnyStyledComponent = styled(Switch)`
-  margin-top: -4px;
-`;
-
-const LangDisplay: AnyStyledComponent = styled.span`
-  display: inline-block;
-  font-size: 1rem;
-  margin-top: 0.7rem;
-  text-transform: uppercase;
 `;
 
 export default withRouter(withTranslation()(HeaderNav));
