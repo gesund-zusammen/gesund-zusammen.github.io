@@ -257,6 +257,12 @@
       "link": "https://www.forward31.com"
     },
     {
+      "name": "Land der Ideen",
+      "slug": "tech",
+      "image": "LDI.jpg",
+      "link": "https://www.land-der-ideen.de"
+    },
+    {
       "name": "APX",
       "slug": "ambassador",
       "image": "apx.png",
