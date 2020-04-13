@@ -5,18 +5,18 @@ language: "fr"
 
 ## GesundZusammen –
 
-## an Accelerator initiated by the digital economy
+## un accélérateur initié par l'économie numérique.
 
-As broad alliance of european tech companies, we want to actively help society, politics and business to contain COVID-19 with digital solutions. We have founded an Accelerator program that provide resources to bring promising Digital Tools to the public faster.
+Nous sommes une vaste alliance d'entreprises technologiques allemandes. Nous voulons aider - activement - la société, le monde politique et les entreprises à contenir le COVID-19 avec des solutions numériques. Nous avons fondé un programme d'accélération qui vise à  mettre rapidement à disposition des outils numériques prometteurs.
 
-#### So that private things remain private.
+#### Pour que les choses privées restent privées.
 
-Even in times of crisis, people's freedom and personal rights are top priority for our technology.
+Même en temps de crise, la liberté et les droits des personnes sont la priorité absolue de notre technologie.
 
-#### To keep Europa healthy
+#### Pour que l'Allemagne reste en bonne santé
 
-The Digital Tools supported in the Accelerator program are designed to help protect risk groups better and relieve the burden on the healthcare system.
+Les outils numériques soutenus dans le cadre du programme d'accélération sont conçus pour aider à mieux protéger les groupes à risque et à alléger la charge qui pèse sur le système de santé.
 
-#### To get the economy moving
+#### Pour soutenir l'économie
 
-Technology can be employed to reduce health risks in companies and help boost economic activity again.
+La technologie peut être utilisée pour réduire les risques sanitaires au sein des entreprises et contribuer à relancer l'activité économique.

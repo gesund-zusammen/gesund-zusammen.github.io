@@ -5,7 +5,7 @@
       "name": {
         "de": "GesundZuammen Initiative",
         "en": "GesundZuammen Initiative",
-        "fr": "GesundZuammen Initiative",
+        "fr": "Initiative Initiative",
         "it": "Iniziativa HealthyTogether",
         "es": "Iniciativa SaludJuntos"
       }
@@ -15,7 +15,7 @@
       "name": {
         "de": "Digitale Tools",
         "en": "Digital Tools",
-        "fr": "Digital Tools",
+        "fr": "Outils Numériques",
         "it": "Strumenti digitali",
         "es": "Herramientas Digitales"
       }
@@ -25,7 +25,7 @@
       "name": {
         "de": "Digitale Konsultation",
         "en": "Digital Consultation",
-        "fr": "Digital Consultation",
+        "fr": "Consultation Digitale",
         "it": "Consultazione digitale",
         "es": "Consultoría Digital"
       }
@@ -35,7 +35,7 @@
       "name": {
         "de": "Infektions Verfolgung Übersichten",
         "en": "Infection Tracking Dashboards",
-        "fr": "Infection Tracking Dashboards",
+        "fr": "Tableaux de bord de suivi des infections",
         "it": "Dashboard di tracking dell'infezione",
         "es": "Paneles de Seguimiento de la pandemia"
       }
@@ -45,7 +45,7 @@
       "name": {
         "de": "Weitere Initiativen",
         "en": "Futher Initiatives",
-        "fr": "Futher Initiatives",
+        "fr": "Autres Initiatives",
         "it": "Ulteriori iniziative",
         "es": "Otras iniciativas"
       }
@@ -65,7 +65,7 @@
       "name": {
         "de": "Wissensdatenbanken",
         "en": "Knowledge Resources",
-        "fr": "Knowledge Resources",
+        "fr": "Base de données",
         "it": "Risorse di conoscenza",
         "es": "Recursos de Conocimiento"
       }
@@ -74,7 +74,7 @@
       "slug": "research_and_government_sites",
       "name": {
         "de": "Forschungs- und Regierungsseiten",
-        "en": "Research & Government Sites",
+        "en": "Recherche et sites gouvernementaux",
         "fr": "Research & Government Sites",
         "it": "Siti di ricerca e governo",
         "es": "Páginas de Investigación y de Gobiernos"
@@ -85,7 +85,7 @@
       "name": {
         "de": "Wearables & IoT",
         "en": "Wearables & IoT",
-        "fr": "Wearables & IoT",
+        "fr": "Dispositifs portables & IoT",
         "it": "Wearables & IoT",
         "es": "Wearables & IoT"
       }

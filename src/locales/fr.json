@@ -9,136 +9,136 @@
   "header": {
     "nav": {
       "initiative": "Initiative",
-      "initiatives": "Database",
-      "supporters": "Partners",
-      "faqs": "FAQs"
+      "initiatives": "Base de données",
+      "supporters": "Partenaires",
+      "faqs": "Questions fréquentes"
     }
   },
   "accelerator": {
     "landing": {
-      "title": "Technology saving lives.",
-      "content": "An accelerator program to boost solutions against the COVID-19 crisis."
+      "title": "La technologie sauve des vies.",
+      "content": "Un programme d'accélération qui vise à trouver des solutions contre le COVID-19"
     },
     "box1": {
-      "title": "Accelerator",
-      "content": "A minimum of 5 solutions are supported with €20,000 of equity-free capital each, mentorship and reach."
+      "title": "Accélérateur",
+      "content": "Au moins 5 solutions retenues, soutenues avec EUR 20,000 de fonds propres, un coaching et un accès à notre réseau"
     },
     "box2": {
-      "title": "Support System",
-      "content": "Through the contributing partners we're offering a wide range of support services from tech to marketing and institutional access to all participants."
+      "title": "Accès à des ressources",
+      "content": "Les partenaires de ce programme mettent à disposition des participants un large éventail de ressources, allant du tech au marketing, mais aussi l'accès à nos relations institutionnelles."
     },
     "box3": {
-      "title": "Open Ecosystem",
-      "content": "We are investing into building an active Ecosystem by providing a database of all relevant COVID-19 initiatives, and other outreach activities."
+      "title": "Ecosystème Ouvert",
+      "content": "Nous investissons dans la construction d'un écosystème actif en fournissant une base de données de toutes les initiatives COVID-19 pertinentes, et d'autres activités de sensibilisation"
     }
   },
   "initiative": {
     "landing": {
-      "title": "Technology saving lives.",
-      "content": "Digital tools to fight Covid-19"
+      "title": "La technologie sauve des vies.",
+      "content": "Les outils numériques pour combattre le Covid-19"
     },
     "box1": {
-      "title": "Agile Development",
-      "content": "As strong tech partners, we invest together in building the apps and tools our country needs right now, user-friendly, open source, fast."
+      "title": "Développement agile",
+      "content": "En tant que partenaires technologiques solides, nous investissons ensemble dans la création des applications et des outils dont notre pays a besoin à l'heure actuelle, conviviaux, à code source ouvert, rapides."
     },
     "box2": {
-      "title": "Digital Support",
-      "content": "We support other digital initiatives with our resources to effectively improve the data situation. Contact us with ideas and needs."
+      "title": "Soutien numérique",
+      "content": "Nous soutenons d'autres initiatives numériques avec nos ressources pour améliorer efficacement le statut des données. Contactez-nous pour nous faire part de vos idées et de vos besoins."
     },
     "box3": {
-      "title": "Open Ecosystem",
-      "content": "We are looking forward to exchange with all other digital initiatives, to join forces and promote cooperation with regular updates."
+      "title": "Ecosystème ouvert",
+      "content": "Nous sommes impatients d'échanger avec toutes les autres initiatives numériques, d'unir nos forces et de promouvoir la coopération grâce à updates réguliers."
     }
   },
   "program": {
     "header": {
-      "title": "Program",
-      "content": "Accelerator for Digital Tools vs Covid-19 helping them getting to the public faster"
+      "title": "Programme",
+      "content": "Accélération d'outils digitaux vs Covid-19, mettre à disposition du grand public au plus vite"
     },
-    "title": "The #Gesundzusammen Accelerator Program ",
-    "claim": "You need support?",
-    "cta": "Apply now",
+    "title": "Le programme d'accélération #Gesundzusammen",
+    "claim": "Vous avez besoin de soutien?",
+    "cta": "Postulez maintenant",
     "link": "/apply",
     "type": {
-      "companies": "Companies in the Accelerator"
+      "companies": "sociétés de l'accélérateur "
     }
   },
   "partners": {
-    "unknownCategory": "Unknown",
-    "title": "Founding & Tech Partners",
-    "claim": "Want to help make a difference?",
-    "cta": "Become part of the initiative",
+    "unknownCategory": "Inconnu",
+    "title": "Partenaires technologies et fondateurs",
+    "claim": "Vous voulez aider à faire une différence?",
+    "cta": "Rejoignez cette initiative",
     "link": "/support"
   },
   "privacy": {
-    "claim": "You have another question?",
-    "cta": "Contact us",
+    "claim": "Vous avez une autre question?",
+    "cta": "Contactez nous",
     "link": "mailto:privacy@gesund-zusammen.de"
   },
   "initiatives": {
-    "content": "In order to contain COVID-19, a worldwide competition of ideas is emerging, significantly accelerated by the tech industry and others. We are not only bringing together the resources and capabilities of the German digital economy. We also seek and promote open exchange with other digital initiatives so that the ideas with the greatest potential can prevail. \n\n Here you will find exciting digital initiatives and technologies from around the world - continuously updated. If you would like to add more projects to this showcase, please contact us.",
+    "content": "Afin de contenir COVID-19, une compétition mondiale d'idées est en train d'émerger, considérablement accélérée par l'industrie technologique mais aussi par d'autres. Nous ne nous contentons pas de rassembler les ressources et les capacités de l'économie numérique allemande. Nous recherchons et encourageons également un échange ouvert avec d'autres initiatives numériques afin que les idées ayant le plus grand potentiel puissent prévaloir. \n\n Vous trouverez ici des initiatives numériques et des technologies passionnantes provenant du monde entier - constamment mises à jour. Si vous souhaitez ajouter d'autres projets à cette vitrine, veuillez nous contacter.",
     "filter": {
-      "filterBy": "Filter by",
-      "all": "All",
-      "global": "Worldwide",
-      "germany": "In Germany"
+      "filterBy": "Filtrer par",
+      "all": "Tout",
+      "global": "Dans le monde entier",
+      "germany": "En Allemagne"
     },
-    "unknownCategory": "Unknown",
-    "showMore": "Show more",
-    "claim": "An initiative is missing?",
-    "cta": "Contact us",
+    "unknownCategory": "Inconnu",
+    "showMore": "En savoir plus",
+    "claim": "Une initiative manquante?",
+    "cta": "Contactez nous",
     "link": "mailto:initiatives@gesund-zusammen.de"
   },
   "faqs": {
     "title": "Questions?",
-    "button": "FAQs",
-    "claim": "You have another question?",
-    "cta": "Contact us",
+    "button": "Questions fréquentes",
+    "claim": "Vous avez une autre question?",
+    "cta": "Contactez nous",
     "link": "mailto:faqs@gesund-zusammen.de",
-    "contact": "For more questions, please contact: Solveig Rathenow <media@gesund-zusammen.de>"
+    "contact": "Pour d'autres questions, merci de contacter: Solveig Rathenow <media@gesund-zusammen.de>"
   },
   "press": {
-    "title": "Press Contact",
-    "claim": "You have another question?",
-    "cta": "Contact us",
+    "title": "Contact Presse",
+    "claim": "Vous avez une autre question?",
+    "cta": "Contactez nous",
     "link": "mailto:media@gesund-zusammen.de",
-    "pageHeader": "Reach out to us",
+    "pageHeader": "Contactez nous",
     "pressContactName": "Solveig Rathenow",
     "pressContactTitle": "Head of Venture Communications",
     "pressContactEmail": "media@gesund-zusammen.de",
-    "downloadLogo": "Download Logo",
-    "resources": "Resources",
-    "resourcesLine1": "Download the GesundZusammen logo in various formats.",
-    "resourcesLine2": "Includes EPS, JPG, and PNG formats. For digital and print.",
-    "release": "Press Release",
-    "releaseLine1": "Download the GesundZusammen Press Release and Partner Map.",
-    "releaseTitle": "\"Gesund-Zusammen\": Tech coalition formed to combat Covid-19",
+    "downloadLogo": "Télécharger le logo",
+    "resources": "Ressources",
+    "resourcesLine1": "Télécharger le logo GesundZusammen dans plusieurs formats.",
+    "resourcesLine2": "Inclus les formats EPS, JPG, and PNG formats. Pour le numérique et l'impression.",
+    "release": "Communiqué de presse",
+    "releaseLine1": "Télécharger le communiqué de presse GesundZusammen et la liste des partenaires.",
+    "releaseTitle": "\"Gesund-Zusammen\": une alliance Tech pour combattre le Covid-19",
     "releaseHrefPDF": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.pdf",
     "releaseHrefImage": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.png",
     "releaseHrefURL": "https://finleap.pr.co/187535-gesund-zusammen-tech-coalition-formed-to-combat-covid-19/"
   },
   "newsletter": {
-    "title": "Subscribe to our Newsletter",
-    "content": "We will keep you posted about new tools, dashboards, initiatives etc.",
+    "title": "S'abonner à la newsletter",
+    "content": "Nous vous tiendrons informés de nos nouvelles initiatives, outils, etc.",
     "inputPlaceholder": "E-Mail",
-    "cta": "Subscribe"
+    "cta": "S'abonner"
   },
   "footer": {
-    "title": "Sharing is caring",
-    "claim": "Refer to your community who haven't heard about us yet. The more the faster to overcome this situation!",
-    "shareLink": "Share our link",
-    "shareVia": "Or share via",
-    "emailShareSubject": "Have a look at gesund-zusammen.de",
-    "copy": "Copy",
-    "copied": "Copied",
+    "title": "Partager, c'est prendre soin",
+    "claim": "Partager avec votre communauté qui n'a pas encore entendu parler de nous. Plus nombreux nous serons, plus vite nous surmonterons cette situation!",
+    "shareLink": "Partagez le lien",
+    "shareVia": "Ou Partagez avec",
+    "emailShareSubject": "En savoir plus sur gesund-zusammen.de",
+    "copy": "Copier",
+    "copied": "Copié",
     "twitter": {
-      "title": "Follow us!"
+      "title": "Suivez-nous!"
     },
     "nav": {
-      "privacy": "Privacy Policy",
-      "vulnerability": "Report Vulnerability",
-      "imprint": "Imprint",
-      "press": "Press & Contact"
+      "privacy": "Politique de confidentialité",
+      "vulnerability": "Rapport sur la vulnérabilité",
+      "imprint": "Mentions légales",
+      "press": "Presse et contact"
     }
   }
 }

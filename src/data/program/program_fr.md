@@ -3,27 +3,28 @@ title: "Program French"
 language: "fr"
 ---
 
-## The #Gesundzusammen Accelerator Program
+## Le programme d'accélération Gesundzusammen
 
-The #Gesundzusammen Accelerator is organized by TOA, wefox & finleap, with many leading ecosystem players (i.e. N26, BVDS, DeliveryHero, Celonis, Ada Health) supporting.
+L'accélérateur #Gesundzusammen est organisé par TOA, wefox & finleap, avec le soutien de nombreux acteurs majeurs de l'écosystème (p.ex. N26, BVDS, DeliveryHero, Celonis, Ada Health).
 
-#### The program offers:
+#### Le programme offre :
 
-- €20,000 of equity-free capital, no strings attached.
-- Free resources (products & services) through the partners involved.
-- 6 weeks of acceleration to develop your product, build partnerships and acquire customers & financing through access to our network.
-- Access to mentors and experts for best-in-industry coaching.
+- 20 000 euros de capitaux propres, sans conditions.
+- Des ressources gratuites (produits et services) à travers les partenaires impliqués.
+- 6 semaines d'accélération pour développer votre produit, construire des partenariats et acquérir des clients & des financements grâce à l'accès à notre réseau.
+- Accès à des mentors et à des experts pour un coaching de qualité.
 
 <br />
-**The open call is aimed at teams of all sizes, stages\* and backgrounds (startup, researchers, inventors, tinkerers).** <br />
-**Call is open until April 17th, 2020.**
+**Le programme est ouvert et s'adresse aux équipes de toutes tailles, de tous niveaux et de tous horizons (start-up, chercheurs, inventeurs, bricoleurs).
+**Vous pouvez soumettre votre candidature jusqu'au 17 avril 2020.**
 
-#### Batch #1 of the program will:
+#### La première "promotion" :
 
-- Finance a minimum of 5 innovative solutions, possibly expanding the scope to 10
-- Review all applications by an acclaimed jury on a rolling basis
-- Constantly expand the network of partners involved
+- Financera un minimum de 5 solutions innovantes, avec la possibilité d'aller jusqu'à 10
+- Examinera toutes les candidatures via un jury de haut niveau
+- Sera soutenue par un réseau grandissant de partenaires
 
-The program for Batch #1 will end with a virtual demo day on June 1st, 2020.
+La première promotion du programme d'accélération effectuera une journée de démonstration virtuelle le 1er juin 2020.
 
-\*No legal entity? No worries, we’ll help you set one up.
+\* Pas encore d'entité juridique? Pas de soucis, nous vous aiderons à en créer une.
+

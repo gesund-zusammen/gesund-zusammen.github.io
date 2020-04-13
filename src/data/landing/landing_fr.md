@@ -5,22 +5,20 @@ language: "fr"
 
 ## HealthyTogether –
 
-## an open initiative led by the digital economy
-As broad alliance of european tech companies, we want to actively help society, politics and business to contain COVID-19 with digital solutions. We build up on one of the most important resources available to the world today: **Information.**
+#### une initiative ouverte menée par l'économie numérique
+Nous sommes une vaste alliance d'entreprises technologiques allemandes. Nous voulons aider - activement - la société, le monde politique et les entreprises à contenir le COVID-19 avec des solutions numériques. Nous nous appuyons sur l'une des ressources les plus importantes dont dispose le monde aujourd'hui : **l'information.**
 
-Data enables us to do research together, warn people, save lives. And yet, widespread use of data is not without risk: In the face of the crisis, there are growing voices in favour of sacrificing basic rights for the good of health.
-Together we will prove the case: **we can have both - infection control and data protection.** So that private things remain private.
+Les données jouent un rôle clé, par exemple dans la recherche, dans la prévention du public ou pour sauver des vies. Et pourtant, l'utilisation généralisée des données n'est pas sans risque : face à la crise, des voix de plus en plus nombreuses s'élèvent en faveur du sacrifice des droits fondamentaux pour le bien de la santé
+Ensemble, nous allons prouver qu'il n'y a pas de compromis à faire, nous pouvons à la fois contrôler l'infection et protéger les données.
 
-Even in times of crisis, people's freedom and personal rights are top priority for our technology.
+#### Pour que les choses privées restent privées.
 
-#### So that private things remain private.
+Même en temps de crise, la liberté et les droits de la personne sont la priorité absolue de notre technologie.
 
-Even in times of crisis, people's freedom and personal rights are top priority for our technology.
+#### Pour que l'Allemagne reste en bonne santé
 
-#### To keep Europe healthy
+Les Outils Numériques soutenus par le programme d'accélération sont conçus pour aider à mieux protéger les groupes à risque et à alléger la charge qui pèse sur le système de santé.
 
-The Digital Tools supported in the Accelerator program are designed to help protect risk groups better and relieve the burden on the healthcare system.
+#### Pour soutenir l'économie
 
-#### To get the economy moving
-
-Technology can be employed to reduce health risks in companies and help boost economic activity again.
+La technologie peut être utilisée pour réduire les risques sanitaires au sein des entreprises et contribuer à relancer l'activité économique.
