@@ -1,6 +1,6 @@
 ---
-title: "Program English"
-language: "en"
+title: "Program French"
+language: "fr"
 ---
 
 ## The #Gesundzusammen Accelerator Program

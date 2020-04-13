@@ -1,6 +1,6 @@
 ---
-title: "Landing English"
-language: "de"
+title: "Landing French"
+language: "fr"
 ---
 
 ## GesundZusammen –
