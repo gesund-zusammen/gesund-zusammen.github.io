@@ -6,6 +6,7 @@ import { withTranslation, WithTranslation } from "react-i18next";
 import HeaderNav from "../Shared/HeaderNav";
 
 import IlluHeader from "../../../images/illu_header.svg";
+import CTABox from "../../common/CTABox";
 
 class InitiativeHeader extends React.PureComponent<WithTranslation, {}> {
   render = () => {
@@ -36,6 +37,14 @@ class InitiativeHeader extends React.PureComponent<WithTranslation, {}> {
                 >
                   {this.props.t("initiative.landing.content")}
                 </Typography>
+                <ApplyButton
+                  color="primary"
+                  variant="contained"
+                  disableFocusRipple={true}
+                  href={this.props.t("partners.link")}
+                >
+                  {this.props.t("partners.cta")}
+                </ApplyButton>
               </HeaderContent>
             </Grid>
             <Hidden xsDown>
