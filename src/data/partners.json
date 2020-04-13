@@ -11,7 +11,7 @@
       }
     },
     {
-      "slug": "tech",
+      "slug": "strategic",
       "name": {
         "de": "Strategic Partner",
         "en": "Strategic Partners",
@@ -28,16 +28,6 @@
         "fr": "Ambassador Partners",
         "it": "Partner ambasciatori",
         "es": "Socios Embajadores"
-      }
-    },
-    {
-      "slug": "further",
-      "name": {
-        "de": "Weitere Partner",
-        "en": "Further Partner",
-        "fr": "Further Partner",
-        "it": "altri Partner",
-        "es": "Otros Socios"
       }
     }
   ],
@@ -62,153 +52,153 @@
     },
     {
       "name": "Via",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "viadata.svg",
       "link": "https://www.viadata.io"
     },
     {
       "name": "Global Citizen Foundation",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "globalcitizen.svg",
       "link": "https://www.globalcitizenfoundation.org"
     },
     {
       "name": "Data4Life",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "data4life.svg",
       "link": "https://www.data4life.care"
     },
     {
       "name": "BVDS",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "bvds.png",
       "link": "https://www.deutschestartups.org"
     },
     {
       "name": "BCG DV",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "bcgdv.svg",
       "link": "https://www.bcgdv.com"
     },
     {
       "name": "N26",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "n26.png",
       "link": "https://www.n26.de"
     },
     {
       "name": "GetYourGuide",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "getyourguide.png",
       "link": "https://www.getyourguide.com"
     },
     {
       "name": "FreightHub",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "freighthub.png",
       "link": "https://www.freighthub.com"
     },
     {
       "name": "DeliveryHero",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "deliveryhero.png",
       "link": "https://www.deliveryhero.com"
     },
     {
       "name": "Omio",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "omio.png",
       "link": "https://www.omio.com"
     },
     {
       "name": "Celonis",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "celonis.png",
       "link": "https://www.celonis.com"
     },
     {
       "name": "Ada Health",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "adahealth.png",
       "link": "https://ada.com"
     },
     {
       "name": "Personio",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "personio.png",
       "link": "https://www.personio.de"
     },
     {
       "name": "OneFootball",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "onefootball.svg",
       "link": "https://onefootball.com"
     },
     {
       "name": "Ioniq",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "ioniq.png",
       "link": "https://ioniq.com"
     },
     {
       "name": "Tier Mobility",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "tier.svg",
       "link": "https://www.tier.app"
     },
     {
       "name": "doctorly",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "doctorly.png",
       "link": "https://www.doctorly.de"
     },
     {
       "name": "PAIR Finance",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "pairfinance.png",
       "link": "https://www.pairfinance.com"
     },
     {
       "name": "The Delta",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "thedelta.png",
       "link": "https://www.thedelta.io",
       "imageXL": true
     },
     {
       "name": "Datenschutzexperte",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "datenschutzexperte.svg",
       "link": "https://www.datenschutzexperte.de"
     },
     {
       "name": "Deloitte",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "deloitte.jpg",
       "link": "https://www2.deloitte.com/dl/de/services/legal.html"
     },
     {
       "name": "MyData",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "mydata.png",
       "link": "https://mydata.org",
       "imageXL": true
     },
     {
       "name": "UserCentrics",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "usercentrics.svg",
       "link": "https://usercentrics.com"
     },
     {
       "name": "CMS",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "cmslaw.svg",
       "link": "https://cms.law"
     },
     {
       "name": "Bird & Bird",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "twobirds.png",
       "link": "https://www.twobirds.com",
       "color": "#7c7c6e",
@@ -216,7 +206,7 @@
     },
     {
       "name": "Reed Smith LLP",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "reedsmith.svg",
       "link": "https://www.reedsmith.com",
       "color": "#3d3c3c",
@@ -224,7 +214,7 @@
     },
     {
       "name": "SKW Schwarz",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "skwschwarz.jpg",
       "link": "https://www.skwschwarz.de",
       "color": "black",
@@ -232,7 +222,7 @@
     },
     {
       "name": "HEARTBEAT LABS",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "heartbeatlabs.svg",
       "link": "https://heartbeatlabs.com",
       "color": "#002f4e",
@@ -240,57 +230,57 @@
     },
     {
       "name": "ATAI Life Sciences",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "atailifesciences.png",
       "link": "https://www.atai.life"
     },
     {
       "name": "fischerAppelt",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "fischerappelt.jpg",
       "link": "https://www.fischerappelt.de"
     },
     {
       "name": "Story Machine",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "storymachine.png",
       "link": "https://www.storymachine.de"
     },
     {
       "name": "JOLI BERLIN",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "joliberlin.jpg",
       "link": "https://www.joliberlin.com"
     },
     {
       "name": "FORWARD31",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "forward31.png",
       "link": "https://www.forward31.com"
     },
     {
       "name": "Land der Ideen",
-      "slug": "tech",
+      "slug": "strategic",
       "image": "LDI.jpg",
       "link": "https://www.land-der-ideen.de"
+    },
+    {
+      "name": "Freiraum",
+      "slug": "strategic",
+      "image": "freiraum.jpg",
+      "link": "http://www.freiraum-berlin.org"
+    },
+    {
+      "name": "Koehler Investment",
+      "slug": "strategic",
+      "image": "koehlerinvestment.jpg",
+      "link": "https://www.koehler-investment.com"
     },
     {
       "name": "APX",
       "slug": "ambassador",
       "image": "apx.png",
       "link": "https://www.apx.ac"
-    },
-    {
-      "name": "Freiraum",
-      "slug": "further",
-      "image": "freiraum.jpg",
-      "link": "http://www.freiraum-berlin.org"
-    },
-    {
-      "name": "Koehler Investment",
-      "slug": "further",
-      "image": "koehlerinvestment.jpg",
-      "link": "https://www.koehler-investment.com"
     }
   ]
 }
