@@ -6,8 +6,8 @@
         "de": "Founding Partner",
         "en": "Founding Partners",
         "fr": "Founding Partners",
-        "it": "Founding Partners",
-        "ess": "Founding Partners"
+        "it": "Partner fondatori",
+        "es": "Founding Partners"
       }
     },
     {
@@ -16,7 +16,7 @@
         "de": "Strategic Partner",
         "en": "Strategic Partners",
         "fr": "Strategic Partners",
-        "it": "Strategic Partners",
+        "it": "Partner strategici",
         "es": "Strategic Partners"
       }
     },
@@ -26,7 +26,7 @@
         "de": "Ambassador Partner",
         "en": "Ambassador Partners",
         "fr": "Ambassador Partners",
-        "it": "Ambassador Partners",
+        "it": "Partner ambasciatori",
         "es": "Ambassador Partners"
       }
     },
@@ -36,7 +36,7 @@
         "de": "Weitere Partner",
         "en": "Further Partner",
         "fr": "Further Partner",
-        "it": "Further Partner",
+        "it": "altri Partner",
         "es": "Further Partner"
       }
     }

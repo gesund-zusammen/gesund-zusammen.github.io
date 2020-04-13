@@ -1,29 +1,30 @@
 ---
-title: "Program Italian"
+title: "Programma italiano"
 language: "it"
 ---
 
-## The #Gesundzusammen Accelerator Program
+## Il programma di accelerazione #HealthyTogether
 
-The #Gesundzusammen Accelerator is organized by TOA, wefox & finleap, with many leading ecosystem players (i.e. N26, BVDS, DeliveryHero, Celonis, Ada Health) supporting.
+L'acceleratore #HealthyTogether è organizzato da TOA, weft e finleap, con il supporto di tanti altri attori dell'ecosistema (N26, BVDS, DeliveryHero, Celonis, Ada Health ed altri).
 
-#### The program offers:
 
-- €20,000 of equity-free capital, no strings attached.
-- Free resources (products & services) through the partners involved.
-- 6 weeks of acceleration to develop your product, build partnerships and acquire customers & financing through access to our network.
-- Access to mentors and experts for best-in-industry coaching.
+#### Il programma offre:
+
+- €20,000 di capitale, senza vincoli.
+- Accesso gratuito ai servizi e strumenti dei partner.
+- 6 settimane di programma di accelerazione per sviluppare la tua soluzione, creare alleanze e trovare sia clienti sia investitori grazie al nostro network.
+- Libero accesso ai migliori mentor ed esperti del settore.
 
 <br />
-**The open call is aimed at teams of all sizes, stages\* and backgrounds (startup, researchers, inventors, tinkerers).** <br />
-**Call is open until April 17th, 2020.**
+**Il bando è aperto a team di qualsiasi dimensione, provenienza ed esperienza (startup, ricercatori, inventori, pensatori ecc.).** <br />
+**Il bando è aperto fino al 17 aprile 2020.**
 
-#### Batch #1 of the program will:
+#### La fase #1 del programma vedrà:
 
-- Finance a minimum of 5 innovative solutions, possibly expanding the scope to 10
-- Review all applications by an acclaimed jury on a rolling basis
-- Constantly expand the network of partners involved
+- finanziamenti ad almeno 5 soluzioni innovative, con l'obiettivo di espandersi fino a 10
+- Valutazione continua delle soluzioni da parte di una giuria di esperti
+- Constante aumento dei partner coinvolti
 
-The program for Batch #1 will end with a virtual demo day on June 1st, 2020.
+Il programma della fase #1 si concluderà con una demo virtuale il 1 giugno 2020.
 
-\*No legal entity? No worries, we’ll help you set one up.
+\*Non sei una società costituita? Non ti preoccupare, ce ne occupiamo noi.
