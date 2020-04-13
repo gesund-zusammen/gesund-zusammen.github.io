@@ -1,0 +1,61 @@
+{
+  "categories": [
+    {
+      "slug": "country_initiatives",
+      "name": {
+        "en": "Country-specific Initiatives",
+        "de": "Länder-spezifische Initiativen"
+      }
+    }
+  ],
+  "initiatives": [
+    {
+      "name": {
+        "en": "Germany",
+        "de": "Deutschland",
+        "it": "Germania",
+        "fr": "Allemagne",
+        "es": "Alemania"
+      },
+      "slug": "country_initiatives",
+      "image": "germany.svg",
+      "link": "https://gesund-zusammen.de"
+    },
+    {
+      "name": {
+        "en": "Italy",
+        "de": "Italien",
+        "it": "Italia",
+        "fr": "Italie",
+        "es": "Italia"
+      },
+      "slug": "country_initiatives",
+      "image": "italy.svg",
+      "link": "https://healthy-together.eu/it"
+    },
+    {
+      "name": {
+        "en": "Spain",
+        "de": "Spanien",
+        "it": "Spagna",
+        "fr": "L'Espagne",
+        "es": "España"
+      },
+      "slug": "country_initiatives",
+      "image": "spain.svg",
+      "link": "https://healthy-together.eu/es"
+    },
+    {
+      "name": {
+        "en": "France",
+        "de": "Frankreich",
+        "it": "Francia",
+        "fr": "La France",
+        "es": "Francia"
+      },
+      "slug": "country_initiatives",
+      "image": "france.svg",
+      "link": "https://healthy-together.eu/fr"
+    }
+  ]
+}

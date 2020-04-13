@@ -30,18 +30,6 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
           />
         </Link>
         <HeaderNavItems>
-          <HeaderNavLinkItem to={`/${this.props.i18n.language}/program`}>
-            {this.props.t("program.header.title")}
-          </HeaderNavLinkItem>
-          <HeaderNavLinkItem to={`/${this.props.i18n.language}/database`}>
-            {this.props.t("header.nav.initiatives")}
-          </HeaderNavLinkItem>
-          <HeaderNavLinkItem to={`/${this.props.i18n.language}/partners`}>
-            {this.props.t("header.nav.supporters")}
-          </HeaderNavLinkItem>
-          <HeaderNavLinkItem to={`/${this.props.i18n.language}/faq`}>
-            {this.props.t("header.nav.faqs")}
-          </HeaderNavLinkItem>
           <HeaderLangSwitch>
             <StyledSwitch
               checked={this.props.i18n.language === "de"}
@@ -103,10 +91,6 @@ const headerNavItemStyles = css`
       margin-left: 0;
     }
   }
-`;
-
-const HeaderNavLinkItem: AnyStyledComponent = styled(Link)`
-  ${headerNavItemStyles}
 `;
 
 const HeaderLangSwitch: AnyStyledComponent = styled.div`

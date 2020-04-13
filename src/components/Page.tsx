@@ -31,6 +31,8 @@ import IlluImprint from "../images/illu_imprint.svg";
 import { DEFAULT_LANG } from "../i18n";
 import Program from "./content/Program";
 import PaperForm from "./common/PaperForm";
+import LayoutInitiative from "./layouts/Initiative/Main";
+import Initiative from "./content/Initiative";
 
 interface IPageProps
   extends RouteComponentProps<{ lang: "de" | "en" }>,
@@ -50,6 +52,11 @@ class Page extends React.Component<IPageProps, {}> {
       <Router>
         <ScrollMemory />
         <Switch>
+          <Route path="/:lang/initiative">
+            <LayoutInitiative>
+              <Initiative />
+            </LayoutInitiative>
+          </Route>
           <Route path="/:lang/(initiatives|database)">
             <LayoutInitiativePage
               title={this.props.t("header.nav.initiatives")}

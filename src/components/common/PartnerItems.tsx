@@ -4,7 +4,7 @@ import { withTranslation, WithTranslation } from "react-i18next";
 
 import PartnerData from "../../data/partners.json";
 import Fade from "react-reveal";
-import PartnerCard from "./PartnerCard";
+import Card from "./ImageCard";
 
 interface ICategory {
   slug: string;
@@ -63,7 +63,7 @@ class PartnerItems extends React.Component<WithTranslation, {}> {
                         const partnerCardKey: string =
                           "category-" + index + "-partner-" + partnerIndex;
                         return (
-                          <PartnerCard
+                          <Card
                             key={partnerCardKey}
                             name={partner.name}
                             image={
