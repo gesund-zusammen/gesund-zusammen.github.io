@@ -3,24 +3,24 @@ title: "Landing Spanish"
 language: "es"
 ---
 
-## HealthyTogether –
+## SaludJuntos -
 
-## an open initiative led by the digital economy
-As broad alliance of european tech companies, we want to actively help society, politics and business to contain COVID-19 with digital solutions. We build up on one of the most important resources available to the world today: **Information.**
+## una iniciativa abierta liderada por la economía digital
+A partir de la alianza de empresas tecnológicas alemanas, queremos ayudar activamente a la sociedad, los gobiernos y las empresas, a contener la pandemia del COVID-19 con soluciones digitales. Nos basamos en uno de los recursos más importantes disponibles en el mundo hoy en día: **Información.**
 
-Data enables us to do research together, warn people, save lives. And yet, widespread use of data is not without risk: In the face of the crisis, there are growing voices in favour of sacrificing basic rights for the good of health.
-Together we will prove the case: **we can have both - infection control and data protection.** So that private things remain private.
+Los datos nos permiten investigar juntos, advertir a la gente, salvar vidas. Sin embargo, el uso generalizado de los datos no está exento de riesgos: ante la crisis, cada vez hay más voces que piden que se sacrifiquen los derechos fundamentales en beneficio de la salud. Juntos demostraremos este punto: Podemos tener tanto el control de la pandemia como la privacidad
 
-Even in times of crisis, people's freedom and personal rights are top priority for our technology.
+Incluso en tiempos de crisis, la libertad y los derechos personales de las personas individuales son la prioridad principal de nuestra tecnología.
 
-#### So that private things remain private.
+#### Para que las cosas privadas permanezcan privadas.
 
-Even in times of crisis, people's freedom and personal rights are top priority for our technology.
+Incluso en tiempos de crisis, la libertad y los derechos personales de las personas individuales son la prioridad principal de nuestra tecnología.
 
-#### To keep Europe healthy
+#### Para mantener a Alemania saludable
 
-The Digital Tools supported in the Accelerator program are designed to help protect risk groups better and relieve the burden on the healthcare system.
+Las Herramientas Digitales apoyadas en el programa de Aceleración están diseñadas para ayudar a proteger mejor a los grupos de riesgo y aliviar la carga del sistema de salud.
 
-#### To get the economy moving
+#### Para poner en marcha la economía
 
-Technology can be employed to reduce health risks in companies and help boost economic activity again.
+La tecnología puede emplearse para reducir los riesgos para la salud en las empresas y ayudar a impulsar nuevamente la actividad económica.
+
