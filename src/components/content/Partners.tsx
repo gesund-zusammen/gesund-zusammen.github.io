@@ -6,12 +6,16 @@ import PartnerItems from "../common/PartnerItems";
 
 import CTABox from "../common/CTABox";
 
-class Partners extends React.PureComponent<WithTranslation, {}> {
+interface IPartnerProps extends WithTranslation {
+  categorySlug?: string;
+}
+
+class Partners extends React.PureComponent<IPartnerProps, {}> {
   render = () => {
     return (
       <>
         <Box id="partners" paddingBottom={4} marginTop={4}>
-          <PartnerItems />
+          <PartnerItems categorySlug={this.props.categorySlug} />
         </Box>
         <Box paddingBottom={4} marginTop={4}>
           <CTABox

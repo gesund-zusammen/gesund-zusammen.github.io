@@ -6,7 +6,7 @@
         "en": "Country-specific Initiatives",
         "de": "Länder-spezifische Initiativen",
         "it": "Country-specific Initiatives",
-        "fr": "Country-specific Initiatives",
+        "fr": "Initiatives nationales",
         "es": "Country-specific Initiatives"
       }
     }
@@ -41,7 +41,7 @@
         "en": "Spain",
         "de": "Spanien",
         "it": "Spagna",
-        "fr": "L'Espagne",
+        "fr": "Espagne",
         "es": "España"
       },
       "slug": "country_initiatives",
@@ -53,7 +53,7 @@
         "en": "France",
         "de": "Frankreich",
         "it": "Francia",
-        "fr": "La France",
+        "fr": "France",
         "es": "Francia"
       },
       "slug": "country_initiatives",

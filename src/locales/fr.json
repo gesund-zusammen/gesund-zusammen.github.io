@@ -39,15 +39,15 @@
     },
     "box1": {
       "title": "Développement agile",
-      "content": "En tant que partenaires technologiques solides, nous investissons ensemble dans la création des applications et des outils dont notre pays a besoin à l'heure actuelle, conviviaux, à code source ouvert, rapides."
+      "content": "En tant que partenaires technologiques établis, nous investissons ensemble dans la création d’applications et outils - conviviaux, rapides et à code source ouvert - dont notre pays a tant besoin en cette période difficile."
     },
     "box2": {
       "title": "Soutien numérique",
-      "content": "Nous soutenons d'autres initiatives numériques avec nos ressources pour améliorer efficacement le statut des données. Contactez-nous pour nous faire part de vos idées et de vos besoins."
+      "content": "Nous mettons à disposition nos moyens pour soutenir les initiatives numériques visant à améliorer la réponse à Covid-19. Contactez-nous pour faire part de vos idées et de vos besoins."
     },
     "box3": {
       "title": "Ecosystème ouvert",
-      "content": "Nous sommes impatients d'échanger avec toutes les autres initiatives numériques, d'unir nos forces et de promouvoir la coopération grâce à updates réguliers."
+      "content": "Nous sommes impatients d'échanger avec toutes les autres initiatives numériques, d'unir nos forces et de promouvoir la coopération grâce à des updates réguliers."
     }
   },
   "program": {
@@ -76,7 +76,7 @@
     "link": "mailto:privacy@gesund-zusammen.de"
   },
   "initiatives": {
-    "content": "Afin de contenir COVID-19, une compétition mondiale d'idées est en train d'émerger, considérablement accélérée par l'industrie technologique mais aussi par d'autres. Nous ne nous contentons pas de rassembler les ressources et les capacités de l'économie numérique allemande. Nous recherchons et encourageons également un échange ouvert avec d'autres initiatives numériques afin que les idées ayant le plus grand potentiel puissent prévaloir. \n\n Vous trouverez ici des initiatives numériques et des technologies passionnantes provenant du monde entier - constamment mises à jour. Si vous souhaitez ajouter d'autres projets à cette vitrine, veuillez nous contacter.",
+    "content": "Afin de contenir COVID-19, une compétition mondiale d'idées est en train d'émerger, considérablement accélérée par l'industrie technologique mais aussi par d'autres. Nous\nne souhaitons pas nous limiter aux ressources et capacités de l'économie numérique allemande. Nous recherchons et encourageons également un échange ouvert avec\nd'autres initiatives numériques afin que les idées ayant le plus grand potentiel puissent prévaloir. Vous trouverez ici des informations sur les diverses technologies et initiatives numériques provenant du monde entier - constamment mises à jour. Si vous souhaitez\najouter d'autres projets à cette vitrine, veuillez nous contacter.",
     "filter": {
       "filterBy": "Filtrer par",
       "all": "Tout",
@@ -125,7 +125,7 @@
   },
   "footer": {
     "title": "Partager, c'est prendre soin",
-    "claim": "Partager avec votre communauté qui n'a pas encore entendu parler de nous. Plus nombreux nous serons, plus vite nous surmonterons cette situation!",
+    "claim": "Votre communauté n’a pas encore entendu parler de nous ? Partagez svp ! Plus\nnombreux nous serons, plus vite nous surmonterons cette situation!",
     "shareLink": "Partagez le lien",
     "shareVia": "Ou Partagez avec",
     "emailShareSubject": "En savoir plus sur gesund-zusammen.de",
