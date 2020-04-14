@@ -21,6 +21,16 @@
       }
     },
     {
+      "slug": "media",
+      "name": {
+        "de": "Media Partner",
+        "en": "Media Partners",
+        "fr": "Partenaires Médias ",
+        "it": "Media Partner",
+        "es": "Media Partner"
+      }
+    },
+    {
       "slug": "ambassador",
       "name": {
         "de": "Ambassador Partner",
@@ -275,6 +285,12 @@
       "slug": "strategic",
       "image": "koehlerinvestment.jpg",
       "link": "https://www.koehler-investment.com"
+    },
+    {
+      "name": "Tech.eu",
+      "slug": "media",
+      "image": "techeu.png",
+      "link": "https://www.tech.eu"
     },
     {
       "name": "APX",
