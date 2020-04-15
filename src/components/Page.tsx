@@ -10,19 +10,23 @@ import ScrollMemory from "react-router-scroll-memory";
 import { Translation, WithTranslation } from "react-i18next";
 
 import LayoutAccelerator from "./layouts/Accelerator/Main";
-import LayoutInitiativePage from "./layouts/Initiatives/Main";
+import LayoutDatabasePage from "./layouts/Database/Main";
 import LayoutInitiative from "./layouts/Initiative/Main";
-
-import LayoutLanding from "./layouts/Landing/Main";
+import LayoutStart from "./layouts/Start/Main";
 import LayoutSubPage from "./layouts/Sub/Main";
+
 import Accelerator from "./content/Accelerator";
-import Initiatives from "./content/Initiatives";
+import Database from "./content/Database";
 import Partners from "./content/Partners";
 import Faq from "./content/Faq";
 import PrivacyPolicy from "./content/Privacy";
-
 import Press from "./content/Press";
 import Imprint from "./content/Imprint";
+import Program from "./content/Program";
+import PaperForm from "./common/PaperForm";
+import Initiative from "./content/Initiative";
+import Start from "./content/Start";
+
 import IlluPrivacy from "../images/illu_privacy.svg";
 import IlluFaq from "../images/illu_faq.svg";
 import IlluProgram from "../images/illu_program.svg";
@@ -30,11 +34,8 @@ import IlluPartner from "../images/illu_partner.svg";
 
 import IlluPressContact from "../images/illu_presscontact.svg";
 import IlluImprint from "../images/illu_imprint.svg";
+
 import { DEFAULT_LANG } from "../i18n";
-import Program from "./content/Program";
-import PaperForm from "./common/PaperForm";
-import Initiative from "./content/Initiative";
-import Landing from "./content/Landing";
 
 interface IPageProps
   extends RouteComponentProps<{ lang: "de" | "en" | "fr" | "it" | "es" }>,
@@ -65,12 +66,12 @@ class Page extends React.Component<IPageProps, {}> {
             </LayoutAccelerator>
           </Route>
           <Route path="/:lang/(initiatives|database)">
-            <LayoutInitiativePage
+            <LayoutDatabasePage
               title={this.props.t("header.nav.initiatives")}
               content={this.props.t("initiatives.content")}
             >
-              <Initiatives />
-            </LayoutInitiativePage>
+              <Database />
+            </LayoutDatabasePage>
           </Route>
           <Route path="/:lang/program">
             <LayoutSubPage
@@ -150,9 +151,9 @@ class Page extends React.Component<IPageProps, {}> {
                 <Accelerator />
               </LayoutAccelerator>
             ) : (
-              <LayoutLanding>
-                <Landing />
-              </LayoutLanding>
+              <LayoutStart>
+                <Start />
+              </LayoutStart>
             )}
           </Route>
           <Redirect to={`/${DEFAULT_LANG}/`} />
