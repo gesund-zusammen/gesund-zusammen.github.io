@@ -37,11 +37,11 @@ jobs:
   build-and-deploy-production-2:
     needs: build-and-deploy-production
     runs-on: ubuntu-latest
-      steps:
-          - name: repo-sync
-            uses: wei/git-sync@v1
-            env:
-              SOURCE_REPO: 'https://${{secrets.GH_ACCESS_TOKEN }}github.com/gesund-zusammen/gesund-zusammen.git'
-              SOURCE_BRANCH: 'master'
-              DESTINATION_REPO: 'https://${{secrets.GH_ACCESS_TOKEN }}github.com/gesund-zusammen/healthy-together.git'
-              DESTINATION_BRANCH: 'master'
+    steps:
+      - name: repo-sync
+        uses: wei/git-sync@v1
+        env:
+          SOURCE_REPO: 'https://${{secrets.GH_ACCESS_TOKEN }}github.com/gesund-zusammen/gesund-zusammen.git'
+          SOURCE_BRANCH: 'master'
+          DESTINATION_REPO: 'https://${{secrets.GH_ACCESS_TOKEN }}github.com/gesund-zusammen/healthy-together.git'
+          DESTINATION_BRANCH: 'master'
