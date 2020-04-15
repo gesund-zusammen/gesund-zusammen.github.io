@@ -1,6 +1,6 @@
 import React from "react";
 import { MenuItem } from "@material-ui/core";
-import styled, { css, AnyStyledComponent } from "styled-components";
+import styled, { AnyStyledComponent } from "styled-components";
 import { withRouter, RouteComponentProps } from "react-router";
 import { Link } from "react-router-dom";
 import { withTranslation, WithTranslation } from "react-i18next";
@@ -27,18 +27,29 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
           <HeaderLogo src={LogoDE} alt="#GesundZusammen" />
         </Link>
         <HeaderNavItems>
-          <HeaderNavLinkItem to={`/${this.props.i18n.language}/initiative`}>
-            {this.props.t("header.nav.initiative")}
-          </HeaderNavLinkItem>
-          <HeaderNavLinkItem to={`/${this.props.i18n.language}/database`}>
-            {this.props.t("header.nav.database")}
-          </HeaderNavLinkItem>
-          <HeaderNavLinkItem to={`/${this.props.i18n.language}/accelerator`}>
-            {this.props.t("header.nav.accelerator")}
-          </HeaderNavLinkItem>
-          <HeaderNavLinkItem to={`/${this.props.i18n.language}/program`}>
-            {this.props.t("program.header.title")}
-          </HeaderNavLinkItem>
+          <HeaderNavItemWithSubitems>
+            <HeaderNavLinkItem to={`/${this.props.i18n.language}/initiative`}>
+              {this.props.t("header.nav.initiative")}
+            </HeaderNavLinkItem>
+            <HeaderNavLinkSubitem
+              className="subnav-item"
+              to={`/${this.props.i18n.language}/database`}
+            >
+              {this.props.t("header.nav.database")}
+            </HeaderNavLinkSubitem>
+          </HeaderNavItemWithSubitems>
+          <HeaderNavItemWithSubitems>
+            <HeaderNavLinkItem to={`/${this.props.i18n.language}/accelerator`}>
+              {this.props.t("header.nav.accelerator")}
+            </HeaderNavLinkItem>
+            <HeaderNavLinkSubitem
+              className="subnav-item"
+              to={`/${this.props.i18n.language}/program`}
+            >
+              {this.props.t("program.header.title")}
+            </HeaderNavLinkSubitem>
+          </HeaderNavItemWithSubitems>
+
           <HeaderNavLinkItem to={`/${this.props.i18n.language}/faq`}>
             {this.props.t("header.nav.faqs")}
           </HeaderNavLinkItem>
@@ -86,7 +97,7 @@ const HeaderNavItems: AnyStyledComponent = styled.div`
   }
 `;
 
-const headerNavItemStyles = css`
+const HeaderNavLinkItem: AnyStyledComponent = styled(Link)`
   display: inline-block;
   width: 50%;
   font-family: inherit;
@@ -100,15 +111,40 @@ const headerNavItemStyles = css`
     display: inline-block;
     width: auto;
     margin-left: 2rem;
-
-    &:first-of-type {
-      margin-left: 0;
-    }
   }
 `;
 
-const HeaderNavLinkItem: AnyStyledComponent = styled(Link)`
-  ${headerNavItemStyles}
+const HeaderNavLinkSubitem: AnyStyledComponent = styled(Link)`
+  position: absolute;
+  right: 0;
+  display: block;
+  font-family: inherit;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 3rem;
+
+  @media (min-width: 600px) {
+    display: inline-block;
+    width: auto;
+  }
+`;
+
+const HeaderNavItemWithSubitems: AnyStyledComponent = styled.div`
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+
+  & > .subnav-item {
+    display: none;
+  }
+
+  &:hover {
+    & > .subnav-item {
+      display: block;
+    }
+  }
 `;
 
 const HeaderLangSwitch: AnyStyledComponent = styled.div`
