@@ -18,7 +18,7 @@ class SubPageHeader extends React.PureComponent<ISubPageHeaderProps, {}> {
         </Box>
         <Box paddingBottom={4} marginTop={4}>
           <Grid container spacing={4}>
-            <Grid item xs={12} sm={8}>
+            <Grid item xs={12} sm={6}>
               <HeaderContent>
                 <Typography variant="h1" style={{ fontFamily: "inherit" }}>
                   {this.props.title}
@@ -27,7 +27,7 @@ class SubPageHeader extends React.PureComponent<ISubPageHeaderProps, {}> {
             </Grid>
 
             <Hidden xsDown>
-              <Grid item xs={4} sm={3}>
+              <Grid item xs={12} sm={5}>
                 <HeaderIllustration src={this.props.image} />
               </Grid>
             </Hidden>
@@ -49,6 +49,8 @@ const HeaderContent: AnyStyledComponent = styled.div`
 `;
 
 const HeaderIllustration: AnyStyledComponent = styled.img`
+  display: block;
+  margin: 0 0 0 auto;
   width: 80%;
 `;
 
