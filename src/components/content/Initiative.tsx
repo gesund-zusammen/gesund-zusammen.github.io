@@ -4,13 +4,14 @@ import { withTranslation, WithTranslation } from "react-i18next";
 
 import MuiMarkdown from "../common/MuiMarkdown";
 import InfoBox from "../common/InfoBox";
+import CTABox from "../common/CTABox";
+import PartnerItems from "../common/PartnerItems";
 
 import ContentDE from "../../data/landing/landing_de.md";
 import ContentEN from "../../data/landing/landing_en.md";
 import ContentFR from "../../data/landing/landing_fr.md";
 import ContentIT from "../../data/landing/landing_it.md";
 import ContentES from "../../data/landing/landing_es.md";
-import Partners from "./Partners";
 
 class Initiative extends React.PureComponent<WithTranslation, {}> {
   getMarkdown(language: string) {
@@ -53,7 +54,17 @@ class Initiative extends React.PureComponent<WithTranslation, {}> {
           </Box>
         </Box>
 
-        <Partners />
+        <Box id="partners" paddingBottom={4} marginTop={4}>
+          <PartnerItems />
+        </Box>
+
+        <Box paddingBottom={4} marginTop={4}>
+          <CTABox
+            claim={this.props.t("partners.claim")}
+            cta={this.props.t("partners.cta")}
+            href={this.props.t("partners.link")}
+          />
+        </Box>
       </>
     );
   };

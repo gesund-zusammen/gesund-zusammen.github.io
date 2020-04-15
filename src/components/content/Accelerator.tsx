@@ -4,7 +4,8 @@ import { withTranslation, WithTranslation } from "react-i18next";
 
 import MuiMarkdown from "../common/MuiMarkdown";
 import InfoBox from "../common/InfoBox";
-import Partners from "./Partners";
+import CTABox from "../common/CTABox";
+import PartnerItems from "../common/PartnerItems";
 
 import ContentDE from "../../data/accelerator/accelerator_de.md";
 import ContentEN from "../../data/accelerator/accelerator_en.md";
@@ -53,7 +54,17 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
           </Box>
         </Box>
 
-        <Partners />
+        <Box id="partners" paddingBottom={4} marginTop={4}>
+          <PartnerItems />
+        </Box>
+
+        <Box paddingBottom={4} marginTop={4}>
+          <CTABox
+            claim={this.props.t("partners.claim")}
+            cta={this.props.t("partners.cta")}
+            href={this.props.t("partners.link")}
+          />
+        </Box>
       </>
     );
   };

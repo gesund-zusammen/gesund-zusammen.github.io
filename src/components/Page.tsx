@@ -17,7 +17,6 @@ import LayoutSubPage from "./layouts/Sub/Main";
 
 import Accelerator from "./content/Accelerator";
 import Database from "./content/Database";
-import Partners from "./content/Partners";
 import Faq from "./content/Faq";
 import PrivacyPolicy from "./content/Privacy";
 import Press from "./content/Press";
@@ -103,14 +102,6 @@ class Page extends React.Component<IPageProps, {}> {
               image={IlluPartner}
             >
               <PaperForm paperform="support-gesundzusammen" />
-            </LayoutSubPage>
-          </Route>
-          <Route path="/:lang/partners">
-            <LayoutSubPage
-              title={this.props.t("header.nav.partners")}
-              image={IlluPartner}
-            >
-              <Partners />
             </LayoutSubPage>
           </Route>
           <Route path="/:lang/faq">
