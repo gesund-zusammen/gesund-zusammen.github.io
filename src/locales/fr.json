@@ -9,9 +9,11 @@
   "header": {
     "nav": {
       "initiative": "Initiative",
-      "initiatives": "Base de données",
-      "supporters": "Partenaires",
-      "faqs": "Questions fréquentes"
+      "database": "Base de données",
+      "accelerator": "Accelerator",
+      "partners": "Partenaires",
+      "faqs": "Questions fréquentes",
+      "program": "Programme"
     }
   },
   "accelerator": {

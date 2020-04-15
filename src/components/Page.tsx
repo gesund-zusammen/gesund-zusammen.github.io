@@ -67,7 +67,7 @@ class Page extends React.Component<IPageProps, {}> {
           </Route>
           <Route path="/:lang/(initiatives|database)">
             <LayoutDatabasePage
-              title={this.props.t("header.nav.initiatives")}
+              title={this.props.t("header.nav.database")}
               content={this.props.t("initiatives.content")}
             >
               <Database />
@@ -99,7 +99,7 @@ class Page extends React.Component<IPageProps, {}> {
           </Route>
           <Route path="/:lang/support">
             <LayoutSubPage
-              title={this.props.t("header.nav.supporters")}
+              title={this.props.t("header.nav.partners")}
               image={IlluPartner}
             >
               <PaperForm paperform="support-gesundzusammen" />
@@ -107,7 +107,7 @@ class Page extends React.Component<IPageProps, {}> {
           </Route>
           <Route path="/:lang/partners">
             <LayoutSubPage
-              title={this.props.t("header.nav.supporters")}
+              title={this.props.t("header.nav.partners")}
               image={IlluPartner}
             >
               <Partners />

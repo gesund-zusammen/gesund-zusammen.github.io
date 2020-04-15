@@ -5,7 +5,6 @@ import { withTranslation, WithTranslation } from "react-i18next";
 import MuiMarkdown from "../common/MuiMarkdown";
 import InfoBox from "../common/InfoBox";
 
-import CountryInitiatives from "../common/CountryInitiatives";
 import ContentDE from "../../data/landing/landing_de.md";
 import ContentEN from "../../data/landing/landing_en.md";
 import ContentFR from "../../data/landing/landing_fr.md";
@@ -52,8 +51,6 @@ class Landing extends React.PureComponent<WithTranslation, {}> {
             </Grid>
           </Box>
         </Box>
-
-        <CountryInitiatives />
       </>
     );
   };

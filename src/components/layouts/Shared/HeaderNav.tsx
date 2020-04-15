@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { withTranslation, WithTranslation } from "react-i18next";
 
 import LogoDE from "../../../images/logo.svg";
-import LogoEN from "../../../images/logo_en.svg";
 import Select from "@material-ui/core/Select";
 
 interface IHeaderNavProps extends RouteComponentProps, WithTranslation {}
@@ -25,27 +24,20 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
     return (
       <>
         <Link to={`/${this.props.i18n.language}/`}>
-          <HeaderLogo
-            src={this.props.i18n.language === "de" ? LogoDE : LogoEN}
-            alt="#GesundZusammen"
-          />
+          <HeaderLogo src={LogoDE} alt="#GesundZusammen" />
         </Link>
         <HeaderNavItems>
-          {window.location.hostname !== "gesund-zusammen.de" && (
-            <HeaderNavLinkItem to={`/${this.props.i18n.language}/initiative`}>
-              {this.props.t("header.nav.initiative")}
-            </HeaderNavLinkItem>
-          )}
-          {window.location.hostname === "gesund-zusammen.de" && (
-            <HeaderNavLinkItem to={`/${this.props.i18n.language}/program`}>
-              {this.props.t("program.header.title")}
-            </HeaderNavLinkItem>
-          )}
-          <HeaderNavLinkItem to={`/${this.props.i18n.language}/database`}>
-            {this.props.t("header.nav.initiatives")}
+          <HeaderNavLinkItem to={`/${this.props.i18n.language}/initiative`}>
+            {this.props.t("header.nav.initiative")}
           </HeaderNavLinkItem>
-          <HeaderNavLinkItem to={`/${this.props.i18n.language}/partners`}>
-            {this.props.t("header.nav.supporters")}
+          <HeaderNavLinkItem to={`/${this.props.i18n.language}/database`}>
+            {this.props.t("header.nav.database")}
+          </HeaderNavLinkItem>
+          <HeaderNavLinkItem to={`/${this.props.i18n.language}/accelerator`}>
+            {this.props.t("header.nav.accelerator")}
+          </HeaderNavLinkItem>
+          <HeaderNavLinkItem to={`/${this.props.i18n.language}/program`}>
+            {this.props.t("program.header.title")}
           </HeaderNavLinkItem>
           <HeaderNavLinkItem to={`/${this.props.i18n.language}/faq`}>
             {this.props.t("header.nav.faqs")}
