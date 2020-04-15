@@ -4,7 +4,7 @@ import { withTranslation, WithTranslation } from "react-i18next";
 import Fade from "react-reveal";
 
 import LogoComingSoon from "../../images/coming_soon_mobile.svg";
-import ProjectCard from "../common/ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 class Projects extends React.PureComponent<WithTranslation, {}> {
   render = () => {
