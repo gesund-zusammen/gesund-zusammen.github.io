@@ -117,6 +117,10 @@
     "releaseHrefImage": "187534-20200401090213000000000-gesund-zusammen-die-digitale-wirtschaft-s.png",
     "releaseHrefURL": "https://finleap.pr.co/187534-gesund-zusammen-die-digitale-wirtschaft-stellt-sich-dem-kampf-gegen-covid-19/"
   },
+  "latestNews": {
+    "title": "Latest News",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet vulputate faucibus risus est sit id."
+  },
   "newsletter": {
     "title": "Melden Sie sich für unseren Newsletter an",
     "content": "Wir halten Sie auf dem Laufenden über neue Apps, Initiativen, Hackathons usw.",
