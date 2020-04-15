@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: repo-sync
-        uses: wei/git-sync@v1
+        uses: wei/git-sync@v1.1.2
         env:
           SOURCE_REPO: 'https://${{secrets.GH_ACCESS_TOKEN }}@github.com/gesund-zusammen/gesund-zusammen.github.io.git'
           SOURCE_BRANCH: 'master'
