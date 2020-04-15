@@ -38,7 +38,7 @@ docker build --no-cache --build-arg NODE_ENV=[local|production] --build-arg OPTI
 docker run -p 80:4000 -d helios-admin:latest
 ```
 
-## Releasing healthy-together.euc
+## Releasing healthy-together.eu
 
 
 ```
