@@ -25,7 +25,7 @@ jobs:
         run: |
           node version-info-generator.js --branch=master --commit=$GITHUB_SHA --build=$GITHUB_RUN_NUMBER > build/version.json
 
-      - name: Deploy 🚀
+      - name: Deploy Gesund-Zusammen.de 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
@@ -33,3 +33,17 @@ jobs:
           BASE_BRANCH: source
           FOLDER: build # The folder the action should deploy.
           CLEAN: true # Removes old (hashed) files
+
+  build-and-deploy-production-2:
+    needs: build-and-deploy-production
+    runs-on: ubuntu-latest
+    steps:
+      - name: repo-sync
+        uses: wei/git-sync@v1.1.2
+        env:
+          SOURCE_REPO: 'https://${{secrets.GH_ACCESS_TOKEN }}@github.com/gesund-zusammen/gesund-zusammen.github.io.git'
+          SOURCE_BRANCH: 'master'
+          DESTINATION_REPO: 'https://${{secrets.GH_ACCESS_TOKEN }}@github.com/gesund-zusammen/healthy-together.git'
+          DESTINATION_BRANCH: 'master'
+        with:
+          args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
