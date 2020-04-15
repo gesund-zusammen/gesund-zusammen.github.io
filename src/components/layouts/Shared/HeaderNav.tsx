@@ -38,7 +38,7 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
           )}
           {window.location.hostname === "gesund-zusammen.de" && (
             <HeaderNavLinkItem to={`/${this.props.i18n.language}/program`}>
-              {this.props.t("program.header.title")}
+              {this.props.t("header.nav.program")}
             </HeaderNavLinkItem>
           )}
           <HeaderNavLinkItem to={`/${this.props.i18n.language}/database`}>
