@@ -195,7 +195,6 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
                           ]
                         }
                       </Typography>
-                      s
                     </InitiativeCardContent>
                   </InitiativeCard>
                 </InitiativeCardWrapper>

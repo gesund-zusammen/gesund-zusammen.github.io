@@ -16,7 +16,7 @@ Der #Gesundzusammen Accelerator wird von TOA, wefox & finleap organisiert, mit U
 
 <br />
 **Bewerben können sich alle (Unternehmen, Forscher, Erfinder) jeder Größe\*.** <br />
-**Bewerbungsfrist endet am 17. April, 2020.**
+**Die Bewerbungsfrist für Batch #1 endet am 17. April, 2020.**
 
 #### Batch #1 des Accelerator Programms wird:
 

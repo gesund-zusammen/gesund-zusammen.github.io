@@ -9,9 +9,25 @@
   "header": {
     "nav": {
       "initiative": "Iniciativa",
-      "initiatives": "Bases de Datos",
-      "supporters": "Socios",
-      "faqs": "Preguntas Frecuentes"
+      "database": "Bases de Datos",
+      "accelerator": "Accelerator",
+      "faqs": "Preguntas Frecuentes",
+      "program": "Programa",
+      "app": "IchHabs App"
+    }
+  },
+  "start": {
+    "box1": {
+      "title": "La iniciativa",
+      "content": "Lea más sobre nuestra iniciativa digital."
+    },
+    "box2": {
+      "title": "La aplicación",
+      "content": "Pronto habrá más información sobre la aplicación."
+    },
+    "box3": {
+      "title": "Acelerador",
+      "content": "Un mínimo de 5 soluciones son compatibles con € 20,000 de capital libre de capital cada uno, tutoría y alcance."
     }
   },
   "accelerator": {
@@ -30,7 +46,13 @@
     "box3": {
       "title": "Ecosistema Abierto",
       "content": "Estamos invirtiendo en la construcción de un Ecosistema activo proporcionando una base de datos de todas las iniciativas relevantes de COVID-19, y otras actividades de divulgación."
-    }
+    },
+    "ctaBox": {
+      "claim": "¿Quieres ser parte del acelerador también?",
+      "cta": "Aplica ya",
+      "link": "/apply"
+    },
+    "gotoProgram": "Ir al programa"
   },
   "initiative": {
     "landing": {
@@ -48,7 +70,11 @@
     "box3": {
       "title": "Ecosistema Abierto",
       "content": "Esperamos con interés el intercambio con todas las demás iniciativas digitales, para unir fuerzas y promover la cooperación con actualizaciones periódicas."
-    }
+    },
+    "letter": {
+      "show": "Mostrar carta completa"
+    },
+    "gotoDatabase": "Ir a la base de datos"
   },
   "program": {
     "header": {

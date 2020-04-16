@@ -13,3 +13,15 @@ Le informazioni ci consentono di fare ricerca insieme, allertare le persone, sal
 Insieme proveremo che **possiamo avere entrambi - controllo dell'infezione e protezione della privacy.** In maniera che le informazioni private, rimangano private.
 
 Anche in tempi di crisi, la libertà personale e i diritti umani sono al livello massimo delle nostre priorità.
+
+#### In maniera che le informazioni private, rimangano private.
+
+Anche in tempi di crisi, la libertà personale e i diritti umani sono al livello massimo delle nostre priorità.
+
+#### Per tenere l'Europa sana
+
+Gli strumenti digitali supportate dall'acceleratore sono progettati per proteggere meglio la comunità e snellire il sistema sanitario.
+
+#### Per mantenere un'economia dinamica
+
+La tecnologia può aiutare a ridurre il rischio sanitario nelle imprese e far ripartire le attività e l'economia.

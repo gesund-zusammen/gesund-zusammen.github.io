@@ -33,7 +33,11 @@ class Footer extends React.PureComponent<WithTranslation, {}> {
               >
                 <FooterLogo
                   src={this.props.i18n.language === "de" ? LogoDE : LogoEN}
-                  alt="#GesundZusammen"
+                  alt={
+                    this.props.i18n.language === "de"
+                      ? "#GesundZusammen"
+                      : "#HealthyTogether"
+                  }
                 />
               </Link>
             </Hidden>
@@ -48,9 +52,6 @@ class Footer extends React.PureComponent<WithTranslation, {}> {
           </FooterLinks>
           <FooterNav>
             <FooterNavItems>
-              <FooterNavLinkItem to={`/${this.props.i18n.language}/apply`}>
-                {this.props.t("program.cta")}
-              </FooterNavLinkItem>
               <FooterNavLinkItem to={`/${this.props.i18n.language}/privacy`}>
                 {this.props.t("footer.nav.privacy")}
               </FooterNavLinkItem>

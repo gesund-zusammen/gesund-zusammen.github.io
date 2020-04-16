@@ -63,7 +63,7 @@ const PartnerButton: AnyStyledComponent = styled(Button)`
   && {
     display: block;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     text-transform: none;
     text-align: center;
@@ -73,7 +73,6 @@ const PartnerButton: AnyStyledComponent = styled(Button)`
 
     @media (min-width: 600px) {
       margin: 0;
-      font-size: 1.4rem;
     }
   }
 `;

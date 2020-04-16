@@ -16,7 +16,7 @@ El programa de aceleración #SaludJuntos está organizado por TOA, wefox y finle
 
 <br />
 **La convocatoria está dirigida a equipos de todos los tamaños, etapas y antecedentes (startups, investigadores, inventores, trabajadores).**
-**La convocatoria está abierta hasta el 17 de abril de 2020**
+**La convocatoria para el lote 1 está abierta hasta el 17 de abril de 2020.**
 
 #### La primera cosecha del programa obtendrá:
 

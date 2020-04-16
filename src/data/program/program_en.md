@@ -16,7 +16,7 @@ The #Gesundzusammen Accelerator is organized by TOA, wefox & finleap, with many 
 
 <br />
 **The open call is aimed at teams of all sizes, stages\* and backgrounds (startup, researchers, inventors, tinkerers).** <br />
-**Call is open until April 17th, 2020.**
+**Call for Batch #1 is open until April 17th, 2020.**
 
 #### Batch #1 of the program will:
 

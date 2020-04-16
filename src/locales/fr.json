@@ -9,9 +9,25 @@
   "header": {
     "nav": {
       "initiative": "Initiative",
-      "initiatives": "Base de données",
-      "supporters": "Partenaires",
-      "faqs": "Questions fréquentes"
+      "database": "Base de données",
+      "accelerator": "Accelerator",
+      "faqs": "Questions fréquentes",
+      "program": "Programme",
+      "app": "IchHabs App"
+    }
+  },
+  "start": {
+    "box1": {
+      "title": "L'initiative",
+      "content": "En savoir plus sur notre initiative numérique."
+    },
+    "box2": {
+      "title": "L'application",
+      "content": "Plus d'informations sur l'application seront bientôt disponibles"
+    },
+    "box3": {
+      "title": "Accélérateur",
+      "content": "Un minimum de 5 solutions sont prises en charge avec 20 000 € de capitaux propres chacun, le mentorat et la portée."
     }
   },
   "accelerator": {
@@ -30,7 +46,13 @@
     "box3": {
       "title": "Ecosystème Ouvert",
       "content": "Nous investissons dans la construction d'un écosystème actif en fournissant une base de données de toutes les initiatives COVID-19 pertinentes, et d'autres activités de sensibilisation"
-    }
+    },
+    "ctaBox": {
+      "claim": "Vous voulez aussi faire partie de l'accélérateur?",
+      "cta": "Appliquer maintenant",
+      "link": "/apply"
+    },
+    "gotoProgram": "Aller au programme"
   },
   "initiative": {
     "landing": {
@@ -48,7 +70,11 @@
     "box3": {
       "title": "Ecosystème ouvert",
       "content": "Nous sommes impatients d'échanger avec toutes les autres initiatives numériques, d'unir nos forces et de promouvoir la coopération grâce à des updates réguliers."
-    }
+    },
+    "letter": {
+      "show": "Afficher la lettre complète"
+    },
+    "gotoDatabase": "Accéder à la base de données"
   },
   "program": {
     "header": {
