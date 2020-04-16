@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Grid } from "@material-ui/core";
+import { Box, Grid, Button } from "@material-ui/core";
 import { withTranslation, WithTranslation } from "react-i18next";
+import styled, { AnyStyledComponent } from "styled-components";
 
 import MuiMarkdown from "../common/MuiMarkdown";
 import InfoBox from "../common/InfoBox";
@@ -40,32 +41,43 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
           <MuiMarkdown
             markdown={this.getMarkdown(this.props.i18n.language)}
           ></MuiMarkdown>
+        </Box>
 
-          <Box paddingBottom={8} marginTop={8}>
-            <Grid container spacing={4}>
-              <Grid item xs={12} sm={6} md={4} xl={3}>
-                <InfoBox
-                  title={this.props.t("accelerator.box1.title")}
-                  content={this.props.t("accelerator.box1.content")}
-                  illustration={IlluCoworking}
-                />
-              </Grid>
-              <Grid item xs={12} sm={6} md={4} xl={3}>
-                <InfoBox
-                  title={this.props.t("accelerator.box2.title")}
-                  content={this.props.t("accelerator.box2.content")}
-                  illustration={IlluMobile}
-                />
-              </Grid>
-              <Grid item xs={12} sm={6} md={4} xl={3}>
-                <InfoBox
-                  title={this.props.t("accelerator.box3.title")}
-                  content={this.props.t("accelerator.box3.content")}
-                  illustration={IlluSupport}
-                />
-              </Grid>
+        <Box paddingBottom={4} marginTop={4}>
+          <LinkButton
+            color="primary"
+            variant="contained"
+            disableFocusRipple={true}
+            href={`/${this.props.i18n.language}/program`}
+          >
+            Go to the program
+          </LinkButton>
+        </Box>
+
+        <Box paddingBottom={4} marginTop={4}>
+          <Grid container spacing={4}>
+            <Grid item xs={12} sm={6} md={4} xl={3}>
+              <InfoBox
+                title={this.props.t("accelerator.box1.title")}
+                content={this.props.t("accelerator.box1.content")}
+                illustration={IlluCoworking}
+              />
             </Grid>
-          </Box>
+            <Grid item xs={12} sm={6} md={4} xl={3}>
+              <InfoBox
+                title={this.props.t("accelerator.box2.title")}
+                content={this.props.t("accelerator.box2.content")}
+                illustration={IlluMobile}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} xl={3}>
+              <InfoBox
+                title={this.props.t("accelerator.box3.title")}
+                content={this.props.t("accelerator.box3.content")}
+                illustration={IlluSupport}
+              />
+            </Grid>
+          </Grid>
         </Box>
 
         <Box id="partners" paddingBottom={4} marginTop={4}>
@@ -83,5 +95,18 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
     );
   };
 }
+
+const LinkButton: AnyStyledComponent = styled(Button)`
+  && {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: none;
+    text-align: center;
+    border-radius: 4px;
+    padding: 1rem 2rem;
+    margin: 2rem auto 0 auto;
+  }
+`;
 
 export default withTranslation()(Accelerator);
