@@ -69,6 +69,9 @@
     "box3": {
       "title": "Offenes Ökosystem",
       "content": "Wir freuen uns auf den Austausch mit allen weiteren digitalen Initiativen, werden Kräfte bündeln und mit regelmäßigen Updates die Zusammenarbeit fördern."
+    },
+    "letter": {
+      "show": "Gesamten Brief anzeigen"
     }
   },
   "partners": {

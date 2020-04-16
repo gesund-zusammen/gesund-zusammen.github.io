@@ -69,6 +69,9 @@
     "box3": {
       "title": "Ecosystème ouvert",
       "content": "Nous sommes impatients d'échanger avec toutes les autres initiatives numériques, d'unir nos forces et de promouvoir la coopération grâce à des updates réguliers."
+    },
+    "letter": {
+      "show": "Afficher la lettre complète"
     }
   },
   "program": {

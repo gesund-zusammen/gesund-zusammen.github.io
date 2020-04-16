@@ -69,6 +69,9 @@
     "box3": {
       "title": "Ecosistema Abierto",
       "content": "Esperamos con interés el intercambio con todas las demás iniciativas digitales, para unir fuerzas y promover la cooperación con actualizaciones periódicas."
+    },
+    "letter": {
+      "show": "Mostrar carta completa"
     }
   },
   "program": {

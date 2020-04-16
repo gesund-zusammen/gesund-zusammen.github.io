@@ -71,7 +71,7 @@ class Initiative extends React.PureComponent<
               disableFocusRipple={true}
               onClick={this.handleRevealContent}
             >
-              Show full letter
+              {this.props.t("initiative.letter.show")}
             </RevealButton>
           )}
         </Box>

@@ -69,6 +69,9 @@
     "box3": {
       "title": "Open Ecosystem",
       "content": "We are looking forward to exchange with all other digital initiatives, to join forces and promote cooperation with regular updates."
+    },
+    "letter": {
+      "show": "Show full letter"
     }
   },
   "program": {
