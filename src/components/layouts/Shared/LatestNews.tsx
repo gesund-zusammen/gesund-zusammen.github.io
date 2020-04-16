@@ -24,12 +24,10 @@ class LatestNews extends React.Component<WithTranslation> {
       <LatestNewsBox id="latest-news" marginTop={4}>
         <LatestNewsContainer maxWidth="lg">
           <Grid container spacing={4}>
-            <Grid item xs={12}>
+            <Grid item xs={12} sm={6}>
               <Typography variant="h2">
                 {this.props.t("latestNews.title")}
               </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
               <Typography variant="body1">
                 {this.props.t("latestNews.content")}
               </Typography>
@@ -61,7 +59,7 @@ const LatestNewsBox: AnyStyledComponent = styled(Box)`
 `;
 
 const LatestNewsContainer: AnyStyledComponent = styled(Container)`
-  padding: 2rem 0 0;
+  padding: 4rem 0 0;
 `;
 
 const NewsItem: AnyStyledComponent = styled.a`
