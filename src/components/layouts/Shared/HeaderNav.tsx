@@ -61,14 +61,6 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
             {this.props.t("header.nav.faqs")}
           </HeaderNavLinkItem>
 
-          <HeaderNavAnchorItem
-            href={`https://ichhabs.app`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {this.props.t("header.nav.app")}
-          </HeaderNavAnchorItem>
-
           <HeaderLangSwitch>
             <Select
               value={this.props.i18n.language}
