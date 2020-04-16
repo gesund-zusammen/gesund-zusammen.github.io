@@ -77,6 +77,7 @@ const SocialContent: AnyStyledComponent = styled.div`
 const TwitterTimelineEmbedWrapper: AnyStyledComponent = styled.div`
   width: 50%;
   min-width: 270px;
+  margin: 0 auto;
 `;
 
 export default withTranslation()(Social);
