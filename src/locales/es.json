@@ -74,6 +74,7 @@
     "letter": {
       "show": "Mostrar carta completa"
     },
+    "openLetter": "Carta abierta",
     "gotoDatabase": "Ir a la base de datos"
   },
   "program": {

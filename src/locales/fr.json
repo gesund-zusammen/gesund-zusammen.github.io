@@ -74,6 +74,7 @@
     "letter": {
       "show": "Afficher la lettre complète"
     },
+    "openLetter": "Lettre ouverte",
     "gotoDatabase": "Accéder à la base de données"
   },
   "program": {

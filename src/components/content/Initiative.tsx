@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button } from "@material-ui/core";
+import { Box, Button, Typography } from "@material-ui/core";
 import { withTranslation, WithTranslation } from "react-i18next";
 import styled, { AnyStyledComponent } from "styled-components";
 
@@ -72,6 +72,7 @@ class Initiative extends React.PureComponent<
         </Box>
 
         <Box id="open-letter" paddingBottom={4} marginTop={4}>
+          <Typography variant="h3">Open Letter</Typography>
           <ContentRevealBox className={this.state.letterRevealed && "revealed"}>
             <MuiMarkdown markdown={OpenLetter} />
           </ContentRevealBox>
