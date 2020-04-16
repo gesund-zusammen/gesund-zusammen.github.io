@@ -6,7 +6,19 @@ import { withTranslation, WithTranslation } from "react-i18next";
 import ArrowIcon from "../../../images/icon_arrow_right_dark.svg";
 import NewsData from "../../../data/latestnews.json";
 
+interface INewsItem {
+  outlet: string;
+  teaser: string;
+  link: string;
+}
+
 class LatestNews extends React.Component<WithTranslation> {
+  getNewsItems = (limit?: number): Array<INewsItem> => {
+    if (limit) {
+      return NewsData.slice(0, limit);
+    }
+    return NewsData;
+  };
   render = () => {
     return (
       <LatestNewsBox id="latest-news" marginTop={4}>
@@ -23,7 +35,7 @@ class LatestNews extends React.Component<WithTranslation> {
               </Typography>
             </Grid>
             <Grid item xs={12} sm={6}>
-              {NewsData.splice(0, 3).map(newsItem => {
+              {this.getNewsItems(3).map(newsItem => {
                 return (
                   <NewsItem key={newsItem.link} href={newsItem.link}>
                     <Typography variant="h6">{newsItem.outlet}</Typography>
