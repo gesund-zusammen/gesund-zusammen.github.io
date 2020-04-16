@@ -147,6 +147,15 @@ const theme = responsiveFontSizes(
         marginBottom: "1rem",
         lineHeight: 2.4,
       },
+      h6: {
+        fontFamily: [
+          '"Open Sans"',
+          '"Helvetica"',
+          '"Arial"',
+          "sans-serif",
+        ].join(","),
+        fontWeight: 700,
+      },
       body1: {
         fontSize: "1.2rem",
         fontWeight: "normal",
