@@ -2,6 +2,8 @@ import React from "react";
 import { Card, CardContent, Typography } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
+import SquaredImage from "../common/SquaredImage";
+
 interface IInfoBoxProps {
   title: string;
   content: string;
@@ -15,7 +17,9 @@ class InfoBox extends React.PureComponent<IInfoBoxProps, {}> {
         <StyledCardContent>
           <StyledTitle variant="h4">{this.props.title}</StyledTitle>
           {this.props.illustration && (
-            <StyledIllustration src={this.props.illustration} />
+            <SquaredImageWrapper>
+              <SquaredImage imageSrc={this.props.illustration} />
+            </SquaredImageWrapper>
           )}
           <Typography variant="body2">{this.props.content}</Typography>
         </StyledCardContent>
@@ -41,7 +45,7 @@ const StyledCard: AnyStyledComponent = styled(Card)`
 const StyledCardContent: AnyStyledComponent = styled(CardContent)`
   && {
     text-align: center;
-    padding: 1.5rem 2rem 2rem 1.5rem;
+    padding: 1.5rem 2rem 2rem;
 
     &:last-child {
       padding-bottom: 2rem;
@@ -49,10 +53,8 @@ const StyledCardContent: AnyStyledComponent = styled(CardContent)`
   }
 `;
 
-const StyledIllustration: AnyStyledComponent = styled.img`
-  display: block;
-  width: 80%;
-  margin: 1rem auto 2rem;
+const SquaredImageWrapper: AnyStyledComponent = styled.div`
+  margin: 1rem 0 2rem;
 `;
 
 export default InfoBox;
