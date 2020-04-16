@@ -46,7 +46,7 @@ class Landing extends React.PureComponent<WithTranslation, {}> {
         <Box paddingBottom={4} marginTop={4}>
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6} md={4} xl={3}>
-              <StyledLink to={`${this.props.i18n.language}/initiative`}>
+              <StyledLink to={`/${this.props.i18n.language}/initiative`}>
                 <InfoBox
                   title={this.props.t("start.box1.title")}
                   content={this.props.t("start.box1.content")}
@@ -68,7 +68,7 @@ class Landing extends React.PureComponent<WithTranslation, {}> {
               </ExternalLink>
             </Grid>
             <Grid item xs={12} sm={6} md={4} xl={3}>
-              <StyledLink to={`${this.props.i18n.language}/accelerator`}>
+              <StyledLink to={`/${this.props.i18n.language}/accelerator`}>
                 <InfoBox
                   title={this.props.t("start.box3.title")}
                   content={this.props.t("start.box3.content")}
