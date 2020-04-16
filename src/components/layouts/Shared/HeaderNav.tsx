@@ -160,7 +160,7 @@ const HeaderLangSwitch: AnyStyledComponent = styled.div`
 
   @media (min-width: 600px) {
     width: auto;
-    margin-left: 1.3rem;
+    margin-left: 2rem;
   }
 `;
 

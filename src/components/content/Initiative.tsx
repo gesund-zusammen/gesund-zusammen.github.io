@@ -38,18 +38,24 @@ class Initiative extends React.PureComponent<WithTranslation, {}> {
           ></MuiMarkdown>
           <Box marginTop={4}>
             <Grid container spacing={4}>
-              <InfoBox
-                title={this.props.t("initiative.box1.title")}
-                content={this.props.t("initiative.box1.content")}
-              />
-              <InfoBox
-                title={this.props.t("initiative.box2.title")}
-                content={this.props.t("initiative.box2.content")}
-              />
-              <InfoBox
-                title={this.props.t("initiative.box3.title")}
-                content={this.props.t("initiative.box3.content")}
-              />
+              <Grid item xs={12} sm={6} md={4} xl={3}>
+                <InfoBox
+                  title={this.props.t("initiative.box1.title")}
+                  content={this.props.t("initiative.box1.content")}
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={4} xl={3}>
+                <InfoBox
+                  title={this.props.t("initiative.box2.title")}
+                  content={this.props.t("initiative.box2.content")}
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={4} xl={3}>
+                <InfoBox
+                  title={this.props.t("initiative.box3.title")}
+                  content={this.props.t("initiative.box3.content")}
+                />
+              </Grid>
             </Grid>
           </Box>
         </Box>

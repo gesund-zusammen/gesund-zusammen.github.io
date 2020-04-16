@@ -16,6 +16,20 @@
       "program": "Programma"
     }
   },
+  "start": {
+    "box1": {
+      "title": "The Initiative",
+      "content": "Read more about our digital initiative."
+    },
+    "box2": {
+      "title": "EINSgegenCorona",
+      "content": "Here you find the Corona tracing app."
+    },
+    "box3": {
+      "title": "Accelerator",
+      "content": "A minimum of 5 solutions are supported with €20,000 of equity-free capital each, mentorship and reach."
+    }
+  },
   "accelerator": {
     "landing": {
       "title": "La tecnologia salva le vite.",

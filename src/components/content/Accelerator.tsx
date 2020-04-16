@@ -13,6 +13,10 @@ import ContentFR from "../../data/accelerator/accelerator_fr.md";
 import ContentIT from "../../data/accelerator/accelerator_it.md";
 import ContentES from "../../data/accelerator/accelerator_es.md";
 
+import IlluCoworking from "../../images/illu_coworking.svg";
+import IlluMobile from "../../images/illu_mobile.svg";
+import IlluSupport from "../../images/illu_support.svg";
+
 class Accelerator extends React.PureComponent<WithTranslation, {}> {
   getMarkdown(language: string) {
     switch (language) {
@@ -38,18 +42,27 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
           ></MuiMarkdown>
           <Box marginTop={4}>
             <Grid container spacing={4}>
-              <InfoBox
-                title={this.props.t("accelerator.box1.title")}
-                content={this.props.t("accelerator.box1.content")}
-              />
-              <InfoBox
-                title={this.props.t("accelerator.box2.title")}
-                content={this.props.t("accelerator.box2.content")}
-              />
-              <InfoBox
-                title={this.props.t("accelerator.box3.title")}
-                content={this.props.t("accelerator.box3.content")}
-              />
+              <Grid item xs={12} sm={6} md={4} xl={3}>
+                <InfoBox
+                  title={this.props.t("accelerator.box1.title")}
+                  content={this.props.t("accelerator.box1.content")}
+                  illustration={IlluCoworking}
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={4} xl={3}>
+                <InfoBox
+                  title={this.props.t("accelerator.box2.title")}
+                  content={this.props.t("accelerator.box2.content")}
+                  illustration={IlluMobile}
+                />
+              </Grid>
+              <Grid item xs={12} sm={6} md={4} xl={3}>
+                <InfoBox
+                  title={this.props.t("accelerator.box3.title")}
+                  content={this.props.t("accelerator.box3.content")}
+                  illustration={IlluSupport}
+                />
+              </Grid>
             </Grid>
           </Box>
         </Box>

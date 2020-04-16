@@ -16,6 +16,20 @@
       "program": "Programm"
     }
   },
+  "start": {
+    "box1": {
+      "title": "Die Initiative",
+      "content": "Lesen Sie mehr über unsere Initative."
+    },
+    "box2": {
+      "title": "EINSgegenCorona",
+      "content": "Hier gehts zur Corona Tracing App."
+    },
+    "box3": {
+      "title": "Accelerator",
+      "content": "Unterstützung von mindestens 5 Lösungen mit jeweils €20,000 Kapital (ohne Anteilsausgabe), Coaching und Reichweite."
+    }
+  },
   "accelerator": {
     "landing": {
       "title": "Technologie rettet Leben.",
