@@ -16,7 +16,7 @@ L'accélérateur #Gesundzusammen est organisé par TOA, wefox & finleap, avec le
 
 <br />
 **Le programme est ouvert et s'adresse aux équipes de toutes tailles, de tous niveaux et de tous horizons (start-up, chercheurs, inventeurs, bricoleurs).
-**Vous pouvez soumettre votre candidature jusqu'au 17 avril 2020.**
+**L'appel pour le lot 1 est ouvert jusqu'au 17 avril 2020.**
 
 #### La première "promotion" :
 
@@ -27,4 +27,3 @@ L'accélérateur #Gesundzusammen est organisé par TOA, wefox & finleap, avec le
 La première promotion du programme d'accélération effectuera une journée de démonstration virtuelle le 1er juin 2020.
 
 \* Pas encore d'entité juridique? Pas de soucis, nous vous aiderons à en créer une.
-
