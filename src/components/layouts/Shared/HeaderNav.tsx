@@ -1,6 +1,6 @@
 import React from "react";
 import { MenuItem, Select } from "@material-ui/core";
-import styled, { AnyStyledComponent } from "styled-components";
+import styled, { css, AnyStyledComponent } from "styled-components";
 import { withRouter, RouteComponentProps } from "react-router";
 import { Link } from "react-router-dom";
 import { withTranslation, WithTranslation } from "react-i18next";
@@ -60,6 +60,15 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
           <HeaderNavLinkItem to={`/${this.props.i18n.language}/faq`}>
             {this.props.t("header.nav.faqs")}
           </HeaderNavLinkItem>
+
+          <HeaderNavAnchorItem
+            href={`https://ichhabs.app`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {this.props.t("header.nav.app")}
+          </HeaderNavAnchorItem>
+
           <HeaderLangSwitch>
             <Select
               value={this.props.i18n.language}
@@ -104,7 +113,7 @@ const HeaderNavItems: AnyStyledComponent = styled.div`
   }
 `;
 
-const HeaderNavLinkItem: AnyStyledComponent = styled(Link)`
+const HeaderNavItemStyles = css`
   display: inline-block;
   width: 50%;
   font-family: inherit;
@@ -119,6 +128,14 @@ const HeaderNavLinkItem: AnyStyledComponent = styled(Link)`
     width: auto;
     margin-left: 2rem;
   }
+`;
+
+const HeaderNavLinkItem: AnyStyledComponent = styled(Link)`
+  ${HeaderNavItemStyles}
+`;
+
+const HeaderNavAnchorItem: AnyStyledComponent = styled.a`
+  ${HeaderNavItemStyles}
 `;
 
 const HeaderNavLinkSubitem: AnyStyledComponent = styled(Link)`
