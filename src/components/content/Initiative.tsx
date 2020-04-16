@@ -60,6 +60,17 @@ class Initiative extends React.PureComponent<
           ></MuiMarkdown>
         </Box>
 
+        <Box paddingBottom={4} marginTop={4}>
+          <LinkButton
+            color="primary"
+            variant="contained"
+            disableFocusRipple={true}
+            href={`/${this.props.i18n.language}/database`}
+          >
+            {this.props.t("initiative.gotoDatabase")}
+          </LinkButton>
+        </Box>
+
         <Box id="open-letter" paddingBottom={4} marginTop={4}>
           <ContentRevealBox className={this.state.letterRevealed && "revealed"}>
             <MuiMarkdown markdown={OpenLetter} />
@@ -131,6 +142,19 @@ const ContentRevealBox: AnyStyledComponent = styled.div`
       rgba(255, 255, 255, 1) 90%,
       rgba(255, 255, 255, 1) 100%
     ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+`;
+
+const LinkButton: AnyStyledComponent = styled(Button)`
+  && {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: none;
+    text-align: center;
+    border-radius: 4px;
+    padding: 1rem 2rem;
+    margin: 0 auto 2rem auto;
   }
 `;
 

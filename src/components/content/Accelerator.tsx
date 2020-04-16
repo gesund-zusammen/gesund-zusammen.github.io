@@ -50,7 +50,7 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
             disableFocusRipple={true}
             href={`/${this.props.i18n.language}/program`}
           >
-            Go to the program
+            {this.props.t("accelerator.gotoProgram")}
           </LinkButton>
         </Box>
 

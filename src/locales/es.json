@@ -51,7 +51,8 @@
       "claim": "¿Quieres ser parte del acelerador también?",
       "cta": "Aplica ya",
       "link": "/apply"
-    }
+    },
+    "gotoProgram": "Ir al programa"
   },
   "initiative": {
     "landing": {
@@ -72,7 +73,8 @@
     },
     "letter": {
       "show": "Mostrar carta completa"
-    }
+    },
+    "gotoDatabase": "Ir a la base de datos"
   },
   "program": {
     "header": {

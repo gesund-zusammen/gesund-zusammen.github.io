@@ -51,7 +51,8 @@
       "claim": "Sie wollen auch mitmachen?",
       "cta": "Jetzt bewerben",
       "link": "/apply"
-    }
+    },
+    "gotoProgram": "Zum Programm"
   },
   "initiative": {
     "landing": {
@@ -72,7 +73,8 @@
     },
     "letter": {
       "show": "Gesamten Brief anzeigen"
-    }
+    },
+    "gotoDatabase": "Zur Datenbank"
   },
   "partners": {
     "unknownCategory": "Unbekannt",

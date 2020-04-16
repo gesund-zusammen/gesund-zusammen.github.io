@@ -51,7 +51,8 @@
       "claim": "You want to be part of the accelerator?",
       "cta": "Apply now",
       "link": "/apply"
-    }
+    },
+    "gotoProgram": "Go to program"
   },
   "initiative": {
     "landing": {
@@ -72,7 +73,8 @@
     },
     "letter": {
       "show": "Show full letter"
-    }
+    },
+    "gotoDatabase": "Go to database"
   },
   "program": {
     "header": {
