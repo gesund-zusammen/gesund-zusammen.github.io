@@ -39,11 +39,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy Healthy-Together.eu
-        uses: manzke/git-sync@v1.2
+        uses: manzke/git-sync@v1. 2
         env:
-          SOURCE_REPO: "https://${{secrets.GH_ACCESS_TOKEN }}@github.com/gesund-zusammen/gesund-zusammen.github.io.git"
+          SOURCE_REPO: "https://manzke:${{secrets.GH_ACCESS_TOKEN }}@github.com/gesund-zusammen/gesund-zusammen.github.io.git"
           SOURCE_BRANCH: "master"
-          DESTINATION_REPO: "https://${{secrets.GH_ACCESS_TOKEN }}@github.com/gesund-zusammen/healthy-together.git"
+          DESTINATION_REPO: "https://manzke:${{secrets.GH_ACCESS_TOKEN }}@github.com/gesund-zusammen/healthy-together.git"
           DESTINATION_BRANCH: "master"
         with:
           args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
