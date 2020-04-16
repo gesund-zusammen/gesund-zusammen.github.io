@@ -11,9 +11,9 @@
       "initiative": "Initiative",
       "database": "Database",
       "accelerator": "Accelerator",
-      "partners": "Partners",
       "faqs": "FAQs",
-      "app": "IchHabs App"
+      "app": "IchHabs App",
+      "program": "Program"
     }
   },
   "start": {

@@ -53,7 +53,7 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
               className="subnav-item"
               to={`/${this.props.i18n.language}/program`}
             >
-              {this.props.t("program.header.title")}
+              {this.props.t("header.nav.program")}
             </HeaderNavLinkSubitem>
           </HeaderNavItemWithSubitems>
 
