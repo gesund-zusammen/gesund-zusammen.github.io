@@ -18,7 +18,7 @@ import IlluAccelerator from "../../images/illu_accelerator.svg";
 import IlluApp from "../../images/illu_app.svg";
 import IlluInitiative from "../../images/illu_initiative.svg";
 
-class Landing extends React.PureComponent<WithTranslation, {}> {
+class Start extends React.PureComponent<WithTranslation, {}> {
   getMarkdown(language: string) {
     switch (language) {
       case "de":
@@ -95,4 +95,4 @@ const ExternalLink: AnyStyledComponent = styled.a`
   text-decoration: none;
 `;
 
-export default withTranslation()(Landing);
+export default withTranslation()(Start);
