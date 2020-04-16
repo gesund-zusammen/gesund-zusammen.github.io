@@ -140,7 +140,7 @@ const HeaderNavAnchorItem: AnyStyledComponent = styled.a`
 
 const HeaderNavLinkSubitem: AnyStyledComponent = styled(Link)`
   position: absolute;
-  right: 0;
+  left: 0;
   display: block;
   font-family: inherit;
   color: #ffffff;
@@ -152,6 +152,7 @@ const HeaderNavLinkSubitem: AnyStyledComponent = styled(Link)`
   @media (min-width: 600px) {
     display: inline-block;
     width: auto;
+    margin-left: 2rem;
   }
 `;
 
