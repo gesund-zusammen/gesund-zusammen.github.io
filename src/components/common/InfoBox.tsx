@@ -54,7 +54,7 @@ const StyledCardContent: AnyStyledComponent = styled(CardContent)`
 `;
 
 const SquaredImageWrapper: AnyStyledComponent = styled.div`
-  margin: 1rem 0 2rem;
+  margin: 1rem 1rem 2rem;
 `;
 
 export default InfoBox;
