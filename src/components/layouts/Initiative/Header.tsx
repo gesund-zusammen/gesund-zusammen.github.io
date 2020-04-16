@@ -70,7 +70,6 @@ const ApplyButton: AnyStyledComponent = styled(Button)`
     padding-left: 2rem;
 
     @media (min-width: 600px) {
-      font-size: 1.4rem;
     }
   }
 `;
