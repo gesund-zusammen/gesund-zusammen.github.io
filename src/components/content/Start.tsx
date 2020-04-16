@@ -14,9 +14,9 @@ import ContentFR from "../../data/landing/landing_fr.md";
 import ContentIT from "../../data/landing/landing_it.md";
 import ContentES from "../../data/landing/landing_es.md";
 
-import IlluCoworking from "../../images/illu_coworking.svg";
-import IlluMobile from "../../images/illu_mobile.svg";
-import IlluSupport from "../../images/illu_support.svg";
+import IlluAccelerator from "../../images/illu_accelerator.svg";
+import IlluApp from "../../images/illu_app.svg";
+import IlluInitiative from "../../images/illu_initiative.svg";
 
 class Landing extends React.PureComponent<WithTranslation, {}> {
   getMarkdown(language: string) {
@@ -50,7 +50,7 @@ class Landing extends React.PureComponent<WithTranslation, {}> {
                 <InfoBox
                   title={this.props.t("start.box1.title")}
                   content={this.props.t("start.box1.content")}
-                  illustration={IlluCoworking}
+                  illustration={IlluInitiative}
                 />
               </StyledLink>
             </Grid>
@@ -63,7 +63,7 @@ class Landing extends React.PureComponent<WithTranslation, {}> {
                 <InfoBox
                   title={this.props.t("start.box2.title")}
                   content={this.props.t("start.box2.content")}
-                  illustration={IlluMobile}
+                  illustration={IlluApp}
                 />
               </ExternalLink>
             </Grid>
@@ -72,15 +72,15 @@ class Landing extends React.PureComponent<WithTranslation, {}> {
                 <InfoBox
                   title={this.props.t("start.box3.title")}
                   content={this.props.t("start.box3.content")}
-                  illustration={IlluSupport}
+                  illustration={IlluAccelerator}
                 />
               </StyledLink>
             </Grid>
           </Grid>
         </Box>
 
-        <Box paddingBottom={4} marginTop={4}>
-          <PartnerItems categorySlug="founders" />
+        <Box id="founding-partners" paddingBottom={4} marginTop={4}>
+          <PartnerItems categorySlug={"founders"} />
         </Box>
       </>
     );
