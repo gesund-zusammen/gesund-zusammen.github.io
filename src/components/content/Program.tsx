@@ -4,7 +4,7 @@ import { withTranslation, WithTranslation } from "react-i18next";
 
 import MuiMarkdown from "../common/MuiMarkdown";
 import CTABox from "../common/CTABox";
-import Projects from "./Projects";
+import Projects from "../common/Projects";
 
 import ContentDE from "../../data/program/program_de.md";
 import ContentEN from "../../data/program/program_en.md";

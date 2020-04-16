@@ -823,8 +823,8 @@
       "global": true
     },
      {
-      "name": "Epitrack - Entlastung der Gesundheitsämter",
-      "link": "Epitrack.de",
+      "name": "Quarano - Entlastung der Gesundheitsämter",
+      "link": "quarano.de",
       "category": "digital_tools",
       "description": {
         "de": "Entlastung der Mitarbeiter in Gesundheitsämtern bei der Verwaltung von Quarantäne- und Isolationsmaßnahmen durch ein Online-Symptomtagebuch. Eine Idee aus dem #WirvsVirus-Hackathon.",

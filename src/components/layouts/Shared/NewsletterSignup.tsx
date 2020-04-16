@@ -32,7 +32,7 @@ class NewsletterSignup extends React.Component<
 
   render = () => {
     return (
-      <NewsletterSignupBox id="newsletter-signup" marginTop={4}>
+      <NewsletterSignupBox id="newsletter-signup">
         <NewsletterSignupContainer maxWidth="lg">
           <Grid container spacing={4}>
             <Hidden xsDown>
