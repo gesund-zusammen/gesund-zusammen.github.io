@@ -34,14 +34,16 @@ jobs:
           FOLDER: build # The folder the action should deploy.
           CLEAN: true # Removes old (hashed) files
 
-  build-and-deploy-production-2:
-    needs: build-and-deploy-production
-    runs-on: ubuntu-latest
-    steps:
-      - name: repo-sync
-        uses: wei/git-sync@v1
-        env:
-          SOURCE_REPO: 'https://${{secrets.GH_ACCESS_TOKEN }}github.com/gesund-zusammen/gesund-zusammen.git'
-          SOURCE_BRANCH: 'master'
-          DESTINATION_REPO: 'https://${{secrets.GH_ACCESS_TOKEN }}github.com/gesund-zusammen/healthy-together.git'
-          DESTINATION_BRANCH: 'master'
+#  build-and-deploy-production-2:
+#    needs: build-and-deploy-production
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: repo-sync
+#        uses: wei/git-sync@v1.1.2
+#        env:
+#          SOURCE_REPO: "https://${{secrets.GH_ACCESS_TOKEN }}@github.com/gesund-zusammen/gesund-zusammen.github.io.git"
+#          SOURCE_BRANCH: "master"
+#          DESTINATION_REPO: "https://${{secrets.GH_ACCESS_TOKEN }}@github.com/gesund-zusammen/healthy-together.git"
+#          DESTINATION_BRANCH: "master"
+#        with:
+#          args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
