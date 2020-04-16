@@ -18,16 +18,16 @@
   },
   "start": {
     "box1": {
-      "title": "The Initiative",
-      "content": "Read more about our digital initiative."
+      "title": "L'initiative",
+      "content": "En savoir plus sur notre initiative numérique."
     },
     "box2": {
-      "title": "IchHabs App",
-      "content": "Here you find the Corona tracing app."
+      "title": "L'application",
+      "content": "Plus d'informations sur l'application seront bientôt disponibles"
     },
     "box3": {
-      "title": "Accelerator",
-      "content": "A minimum of 5 solutions are supported with €20,000 of equity-free capital each, mentorship and reach."
+      "title": "Accélérateur",
+      "content": "Un minimum de 5 solutions sont prises en charge avec 20 000 € de capitaux propres chacun, le mentorat et la portée."
     }
   },
   "accelerator": {
