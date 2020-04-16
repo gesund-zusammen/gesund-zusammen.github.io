@@ -7,11 +7,11 @@ import InfoBox from "../common/InfoBox";
 import CTABox from "../common/CTABox";
 import PartnerItems from "../common/PartnerItems";
 
-import ContentDE from "../../data/landing/landing_de.md";
-import ContentEN from "../../data/landing/landing_en.md";
-import ContentFR from "../../data/landing/landing_fr.md";
-import ContentIT from "../../data/landing/landing_it.md";
-import ContentES from "../../data/landing/landing_es.md";
+import ContentDE from "../../data/initiative/initiative_de.md";
+import ContentEN from "../../data/initiative/initiative_en.md";
+import ContentFR from "../../data/initiative/initiative_fr.md";
+import ContentIT from "../../data/initiative/initiative_it.md";
+import ContentES from "../../data/initiative/initiative_es.md";
 
 class Initiative extends React.PureComponent<WithTranslation, {}> {
   getMarkdown(language: string) {
