@@ -95,7 +95,6 @@ class PartnerItems extends React.Component<IPartnerItemsProps, {}> {
               );
             },
           )}
-          ;
         </Fade>
       </Box>
     );
