@@ -46,6 +46,11 @@
     "box3": {
       "title": "Open Ecosystem",
       "content": "We are investing into building an active Ecosystem by providing a database of all relevant COVID-19 initiatives, and other outreach activities."
+    },
+    "ctaBox": {
+      "claim": "You want to be part of the accelerator?",
+      "cta": "Apply now",
+      "link": "/apply"
     }
   },
   "initiative": {

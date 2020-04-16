@@ -36,11 +36,12 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <>
-        <Box id="accelerator" paddingBottom={4} marginTop={4}>
+        <Box id="accelerator" paddingBottom={4} marginTop={2}>
           <MuiMarkdown
             markdown={this.getMarkdown(this.props.i18n.language)}
           ></MuiMarkdown>
-          <Box marginTop={4}>
+
+          <Box paddingBottom={8} marginTop={8}>
             <Grid container spacing={4}>
               <Grid item xs={12} sm={6} md={4} xl={3}>
                 <InfoBox
@@ -73,9 +74,9 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
 
         <Box paddingBottom={4} marginTop={4}>
           <CTABox
-            claim={this.props.t("partners.claim")}
-            cta={this.props.t("partners.cta")}
-            href={this.props.t("partners.link")}
+            claim={this.props.t("accelerator.ctaBox.claim")}
+            cta={this.props.t("accelerator.ctaBox.cta")}
+            href={this.props.t("accelerator.ctaBox.link")}
           />
         </Box>
       </>

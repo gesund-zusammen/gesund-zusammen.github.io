@@ -46,6 +46,11 @@
     "box3": {
       "title": "Offenes Ökosystem",
       "content": "Unsere Datenbank aller Digitalen Projekte und Initiativen unterstützt das Ökosystem."
+    },
+    "ctaBox": {
+      "claim": "Sie wollen auch mitmachen?",
+      "cta": "Jetzt bewerben",
+      "link": "/apply"
     }
   },
   "initiative": {

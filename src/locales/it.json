@@ -46,6 +46,11 @@
     "box3": {
       "title": "Ecosistema aperto",
       "content": "Stiamo investendo nella creazione di un ecosistema attivo tramite la messa a disposizione di un database di tutte le iniziative rilevanti relative al COVID-19, oltre ad altre iniziative collegate."
+    },
+    "ctaBox": {
+      "claim": "Vuoi far parte anche dell'acceleratore?",
+      "cta": "Applica ora",
+      "link": "/apply"
     }
   },
   "initiative": {
