@@ -94,6 +94,9 @@ const theme = responsiveFontSizes(
         main: "#00AAC8",
         contrastText: "#ffffff",
       },
+      background: {
+        default: "#ffffff",
+      },
     },
     typography: {
       fontSize: 18,
