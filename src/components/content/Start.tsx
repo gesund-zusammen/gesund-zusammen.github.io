@@ -4,6 +4,7 @@ import { withTranslation, WithTranslation } from "react-i18next";
 
 import MuiMarkdown from "../common/MuiMarkdown";
 import InfoBox from "../common/InfoBox";
+import PartnerItems from "../common/PartnerItems";
 
 import ContentDE from "../../data/landing/landing_de.md";
 import ContentEN from "../../data/landing/landing_en.md";
@@ -34,22 +35,27 @@ class Landing extends React.PureComponent<WithTranslation, {}> {
           <MuiMarkdown
             markdown={this.getMarkdown(this.props.i18n.language)}
           ></MuiMarkdown>
-          <Box marginTop={4}>
-            <Grid container spacing={4}>
-              <InfoBox
-                title={this.props.t("initiative.box1.title")}
-                content={this.props.t("initiative.box1.content")}
-              />
-              <InfoBox
-                title={this.props.t("initiative.box2.title")}
-                content={this.props.t("initiative.box2.content")}
-              />
-              <InfoBox
-                title={this.props.t("initiative.box3.title")}
-                content={this.props.t("initiative.box3.content")}
-              />
-            </Grid>
-          </Box>
+        </Box>
+
+        <Box paddingBottom={4} marginTop={4}>
+          <Grid container spacing={4}>
+            <InfoBox
+              title={this.props.t("initiative.box1.title")}
+              content={this.props.t("initiative.box1.content")}
+            />
+            <InfoBox
+              title={this.props.t("initiative.box2.title")}
+              content={this.props.t("initiative.box2.content")}
+            />
+            <InfoBox
+              title={this.props.t("initiative.box3.title")}
+              content={this.props.t("initiative.box3.content")}
+            />
+          </Grid>
+        </Box>
+
+        <Box paddingBottom={4} marginTop={4}>
+          <PartnerItems categorySlug="founders" />
         </Box>
       </>
     );
