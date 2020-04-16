@@ -1,12 +1,12 @@
 import React from "react";
-import { MenuItem } from "@material-ui/core";
+import { MenuItem, Select } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 import { withRouter, RouteComponentProps } from "react-router";
 import { Link } from "react-router-dom";
 import { withTranslation, WithTranslation } from "react-i18next";
 
 import LogoDE from "../../../images/logo.svg";
-import Select from "@material-ui/core/Select";
+import LogoEN from "../../../images/logo_en.svg";
 
 interface IHeaderNavProps extends RouteComponentProps, WithTranslation {}
 
@@ -24,7 +24,14 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
     return (
       <>
         <Link to={`/${this.props.i18n.language}/`}>
-          <HeaderLogo src={LogoDE} alt="#GesundZusammen" />
+          <HeaderLogo
+            src={this.props.i18n.language === "de" ? LogoDE : LogoEN}
+            alt={
+              this.props.i18n.language === "de"
+                ? "#GesundZusammen"
+                : "#HealthyTogether"
+            }
+          />
         </Link>
         <HeaderNavItems>
           <HeaderNavItemWithSubitems>
