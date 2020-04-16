@@ -44,7 +44,7 @@ class Start extends React.PureComponent<WithTranslation, {}> {
         </Box>
 
         <Box paddingBottom={4} marginTop={4}>
-          <Grid container spacing={4}>
+          <Grid container justify="center" spacing={4}>
             <Grid item xs={12} sm={6} md={4} xl={3}>
               <StyledLink to={`/${this.props.i18n.language}/initiative`}>
                 <InfoBox

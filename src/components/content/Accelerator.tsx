@@ -55,7 +55,7 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
         </Box>
 
         <Box paddingBottom={4} marginTop={4}>
-          <Grid container spacing={4}>
+          <Grid container justify="center" spacing={4}>
             <Grid item xs={12} sm={6} md={4} xl={3}>
               <InfoBox
                 title={this.props.t("accelerator.box1.title")}
