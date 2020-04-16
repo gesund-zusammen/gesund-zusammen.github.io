@@ -126,10 +126,6 @@ const HeaderNavLinkItem: AnyStyledComponent = styled(Link)`
   ${HeaderNavItemStyles}
 `;
 
-const HeaderNavAnchorItem: AnyStyledComponent = styled.a`
-  ${HeaderNavItemStyles}
-`;
-
 const HeaderNavLinkSubitem: AnyStyledComponent = styled(Link)`
   position: absolute;
   left: 0;

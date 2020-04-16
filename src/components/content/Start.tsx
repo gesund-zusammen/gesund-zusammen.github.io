@@ -85,8 +85,4 @@ const StyledLink: AnyStyledComponent = styled(Link)`
   text-decoration: none;
 `;
 
-const ExternalLink: AnyStyledComponent = styled.a`
-  text-decoration: none;
-`;
-
 export default withTranslation()(Start);
