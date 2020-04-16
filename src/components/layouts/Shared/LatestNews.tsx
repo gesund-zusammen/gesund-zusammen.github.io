@@ -61,7 +61,7 @@ const LatestNewsBox: AnyStyledComponent = styled(Box)`
 `;
 
 const LatestNewsContainer: AnyStyledComponent = styled(Container)`
-  padding: 4rem 0;
+  padding: 2rem 0 0;
 `;
 
 const NewsItem: AnyStyledComponent = styled.a`
