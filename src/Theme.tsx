@@ -94,9 +94,11 @@ const theme = responsiveFontSizes(
         main: "#00AAC8",
         contrastText: "#ffffff",
       },
+      background: {
+        default: "#ffffff",
+      },
     },
     typography: {
-      htmlFontSize: 18,
       fontSize: 18,
       fontFamily: ['"Lato"', '"Helvetica"', '"Arial"', "sans-serif"].join(","),
       h1: {
@@ -117,7 +119,7 @@ const theme = responsiveFontSizes(
           '"Arial"',
           "sans-serif",
         ].join(","),
-        fontSize: "2.4rem",
+        fontSize: "2.2rem",
         fontWeight: 600,
         marginBottom: "1rem",
         color: "#003269",
@@ -129,10 +131,9 @@ const theme = responsiveFontSizes(
           '"Arial"',
           "sans-serif",
         ].join(","),
-        fontSize: "2.2rem",
+        fontSize: "1.67rem",
         fontWeight: 600,
         marginBottom: "1rem",
-        lineHeight: 2.4,
         color: "#003269",
       },
       h4: {
@@ -142,10 +143,9 @@ const theme = responsiveFontSizes(
           '"Arial"',
           "sans-serif",
         ].join(","),
-        fontSize: "1.7rem",
+        fontSize: "1.55rem",
         fontWeight: 600,
         marginBottom: "1rem",
-        lineHeight: 2.4,
       },
       h6: {
         fontFamily: [

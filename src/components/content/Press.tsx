@@ -1,12 +1,13 @@
 import React from "react";
 import { Box, Typography, Avatar, Grid, Link } from "@material-ui/core";
-import { Email, GetApp } from "@material-ui/icons";
+import { GetApp } from "@material-ui/icons";
 import styled, { AnyStyledComponent } from "styled-components";
 import { withTranslation, WithTranslation } from "react-i18next";
 
 import CTABox from "../common/CTABox";
 
-import PressContactPhoto from "../../images/solveig_rathenow.png";
+import PhotoSolveigRatenow from "../../images/solveig_rathenow.png";
+import PhotoKerstinBock from "../../images/kerstin_bock.png";
 import PressKitLogo from "../../images/presskit_logo.svg";
 import ReleaseEnLogo from "../../../public/187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.png";
 import ReleaseDeLogo from "../../../public/187534-20200401090213000000000-gesund-zusammen-die-digitale-wirtschaft-s.png";
@@ -19,20 +20,43 @@ class PressContact extends React.PureComponent<WithTranslation, {}> {
           <Typography variant="h2">
             {this.props.t("press.pageHeader")}
           </Typography>
+          <Typography variant="body1">
+            {this.props.t("press.inqueryInitiative")}{" "}
+            <Link href="mailto:media@gesund-zusammen.de">
+              media@gesund-zusammen.de
+            </Link>
+          </Typography>
           <Grid container spacing={5} justify="flex-start" alignItems="center">
             <Grid item xs={12} sm={4}>
-              <StyledAvatar alt="Solveig Ratenow" src={PressContactPhoto} />
+              <StyledAvatar alt="Solveig Ratenow" src={PhotoSolveigRatenow} />
             </Grid>
             <Grid item xs={12} sm={8}>
-              <Typography variant="body1">
-                {this.props.t("press.pressContactTitle")}
-              </Typography>
               <Typography variant="h4" color="primary">
-                {this.props.t("press.pressContactName")}
+                Solveig Ratenow
               </Typography>
               <Typography variant="body1">
-                <StyledEmailIcon color="primary" fontSize="small" />
-                {this.props.t("press.pressContactEmail")}
+                Head of Venture communication @ Finleap
+              </Typography>
+            </Grid>
+          </Grid>
+          <br />
+          <br />
+          <Typography variant="body1">
+            {this.props.t("press.inqueryAccelerator")}{" "}
+            <Link href="mailto:media.accelerator@gesund-zusammen.de">
+              media.accelerator@gesund-zusammen.de
+            </Link>
+          </Typography>
+          <Grid container spacing={5} justify="flex-start" alignItems="center">
+            <Grid item xs={12} sm={4}>
+              <StyledAvatar alt="Kerstin Bock" src={PhotoKerstinBock} />
+            </Grid>
+            <Grid item xs={12} sm={8}>
+              <Typography variant="h4" color="primary">
+                Kerstin Bock
+              </Typography>
+              <Typography variant="body1">
+                Head of Media relations @ Tech Open Air
               </Typography>
             </Grid>
           </Grid>
@@ -121,13 +145,6 @@ const PressContactWrapper: AnyStyledComponent = styled(Box)`
 
 const StyledAvatar: AnyStyledComponent = styled(Avatar)`
   border: 8px solid rgba(0, 170, 200, 0.3);
-`;
-
-const StyledEmailIcon: AnyStyledComponent = styled(Email)`
-  && {
-    margin: 0.3rem 0.5rem 0 0;
-    float: left;
-  }
 `;
 
 const StyledDownloadLink: AnyStyledComponent = styled(Link)`

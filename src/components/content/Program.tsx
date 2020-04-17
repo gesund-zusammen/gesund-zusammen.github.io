@@ -39,9 +39,9 @@ class Program extends React.Component<WithTranslation, {}> {
 
         <Box paddingBottom={4} marginTop={4}>
           <CTABox
-            claim={this.props.t("program.claim")}
-            cta={this.props.t("program.cta")}
-            href={this.props.t("program.link")}
+            claim={this.props.t("accelerator.ctaBox.claim")}
+            cta={this.props.t("accelerator.ctaBox.cta")}
+            href={this.props.t("accelerator.ctaBox.link")}
           />
         </Box>
       </Box>

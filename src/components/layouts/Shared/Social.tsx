@@ -23,7 +23,7 @@ class Social extends React.PureComponent<WithTranslation, {}> {
           <Grid container spacing={8}>
             <Grid item xs={12} sm={6}>
               <SocialContent>
-                <Typography variant="h2">
+                <Typography variant="h3">
                   {this.props.t("footer.title")}
                 </Typography>
                 <Typography variant="body1">
@@ -34,7 +34,7 @@ class Social extends React.PureComponent<WithTranslation, {}> {
             </Grid>
             <Grid item xs={12} sm={6}>
               <TwitterTimelineEmbedWrapper>
-                <Typography variant="h2">
+                <Typography variant="h3">
                   {this.props.t("footer.twitter.title")}
                 </Typography>
                 <TwitterTimelineEmbed
@@ -74,6 +74,10 @@ const SocialContent: AnyStyledComponent = styled.div`
   }
 `;
 
-const TwitterTimelineEmbedWrapper: AnyStyledComponent = styled.div``;
+const TwitterTimelineEmbedWrapper: AnyStyledComponent = styled.div`
+  width: 50%;
+  min-width: 270px;
+  margin: 0 auto;
+`;
 
 export default withTranslation()(Social);

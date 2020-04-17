@@ -9,9 +9,25 @@
   "header": {
     "nav": {
       "initiative": "Initiative",
-      "initiatives": "Datenbank",
-      "supporters": "Partner",
-      "faqs": "Fragen?"
+      "database": "Datenbank",
+      "accelerator": "Accelerator",
+      "faqs": "Fragen?",
+      "program": "Programm",
+      "app": "IchHabs App"
+    }
+  },
+  "start": {
+    "box1": {
+      "title": "Die Initiative",
+      "content": "Lesen Sie mehr über unsere Initative."
+    },
+    "box2": {
+      "title": "Die App",
+      "content": "Mehr Infos zur App gibts in Kürze."
+    },
+    "box3": {
+      "title": "Accelerator",
+      "content": "Unterstützung von mindestens 5 Lösungen mit jeweils €20,000 Kapital (ohne Anteilsausgabe), Coaching und Reichweite."
     }
   },
   "accelerator": {
@@ -20,7 +36,7 @@
       "content": "Ein Accelerator-Programm für Ideen zur Bekämpfung der COVID-19-Krise."
     },
     "box1": {
-      "title": "Unser Accelerator",
+      "title": "Das Programm",
       "content": "Unterstützung von mindestens 5 Lösungen mit jeweils €20,000 Kapital (ohne Anteilsausgabe), Coaching und Reichweite."
     },
     "box2": {
@@ -30,7 +46,13 @@
     "box3": {
       "title": "Offenes Ökosystem",
       "content": "Unsere Datenbank aller Digitalen Projekte und Initiativen unterstützt das Ökosystem."
-    }
+    },
+    "ctaBox": {
+      "claim": "Sie wollen auch mitmachen?",
+      "cta": "Jetzt bewerben",
+      "link": "/apply"
+    },
+    "gotoProgram": "Zum Programm"
   },
   "initiative": {
     "landing": {
@@ -48,7 +70,12 @@
     "box3": {
       "title": "Offenes Ökosystem",
       "content": "Wir freuen uns auf den Austausch mit allen weiteren digitalen Initiativen, werden Kräfte bündeln und mit regelmäßigen Updates die Zusammenarbeit fördern."
-    }
+    },
+    "letter": {
+      "show": "Gesamten Brief anzeigen"
+    },
+    "openLetter": "Offener Brief",
+    "gotoDatabase": "Zur Datenbank"
   },
   "partners": {
     "unknownCategory": "Unbekannt",
@@ -115,7 +142,9 @@
     "releaseTitle": "“Gesund-Zusammen”: Die Digitale Wirtschaft stellt sich dem Kampf gegen COVID-19 ",
     "releaseHrefPDF": "187534-20200401090213000000000-gesund-zusammen-die-digitale-wirtschaft-s.pdf",
     "releaseHrefImage": "187534-20200401090213000000000-gesund-zusammen-die-digitale-wirtschaft-s.png",
-    "releaseHrefURL": "https://finleap.pr.co/187534-gesund-zusammen-die-digitale-wirtschaft-stellt-sich-dem-kampf-gegen-covid-19/"
+    "releaseHrefURL": "https://finleap.pr.co/187534-gesund-zusammen-die-digitale-wirtschaft-stellt-sich-dem-kampf-gegen-covid-19/",
+    "inqueryInitiative": "Für Medienanfragen rund um die Initative kontaktieren Sie bitte:",
+    "inqueryAccelerator": "Für Medienanfragen rund um den Accelerator kontaktieren Sie bitte:"
   },
   "latestNews": {
     "title": "Neueste Nachrichten",

@@ -7,7 +7,6 @@ language: "it"
 
 L'acceleratore #HealthyTogether è organizzato da TOA, weft e finleap, con il supporto di tanti altri attori dell'ecosistema (N26, BVDS, DeliveryHero, Celonis, Ada Health ed altri).
 
-
 #### Il programma offre:
 
 - €20,000 di capitale, senza vincoli.
@@ -17,7 +16,7 @@ L'acceleratore #HealthyTogether è organizzato da TOA, weft e finleap, con il su
 
 <br />
 **Il bando è aperto a team di qualsiasi dimensione, provenienza ed esperienza (startup, ricercatori, inventori, pensatori ecc.).** <br />
-**Il bando è aperto fino al 17 aprile 2020.**
+**Il bando per il lotto 1 è aperto fino al 17 aprile 2020.**
 
 #### La fase #1 del programma vedrà:
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { MenuItem } from "@material-ui/core";
+import { MenuItem, Select } from "@material-ui/core";
 import styled, { css, AnyStyledComponent } from "styled-components";
 import { withRouter, RouteComponentProps } from "react-router";
 import { Link } from "react-router-dom";
@@ -7,7 +7,6 @@ import { withTranslation, WithTranslation } from "react-i18next";
 
 import LogoDE from "../../../images/logo.svg";
 import LogoEN from "../../../images/logo_en.svg";
-import Select from "@material-ui/core/Select";
 
 interface IHeaderNavProps extends RouteComponentProps, WithTranslation {}
 
@@ -27,29 +26,41 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
         <Link to={`/${this.props.i18n.language}/`}>
           <HeaderLogo
             src={this.props.i18n.language === "de" ? LogoDE : LogoEN}
-            alt="#GesundZusammen"
+            alt={
+              this.props.i18n.language === "de"
+                ? "#GesundZusammen"
+                : "#HealthyTogether"
+            }
           />
         </Link>
         <HeaderNavItems>
-          {window.location.hostname !== "gesund-zusammen.de" && (
+          <HeaderNavItemWithSubitems>
             <HeaderNavLinkItem to={`/${this.props.i18n.language}/initiative`}>
               {this.props.t("header.nav.initiative")}
             </HeaderNavLinkItem>
-          )}
-          {window.location.hostname === "gesund-zusammen.de" && (
-            <HeaderNavLinkItem to={`/${this.props.i18n.language}/program`}>
-              {this.props.t("program.header.title")}
+            <HeaderNavLinkSubitem
+              className="subnav-item"
+              to={`/${this.props.i18n.language}/database`}
+            >
+              {this.props.t("header.nav.database")}
+            </HeaderNavLinkSubitem>
+          </HeaderNavItemWithSubitems>
+          <HeaderNavItemWithSubitems>
+            <HeaderNavLinkItem to={`/${this.props.i18n.language}/accelerator`}>
+              {this.props.t("header.nav.accelerator")}
             </HeaderNavLinkItem>
-          )}
-          <HeaderNavLinkItem to={`/${this.props.i18n.language}/database`}>
-            {this.props.t("header.nav.initiatives")}
-          </HeaderNavLinkItem>
-          <HeaderNavLinkItem to={`/${this.props.i18n.language}/partners`}>
-            {this.props.t("header.nav.supporters")}
-          </HeaderNavLinkItem>
+            <HeaderNavLinkSubitem
+              className="subnav-item"
+              to={`/${this.props.i18n.language}/program`}
+            >
+              {this.props.t("header.nav.program")}
+            </HeaderNavLinkSubitem>
+          </HeaderNavItemWithSubitems>
+
           <HeaderNavLinkItem to={`/${this.props.i18n.language}/faq`}>
             {this.props.t("header.nav.faqs")}
           </HeaderNavLinkItem>
+
           <HeaderLangSwitch>
             <Select
               value={this.props.i18n.language}
@@ -94,7 +105,7 @@ const HeaderNavItems: AnyStyledComponent = styled.div`
   }
 `;
 
-const headerNavItemStyles = css`
+const HeaderNavItemStyles = css`
   display: inline-block;
   width: 50%;
   font-family: inherit;
@@ -108,15 +119,45 @@ const headerNavItemStyles = css`
     display: inline-block;
     width: auto;
     margin-left: 2rem;
-
-    &:first-of-type {
-      margin-left: 0;
-    }
   }
 `;
 
 const HeaderNavLinkItem: AnyStyledComponent = styled(Link)`
-  ${headerNavItemStyles}
+  ${HeaderNavItemStyles}
+`;
+
+const HeaderNavLinkSubitem: AnyStyledComponent = styled(Link)`
+  position: absolute;
+  left: 0;
+  display: block;
+  font-family: inherit;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 3rem;
+
+  @media (min-width: 600px) {
+    display: inline-block;
+    width: auto;
+    margin-left: 2rem;
+  }
+`;
+
+const HeaderNavItemWithSubitems: AnyStyledComponent = styled.div`
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+
+  & > .subnav-item {
+    display: none;
+  }
+
+  &:hover {
+    & > .subnav-item {
+      display: block;
+    }
+  }
 `;
 
 const HeaderLangSwitch: AnyStyledComponent = styled.div`
@@ -125,7 +166,7 @@ const HeaderLangSwitch: AnyStyledComponent = styled.div`
 
   @media (min-width: 600px) {
     width: auto;
-    margin-left: 1.3rem;
+    margin-left: 2rem;
   }
 `;
 

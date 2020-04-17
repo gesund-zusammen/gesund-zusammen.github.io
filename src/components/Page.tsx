@@ -17,7 +17,6 @@ import LayoutSubPage from "./layouts/Sub/Main";
 
 import Accelerator from "./content/Accelerator";
 import Database from "./content/Database";
-import Partners from "./content/Partners";
 import Faq from "./content/Faq";
 import PrivacyPolicy from "./content/Privacy";
 import Press from "./content/Press";
@@ -67,7 +66,7 @@ class Page extends React.Component<IPageProps, {}> {
           </Route>
           <Route path="/:lang/(initiatives|database)">
             <LayoutDatabasePage
-              title={this.props.t("header.nav.initiatives")}
+              title={this.props.t("header.nav.database")}
               content={this.props.t("initiatives.content")}
             >
               <Database />
@@ -99,18 +98,10 @@ class Page extends React.Component<IPageProps, {}> {
           </Route>
           <Route path="/:lang/support">
             <LayoutSubPage
-              title={this.props.t("header.nav.supporters")}
+              title={this.props.t("header.nav.partners")}
               image={IlluPartner}
             >
               <PaperForm paperform="support-gesundzusammen" />
-            </LayoutSubPage>
-          </Route>
-          <Route path="/:lang/partners">
-            <LayoutSubPage
-              title={this.props.t("header.nav.supporters")}
-              image={IlluPartner}
-            >
-              <Partners />
             </LayoutSubPage>
           </Route>
           <Route path="/:lang/faq">
@@ -146,15 +137,9 @@ class Page extends React.Component<IPageProps, {}> {
             </LayoutSubPage>
           </Route>
           <Route path="/:lang/" exact={true} default={true}>
-            {window.location.hostname === "gesund-zusammen.de" ? (
-              <LayoutAccelerator>
-                <Accelerator />
-              </LayoutAccelerator>
-            ) : (
-              <LayoutStart>
-                <Start />
-              </LayoutStart>
-            )}
+            <LayoutStart>
+              <Start />
+            </LayoutStart>
           </Route>
           <Redirect to={`/${DEFAULT_LANG}/`} />
         </Switch>

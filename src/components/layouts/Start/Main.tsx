@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Container } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
-import LandingHeader from "./Header";
+import Header from "./Header";
 import LatestNews from "../Shared/LatestNews";
 import Social from "../Shared/Social";
 import Footer from "../Shared/Footer";
@@ -15,7 +15,7 @@ class LayoutLanding extends React.Component {
       <>
         <LandingHeaderBox id="header" component="header">
           <Container maxWidth="lg">
-            <LandingHeader />
+            <Header />
           </Container>
         </LandingHeaderBox>
 

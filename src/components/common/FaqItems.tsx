@@ -16,10 +16,6 @@ interface IFaqContent {
   content: string;
 }
 
-interface IFaqContent {
-  title: string;
-  content: string;
-}
 interface IFaqItemsState {
   panel: string;
 }
