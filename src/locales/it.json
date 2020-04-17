@@ -1,0 +1,177 @@
+{
+  "language": {
+    "de": "tedesco",
+    "en": "inglese",
+    "fr": "francese",
+    "it": "italiano",
+    "es": "spagnolo"
+  },
+  "header": {
+    "nav": {
+      "initiative": "Iniziativa",
+      "database": "Database",
+      "accelerator": "Accelerator",
+      "faqs": "Domande frequenti",
+      "program": "Programma",
+      "app": "IchHabs App"
+    }
+  },
+  "start": {
+    "box1": {
+      "title": "L'iniziativa",
+      "content": "Maggiori informazioni sulla nostra iniziativa digitale."
+    },
+    "box2": {
+      "title": "L'applicazione",
+      "content": "Plus d'informations sur l'application seront bientôt disponibles"
+    },
+    "box3": {
+      "title": "Acceleratore",
+      "content": "A minimum of 5 solutions are supported with €20,000 of equity-free capital each, mentorship and reach."
+    }
+  },
+  "accelerator": {
+    "landing": {
+      "title": "La tecnologia salva le vite.",
+      "content": "Un programma di accelerazione per velocizzare soluzioni contro la crisi da Covid-19."
+    },
+    "box1": {
+      "title": "Programma",
+      "content": "Un minimo di 5 soluzioni finanziate con €20,000, mentorship and distribuzione."
+    },
+    "box2": {
+      "title": "Servizi a supporto",
+      "content": "Grazie ai contributi dei partner, offriamo un'ampia gamma di servizi a supporto, dalla tecnologia al marketing and accesso istituzionale per tutti I partecipanti."
+    },
+    "box3": {
+      "title": "Ecosistema aperto",
+      "content": "Stiamo investendo nella creazione di un ecosistema attivo tramite la messa a disposizione di un database di tutte le iniziative rilevanti relative al COVID-19, oltre ad altre iniziative collegate."
+    },
+    "ctaBox": {
+      "claim": "Vuoi far parte anche dell'acceleratore?",
+      "cta": "Applica ora",
+      "link": "/apply"
+    },
+    "gotoProgram": "Vai al programma"
+  },
+  "initiative": {
+    "landing": {
+      "title": "La tecnologia salva le vite.",
+      "content": "Strumenti digitali per combattere il Covid-19"
+    },
+    "box1": {
+      "title": "Sviluppo agile",
+      "content": "Nel ruolo di partner tecnologici, investiamo insieme nella creazione di app e servizi di cui il nostro paese ha bisogno ora, offrendo modalità semplici di interazione, open source and velocità."
+    },
+    "box2": {
+      "title": "Supporto digitale",
+      "content": "Supportiamo altre iniziative digitali con le nostre risorse al fine di migliorare la raccolta dei dati. Contattaci con idee e necessità."
+    },
+    "box3": {
+      "title": "Ecosistema aperto",
+      "content": "Non vediamo l'ora di scambiare opinioni ed esperienze con altre iniziative analoghe, per unire le forze e promuovere la cooperazione."
+    },
+    "letter": {
+      "show": "Mostra lettera completa"
+    },
+    "openLetter": "Lettera aperta",
+    "gotoDatabase": "Vai al database"
+  },
+  "program": {
+    "header": {
+      "title": "Programma",
+      "content": "Programma di accelerazione per strumenti digitali contro il Covid-19 per aiutare a portarli al pubblico più velocemente"
+    },
+    "title": "Il programma di accelerazione",
+    "claim": "Hai bisogno di supporto?",
+    "cta": "Applica ora",
+    "link": "/apply",
+    "type": {
+      "companies": "Società parte del programma di accelerazione"
+    }
+  },
+  "partners": {
+    "unknownCategory": "Sconosciuto",
+    "title": "Fondatori e partner tecnologici",
+    "claim": "Vuoi aiutare a fare la differenza?",
+    "cta": "entra a far parte della nostra iniziativa",
+    "link": "/support"
+  },
+  "privacy": {
+    "claim": "Hai un'altra domanda?",
+    "cta": "Contattaci",
+    "link": "mailto:privacy@gesund-zusammen.de"
+  },
+  "initiatives": {
+    "content": "Al fine di contenere la diffusione del Covid-19, una competizione di idee a livello mondiale sta emergendo, significativamente accelerata dall'industria tecnologica e ad altri attori chiave. Non solo portiamo insieme risorse e capacità dell'industria digitale a livello Europeo, ma cerchiamo e promoviamo una scambio aperto con altre iniziative digitali così da massimizzare la potenza delle idee migliori. \n\n Qui puoi trovare tutte le iniziative digitali e le tecnologie a livello mondiale, continuamente aggiornate. Se vuoi inserire altri progetti a tale lista, contattaci.",
+    "filter": {
+      "filterBy": "Filtra per",
+      "all": "Tutto",
+      "global": "Globale",
+      "germany": "In Germania"
+    },
+    "unknownCategory": "Sconosciuto",
+    "showMore": "Mostra altro",
+    "claim": "Manca un'iniziativa?",
+    "cta": "Contattaci",
+    "link": "mailto:initiatives@gesund-zusammen.de"
+  },
+  "faqs": {
+    "title": "Domande?",
+    "button": "FAQs",
+    "claim": "Hai un'altra domanda?",
+    "cta": "Contattaci",
+    "link": "mailto:faqs@gesund-zusammen.de",
+    "contact": "Per ulteriori domande, si prega di contattare: Solveig Rathenow <media@gesund-zusammen.de>"
+  },
+  "press": {
+    "title": "Contatti Stampa",
+    "claim": "Hai un'altra domanda?",
+    "cta": "Contattaci",
+    "link": "mailto:media@gesund-zusammen.de",
+    "pageHeader": "Contattaci",
+    "pressContactName": "Solveig Rathenow",
+    "pressContactTitle": "Head of Venture Communications",
+    "pressContactEmail": "media@gesund-zusammen.de",
+    "downloadLogo": "Download Logo",
+    "resources": "Risorse",
+    "resourcesLine1": "Scarica il logo in vari formati.",
+    "resourcesLine2": "Include I formati EPS, JPG e PNG.",
+    "release": "Press Release",
+    "releaseLine1": "Scarica la press release e l'elenco dei partner.",
+    "releaseTitle": "\"Gesund-Zusammen\": la coalizione tech per combattere il Covid-19",
+    "releaseHrefPDF": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.pdf",
+    "releaseHrefImage": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.png",
+    "releaseHrefURL": "https://finleap.pr.co/187535-gesund-zusammen-tech-coalition-formed-to-combat-covid-19/",
+    "inqueryInitiative": "Per richieste dei media sull'iniziativa, si prega di contattare:",
+    "inqueryAccelerator": "Fore media inqueries about the acceleratore, please contact: "
+  },
+  "latestNews": {
+    "title": "Ultime notizie",
+    "content": "Leggi #HealthyTogether e il nostro programma Accelerator nei media"
+  },
+  "newsletter": {
+    "title": "Iscriviti alla nostra Newsletter",
+    "content": "Vi terremo aggiornati circa nuovi strumenti, iniziative ecc.",
+    "inputPlaceholder": "E-Mail",
+    "cta": "Iscriviti"
+  },
+  "footer": {
+    "title": "Condividere come atto d'amore",
+    "claim": "Parla di noi alla tua comunità. Più siamo e più veloci usciremo dalla crisi!",
+    "shareLink": "Condividi il nostro link",
+    "shareVia": "O condividi via",
+    "emailShareSubject": "Dai un'occhio a gesund-zusammen.de",
+    "copy": "Copia",
+    "copied": "Copiato",
+    "twitter": {
+      "title": "Seguici!"
+    },
+    "nav": {
+      "privacy": "Privacy Policy",
+      "vulnerability": "Report Vulnerability",
+      "imprint": "Informazioni societarie",
+      "press": "Relazioni stampa e contatti"
+    }
+  }
+}

@@ -37,3 +37,20 @@ Creating a docker image to serve this app is also possible:
 docker build --no-cache --build-arg NODE_ENV=[local|production] --build-arg OPTIMIZED_BUILD=[true|false] -t helios-admin:latest .
 docker run -p 80:4000 -d helios-admin:latest
 ```
+
+## Releasing healthy-together.eu
+
+
+```
+first time
+git clone git@github.com:gesund-zusammen/healthy-together.git
+git remote add release git@github.com:gesund-zusammen/gesund-zusammen.github.io.git
+git pull release
+git merge release/master --allow-unrelated-histories
+git push
+
+futher on
+git pull release master
+... merge ...
+git push
+```

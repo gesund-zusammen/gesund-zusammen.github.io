@@ -43,11 +43,9 @@ class FooterShareBox extends React.PureComponent<
           {this.props.t("footer.shareLink")}
         </Typography>
         <CopyBox>
-          <span>https://gesund-zusammen.de</span>
+          <span>{window.location.href}</span>
           {this.state.linkCopied && <CopiedIndicator />}
-          <CopyLink
-            onClick={() => this.copyToClipboard("https://gesund-zusammen.de")}
-          >
+          <CopyLink onClick={() => this.copyToClipboard(window.location.href)}>
             {this.state.linkCopied
               ? this.props.t("footer.copied")
               : this.props.t("footer.copy")}
@@ -59,7 +57,7 @@ class FooterShareBox extends React.PureComponent<
           </Typography>
           <a
             className="share-icon-link"
-            href="whatsapp://send?text=https://gesund-zusammen.de"
+            href={`whatsapp://send?text=${window.location.href}`}
             data-action="share/whatsapp/share"
           >
             <img
@@ -69,7 +67,7 @@ class FooterShareBox extends React.PureComponent<
             />
           </a>
           <a
-            href="https://www.facebook.com/sharer/sharer.php?u=https://gesund-zusammen.de"
+            href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}
             target="_blank"
             rel="noopener noreferrer"
             className="share-icon-link"
@@ -83,7 +81,7 @@ class FooterShareBox extends React.PureComponent<
           <a
             href={`mailto:?subject=${encodeURIComponent(
               this.props.t("footer.emailShareSubject").toString(),
-            )}&body=${encodeURIComponent("https://gesund-zusammen.de")}`}
+            )}&body=${encodeURIComponent(window.location.href)}`}
             className="share-icon-link"
           >
             <img className="share-icon" src={IconEmail} alt="Share via Email" />

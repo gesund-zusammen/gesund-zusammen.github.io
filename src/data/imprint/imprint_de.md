@@ -5,7 +5,7 @@ language: "de"
 
 ## Adresse
 
-Gesund Zusammen gGmbH i.G.<br />
+Gesund Zusammen gGmbH<br />
 Urbanstr. 71<br />
 10967 Berlin, Germany
 
@@ -22,7 +22,7 @@ Julian Bernhard Edward Teicke
 ### Commercial Register
 
 Amtsgericht Charlottenburg<br />
-HRB [Aktualisierung nach erfolgreicher Eintragung] B<br />
+HRB 216639 B<br />
 VAT ID: [Aktualisierung nach erfolgreicher Eintragung]
 
 ### The following information is legally required according to German law

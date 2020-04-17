@@ -12,8 +12,6 @@ const HeaderBox: AnyStyledComponent = styled(Box)`
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  overflow-wrap: break-word;
-  hyphens: auto;
 
   @media (min-width: 600px) {
     padding-bottom: 10rem;

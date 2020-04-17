@@ -50,5 +50,83 @@
       "title": "Do you support digital tools also financially from the initiative?",
       "content": "Our most valuable resource is our competent employees working in agile teams. Putting them at the service of the community now is our contribution for overcoming this crisis. Do you have a problem you want to solve? Please contact us."
     }
+  ],
+  "it": [
+    {
+      "title": "Chi siamo",
+      "content": "In qualità di ampia alleanza di aziende tecnologiche europee, vogliamo aiutare attivamente la società, la politica e l'economia a contenere COVID-19 con soluzioni digitali. Per raggiungere questo obiettivo, stiamo lavorando su una delle risorse più importanti disponibili per mondo oggi: l'informazione."
+    },
+    {
+      "title": "Perchè HealthyTogether?",
+      "content": "Al fine di contenere COVID-19, sta emergendo una competizione mondiale di idee, notevolmente accelerata dall'industria tecnologica e da altri. Non stiamo solo mettendo insieme le risorse e le capacità dell'economia digitale europea. Cerchiamo anche di promuovere uno scambio aperto con altre iniziative digitali affinché possano prevalere le idee con il massimo potenziale."
+    },
+    {
+      "title": "Qual è l'obiettivo?",
+      "content": "I dati ci consentono di fare ricerche insieme, avvertire le persone, salvare vite umane. Eppure l'uso diffuso dei dati non è privo di rischi: di fronte alla crisi, ci sono voci crescenti che chiedono il sacrificio dei diritti fondamentali per il beneficio della salute. Insieme dimostreremo il punto: possiamo avere sia il controllo dell'infezione che la privacy."
+    },
+    {
+      "title": "Cercate altri partner?",
+      "content": "Siamo sempre aperti ad altri partner che vorrebbero contribuire con le loro capacità e risorse per proteggere la salute della società."
+    },
+    {
+      "title": "Cosa ne pensate del lavoro del sistema sanitario, dei medici e del personale infermieristico?",
+      "content": "Ammiriamo e supportiamo il lavoro di tutti nel sistema sanitario. Ecco perché vogliamo contribuire insieme a migliorare la loro situazione lavorativa e la base di dati delle loro decisioni quotidiane attraverso la tecnologia."
+    },
+    {
+      "title": "Sostenete gli strumenti digitali anche finanziariamente grazie all'iniziativa?",
+      "content": "La nostra risorsa più preziosa sono i nostri dipendenti competenti che lavorano in team agili. Metterli al servizio della comunità ora è il nostro contributo per superare questa crisi. Hai una soluzione che vuoi far diventare realtà? Contattaci."
+    }
+  ],
+  "fr": [
+    {
+      "title": "À propos de nous",
+      "content": "Nous sommes une vaste alliance d'entreprises technologiques. Nous voulons aider - activement - la société, le monde politique et les entreprises à contenir le COVID-19 avec des solutions numériques. Nous nous appuyons sur l'une des ressources les plus importantes dont dispose le monde aujourd'hui: l'information."
+    },
+    {
+      "title": "Pourquoi HealthyTogether?",
+      "content": "Afin de contenir COVID-19, une compétition mondiale d'idées est en train d'émerger, considérablement accélérée par l'industrie technologique mais aussi par d'autres. Nous ne nous contentons pas de rassembler les ressources et les capacités de l'économie numérique allemande. Nous recherchons et encourageons également un échange ouvert avec d'autres initiatives numériques afin que les idées ayant le plus grand potentiel puissent prévaloir."
+    },
+    {
+      "title": "Quel est votre but?",
+      "content": "Les données jouent un rôle clé, par exemple dans la recherche, dans la prévention du public ou pour sauver des vies. Et pourtant, l'utilisation généralisée des données n'est pas sans risque : face à la crise, des voix de plus en plus nombreuses s'élèvent en faveur du sacrifice des droits fondamentaux pour le bien de la santé Ensemble, nous allons prouver qu'il n'y a pas de compromis à faire, nous pouvons à la fois contrôler l'infection et protéger les données."
+    },
+    {
+      "title": "Cherchez-vous d'autres partenaires?",
+      "content": "Nous sommes toujours ouverts à d'autres partenaires qui voudraient apporter leurs compétences et leurs ressources pour protéger la santé de la société."
+    },
+    {
+      "title": "Que pensez-vous du travail du système de santé, des médecins et du personnel infirmier ?",
+      "content": "Nous admirons et soutenons le travail de chacun dans le système de santé. C'est pourquoi nous voulons contribuer ensemble à améliorer leur situation professionnelle et la base de données de leurs décisions quotidiennes grâce à la technologie."
+    },
+    {
+      "title": "Est ce que cette initiative soutient financièrement l'émergence de nouveaux outils numériques?",
+      "content": "Notre ressource la plus précieuse est constituée par nos employés compétents qui travaillent au sein d'équipes agiles. Les mettre au service de la communauté est notre contribution pour surmonter cette crise. Vous avez un problème que vous voulez résoudre ? Veuillez nous contacter."
+    }
+  ],
+  "es": [
+    {
+      "title": "Sobre nosotros",
+      "content": "Nosotros, como alianza de empresas tecnológicas alemanas, queremos ayudar activamente a la sociedad, los gobiernos y las empresas, a contener la pandemia del COVID-19 con soluciones digitales. Para lograrlo, estamos construyendo sobre uno de los recursos más importantes disponibles en el mundo hoy en día: La información."
+    },
+    {
+      "title": "¿Por qué SaludJuntos?",
+      "content": "Con el fin de contener el COVID-19, está surgiendo una competencia mundial de ideas, acelerada significativamente por la industria tecnológica y otros. No sólo estamos reuniendo los recursos y capacidades de la economía digital alemana. También buscamos y promovemos el intercambio abierto con otras iniciativas digitales para que las ideas con mayor potencial puedan prevalecer."
+    },
+    {
+      "title": "¿Cuál es su objetivo?",
+      "content": "Los datos nos permiten investigar juntos, advertir a la gente, salvar vidas. Sin embargo, el uso generalizado de los datos no está exento de riesgos: ante la crisis, cada vez hay más voces que piden que se sacrifiquen los derechos fundamentales en beneficio de la salud. Juntos demostraremos este punto: Podemos tener tanto el control de la pandemia como la privacidad."
+    },
+    {
+      "title": "¿Estáis buscando más socios?",
+      "content": "Siempre estamos abiertos a otros socios que quieran contribuir con sus habilidades y recursos para proteger la salud de la sociedad."
+    },
+    {
+      "title": "¿Qué opináis del trabajo del sistema de salud, los médicos y el personal de enfermería?",
+      "content": "Admiramos y apoyamos el trabajo de todos en el sistema de salud. Por eso queremos contribuir juntos a mejorar su situación laboral y la base de datos de sus decisiones diarias a través de la tecnología."
+    },
+    {
+      "title": "¿Apoyáis financieramente a las herramientas digitales en la iniciativa?",
+      "content": "Nuestro recurso más valioso son nuestros empleados que trabajan en equipos ágiles. Ponerlos al servicio de la comunidad ahora es nuestra contribución para superar esta crisis. ¿Tienes algún problema que quieras resolver? Por favor, ponte en contacto con nosotros."
+    }
   ]
 }

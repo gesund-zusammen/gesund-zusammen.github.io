@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Grid, Typography } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
-interface IPartnerCardProps {
+interface ICardProps {
   image: string;
   name: string;
   link: string;
@@ -11,33 +11,33 @@ interface IPartnerCardProps {
   nameColorInverted?: boolean;
 }
 
-class PartnerCard extends React.PureComponent<IPartnerCardProps, {}> {
+class ImageCard extends React.PureComponent<ICardProps, {}> {
   render = () => {
     return (
       <Grid item xs={6} sm={3}>
         <a href={this.props.link} target="_blank" rel="noopener noreferrer">
-          <PartnerCardWrapper>
-            <PartnerCardContent
+          <CardWrapper>
+            <CardContent
               style={{
                 backgroundImage: `url(${this.props.image})`,
                 backgroundColor: this.props.color,
                 backgroundSize: this.props.imageXL ? "40% auto" : "80% auto",
               }}
-            ></PartnerCardContent>
-            <PartnerName
+            ></CardContent>
+            <CardName
               variant="caption"
               className={this.props.nameColorInverted ? "inverted" : "regular"}
             >
               {this.props.name}
-            </PartnerName>
-          </PartnerCardWrapper>
+            </CardName>
+          </CardWrapper>
         </a>
       </Grid>
     );
   };
 }
 
-const PartnerCardWrapper: AnyStyledComponent = styled(Card)`
+const CardWrapper: AnyStyledComponent = styled(Card)`
   && {
     position: relative;
     text-align: center;
@@ -57,7 +57,7 @@ const PartnerCardWrapper: AnyStyledComponent = styled(Card)`
   }
 `;
 
-const PartnerCardContent: AnyStyledComponent = styled.div`
+const CardContent: AnyStyledComponent = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
@@ -65,7 +65,7 @@ const PartnerCardContent: AnyStyledComponent = styled.div`
   background-position: 50% 40%;
 `;
 
-const PartnerName: AnyStyledComponent = styled(Typography)`
+const CardName: AnyStyledComponent = styled(Typography)`
   && {
     position: absolute;
     bottom: 1rem;
@@ -89,4 +89,4 @@ const PartnerName: AnyStyledComponent = styled(Typography)`
   }
 `;
 
-export default PartnerCard;
+export default ImageCard;

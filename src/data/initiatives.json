@@ -3,64 +3,91 @@
     {
       "slug": "gesund_zusammen_initiative",
       "name": {
+        "de": "GesundZuammen Initiative",
         "en": "GesundZuammen Initiative",
-        "de": "GesundZuammen Initiative"
+        "fr": "Initiative Initiative",
+        "it": "Iniziativa HealthyTogether",
+        "es": "Iniciativa SaludJuntos"
       }
     },
     {
       "slug": "digital_tools",
       "name": {
+        "de": "Digitale Tools",
         "en": "Digital Tools",
-        "de": "Digitale Tools"
+        "fr": "Outils Numériques",
+        "it": "Strumenti digitali",
+        "es": "Herramientas Digitales"
       }
     },
     {
       "slug": "digital_consultation",
       "name": {
+        "de": "Digitale Konsultation",
         "en": "Digital Consultation",
-        "de": "Digitale Konsultation"
+        "fr": "Consultation Digitale",
+        "it": "Consultazione digitale",
+        "es": "Consultoría Digital"
       }
     },
     {
       "slug": "infection_tracking",
       "name": {
+        "de": "Infektions Verfolgung Übersichten",
         "en": "Infection Tracking Dashboards",
-        "de": "Infektions Verfolgung Übersichten"
+        "fr": "Tableaux de bord de suivi des infections",
+        "it": "Dashboard di tracking dell'infezione",
+        "es": "Paneles de Seguimiento de la pandemia"
       }
     },
     {
       "slug": "initiatives",
       "name": {
+        "de": "Weitere Initiativen",
         "en": "Futher Initiatives",
-        "de": "Weitere Initiativen"
+        "fr": "Autres Initiatives",
+        "it": "Ulteriori iniziative",
+        "es": "Otras iniciativas"
       }
     },
     {
       "slug": "hackathons",
       "name": {
+        "de": "Hackathons",
         "en": "Hackathons",
-        "de": "Hackathons"
+        "fr": "Hackathons",
+        "it": "Hackathons",
+        "es": "Hackathons"
       }
     },
     {
       "slug": "knowledge_resources",
       "name": {
+        "de": "Wissensdatenbanken",
         "en": "Knowledge Resources",
-        "de": "Wissensdatenbanken"
+        "fr": "Base de données",
+        "it": "Risorse di conoscenza",
+        "es": "Recursos de Conocimiento"
       }
     },
     {
       "slug": "research_and_government_sites",
       "name": {
+        "de": "Forschungs- und Regierungsseiten",
         "en": "Research & Government Sites",
-        "de": "Forschungs- und Regierungsseiten"
+        "fr": "Recherche et sites gouvernementaux",
+        "it": "Siti di ricerca e governo",
+        "es": "Páginas de Investigación y de Gobiernos"
       }
     },
     {
       "slug": "wearables_and_iot",
       "name": {
+        "de": "Wearables & IoT",
         "en": "Wearables & IoT",
-        "de": "Wearables & IoT"
+        "fr": "Dispositifs portables & IoT",
+        "it": "Wearables & IoT",
+        "es": "Wearables & IoT"
       }
     }
   ],
@@ -796,8 +823,8 @@
       "global": true
     },
      {
-      "name": "Epitrack - Entlastung der Gesundheitsämter",
-      "link": "Epitrack.de",
+      "name": "Quarano - Entlastung der Gesundheitsämter",
+      "link": "quarano.de",
       "category": "digital_tools",
       "description": {
         "de": "Entlastung der Mitarbeiter in Gesundheitsämtern bei der Verwaltung von Quarantäne- und Isolationsmaßnahmen durch ein Online-Symptomtagebuch. Eine Idee aus dem #WirvsVirus-Hackathon.",

@@ -18,7 +18,7 @@ media@gesund-zusammen.de<br />
 ## Contact details of the Data Protection Officer
 
 PROLIANCE GmbH / www.datenschutzexperte.de<br />
-Datenschutzbeauftragter<br />
+Data Protection Officer<br />
 Leopoldstr. 21, 80802 München<br />
 [datenschutzbeauftragter@datenschutzexperte.de](mailto:datenschutzbeauftragter@datenschutzexperte.de)
 

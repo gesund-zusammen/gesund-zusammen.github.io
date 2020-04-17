@@ -1,0 +1,177 @@
+{
+  "language": {
+    "de": "Allemand",
+    "en": "Anglais",
+    "fr": "Le français",
+    "it": "Italien",
+    "es": "Espagnol"
+  },
+  "header": {
+    "nav": {
+      "initiative": "Initiative",
+      "database": "Base de données",
+      "accelerator": "Accelerator",
+      "faqs": "Questions fréquentes",
+      "program": "Programme",
+      "app": "IchHabs App"
+    }
+  },
+  "start": {
+    "box1": {
+      "title": "L'initiative",
+      "content": "En savoir plus sur notre initiative numérique."
+    },
+    "box2": {
+      "title": "L'application",
+      "content": "Plus d'informations sur l'application seront bientôt disponibles"
+    },
+    "box3": {
+      "title": "Accélérateur",
+      "content": "Un minimum de 5 solutions sont prises en charge avec 20 000 € de capitaux propres chacun, le mentorat et la portée."
+    }
+  },
+  "accelerator": {
+    "landing": {
+      "title": "La technologie sauve des vies.",
+      "content": "Un programme d'accélération qui vise à trouver des solutions contre le COVID-19"
+    },
+    "box1": {
+      "title": "Programme",
+      "content": "Au moins 5 solutions retenues, soutenues avec EUR 20,000 de fonds propres, un coaching et un accès à notre réseau"
+    },
+    "box2": {
+      "title": "Accès à des ressources",
+      "content": "Les partenaires de ce programme mettent à disposition des participants un large éventail de ressources, allant du tech au marketing, mais aussi l'accès à nos relations institutionnelles."
+    },
+    "box3": {
+      "title": "Ecosystème Ouvert",
+      "content": "Nous investissons dans la construction d'un écosystème actif en fournissant une base de données de toutes les initiatives COVID-19 pertinentes, et d'autres activités de sensibilisation"
+    },
+    "ctaBox": {
+      "claim": "Vous voulez aussi faire partie de l'accélérateur?",
+      "cta": "Appliquer maintenant",
+      "link": "/apply"
+    },
+    "gotoProgram": "Aller au programme"
+  },
+  "initiative": {
+    "landing": {
+      "title": "La technologie sauve des vies.",
+      "content": "Les outils numériques pour combattre le Covid-19"
+    },
+    "box1": {
+      "title": "Développement agile",
+      "content": "En tant que partenaires technologiques établis, nous investissons ensemble dans la création d’applications et outils - conviviaux, rapides et à code source ouvert - dont notre pays a tant besoin en cette période difficile."
+    },
+    "box2": {
+      "title": "Soutien numérique",
+      "content": "Nous mettons à disposition nos moyens pour soutenir les initiatives numériques visant à améliorer la réponse à Covid-19. Contactez-nous pour faire part de vos idées et de vos besoins."
+    },
+    "box3": {
+      "title": "Ecosystème ouvert",
+      "content": "Nous sommes impatients d'échanger avec toutes les autres initiatives numériques, d'unir nos forces et de promouvoir la coopération grâce à des updates réguliers."
+    },
+    "letter": {
+      "show": "Afficher la lettre complète"
+    },
+    "openLetter": "Lettre ouverte",
+    "gotoDatabase": "Accéder à la base de données"
+  },
+  "program": {
+    "header": {
+      "title": "Programme",
+      "content": "Accélération d'outils digitaux vs Covid-19, mettre à disposition du grand public au plus vite"
+    },
+    "title": "Le programme d'accélération #Gesundzusammen",
+    "claim": "Vous avez besoin de soutien?",
+    "cta": "Postulez maintenant",
+    "link": "/apply",
+    "type": {
+      "companies": "sociétés de l'accélérateur "
+    }
+  },
+  "partners": {
+    "unknownCategory": "Inconnu",
+    "title": "Partenaires technologies et fondateurs",
+    "claim": "Vous voulez aider à faire une différence?",
+    "cta": "Rejoignez cette initiative",
+    "link": "/support"
+  },
+  "privacy": {
+    "claim": "Vous avez une autre question?",
+    "cta": "Contactez nous",
+    "link": "mailto:privacy@gesund-zusammen.de"
+  },
+  "initiatives": {
+    "content": "Afin de contenir COVID-19, une compétition mondiale d'idées est en train d'émerger, considérablement accélérée par l'industrie technologique mais aussi par d'autres. Nous\nne souhaitons pas nous limiter aux ressources et capacités de l'économie numérique allemande. Nous recherchons et encourageons également un échange ouvert avec\nd'autres initiatives numériques afin que les idées ayant le plus grand potentiel puissent prévaloir. Vous trouverez ici des informations sur les diverses technologies et initiatives numériques provenant du monde entier - constamment mises à jour. Si vous souhaitez\najouter d'autres projets à cette vitrine, veuillez nous contacter.",
+    "filter": {
+      "filterBy": "Filtrer par",
+      "all": "Tout",
+      "global": "Dans le monde entier",
+      "germany": "En Allemagne"
+    },
+    "unknownCategory": "Inconnu",
+    "showMore": "En savoir plus",
+    "claim": "Une initiative manquante?",
+    "cta": "Contactez nous",
+    "link": "mailto:initiatives@gesund-zusammen.de"
+  },
+  "faqs": {
+    "title": "Questions?",
+    "button": "Questions fréquentes",
+    "claim": "Vous avez une autre question?",
+    "cta": "Contactez nous",
+    "link": "mailto:faqs@gesund-zusammen.de",
+    "contact": "Pour d'autres questions, merci de contacter: Solveig Rathenow <media@gesund-zusammen.de>"
+  },
+  "press": {
+    "title": "Contact Presse",
+    "claim": "Vous avez une autre question?",
+    "cta": "Contactez nous",
+    "link": "mailto:media@gesund-zusammen.de",
+    "pageHeader": "Contactez nous",
+    "pressContactName": "Solveig Rathenow",
+    "pressContactTitle": "Head of Venture Communications",
+    "pressContactEmail": "media@gesund-zusammen.de",
+    "downloadLogo": "Télécharger le logo",
+    "resources": "Ressources",
+    "resourcesLine1": "Télécharger le logo GesundZusammen dans plusieurs formats.",
+    "resourcesLine2": "Inclus les formats EPS, JPG, and PNG formats. Pour le numérique et l'impression.",
+    "release": "Communiqué de presse",
+    "releaseLine1": "Télécharger le communiqué de presse GesundZusammen et la liste des partenaires.",
+    "releaseTitle": "\"Gesund-Zusammen\": une alliance Tech pour combattre le Covid-19",
+    "releaseHrefPDF": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.pdf",
+    "releaseHrefImage": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.png",
+    "releaseHrefURL": "https://finleap.pr.co/187535-gesund-zusammen-tech-coalition-formed-to-combat-covid-19/",
+    "inqueryInitiative": "Pour les questions des médias sur l'initiative, veuillez contacter:",
+    "inqueryAccelerator": "Per richieste dei media sull'acceleratore, si prega di contattare:"
+  },
+  "latestNews": {
+    "title": "Dernières nouvelles",
+    "content": "En savoir plus sur #HealthyTogether et notre programme d'accélérateur dans les médias"
+  },
+  "newsletter": {
+    "title": "S'abonner à la newsletter",
+    "content": "Nous vous tiendrons informés de nos nouvelles initiatives, outils, etc.",
+    "inputPlaceholder": "E-Mail",
+    "cta": "S'abonner"
+  },
+  "footer": {
+    "title": "Partager, c'est prendre soin",
+    "claim": "Votre communauté n’a pas encore entendu parler de nous ? Partagez svp ! Plus\nnombreux nous serons, plus vite nous surmonterons cette situation!",
+    "shareLink": "Partagez le lien",
+    "shareVia": "Ou Partagez avec",
+    "emailShareSubject": "En savoir plus sur gesund-zusammen.de",
+    "copy": "Copier",
+    "copied": "Copié",
+    "twitter": {
+      "title": "Suivez-nous!"
+    },
+    "nav": {
+      "privacy": "Politique de confidentialité",
+      "vulnerability": "Rapport sur la vulnérabilité",
+      "imprint": "Mentions légales",
+      "press": "Presse et contact"
+    }
+  }
+}

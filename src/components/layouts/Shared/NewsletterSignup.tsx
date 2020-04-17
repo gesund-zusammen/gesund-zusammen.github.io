@@ -32,7 +32,7 @@ class NewsletterSignup extends React.Component<
 
   render = () => {
     return (
-      <NewsletterSignupBox id="newsletter-signup" marginTop={4}>
+      <NewsletterSignupBox id="newsletter-signup">
         <NewsletterSignupContainer maxWidth="lg">
           <Grid container spacing={4}>
             <Hidden xsDown>
@@ -145,7 +145,7 @@ const SubscribeButton: AnyStyledComponent = styled(Button)`
     width: 100%;
     height: 100%;
     background-color: #0a6eaa;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: none;
     text-align: center;
@@ -154,7 +154,6 @@ const SubscribeButton: AnyStyledComponent = styled(Button)`
 
     @media (min-width: 600px) {
       margin: 0;
-      font-size: 1.4rem;
     }
   }
 `;

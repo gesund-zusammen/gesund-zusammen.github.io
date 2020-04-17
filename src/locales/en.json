@@ -1,37 +1,81 @@
 {
   "language": {
     "de": "German",
-    "en": "English"
+    "en": "English",
+    "fr": "French",
+    "it": "Italian",
+    "es": "Spanish"
   },
   "header": {
     "nav": {
-      "initiatives": "Database",
-      "supporters": "Partners",
-      "faqs": "FAQs"
-    },
-    "content": {
-      "landing": {
-        "title": "Technology saving lives.",
-        "content": "An accelerator program to boost solutions against the COVID-19 crisis."
-      },
-      "initiatives": {
-        "content": "In order to contain COVID-19, a worldwide competition of ideas is emerging, significantly accelerated by the tech industry and others. We are not only bringing together the resources and capabilities of the German digital economy. We also seek and promote open exchange with other digital initiatives so that the ideas with the greatest potential can prevail. \n\n Here you will find exciting digital initiatives and technologies from around the world - continuously updated. If you would like to add more projects to this showcase, please contact us."
-      }
+      "initiative": "Initiative",
+      "database": "Database",
+      "accelerator": "Accelerator",
+      "faqs": "FAQs",
+      "app": "IchHabs App",
+      "program": "Program"
     }
   },
-  "boxes": {
-    "initiative": {
-      "title": "Accelerator",
-      "content": "A minimum of 5 solutions are supported with €20,000 of equity-free capital, mentorship and reach."
+  "start": {
+    "box1": {
+      "title": "The Initiative",
+      "content": "Read more about our digital initiative."
     },
-    "support": {
+    "box2": {
+      "title": "The App",
+      "content": "More information around the app will come soon."
+    },
+    "box3": {
+      "title": "Accelerator",
+      "content": "A minimum of 5 solutions are supported with €20,000 of equity-free capital each, mentorship and reach."
+    }
+  },
+  "accelerator": {
+    "landing": {
+      "title": "Technology saving lives.",
+      "content": "An accelerator program to boost solutions against the COVID-19 crisis."
+    },
+    "box1": {
+      "title": "Program",
+      "content": "A minimum of 5 solutions are supported with €20,000 of equity-free capital each, mentorship and reach."
+    },
+    "box2": {
       "title": "Support System",
       "content": "Through the contributing partners we're offering a wide range of support services from tech to marketing and institutional access to all participants."
     },
-    "ecosystem": {
+    "box3": {
       "title": "Open Ecosystem",
       "content": "We are investing into building an active Ecosystem by providing a database of all relevant COVID-19 initiatives, and other outreach activities."
-    }
+    },
+    "ctaBox": {
+      "claim": "You want to be part of the accelerator?",
+      "cta": "Apply now",
+      "link": "/apply"
+    },
+    "gotoProgram": "Go to program"
+  },
+  "initiative": {
+    "landing": {
+      "title": "Technology saving lives.",
+      "content": "Digital tools to fight Covid-19"
+    },
+    "box1": {
+      "title": "Agile Development",
+      "content": "As strong tech partners, we invest together in building the apps and tools our country needs right now, user-friendly, open source, fast."
+    },
+    "box2": {
+      "title": "Digital Support",
+      "content": "We support other digital initiatives with our resources to effectively improve the data situation. Contact us with ideas and needs."
+    },
+    "box3": {
+      "title": "Open Ecosystem",
+      "content": "We are looking forward to exchange with all other digital initiatives, to join forces and promote cooperation with regular updates."
+    },
+    "letter": {
+      "show": "Show full letter"
+    },
+    "openLetter": "Open letter",
+    "gotoDatabase": "Go to database"
   },
   "program": {
     "header": {
@@ -47,18 +91,11 @@
     }
   },
   "partners": {
+    "unknownCategory": "Unknown",
     "title": "Founding & Tech Partners",
     "claim": "Want to help make a difference?",
     "cta": "Become part of the initiative",
-    "link": "/support",
-    "type": {
-      "founders": "Founding Partner",
-      "tech": "Tech Partner",
-      "privacy": "Privacy Partner",
-      "agencies": "Agency Partner",
-      "further": "Further Partner",
-      "health": "Health Partner"
-    }
+    "link": "/support"
   },
   "privacy": {
     "claim": "You have another question?",
@@ -66,17 +103,18 @@
     "link": "mailto:privacy@gesund-zusammen.de"
   },
   "initiatives": {
-    "claim": "An initiative is missing?",
-    "cta": "Contact us",
-    "link": "mailto:initiatives@gesund-zusammen.de",
-    "unknownCategory": "Unknown",
-    "showMore": "Show more",
+    "content": "In order to contain COVID-19, a worldwide competition of ideas is emerging, significantly accelerated by the tech industry and others. We are not only bringing together the resources and capabilities of the German digital economy. We also seek and promote open exchange with other digital initiatives so that the ideas with the greatest potential can prevail. \n\n Here you will find exciting digital initiatives and technologies from around the world - continuously updated. If you would like to add more projects to this showcase, please contact us.",
     "filter": {
       "filterBy": "Filter by",
       "all": "All",
       "global": "Worldwide",
       "germany": "In Germany"
-    }
+    },
+    "unknownCategory": "Unknown",
+    "showMore": "Show more",
+    "claim": "An initiative is missing?",
+    "cta": "Contact us",
+    "link": "mailto:initiatives@gesund-zusammen.de"
   },
   "faqs": {
     "title": "Questions?",
@@ -104,7 +142,13 @@
     "releaseTitle": "\"Gesund-Zusammen\": Tech coalition formed to combat Covid-19",
     "releaseHrefPDF": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.pdf",
     "releaseHrefImage": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.png",
-    "releaseHrefURL": "https://finleap.pr.co/187535-gesund-zusammen-tech-coalition-formed-to-combat-covid-19/"
+    "releaseHrefURL": "https://finleap.pr.co/187535-gesund-zusammen-tech-coalition-formed-to-combat-covid-19/",
+    "inqueryInitiative": "For media inquiries about the initiative, please contact:",
+    "inqueryAccelerator": "For media inquiries about the acceleratore, please contact: "
+  },
+  "latestNews": {
+    "title": "Latest News",
+    "content": "Read about #HealthyTogether and our Accelerator Program in the media"
   },
   "newsletter": {
     "title": "Subscribe to our Newsletter",

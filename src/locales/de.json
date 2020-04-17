@@ -1,51 +1,88 @@
 {
   "language": {
     "de": "Deutsch",
-    "en": "Englisch"
+    "en": "Englisch",
+    "fr": "Französisch",
+    "it": "Italienisch",
+    "es": "Spanisch"
   },
   "header": {
     "nav": {
-      "initiatives": "Datenbank",
-      "supporters": "Partner",
-      "faqs": "Haben Sie Fragen?"
-    },
-    "content": {
-      "landing": {
-        "title": "Technologie rettet Leben.",
-        "content": "Ein Accelerator-Programm für Ideen zur Bekämpfung der COVID-19-Krise."
-      },
-      "initiatives": {
-        "content": "Um Covid-19 einzudämmen, entsteht gerade ein weltweiter Wettbewerb von Ideen, maßgeblich beschleunigt unter anderem von der Tech-Industrie. Wir bringen nicht nur die Ressourcen und Fähigkeiten der deutschen Digitalwirtschaft zusammen. Wir suchen und fördern gleichzeitig den offenen Austausch mit anderen digitalen Initiativen, damit sich die Ideen mit dem größten Potenzial durchsetzen. \n\nHier finden Sie spannende digitale Initiativen und Technologien aus aller Welt – fortlaufend aktualisiert. Falls Sie diesem Schaufenster weitere Projekte hinzufügen wollen, kontaktieren Sie uns bitte."
-      }
+      "initiative": "Initiative",
+      "database": "Datenbank",
+      "accelerator": "Accelerator",
+      "faqs": "Fragen?",
+      "program": "Programm",
+      "app": "IchHabs App"
     }
   },
-  "boxes": {
-    "initiative": {
-      "title": "Unser Accelerator",
-      "content": "Mindestens 5 Ideen werden mit jeweils €20,000 (equity-free), Coaching und Reichweite gefördert."
+  "start": {
+    "box1": {
+      "title": "Die Initiative",
+      "content": "Lesen Sie mehr über unsere Initative."
     },
-    "support": {
+    "box2": {
+      "title": "Die App",
+      "content": "Mehr Infos zur App gibts in Kürze."
+    },
+    "box3": {
+      "title": "Accelerator",
+      "content": "Unterstützung von mindestens 5 Lösungen mit jeweils €20,000 Kapital (ohne Anteilsausgabe), Coaching und Reichweite."
+    }
+  },
+  "accelerator": {
+    "landing": {
+      "title": "Technologie rettet Leben.",
+      "content": "Ein Accelerator-Programm für Ideen zur Bekämpfung der COVID-19-Krise."
+    },
+    "box1": {
+      "title": "Das Programm",
+      "content": "Unterstützung von mindestens 5 Lösungen mit jeweils €20,000 Kapital (ohne Anteilsausgabe), Coaching und Reichweite."
+    },
+    "box2": {
       "title": "Support System",
       "content": "Durch unsere Partner haben die Teilnehmer Zugang zu einem Support System von Rechtlichen Experten, öffentlichen Institutionen und kuratierten Netzwerken."
     },
-    "ecosystem": {
+    "box3": {
       "title": "Offenes Ökosystem",
       "content": "Unsere Datenbank aller Digitalen Projekte und Initiativen unterstützt das Ökosystem."
-    }
+    },
+    "ctaBox": {
+      "claim": "Sie wollen auch mitmachen?",
+      "cta": "Jetzt bewerben",
+      "link": "/apply"
+    },
+    "gotoProgram": "Zum Programm"
+  },
+  "initiative": {
+    "landing": {
+      "title": "Technologie rettet Leben.",
+      "content": "Digitale Lösungen gegen COVID-19"
+    },
+    "box1": {
+      "title": "Agile Entwicklung",
+      "content": "Als starke Tech-Partner investieren wir gemeinsam in den Bau von Apps und Tools, die unser Land gerade braucht, nutzerfreundlich, open source, schnell."
+    },
+    "box2": {
+      "title": "Digitaler Support",
+      "content": "Wir unterstützen andere digitale Initiativen mit unseren Ressourcen, um wirksam die Datenlage zu verbessern. Sprechen Sie uns mit Ideen und Bedarf an."
+    },
+    "box3": {
+      "title": "Offenes Ökosystem",
+      "content": "Wir freuen uns auf den Austausch mit allen weiteren digitalen Initiativen, werden Kräfte bündeln und mit regelmäßigen Updates die Zusammenarbeit fördern."
+    },
+    "letter": {
+      "show": "Gesamten Brief anzeigen"
+    },
+    "openLetter": "Offener Brief",
+    "gotoDatabase": "Zur Datenbank"
   },
   "partners": {
+    "unknownCategory": "Unbekannt",
     "title": "Founding & Tech Partners",
     "claim": "Sie wollen auch mitmachen?",
     "cta": "Werden Sie Teil der Initiative",
-    "link": "/support",
-    "type": {
-      "founders": "Founding Partner",
-      "tech": "Tech Partner",
-      "privacy": "Privacy Partner",
-      "agencies": "Agentur Partner",
-      "further": "Weitere Partner",
-      "health": "Health Partner"
-    }
+    "link": "/support"
   },
   "program": {
     "header": {
@@ -66,6 +103,7 @@
     "link": "mailto:privacy@gesund-zusammen.de"
   },
   "initiatives": {
+    "content": "Um Covid-19 einzudämmen, entsteht gerade ein weltweiter Wettbewerb von Ideen, maßgeblich beschleunigt unter anderem von der Tech-Industrie. Wir bringen nicht nur die Ressourcen und Fähigkeiten der deutschen Digitalwirtschaft zusammen. Wir suchen und fördern gleichzeitig den offenen Austausch mit anderen digitalen Initiativen, damit sich die Ideen mit dem größten Potenzial durchsetzen. \n\nHier finden Sie spannende digitale Initiativen und Technologien aus aller Welt – fortlaufend aktualisiert. Falls Sie diesem Schaufenster weitere Projekte hinzufügen wollen, kontaktieren Sie uns bitte.",
     "filter": {
       "filterBy": "Filtern",
       "all": "Alle",
@@ -104,7 +142,13 @@
     "releaseTitle": "“Gesund-Zusammen”: Die Digitale Wirtschaft stellt sich dem Kampf gegen COVID-19 ",
     "releaseHrefPDF": "187534-20200401090213000000000-gesund-zusammen-die-digitale-wirtschaft-s.pdf",
     "releaseHrefImage": "187534-20200401090213000000000-gesund-zusammen-die-digitale-wirtschaft-s.png",
-    "releaseHrefURL": "https://finleap.pr.co/187534-gesund-zusammen-die-digitale-wirtschaft-stellt-sich-dem-kampf-gegen-covid-19/"
+    "releaseHrefURL": "https://finleap.pr.co/187534-gesund-zusammen-die-digitale-wirtschaft-stellt-sich-dem-kampf-gegen-covid-19/",
+    "inqueryInitiative": "Für Medienanfragen rund um die Initative kontaktieren Sie bitte:",
+    "inqueryAccelerator": "Für Medienanfragen rund um den Accelerator kontaktieren Sie bitte:"
+  },
+  "latestNews": {
+    "title": "Neueste Nachrichten",
+    "content": "Lesen Sie über #GesundZusammen und unser Accelerator Programm in den Medien"
   },
   "newsletter": {
     "title": "Melden Sie sich für unseren Newsletter an",

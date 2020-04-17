@@ -5,10 +5,11 @@ import styled, { AnyStyledComponent } from "styled-components";
 import LandingHeader from "./Header";
 import Social from "../Shared/Social";
 import Footer from "../Shared/Footer";
+import LatestNews from "../Shared/LatestNews";
 import NewsletterSignup from "../Shared/NewsletterSignup";
 import { HeaderBox, MainContentContainer } from "../Shared/StyledComponents";
 
-class LayoutLanding extends React.Component {
+class LayoutAccelerator extends React.Component {
   render = () => {
     return (
       <>
@@ -24,6 +25,8 @@ class LayoutLanding extends React.Component {
           </MainContentContainer>
         </Box>
 
+        <LatestNews />
+
         <NewsletterSignup />
 
         <Social />
@@ -38,4 +41,4 @@ const LandingHeaderBox: AnyStyledComponent = styled(HeaderBox)`
   padding: 0 0 6rem 0;
 `;
 
-export default LayoutLanding;
+export default LayoutAccelerator;
