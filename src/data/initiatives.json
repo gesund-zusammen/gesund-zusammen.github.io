@@ -1031,6 +1031,76 @@
         "en": "SARS-CoV-2/COVID-19: Collected Best Practices of the German Startup Scene"
       },
       "global": false
-    }
+    },
+    {
+      "name": "European Commission Innovative Hackathon",
+      "link": "https://euvsvirus.org/",
+      "category": "hackathons",
+      "description": {
+        "de": "Pan-european hackathon to bring innovative solutions for the coronavirus challenge.",
+        "en": "Pan-european hackathon to bring innovative solutions for the coronavirus challenge."
+      },
+      "global": true
+    },    
+    {
+      "name": "IMF World Economic Outlook",
+      "link": "https://www.imf.org/en/Publications/WEO/Issues/2020/04/14/World-Economic-Outlook-April-2020-The-Great-Lockdown-49306",
+      "category": "Research and Government Sites",
+      "description": {
+        "de": "World economic outlook by the International Monetary Fund incorporating coronavirus consequences.",
+        "en": "World economic outlook by the International Monetary Fund incorporating coronavirus consequences."
+      },
+      "global": true
+    },
+        {
+      "name": "Colombia launches vulnerability map to trace COVID-19",
+      "link": "https://geoportal.dane.gov.co/visor-vulnerabilidad/",
+      "category": "Research and Government Sites",
+      "description": {
+        "de": "Colombia National Administrative Department of Statistics displays a vulnerability map to take decisions in public policy.",
+        "en": "Colombia National Administrative Department of Statistics displays a vulnerability map to take decisions in public policy."
+      },
+      "global": true
+    },
+       {
+      "name": "Bloomberg Philantrophies",
+      "link": "https://www.bloomberg.org/program/public-health/coronavirus-response/#coronavirus-local-response-initiative",
+      "category": "Further Initiatives",
+      "description": {
+        "de": "Bloomberg Philanthropies is accelerating the fight against the COVID-19 pandemic with initiatives including the Coronavirus Local Response Initiative and the Coronavirus Global Response Initiative, and is making investments in cities like New York and London.",
+        "en": "Bloomberg Philanthropies is accelerating the fight against the COVID-19 pandemic with initiatives including the Coronavirus Local Response Initiative and the Coronavirus Global Response Initiative, and is making investments in cities like New York and London."
+      },
+      "global": true
+    },
+     {
+      "name": "Healthier future with HelloBetter",
+      "link": "https://hellobetter.de",
+      "category": "Further Initiatives",
+      "description": {
+        "de": "Scientifically proven online psychological training courses and online psychotherapy - on request, accompanied by psychologists and psychotherapists. Help with depression, stress, anxiety, panic and other psychological complaints.",
+        "en": "Scientifically proven online psychological training courses and online psychotherapy - on request, accompanied by psychologists and psychotherapists. Help with depression, stress, anxiety, panic and other psychological complaints."
+      },
+      "global": false
+    },
+         {
+      "name": "German Association Forum",
+      "link": "https://verbaende.com/news.php/Deutsche-Suesswarenindustrie-beteiligt-sich-an-internationaler-Initiative-zur-Bekaempfung-des-Coronavirus-in-Westafrika?m=134288",
+      "category": "Further Initiatives",
+      "description": {
+        "de": "German confectionery industry participates in international initiative to combat the corona virus in West Africa.",
+        "en": "German confectionery industry participates in international initiative to combat the corona virus in West Africa."
+      },
+      "global": false
+    },
+           {
+      "name": "European Commission",
+      "link": "https://ec.europa.eu/info/research-and-innovation/research-area/health-research-and-innovation/coronavirus-research-and-innovation_en",
+      "category": "Further Initiatives",
+      "description": {
+        "de": "EU supported research and innovation projects and initiatives to tackle the spread of coronavirus and preparedness for other outbreaks.",
+        "en": "EU supported research and innovation projects and initiatives to tackle the spread of coronavirus and preparedness for other outbreaks."
+      },
+      "global": true
+    },
   ]
 }
