@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Typography } from "@material-ui/core";
+import { Box, Button } from "@material-ui/core";
 import { withTranslation, WithTranslation } from "react-i18next";
 import styled, { AnyStyledComponent } from "styled-components";
 
@@ -12,8 +12,6 @@ import ContentEN from "../../data/initiative/initiative_en.md";
 import ContentFR from "../../data/initiative/initiative_fr.md";
 import ContentIT from "../../data/initiative/initiative_it.md";
 import ContentES from "../../data/initiative/initiative_es.md";
-
-import OpenLetter from "../../data/initiative/open_letter.md";
 
 interface IInitiativeState {
   letterRevealed: boolean;
@@ -71,23 +69,6 @@ class Initiative extends React.PureComponent<
           </LinkButton>
         </Box>
 
-        <Box id="open-letter" paddingBottom={4} marginTop={4}>
-          <Typography variant="h3">Open Letter</Typography>
-          <ContentRevealBox className={this.state.letterRevealed && "revealed"}>
-            <MuiMarkdown markdown={OpenLetter} />
-          </ContentRevealBox>
-          {!this.state.letterRevealed && (
-            <RevealButton
-              color="primary"
-              variant="contained"
-              disableFocusRipple={true}
-              onClick={this.handleRevealContent}
-            >
-              {this.props.t("initiative.letter.show")}
-            </RevealButton>
-          )}
-        </Box>
-
         <Box id="partners" paddingBottom={4} marginTop={4}>
           <PartnerItems />
         </Box>
@@ -103,48 +84,6 @@ class Initiative extends React.PureComponent<
     );
   };
 }
-
-const ContentRevealBox: AnyStyledComponent = styled.div`
-  position: relative;
-  display: block;
-  overflow: hidden;
-  max-height: 400px;
-
-  &.revealed {
-    max-height: 9999px;
-
-    &:after {
-      display: none;
-    }
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+90 */
-    background: -moz-linear-gradient(
-      top,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 1) 90%,
-      rgba(255, 255, 255, 1) 100%
-    ); /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      top,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 1) 90%,
-      rgba(255, 255, 255, 1) 100%
-    ); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 1) 90%,
-      rgba(255, 255, 255, 1) 100%
-    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  }
-`;
 
 const LinkButton: AnyStyledComponent = styled(Button)`
   && {
