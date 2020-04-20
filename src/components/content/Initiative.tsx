@@ -7,6 +7,8 @@ import MuiMarkdown from "../common/MuiMarkdown";
 import CTABox from "../common/CTABox";
 import PartnerItems from "../common/PartnerItems";
 
+import InitiativePartners from "../../data/partners_initiative.json";
+
 import ContentDE from "../../data/initiative/initiative_de.md";
 import ContentEN from "../../data/initiative/initiative_en.md";
 import ContentFR from "../../data/initiative/initiative_fr.md";
@@ -70,7 +72,7 @@ class Initiative extends React.PureComponent<
         </Box>
 
         <Box id="partners" paddingBottom={4} marginTop={4}>
-          <PartnerItems />
+          <PartnerItems data={InitiativePartners} />
         </Box>
 
         <Box paddingBottom={4} marginTop={4}>
@@ -95,19 +97,6 @@ const LinkButton: AnyStyledComponent = styled(Button)`
     border-radius: 4px;
     padding: 1rem 2rem;
     margin: 0 auto 2rem auto;
-  }
-`;
-
-const RevealButton: AnyStyledComponent = styled(Button)`
-  && {
-    display: block;
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: none;
-    text-align: center;
-    border-radius: 4px;
-    padding: 1rem 2rem;
-    margin: 2rem auto 0 auto;
   }
 `;
 
