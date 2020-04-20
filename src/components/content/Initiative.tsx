@@ -125,17 +125,4 @@ const LinkButton: AnyStyledComponent = styled(Button)`
   }
 `;
 
-const RevealButton: AnyStyledComponent = styled(Button)`
-  && {
-    display: block;
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: none;
-    text-align: center;
-    border-radius: 4px;
-    padding: 1rem 2rem;
-    margin: 2rem auto 0 auto;
-  }
-`;
-
 export default withTranslation()(Initiative);
