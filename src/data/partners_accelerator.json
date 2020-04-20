@@ -288,6 +288,12 @@
       "link": "https://www.koehler-investment.com"
     },
     {
+      "name": "Tech.eu",
+      "slug": "media",
+      "image": "techeu.png",
+      "link": "https://www.tech.eu"
+    },
+    {
       "name": "APX",
       "slug": "media",
       "image": "apx.png",
