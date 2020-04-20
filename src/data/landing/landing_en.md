@@ -3,9 +3,10 @@ title: "Landing English"
 language: "en"
 ---
 
-## HealthyTogether –
+## #HealthyTogether
 
-## an open initiative led by the digital economy
+### an open initiative led by the digital economy
+
 As broad alliance of German tech companies, we want to actively help society, politics and business to contain COVID-19 with digital solutions. We build up on one of the most important resources available to the world today: **Information.**
 
 Data enables us to do research together, warn people, save lives. And yet, widespread use of data is not without risk: In the face of the crisis, there are growing voices in favour of sacrificing basic rights for the good of health.

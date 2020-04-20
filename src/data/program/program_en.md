@@ -3,9 +3,9 @@ title: "Program English"
 language: "en"
 ---
 
-## The #Gesundzusammen Accelerator Program
+## The #HealthyTogether Accelerator Program
 
-The #Gesundzusammen Accelerator is organized by TOA, wefox & finleap, with many leading ecosystem players (i.e. N26, BVDS, DeliveryHero, Celonis, Ada Health) supporting.
+The #HealthyTogether Accelerator is organized by TOA, wefox & finleap, with many leading ecosystem players (i.e. N26, BVDS, DeliveryHero, Celonis, Ada Health) supporting.
 
 #### The program offers:
 
