@@ -106,7 +106,7 @@ class Initiative extends React.PureComponent<
           />
         </Box>
 
-        <Box id="partners" paddingBottom={4} marginTop={4}>
+        <Box id="partners" paddingBottom={4} marginTop={8}>
           <PartnerItems />
         </Box>
 

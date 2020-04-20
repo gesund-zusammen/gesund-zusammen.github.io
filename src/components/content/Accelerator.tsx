@@ -36,8 +36,8 @@ const LinkButton: AnyStyledComponent = styled(Button)`
     text-transform: none;
     text-align: center;
     border-radius: 4px;
-    padding: 1rem 2rem;
-    margin: 2rem auto 0 auto;
+    padding: 0.6rem 2rem;
+    margin: 4rem auto 0;
   }
 `;
 
@@ -79,22 +79,19 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
                   sm: 6,
                 },
               },
+              a: {
+                component: LinkButton,
+                props: {
+                  color: "primary",
+                  variant: "contained",
+                  disableFocusRipple: true,
+                },
+              },
             }}
           />
         </Box>
 
-        <Box paddingBottom={4} marginTop={4}>
-          <LinkButton
-            color="primary"
-            variant="contained"
-            disableFocusRipple={true}
-            href={`/${this.props.i18n.language}/program`}
-          >
-            {this.props.t("accelerator.gotoProgram")}
-          </LinkButton>
-        </Box>
-
-        <Box paddingBottom={4} marginTop={4}>
+        <Box paddingBottom={4} marginTop={8}>
           <Grid container justify="center" spacing={4}>
             <Grid item xs={12} sm={6} md={4} xl={3}>
               <InfoBox

@@ -51,8 +51,7 @@
       "claim": "You want to be part of the accelerator?",
       "cta": "Apply now",
       "link": "/apply"
-    },
-    "gotoProgram": "Go to program"
+    }
   },
   "initiative": {
     "landing": {

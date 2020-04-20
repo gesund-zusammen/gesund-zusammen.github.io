@@ -9,6 +9,8 @@ language: "de"
 
   Als breite Allianz deutscher Tech-Unternehmen wollen wir Gesellschaft, Politik und Wirtschaft aktiv dabei helfen, COVID-19 mit digitalen Lösungen einzudämmen. Dafür haben wir einen Accelerator gegründet der gezielt digitale Projekte mit Ressourcen unterstützt.
 
+  [Zum Programm](/de/program)
+
 * #### Damit Privates privat bleibt
 
   Auch in Krisenzeiten haben Freiheits- und Persönlichkeitsrechte der Menschen höchste Priorität.
