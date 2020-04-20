@@ -45,21 +45,18 @@
     {
       "name": "finleap",
       "slug": "founders",
-      "image": "finleap.png",
-      "countries": ["de"]
+      "image": "finleap.png"
     },
     {
       "name": "Wefox Group",
       "slug": "founders",
-      "image": "wefoxgroup.png",
-      "countries": ["de"]
+      "image": "wefoxgroup.png"
     },
     {
       "name": "TOA",
       "slug": "founders",
       "image": "toa.png",
-      "link": "https://toa.berlin",
-      "countries": ["de"]
+      "link": "https://toa.berlin"
     },
     {
       "name": "Via",
