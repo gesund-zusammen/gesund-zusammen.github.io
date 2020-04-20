@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button } from "@material-ui/core";
+import { Box, Button, Grid } from "@material-ui/core";
 import { withTranslation, WithTranslation } from "react-i18next";
 import styled, { AnyStyledComponent } from "styled-components";
 
@@ -22,6 +22,16 @@ interface IInitiativeState {
 const DEFAULT_STATE: IInitiativeState = {
   letterRevealed: false,
 };
+
+const ContentGridItem: AnyStyledComponent = styled(Grid)`
+  && {
+    @media (min-width: 600px) {
+      &:last-of-type {
+        border-left: 1px solid #ced7db;
+      }
+    }
+  }
+`;
 
 class Initiative extends React.PureComponent<
   WithTranslation,
@@ -57,7 +67,24 @@ class Initiative extends React.PureComponent<
         <Box id="initiative" paddingBottom={4} marginTop={4}>
           <MuiMarkdown
             markdown={this.getMarkdown(this.props.i18n.language)}
-          ></MuiMarkdown>
+            overrides={{
+              ul: {
+                component: Grid,
+                props: {
+                  container: true,
+                  spacing: 8,
+                },
+              },
+              li: {
+                component: ContentGridItem,
+                props: {
+                  item: true,
+                  xs: 12,
+                  sm: 6,
+                },
+              },
+            }}
+          />
         </Box>
 
         <Box paddingBottom={4} marginTop={4}>

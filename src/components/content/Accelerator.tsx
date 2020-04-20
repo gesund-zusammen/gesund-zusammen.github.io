@@ -20,6 +20,29 @@ import IlluCoworking from "../../images/illu_coworking.svg";
 import IlluMobile from "../../images/illu_mobile.svg";
 import IlluSupport from "../../images/illu_support.svg";
 
+const ContentGridItem: AnyStyledComponent = styled(Grid)`
+  && {
+    @media (min-width: 600px) {
+      &:last-of-type {
+        border-left: 1px solid #ced7db;
+      }
+    }
+  }
+`;
+
+const LinkButton: AnyStyledComponent = styled(Button)`
+  && {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: none;
+    text-align: center;
+    border-radius: 4px;
+    padding: 1rem 2rem;
+    margin: 2rem auto 0 auto;
+  }
+`;
+
 class Accelerator extends React.PureComponent<WithTranslation, {}> {
   getMarkdown(language: string) {
     switch (language) {
@@ -42,7 +65,24 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
         <Box id="accelerator" paddingBottom={4} marginTop={2}>
           <MuiMarkdown
             markdown={this.getMarkdown(this.props.i18n.language)}
-          ></MuiMarkdown>
+            overrides={{
+              ul: {
+                component: Grid,
+                props: {
+                  container: true,
+                  spacing: 8,
+                },
+              },
+              li: {
+                component: ContentGridItem,
+                props: {
+                  item: true,
+                  xs: 12,
+                  sm: 6,
+                },
+              },
+            }}
+          />
         </Box>
 
         <Box paddingBottom={4} marginTop={4}>
@@ -97,18 +137,5 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
     );
   };
 }
-
-const LinkButton: AnyStyledComponent = styled(Button)`
-  && {
-    display: block;
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: none;
-    text-align: center;
-    border-radius: 4px;
-    padding: 1rem 2rem;
-    margin: 2rem auto 0 auto;
-  }
-`;
 
 export default withTranslation()(Accelerator);

@@ -21,6 +21,16 @@
       }
     },
     {
+      "slug": "media",
+      "name": {
+        "de": "Medienpartner",
+        "en": "Media Partners",
+        "fr": "Partenaires médias",
+        "it": "Media Partners",
+        "es": "Medios de comunicación"
+      }
+    },
+    {
       "slug": "ambassador",
       "name": {
         "de": "Ambassador Partner",
@@ -84,7 +94,7 @@
       "name": "N26",
       "slug": "strategic",
       "image": "n26.png",
-      "link": "https://www.n26.com"
+      "link": "https://n26.com"
     },
     {
       "name": "GetYourGuide",
@@ -275,6 +285,12 @@
       "slug": "strategic",
       "image": "koehlerinvestment.jpg",
       "link": "https://www.koehler-investment.com"
+    },
+    {
+      "name": "Tech.eu",
+      "slug": "media",
+      "image": "techeu.png",
+      "link": "https://www.tech.eu"
     },
     {
       "name": "APX",

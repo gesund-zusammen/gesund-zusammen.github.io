@@ -1,9 +1,10 @@
 import React from "react";
 import { Link, Typography } from "@material-ui/core";
-import Markdown from "markdown-to-jsx";
+import Markdown, { MarkdownOptions } from "markdown-to-jsx";
 
 interface IMuiMarkdownProps {
   markdown: string;
+  overrides?: MarkdownOptions["overrides"];
 }
 
 class MuiMarkdown extends React.PureComponent<IMuiMarkdownProps, {}> {
@@ -57,6 +58,7 @@ class MuiMarkdown extends React.PureComponent<IMuiMarkdownProps, {}> {
             a: {
               component: Link,
             },
+            ...this.props.overrides,
           },
         }}
       >
