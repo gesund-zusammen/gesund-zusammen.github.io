@@ -3,7 +3,7 @@ import { Typography, Box, Grid } from "@material-ui/core";
 import { withTranslation, WithTranslation } from "react-i18next";
 import Fade from "react-reveal";
 
-import Card from "./ImageCard";
+import ImageCard from "./ImageCard";
 
 interface ICategory {
   slug: string;
@@ -16,7 +16,7 @@ interface ICategory {
 interface IPartner {
   name: string;
   slug: string;
-  link: string;
+  link?: string;
   image: string;
   imageXL?: boolean;
   color?: string;
@@ -84,7 +84,7 @@ class PartnerItems extends React.Component<IPartnerItemsProps, {}> {
                         const partnerCardKey: string =
                           "category-" + index + "-partner-" + partnerIndex;
                         return (
-                          <Card
+                          <ImageCard
                             key={partnerCardKey}
                             name={partner.name}
                             image={
