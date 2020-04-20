@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "slug": "founders",
+      "name": {
+        "de": "Founding Partner",
+        "en": "Founding Partners",
+        "fr": "Partenaires Fondateurs",
+        "it": "Partner fondatori",
+        "es": "Socios Fundadores"
+      }
+    }
+  ],
+  "partners": [
+    {
+      "name": "finleap",
+      "slug": "founders",
+      "image": "finleap.png"
+    },
+    {
+      "name": "Wefox Group",
+      "slug": "founders",
+      "image": "wefoxgroup.png"
+    },
+    {
+      "name": "TOA",
+      "slug": "founders",
+      "image": "toa.png",
+      "link": "https://toa.berlin"
+    }
+  ]
+}
