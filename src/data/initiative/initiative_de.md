@@ -11,6 +11,8 @@ language: "de"
 
   Daten ermöglichen es uns, gemeinsam zu forschen, Menschen zu warnen, Leben zu retten. Und doch ist eine flächendeckende Datennutzung nicht risikolos: Angesichts der Krise mehren sich die Stimmen, Grundrechte zum Wohle der Gesundheit zu opfern. Gemeinsam werden wir den Beweis erbringen: **Wir können beides haben – Infektionsschutz und Datenschutz.**
 
+  [Zur Datenbank](/de/database)
+
 * #### Damit Privates privat bleibt
 
   Auch in Krisenzeiten haben Freiheits- und Persönlichkeitsrechte der Menschen höchste Priorität.

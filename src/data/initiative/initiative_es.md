@@ -13,6 +13,8 @@ language: "es"
 
   Incluso en tiempos de crisis, la libertad y los derechos personales de las personas individuales son la prioridad principal de nuestra tecnología.
 
+  [Ir a la base de datos](/es/database)
+
 * #### Para que las cosas privadas permanezcan privadas.
 
   Incluso en tiempos de crisis, la libertad y los derechos personales de las personas individuales son la prioridad principal de nuestra tecnología.

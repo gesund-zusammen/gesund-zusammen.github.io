@@ -70,12 +70,7 @@
     "box3": {
       "title": "Ecosistema aperto",
       "content": "Non vediamo l'ora di scambiare opinioni ed esperienze con altre iniziative analoghe, per unire le forze e promuovere la cooperazione."
-    },
-    "letter": {
-      "show": "Mostra lettera completa"
-    },
-    "openLetter": "Lettera aperta",
-    "gotoDatabase": "Vai al database"
+    }
   },
   "program": {
     "header": {
