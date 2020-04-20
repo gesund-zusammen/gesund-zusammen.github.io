@@ -1052,7 +1052,7 @@
       },
       "global": true
     },
-        {
+    {
       "name": "Colombia launches vulnerability map to trace COVID-19",
       "link": "https://geoportal.dane.gov.co/visor-vulnerabilidad/",
       "category": "Research and Government Sites",
@@ -1062,7 +1062,7 @@
       },
       "global": true
     },
-       {
+    {
       "name": "Bloomberg Philantrophies",
       "link": "https://www.bloomberg.org/program/public-health/coronavirus-response/#coronavirus-local-response-initiative",
       "category": "Further Initiatives",
@@ -1072,7 +1072,7 @@
       },
       "global": true
     },
-     {
+    {
       "name": "Healthier future with HelloBetter",
       "link": "https://hellobetter.de",
       "category": "Further Initiatives",
@@ -1082,7 +1082,7 @@
       },
       "global": false
     },
-         {
+    {
       "name": "German Association Forum",
       "link": "https://verbaende.com/news.php/Deutsche-Suesswarenindustrie-beteiligt-sich-an-internationaler-Initiative-zur-Bekaempfung-des-Coronavirus-in-Westafrika?m=134288",
       "category": "Further Initiatives",
@@ -1092,7 +1092,7 @@
       },
       "global": false
     },
-           {
+    {
       "name": "European Commission",
       "link": "https://ec.europa.eu/info/research-and-innovation/research-area/health-research-and-innovation/coronavirus-research-and-innovation_en",
       "category": "Further Initiatives",
@@ -1101,6 +1101,6 @@
         "en": "EU supported research and innovation projects and initiatives to tackle the spread of coronavirus and preparedness for other outbreaks."
       },
       "global": true
-    },
+    }
   ]
 }
