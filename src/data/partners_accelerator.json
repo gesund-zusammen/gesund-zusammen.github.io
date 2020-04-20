@@ -46,14 +46,12 @@
       "name": "finleap",
       "slug": "founders",
       "image": "finleap.png",
-      "link": "https://www.finleap.com",
       "countries": ["de"]
     },
     {
       "name": "Wefox Group",
       "slug": "founders",
       "image": "wefoxgroup.png",
-      "link": "https://www.wefoxgroup.com",
       "countries": ["de"]
     },
     {
