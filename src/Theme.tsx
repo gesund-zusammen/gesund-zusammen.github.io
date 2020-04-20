@@ -120,7 +120,7 @@ const theme = responsiveFontSizes(
           "sans-serif",
         ].join(","),
         fontSize: "2.2rem",
-        fontWeight: 600,
+        fontWeight: 700,
         marginBottom: "1rem",
         color: "#003269",
       },
@@ -144,7 +144,7 @@ const theme = responsiveFontSizes(
           "sans-serif",
         ].join(","),
         fontSize: "1.55rem",
-        fontWeight: 600,
+        fontWeight: 700,
         marginBottom: "1rem",
       },
       h6: {
