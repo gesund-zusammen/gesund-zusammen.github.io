@@ -51,8 +51,7 @@
       "claim": "You want to be part of the accelerator?",
       "cta": "Apply now",
       "link": "/apply"
-    },
-    "gotoProgram": "Go to program"
+    }
   },
   "initiative": {
     "landing": {
@@ -70,12 +69,7 @@
     "box3": {
       "title": "Open Ecosystem",
       "content": "We are looking forward to exchange with all other digital initiatives, to join forces and promote cooperation with regular updates."
-    },
-    "letter": {
-      "show": "Show full letter"
-    },
-    "openLetter": "Open letter",
-    "gotoDatabase": "Go to database"
+    }
   },
   "program": {
     "header": {

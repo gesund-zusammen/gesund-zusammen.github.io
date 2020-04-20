@@ -9,6 +9,8 @@ language: "es"
 
   A partir de la alianza de empresas tecnológicas alemanas, queremos ayudar activamente a la sociedad, los gobiernos y las empresas, a contener la pandemia del COVID-19 con soluciones digitales. Hemos fundado un programa de Aceleración que proporciona recursos para llevar a la ciudadanía herramientas digitales más rápidamente.
 
+  [Ir al programa](/es/program)
+
 * #### Para que las cosas privadas sigan siendo privadas.
 
   Incluso en tiempos de crisis, la libertad y los derechos personales de las personas individuales son la prioridad principal de nuestra tecnología.

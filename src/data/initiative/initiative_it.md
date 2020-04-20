@@ -14,6 +14,8 @@ language: "it"
 
   Anche in tempi di crisi, la libertà personale e i diritti umani sono al livello massimo delle nostre priorità.
 
+  [Vai al database](/it/database)
+
 * #### In maniera che le informazioni private, rimangano private.
 
   Anche in tempi di crisi, la libertà personale e i diritti umani sono al livello massimo delle nostre priorità.

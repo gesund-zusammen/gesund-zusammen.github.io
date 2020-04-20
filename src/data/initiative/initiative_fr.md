@@ -13,6 +13,8 @@ language: "fr"
 
   Ensemble, nous allons prouver qu'il n'y a pas de compromis à faire, nous pouvons à la fois contrôler l'infection et protéger les données.
 
+  [Accéder à la base de données](/fr/database)
+
 * #### Pour que les choses privées restent privées.
 
   Même en temps de crise, la liberté et les droits de la personne sont la priorité absolue de notre technologie.

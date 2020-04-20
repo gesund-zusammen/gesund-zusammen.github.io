@@ -33,6 +33,19 @@ const ContentGridItem: AnyStyledComponent = styled(Grid)`
   }
 `;
 
+const LinkButton: AnyStyledComponent = styled(Button)`
+  && {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: none;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0.6rem 2rem;
+    margin: 4rem auto 0;
+  }
+`;
+
 class Initiative extends React.PureComponent<
   WithTranslation,
   IInitiativeState
@@ -83,22 +96,19 @@ class Initiative extends React.PureComponent<
                   sm: 6,
                 },
               },
+              a: {
+                component: LinkButton,
+                props: {
+                  color: "primary",
+                  variant: "contained",
+                  disableFocusRipple: true,
+                },
+              },
             }}
           />
         </Box>
 
-        <Box paddingBottom={4} marginTop={4}>
-          <LinkButton
-            color="primary"
-            variant="contained"
-            disableFocusRipple={true}
-            href={`/${this.props.i18n.language}/database`}
-          >
-            {this.props.t("initiative.gotoDatabase")}
-          </LinkButton>
-        </Box>
-
-        <Box id="partners" paddingBottom={4} marginTop={4}>
+        <Box id="partners" paddingBottom={4} marginTop={8}>
           <PartnerItems data={InitiativePartners} />
         </Box>
 
@@ -113,18 +123,5 @@ class Initiative extends React.PureComponent<
     );
   };
 }
-
-const LinkButton: AnyStyledComponent = styled(Button)`
-  && {
-    display: block;
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: none;
-    text-align: center;
-    border-radius: 4px;
-    padding: 1rem 2rem;
-    margin: 0 auto 2rem auto;
-  }
-`;
 
 export default withTranslation()(Initiative);

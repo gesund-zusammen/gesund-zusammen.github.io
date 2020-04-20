@@ -14,6 +14,8 @@ language: "en"
 
   Even in times of crisis, people's freedom and personal rights are top priority for our technology.
 
+  [Go to database](/en/database)
+
 * #### So that private things remain private.
 
   Even in times of crisis, people's freedom and personal rights are top priority for our technology.
