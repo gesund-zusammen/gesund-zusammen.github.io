@@ -11,23 +11,33 @@
       }
     },
     {
-      "slug": "strategic",
+      "slug": "tech",
       "name": {
-        "de": "Strategic Partner",
-        "en": "Strategic Partners",
-        "fr": "Partenaires Stratégiques",
-        "it": "Partner strategici",
-        "es": "Socios Estratégicos"
+        "de": "Tech Partner",
+        "en": "Tech Partners",
+        "fr": "Partenaires technologiques",
+        "it": "Partner tecnici",
+        "es": "Socios tecnológicos"
       }
     },
     {
-      "slug": "ambassador",
+      "slug": "legal",
       "name": {
-        "de": "Ambassador Partner",
-        "en": "Ambassador Partners",
-        "fr": "Partenaires Ambassadeurs",
-        "it": "Partner ambasciatori",
-        "es": "Socios Embajadores"
+        "de": "Rechts- und Datenschutzpartner",
+        "en": "Legal and Data Privacy Partners",
+        "fr": "Partenaires juridiques et de confidentialité des données",
+        "it": "Partner legali e per la privacy dei dati",
+        "es": "Socios legales y de privacidad de datos"
+      }
+    },
+    {
+      "slug": "media",
+      "name": {
+        "de": "Medienpartner",
+        "en": "Media Partners",
+        "fr": "Partenaires médias",
+        "it": "Partner di comunicazione",
+        "es": "Socios de comunicación"
       }
     }
   ],
@@ -52,151 +62,160 @@
       "name": "Via",
       "slug": "founders",
       "image": "viadata.svg",
-      "link": "https://www.viadata.io"
+      "link": "https://www.viadata.io",
+      "countries": ["de"]
     },
     {
       "name": "Global Citizen Foundation",
       "slug": "founders",
       "image": "globalcitizen.svg",
-      "link": "https://www.globalcitizenfoundation.org"
+      "link": "https://www.globalcitizenfoundation.org",
+      "countries": ["de"]
+    },
+    {
+      "name": "Freeda",
+      "slug": "founders",
+      "image": "freeda.png",
+      "link": "http://www.freedamedia.com/",
+      "countries": ["it"]
     },
     {
       "name": "Data4Life",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "data4life.svg",
       "link": "https://www.data4life.care"
     },
     {
       "name": "BVDS",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "bvds.png",
       "link": "https://www.deutschestartups.org"
     },
     {
       "name": "BCG DV",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "bcgdv.svg",
       "link": "https://www.bcgdv.com"
     },
     {
       "name": "N26",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "n26.png",
       "link": "https://www.n26.com"
     },
     {
       "name": "GetYourGuide",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "getyourguide.png",
       "link": "https://www.getyourguide.com"
     },
     {
       "name": "FreightHub",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "freighthub.png",
       "link": "https://www.freighthub.com"
     },
     {
       "name": "DeliveryHero",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "deliveryhero.png",
       "link": "https://www.deliveryhero.com"
     },
     {
       "name": "Omio",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "omio.png",
       "link": "https://www.omio.com"
     },
     {
       "name": "Celonis",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "celonis.png",
       "link": "https://www.celonis.com"
     },
     {
       "name": "Ada Health",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "adahealth.png",
       "link": "https://ada.com"
     },
     {
       "name": "Personio",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "personio.png",
       "link": "https://www.personio.de"
     },
     {
       "name": "OneFootball",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "onefootball.svg",
       "link": "https://onefootball.com"
     },
     {
       "name": "Ioniq",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "ioniq.png",
       "link": "https://ioniq.com"
     },
     {
       "name": "Tier Mobility",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "tier.svg",
       "link": "https://www.tier.app"
     },
     {
       "name": "doctorly",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "doctorly.png",
       "link": "https://www.doctorly.de"
     },
     {
       "name": "PAIR Finance",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "pairfinance.png",
       "link": "https://www.pairfinance.com"
     },
     {
       "name": "The Delta",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "thedelta.png",
       "link": "https://www.thedelta.io",
       "imageXL": true
     },
     {
       "name": "Datenschutzexperte",
-      "slug": "strategic",
+      "slug": "legal",
       "image": "datenschutzexperte.svg",
       "link": "https://www.datenschutzexperte.de"
     },
     {
       "name": "Deloitte",
-      "slug": "strategic",
+      "slug": "legal",
       "image": "deloitte.jpg",
       "link": "https://www2.deloitte.com/dl/de/services/legal.html"
     },
     {
       "name": "MyData",
-      "slug": "strategic",
+      "slug": "legal",
       "image": "mydata.png",
       "link": "https://mydata.org",
       "imageXL": true
     },
     {
       "name": "UserCentrics",
-      "slug": "strategic",
+      "slug": "legal",
       "image": "usercentrics.svg",
       "link": "https://usercentrics.com"
     },
     {
       "name": "CMS",
-      "slug": "strategic",
+      "slug": "legal",
       "image": "cmslaw.svg",
       "link": "https://cms.law"
     },
     {
       "name": "Bird & Bird",
-      "slug": "strategic",
+      "slug": "legal",
       "image": "twobirds.png",
       "link": "https://www.twobirds.com",
       "color": "#7c7c6e",
@@ -204,7 +223,7 @@
     },
     {
       "name": "Reed Smith LLP",
-      "slug": "strategic",
+      "slug": "legal",
       "image": "reedsmith.svg",
       "link": "https://www.reedsmith.com",
       "color": "#3d3c3c",
@@ -212,7 +231,7 @@
     },
     {
       "name": "SKW Schwarz",
-      "slug": "strategic",
+      "slug": "legal",
       "image": "skwschwarz.jpg",
       "link": "https://www.skwschwarz.de",
       "color": "black",
@@ -220,7 +239,7 @@
     },
     {
       "name": "HEARTBEAT LABS",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "heartbeatlabs.svg",
       "link": "https://heartbeatlabs.com",
       "color": "#002f4e",
@@ -228,63 +247,87 @@
     },
     {
       "name": "ATAI Life Sciences",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "atailifesciences.png",
       "link": "https://www.atai.life"
     },
     {
       "name": "fischerAppelt",
-      "slug": "strategic",
+      "slug": "media",
       "image": "fischerappelt.jpg",
       "link": "https://www.fischerappelt.de"
     },
     {
       "name": "Story Machine",
-      "slug": "strategic",
+      "slug": "media",
       "image": "storymachine.png",
       "link": "https://www.storymachine.de"
     },
     {
       "name": "JOLI BERLIN",
-      "slug": "strategic",
+      "slug": "media",
       "image": "joliberlin.jpg",
       "link": "https://www.joliberlin.com"
     },
     {
       "name": "FORWARD31",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "forward31.png",
       "link": "https://www.forward31.com"
     },
     {
       "name": "Land der Ideen",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "LDI.jpg",
       "link": "https://www.land-der-ideen.de"
     },
     {
       "name": "Freiraum",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "freiraum.jpg",
       "link": "http://www.freiraum-berlin.org"
     },
     {
       "name": "Koehler Investment",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "koehlerinvestment.jpg",
       "link": "https://www.koehler-investment.com"
     },
     {
       "name": "Tech.eu",
-      "slug": "strategic",
+      "slug": "media",
       "image": "techeu.png",
       "link": "https://www.tech.eu"
     },
     {
       "name": "APX",
-      "slug": "ambassador",
+      "slug": "media",
       "image": "apx.png",
       "link": "https://www.apx.ac"
+    },
+    {
+      "name": "Casavo",
+      "slug": "tech",
+      "image": "casavo.png",
+      "link": "https://casavo.com"
+    },
+    {
+      "name": "Talent Garden",
+      "slug": "tech",
+      "image": "talentgarden.png",
+      "link": "https://talentgarden.org"
+    },
+    {
+      "name": "Italia StartUp",
+      "slug": "tech",
+      "image": "italiastartup.png",
+      "link": "https://www.italiastartup.it"
+    },
+    {
+      "name": "prima.it",
+      "slug": "tech",
+      "image": "prima_it.jpg",
+      "link": "https://www.prima.it"
     }
   ]
 }
