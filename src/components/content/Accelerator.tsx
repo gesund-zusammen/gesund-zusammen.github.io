@@ -8,6 +8,8 @@ import InfoBox from "../common/InfoBox";
 import CTABox from "../common/CTABox";
 import PartnerItems from "../common/PartnerItems";
 
+import AcceleratorPartners from "../../data/partners_accelerator.json";
+
 import ContentDE from "../../data/accelerator/accelerator_de.md";
 import ContentEN from "../../data/accelerator/accelerator_en.md";
 import ContentFR from "../../data/accelerator/accelerator_fr.md";
@@ -118,7 +120,7 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
         </Box>
 
         <Box id="partners" paddingBottom={4} marginTop={4}>
-          <PartnerItems />
+          <PartnerItems data={AcceleratorPartners} />
         </Box>
 
         <Box paddingBottom={4} marginTop={4}>

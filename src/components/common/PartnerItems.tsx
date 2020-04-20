@@ -3,8 +3,7 @@ import { Typography, Box, Grid } from "@material-ui/core";
 import { withTranslation, WithTranslation } from "react-i18next";
 import Fade from "react-reveal";
 
-import PartnerData from "../../data/partners.json";
-import Card from "./ImageCard";
+import ImageCard from "./ImageCard";
 
 interface ICategory {
   slug: string;
@@ -17,22 +16,27 @@ interface ICategory {
 interface IPartner {
   name: string;
   slug: string;
-  link: string;
+  link?: string;
   image: string;
   imageXL?: boolean;
   color?: string;
   nameColorInverted?: boolean;
+  countries?: string[];
+}
+
+interface IPartnerData {
+  categories: ICategory[];
+  partners: IPartner[];
 }
 
 interface IPartnerItemsProps extends WithTranslation {
+  data: IPartnerData;
   categorySlug?: string;
 }
 
 class PartnerItems extends React.Component<IPartnerItemsProps, {}> {
-  partnerData: { categories: ICategory[]; partners: IPartner[] } = PartnerData;
-
   getCategories = (categorySlug?: string): ICategory[] => {
-    let categories = this.partnerData.categories;
+    let categories = this.props.data.categories;
     if (categorySlug) {
       categories = categories.filter(
         category => category.slug === categorySlug,
@@ -42,10 +46,15 @@ class PartnerItems extends React.Component<IPartnerItemsProps, {}> {
   };
 
   getPartners = (categorySlug?: string): IPartner[] => {
-    let partners = this.partnerData.partners;
+    let partners = this.props.data.partners;
     if (categorySlug) {
       partners = partners.filter(partner => partner.slug === categorySlug);
     }
+    partners = partners.filter(
+      partner =>
+        !partner.countries ||
+        partner.countries.includes(this.props.i18n.language),
+    );
     return partners;
   };
 
@@ -57,9 +66,11 @@ class PartnerItems extends React.Component<IPartnerItemsProps, {}> {
           return (
             <Fade key={categoryKey} right cascade>
               <div id={`wrapper-${categoryKey}`}>
-                <Typography variant="h2">
-                  {category.name[this.props.i18n.language]}
-                </Typography>
+                {!!this.getPartners(category.slug).length && (
+                  <Typography variant="h2">
+                    {category.name[this.props.i18n.language]}
+                  </Typography>
+                )}
                 <Box paddingTop={4} paddingBottom={4}>
                   <Grid
                     container
@@ -73,7 +84,7 @@ class PartnerItems extends React.Component<IPartnerItemsProps, {}> {
                         const partnerCardKey: string =
                           "category-" + index + "-partner-" + partnerIndex;
                         return (
-                          <Card
+                          <ImageCard
                             key={partnerCardKey}
                             name={partner.name}
                             image={

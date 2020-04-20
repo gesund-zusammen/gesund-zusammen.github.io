@@ -8,6 +8,8 @@ import MuiMarkdown from "../common/MuiMarkdown";
 import InfoBox from "../common/InfoBox";
 import PartnerItems from "../common/PartnerItems";
 
+import StartPartners from "../../data/partners_start.json";
+
 import ContentDE from "../../data/landing/landing_de.md";
 import ContentEN from "../../data/landing/landing_en.md";
 import ContentFR from "../../data/landing/landing_fr.md";
@@ -74,7 +76,7 @@ class Start extends React.PureComponent<WithTranslation, {}> {
         </Box>
 
         <Box id="founding-partners" paddingBottom={4} marginTop={4}>
-          <PartnerItems categorySlug={"founders"} />
+          <PartnerItems data={StartPartners} />
         </Box>
       </>
     );
