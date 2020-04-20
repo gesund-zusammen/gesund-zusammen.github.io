@@ -3,9 +3,9 @@ title: "Program Spanish"
 language: "es"
 ---
 
-## El Programa de Aceleración de SaludJuntos
+## El Programa de Aceleración de #HealthyTogether
 
-El programa de aceleración #SaludJuntos está organizado por TOA, wefox y finleap, con el apoyo de muchos de los principales actores del ecosistema (es decir, N26, BVDS, DeliveryHero, Celonis, Ada Health).
+El programa de aceleración #HealthyTogehter está organizado por TOA, wefox y finleap, con el apoyo de muchos de los principales actores del ecosistema (es decir, N26, BVDS, DeliveryHero, Celonis, Ada Health).
 
 #### El programa ofrece:
 
