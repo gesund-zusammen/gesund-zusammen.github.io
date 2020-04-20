@@ -2,10 +2,9 @@
 title: "Landing French"
 language: "fr"
 ---
+## #HealthyTogether
 
-* ## #HealthyTogether
-
-  ### un accélérateur initié par l'économie numérique.
+* #### Un accélérateur initié par l'économie numérique.
 
   Nous sommes une vaste alliance d'entreprises technologiques. Nous voulons aider - activement - la société, le monde politique et les entreprises à contenir le COVID-19 avec des solutions numériques. Nous avons fondé un programme d'accélération qui vise à  mettre rapidement à disposition des outils numériques prometteurs.
 

@@ -80,6 +80,13 @@
       "countries": ["it"]
     },
     {
+      "name": "Freeda",
+      "slug": "tech",
+      "image": "freeda.png",
+      "link": "http://www.freedamedia.com/",
+      "countries": ["de", "en", "es", "fr"]
+    },
+    {
       "name": "Data4Life",
       "slug": "tech",
       "image": "data4life.svg",

@@ -2,10 +2,9 @@
 title: "Landing Spanish"
 language: "es"
 ---
+## #HealthyTogether
 
-* ## #HealthyTogehter -
-
-  ### un programa de Aceleración iniciado por la economía digital
+* #### Un programa de Aceleración iniciado por la economía digital
 
   A partir de la alianza de empresas tecnológicas alemanas, queremos ayudar activamente a la sociedad, los gobiernos y las empresas, a contener la pandemia del COVID-19 con soluciones digitales. Hemos fundado un programa de Aceleración que proporciona recursos para llevar a la ciudadanía herramientas digitales más rápidamente.
 

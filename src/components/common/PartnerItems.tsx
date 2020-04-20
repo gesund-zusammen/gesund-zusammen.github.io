@@ -46,15 +46,13 @@ class PartnerItems extends React.Component<IPartnerItemsProps, {}> {
   };
 
   getPartners = (categorySlug?: string): IPartner[] => {
-    let partners = this.props.data.partners;
-    if (categorySlug) {
-      partners = partners.filter(partner => partner.slug === categorySlug);
-    }
-    partners = partners.filter(
-      partner =>
-        !partner.countries ||
-        partner.countries.includes(this.props.i18n.language),
-    );
+    const partners = this.props.data.partners
+      .filter(partner => (categorySlug ? partner.slug === categorySlug : true))
+      .filter(
+        partner =>
+          !partner.countries ||
+          partner.countries.includes(this.props.i18n.language),
+      );
     return partners;
   };
 

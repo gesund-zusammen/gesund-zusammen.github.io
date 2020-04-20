@@ -2,10 +2,9 @@
 title: "Landing Italian"
 language: "it"
 ---
+## #HealthyTogether
 
-* ## #HealthyTogether
-
-  ### un acceleratore guidato dall'industria digitale
+* #### Un acceleratore guidato dall'industria digitale
 
   Siamo un'ampia alleanza di società tecnologiche a livello europeo che vuole attivamente aiutare la società, i governi e le imprese nel contenimento del Covid-19 tramite soluzioni digitali. Abbiamo fondato un programma di accelerazione che apporta le risorse necessarie a portare nuovi strumenti digitali al pubblico più velocemente.
 
