@@ -3,8 +3,8 @@
     {
       "slug": "gesund_zusammen_initiative",
       "name": {
-        "de": "GesundZuammen Initiative",
-        "en": "GesundZuammen Initiative",
+        "de": "GesundZusammen Initiative",
+        "en": "GesundZusammen Initiative",
         "fr": "Initiative Initiative",
         "it": "Iniziativa HealthyTogether",
         "es": "Iniciativa SaludJuntos"
@@ -292,7 +292,7 @@
       },
       "global": true
     },
-        {
+    {
       "name": "CoroNow.app",
       "link": "https://coronow.ch/",
       "category": "digital_tools",
@@ -392,7 +392,7 @@
       },
       "global": false
     },
-        {
+    {
       "name": "Effizientes Wissensmanagement zur Pandemiebekämpfung ",
       "link": "https://krs.solutions/",
       "category": "digital_tools",
@@ -402,7 +402,7 @@
       },
       "global": false
     },
-      {
+    {
       "name": "Zeitlicher Verlauf der Corona SARS Cov. 19 Pandemie in Deutschland",
       "link": "http://risklayer-explorer.com/event/100/detail",
       "category": "infection_tracking",
@@ -812,7 +812,7 @@
       },
       "global": false
     },
-     {
+    {
       "name": "Sicher Test",
       "link": "https://www.sichertest.com/",
       "category": "digital_tools",
@@ -822,7 +822,7 @@
       },
       "global": true
     },
-     {
+    {
       "name": "Quarano - Entlastung der Gesundheitsämter",
       "link": "quarano.de",
       "category": "digital_tools",
@@ -832,7 +832,7 @@
       },
       "global": true
     },
-     {
+    {
       "name": "Dr. Coronata",
       "link": "https://devpost.com/software/dr-coronata",
       "category": "digital_tools",
@@ -842,7 +842,7 @@
       },
       "global": true
     },
-     {
+    {
       "name": "Proof of Health (US)",
       "link": "https://estimote.com/wearable/",
       "category": "waerables_and_IoT",
@@ -852,7 +852,7 @@
       },
       "global": true
     },
-     {
+    {
       "name": "How we feel app (US)",
       "link": "https://www.howwefeel.org/",
       "category": "digital_tools",
@@ -882,7 +882,7 @@
       },
       "global": true
     },
-      {
+    {
       "name": "Scoutbee (US)",
       "link": "https://scoutbee.com/",
       "category": "initiatives",
@@ -1002,7 +1002,7 @@
       },
       "global": true
     },
-        {
+    {
       "name": "HilfeLokal",
       "link": "https://www.hilfelokal.de/",
       "category": "initiatives",
