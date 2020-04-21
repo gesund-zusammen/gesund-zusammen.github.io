@@ -42,7 +42,7 @@ class LatestNews extends React.Component<WithTranslation> {
                 disableFocusRipple={true}
                 href={`${this.props.i18n.language}/press`}
               >
-                See all news
+                {this.props.t("latestNews.linkTitle")}
               </LinkButton>
             </Grid>
             <Grid item xs={12} sm={6}>
