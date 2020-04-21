@@ -5,6 +5,7 @@ import styled, { AnyStyledComponent } from "styled-components";
 import { withTranslation, WithTranslation } from "react-i18next";
 
 import CTABox from "../common/CTABox";
+import NewsCard from "../common/NewsCard";
 
 import PhotoSolveigRatenow from "../../images/solveig_rathenow.png";
 import PhotoKerstinBock from "../../images/kerstin_bock.png";
@@ -12,54 +13,78 @@ import PressKitLogo from "../../images/presskit_logo.svg";
 import ReleaseEnLogo from "../../../public/187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.png";
 import ReleaseDeLogo from "../../../public/187534-20200401090213000000000-gesund-zusammen-die-digitale-wirtschaft-s.png";
 
+import NewsData from "../../data/latestnews.json";
+
+interface INewsItem {
+  date: string;
+  outlet: string;
+  teaser: string;
+  link: string;
+}
+
 class PressContact extends React.PureComponent<WithTranslation, {}> {
+  getNewsItems = (limit?: number): Array<INewsItem> => {
+    const news = NewsData.sort(
+      (a, b) => Date.parse(a.date) - Date.parse(b.date),
+    );
+    if (limit) {
+      return news.slice(0, limit);
+    }
+    return news;
+  };
+
   render = () => {
     return (
       <>
+        <Grid container spacing={8}>
+          <Grid item xs={12} sm={8}>
+            <Typography variant="h2">
+              {this.props.t("press.mediaHeader")}
+            </Typography>
+            {this.getNewsItems().map(newsItem => (
+              <NewsCard
+                key={`${newsItem.date}-${newsItem.link}`}
+                outlet={newsItem.outlet}
+                teaser={newsItem.teaser}
+                link={newsItem.link}
+              />
+            ))}
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Typography variant="h4">
+              {this.props.t("press.contactHeader")}
+            </Typography>
+            <Typography variant="body1">
+              {this.props.t("press.inqueryInitiative")}{" "}
+              <Link href="mailto:media@gesund-zusammen.de">
+                media@gesund-zusammen.de
+              </Link>
+            </Typography>
+            <StyledAvatar alt="Solveig Ratenow" src={PhotoSolveigRatenow} />
+            <Typography variant="h6" color="primary">
+              Solveig Ratenow
+            </Typography>
+            <Typography variant="subtitle1">
+              Head of Venture communication @ Finleap
+            </Typography>
+            <br />
+            <br />
+            <Typography variant="body1">
+              {this.props.t("press.inqueryAccelerator")}{" "}
+              <Link href="mailto:media.accelerator@gesund-zusammen.de">
+                media.accelerator@gesund-zusammen.de
+              </Link>
+            </Typography>
+            <StyledAvatar alt="Kerstin Bock" src={PhotoKerstinBock} />
+            <Typography variant="h6" color="primary">
+              Kerstin Bock
+            </Typography>
+            <Typography variant="subtitle1">
+              Head of Media relations @ Tech Open Air
+            </Typography>
+          </Grid>
+        </Grid>
         <PressContactWrapper paddingBottom={4}>
-          <Typography variant="h2">
-            {this.props.t("press.pageHeader")}
-          </Typography>
-          <Typography variant="body1">
-            {this.props.t("press.inqueryInitiative")}{" "}
-            <Link href="mailto:media@gesund-zusammen.de">
-              media@gesund-zusammen.de
-            </Link>
-          </Typography>
-          <Grid container spacing={5} justify="flex-start" alignItems="center">
-            <Grid item xs={12} sm={4}>
-              <StyledAvatar alt="Solveig Ratenow" src={PhotoSolveigRatenow} />
-            </Grid>
-            <Grid item xs={12} sm={8}>
-              <Typography variant="h4" color="primary">
-                Solveig Ratenow
-              </Typography>
-              <Typography variant="body1">
-                Head of Venture communication @ Finleap
-              </Typography>
-            </Grid>
-          </Grid>
-          <br />
-          <br />
-          <Typography variant="body1">
-            {this.props.t("press.inqueryAccelerator")}{" "}
-            <Link href="mailto:media.accelerator@gesund-zusammen.de">
-              media.accelerator@gesund-zusammen.de
-            </Link>
-          </Typography>
-          <Grid container spacing={5} justify="flex-start" alignItems="center">
-            <Grid item xs={12} sm={4}>
-              <StyledAvatar alt="Kerstin Bock" src={PhotoKerstinBock} />
-            </Grid>
-            <Grid item xs={12} sm={8}>
-              <Typography variant="h4" color="primary">
-                Kerstin Bock
-              </Typography>
-              <Typography variant="body1">
-                Head of Media relations @ Tech Open Air
-              </Typography>
-            </Grid>
-          </Grid>
           <Box
             paddingBottom={4}
             paddingTop={8}
@@ -144,7 +169,12 @@ const PressContactWrapper: AnyStyledComponent = styled(Box)`
 `;
 
 const StyledAvatar: AnyStyledComponent = styled(Avatar)`
-  border: 8px solid rgba(0, 170, 200, 0.3);
+  && {
+    width: 150px;
+    height: 150px;
+    margin: 0 0 1rem 0;
+    border: 8px solid rgba(0, 170, 200, 0.3);
+  }
 `;
 
 const StyledDownloadLink: AnyStyledComponent = styled(Link)`

@@ -1,22 +1,62 @@
 [
   {
-    "outlet": "Daily Mail",
-    "teaser": "German tech startups plead for European approach to corona tracing app",
-    "link": "https://www.dailymail.co.uk/wires/reuters/article-8217883/German-tech-startups-plead-European-approach-corona-tracing-app.html"
-  },
-  {
-    "outlet": "NASDAQ",
-    "teaser": "German tech startups plead for European approach to corona tracing app",
-    "link": "https://www.nasdaq.com/articles/german-tech-startups-plead-for-european-approach-to-corona-tracing-app-2020-04-14"
-  },
-  {
+    "date": "2020-04-01",
     "outlet": "Bloomberg",
     "teaser": "German Startups Join Forces to Create Virus Tracking App",
     "link": "https://www.bloomberg.com/news/articles/2020-04-01/german-startups-join-forces-to-create-virus-tracking-app "
   },
   {
+    "date": "2020-04-14",
+    "outlet": "Daily Mail",
+    "teaser": "German tech startups plead for European approach to corona tracing app",
+    "link": "https://www.dailymail.co.uk/wires/reuters/article-8217883/German-tech-startups-plead-European-approach-corona-tracing-app.html"
+  },
+  {
+    "date": "2020-04-14",
+    "outlet": "NASDAQ",
+    "teaser": "German tech startups plead for European approach to corona tracing app",
+    "link": "https://www.nasdaq.com/articles/german-tech-startups-plead-for-european-approach-to-corona-tracing-app-2020-04-14"
+  },
+  {
+    "date": "2020-04-14",
+    "outlet": "Investing.com",
+    "teaser": "German tech startups plead for European approach to corona tracing app",
+    "link": "https://ca.investing.com/news/technology-news/german-tech-startups-plead-for-european-approach-to-corona-tracing-app-2115592"
+  },
+  {
+    "date": "2020-04-14",
     "outlet": "Handelsblatt",
     "teaser": "Deutsche Start-ups warnen vor Initiative von Google und Apple gegen Corona",
     "link": "https://www.handelsblatt.com/technik/medizin/schreiben-ans-kanzleramt-deutsche-start-ups-warnen-vor-initiative-von-google-und-apple-gegen-corona/25739896.html "
+  },
+  {
+    "date": "2020-04-14",
+    "outlet": "Reuters",
+    "teaser": "German tech startups plead for European approach to corona tracing app",
+    "link": "https://www.reuters.com/article/us-health-coronavirus-tech-germany/german-tech-startups-plead-for-european-approach-to-corona-tracing-app-idUSKCN21W20F"
+  },
+  {
+    "date": "2020-04-14",
+    "outlet": "New York Times",
+    "teaser": "German tech startups plead for European approach to corona tracing app",
+    "link": "https://www.nytimes.com/reuters/2020/04/14/technology/14reuters-health-coronavirus-tech-germany.html"
+  },
+  {
+    "date": "2020-04-14",
+    "outlet": "Capital",
+    "teaser": "Wir bauen eine App, damit wir alle wieder raus können",
+    "link": "https://www.capital.de/wirtschaft-politik/start-ups-basteln-an-einer-software-mit-der-wir-uns-tracen-lassen"
+  },
+  {
+    "date": "2020-04-14",
+    "outlet": "NTV",
+    "teaser": "Startups bauen Corona-App für Deutschland",
+    "link": "https://www.n-tv.de/mediathek/audio/Startups-bauen-Corona-App-fuer-Deutschland-article21713346.html"
+  },
+  {
+    "date": "2020-04-14",
+    "outlet": "Reuters",
+    "teaser": "Deutsche Tracing-App-Macher werben für europäische Lösung",
+    "link": "https://de.reuters.com/article/virus-app-idDEKCN21W1O1"
   }
 ]

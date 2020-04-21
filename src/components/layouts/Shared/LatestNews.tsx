@@ -7,6 +7,7 @@ import ArrowIcon from "../../../images/icon_arrow_right_dark.svg";
 import NewsData from "../../../data/latestnews.json";
 
 interface INewsItem {
+  date: string;
   outlet: string;
   teaser: string;
   link: string;
@@ -14,11 +15,15 @@ interface INewsItem {
 
 class LatestNews extends React.Component<WithTranslation> {
   getNewsItems = (limit?: number): Array<INewsItem> => {
+    const news = NewsData.sort(
+      (a, b) => Date.parse(a.date) - Date.parse(b.date),
+    );
     if (limit) {
-      return NewsData.slice(0, limit);
+      return news.slice(0, limit);
     }
-    return NewsData;
+    return news;
   };
+
   render = () => {
     return (
       <LatestNewsBox id="latest-news" marginTop={4}>

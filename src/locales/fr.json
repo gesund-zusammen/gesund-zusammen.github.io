@@ -119,14 +119,12 @@
     "contact": "Pour d'autres questions, merci de contacter: Solveig Rathenow <media@gesund-zusammen.de>"
   },
   "press": {
+    "mediaHeader": "Dans les médias",
     "title": "Contact Presse",
     "claim": "Vous avez une autre question?",
     "cta": "Contactez nous",
     "link": "mailto:media@gesund-zusammen.de",
-    "pageHeader": "Contactez nous",
-    "pressContactName": "Solveig Rathenow",
-    "pressContactTitle": "Head of Venture Communications",
-    "pressContactEmail": "media@gesund-zusammen.de",
+    "contactHeader": "Contactez nous",
     "downloadLogo": "Télécharger le logo",
     "resources": "Ressources",
     "resourcesLine1": "Télécharger le logo GesundZusammen dans plusieurs formats.",
