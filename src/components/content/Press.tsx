@@ -10,8 +10,9 @@ import NewsCard from "../common/NewsCard";
 import PhotoSolveigRatenow from "../../images/solveig_rathenow.png";
 import PhotoKerstinBock from "../../images/kerstin_bock.png";
 import PressKitLogo from "../../images/presskit_logo.svg";
-import ReleaseEnLogo from "../../../public/187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.png";
-import ReleaseDeLogo from "../../../public/187534-20200401090213000000000-gesund-zusammen-die-digitale-wirtschaft-s.png";
+
+import ReleaseEnLogo from "../../../public/pr_en.png";
+import ReleaseDeLogo from "../../../public/pr_de.png";
 
 import NewsData from "../../data/latestnews.json";
 
@@ -124,8 +125,8 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
         <PressContactWrapper paddingBottom={4}>
           <Box
             paddingBottom={4}
-            paddingTop={8}
-            marginTop={8}
+            paddingTop={4}
+            marginTop={4}
             style={{ borderTop: "1px solid #CED7DB" }}
           >
             <Typography variant="h2">
@@ -149,8 +150,8 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
           </Box>
           <Box
             paddingBottom={4}
-            paddingTop={8}
-            marginTop={8}
+            paddingTop={4}
+            marginTop={4}
             style={{ borderTop: "1px solid #CED7DB" }}
           >
             <Typography variant="h2">
@@ -169,19 +170,11 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
                 {"PDF: " + this.props.t("press.releaseTitle")}
               </Link>
             </Typography>
-            <Typography variant="body2">
-              <Link href={this.props.t("press.releaseHrefImage")}>
-                {"PNG: " + this.props.t("press.downloadLogo")}
-              </Link>
-            </Typography>
-            <Link href={this.props.t("press.releaseHrefImage")}>
-              <StyledPressReleaseImage
-                src={
-                  this.props.i18n.language == "de"
-                    ? ReleaseDeLogo
-                    : ReleaseEnLogo
-                }
-              />
+            <Link href="/pr_en.png">
+              <StyledPressReleaseImage src={ReleaseEnLogo} />
+            </Link>
+            <Link href="/pr_de.png">
+              <StyledPressReleaseImage src={ReleaseDeLogo} />
             </Link>
           </Box>
         </PressContactWrapper>
@@ -248,8 +241,9 @@ const StyledDownloadButton: AnyStyledComponent = styled(GetApp)`
 `;
 
 const StyledPressReleaseImage: AnyStyledComponent = styled.img`
-  margin: 2rem 0;
+  margin: 2rem 2rem 2rem 0;
   max-width: 368px;
+  border: 1px solid #00aac8;
 `;
 
 const StyledPressKitImage: AnyStyledComponent = styled.img`
