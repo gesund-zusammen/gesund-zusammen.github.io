@@ -17,11 +17,11 @@ class NewsCard extends React.PureComponent<INewsCardProps, {}> {
       <OptionalLinkWrapper link={this.props.link}>
         <NewsCardRoot>
           <NewsCardContent>
-            <Typography variant="subtitle2" color="secondary">
+            <Typography variant="h5" color="secondary">
               {this.props.outlet}
             </Typography>
-            <NewsCardTitle variant="h4" color="primary">
-              {this.props.teaser}
+            <NewsCardTitle variant="body1" color="primary">
+              &quot;{this.props.teaser}&quot;
             </NewsCardTitle>
           </NewsCardContent>
         </NewsCardRoot>
