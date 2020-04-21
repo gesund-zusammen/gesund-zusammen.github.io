@@ -119,14 +119,12 @@
     "contact": "Für weitere Fragen schreiben Sie bitte an: media@gesund-zusammen.de"
   },
   "press": {
-    "title": "PR Kontakt",
+    "mediaHeader": "In den Medien",
+    "title": "Presse und Kontakt",
     "claim": "Sie haben noch eine Frage?",
     "cta": "Schreiben Sie uns",
     "link": "mailto:media@gesund-zusammen.de",
-    "pageHeader": "Schreiben Sie Uns",
-    "pressContactName": "Solveig Rathenow",
-    "pressContactTitle": "Head of Venture Communications",
-    "pressContactEmail": "media@gesund-zusammen.de",
+    "contactHeader": "Schreiben Sie Uns",
     "downloadLogo": "Download Logo",
     "resources": "Pressekit",
     "resourcesLine1": "Download the GesundZusammen logo in various formats.",
@@ -142,7 +140,8 @@
   },
   "latestNews": {
     "title": "Neueste Nachrichten",
-    "content": "Lesen Sie über #GesundZusammen und unser Accelerator Programm in den Medien"
+    "content": "Lesen Sie über #GesundZusammen und unser Accelerator Programm in den Medien",
+    "linkTitle": "Alle Nachrichten ansehen"
   },
   "newsletter": {
     "title": "Melden Sie sich für unseren Newsletter an",
