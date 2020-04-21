@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Avatar, Grid, Link } from "@material-ui/core";
+import { Box, Button, Typography, Avatar, Grid, Link } from "@material-ui/core";
 import { GetApp } from "@material-ui/icons";
 import styled, { AnyStyledComponent } from "styled-components";
 import { withTranslation, WithTranslation } from "react-i18next";
@@ -15,6 +15,9 @@ import ReleaseDeLogo from "../../../public/187534-20200401090213000000000-gesund
 
 import NewsData from "../../data/latestnews.json";
 
+const INITIAL_LIST_LENGTH = 5;
+const LIST_LENGTH_INCREMENT = 5;
+
 interface INewsItem {
   date: string;
   outlet: string;
@@ -22,7 +25,20 @@ interface INewsItem {
   link: string;
 }
 
-class PressContact extends React.PureComponent<WithTranslation, {}> {
+interface IPressState {
+  listLength: number;
+}
+
+const DEFAULT_STATE: IPressState = {
+  listLength: INITIAL_LIST_LENGTH,
+};
+
+class PressContact extends React.PureComponent<WithTranslation, IPressState> {
+  constructor(props: WithTranslation) {
+    super(props);
+    this.state = DEFAULT_STATE;
+  }
+
   getNewsItems = (limit?: number): Array<INewsItem> => {
     const news = NewsData.sort(
       (a, b) => Date.parse(b.date) - Date.parse(a.date),
@@ -33,6 +49,12 @@ class PressContact extends React.PureComponent<WithTranslation, {}> {
     return news;
   };
 
+  handleShowMore = () => {
+    this.setState({
+      listLength: this.state.listLength + LIST_LENGTH_INCREMENT,
+    });
+  };
+
   render = () => {
     return (
       <>
@@ -41,14 +63,29 @@ class PressContact extends React.PureComponent<WithTranslation, {}> {
             <Typography variant="h2">
               {this.props.t("press.mediaHeader")}
             </Typography>
-            {this.getNewsItems().map(newsItem => (
-              <NewsCard
-                key={`${newsItem.date}-${newsItem.link}`}
-                outlet={newsItem.outlet}
-                teaser={newsItem.teaser}
-                link={newsItem.link}
-              />
-            ))}
+            {this.getNewsItems().map(
+              (newsItem, index) =>
+                index < this.state.listLength && (
+                  <NewsCard
+                    key={`${newsItem.date}-${newsItem.link}`}
+                    outlet={newsItem.outlet}
+                    teaser={newsItem.teaser}
+                    link={newsItem.link}
+                  />
+                ),
+            )}
+            <Box paddingBottom={4}>
+              {this.getNewsItems().length > this.state.listLength && (
+                <ShowMoreButton
+                  color="primary"
+                  variant="outlined"
+                  disableFocusRipple={true}
+                  onClick={this.handleShowMore}
+                >
+                  {this.props.t("press.showOlderNews")}
+                </ShowMoreButton>
+              )}
+            </Box>
           </Grid>
           <Grid item xs={12} sm={4}>
             <Typography variant="h4">
@@ -159,6 +196,25 @@ class PressContact extends React.PureComponent<WithTranslation, {}> {
     );
   };
 }
+
+const ShowMoreButton: AnyStyledComponent = styled(Button)`
+  && {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: none;
+    text-align: center;
+    border-radius: 4px;
+    margin: 0 auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #003269 !important;
+    }
+  }
+`;
 
 const PressContactWrapper: AnyStyledComponent = styled(Box)`
   && {
