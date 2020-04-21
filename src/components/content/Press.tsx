@@ -25,7 +25,7 @@ interface INewsItem {
 class PressContact extends React.PureComponent<WithTranslation, {}> {
   getNewsItems = (limit?: number): Array<INewsItem> => {
     const news = NewsData.sort(
-      (a, b) => Date.parse(a.date) - Date.parse(b.date),
+      (a, b) => Date.parse(b.date) - Date.parse(a.date),
     );
     if (limit) {
       return news.slice(0, limit);
