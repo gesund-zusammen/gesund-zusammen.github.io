@@ -3,9 +3,7 @@ title: "Program English"
 language: "en"
 ---
 
-## The #HealthyTogether Accelerator Program
-
-The #HealthyTogether Accelerator is organized by TOA, wefox & finleap, with many leading ecosystem players (i.e. N26, BVDS, DeliveryHero, Celonis, Ada Health) supporting.
+The Future Perfect Accelerator is organized by TOA, wefox & finleap, with many leading ecosystem players (i.e. N26, BVDS, DeliveryHero, Celonis, Ada Health) supporting.
 
 #### The program offers:
 

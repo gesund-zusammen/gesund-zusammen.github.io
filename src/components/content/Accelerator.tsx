@@ -16,9 +16,21 @@ import ContentFR from "../../data/accelerator/accelerator_fr.md";
 import ContentIT from "../../data/accelerator/accelerator_it.md";
 import ContentES from "../../data/accelerator/accelerator_es.md";
 
+import LogoFuturePerfect from "../../images/logo_future_perfect.svg";
 import IlluCoworking from "../../images/illu_coworking.svg";
 import IlluMobile from "../../images/illu_mobile.svg";
 import IlluSupport from "../../images/illu_support.svg";
+
+const AcceleratorLogo: AnyStyledComponent = styled.img`
+  display: block;
+  width: 500px;
+  max-width: 100%;
+  margin: 0 0 2rem 0;
+
+  @media (min-width: 600px) {
+    margin: 0 0 4rem 0;
+  }
+`;
 
 const ContentGridItem: AnyStyledComponent = styled(Grid)`
   && {
@@ -62,6 +74,7 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <>
+        <AcceleratorLogo src={LogoFuturePerfect} />
         <Box id="accelerator" paddingBottom={4} marginTop={2}>
           <MuiMarkdown
             markdown={this.getMarkdown(this.props.i18n.language)}

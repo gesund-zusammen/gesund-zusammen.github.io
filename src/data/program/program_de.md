@@ -3,9 +3,7 @@ title: "Program German"
 language: "de"
 ---
 
-## Das #GesundZusammen Accelerator Programm
-
-Der #GesundZusammen Accelerator wird von TOA, wefox & finleap organisiert, mit Unterstützung vieler Technologie-Unternehmen (i.e. N26, DeliveryHero, Celonis, Ada Health) sowie dem Bundesverband Deutscher Startups.
+Der Future Perfect Accelerator wird von TOA, wefox & finleap organisiert, mit Unterstützung vieler Technologie-Unternehmen (i.e. N26, DeliveryHero, Celonis, Ada Health) sowie dem Bundesverband Deutscher Startups.
 
 #### Das Programm bietet:
 

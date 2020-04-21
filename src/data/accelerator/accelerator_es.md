@@ -2,15 +2,14 @@
 title: "Landing Spanish"
 language: "es"
 ---
-## #HealthyTogether
 
-* #### Un programa de Aceleración iniciado por la economía digital
+- #### Un programa de Aceleración iniciado por la economía digital
 
   A partir de la alianza de empresas tecnológicas alemanas, queremos ayudar activamente a la sociedad, los gobiernos y las empresas, a contener la pandemia del COVID-19 con soluciones digitales. Hemos fundado un programa de Aceleración que proporciona recursos para llevar a la ciudadanía herramientas digitales más rápidamente.
 
   [Ir al programa](/es/program)
 
-* #### Para que las cosas privadas sigan siendo privadas.
+- #### Para que las cosas privadas sigan siendo privadas.
 
   Incluso en tiempos de crisis, la libertad y los derechos personales de las personas individuales son la prioridad principal de nuestra tecnología.
 
@@ -21,4 +20,3 @@ language: "es"
   #### Para poner en marcha la economía
 
   La tecnología puede emplearse para reducir los riesgos para la salud en las empresas y ayudar a impulsar nuevamente la actividad económica.
-

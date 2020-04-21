@@ -2,7 +2,6 @@
 title: "Landing German"
 language: "de"
 ---
-## #GesundZusammen
 
 * #### Ein Accelerator initiiert von der Digitalwirtschaft
 

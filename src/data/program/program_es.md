@@ -3,9 +3,7 @@ title: "Program Spanish"
 language: "es"
 ---
 
-## El Programa de Aceleración de #HealthyTogether
-
-El programa de aceleración #HealthyTogehter está organizado por TOA, wefox y finleap, con el apoyo de muchos de los principales actores del ecosistema (es decir, N26, BVDS, DeliveryHero, Celonis, Ada Health).
+El programa de aceleración Future Perfect está organizado por TOA, wefox y finleap, con el apoyo de muchos de los principales actores del ecosistema (es decir, N26, BVDS, DeliveryHero, Celonis, Ada Health).
 
 #### El programa ofrece:
 
