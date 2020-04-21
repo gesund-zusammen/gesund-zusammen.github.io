@@ -140,7 +140,8 @@
   },
   "latestNews": {
     "title": "Latest News",
-    "content": "Read about #HealthyTogether and our Accelerator Program in the media"
+    "content": "Read about #HealthyTogether and our Accelerator Program in the media",
+    "linkTitle": "See all news"
   },
   "newsletter": {
     "title": "Subscribe to our Newsletter",

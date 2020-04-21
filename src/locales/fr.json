@@ -140,7 +140,8 @@
   },
   "latestNews": {
     "title": "Dernières nouvelles",
-    "content": "En savoir plus sur #HealthyTogether et notre programme d'accélérateur dans les médias"
+    "content": "En savoir plus sur #HealthyTogether et notre programme d'accélérateur dans les médias",
+    "linkTitle": "Voir toutes les actualités"
   },
   "newsletter": {
     "title": "S'abonner à la newsletter",

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Grid, Typography } from "@material-ui/core";
+import { Box, Button, Container, Grid, Typography } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 import { withTranslation, WithTranslation } from "react-i18next";
 
@@ -36,6 +36,14 @@ class LatestNews extends React.Component<WithTranslation> {
               <Typography variant="body1">
                 {this.props.t("latestNews.content")}
               </Typography>
+              <LinkButton
+                color="primary"
+                variant="contained"
+                disableFocusRipple={true}
+                href={`${this.props.i18n.language}/press`}
+              >
+                See all news
+              </LinkButton>
             </Grid>
             <Grid item xs={12} sm={6}>
               {this.getNewsItems(3).map(newsItem => {
@@ -84,6 +92,19 @@ const NewsItem: AnyStyledComponent = styled.a`
 
   &:last-of-type {
     border-bottom: none;
+  }
+`;
+
+const LinkButton: AnyStyledComponent = styled(Button)`
+  && {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: none;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0.6rem 2rem;
+    margin: 1rem auto;
   }
 `;
 
