@@ -62,15 +62,13 @@
       "name": "Via",
       "slug": "founders",
       "image": "viadata.svg",
-      "link": "https://www.viadata.io",
-      "countries": ["de"]
+      "link": "https://www.viadata.io"
     },
     {
       "name": "Global Citizen Foundation",
       "slug": "founders",
       "image": "globalcitizen.svg",
-      "link": "https://www.globalcitizenfoundation.org",
-      "countries": ["de"]
+      "link": "https://www.globalcitizenfoundation.org"
     },
     {
       "name": "Freeda",
