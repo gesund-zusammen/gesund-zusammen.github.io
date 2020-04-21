@@ -67,6 +67,18 @@
       "link": "https://www.viadata.io"
     },
     {
+      "name": "Amazon Web Services",
+      "slug": "strategic",
+      "image": "AWS.svg",
+      "link": "https://aws.amazon.com/activate/"
+    },
+    {
+      "name": "Stripe",
+      "slug": "strategic",
+      "image": "Stripe.png",
+      "link": "https://https://stripe.com/"
+    },
+    {
       "name": "Global Citizen Foundation",
       "slug": "strategic",
       "image": "globalcitizen.svg",
