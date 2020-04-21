@@ -27,6 +27,18 @@
       "slug": "founders",
       "image": "toa.png",
       "link": "https://toa.berlin"
+    },
+    {
+      "name": "Via",
+      "slug": "tech",
+      "image": "viadata.svg",
+      "link": "https://www.viadata.io"
+    },
+    {
+      "name": "Global Citizen Foundation",
+      "slug": "tech",
+      "image": "globalcitizen.svg",
+      "link": "https://www.globalcitizenfoundation.org"
     }
   ]
 }
