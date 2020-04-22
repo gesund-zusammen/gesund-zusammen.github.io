@@ -5,6 +5,10 @@ language: "en"
 
 The FuturePerfect Accelerator is organized by TOA, wefox & finleap, with many leading ecosystem players (i.e. N26, BVDS, DeliveryHero, Celonis, Ada Health) supporting.
 
+#### The name
+
+FuturePerfect refers to the future perfect verb tense: an action completed in the future. When we use this tense, we are projecting ourselves forward into the future and looking back at something to be completed at some time later than now. An action plan to define what's to come.
+
 #### The program offers:
 
 - €20,000 of equity-free capital, no strings attached.
