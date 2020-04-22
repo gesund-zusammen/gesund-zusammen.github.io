@@ -61,6 +61,12 @@
       "link": "https://www.globalcitizenfoundation.org"
     },
     {
+      "name": "Amazon Web Services",
+      "slug": "strategic",
+      "image": "AWS.svg",
+      "link": "https://aws.amazon.com/activate/"
+    },
+    {
       "name": "Data4Life",
       "slug": "strategic",
       "image": "data4life.svg",
