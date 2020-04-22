@@ -361,6 +361,31 @@
       "link": "https://kiron.ngo"
     },
     {
+      "name": "Copulla",
+      "slug": "ambassador",
+      "image": "copulla.png",
+      "link": "http://copulla.com",
+      "imageXL": true
+    },
+    {
+      "name": "More Effects",
+      "slug": "ambassador",
+      "image": "more_effects.jpg",
+      "link": "https://more-effects.de"
+    },
+    {
+      "name": "Startup Business",
+      "slug": "ambassador",
+      "image": "startup_business.jpg",
+      "link": "https://www.startupbusiness.it/"
+    },
+    {
+      "name": "Tek Up",
+      "slug": "ambassador",
+      "image": "tek_up.png",
+      "link": "https://www.youtube.com/c/tekupchannel"
+    },
+    {
       "name": "MVP Factory",
       "slug": "ambassador",
       "image": "mvpf.png",
@@ -480,7 +505,14 @@
       "name": "German Tech",
       "slug": "strategic",
       "image": "german_tech.png",
-      "link": "https://german.tech/"
+      "link": "https://german.tech"
+    },
+    {
+      "name": "Young & Digital",
+      "slug": "strategic",
+      "image": "y_and_d.png",
+      "link": "https://young-digital.com",
+      "imageXL": true
     }
   ]
 }
