@@ -5,7 +5,7 @@ language: "en"
 
 - #### An Accelerator initiated by the digital economy
 
-  As broad alliance of German tech companies, we want to actively help society, politics and business to contain COVID-19 with digital solutions. We have founded an Accelerator program that provide resources to bring promising Digital Tools to the public faster.
+As broad alliance of German tech companies, we want to actively help society, politics and business to contain COVID-19 with digital solutions. We have founded the FuturePerfect accelerator program to provide resources to bring promising Digital Tools to the public faster and better.
 
   [Go to program](/en/program)
 

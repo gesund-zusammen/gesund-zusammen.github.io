@@ -3,7 +3,7 @@ title: "Program English"
 language: "en"
 ---
 
-The Future Perfect Accelerator is organized by TOA, wefox & finleap, with many leading ecosystem players (i.e. N26, BVDS, DeliveryHero, Celonis, Ada Health) supporting.
+The FuturePerfect Accelerator is organized by TOA, wefox & finleap, with many leading ecosystem players (i.e. N26, BVDS, DeliveryHero, Celonis, Ada Health) supporting.
 
 #### The program offers:
 
@@ -13,8 +13,7 @@ The Future Perfect Accelerator is organized by TOA, wefox & finleap, with many l
 - Access to mentors and experts for best-in-industry coaching.
 
 <br />
-**The open call is aimed at teams of all sizes, stages\* and backgrounds (startup, researchers, inventors, tinkerers).** <br />
-**Call for Batch #1 is open until April 17th, 2020.**
+**The open call for Batch #1 closed on April the 17th, 2020. Selected teams will be announced shortly. Applications past this date are welcome and will be considered for future extensions of the Program.** <br />
 
 #### Batch #1 of the program will:
 
@@ -22,6 +21,6 @@ The Future Perfect Accelerator is organized by TOA, wefox & finleap, with many l
 - Review all applications by an acclaimed jury on a rolling basis
 - Constantly expand the network of partners involved
 
-The program for Batch #1 will end with a virtual demo day on June 1st, 2020.
+The program for Batch #1 will end with a virtual demo day on June 5th, 2020.
 
 \*No legal entity? No worries, we’ll help you set one up.
