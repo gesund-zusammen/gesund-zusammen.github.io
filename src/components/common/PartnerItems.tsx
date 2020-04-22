@@ -32,6 +32,7 @@ interface IPartnerData {
 interface IPartnerItemsProps extends WithTranslation {
   data: IPartnerData;
   categorySlug?: string;
+  onlyCountryPartners?: boolean;
 }
 
 class PartnerItems extends React.Component<IPartnerItemsProps, {}> {
@@ -48,11 +49,18 @@ class PartnerItems extends React.Component<IPartnerItemsProps, {}> {
   getPartners = (categorySlug?: string): IPartner[] => {
     const partners = this.props.data.partners
       .filter(partner => (categorySlug ? partner.slug === categorySlug : true))
-      .filter(
-        partner =>
+      .filter(partner => {
+        if (this.props.onlyCountryPartners) {
+          return (
+            partner.countries &&
+            partner.countries.includes(this.props.i18n.language)
+          );
+        }
+        return (
           !partner.countries ||
-          partner.countries.includes(this.props.i18n.language),
-      );
+          partner.countries.includes(this.props.i18n.language)
+        );
+      });
     return partners;
   };
 

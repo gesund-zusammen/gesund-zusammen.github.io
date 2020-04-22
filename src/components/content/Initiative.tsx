@@ -109,7 +109,10 @@ class Initiative extends React.PureComponent<
         </Box>
 
         <Box id="partners" paddingBottom={4} marginTop={8}>
-          <PartnerItems data={InitiativePartners} />
+          <PartnerItems
+            data={InitiativePartners}
+            onlyCountryPartners={this.props.i18n.language === "it"}
+          />
         </Box>
 
         <Box paddingBottom={4} marginTop={4}>
