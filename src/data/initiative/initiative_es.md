@@ -2,9 +2,10 @@
 title: "Landing Spanish"
 language: "es"
 ---
-## #HealthyTogether
 
-* #### Una iniciativa abierta liderada por la economía digital
+## #SanosJuntos
+
+- #### Una iniciativa abierta liderada por la economía digital
 
   A partir de la alianza de empresas tecnológicas alemanas, queremos ayudar activamente a la sociedad, los gobiernos y las empresas, a contener la pandemia del COVID-19 con soluciones digitales. Nos basamos en uno de los recursos más importantes disponibles en el mundo hoy en día: **Información.**
 
@@ -14,7 +15,7 @@ language: "es"
 
   [Ir a la base de datos](/es/database)
 
-* #### Para que las cosas privadas permanezcan privadas.
+- #### Para que las cosas privadas permanezcan privadas.
 
   Incluso en tiempos de crisis, la libertad y los derechos personales de las personas individuales son la prioridad principal de nuestra tecnología.
 

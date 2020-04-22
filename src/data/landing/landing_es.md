@@ -3,7 +3,7 @@ title: "Landing Spanish"
 language: "es"
 ---
 
-## #HealthyTogether
+## #SanosJuntos
 
 ### una iniciativa abierta liderada por la economía digital
 

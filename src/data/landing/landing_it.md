@@ -3,7 +3,7 @@ title: "Landing Italian"
 language: "it"
 ---
 
-## #HealthyTogether
+## #SanoInsieme
 
 ### un'iniziativa aperta guidata dall'economia digitale
 
