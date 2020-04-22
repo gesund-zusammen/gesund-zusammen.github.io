@@ -275,12 +275,6 @@
       "link": "https://www.joliberlin.com"
     },
     {
-      "name": "FORWARD31",
-      "slug": "tech",
-      "image": "forward31.png",
-      "link": "https://www.forward31.com"
-    },
-    {
       "name": "Land der Ideen",
       "slug": "tech",
       "image": "LDI.jpg",
@@ -303,12 +297,6 @@
       "slug": "media",
       "image": "techeu.png",
       "link": "https://www.tech.eu"
-    },
-    {
-      "name": "APX",
-      "slug": "media",
-      "image": "apx.png",
-      "link": "https://www.apx.ac"
     },
     {
       "name": "Casavo",
