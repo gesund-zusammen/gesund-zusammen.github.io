@@ -333,6 +333,12 @@
       "slug": "tech",
       "image": "prima_it.jpg",
       "link": "https://www.prima.it"
+    },
+    {
+      "name": "Macher Hilfe",
+      "slug": "tech",
+      "image": "macher_hilfe.png",
+      "link": "https://www.macher-hilfe.de"
     }
   ]
 }

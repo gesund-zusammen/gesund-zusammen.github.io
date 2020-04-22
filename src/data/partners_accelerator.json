@@ -513,6 +513,12 @@
       "image": "y_and_d.png",
       "link": "https://young-digital.com",
       "imageXL": true
+    },
+    {
+      "name": "Macher Hilfe",
+      "slug": "strategic",
+      "image": "macher_hilfe.png",
+      "link": "https://www.macher-hilfe.de"
     }
   ]
 }
