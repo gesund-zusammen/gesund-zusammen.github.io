@@ -3,7 +3,7 @@ title: "Landing French"
 language: "fr"
 ---
 
-## #HealthyTogether
+## #SantéEnsemble
 
 ### une initiative ouverte menée par l'économie numérique
 

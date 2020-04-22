@@ -2,9 +2,10 @@
 title: "Landing French"
 language: "fr"
 ---
-## #HealthyTogether
 
-* ### Une initiative ouverte menée par l'économie numérique
+## #SantéEnsemble
+
+- ### Une initiative ouverte menée par l'économie numérique
 
   Nous sommes une vaste alliance d'entreprises technologiques. Nous voulons aider - activement - la société, le monde politique et les entreprises à contenir le COVID-19 avec des solutions numériques. Nous nous appuyons sur l'une des ressources les plus importantes dont dispose le monde aujourd'hui : **l'information.**
 
@@ -14,7 +15,7 @@ language: "fr"
 
   [Accéder à la base de données](/fr/database)
 
-* #### Pour que les choses privées restent privées.
+- #### Pour que les choses privées restent privées.
 
   Même en temps de crise, la liberté et les droits de la personne sont la priorité absolue de notre technologie.
 
