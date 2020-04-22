@@ -285,6 +285,93 @@
       "slug": "ambassador",
       "image": "apx.png",
       "link": "https://www.apx.ac"
+    },
+    {
+      "name": "wework",
+      "slug": "ambassador",
+      "image": "wework.png",
+      "link": "https://www.wework.com"
+    },
+    {
+      "name": "MatchMade",
+      "slug": "ambassador",
+      "image": "matchmade.png",
+      "link": "https://matchmade.tv"
+    },
+    {
+      "name": "Black in Tech Berlin",
+      "slug": "ambassador",
+      "image": "black_in_tech.png",
+      "link": "https://blackintechberlin.com",
+      "color": "#000000",
+      "nameColorInverted": true
+    },
+    {
+      "name": "Startup Grind Berlin",
+      "slug": "ambassador",
+      "image": "startup_grind_berlin.png",
+      "link": "https://www.startupgrind.com/berlin"
+    },
+    {
+      "name": "Expatrio",
+      "slug": "ambassador",
+      "image": "expatrio.png",
+      "link": "https://www.expatrio.com"
+    },
+    {
+      "name": "DeGIS",
+      "slug": "ambassador",
+      "image": "degis.png",
+      "link": "https://www.degis.info"
+    },
+    {
+      "name": "Factory Berlin",
+      "slug": "ambassador",
+      "image": "factory_berlin.png",
+      "link": "https://factoryberlin.com"
+    },
+    {
+      "name": "Digital Response DE",
+      "slug": "ambassador",
+      "image": "digital_response_deutschland.png",
+      "link": "https://digital-response.de"
+    },
+    {
+      "name": "EO IPSO",
+      "slug": "ambassador",
+      "image": "eo_ipso.png",
+      "link": "https://www.eoipsocommunications.com"
+    },
+    {
+      "name": "Jonas und der Wolf",
+      "slug": "ambassador",
+      "image": "jonas_und_der_wolf.png",
+      "link": "https://www.jonasundderwolf.de"
+    },
+    {
+      "name": "Kiron",
+      "slug": "ambassador",
+      "image": "kiron.png",
+      "link": "https://kiron.ngo"
+    },
+    {
+      "name": "MVP Factory",
+      "slug": "ambassador",
+      "image": "mvpf.png",
+      "link": "https://mvpfactory.co"
+    },
+    {
+      "name": "Granny Smith Catering",
+      "slug": "ambassador",
+      "image": "granny_smith_catering.jpg",
+      "link": "https://www.grannysmithcatering.de",
+      "imageXL": true
+    },
+    {
+      "name": "W Lounge",
+      "slug": "ambassador",
+      "image": "w_lounge.png",
+      "link": "https://www.wlounge.de"
     }
   ]
 }
