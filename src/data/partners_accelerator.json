@@ -97,6 +97,12 @@
       "link": "https://www.getyourguide.com"
     },
     {
+      "name": "Stripe",
+      "slug": "strategic",
+      "image": "stripe.png",
+      "link": "https://www.stripe.com"
+    },
+    {
       "name": "FreightHub",
       "slug": "strategic",
       "image": "freighthub.png",
@@ -119,6 +125,12 @@
       "slug": "strategic",
       "image": "celonis.png",
       "link": "https://www.celonis.com"
+    },
+    {
+      "name": "Openers",
+      "slug": "strategic",
+      "image": "openers.png",
+      "link": "https://opnrs.com"
     },
     {
       "name": "Ada Health",
@@ -287,6 +299,12 @@
       "link": "https://www.tech.eu"
     },
     {
+      "name": "Factory Berlin",
+      "slug": "ambassador",
+      "image": "factory_berlin.png",
+      "link": "https://factoryberlin.com"
+    },
+    {
       "name": "APX",
       "slug": "ambassador",
       "image": "apx.png",
@@ -313,6 +331,18 @@
       "nameColorInverted": true
     },
     {
+      "name": "Beta-i",
+      "slug": "ambassador",
+      "image": "betai.png",
+      "link": "https://beta-i.com/"
+    },
+    {
+      "name": "London & Partners",
+      "slug": "ambassador",
+      "image": "london.png",
+      "link": "https://www.londonandpartners.com/"
+    },
+    {
       "name": "Startup Grind Berlin",
       "slug": "ambassador",
       "image": "startup_grind_berlin.png",
@@ -329,12 +359,6 @@
       "slug": "ambassador",
       "image": "degis.png",
       "link": "https://www.degis.info"
-    },
-    {
-      "name": "Factory Berlin",
-      "slug": "ambassador",
-      "image": "factory_berlin.png",
-      "link": "https://factoryberlin.com"
     },
     {
       "name": "Digital Response DE",
@@ -428,12 +452,6 @@
       "image": "holvi.png",
       "link": "https://www.holvi.com",
       "imageXL": true
-    },
-    {
-      "name": "Stripe",
-      "slug": "strategic",
-      "image": "stripe.png",
-      "link": "https://www.stripe.com"
     },
     {
       "name": "PWC",
