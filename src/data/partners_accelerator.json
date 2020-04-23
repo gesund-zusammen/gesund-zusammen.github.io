@@ -97,6 +97,12 @@
       "link": "https://www.getyourguide.com"
     },
     {
+      "name": "Stripe",
+      "slug": "strategic",
+      "image": "stripe.png",
+      "link": "https://www.stripe.com"
+    },
+    {
       "name": "FreightHub",
       "slug": "strategic",
       "image": "freighthub.png",
@@ -119,6 +125,12 @@
       "slug": "strategic",
       "image": "celonis.png",
       "link": "https://www.celonis.com"
+    },
+    {
+      "name": "Openers",
+      "slug": "strategic",
+      "image": "openers.png",
+      "link": "https://opnrs.com"
     },
     {
       "name": "Ada Health",
@@ -428,12 +440,6 @@
       "image": "holvi.png",
       "link": "https://www.holvi.com",
       "imageXL": true
-    },
-    {
-      "name": "Stripe",
-      "slug": "strategic",
-      "image": "stripe.png",
-      "link": "https://www.stripe.com"
     },
     {
       "name": "PWC",
