@@ -4,6 +4,7 @@ import styled, { AnyStyledComponent } from "styled-components";
 
 import LandingHeader from "./Header";
 import Social from "../Shared/Social";
+import LatestNews from "../Shared/LatestNews";
 import Footer from "../Shared/Footer";
 import NewsletterSignup from "../Shared/NewsletterSignup";
 import { HeaderBox, MainContentContainer } from "../Shared/StyledComponents";
@@ -23,6 +24,8 @@ class LayoutInitiative extends React.Component {
             {this.props.children}
           </MainContentContainer>
         </Box>
+
+        <LatestNews />
 
         <NewsletterSignup />
 

@@ -35,14 +35,12 @@
     {
       "name": "finleap",
       "slug": "founders",
-      "image": "finleap.png",
-      "link": "https://www.finleap.com"
+      "image": "finleap.png"
     },
     {
       "name": "Wefox Group",
       "slug": "founders",
-      "image": "wefoxgroup.png",
-      "link": "https://www.wefoxgroup.com"
+      "image": "wefoxgroup.png"
     },
     {
       "name": "TOA",
@@ -52,15 +50,21 @@
     },
     {
       "name": "Via",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "viadata.svg",
       "link": "https://www.viadata.io"
     },
     {
       "name": "Global Citizen Foundation",
-      "slug": "strategic",
+      "slug": "tech",
       "image": "globalcitizen.svg",
       "link": "https://www.globalcitizenfoundation.org"
+    },
+    {
+      "name": "Amazon Web Services",
+      "slug": "strategic",
+      "image": "AWS.svg",
+      "link": "https://aws.amazon.com/activate/"
     },
     {
       "name": "Data4Life",
@@ -277,10 +281,244 @@
       "link": "https://www.koehler-investment.com"
     },
     {
+      "name": "Tech.eu",
+      "slug": "strategic",
+      "image": "techeu.png",
+      "link": "https://www.tech.eu"
+    },
+    {
       "name": "APX",
       "slug": "ambassador",
       "image": "apx.png",
       "link": "https://www.apx.ac"
+    },
+    {
+      "name": "wework",
+      "slug": "ambassador",
+      "image": "wework.png",
+      "link": "https://www.wework.com"
+    },
+    {
+      "name": "MatchMade",
+      "slug": "ambassador",
+      "image": "matchmade.png",
+      "link": "https://matchmade.tv"
+    },
+    {
+      "name": "Black in Tech Berlin",
+      "slug": "ambassador",
+      "image": "black_in_tech.png",
+      "link": "https://blackintechberlin.com",
+      "color": "#000000",
+      "nameColorInverted": true
+    },
+    {
+      "name": "Startup Grind Berlin",
+      "slug": "ambassador",
+      "image": "startup_grind_berlin.png",
+      "link": "https://www.startupgrind.com/berlin"
+    },
+    {
+      "name": "Expatrio",
+      "slug": "ambassador",
+      "image": "expatrio.png",
+      "link": "https://www.expatrio.com"
+    },
+    {
+      "name": "DeGIS",
+      "slug": "ambassador",
+      "image": "degis.png",
+      "link": "https://www.degis.info"
+    },
+    {
+      "name": "Factory Berlin",
+      "slug": "ambassador",
+      "image": "factory_berlin.png",
+      "link": "https://factoryberlin.com"
+    },
+    {
+      "name": "Digital Response DE",
+      "slug": "ambassador",
+      "image": "digital_response_deutschland.png",
+      "link": "https://digital-response.de"
+    },
+    {
+      "name": "EO IPSO",
+      "slug": "ambassador",
+      "image": "eo_ipso.png",
+      "link": "https://www.eoipsocommunications.com"
+    },
+    {
+      "name": "Jonas und der Wolf",
+      "slug": "ambassador",
+      "image": "jonas_und_der_wolf.png",
+      "link": "https://www.jonasundderwolf.de"
+    },
+    {
+      "name": "Kiron",
+      "slug": "ambassador",
+      "image": "kiron.png",
+      "link": "https://kiron.ngo"
+    },
+    {
+      "name": "Copulla",
+      "slug": "ambassador",
+      "image": "copulla.png",
+      "link": "http://copulla.com",
+      "imageXL": true
+    },
+    {
+      "name": "More Effects",
+      "slug": "ambassador",
+      "image": "more_effects.jpg",
+      "link": "https://more-effects.de"
+    },
+    {
+      "name": "Startup Business",
+      "slug": "ambassador",
+      "image": "startup_business.jpg",
+      "link": "https://www.startupbusiness.it/"
+    },
+    {
+      "name": "Tek Up",
+      "slug": "ambassador",
+      "image": "tek_up.png",
+      "link": "https://www.youtube.com/c/tekupchannel"
+    },
+    {
+      "name": "MVP Factory",
+      "slug": "ambassador",
+      "image": "mvpf.png",
+      "link": "https://mvpfactory.co"
+    },
+    {
+      "name": "Granny Smith Catering",
+      "slug": "ambassador",
+      "image": "granny_smith_catering.jpg",
+      "link": "https://www.grannysmithcatering.de",
+      "imageXL": true
+    },
+    {
+      "name": "W Lounge",
+      "slug": "ambassador",
+      "image": "w_lounge.png",
+      "link": "https://www.wlounge.de"
+    },
+    {
+      "name": "betahaus",
+      "slug": "strategic",
+      "image": "betahaus.png",
+      "link": "https://www.betahaus.com"
+    },
+    {
+      "name": "chino.io",
+      "slug": "strategic",
+      "image": "chino_io.png",
+      "link": "https://www.chino.io"
+    },
+    {
+      "name": "firma.de",
+      "slug": "strategic",
+      "image": "firma_de.jpg",
+      "link": "https://www.firma.de"
+    },
+    {
+      "name": "Holvi",
+      "slug": "strategic",
+      "image": "holvi.png",
+      "link": "https://www.holvi.com",
+      "imageXL": true
+    },
+    {
+      "name": "Stripe",
+      "slug": "strategic",
+      "image": "stripe.png",
+      "link": "https://www.stripe.com"
+    },
+    {
+      "name": "PWC",
+      "slug": "strategic",
+      "image": "pwc.png",
+      "link": "https://www.pwc.de"
+    },
+    {
+      "name": "Qonto",
+      "slug": "strategic",
+      "image": "qonto.png",
+      "link": "https://www.quonto.eu"
+    },
+    {
+      "name": "Cortado",
+      "slug": "strategic",
+      "image": "cortado.svg",
+      "link": "https://www.cortado.com"
+    },
+    {
+      "name": "Hello Better",
+      "slug": "strategic",
+      "image": "hello_better.svg",
+      "link": "https://hellobetter.de"
+    },
+    {
+      "name": "Photonic Insights",
+      "slug": "strategic",
+      "image": "photonic_insights.png",
+      "link": "http://photonicinsights.com"
+    },
+    {
+      "name": "Humanitec",
+      "slug": "strategic",
+      "image": "humanitec.png",
+      "link": "https://humanitec.com"
+    },
+    {
+      "name": "QuestionPro",
+      "slug": "strategic",
+      "image": "question_pro.png",
+      "link": "https://www.questionpro.de"
+    },
+    {
+      "name": "myEGO2GO",
+      "slug": "strategic",
+      "image": "my_ego_2_go.png",
+      "link": "https://myego2go.com"
+    },
+    {
+      "name": "Olmogo",
+      "slug": "strategic",
+      "image": "olmogo.png",
+      "link": "https://olmogo.com"
+    },
+    {
+      "name": "Typewiser",
+      "slug": "strategic",
+      "image": "typewiser.png",
+      "link": "https://typewiser.com"
+    },
+    {
+      "name": "TNUV",
+      "slug": "strategic",
+      "image": "the_next_unicorn_ventures.png",
+      "link": "https://www.next-unicorn.vc"
+    },
+    {
+      "name": "German Tech",
+      "slug": "strategic",
+      "image": "german_tech.png",
+      "link": "https://german.tech"
+    },
+    {
+      "name": "Young & Digital",
+      "slug": "strategic",
+      "image": "y_and_d.png",
+      "link": "https://young-digital.com",
+      "imageXL": true
+    },
+    {
+      "name": "Macher Hilfe",
+      "slug": "strategic",
+      "image": "macher_hilfe.png",
+      "link": "https://www.macher-hilfe.de"
     }
   ]
 }

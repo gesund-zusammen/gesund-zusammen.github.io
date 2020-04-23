@@ -51,8 +51,7 @@
       "claim": "Vous voulez aussi faire partie de l'accélérateur?",
       "cta": "Appliquer maintenant",
       "link": "/apply"
-    },
-    "gotoProgram": "Aller au programme"
+    }
   },
   "initiative": {
     "landing": {
@@ -70,19 +69,14 @@
     "box3": {
       "title": "Ecosystème ouvert",
       "content": "Nous sommes impatients d'échanger avec toutes les autres initiatives numériques, d'unir nos forces et de promouvoir la coopération grâce à des updates réguliers."
-    },
-    "letter": {
-      "show": "Afficher la lettre complète"
-    },
-    "openLetter": "Lettre ouverte",
-    "gotoDatabase": "Accéder à la base de données"
+    }
   },
   "program": {
     "header": {
       "title": "Programme",
       "content": "Accélération d'outils digitaux vs Covid-19, mettre à disposition du grand public au plus vite"
     },
-    "title": "Le programme d'accélération #Gesundzusammen",
+    "title": "Le programme d'accélération #HealthyTogether",
     "claim": "Vous avez besoin de soutien?",
     "cta": "Postulez maintenant",
     "link": "/apply",
@@ -125,14 +119,12 @@
     "contact": "Pour d'autres questions, merci de contacter: Solveig Rathenow <media@gesund-zusammen.de>"
   },
   "press": {
+    "mediaHeader": "Dans les médias",
     "title": "Contact Presse",
     "claim": "Vous avez une autre question?",
     "cta": "Contactez nous",
     "link": "mailto:media@gesund-zusammen.de",
-    "pageHeader": "Contactez nous",
-    "pressContactName": "Solveig Rathenow",
-    "pressContactTitle": "Head of Venture Communications",
-    "pressContactEmail": "media@gesund-zusammen.de",
+    "contactHeader": "Contactez nous",
     "downloadLogo": "Télécharger le logo",
     "resources": "Ressources",
     "resourcesLine1": "Télécharger le logo GesundZusammen dans plusieurs formats.",
@@ -141,14 +133,15 @@
     "releaseLine1": "Télécharger le communiqué de presse GesundZusammen et la liste des partenaires.",
     "releaseTitle": "\"Gesund-Zusammen\": une alliance Tech pour combattre le Covid-19",
     "releaseHrefPDF": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.pdf",
-    "releaseHrefImage": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.png",
     "releaseHrefURL": "https://finleap.pr.co/187535-gesund-zusammen-tech-coalition-formed-to-combat-covid-19/",
     "inqueryInitiative": "Pour les questions des médias sur l'initiative, veuillez contacter:",
-    "inqueryAccelerator": "Per richieste dei media sull'acceleratore, si prega di contattare:"
+    "inqueryAccelerator": "Per richieste dei media sull'acceleratore, si prega di contattare:",
+    "showOlderNews": "Afficher les anciennes couvertures d'actualités"
   },
   "latestNews": {
     "title": "Dernières nouvelles",
-    "content": "En savoir plus sur #HealthyTogether et notre programme d'accélérateur dans les médias"
+    "content": "En savoir plus sur #HealthyTogether et notre programme d'accélérateur dans les médias",
+    "linkTitle": "Voir toutes les actualités"
   },
   "newsletter": {
     "title": "S'abonner à la newsletter",

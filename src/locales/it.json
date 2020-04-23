@@ -51,8 +51,7 @@
       "claim": "Vuoi far parte anche dell'acceleratore?",
       "cta": "Applica ora",
       "link": "/apply"
-    },
-    "gotoProgram": "Vai al programma"
+    }
   },
   "initiative": {
     "landing": {
@@ -70,12 +69,7 @@
     "box3": {
       "title": "Ecosistema aperto",
       "content": "Non vediamo l'ora di scambiare opinioni ed esperienze con altre iniziative analoghe, per unire le forze e promuovere la cooperazione."
-    },
-    "letter": {
-      "show": "Mostra lettera completa"
-    },
-    "openLetter": "Lettera aperta",
-    "gotoDatabase": "Vai al database"
+    }
   },
   "program": {
     "header": {
@@ -125,14 +119,12 @@
     "contact": "Per ulteriori domande, si prega di contattare: Solveig Rathenow <media@gesund-zusammen.de>"
   },
   "press": {
+    "mediaHeader": "Nei media",
     "title": "Contatti Stampa",
     "claim": "Hai un'altra domanda?",
     "cta": "Contattaci",
     "link": "mailto:media@gesund-zusammen.de",
-    "pageHeader": "Contattaci",
-    "pressContactName": "Solveig Rathenow",
-    "pressContactTitle": "Head of Venture Communications",
-    "pressContactEmail": "media@gesund-zusammen.de",
+    "contactHeader": "Contattaci",
     "downloadLogo": "Download Logo",
     "resources": "Risorse",
     "resourcesLine1": "Scarica il logo in vari formati.",
@@ -141,14 +133,15 @@
     "releaseLine1": "Scarica la press release e l'elenco dei partner.",
     "releaseTitle": "\"Gesund-Zusammen\": la coalizione tech per combattere il Covid-19",
     "releaseHrefPDF": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.pdf",
-    "releaseHrefImage": "187535-20200401090251000000000-gesund-zusammen-tech-coalition-formed-to-.png",
     "releaseHrefURL": "https://finleap.pr.co/187535-gesund-zusammen-tech-coalition-formed-to-combat-covid-19/",
     "inqueryInitiative": "Per richieste dei media sull'iniziativa, si prega di contattare:",
-    "inqueryAccelerator": "Fore media inqueries about the acceleratore, please contact: "
+    "inqueryAccelerator": "Fore media inqueries about the acceleratore, please contact: ",
+    "showOlderNews": "Mostra copertine di notizie meno recenti"
   },
   "latestNews": {
     "title": "Ultime notizie",
-    "content": "Leggi #HealthyTogether e il nostro programma Accelerator nei media"
+    "content": "Leggi #HealthyTogether e il nostro programma Accelerator nei media",
+    "linkTitle": "Vedi tutte le notizie"
   },
   "newsletter": {
     "title": "Iscriviti alla nostra Newsletter",

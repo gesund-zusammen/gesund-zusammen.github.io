@@ -51,8 +51,7 @@
       "claim": "Sie wollen auch mitmachen?",
       "cta": "Jetzt bewerben",
       "link": "/apply"
-    },
-    "gotoProgram": "Zum Programm"
+    }
   },
   "initiative": {
     "landing": {
@@ -70,12 +69,7 @@
     "box3": {
       "title": "Offenes Ökosystem",
       "content": "Wir freuen uns auf den Austausch mit allen weiteren digitalen Initiativen, werden Kräfte bündeln und mit regelmäßigen Updates die Zusammenarbeit fördern."
-    },
-    "letter": {
-      "show": "Gesamten Brief anzeigen"
-    },
-    "openLetter": "Offener Brief",
-    "gotoDatabase": "Zur Datenbank"
+    }
   },
   "partners": {
     "unknownCategory": "Unbekannt",
@@ -89,7 +83,7 @@
       "title": "Programm",
       "content": "Accelerator um Digitale Tools vs COVID-19 schneller an die \nÖffentlichkeit zu bringen"
     },
-    "title": "Das #Gesundzusammen Accelerator Programm",
+    "title": "Das #GesundZusammen Accelerator Programm",
     "claim": "Du brauchst Unterstützung?",
     "cta": "Bewirb dich jetzt",
     "link": "/apply",
@@ -125,14 +119,12 @@
     "contact": "Für weitere Fragen schreiben Sie bitte an: media@gesund-zusammen.de"
   },
   "press": {
-    "title": "PR Kontakt",
+    "mediaHeader": "In den Medien",
+    "title": "Presse und Kontakt",
     "claim": "Sie haben noch eine Frage?",
     "cta": "Schreiben Sie uns",
     "link": "mailto:media@gesund-zusammen.de",
-    "pageHeader": "Schreiben Sie Uns",
-    "pressContactName": "Solveig Rathenow",
-    "pressContactTitle": "Head of Venture Communications",
-    "pressContactEmail": "media@gesund-zusammen.de",
+    "contactHeader": "Schreiben Sie Uns",
     "downloadLogo": "Download Logo",
     "resources": "Pressekit",
     "resourcesLine1": "Download the GesundZusammen logo in various formats.",
@@ -141,14 +133,15 @@
     "releaseLine1": "Laden Sie the GesundZusammen Press Release and Partner Map.",
     "releaseTitle": "“Gesund-Zusammen”: Die Digitale Wirtschaft stellt sich dem Kampf gegen COVID-19 ",
     "releaseHrefPDF": "187534-20200401090213000000000-gesund-zusammen-die-digitale-wirtschaft-s.pdf",
-    "releaseHrefImage": "187534-20200401090213000000000-gesund-zusammen-die-digitale-wirtschaft-s.png",
     "releaseHrefURL": "https://finleap.pr.co/187534-gesund-zusammen-die-digitale-wirtschaft-stellt-sich-dem-kampf-gegen-covid-19/",
     "inqueryInitiative": "Für Medienanfragen rund um die Initative kontaktieren Sie bitte:",
-    "inqueryAccelerator": "Für Medienanfragen rund um den Accelerator kontaktieren Sie bitte:"
+    "inqueryAccelerator": "Für Medienanfragen rund um den Accelerator kontaktieren Sie bitte:",
+    "showOlderNews": "Ältere Medienbeiträge anzeigen"
   },
   "latestNews": {
     "title": "Neueste Nachrichten",
-    "content": "Lesen Sie über #GesundZusammen und unser Accelerator Programm in den Medien"
+    "content": "Lesen Sie über #GesundZusammen und unser Accelerator Programm in den Medien",
+    "linkTitle": "Alle Nachrichten ansehen"
   },
   "newsletter": {
     "title": "Melden Sie sich für unseren Newsletter an",

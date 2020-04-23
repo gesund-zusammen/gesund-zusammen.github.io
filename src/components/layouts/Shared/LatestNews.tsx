@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Grid, Typography } from "@material-ui/core";
+import { Box, Button, Container, Grid, Typography } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 import { withTranslation, WithTranslation } from "react-i18next";
 
@@ -7,6 +7,7 @@ import ArrowIcon from "../../../images/icon_arrow_right_dark.svg";
 import NewsData from "../../../data/latestnews.json";
 
 interface INewsItem {
+  date: string;
   outlet: string;
   teaser: string;
   link: string;
@@ -14,11 +15,15 @@ interface INewsItem {
 
 class LatestNews extends React.Component<WithTranslation> {
   getNewsItems = (limit?: number): Array<INewsItem> => {
+    const news = NewsData.sort(
+      (a, b) => Date.parse(b.date) - Date.parse(a.date),
+    );
     if (limit) {
-      return NewsData.slice(0, limit);
+      return news.slice(0, limit);
     }
-    return NewsData;
+    return news;
   };
+
   render = () => {
     return (
       <LatestNewsBox id="latest-news" marginTop={4}>
@@ -31,6 +36,14 @@ class LatestNews extends React.Component<WithTranslation> {
               <Typography variant="body1">
                 {this.props.t("latestNews.content")}
               </Typography>
+              <LinkButton
+                color="primary"
+                variant="contained"
+                disableFocusRipple={true}
+                href={`${this.props.i18n.language}/press`}
+              >
+                {this.props.t("latestNews.linkTitle")}
+              </LinkButton>
             </Grid>
             <Grid item xs={12} sm={6}>
               {this.getNewsItems(3).map(newsItem => {
@@ -79,6 +92,19 @@ const NewsItem: AnyStyledComponent = styled.a`
 
   &:last-of-type {
     border-bottom: none;
+  }
+`;
+
+const LinkButton: AnyStyledComponent = styled(Button)`
+  && {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: none;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0.6rem 2rem;
+    margin: 1rem auto;
   }
 `;
 

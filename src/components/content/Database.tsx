@@ -1,19 +1,12 @@
 import React from "react";
-import {
-  Box,
-  Card,
-  CardContent,
-  Typography,
-  Chip,
-  Button,
-} from "@material-ui/core";
+import { Box, Typography, Chip, Button } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 import { withTranslation, WithTranslation } from "react-i18next";
 
-import IconArrowRight from "../../images/icon_arrow_right.svg";
+import CTABox from "../common/CTABox";
+import InitiativeCard from "../common/InitiativeCard";
 
 import InitiativeData from "../../data/initiatives.json";
-import CTABox from "../common/CTABox";
 
 const INITIAL_LIST_LENGTH = 10;
 const LIST_LENGTH_INCREMENT = 10;
@@ -174,30 +167,17 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
           ).map(
             (initiative, index) =>
               index < this.state.listLength && (
-                <InitiativeCardWrapper
+                <InitiativeCard
                   key={`${initiative.link}_${initiative.name}`}
-                  href={initiative.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <InitiativeCard>
-                    <InitiativeCardContent>
-                      <Typography variant="subtitle2" color="secondary">
-                        {this.getCategoryName(initiative.category)}
-                      </Typography>
-                      <InitiativeCardTitle variant="h4" color="primary">
-                        {initiative.name}
-                      </InitiativeCardTitle>
-                      <Typography variant="body2" color="primary">
-                        {
-                          initiative.description[
-                            this.props.i18n.language === "de" ? "de" : "en"
-                          ]
-                        }
-                      </Typography>
-                    </InitiativeCardContent>
-                  </InitiativeCard>
-                </InitiativeCardWrapper>
+                  link={initiative.link}
+                  category={this.getCategoryName(initiative.category)}
+                  name={initiative.name}
+                  description={
+                    initiative.description[
+                      this.props.i18n.language === "de" ? "de" : "en"
+                    ]
+                  }
+                />
               ),
           )}
         </Box>
@@ -276,43 +256,6 @@ const RegionSelect: AnyStyledComponent = styled(Typography)`
   }
 `;
 
-const InitiativeCardWrapper: AnyStyledComponent = styled.a`
-  text-decoration: none;
-`;
-
-const InitiativeCard: AnyStyledComponent = styled(Card)`
-  && {
-    border-radius: 15px;
-    box-shadow: 0px 2px 24px #e3e6eb;
-    margin-bottom: 2rem;
-    padding: 0.8rem;
-
-    @media (min-width: 600px) {
-      padding: 2.2rem 6rem 2.2rem 2.2rem;
-
-      &:hover {
-        background-image: url(${IconArrowRight});
-        background-position: right 2rem center;
-        background-repeat: no-repeat;
-      }
-    }
-  }
-`;
-
-const InitiativeCardTitle: AnyStyledComponent = styled(Typography)`
-  && {
-    margin-top: 0.5rem;
-    margin-bottom: 0.7rem;
-    line-height: 1.4;
-  }
-`;
-
-const InitiativeCardContent: AnyStyledComponent = styled(CardContent)`
-  && {
-    max-width: 680px;
-  }
-`;
-
 const ShowMoreButton: AnyStyledComponent = styled(Button)`
   && {
     display: block;
@@ -324,10 +267,6 @@ const ShowMoreButton: AnyStyledComponent = styled(Button)`
     margin: 0 auto;
     padding-right: 2rem;
     padding-left: 2rem;
-
-    @media (min-width: 600px) {
-      font-size: 1.4rem;
-    }
 
     &:hover {
       color: #ffffff;
