@@ -1161,6 +1161,166 @@
         "en": "EU supported research and innovation projects and initiatives to tackle the spread of coronavirus and preparedness for other outbreaks."
       },
       "global": true
-    }
+    },
+    {
+      "name": "European Commission Innovative Hackathon",
+      "link": "https://euvsvirus.org/",
+      "category": "hackathons",
+      "description": {
+        "de": "Paneuropäischer Hackathon, um innovative Lösungen für die Coronavirus-Herausforderung zu entwickeln.",
+        "en": "Pan-european hackathon to bring innovative solutions for the coronavirus challenge."
+      },
+      "global": true
+    },    
+    {
+      "name": "Macher Hilfe",
+      "link": "https://www.macher-hilfe.de/ueber-uns/",
+      "category": "Further Initiatives",
+      "description": {
+        "de": "Many doers in small and medium-sized companies are struggling to survive economically. In addition to the daily challenges of somehow keeping shops running, there is simply no time. This platform will help companies in the thicket of many state aids and grants and filter out the best options.",
+        "en": "Many doers in small and medium-sized companies are struggling to survive economically. In addition to the daily challenges of somehow keeping shops running, there is simply no time. This platform will help companies in the thicket of many state aids and grants and filter out the best options"
+      },
+      "global": false
+    },
+    {
+      "name": "foldingathome.org",
+      "link": "https://foldingathome.org/covid19/",
+      "category": "Further Initiatives",
+      "description": {
+        "de": "Help running simulations is the primary way to contribute to COVID-19.",
+        "en": "Help running simulations is the primary way to contribute to COVID-19."
+      },
+      "global": false
+    },
+    {
+      "name": "Fold.it beta",
+      "link": "https://fold.it/portal/node/2008963",
+      "category": "Further Initiatives",
+      "description": {
+        "de": "Help researchers discover new antiviral drugs that might stop coronavirus! The most promising solutions will be manufactured and tested at the University of Washington Institute for Protein Design in Seattle.",
+        "en": "Help researchers discover new antiviral drugs that might stop coronavirus! The most promising solutions will be manufactured and tested at the University of Washington Institute for Protein Design in Seattle."
+      },
+      "global": false
+    },
+     {
+      "name": "UNESCO",
+      "link": "https://en.unesco.org/covid19/educationresponse/nationalresponses#LATIN%20AMERICA%20&%20THE%20CARIBBEAN",
+      "category": "Research and Government Sites",
+      "description": {
+        "de": "National learning platforms and tools.",
+        "en": "National learning platforms and tools."
+      },
+      "global": true
+    },
+    {
+      "name": "Landesmedienzentrum Baden-württemberg",
+      "link": "https://www.lmz-bw.de/statische-newsroom-seiten/schule-machen-in-zeiten-des-coronavirus/",
+      "category": "Digital tools",
+      "description": {
+        "de": "Find support offers for teachers for the period of corona-related school closings.",
+        "en": "Find support offers for teachers for the period of corona-related school closings."
+      },
+      "global": false
+    },
+        {
+      "name": "Deutsche Bank Group",
+      "link": "https://www.deutsche-bank.de/gk/lp/service-seite-corona.html",
+      "category": "Knowledge Resource",
+      "description": {
+        "de": "DB offers you a compact overview of central questions that are currently relevant for companies and businesses.",
+        "en": "DB offers you a compact overview of central questions that are currently relevant for companies and businesses."
+      },
+      "global": true
+    },
+    {
+      "name": "European Digital SME Alliance",
+      "link": "https://www.digitalsme.eu/solutions/",
+      "category": "Digital Consultation",
+      "description": {
+        "de": "Digital solutions in times of COVID-19.",
+        "en": "Digital solutions in times of COVID-19."
+      },
+      "global": true
+    },
+    {
+      "name": "Dear Employee",
+      "link": "https://www.dearemployee.de/",
+      "category": "Digital tools",
+      "description": {
+        "de": "Supports companies with a CoronaCare Survey designed to help master this challenging phase safely and healthily.",
+        "en": "Supports companies with a CoronaCare Survey designed to help master this challenging phase safely and healthily."
+      },
+      "global": false
+    },
+        {
+      "name": "griztame.lt",
+      "link": "https://griztame.lt/",
+      "category": "Further Initiatives",
+      "description": {
+        "de": "Communication platform for lithuanian citizens away form home because of COVID-19 crisis. ",
+        "en": "Communication platform for lithuanian citizens away form home because of COVID-19 crisis ."
+      },
+      "global": true
+    },
+     {
+      "name": "covid19dataportal.org",
+      "link": "https://www.covid19dataportal.org/",
+      "category": "Digital tools",
+      "description": {
+        "de": "The European Commission has launched a data portal for scientists studying the SARS-CoV-2 virus to speed up access to data sets and tools in order to bolster research efforts by encouraging data reuse and open science. ",
+        "en": "The European Commission has launched a data portal for scientists studying the SARS-CoV-2 virus to speed up access to data sets and tools in order to bolster research efforts by encouraging data reuse and open science."
+      },
+      "global": true
+    },
+    {
+      "name": "European Investment Bank",
+      "link": "https://www.eib.org/en/stories/digital-coronavirus",
+      "category": "Research and Government Sites",
+      "description": {
+        "de": "With our lives turning digital, coronavirus may have accelerated a revolution. But we need to make sure no-one gets left behind.",
+        "en": "With our lives turning digital, coronavirus may have accelerated a revolution. But we need to make sure no-one gets left behind."
+      },
+      "global": true
+    },
+    {
+      "name": "European Commission",
+      "link": "https://ec.europa.eu/digital-single-market/en/news/italy-launches-its-national-coalition-digital-skills-and-jobs",
+      "category": "Research and Government Sites",
+      "description": {
+        "de": "Italy launches its National Coalition for Digital Skills and Jobs.",
+        "en": "Italy launches its National Coalition for Digital Skills and Jobs."
+      },
+      "global": true
+    },
+    {
+      "name": "Digital Republic",
+      "link": "https://innovazione.gov.it/it/repubblica-digitale/",
+      "category": "Research and Government Sites",
+      "description": {
+        "de": "Digital Republic is the national strategic initiative promoted by the Department for digital transformation of the Presidency of the Council of Ministers with the aim of combating the digital divide of a cultural nature present in the Italian population, to support maximum digital inclusion and encourage education on future technologies, accompanying the country's digital transformation process.",
+        "en": "Digital Republic is the national strategic initiative promoted by the Department for digital transformation of the Presidency of the Council of Ministers with the aim of combating the digital divide of a cultural nature present in the Italian population, to support maximum digital inclusion and encourage education on future technologies, accompanying the country's digital transformation process."
+      },
+      "global": true
+    },
+    {
+      "name": "Accenture",
+      "link": "https://www.accenture.com/fi-en/about/company/coronavirus-business-economic-impact",
+      "category": "Research and Government Sites",
+      "description": {
+        "de": "Managing the human and business impact of coronavirus.",
+        "en": "Managing the human and business impact of coronavirus."
+      },
+      "global": true
+    },
+    {
+      "name": "Europol",
+      "link": "https://www.europol.europa.eu/publications-documents/pandemic-profiteering-how-criminals-exploit-covid-19-crisis",
+      "category": "Research and Government Sites",
+      "description": {
+        "de": "The report provides an overview of how criminals adapt their misdeeds to the COVID-19 pandemic. It is based on information Europol receives from the EU Member States on a 24/7 basis and intends to support Member States’ law enforcement authorities in their work..",
+        "en": "The report provides an overview of how criminals adapt their misdeeds to the COVID-19 pandemic. It is based on information Europol receives from the EU Member States on a 24/7 basis and intends to support Member States’ law enforcement authorities in their work.."
+      },
+      "global": true
+    },
   ]
 }
