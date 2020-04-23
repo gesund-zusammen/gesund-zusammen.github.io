@@ -299,6 +299,12 @@
       "link": "https://www.tech.eu"
     },
     {
+      "name": "Factory Berlin",
+      "slug": "ambassador",
+      "image": "factory_berlin.png",
+      "link": "https://factoryberlin.com"
+    },
+    {
       "name": "APX",
       "slug": "ambassador",
       "image": "apx.png",
@@ -325,6 +331,18 @@
       "nameColorInverted": true
     },
     {
+      "name": "Beta-i",
+      "slug": "ambassador",
+      "image": "betai.png",
+      "link": "https://beta-i.com/"
+    },
+    {
+      "name": "London & Partners",
+      "slug": "ambassador",
+      "image": "london.png",
+      "link": "https://www.londonandpartners.com/"
+    },
+    {
       "name": "Startup Grind Berlin",
       "slug": "ambassador",
       "image": "startup_grind_berlin.png",
@@ -341,12 +359,6 @@
       "slug": "ambassador",
       "image": "degis.png",
       "link": "https://www.degis.info"
-    },
-    {
-      "name": "Factory Berlin",
-      "slug": "ambassador",
-      "image": "factory_berlin.png",
-      "link": "https://factoryberlin.com"
     },
     {
       "name": "Digital Response DE",
