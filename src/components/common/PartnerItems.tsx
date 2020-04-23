@@ -70,7 +70,7 @@ class PartnerItems extends React.Component<IPartnerItemsProps, {}> {
         {this.getCategories(this.props.categorySlug).map((category, index) => {
           const categoryKey: string = "category-" + index;
           return (
-            <Fade key={categoryKey} right cascade>
+            <Fade key={categoryKey} right cascade fraction={0.01}>
               <div id={`wrapper-${categoryKey}`}>
                 {!!this.getPartners(category.slug).length && (
                   <Typography variant="h2">
