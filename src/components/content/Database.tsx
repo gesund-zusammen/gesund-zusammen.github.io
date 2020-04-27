@@ -46,7 +46,7 @@ interface IInitiativeState {
 
 const DEFAULT_STATE: IInitiativeState = {
   selectedCategory: undefined,
-  globalSelected: false,
+  globalSelected: true,
   listLength: INITIAL_LIST_LENGTH,
 };
 
@@ -184,16 +184,12 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
               ))}
             </Hidden>
           </Box>
-          <Box id="region-filter" paddingBottom={4} marginTop={4}>
-            <RegionSelect
-              variant="body2"
-              onClick={() => this.handleRegionClick(false)}
-              className={this.state.globalSelected === false ? "selected" : ""}
-            >
-              {`${this.props.t("initiatives.filter.germany")} (${
-                this.getInitiatives(this.state.selectedCategory, false).length
-              })`}
-            </RegionSelect>
+          <Box
+            id="region-filter"
+            paddingBottom={4}
+            marginTop={4}
+            style={{ textAlign: "center" }}
+          >
             <RegionSelect
               variant="body2"
               onClick={() => this.handleRegionClick(true)}
@@ -201,6 +197,15 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
             >
               {`${this.props.t("initiatives.filter.global")} (${
                 this.getInitiatives(this.state.selectedCategory, true).length
+              })`}
+            </RegionSelect>
+            <RegionSelect
+              variant="body2"
+              onClick={() => this.handleRegionClick(false)}
+              className={this.state.globalSelected === false ? "selected" : ""}
+            >
+              {`${this.props.t("initiatives.filter.germany")} (${
+                this.getInitiatives(this.state.selectedCategory, false).length
               })`}
             </RegionSelect>
           </Box>
