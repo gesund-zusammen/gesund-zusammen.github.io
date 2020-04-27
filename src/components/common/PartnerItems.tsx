@@ -32,6 +32,7 @@ interface IPartnerData {
 interface IPartnerItemsProps extends WithTranslation {
   data: IPartnerData;
   categorySlug?: string;
+  country?: string;
   onlyCountryPartners?: boolean;
 }
 

@@ -1,19 +1,43 @@
 import React from "react";
+import { connect } from "react-redux";
+import { AnyAction, bindActionCreators, Dispatch } from "redux";
 import { MenuItem, Select } from "@material-ui/core";
 import styled, { css, AnyStyledComponent } from "styled-components";
 import { withRouter, RouteComponentProps } from "react-router";
 import { Link } from "react-router-dom";
 import { withTranslation, WithTranslation } from "react-i18next";
 
+import { IAppState } from "../../../reducer";
+import actions from "../../../actions";
+
 import LogoDE from "../../../images/logo.svg";
 import LogoEN from "../../../images/logo_en.svg";
 
 interface IHeaderNavProps extends RouteComponentProps, WithTranslation {}
 
-class HeaderNav extends React.Component<IHeaderNavProps, {}> {
+const mapStateToProps = (state: IAppState) => ({
+  country: state.country,
+});
+
+const mapDispatchToProps = (dispatch: Dispatch<AnyAction>) =>
+  bindActionCreators(
+    {
+      setCountry: actions.setCountry,
+    },
+    dispatch,
+  );
+
+class HeaderNav extends React.Component<
+  ReturnType<typeof mapStateToProps> &
+    ReturnType<typeof mapDispatchToProps> &
+    IHeaderNavProps,
+  {}
+> {
   handleLangChange = (selected: any) => {
-    const newLang = selected.target.value;
+    const newLang = selected.target.value as string;
     this.props.i18n.changeLanguage(newLang, () => {
+      // TODO remove next line as soon as country selection is handled separately
+      this.props.setCountry(newLang);
       const pathSegments = this.props.location.pathname.split("/");
       const [, , ...path] = pathSegments;
       this.props.history.push(`/${newLang}/${path.join("/")}`);
@@ -170,4 +194,7 @@ const HeaderLangSwitch: AnyStyledComponent = styled.div`
   }
 `;
 
-export default withRouter(withTranslation()(HeaderNav));
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(withRouter(withTranslation()(HeaderNav)));

@@ -1,4 +1,6 @@
 import React from "react";
+import { connect } from "react-redux";
+import { AnyAction, bindActionCreators, Dispatch } from "redux";
 import {
   BrowserRouter as Router,
   Switch,
@@ -36,14 +38,36 @@ import IlluImprint from "../images/illu_imprint.svg";
 
 import { DEFAULT_LANG } from "../i18n";
 
+import { IAppState } from "../reducer";
+import actions from "../actions";
+
 interface IPageProps
   extends RouteComponentProps<{ lang: "de" | "en" | "fr" | "it" | "es" }>,
     WithTranslation {}
 
-class Page extends React.Component<IPageProps, {}> {
+const mapStateToProps = (state: IAppState) => ({
+  country: state.country,
+});
+
+const mapDispatchToProps = (dispatch: Dispatch<AnyAction>) =>
+  bindActionCreators(
+    {
+      setCountry: actions.setCountry,
+    },
+    dispatch,
+  );
+
+class Page extends React.Component<
+  ReturnType<typeof mapStateToProps> &
+    ReturnType<typeof mapDispatchToProps> &
+    IPageProps,
+  {}
+> {
   componentDidMount = () => {
     if (this.props.match.params.lang !== this.props.i18n.language) {
       setTimeout(() => {
+        // TODO remove next line as soon as country selection is handled separately
+        this.props.setCountry(this.props.match.params.lang);
         this.props.i18n.changeLanguage(this.props.match.params.lang);
       });
     }
@@ -148,7 +172,10 @@ class Page extends React.Component<IPageProps, {}> {
   };
 }
 
-class LangWrapper extends React.Component {
+class LangWrapper extends React.Component<
+  ReturnType<typeof mapStateToProps> & ReturnType<typeof mapDispatchToProps>,
+  {}
+> {
   replaceLang = (pathname: string, lang: "de" | "en" | "it" | "es" | "fr") => {
     const pathSegments = pathname.split("/");
     const [, , ...path] = pathSegments;
@@ -166,7 +193,16 @@ class LangWrapper extends React.Component {
               supportedLanguages.includes(props.match.params.lang) ? (
                 <Translation>
                   {(t, { i18n, lng }, ready) => (
-                    <Page {...{ t, i18n, lng, tReady: ready, ...props }} />
+                    <Page
+                      {...{
+                        t,
+                        i18n,
+                        lng,
+                        tReady: ready,
+                        ...props,
+                        ...this.props,
+                      }}
+                    />
                   )}
                 </Translation>
               ) : (
@@ -181,4 +217,4 @@ class LangWrapper extends React.Component {
   };
 }
 
-export default LangWrapper;
+export default connect(mapStateToProps, mapDispatchToProps)(LangWrapper);
