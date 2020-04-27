@@ -19,7 +19,7 @@ language: "es"
 
   Incluso en tiempos de crisis, la libertad y los derechos personales de las personas individuales son la prioridad principal de nuestra tecnología.
 
-  #### Para mantener a Alemania saludable
+  #### Para mantener a Europa saludable
 
   Las Herramientas Digitales apoyadas en el programa de Aceleración están diseñadas para ayudar a proteger mejor a los grupos de riesgo y aliviar la carga del sistema de salud.
 
