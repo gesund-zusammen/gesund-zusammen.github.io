@@ -1,5 +1,14 @@
 import React from "react";
-import { Box, Typography, Chip, Button } from "@material-ui/core";
+import {
+  Box,
+  Typography,
+  Chip,
+  Button,
+  Hidden,
+  FormControl,
+  InputLabel,
+  Select,
+} from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 import { withTranslation, WithTranslation } from "react-i18next";
 
@@ -95,7 +104,10 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
     });
   };
 
-  handleChipClick = (categorySlug: string | undefined) => {
+  handleCategorySelect = (categorySlug: string | undefined) => {
+    if (categorySlug === "all") {
+      categorySlug = undefined;
+    }
     this.setState({
       selectedCategory: categorySlug,
       listLength: INITIAL_LIST_LENGTH,
@@ -109,35 +121,69 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
   render = () => {
     return (
       <Box paddingBottom={4}>
-        <Typography variant="h3">
-          {this.props.t("initiatives.filter.filterBy")}
-        </Typography>
+        <Hidden xsDown>
+          <Typography variant="h3">
+            {this.props.t("initiatives.filter.filterBy")}
+          </Typography>
+        </Hidden>
         <Box id="initiatives-filter">
           <Box id="categories-filter">
-            <CategoryChip
-              variant="outlined"
-              className={
-                this.state.selectedCategory === undefined && "selected"
-              }
-              key="all"
-              label={`${this.props.t("initiatives.filter.all")} (${
-                this.categoryInitiativesCount.all
-              })`}
-              onClick={() => this.handleChipClick(undefined)}
-            />
-            {this.getCategories().map(category => (
+            <Hidden smUp>
+              <FormControl variant="outlined" fullWidth>
+                <Select
+                  native
+                  value={this.state.selectedCategory}
+                  onChange={(
+                    event: React.ChangeEvent<{ name?: string; value: unknown }>,
+                  ) =>
+                    this.handleCategorySelect(
+                      event.target.value as string | undefined,
+                    )
+                  }
+                  inputProps={{
+                    name: "category",
+                    id: "filter-select",
+                  }}
+                >
+                  <option aria-label="all" value="all">{`${this.props.t(
+                    "initiatives.filter.all",
+                  )} (${this.categoryInitiativesCount.all})`}</option>
+                  {this.getCategories().map(category => (
+                    <option key={category.slug} value={category.slug}>
+                      {`${category.name[this.props.i18n.language]} (${
+                        this.categoryInitiativesCount[category.slug]
+                      })`}
+                    </option>
+                  ))}
+                </Select>
+              </FormControl>
+            </Hidden>
+            <Hidden xsDown>
               <CategoryChip
                 variant="outlined"
                 className={
-                  this.state.selectedCategory === category.slug && "selected"
+                  this.state.selectedCategory === undefined && "selected"
                 }
-                key={category.slug}
-                label={`${category.name[this.props.i18n.language]} (${
-                  this.categoryInitiativesCount[category.slug]
+                key="all"
+                label={`${this.props.t("initiatives.filter.all")} (${
+                  this.categoryInitiativesCount.all
                 })`}
-                onClick={() => this.handleChipClick(category.slug)}
+                onClick={() => this.handleCategorySelect(undefined)}
               />
-            ))}
+              {this.getCategories().map(category => (
+                <CategoryChip
+                  variant="outlined"
+                  className={
+                    this.state.selectedCategory === category.slug && "selected"
+                  }
+                  key={category.slug}
+                  label={`${category.name[this.props.i18n.language]} (${
+                    this.categoryInitiativesCount[category.slug]
+                  })`}
+                  onClick={() => this.handleCategorySelect(category.slug)}
+                />
+              ))}
+            </Hidden>
           </Box>
           <Box id="region-filter" paddingBottom={4} marginTop={4}>
             <RegionSelect
