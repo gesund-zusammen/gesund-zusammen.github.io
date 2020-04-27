@@ -6,7 +6,6 @@ import {
   Button,
   Hidden,
   FormControl,
-  InputLabel,
   Select,
 } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
