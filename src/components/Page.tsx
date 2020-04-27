@@ -64,10 +64,10 @@ class Page extends React.Component<
   {}
 > {
   componentDidMount = () => {
+    // TODO remove next line as soon as country selection is handled separately
+    this.props.setCountry(this.props.match.params.lang);
     if (this.props.match.params.lang !== this.props.i18n.language) {
       setTimeout(() => {
-        // TODO remove next line as soon as country selection is handled separately
-        this.props.setCountry(this.props.match.params.lang);
         this.props.i18n.changeLanguage(this.props.match.params.lang);
       });
     }
@@ -176,12 +176,6 @@ class LangWrapper extends React.Component<
   ReturnType<typeof mapStateToProps> & ReturnType<typeof mapDispatchToProps>,
   {}
 > {
-  replaceLang = (pathname: string, lang: "de" | "en" | "it" | "es" | "fr") => {
-    const pathSegments = pathname.split("/");
-    const [, , ...path] = pathSegments;
-    return `/${lang}/${path.join("/")}`;
-  };
-
   render = () => {
     const supportedLanguages = ["de", "en", "it", "es", "fr"];
     return (

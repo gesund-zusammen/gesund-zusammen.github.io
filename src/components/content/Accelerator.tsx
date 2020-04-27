@@ -133,7 +133,7 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
         </Box>
 
         <Box id="partners" paddingBottom={4} marginTop={4}>
-          <PartnerItems data={AcceleratorPartners} />
+          <PartnerItems data={AcceleratorPartners} country={null} />
         </Box>
 
         <Box paddingBottom={4} marginTop={4}>

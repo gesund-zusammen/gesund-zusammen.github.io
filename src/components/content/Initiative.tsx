@@ -1,4 +1,6 @@
 import React from "react";
+import { connect } from "react-redux";
+import { AnyAction, bindActionCreators, Dispatch } from "redux";
 import { Box, Button, Grid } from "@material-ui/core";
 import { withTranslation, WithTranslation } from "react-i18next";
 import styled, { AnyStyledComponent } from "styled-components";
@@ -15,13 +17,8 @@ import ContentFR from "../../data/initiative/initiative_fr.md";
 import ContentIT from "../../data/initiative/initiative_it.md";
 import ContentES from "../../data/initiative/initiative_es.md";
 
-interface IInitiativeState {
-  letterRevealed: boolean;
-}
-
-const DEFAULT_STATE: IInitiativeState = {
-  letterRevealed: false,
-};
+import { IAppState } from "../../reducer";
+import actions from "../../actions";
 
 const ContentGridItem: AnyStyledComponent = styled(Grid)`
   && {
@@ -46,19 +43,24 @@ const LinkButton: AnyStyledComponent = styled(Button)`
   }
 `;
 
+const mapStateToProps = (state: IAppState) => ({
+  country: state.country,
+});
+
+const mapDispatchToProps = (dispatch: Dispatch<AnyAction>) =>
+  bindActionCreators(
+    {
+      setCountry: actions.setCountry,
+    },
+    dispatch,
+  );
+
 class Initiative extends React.PureComponent<
-  WithTranslation,
-  IInitiativeState
+  ReturnType<typeof mapStateToProps> &
+    ReturnType<typeof mapDispatchToProps> &
+    WithTranslation,
+  {}
 > {
-  constructor(props: WithTranslation) {
-    super(props);
-    this.state = DEFAULT_STATE;
-  }
-
-  handleRevealContent = () => {
-    this.setState({ letterRevealed: true });
-  };
-
   getMarkdown(language: string) {
     switch (language) {
       case "de":
@@ -111,7 +113,8 @@ class Initiative extends React.PureComponent<
         <Box id="partners" paddingBottom={4} marginTop={8}>
           <PartnerItems
             data={InitiativePartners}
-            onlyCountryPartners={this.props.i18n.language === "it"}
+            country={this.props.country}
+            onlyCountryPartners={this.props.country === "it"}
           />
         </Box>
 
@@ -127,4 +130,7 @@ class Initiative extends React.PureComponent<
   };
 }
 
-export default withTranslation()(Initiative);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(withTranslation()(Initiative));
