@@ -113,7 +113,7 @@ class Initiative extends React.PureComponent<
         <Box id="partners" paddingBottom={4} marginTop={8}>
           <PartnerItems
             data={InitiativePartners}
-            country={this.props.country}
+            country={this.props.country ? this.props.country : undefined}
             onlyCountryPartners={this.props.country === "it"}
           />
         </Box>
