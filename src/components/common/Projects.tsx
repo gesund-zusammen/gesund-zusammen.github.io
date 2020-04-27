@@ -22,11 +22,7 @@ class Projects extends React.PureComponent<WithTranslation, {}> {
               alignItems="center"
               spacing={4}
             >
-              <ProjectCard
-                name="Coming soon"
-                image={LogoComingSoon}
-                link="coming soon"
-              />
+              <ProjectCard name="Coming soon" image={LogoComingSoon} />
             </Grid>
           </Box>
         </Fade>
