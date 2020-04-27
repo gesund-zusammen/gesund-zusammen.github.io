@@ -336,6 +336,19 @@
       "slug": "tech",
       "image": "macher_hilfe.png",
       "link": "https://www.macher-hilfe.de"
+    },
+    {
+      "name": "Empaua",
+      "slug": "tech",
+      "image": "empaua.png",
+      "link": "https://empaua.com",
+      "imageXL": true
+    },
+    {
+      "name": "Penta",
+      "slug": "tech",
+      "image": "penta.png",
+      "link": "https://getpenta.com"
     }
   ]
 }
