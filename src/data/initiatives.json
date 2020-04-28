@@ -1041,7 +1041,7 @@
         "en": "COVAID Africa, in support of Doctors Without Borders / Médecins Sans Frontières, was founded to combat the spread of COVID-19 through fundraising to provide medical support and resources throughout Africa"
       },
       "global": true
-    },      
+    },
     {
       "name": "IMF World Economic Outlook",
       "link": "https://www.imf.org/en/Publications/WEO/Issues/2020/04/14/World-Economic-Outlook-April-2020-The-Great-Lockdown-49306",
@@ -1051,7 +1051,7 @@
         "en": "World economic outlook by the International Monetary Fund incorporating coronavirus consequences."
       },
       "global": true
-    },      
+    },
     {
       "name": "European Commission Innovative Hackathon",
       "link": "https://euvsvirus.org/",
@@ -1061,7 +1061,7 @@
         "en": "Pan-european hackathon to bring innovative solutions for the coronavirus challenge."
       },
       "global": true
-    },    
+    },
     {
       "name": "Macher Hilfe",
       "link": "https://www.macher-hilfe.de/ueber-uns/",
@@ -1171,7 +1171,7 @@
         "en": "Pan-european hackathon to bring innovative solutions for the coronavirus challenge."
       },
       "global": true
-    },    
+    },
     {
       "name": "Macher Hilfe",
       "link": "https://www.macher-hilfe.de/ueber-uns/",
@@ -1202,7 +1202,7 @@
       },
       "global": false
     },
-     {
+    {
       "name": "UNESCO",
       "link": "https://en.unesco.org/covid19/educationresponse/nationalresponses#LATIN%20AMERICA%20&%20THE%20CARIBBEAN",
       "category": "Research and Government Sites",
@@ -1222,7 +1222,7 @@
       },
       "global": false
     },
-        {
+    {
       "name": "Deutsche Bank Group",
       "link": "https://www.deutsche-bank.de/gk/lp/service-seite-corona.html",
       "category": "Knowledge Resource",
@@ -1252,7 +1252,7 @@
       },
       "global": false
     },
-        {
+    {
       "name": "griztame.lt",
       "link": "https://griztame.lt/",
       "category": "Further Initiatives",
@@ -1262,7 +1262,7 @@
       },
       "global": true
     },
-     {
+    {
       "name": "covid19dataportal.org",
       "link": "https://www.covid19dataportal.org/",
       "category": "Digital tools",
