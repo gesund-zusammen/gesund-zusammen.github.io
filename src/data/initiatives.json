@@ -1321,6 +1321,67 @@
         "en": "The report provides an overview of how criminals adapt their misdeeds to the COVID-19 pandemic. It is based on information Europol receives from the EU Member States on a 24/7 basis and intends to support Member States’ law enforcement authorities in their work.."
       },
       "global": true
-    }
+    },
+{
+      " name " : "Avawomen " ,
+      " link " : " https://www.avawomen.com/press/liechtenstein-study-aims-to-help-combat-coronavirus-pandemic/" ,
+      " category " : " Further Initiatives" ,
+      " description " : {
+        " de " : " Ava is a digital healthcare company that focuses on women’s reproductive health. Based on a combination of artificial intelligence and clinical research, Ava bracelets allow women to identify the best time in their monthly cycle to conceive. Sensory bracelets made by Ava are now being given on a voluntary basis in order to collect data that will hopefully allow early detection of Covid-19 " ,
+        " en " : " Ava is a digital healthcare company that focuses on women’s reproductive health. Based on a combination of artificial intelligence and clinical research, Ava bracelets allow women to identify the best time in their monthly cycle to conceive. Sensory bracelets made by Ava are now being given on a voluntary basis in order to collect data that will hopefully allow early detection of Covid-19 "
+      },
+      " global " : true
+}, 
+{
+      " name " : "EmTech " ,
+      " link " : " https://emtech.technologyreview.com/emtech-next-2020/?utm_source=event_email&utm_medium=email&utm_campaign=emtech_next_2020.unpaid.acquisition&discount=EMAIL042550#register" ,
+      " category " : " Further Initiatives" ,
+      " description " : {
+        " de " : " MIT Technology Review and Harvard Business Review are partnering to bring you EmTech Next, a 3-day virtual event examining technology, leadership, and change " ,
+        " en " : " MIT Technology Review and Harvard Business Review are partnering to bring you EmTech Next, a 3-day virtual event examining technology, leadership, and change "
+      },
+      " global " : true
+}, 
+{
+      " name " : "Java Networks " ,
+      " link " : " https://cdn.jamanetwork.com/ama/content_public/journal/jama/0/jvp200035supp1_prod.pdf?Expires=2147483647&Signature=bIZCLS7ZLWTJd~U~H40JgiEGdFb3ggVUJpBvJ7KdANK7HgK1zaj4uWHvqweGym1nWfO~nXt9Y5i1vX79pF7zjjqfzmJAy3udTdpVVZQe07xnQIPcBMXLwZ5XjgTO8yKFXVIpxsXhrmOu8sGSpKiEmQ86ZCKfOTar7fMAGmUCtjiYVFwf31K3REWAA-r3hZyoZpqz3QKpVgpsRpF9fV9thQCq0~yvbvRKTH4PcoB~CZgmXH7rpVb6bILXQn5zBCphf6pyLAa4zIebUEKfCdCYdSdi9LeIEUsesqsYpNWgHJcr4K1LC0hFlst0RHQz-vZ7I-OvrX~5jel6zjjtuDQzjQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" ,
+      " category " : " Knowledge Resource" ,
+      " description " : {
+        " de " : " Response to COVID-19 in Taiwan: big data analytics, new technology, and proactive testing " ,
+        " en " : " Response to COVID-19 in Taiwan: big data analytics, new technology, and proactive testing "
+      },
+      " global " : true
+}, 
+{
+      " name " : "Kahun " ,
+      " link " : " https://kahun.com/" ,
+      " category " : " Digital tools" ,
+      " description " : {
+        " de " : " Kahun'S technology encodes evidence-based clinical knowledge and transforms it into usable structured data that can be grasped quickly and comprehensively. We employ a combination of AI methodologies, a community of professional medical experts, and computational algorithms to analyze and process existing clinical literature and fully capture the complex associations found within it. We  present the information in a new innovative format designed to be used by physicians in their daily practice " ,
+        " en " : " Kahun'S technology encodes evidence-based clinical knowledge and transforms it into usable structured data that can be grasped quickly and comprehensively. We employ a combination of AI methodologies, a community of professional medical experts, and computational algorithms to analyze and process existing clinical literature and fully capture the complex associations found within it. We  present the information in a new innovative format designed to be used by physicians in their daily practice "
+      },
+      " global " : true
+}, 
+{
+      " name " : "Africa News " ,
+      " link " : " https://www.africanews.com/2020/04/26/coronavirus-south-africa-member-of-the-executive-council-mec-debbie-schafer-quality-teaching-at-home-during-covid-19-coronavirus-pandemic/" ,
+      " category " : " Further Initiatives" ,
+      " description " : {
+        " de " : " South Africa - Quality teaching at home during COVID-19 Coronavirus pandemic " ,
+        " en " : " South Africa - Quality teaching at home during COVID-19 Coronavirus pandemic "
+      },
+      " global " : true
+}, 
+{
+      " name " : "Tech Xplore " ,
+      " link " : " https://techxplore.com/news/2020-04-proximity-coronavirus-pandemic-germany.html" ,
+      " category " : " Digital tools" ,
+      " description " : {
+        " de " : " The Fraunhofer-Gesellschaft has developed an approach of its own for a German proximity tracing app " ,
+        " en " : " The Fraunhofer-Gesellschaft has developed an approach of its own for a German proximity tracing app "
+      },
+      " global " : true
+}, 
+
   ]
 }
