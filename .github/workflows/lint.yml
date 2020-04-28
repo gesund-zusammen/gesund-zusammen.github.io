@@ -1,31 +1,12 @@
 name: Lint
 
-on:
-  pull_request:
-    branches:
-      - source
+on: pull_request
 
 jobs:
-  run-linters:
-    name: Run linters
+  eslint:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v1
+      - uses: hallee/eslint-action@master
         with:
-          node-version: 12
-
-      - name: Install Node.js dependencies
-        run: npm install
-
-      - name: Run linters
-        uses: samuelmeuli/lint-action@v1
-        with:
-          github_token: ${{ secrets.GH_ACCESS_TOKEN }}
-          eslint: true
-          eslint_dir: "src"
-          eslint_extensions: js,ts,tsx
+          repo-token: ${{secrets.GH_ACCESS_TOKEN}}
