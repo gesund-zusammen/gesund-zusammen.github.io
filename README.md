@@ -40,7 +40,6 @@ docker run -p 80:4000 -d helios-admin:latest
 
 ## Releasing healthy-together.eu
 
-
 ```
 first time
 git clone git@github.com:gesund-zusammen/healthy-together.git
