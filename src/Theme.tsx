@@ -134,7 +134,7 @@ const theme = responsiveFontSizes(
         fontSize: "1.67rem",
         fontWeight: 700,
         marginBottom: "1rem",
-        color: "#0a6eaa",
+        color: "#003269",
       },
       h4: {
         fontFamily: [
