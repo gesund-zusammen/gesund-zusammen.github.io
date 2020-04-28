@@ -1,19 +1,20 @@
 import React from "react";
 import {
   Box,
-  Card,
-  CardContent,
   Typography,
   Chip,
   Button,
+  Hidden,
+  FormControl,
+  Select,
 } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 import { withTranslation, WithTranslation } from "react-i18next";
 
-import IconArrowRight from "../../images/icon_arrow_right.svg";
+import CTABox from "../common/CTABox";
+import InitiativeCard from "../common/InitiativeCard";
 
 import InitiativeData from "../../data/initiatives.json";
-import CTABox from "../common/CTABox";
 
 const INITIAL_LIST_LENGTH = 10;
 const LIST_LENGTH_INCREMENT = 10;
@@ -45,7 +46,7 @@ interface IInitiativeState {
 
 const DEFAULT_STATE: IInitiativeState = {
   selectedCategory: undefined,
-  globalSelected: false,
+  globalSelected: true,
   listLength: INITIAL_LIST_LENGTH,
 };
 
@@ -102,7 +103,10 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
     });
   };
 
-  handleChipClick = (categorySlug: string | undefined) => {
+  handleCategorySelect = (categorySlug: string | undefined) => {
+    if (categorySlug === "all") {
+      categorySlug = undefined;
+    }
     this.setState({
       selectedCategory: categorySlug,
       listLength: INITIAL_LIST_LENGTH,
@@ -121,41 +125,69 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
         </Typography>
         <Box id="initiatives-filter">
           <Box id="categories-filter">
-            <CategoryChip
-              variant="outlined"
-              className={
-                this.state.selectedCategory === undefined && "selected"
-              }
-              key="all"
-              label={`${this.props.t("initiatives.filter.all")} (${
-                this.categoryInitiativesCount.all
-              })`}
-              onClick={() => this.handleChipClick(undefined)}
-            />
-            {this.getCategories().map(category => (
+            <Hidden smUp>
+              <FormControl variant="outlined" fullWidth>
+                <Select
+                  native
+                  value={this.state.selectedCategory}
+                  onChange={(
+                    event: React.ChangeEvent<{ name?: string; value: unknown }>,
+                  ) =>
+                    this.handleCategorySelect(
+                      event.target.value as string | undefined,
+                    )
+                  }
+                  inputProps={{
+                    name: "category",
+                    id: "filter-select",
+                  }}
+                >
+                  <option aria-label="all" value="all">{`${this.props.t(
+                    "initiatives.filter.all",
+                  )} (${this.categoryInitiativesCount.all})`}</option>
+                  {this.getCategories().map(category => (
+                    <option key={category.slug} value={category.slug}>
+                      {`${category.name[this.props.i18n.language]} (${
+                        this.categoryInitiativesCount[category.slug]
+                      })`}
+                    </option>
+                  ))}
+                </Select>
+              </FormControl>
+            </Hidden>
+            <Hidden xsDown>
               <CategoryChip
                 variant="outlined"
                 className={
-                  this.state.selectedCategory === category.slug && "selected"
+                  this.state.selectedCategory === undefined && "selected"
                 }
-                key={category.slug}
-                label={`${category.name[this.props.i18n.language]} (${
-                  this.categoryInitiativesCount[category.slug]
+                key="all"
+                label={`${this.props.t("initiatives.filter.all")} (${
+                  this.categoryInitiativesCount.all
                 })`}
-                onClick={() => this.handleChipClick(category.slug)}
+                onClick={() => this.handleCategorySelect(undefined)}
               />
-            ))}
+              {this.getCategories().map(category => (
+                <CategoryChip
+                  variant="outlined"
+                  className={
+                    this.state.selectedCategory === category.slug && "selected"
+                  }
+                  key={category.slug}
+                  label={`${category.name[this.props.i18n.language]} (${
+                    this.categoryInitiativesCount[category.slug]
+                  })`}
+                  onClick={() => this.handleCategorySelect(category.slug)}
+                />
+              ))}
+            </Hidden>
           </Box>
-          <Box id="region-filter" paddingBottom={4} marginTop={4}>
-            <RegionSelect
-              variant="body2"
-              onClick={() => this.handleRegionClick(false)}
-              className={this.state.globalSelected === false ? "selected" : ""}
-            >
-              {`${this.props.t("initiatives.filter.germany")} (${
-                this.getInitiatives(this.state.selectedCategory, false).length
-              })`}
-            </RegionSelect>
+          <Box
+            id="region-filter"
+            paddingBottom={4}
+            marginTop={2}
+            style={{ textAlign: "center" }}
+          >
             <RegionSelect
               variant="body2"
               onClick={() => this.handleRegionClick(true)}
@@ -163,6 +195,15 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
             >
               {`${this.props.t("initiatives.filter.global")} (${
                 this.getInitiatives(this.state.selectedCategory, true).length
+              })`}
+            </RegionSelect>
+            <RegionSelect
+              variant="body2"
+              onClick={() => this.handleRegionClick(false)}
+              className={this.state.globalSelected === false ? "selected" : ""}
+            >
+              {`${this.props.t("initiatives.filter.germany")} (${
+                this.getInitiatives(this.state.selectedCategory, false).length
               })`}
             </RegionSelect>
           </Box>
@@ -174,30 +215,17 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
           ).map(
             (initiative, index) =>
               index < this.state.listLength && (
-                <InitiativeCardWrapper
+                <InitiativeCard
                   key={`${initiative.link}_${initiative.name}`}
-                  href={initiative.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <InitiativeCard>
-                    <InitiativeCardContent>
-                      <Typography variant="subtitle2" color="secondary">
-                        {this.getCategoryName(initiative.category)}
-                      </Typography>
-                      <InitiativeCardTitle variant="h4" color="primary">
-                        {initiative.name}
-                      </InitiativeCardTitle>
-                      <Typography variant="body2" color="primary">
-                        {
-                          initiative.description[
-                            this.props.i18n.language === "de" ? "de" : "en"
-                          ]
-                        }
-                      </Typography>
-                    </InitiativeCardContent>
-                  </InitiativeCard>
-                </InitiativeCardWrapper>
+                  link={initiative.link}
+                  category={this.getCategoryName(initiative.category)}
+                  name={initiative.name}
+                  description={
+                    initiative.description[
+                      this.props.i18n.language === "de" ? "de" : "en"
+                    ]
+                  }
+                />
               ),
           )}
         </Box>
@@ -276,43 +304,6 @@ const RegionSelect: AnyStyledComponent = styled(Typography)`
   }
 `;
 
-const InitiativeCardWrapper: AnyStyledComponent = styled.a`
-  text-decoration: none;
-`;
-
-const InitiativeCard: AnyStyledComponent = styled(Card)`
-  && {
-    border-radius: 15px;
-    box-shadow: 0px 2px 24px #e3e6eb;
-    margin-bottom: 2rem;
-    padding: 0.8rem;
-
-    @media (min-width: 600px) {
-      padding: 2.2rem 6rem 2.2rem 2.2rem;
-
-      &:hover {
-        background-image: url(${IconArrowRight});
-        background-position: right 2rem center;
-        background-repeat: no-repeat;
-      }
-    }
-  }
-`;
-
-const InitiativeCardTitle: AnyStyledComponent = styled(Typography)`
-  && {
-    margin-top: 0.5rem;
-    margin-bottom: 0.7rem;
-    line-height: 1.4;
-  }
-`;
-
-const InitiativeCardContent: AnyStyledComponent = styled(CardContent)`
-  && {
-    max-width: 680px;
-  }
-`;
-
 const ShowMoreButton: AnyStyledComponent = styled(Button)`
   && {
     display: block;
@@ -324,10 +315,6 @@ const ShowMoreButton: AnyStyledComponent = styled(Button)`
     margin: 0 auto;
     padding-right: 2rem;
     padding-left: 2rem;
-
-    @media (min-width: 600px) {
-      font-size: 1.4rem;
-    }
 
     &:hover {
       color: #ffffff;

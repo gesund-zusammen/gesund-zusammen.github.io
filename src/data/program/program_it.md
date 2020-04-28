@@ -3,9 +3,7 @@ title: "Programma italiano"
 language: "it"
 ---
 
-## Il programma di accelerazione #HealthyTogether
-
-L'acceleratore #HealthyTogether è organizzato da TOA, weft e finleap, con il supporto di tanti altri attori dell'ecosistema (N26, BVDS, DeliveryHero, Celonis, Ada Health ed altri).
+L'acceleratore Future Perfect è organizzato da TOA, weft e finleap, con il supporto di tanti altri attori dell'ecosistema (N26, BVDS, DeliveryHero, Celonis, Ada Health ed altri).
 
 #### Il programma offre:
 

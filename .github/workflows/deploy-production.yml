@@ -1,5 +1,4 @@
-name: Build and Deploy Production
-
+name: Build and deploy production
 on:
   release:
     types: [published]

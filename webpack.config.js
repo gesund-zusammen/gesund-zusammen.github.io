@@ -70,6 +70,7 @@ const config = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/,
+        exclude: [path.resolve(__dirname, "./src/images/partners/")],
         use: [
           {
             loader: "file-loader",
@@ -98,6 +99,96 @@ const config = {
             },
           },
         ],
+      },
+      {
+        test: /\.svg$/,
+        include: [path.resolve(__dirname, "./src/images/partners/")],
+        use: isOptimized
+          ? [
+              {
+                loader: "file-loader",
+                options: {
+                  outputPath: "images/partners",
+                },
+              },
+              {
+                loader: "image-webpack-loader",
+                options: {
+                  mozjpeg: {
+                    progressive: true,
+                    quality: 65,
+                  },
+                  // optipng.enabled: false will disable optipng
+                  optipng: {
+                    enabled: false,
+                  },
+                  pngquant: {
+                    quality: [0.65, 0.9],
+                    speed: 4,
+                  },
+                  gifsicle: {
+                    interlaced: false,
+                  },
+                },
+              },
+            ]
+          : [
+              {
+                loader: "file-loader",
+                options: {
+                  outputPath: "images/partners",
+                },
+              },
+            ],
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/,
+        include: [path.resolve(__dirname, "./src/images/partners/")],
+        use: isOptimized
+          ? [
+              {
+                loader: "file-loader",
+                options: {
+                  outputPath: "images/partners",
+                },
+              },
+              {
+                loader: "image-webpack-loader",
+                options: {
+                  mozjpeg: {
+                    progressive: true,
+                    quality: 65,
+                  },
+                  // optipng.enabled: false will disable optipng
+                  optipng: {
+                    enabled: false,
+                  },
+                  pngquant: {
+                    quality: [0.65, 0.9],
+                    speed: 4,
+                  },
+                  gifsicle: {
+                    interlaced: false,
+                  },
+                },
+              },
+              {
+                loader: "image-maxsize-webpack-loader",
+                options: {
+                  "max-width": 400,
+                  "max-height": 400,
+                  useImageMagick: true,
+                },
+              },
+            ]
+          : [
+              {
+                loader: "file-loader",
+                options: {
+                  outputPath: "images/partners",
+                },
+              },
+            ],
       },
       {
         test: /\.(woff(2)?|eot|ttf|otf)$/,

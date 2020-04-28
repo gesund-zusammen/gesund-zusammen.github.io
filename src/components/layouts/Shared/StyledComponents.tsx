@@ -6,7 +6,7 @@ import BgHeader from "../../../images/bg_header.svg";
 const HeaderBox: AnyStyledComponent = styled(Box)`
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   color: #ffffff;
-  padding: 0 0 8rem 0;
+  padding: 0 0 6rem 0;
   background-image: url(${BgHeader});
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@ const HeaderBox: AnyStyledComponent = styled(Box)`
   overflow: hidden;
 
   @media (min-width: 600px) {
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
   }
 `;
 

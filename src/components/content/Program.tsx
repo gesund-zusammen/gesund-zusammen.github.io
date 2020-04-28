@@ -1,6 +1,7 @@
 import React from "react";
 import { Box } from "@material-ui/core";
 import { withTranslation, WithTranslation } from "react-i18next";
+import styled, { AnyStyledComponent } from "styled-components";
 
 import MuiMarkdown from "../common/MuiMarkdown";
 import CTABox from "../common/CTABox";
@@ -11,6 +12,15 @@ import ContentEN from "../../data/program/program_en.md";
 import ContentFR from "../../data/program/program_fr.md";
 import ContentIT from "../../data/program/program_it.md";
 import ContentES from "../../data/program/program_es.md";
+
+import LogoFuturePerfect from "../../images/logo_future_perfect.svg";
+
+const AcceleratorLogo: AnyStyledComponent = styled.img`
+  display: block;
+  width: 500px;
+  max-width: 100%;
+  margin: 0 0 2rem 0;
+`;
 
 class Program extends React.Component<WithTranslation, {}> {
   getMarkdown(language: string) {
@@ -31,6 +41,7 @@ class Program extends React.Component<WithTranslation, {}> {
   render = () => {
     return (
       <Box paddingBottom={4}>
+        <AcceleratorLogo src={LogoFuturePerfect} />
         <MuiMarkdown
           markdown={this.getMarkdown(this.props.i18n.language)}
         ></MuiMarkdown>

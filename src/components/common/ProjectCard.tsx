@@ -2,10 +2,12 @@ import React from "react";
 import { Card, Grid, Typography } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
+import OptionalLinkWrapper from "./OptionalLinkWrapper";
+
 interface IProjectCardProps {
   image: string;
   name: string;
-  link: string;
+  link?: string;
   color?: string;
   imageXL?: boolean;
   nameColorInverted?: boolean;
@@ -15,7 +17,7 @@ class ProjectCard extends React.PureComponent<IProjectCardProps, {}> {
   render = () => {
     return (
       <Grid item xs={6} sm={3}>
-        <a href={this.props.link} target="_blank" rel="noopener noreferrer">
+        <OptionalLinkWrapper link={this.props.link}>
           <ProjectCardWrapper>
             <ProjectCardContent
               style={{
@@ -31,7 +33,7 @@ class ProjectCard extends React.PureComponent<IProjectCardProps, {}> {
               {this.props.name}
             </ProjectName>
           </ProjectCardWrapper>
-        </a>
+        </OptionalLinkWrapper>
       </Grid>
     );
   };
