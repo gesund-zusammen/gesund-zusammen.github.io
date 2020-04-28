@@ -108,6 +108,12 @@
       "link": "https://www.bcgdv.com"
     },
     {
+      "name": "Penta",
+      "slug": "tech",
+      "image": "penta.png",
+      "link": "https://getpenta.com"
+    },
+    {
       "name": "N26",
       "slug": "tech",
       "image": "n26.png",
@@ -148,6 +154,13 @@
       "slug": "tech",
       "image": "adahealth.png",
       "link": "https://ada.com"
+    },
+    {
+      "name": "EMPAUA",
+      "slug": "tech",
+      "image": "empaua.png",
+      "link": "https://empaua.com",
+      "imageXL": true
     },
     {
       "name": "Personio",

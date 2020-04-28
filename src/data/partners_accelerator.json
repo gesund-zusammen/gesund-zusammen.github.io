@@ -85,10 +85,22 @@
       "link": "https://www.bcgdv.com"
     },
     {
+      "name": "Penta",
+      "slug": "strategic",
+      "image": "penta.png",
+      "link": "https://getpenta.com"
+    },
+    {
       "name": "N26",
       "slug": "strategic",
       "image": "n26.png",
       "link": "https://www.n26.com"
+    },
+    {
+      "name": "Qonto",
+      "slug": "strategic",
+      "image": "qonto.png",
+      "link": "https://www.quonto.eu"
     },
     {
       "name": "GetYourGuide",
@@ -458,12 +470,6 @@
       "slug": "strategic",
       "image": "pwc.png",
       "link": "https://www.pwc.de"
-    },
-    {
-      "name": "Qonto",
-      "slug": "strategic",
-      "image": "qonto.png",
-      "link": "https://www.quonto.eu"
     },
     {
       "name": "Cortado",

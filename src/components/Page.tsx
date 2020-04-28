@@ -31,13 +31,13 @@ import IlluFaq from "../images/illu_faq.svg";
 import IlluProgram from "../images/illu_program.svg";
 import IlluPartner from "../images/illu_partner.svg";
 
-import IlluPressContact from "../images/illu_presscontact.svg";
+import IlluPressContact from "../images/illu_contact.svg";
 import IlluImprint from "../images/illu_imprint.svg";
 
 import { DEFAULT_LANG } from "../i18n";
 
 interface IPageProps
-  extends RouteComponentProps<{ lang: "de" | "en" | "fr" | "it" | "es" }>,
+  extends RouteComponentProps<{ lang: string }>,
     WithTranslation {}
 
 class Page extends React.Component<IPageProps, {}> {

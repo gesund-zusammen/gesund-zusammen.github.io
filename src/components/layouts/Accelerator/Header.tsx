@@ -37,7 +37,6 @@ class AcceleratorHeader extends React.PureComponent<WithTranslation, {}> {
                   {this.props.t("accelerator.landing.content")}
                 </Typography>
                 <ApplyButton
-                  color="primary"
                   variant="contained"
                   disableFocusRipple={true}
                   href={this.props.t("program.link")}
@@ -60,6 +59,8 @@ class AcceleratorHeader extends React.PureComponent<WithTranslation, {}> {
 
 const ApplyButton: AnyStyledComponent = styled(Button)`
   && {
+    background-color: #ffffff;
+    color: #003269;
     font-size: 1rem;
     font-weight: 500;
     text-transform: none;
