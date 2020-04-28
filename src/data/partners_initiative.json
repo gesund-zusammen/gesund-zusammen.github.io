@@ -46,34 +46,34 @@
       "name": "finleap",
       "slug": "founders",
       "image": "finleap.png",
-      "countries": ["de", "en", "es", "fr", "it"]
+      "countries": ["de", "es", "fr", "it"]
     },
     {
       "name": "Wefox Group",
       "slug": "founders",
       "image": "wefoxgroup.png",
-      "countries": ["de", "en", "es", "fr", "it"]
+      "countries": ["de", "es", "fr", "it"]
     },
     {
       "name": "TOA",
       "slug": "founders",
       "image": "toa.png",
       "link": "https://toa.berlin",
-      "countries": ["de", "en", "es", "fr", "it"]
+      "countries": ["de", "es", "fr", "it"]
     },
     {
       "name": "Via",
       "slug": "founders",
       "image": "viadata.svg",
       "link": "https://www.viadata.io",
-      "countries": ["de", "en", "es", "fr", "it"]
+      "countries": ["de", "es", "fr", "it"]
     },
     {
       "name": "Global Citizen Foundation",
       "slug": "founders",
       "image": "globalcitizen.svg",
       "link": "https://www.globalcitizenfoundation.org",
-      "countries": ["de", "en", "es", "fr", "it"]
+      "countries": ["de", "es", "fr", "it"]
     },
     {
       "name": "Freeda",
@@ -87,7 +87,7 @@
       "slug": "tech",
       "image": "freeda.png",
       "link": "http://www.freedamedia.com/",
-      "countries": ["de", "en", "es", "fr"]
+      "countries": ["de", "es", "fr"]
     },
     {
       "name": "Data4Life",
