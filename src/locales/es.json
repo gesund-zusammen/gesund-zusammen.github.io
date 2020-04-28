@@ -6,6 +6,13 @@
     "it": "Italiano",
     "es": "Espanol"
   },
+  "country": {
+    "all": "Todas",
+    "de": "Alemania",
+    "fr": "Francia",
+    "it": "Italia",
+    "es": "España"
+  },
   "header": {
     "nav": {
       "initiative": "Iniciativa",
@@ -85,8 +92,8 @@
     }
   },
   "partners": {
+    "header": "Nuestros compañeros",
     "unknownCategory": "Desconocido",
-    "title": "Socios Fundadores y Tecnológicos",
     "claim": "Quieres contribuir con impacto?",
     "cta": "Únete a la iniciativa",
     "link": "/support"

@@ -132,9 +132,9 @@ const theme = responsiveFontSizes(
           "sans-serif",
         ].join(","),
         fontSize: "1.67rem",
-        fontWeight: 600,
+        fontWeight: 700,
         marginBottom: "1rem",
-        color: "#003269",
+        color: "#0a6eaa",
       },
       h4: {
         fontFamily: [

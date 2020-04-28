@@ -71,7 +71,7 @@ class PartnerItems extends React.Component<IPartnerItemsProps, {}> {
             <Fade key={categoryKey} right cascade fraction={0.01}>
               <div id={`wrapper-${categoryKey}`}>
                 {!!this.getPartners(category.slug).length && (
-                  <Typography variant="h2">
+                  <Typography variant="h3">
                     {category.name[this.props.i18n.language]}
                   </Typography>
                 )}
