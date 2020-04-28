@@ -37,7 +37,7 @@ import IlluImprint from "../images/illu_imprint.svg";
 import { DEFAULT_LANG } from "../i18n";
 
 interface IPageProps
-  extends RouteComponentProps<{ lang: "de" | "en" | "fr" | "it" | "es" }>,
+  extends RouteComponentProps<{ lang: string }>,
     WithTranslation {}
 
 class Page extends React.Component<IPageProps, {}> {
@@ -149,7 +149,7 @@ class Page extends React.Component<IPageProps, {}> {
 }
 
 class LangWrapper extends React.Component {
-  replaceLang = (pathname: string, lang: "de" | "en" | "it" | "es" | "fr") => {
+  replaceLang = (pathname: string, lang: string) => {
     const pathSegments = pathname.split("/");
     const [, , ...path] = pathSegments;
     return `/${lang}/${path.join("/")}`;

@@ -120,11 +120,9 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
   render = () => {
     return (
       <Box paddingBottom={4}>
-        <Hidden xsDown>
-          <Typography variant="h3">
-            {this.props.t("initiatives.filter.filterBy")}
-          </Typography>
-        </Hidden>
+        <Typography variant="h3">
+          {this.props.t("initiatives.filter.filterBy")}
+        </Typography>
         <Box id="initiatives-filter">
           <Box id="categories-filter">
             <Hidden smUp>
@@ -187,7 +185,7 @@ class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
           <Box
             id="region-filter"
             paddingBottom={4}
-            marginTop={4}
+            marginTop={2}
             style={{ textAlign: "center" }}
           >
             <RegionSelect

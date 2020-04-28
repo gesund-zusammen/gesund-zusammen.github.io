@@ -288,6 +288,25 @@ const theme = responsiveFontSizes(
           },
         },
       },
+      MuiSelect: {
+        icon: {
+          color: "#0a6eaa",
+        },
+      },
+      MuiOutlinedInput: {
+        root: {
+          color: "#0a6eaa",
+          "&$focused": {
+            notchedOutline: {
+              borderColor: "#0a6eaa",
+              borderWidth: "1px",
+            },
+          },
+        },
+        notchedOutline: {
+          borderColor: "#0a6eaa",
+        },
+      },
     },
   }),
 );
