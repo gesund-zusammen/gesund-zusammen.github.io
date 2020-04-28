@@ -18,7 +18,7 @@ L'accélérateur Future Perfect est organisé par TOA, wefox & finleap, avec le 
 
 #### La première "promotion" :
 
-- Financera un minimum de 5 solutions innovantes, avec la possibilité d'aller jusqu'à 10
+- Financera un minimum de 4 solutions innovantes, avec la possibilité d'aller jusqu'à 10
 - Examinera toutes les candidatures via un jury de haut niveau
 - Sera soutenue par un réseau grandissant de partenaires
 

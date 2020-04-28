@@ -18,7 +18,7 @@ El programa de aceleración Future Perfect está organizado por TOA, wefox y fin
 
 #### La primera cosecha del programa obtendrá:
 
-- Financiación a un mínimo de 5 soluciones innovadoras, posiblemente ampliando el alcance a 10
+- Financiación a un mínimo de 4 soluciones innovadoras, posiblemente ampliando el alcance a 10
 - Revisión de todas las solicitudes por un aclamado jurado de forma continua
 - Ampliación constante de la red de socios involucrados
 
