@@ -6,6 +6,13 @@
     "it": "Italian",
     "es": "Spanish"
   },
+  "country": {
+    "all": "All",
+    "de": "Germany",
+    "fr": "France",
+    "it": "Italy",
+    "es": "Spain"
+  },
   "header": {
     "nav": {
       "initiative": "Initiative",
@@ -85,8 +92,8 @@
     }
   },
   "partners": {
+    "header": "Our partners",
     "unknownCategory": "Unknown",
-    "title": "Founding & Tech Partners",
     "claim": "Want to help make a difference?",
     "cta": "Become part of the initiative",
     "link": "/support"

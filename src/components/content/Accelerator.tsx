@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Button } from "@material-ui/core";
+import { Box, Grid, Button, Typography } from "@material-ui/core";
 import { withTranslation, WithTranslation } from "react-i18next";
 import styled, { AnyStyledComponent } from "styled-components";
 
@@ -133,6 +133,9 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
         </Box>
 
         <Box id="partners" paddingBottom={4} marginTop={4}>
+          <Typography variant="h2">
+            {this.props.t("partners.header")}
+          </Typography>
           <PartnerItems data={AcceleratorPartners} />
         </Box>
 

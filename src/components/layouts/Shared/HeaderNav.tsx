@@ -12,7 +12,7 @@ interface IHeaderNavProps extends RouteComponentProps, WithTranslation {}
 
 class HeaderNav extends React.Component<IHeaderNavProps, {}> {
   handleLangChange = (selected: any) => {
-    const newLang = selected.target.value;
+    const newLang = selected.target.value as string;
     this.props.i18n.changeLanguage(newLang, () => {
       const pathSegments = this.props.location.pathname.split("/");
       const [, , ...path] = pathSegments;

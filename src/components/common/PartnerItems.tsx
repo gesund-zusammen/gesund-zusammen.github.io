@@ -32,36 +32,34 @@ interface IPartnerData {
 interface IPartnerItemsProps extends WithTranslation {
   data: IPartnerData;
   categorySlug?: string;
+  country?: string;
   onlyCountryPartners?: boolean;
 }
 
 class PartnerItems extends React.Component<IPartnerItemsProps, {}> {
   getCategories = (categorySlug?: string): ICategory[] => {
-    let categories = this.props.data.categories;
-    if (categorySlug) {
-      categories = categories.filter(
-        category => category.slug === categorySlug,
-      );
-    }
-    return categories;
+    return this.props.data.categories.filter(category =>
+      categorySlug ? category.slug === categorySlug : true,
+    );
   };
 
   getPartners = (categorySlug?: string): IPartner[] => {
-    const partners = this.props.data.partners
+    return this.props.data.partners
       .filter(partner => (categorySlug ? partner.slug === categorySlug : true))
       .filter(partner => {
-        if (this.props.onlyCountryPartners) {
+        if (this.props.country) {
+          if (this.props.onlyCountryPartners) {
+            return (
+              partner.countries &&
+              partner.countries.includes(this.props.country)
+            );
+          }
           return (
-            partner.countries &&
-            partner.countries.includes(this.props.i18n.language)
+            !partner.countries || partner.countries.includes(this.props.country)
           );
         }
-        return (
-          !partner.countries ||
-          partner.countries.includes(this.props.i18n.language)
-        );
+        return true;
       });
-    return partners;
   };
 
   render = () => {
@@ -73,7 +71,7 @@ class PartnerItems extends React.Component<IPartnerItemsProps, {}> {
             <Fade key={categoryKey} right cascade fraction={0.01}>
               <div id={`wrapper-${categoryKey}`}>
                 {!!this.getPartners(category.slug).length && (
-                  <Typography variant="h2">
+                  <Typography variant="h3">
                     {category.name[this.props.i18n.language]}
                   </Typography>
                 )}

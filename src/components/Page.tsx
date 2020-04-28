@@ -149,12 +149,6 @@ class Page extends React.Component<IPageProps, {}> {
 }
 
 class LangWrapper extends React.Component {
-  replaceLang = (pathname: string, lang: string) => {
-    const pathSegments = pathname.split("/");
-    const [, , ...path] = pathSegments;
-    return `/${lang}/${path.join("/")}`;
-  };
-
   render = () => {
     const supportedLanguages = ["de", "en", "it", "es", "fr"];
     return (
@@ -166,7 +160,16 @@ class LangWrapper extends React.Component {
               supportedLanguages.includes(props.match.params.lang) ? (
                 <Translation>
                   {(t, { i18n, lng }, ready) => (
-                    <Page {...{ t, i18n, lng, tReady: ready, ...props }} />
+                    <Page
+                      {...{
+                        t,
+                        i18n,
+                        lng,
+                        tReady: ready,
+                        ...props,
+                        ...this.props,
+                      }}
+                    />
                   )}
                 </Translation>
               ) : (
