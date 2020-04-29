@@ -154,6 +154,7 @@ const theme = responsiveFontSizes(
           '"Arial"',
           "sans-serif",
         ].join(","),
+        fontSize: "1rem",
         fontWeight: 700,
       },
       body1: {

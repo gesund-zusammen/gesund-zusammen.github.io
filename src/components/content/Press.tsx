@@ -99,7 +99,7 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
               </Link>
             </Typography>
             <StyledAvatar alt="Solveig Ratenow" src={PhotoSolveigRatenow} />
-            <Typography variant="h6" color="primary">
+            <Typography variant="h4" color="primary">
               Solveig Ratenow
             </Typography>
             <Typography variant="subtitle1">
@@ -114,7 +114,7 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
               </Link>
             </Typography>
             <StyledAvatar alt="Kerstin Bock" src={PhotoKerstinBock} />
-            <Typography variant="h6" color="primary">
+            <Typography variant="h4" color="primary">
               Kerstin Bock
             </Typography>
             <Typography variant="subtitle1">

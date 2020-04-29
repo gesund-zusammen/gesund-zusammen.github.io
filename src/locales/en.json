@@ -79,17 +79,12 @@
     }
   },
   "program": {
-    "header": {
-      "title": "Program",
-      "content": "Accelerator for Digital Tools vs Covid-19 helping them getting to the public faster"
-    },
-    "title": "The #HealthyTogether Accelerator Program ",
+    "header": "Program",
     "claim": "You need support?",
     "cta": "Apply now",
     "link": "/apply",
-    "type": {
-      "companies": "Companies in the Accelerator"
-    }
+    "companies": "Companies in the Accelerator",
+    "mentors": "Mentors"
   },
   "partners": {
     "header": "Our partners",

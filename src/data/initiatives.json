@@ -98,7 +98,7 @@
       "category": "gesund_zusammen_initiative",
       "description": {
         "de": "Führende Start-ups der Digitalbranche haben unter dem Namen “Gesund-Zusammen” eine Initiative gestartet, um ihren Teil zur aktiven Bekämpfung der Pandemie beizutragen. Ziel ist die Unterstützung von digitalen Lösungen, die helfen sollen, Risikogruppen besser zu schützen und das Gesundheitssystem zu entlasten. Dabei hat der Datenschutz oberste Priorität, um auch in Krisenzeiten Freiheits- und Persönlichkeitsrechte zu schützen.",
-        "en": "Leading tech companies in Europe have joined forces to launch an initiative called \"Gesund Zusammen\" (Healthy Together) to combat the pandemic. The aim is to support digital solutions that help to better protect risk groups and reduce the burden on the health system. Data protection is the highest priority in order to protect freedom and personal rights even in times of crisis."
+        "en": "Leading tech companies in Europe have joined forces to launch an initiative called \"Gesund Zusammen\"(Healthy Together) to combat the pandemic. The aim is to support digital solutions that help to better protect risk groups and reduce the burden on the health system. Data protection is the highest priority in order to protect freedom and personal rights even in times of crisis."
       },
       "global": false
     },
@@ -108,7 +108,7 @@
       "category": "gesund_zusammen_initiative",
       "description": {
         "de": "Führende Start-ups der Digitalbranche haben unter dem Namen “Gesund-Zusammen” eine Initiative gestartet, um ihren Teil zur aktiven Bekämpfung der Pandemie beizutragen. Ziel ist die Unterstützung von digitalen Lösungen, die helfen sollen, Risikogruppen besser zu schützen und das Gesundheitssystem zu entlasten. Dabei hat der Datenschutz oberste Priorität, um auch in Krisenzeiten Freiheits- und Persönlichkeitsrechte zu schützen.",
-        "en": "Leading tech companies in Europe have joined forces to launch an initiative called \"Gesund Zusammen\" (Healthy Together) to combat the pandemic. The aim is to support digital solutions that help to better protect risk groups and reduce the burden on the health system. Data protection is the highest priority in order to protect freedom and personal rights even in times of crisis."
+        "en": "Leading tech companies in Europe have joined forces to launch an initiative called \"Gesund Zusammen\"(Healthy Together) to combat the pandemic. The aim is to support digital solutions that help to better protect risk groups and reduce the burden on the health system. Data protection is the highest priority in order to protect freedom and personal rights even in times of crisis."
       },
       "global": true
     },
@@ -383,7 +383,7 @@
       "global": false
     },
     {
-      "name": "Effiziente Forschungssoftware zur Pandemiebekämpfung ",
+      "name": "Effiziente Forschungssoftware zur Pandemiebekämpfung",
       "link": "https://datadesk.de/",
       "category": "digital_tools",
       "description": {
@@ -393,7 +393,7 @@
       "global": false
     },
     {
-      "name": "Effizientes Wissensmanagement zur Pandemiebekämpfung ",
+      "name": "Effizientes Wissensmanagement zur Pandemiebekämpfung",
       "link": "https://krs.solutions/",
       "category": "digital_tools",
       "description": {
@@ -408,7 +408,7 @@
       "category": "infection_tracking",
       "description": {
         "de": "Die Karten bieten einen schnellen Überblick über die Ausbreitung des Virus in Deutschland und weltweit sowie über die Risikogebiete bis hinunter auf die Kreisebene.",
-        "en": "The maps offer a quick overview of the spread of the virus in Germany and worldwide, and risk areas down to the district level. "
+        "en": "The maps offer a quick overview of the spread of the virus in Germany and worldwide, and risk areas down to the district level."
       },
       "global": true
     },
@@ -1323,64 +1323,64 @@
       "global": true
     },
     {
-      " name " : "Avawomen" ,
-      " link " : " https://www.avawomen.com/press/liechtenstein-study-aims-to-help-combat-coronavirus-pandemic/",
-      " category " : " Further Initiatives",
-      " description " : {
-        " de " : "Ava ist ein digitales Gesundheitsunternehmen, das sich auf die reproduktive Gesundheit von Frauen konzentriert. Basierend auf einer Kombination aus künstlicher Intelligenz und klinischer Forschung ermöglichen Ava-Armbänder Frauen, die beste Zeit für die Empfängnis in ihrem monatlichen Zyklus zu ermitteln. Sensorische Armbänder von Ava werden jetzt auf freiwilliger Basis zur Verfügung gestellt, um Daten zu sammeln, die hoffentlich eine frühzeitige Erkennung von Covid-19 ermöglichen.",
-        " en " : "Ava is a digital healthcare company that focuses on women’s reproductive health. Based on a combination of artificial intelligence and clinical research, Ava bracelets allow women to identify the best time in their monthly cycle to conceive. Sensory bracelets made by Ava are now being given on a voluntary basis in order to collect data that will hopefully allow early detection of Covid-19."
+      "name": "Avawomen",
+      "link": "https://www.avawomen.com/press/liechtenstein-study-aims-to-help-combat-coronavirus-pandemic/",
+      "category": "Further Initiatives",
+      "description": {
+        "de": "Ava ist ein digitales Gesundheitsunternehmen, das sich auf die reproduktive Gesundheit von Frauen konzentriert. Basierend auf einer Kombination aus künstlicher Intelligenz und klinischer Forschung ermöglichen Ava-Armbänder Frauen, die beste Zeit für die Empfängnis in ihrem monatlichen Zyklus zu ermitteln. Sensorische Armbänder von Ava werden jetzt auf freiwilliger Basis zur Verfügung gestellt, um Daten zu sammeln, die hoffentlich eine frühzeitige Erkennung von Covid-19 ermöglichen.",
+        "en": "Ava is a digital healthcare company that focuses on women’s reproductive health. Based on a combination of artificial intelligence and clinical research, Ava bracelets allow women to identify the best time in their monthly cycle to conceive. Sensory bracelets made by Ava are now being given on a voluntary basis in order to collect data that will hopefully allow early detection of Covid-19."
       },
-      " global " : true
-    }, 
+      "global": true
+    },
     {
-      " name " : "EmTech" ,
-      " link " : " https://emtech.technologyreview.com/emtech-next-2020/?utm_source=event_email&utm_medium=email&utm_campaign=emtech_next_2020.unpaid.acquisition&discount=EMAIL042550#register",
-      " category " : " Further Initiatives",
-      " description " : {
-        " de " : "MIT Technology Review und Harvard Business Review arbeiten zusammen, um Ihnen EmTech Next zu bieten, eine dreitägige virtuelle Veranstaltung, die Technologie, Führung und Veränderung untersucht.",
-        " en " : "MIT Technology Review and Harvard Business Review are partnering to bring you EmTech Next, a 3-day virtual event examining technology, leadership, and change."
+      "name": "EmTech",
+      "link": "https://emtech.technologyreview.com/emtech-next-2020/?utm_source=event_email&utm_medium=email&utm_campaign=emtech_next_2020.unpaid.acquisition&discount=EMAIL042550#register",
+      "category": "Further Initiatives",
+      "description": {
+        "de": "MIT Technology Review und Harvard Business Review arbeiten zusammen, um Ihnen EmTech Next zu bieten, eine dreitägige virtuelle Veranstaltung, die Technologie, Führung und Veränderung untersucht.",
+        "en": "MIT Technology Review and Harvard Business Review are partnering to bring you EmTech Next, a 3-day virtual event examining technology, leadership, and change."
       },
-      " global " : true
-    }, 
+      "global": true
+    },
     {
-      " name " : "Java Networks",
-      " link " : " https://cdn.jamanetwork.com/ama/content_public/journal/jama/0/jvp200035supp1_prod.pdf?Expires=2147483647&Signature=bIZCLS7ZLWTJd~U~H40JgiEGdFb3ggVUJpBvJ7KdANK7HgK1zaj4uWHvqweGym1nWfO~nXt9Y5i1vX79pF7zjjqfzmJAy3udTdpVVZQe07xnQIPcBMXLwZ5XjgTO8yKFXVIpxsXhrmOu8sGSpKiEmQ86ZCKfOTar7fMAGmUCtjiYVFwf31K3REWAA-r3hZyoZpqz3QKpVgpsRpF9fV9thQCq0~yvbvRKTH4PcoB~CZgmXH7rpVb6bILXQn5zBCphf6pyLAa4zIebUEKfCdCYdSdi9LeIEUsesqsYpNWgHJcr4K1LC0hFlst0RHQz-vZ7I-OvrX~5jel6zjjtuDQzjQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA",
-      " category " : " Knowledge Resource",
-      " description " : {
-        " de " : "Reaktion auf COVID-19 in Taiwan: Big-Data-Analyse, neue Technologie und proaktive Tests.",
-        " en " : "Response to COVID-19 in Taiwan: big data analytics, new technology, and proactive testing."
+      "name": "Java Networks",
+      "link": "https://cdn.jamanetwork.com/ama/content_public/journal/jama/0/jvp200035supp1_prod.pdf?Expires=2147483647&Signature=bIZCLS7ZLWTJd~U~H40JgiEGdFb3ggVUJpBvJ7KdANK7HgK1zaj4uWHvqweGym1nWfO~nXt9Y5i1vX79pF7zjjqfzmJAy3udTdpVVZQe07xnQIPcBMXLwZ5XjgTO8yKFXVIpxsXhrmOu8sGSpKiEmQ86ZCKfOTar7fMAGmUCtjiYVFwf31K3REWAA-r3hZyoZpqz3QKpVgpsRpF9fV9thQCq0~yvbvRKTH4PcoB~CZgmXH7rpVb6bILXQn5zBCphf6pyLAa4zIebUEKfCdCYdSdi9LeIEUsesqsYpNWgHJcr4K1LC0hFlst0RHQz-vZ7I-OvrX~5jel6zjjtuDQzjQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA",
+      "category": "Knowledge Resource",
+      "description": {
+        "de": "Reaktion auf COVID-19 in Taiwan: Big-Data-Analyse, neue Technologie und proaktive Tests.",
+        "en": "Response to COVID-19 in Taiwan: big data analytics, new technology, and proactive testing."
       },
-      " global " : true
-    }, 
+      "global": true
+    },
     {
-      " name " : "Kahun",
-      " link " : " https://kahun.com/",
-      " category " : " Digital tools",
-      " description " : {
-        " de " : "Die Technologie von Kahun codiert evidenzbasiertes klinisches Wissen und wandelt es in nutzbare strukturierte Daten um, die schnell und umfassend erfasst werden können. Wir verwenden eine Kombination aus KI-Methoden, einer Gemeinschaft professioneller medizinischer Experten und Berechnungsalgorithmen, um vorhandene klinische Literatur zu analysieren und zu verarbeiten und die darin enthaltenen komplexen Assoziationen vollständig zu erfassen. Wir präsentieren die Informationen in einem neuen innovativen Format, das von Ärzten in ihrer täglichen Praxis verwendet werden soll.",
-        " en " : "Kahun'S technology encodes evidence-based clinical knowledge and transforms it into usable structured data that can be grasped quickly and comprehensively. We employ a combination of AI methodologies, a community of professional medical experts, and computational algorithms to analyze and process existing clinical literature and fully capture the complex associations found within it. We  present the information in a new innovative format designed to be used by physicians in their daily practice."
+      "name": "Kahun",
+      "link": "https://kahun.com/",
+      "category": "Digital tools",
+      "description": {
+        "de": "Die Technologie von Kahun codiert evidenzbasiertes klinisches Wissen und wandelt es in nutzbare strukturierte Daten um, die schnell und umfassend erfasst werden können. Wir verwenden eine Kombination aus KI-Methoden, einer Gemeinschaft professioneller medizinischer Experten und Berechnungsalgorithmen, um vorhandene klinische Literatur zu analysieren und zu verarbeiten und die darin enthaltenen komplexen Assoziationen vollständig zu erfassen. Wir präsentieren die Informationen in einem neuen innovativen Format, das von Ärzten in ihrer täglichen Praxis verwendet werden soll.",
+        "en": "Kahun'S technology encodes evidence-based clinical knowledge and transforms it into usable structured data that can be grasped quickly and comprehensively. We employ a combination of AI methodologies, a community of professional medical experts, and computational algorithms to analyze and process existing clinical literature and fully capture the complex associations found within it. We  present the information in a new innovative format designed to be used by physicians in their daily practice."
       },
-      " global " : true
-    }, 
+      "global": true
+    },
     {
-      " name " : "Africa News",
-      " link " : " https://www.africanews.com/2020/04/26/coronavirus-south-africa-member-of-the-executive-council-mec-debbie-schafer-quality-teaching-at-home-during-covid-19-coronavirus-pandemic/",
-      " category " : " Further Initiatives",
-      " description " : {
-        " de " : "Südafrika - Qualitätsunterricht zu Hause während der COVID-19-Coronavirus-Pandemie.",
-        " en " : "South Africa - Quality teaching at home during COVID-19 Coronavirus pandemic."
+      "name": "Africa News",
+      "link": "https://www.africanews.com/2020/04/26/coronavirus-south-africa-member-of-the-executive-council-mec-debbie-schafer-quality-teaching-at-home-during-covid-19-coronavirus-pandemic/",
+      "category": "Further Initiatives",
+      "description": {
+        "de": "Südafrika - Qualitätsunterricht zu Hause während der COVID-19-Coronavirus-Pandemie.",
+        "en": "South Africa - Quality teaching at home during COVID-19 Coronavirus pandemic."
       },
-      " global " : true
-    }, 
+      "global": true
+    },
     {
-      " name " : "Tech Xplore ",
-      " link " : " https://techxplore.com/news/2020-04-proximity-coronavirus-pandemic-germany.html",
-      " category " : " Digital tools",
-      " description " : {
-        " de " : "Die Fraunhofer-Gesellschaft hat einen eigenen Ansatz für eine deutsche Proximity-Tracing-App entwickelt." ,
-        " en " : "The Fraunhofer-Gesellschaft has developed an approach of its own for a German proximity tracing app."
+      "name": "Tech Xplore",
+      "link": "https://techxplore.com/news/2020-04-proximity-coronavirus-pandemic-germany.html",
+      "category": "Digital tools",
+      "description": {
+        "de": "Die Fraunhofer-Gesellschaft hat einen eigenen Ansatz für eine deutsche Proximity-Tracing-App entwickelt.",
+        "en": "The Fraunhofer-Gesellschaft has developed an approach of its own for a German proximity tracing app."
       },
-      " global " : true
+      "global": true
     }
   ]
 }

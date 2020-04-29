@@ -49,7 +49,7 @@ class LatestNews extends React.Component<WithTranslation> {
               {this.getNewsItems(3).map(newsItem => {
                 return (
                   <NewsItem key={newsItem.link} href={newsItem.link}>
-                    <Typography variant="h6">{newsItem.outlet}</Typography>
+                    <Typography variant="h4">{newsItem.outlet}</Typography>
                     <Typography variant="body1">
                       &quot;{newsItem.teaser}&quot;
                     </Typography>
