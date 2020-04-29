@@ -6,6 +6,7 @@ import styled, { AnyStyledComponent } from "styled-components";
 import MuiMarkdown from "../common/MuiMarkdown";
 import CTABox from "../common/CTABox";
 import Projects from "../common/Projects";
+import Mentors from "../common/Mentors";
 
 import ContentDE from "../../data/program/program_de.md";
 import ContentEN from "../../data/program/program_en.md";
@@ -47,6 +48,8 @@ class Program extends React.Component<WithTranslation, {}> {
         ></MuiMarkdown>
 
         <Projects />
+
+        <Mentors />
 
         <Box paddingBottom={4} marginTop={4}>
           <CTABox
