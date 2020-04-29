@@ -564,25 +564,25 @@
     },
     {
       "name": "Infermedica",
-      "slug": "ambassador",
+      "slug": "strategic",
       "image": "Infermedica.png",
       "link": "https://infermedica.com/"
     },
     {
       "name": "MOTIONTAG",
-      "slug": "ambassador",
+      "slug": "strategic",
       "image": "motiontag.png",
       "link": "https://motion-tag.com/en/"
     },
     {
       "name": "KRS Solutions",
-      "slug": "ambassador",
+      "slug": "strategic",
       "image": "KRS.jpg",
       "link": "https://krs.solutions/"
     },
     {
       "name": "Alice&Bob.Company",
-      "slug": "ambassador",
+      "slug": "strategic",
       "image": "alicebob.png",
       "link": "https://www.aliceandbob.company/"
     }
