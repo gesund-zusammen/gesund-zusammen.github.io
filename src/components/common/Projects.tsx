@@ -10,7 +10,7 @@ class Projects extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <Box id="partners" paddingBottom={4} marginTop={4}>
-        <Fade right cascade>
+        <Fade right cascade fraction={0.01}>
           <Typography variant="h2">
             {this.props.t("program.companies")}
           </Typography>

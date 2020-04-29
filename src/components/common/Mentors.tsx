@@ -26,7 +26,7 @@ class Mentors extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <Box id="mentors" paddingBottom={4} marginTop={4}>
-        <Fade right cascade>
+        <Fade right cascade fraction={0.01}>
           <Typography variant="h2">
             {this.props.t("program.mentors")}
           </Typography>

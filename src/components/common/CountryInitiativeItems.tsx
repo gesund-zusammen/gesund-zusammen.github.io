@@ -50,7 +50,7 @@ class CountryInitiativeItems extends React.Component<WithTranslation, {}> {
   render = () => {
     return (
       <Box id="initiatives" paddingBottom={4} marginTop={4}>
-        <Fade right cascade>
+        <Fade right cascade fraction={0.01}>
           {this.getCategories().map((category, index) => {
             const categoryKey: string = "category-" + index;
             return (
