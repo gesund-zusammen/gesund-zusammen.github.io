@@ -79,17 +79,10 @@
     }
   },
   "program": {
-    "header": {
-      "title": "Programa",
-      "content": "Aceleradora para herramientas digitales contra el Covid-19, ayudándoles a llegar al público más rápido"
-    },
-    "title": "El Programa de Aceleración #HealthyTogether ",
     "claim": "Necesitas ayuda?",
     "cta": "Aplica ahora",
     "link": "/apply",
-    "type": {
-      "companies": "Compañías en la Aceleradora"
-    }
+    "companies": "Compañías en la Aceleradora"
   },
   "partners": {
     "header": "Nuestros compañeros",

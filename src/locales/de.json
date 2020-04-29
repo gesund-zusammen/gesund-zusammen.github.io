@@ -86,17 +86,10 @@
     "link": "/support"
   },
   "program": {
-    "header": {
-      "title": "Programm",
-      "content": "Accelerator um Digitale Tools vs COVID-19 schneller an die \nÖffentlichkeit zu bringen"
-    },
-    "title": "Das #GesundZusammen Accelerator Programm",
     "claim": "Du brauchst Unterstützung?",
     "cta": "Bewirb dich jetzt",
     "link": "/apply",
-    "type": {
-      "companies": "Unternehmen im Accelerator"
-    }
+    "companies": "Unternehmen im Accelerator"
   },
   "privacy": {
     "claim": "Sie haben noch eine Frage?",

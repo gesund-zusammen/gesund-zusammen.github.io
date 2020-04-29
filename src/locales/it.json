@@ -79,17 +79,10 @@
     }
   },
   "program": {
-    "header": {
-      "title": "Programma",
-      "content": "Programma di accelerazione per strumenti digitali contro il Covid-19 per aiutare a portarli al pubblico più velocemente"
-    },
-    "title": "Il programma di accelerazione",
     "claim": "Hai bisogno di supporto?",
     "cta": "Applica ora",
     "link": "/apply",
-    "type": {
-      "companies": "Società parte del programma di accelerazione"
-    }
+    "companies": "Società parte del programma di accelerazione"
   },
   "partners": {
     "header": "I nostri partner",

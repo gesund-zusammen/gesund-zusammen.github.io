@@ -79,17 +79,10 @@
     }
   },
   "program": {
-    "header": {
-      "title": "Programme",
-      "content": "Accélération d'outils digitaux vs Covid-19, mettre à disposition du grand public au plus vite"
-    },
-    "title": "Le programme d'accélération #HealthyTogether",
     "claim": "Vous avez besoin de soutien?",
     "cta": "Postulez maintenant",
     "link": "/apply",
-    "type": {
-      "companies": "sociétés de l'accélérateur "
-    }
+    "companies": "sociétés de l'accélérateur "
   },
   "partners": {
     "header": "Nos partenaires",
