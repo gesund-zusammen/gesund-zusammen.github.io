@@ -3,7 +3,10 @@ import { Box, Grid, Typography } from "@material-ui/core";
 import { withTranslation, WithTranslation } from "react-i18next";
 import Fade from "react-reveal";
 
-import LogoComingSoon from "../../images/coming_soon_mobile.svg";
+import LogoAncora from "../../images/partners/ancora.svg";
+import LogoEverstox from "../../images/partners/everstox.png";
+import LogoExclamo from "../../images/partners/exclamo.svg";
+
 import ProjectCard from "./ProjectCard";
 
 class Projects extends React.PureComponent<WithTranslation, {}> {
@@ -22,7 +25,21 @@ class Projects extends React.PureComponent<WithTranslation, {}> {
               alignItems="center"
               spacing={4}
             >
-              <ProjectCard name="Coming soon" image={LogoComingSoon} />
+              <ProjectCard
+                name="Ancora"
+                image={LogoAncora}
+                link="https://www.ancora.ai/"
+              />
+              <ProjectCard
+                name="Everstox"
+                image={LogoEverstox}
+                link="https://everstox.com/"
+              />
+              <ProjectCard
+                name="Exclamo"
+                image={LogoExclamo}
+                link="https://www.exclamo.org/"
+              />
             </Grid>
           </Box>
         </Fade>
