@@ -86,6 +86,7 @@
     "link": "/support"
   },
   "program": {
+    "header": "Programm",
     "claim": "Du brauchst Unterstützung?",
     "cta": "Bewirb dich jetzt",
     "link": "/apply",

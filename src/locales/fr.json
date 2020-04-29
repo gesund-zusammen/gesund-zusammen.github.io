@@ -79,6 +79,7 @@
     }
   },
   "program": {
+    "header": "Programme",
     "claim": "Vous avez besoin de soutien?",
     "cta": "Postulez maintenant",
     "link": "/apply",

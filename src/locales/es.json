@@ -79,6 +79,7 @@
     }
   },
   "program": {
+    "header": "Programa",
     "claim": "Necesitas ayuda?",
     "cta": "Aplica ahora",
     "link": "/apply",
