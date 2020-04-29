@@ -18,7 +18,7 @@ L'acceleratore Future Perfect è organizzato da TOA, weft e finleap, con il supp
 
 #### La fase #1 del programma vedrà:
 
-- finanziamenti ad almeno 5 soluzioni innovative, con l'obiettivo di espandersi fino a 10
+- finanziamenti ad almeno 4 soluzioni innovative, con l'obiettivo di espandersi fino a 10
 - Valutazione continua delle soluzioni da parte di una giuria di esperti
 - Constante aumento dei partner coinvolti
 

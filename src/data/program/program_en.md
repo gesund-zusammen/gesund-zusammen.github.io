@@ -21,7 +21,7 @@ FuturePerfect refers to the future perfect verb tense: an action completed in th
 
 #### Batch #1 of the program will:
 
-- Finance a minimum of 5 innovative solutions, possibly expanding the scope to 10
+- Finance a minimum of 4 innovative solutions, possibly expanding the scope to 10
 - Review all applications by an acclaimed jury on a rolling basis
 - Constantly expand the network of partners involved
 
