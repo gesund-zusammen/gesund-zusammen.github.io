@@ -1177,8 +1177,8 @@
       "link": "https://www.macher-hilfe.de/ueber-uns/",
       "category": "Further Initiatives",
       "description": {
-        "de": "Many doers in small and medium-sized companies are struggling to survive economically. In addition to the daily challenges of somehow keeping shops running, there is simply no time. This platform will help companies in the thicket of many state aids and grants and filter out the best options.",
-        "en": "Many doers in small and medium-sized companies are struggling to survive economically. In addition to the daily challenges of somehow keeping shops running, there is simply no time. This platform will help companies in the thicket of many state aids and grants and filter out the best options"
+        "de": "Viele Macher in kleinen und mittleren Unternehmen kämpfen ums wirtschaftliche Überleben. Zusätzlich zu den täglichen Herausforderungen, die Geschäfte irgendwie am Laufen zu halten, bleibt einfach keine Zeit. Diese Plattform wird Unternehmen im Dickicht vieler staatlicher Beihilfen und Zuschüsse helfen und die besten Optionen herausfiltern.",
+        "en": "Many doers in small and medium-sized companies are struggling to survive economically. In addition to the daily challenges of somehow keeping shops running, there is simply no time. This platform will help companies in the thicket of many state aids and grants and filter out the best options."
       },
       "global": false
     },
@@ -1187,7 +1187,7 @@
       "link": "https://foldingathome.org/covid19/",
       "category": "Further Initiatives",
       "description": {
-        "de": "Help running simulations is the primary way to contribute to COVID-19.",
+        "de": "Hilfe beim Ausführen von Simulationen ist der wichtigste Weg, um zu COVID-19 beizutragen.",
         "en": "Help running simulations is the primary way to contribute to COVID-19."
       },
       "global": false
@@ -1197,7 +1197,7 @@
       "link": "https://fold.it/portal/node/2008963",
       "category": "Further Initiatives",
       "description": {
-        "de": "Help researchers discover new antiviral drugs that might stop coronavirus! The most promising solutions will be manufactured and tested at the University of Washington Institute for Protein Design in Seattle.",
+        "de": "Helfen Sie Forschern, neue antivirale Medikamente zu entdecken, die das Coronavirus stoppen könnten! Die vielversprechendsten Lösungen werden am Institut für Proteindesign der Universität Washington in Seattle hergestellt und getestet.",
         "en": "Help researchers discover new antiviral drugs that might stop coronavirus! The most promising solutions will be manufactured and tested at the University of Washington Institute for Protein Design in Seattle."
       },
       "global": false
@@ -1207,7 +1207,7 @@
       "link": "https://en.unesco.org/covid19/educationresponse/nationalresponses#LATIN%20AMERICA%20&%20THE%20CARIBBEAN",
       "category": "Research and Government Sites",
       "description": {
-        "de": "National learning platforms and tools.",
+        "de": "Nationale Lernplattformen und -instrumente.",
         "en": "National learning platforms and tools."
       },
       "global": true
@@ -1217,7 +1217,7 @@
       "link": "https://www.lmz-bw.de/statische-newsroom-seiten/schule-machen-in-zeiten-des-coronavirus/",
       "category": "Digital tools",
       "description": {
-        "de": "Find support offers for teachers for the period of corona-related school closings.",
+        "de": "Hier finden Sie Unterstützungsangebote für Lehrer für die Zeit der Korona-bezogenen Schulschließungen.",
         "en": "Find support offers for teachers for the period of corona-related school closings."
       },
       "global": false
@@ -1227,7 +1227,7 @@
       "link": "https://www.deutsche-bank.de/gk/lp/service-seite-corona.html",
       "category": "Knowledge Resource",
       "description": {
-        "de": "DB offers you a compact overview of central questions that are currently relevant for companies and businesses.",
+        "de": "DB bietet Ihnen einen kompakten Überblick über zentrale Fragen, die aktuell für Unternehmen und Betriebe relevant sind.",
         "en": "DB offers you a compact overview of central questions that are currently relevant for companies and businesses."
       },
       "global": true
@@ -1237,7 +1237,7 @@
       "link": "https://www.digitalsme.eu/solutions/",
       "category": "Digital Consultation",
       "description": {
-        "de": "Digital solutions in times of COVID-19.",
+        "de": "Digitale Lösungen in Zeiten von COVID-19.",
         "en": "Digital solutions in times of COVID-19."
       },
       "global": true
@@ -1247,7 +1247,7 @@
       "link": "https://www.dearemployee.de/",
       "category": "Digital tools",
       "description": {
-        "de": "Supports companies with a CoronaCare Survey designed to help master this challenging phase safely and healthily.",
+        "de": "Unterstützt Unternehmen mit einer CoronaCare-Umfrage, die dazu beitragen soll, diese herausfordernde Phase sicher und gesund zu meistern.",
         "en": "Supports companies with a CoronaCare Survey designed to help master this challenging phase safely and healthily."
       },
       "global": false
@@ -1257,8 +1257,8 @@
       "link": "https://griztame.lt/",
       "category": "Further Initiatives",
       "description": {
-        "de": "Communication platform for lithuanian citizens away form home because of COVID-19 crisis. ",
-        "en": "Communication platform for lithuanian citizens away form home because of COVID-19 crisis ."
+        "de": "Kommunikationsplattform für litauische Bürger, die wegen der COVID-19-Krise nicht nach Hause können.",
+        "en": "Communication platform for lithuanian citizens away form home because of COVID-19 crisis."
       },
       "global": true
     },
@@ -1267,7 +1267,7 @@
       "link": "https://www.covid19dataportal.org/",
       "category": "Digital tools",
       "description": {
-        "de": "The European Commission has launched a data portal for scientists studying the SARS-CoV-2 virus to speed up access to data sets and tools in order to bolster research efforts by encouraging data reuse and open science. ",
+        "de": "Die Europäische Kommission hat ein Datenportal für Wissenschaftler eingerichtet, die sich mit dem SARS-CoV-2-Virus befassen, um den Zugang zu Datensätzen und Tools zu beschleunigen und die Forschungsanstrengungen durch Förderung der Wiederverwendung von Daten und offener Wissenschaft zu unterstützen.",
         "en": "The European Commission has launched a data portal for scientists studying the SARS-CoV-2 virus to speed up access to data sets and tools in order to bolster research efforts by encouraging data reuse and open science."
       },
       "global": true
@@ -1277,7 +1277,7 @@
       "link": "https://www.eib.org/en/stories/digital-coronavirus",
       "category": "Research and Government Sites",
       "description": {
-        "de": "With our lives turning digital, coronavirus may have accelerated a revolution. But we need to make sure no-one gets left behind.",
+        "de": "Mit der Digitalisierung unseres Lebens hat das Coronavirus möglicherweise eine Revolution beschleunigt. Aber wir müssen sicherstellen, dass niemand zurückgelassen wird.",
         "en": "With our lives turning digital, coronavirus may have accelerated a revolution. But we need to make sure no-one gets left behind."
       },
       "global": true
@@ -1287,7 +1287,7 @@
       "link": "https://ec.europa.eu/digital-single-market/en/news/italy-launches-its-national-coalition-digital-skills-and-jobs",
       "category": "Research and Government Sites",
       "description": {
-        "de": "Italy launches its National Coalition for Digital Skills and Jobs.",
+        "de": "Italien startet seine Nationale Koalition für digitale Fähigkeiten und Arbeitsplätze.",
         "en": "Italy launches its National Coalition for Digital Skills and Jobs."
       },
       "global": true
@@ -1297,7 +1297,7 @@
       "link": "https://innovazione.gov.it/it/repubblica-digitale/",
       "category": "Research and Government Sites",
       "description": {
-        "de": "Digital Republic is the national strategic initiative promoted by the Department for digital transformation of the Presidency of the Council of Ministers with the aim of combating the digital divide of a cultural nature present in the Italian population, to support maximum digital inclusion and encourage education on future technologies, accompanying the country's digital transformation process.",
+        "de": "Digital Republic ist die nationale strategische Initiative, die von der Abteilung für digitale Transformation der Präsidentschaft des Ministerrates mit dem Ziel gefördert wird, die digitale Kluft kultureller Natur in der italienischen Bevölkerung zu bekämpfen, eine maximale digitale Inklusion zu unterstützen und die künftige Bildung zu fördern Technologien, die den digitalen Transformationsprozess des Landes begleiten.",
         "en": "Digital Republic is the national strategic initiative promoted by the Department for digital transformation of the Presidency of the Council of Ministers with the aim of combating the digital divide of a cultural nature present in the Italian population, to support maximum digital inclusion and encourage education on future technologies, accompanying the country's digital transformation process."
       },
       "global": true
@@ -1307,7 +1307,7 @@
       "link": "https://www.accenture.com/fi-en/about/company/coronavirus-business-economic-impact",
       "category": "Research and Government Sites",
       "description": {
-        "de": "Managing the human and business impact of coronavirus.",
+        "de": "Management der menschlichen und geschäftlichen Auswirkungen von Coronavirus.",
         "en": "Managing the human and business impact of coronavirus."
       },
       "global": true
@@ -1317,10 +1317,70 @@
       "link": "https://www.europol.europa.eu/publications-documents/pandemic-profiteering-how-criminals-exploit-covid-19-crisis",
       "category": "Research and Government Sites",
       "description": {
-        "de": "The report provides an overview of how criminals adapt their misdeeds to the COVID-19 pandemic. It is based on information Europol receives from the EU Member States on a 24/7 basis and intends to support Member States’ law enforcement authorities in their work..",
-        "en": "The report provides an overview of how criminals adapt their misdeeds to the COVID-19 pandemic. It is based on information Europol receives from the EU Member States on a 24/7 basis and intends to support Member States’ law enforcement authorities in their work.."
+        "de": "Der Bericht bietet einen Überblick darüber, wie Kriminelle ihre Missetaten an die COVID-19-Pandemie anpassen. Es basiert auf Informationen, die Europol rund um die Uhr von den EU-Mitgliedstaaten erhält, und beabsichtigt, die Strafverfolgungsbehörden der Mitgliedstaaten bei ihrer Arbeit zu unterstützen.",
+        "en": "The report provides an overview of how criminals adapt their misdeeds to the COVID-19 pandemic. It is based on information Europol receives from the EU Member States on a 24/7 basis and intends to support Member States’ law enforcement authorities in their work."
       },
       "global": true
+    },
+    {
+      " name " : "Avawomen" ,
+      " link " : " https://www.avawomen.com/press/liechtenstein-study-aims-to-help-combat-coronavirus-pandemic/",
+      " category " : " Further Initiatives",
+      " description " : {
+        " de " : "Ava ist ein digitales Gesundheitsunternehmen, das sich auf die reproduktive Gesundheit von Frauen konzentriert. Basierend auf einer Kombination aus künstlicher Intelligenz und klinischer Forschung ermöglichen Ava-Armbänder Frauen, die beste Zeit für die Empfängnis in ihrem monatlichen Zyklus zu ermitteln. Sensorische Armbänder von Ava werden jetzt auf freiwilliger Basis zur Verfügung gestellt, um Daten zu sammeln, die hoffentlich eine frühzeitige Erkennung von Covid-19 ermöglichen.",
+        " en " : "Ava is a digital healthcare company that focuses on women’s reproductive health. Based on a combination of artificial intelligence and clinical research, Ava bracelets allow women to identify the best time in their monthly cycle to conceive. Sensory bracelets made by Ava are now being given on a voluntary basis in order to collect data that will hopefully allow early detection of Covid-19."
+      },
+      " global " : true
+    }, 
+    {
+      " name " : "EmTech" ,
+      " link " : " https://emtech.technologyreview.com/emtech-next-2020/?utm_source=event_email&utm_medium=email&utm_campaign=emtech_next_2020.unpaid.acquisition&discount=EMAIL042550#register",
+      " category " : " Further Initiatives",
+      " description " : {
+        " de " : "MIT Technology Review und Harvard Business Review arbeiten zusammen, um Ihnen EmTech Next zu bieten, eine dreitägige virtuelle Veranstaltung, die Technologie, Führung und Veränderung untersucht.",
+        " en " : "MIT Technology Review and Harvard Business Review are partnering to bring you EmTech Next, a 3-day virtual event examining technology, leadership, and change."
+      },
+      " global " : true
+    }, 
+    {
+      " name " : "Java Networks",
+      " link " : " https://cdn.jamanetwork.com/ama/content_public/journal/jama/0/jvp200035supp1_prod.pdf?Expires=2147483647&Signature=bIZCLS7ZLWTJd~U~H40JgiEGdFb3ggVUJpBvJ7KdANK7HgK1zaj4uWHvqweGym1nWfO~nXt9Y5i1vX79pF7zjjqfzmJAy3udTdpVVZQe07xnQIPcBMXLwZ5XjgTO8yKFXVIpxsXhrmOu8sGSpKiEmQ86ZCKfOTar7fMAGmUCtjiYVFwf31K3REWAA-r3hZyoZpqz3QKpVgpsRpF9fV9thQCq0~yvbvRKTH4PcoB~CZgmXH7rpVb6bILXQn5zBCphf6pyLAa4zIebUEKfCdCYdSdi9LeIEUsesqsYpNWgHJcr4K1LC0hFlst0RHQz-vZ7I-OvrX~5jel6zjjtuDQzjQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA",
+      " category " : " Knowledge Resource",
+      " description " : {
+        " de " : "Reaktion auf COVID-19 in Taiwan: Big-Data-Analyse, neue Technologie und proaktive Tests.",
+        " en " : "Response to COVID-19 in Taiwan: big data analytics, new technology, and proactive testing."
+      },
+      " global " : true
+    }, 
+    {
+      " name " : "Kahun",
+      " link " : " https://kahun.com/",
+      " category " : " Digital tools",
+      " description " : {
+        " de " : "Die Technologie von Kahun codiert evidenzbasiertes klinisches Wissen und wandelt es in nutzbare strukturierte Daten um, die schnell und umfassend erfasst werden können. Wir verwenden eine Kombination aus KI-Methoden, einer Gemeinschaft professioneller medizinischer Experten und Berechnungsalgorithmen, um vorhandene klinische Literatur zu analysieren und zu verarbeiten und die darin enthaltenen komplexen Assoziationen vollständig zu erfassen. Wir präsentieren die Informationen in einem neuen innovativen Format, das von Ärzten in ihrer täglichen Praxis verwendet werden soll.",
+        " en " : "Kahun'S technology encodes evidence-based clinical knowledge and transforms it into usable structured data that can be grasped quickly and comprehensively. We employ a combination of AI methodologies, a community of professional medical experts, and computational algorithms to analyze and process existing clinical literature and fully capture the complex associations found within it. We  present the information in a new innovative format designed to be used by physicians in their daily practice."
+      },
+      " global " : true
+    }, 
+    {
+      " name " : "Africa News",
+      " link " : " https://www.africanews.com/2020/04/26/coronavirus-south-africa-member-of-the-executive-council-mec-debbie-schafer-quality-teaching-at-home-during-covid-19-coronavirus-pandemic/",
+      " category " : " Further Initiatives",
+      " description " : {
+        " de " : "Südafrika - Qualitätsunterricht zu Hause während der COVID-19-Coronavirus-Pandemie.",
+        " en " : "South Africa - Quality teaching at home during COVID-19 Coronavirus pandemic."
+      },
+      " global " : true
+    }, 
+    {
+      " name " : "Tech Xplore ",
+      " link " : " https://techxplore.com/news/2020-04-proximity-coronavirus-pandemic-germany.html",
+      " category " : " Digital tools",
+      " description " : {
+        " de " : "Die Fraunhofer-Gesellschaft hat einen eigenen Ansatz für eine deutsche Proximity-Tracing-App entwickelt." ,
+        " en " : "The Fraunhofer-Gesellschaft has developed an approach of its own for a German proximity tracing app."
+      },
+      " global " : true
     }
   ]
 }
