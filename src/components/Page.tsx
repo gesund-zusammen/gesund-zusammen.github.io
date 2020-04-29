@@ -74,7 +74,7 @@ class Page extends React.Component<IPageProps, {}> {
           </Route>
           <Route path="/:lang/program">
             <LayoutSubPage
-              title={this.props.t("program.header.title")}
+              title={this.props.t("program.header")}
               image={IlluProgram}
             >
               <Program />
@@ -82,7 +82,7 @@ class Page extends React.Component<IPageProps, {}> {
           </Route>
           <Route path="/:lang/apply">
             <LayoutSubPage
-              title={this.props.t("program.header.title")}
+              title={this.props.t("program.header")}
               image={IlluProgram}
             >
               <PaperForm paperform="gesundzusammen" />
@@ -90,7 +90,7 @@ class Page extends React.Component<IPageProps, {}> {
           </Route>
           <Route path="/:lang/mentor">
             <LayoutSubPage
-              title={this.props.t("program.header.title")}
+              title={this.props.t("program.header")}
               image={IlluProgram}
             >
               <PaperForm paperform="mentor-gz" />

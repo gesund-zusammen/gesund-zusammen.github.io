@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Samir El-Alami",
+    "company": "doctorly",
+    "job_title": "Founder",
+    "linkedin": "https://www.linkedin.com/in/samirelalami/",
+    "photo": "samir_el-amani.jpg"
+  },
+  {
+    "name": "Laura González-Estéfani",
+    "company": "TheVentureCity",
+    "job_title": "Founder & CEO",
+    "linkedin": "https://linkedin.com/in/lauragonzalezestefani",
+    "photo": "laura_conzales-estefanie.jpg"
+  },
+  {
+    "name": "Rolf Schrömgens",
+    "company": "trivago NV",
+    "job_title": "Founder",
+    "linkedin": "https://de.linkedin.com/in/rolf-schroemgens-4a456a3",
+    "photo": "rolf_schroemgens.jpg"
+  },
+  {
+    "name": "Georg Hauer",
+    "company": "N26",
+    "job_title": "General Manager DACH ",
+    "linkedin": "https://www.linkedin.com/in/georghauer/",
+    "photo": "georg_hauer.jpg"
+  },
+  {
+    "name": "Gagan Bhatia",
+    "company": "Techstars",
+    "linkedin": "https://linkedin.com/in/gaganbhatia",
+    "photo": "gagan_bhatia.jpg"
+  },
+  {
+    "name": "Lina Behrens",
+    "company": "Flying Health",
+    "job_title": "Managing Director",
+    "linkedin": "https://www.linkedin.com/in/linabehrens",
+    "photo": "lina_behrens.jpg"
+  },
+  {
+    "name": "Anna Vogel",
+    "company": "wefox Group",
+    "job_title": "Senior Director",
+    "linkedin": "https://www.linkedin.com/in/anna-vogel-63029b4/",
+    "photo": "anna_vogel.jpg"
+  },
+  {
+    "name": "Roman Hipp",
+    "company": "Porsche Consulting",
+    "job_title": "Senior Partner",
+    "linkedin": "https://linkedin.com/in/dr-roman-hipp-0911",
+    "photo": "roman_hipp.jpg"
+  },
+  {
+    "name": "Malte Cherdron",
+    "job_title": "CxO",
+    "linkedin": "https://www.linkedin.com/in/maltecherdron/",
+    "photo": "malte_cherdron.jpg"
+  },
+  {
+    "name": "Katy Campbell",
+    "company": "forward 31 by Porsche Digital",
+    "job_title": "Manager",
+    "linkedin": "https://www.linkedin.com/in/campbellkaty/",
+    "photo": "katy_campbell.jpg"
+  },
+  {
+    "name": "Michael Gröger",
+    "company": "GERMANTECH",
+    "job_title": "Managing Director",
+    "linkedin": "https://www.linkedin.com/in/mgroeger/",
+    "photo": "michael_groeger.jpg"
+  },
+  {
+    "name": "Maria Gross",
+    "company": "GERMANTECH",
+    "job_title": "Managing Director",
+    "linkedin": "https://www.linkedin.com/in/mariagrossberlin/",
+    "photo": "maria_gross.jpg"
+  },
+  {
+    "name": "Matthias Laug",
+    "company": "Tier Mobility GmbH",
+    "job_title": "CTO & Co-Founder",
+    "linkedin": "https://www.linkedin.com/in/matthias-laug-b6a91371/",
+    "photo": "matthias_laug.jpg"
+  },
+  {
+    "name": "Eleni Arvaniti",
+    "company": "Factory Works GmbH",
+    "job_title": "VP HR & Legal",
+    "linkedin": "https://www.linkedin.com/in/eleni-arvaniti-9b06742a/",
+    "photo": "eleni_arvaniti.jpg"
+  },
+  {
+    "name": "Fabiola Hochkirchen",
+    "company": "Auxxo Beteiligungen",
+    "job_title": "Partner",
+    "linkedin": "https://www.linkedin.com/in/fabiola-hochkirchen-58387a3/",
+    "photo": "fabiola_hochkirchen.jpg"
+  },
+  {
+    "name": "Norbert Herrmann",
+    "company": "Senatsverwaltung für Wirtschaft, Energie und Betriebe",
+    "job_title": "Public Administration (Gruppenleitung)",
+    "linkedin": "https://www.linkedin.com/in/norberthe/",
+    "photo": "norbert_herrmann.jpg"
+  },
+  {
+    "name": "Johannes Berg",
+    "company": "Digital Hub Logistics Hamburg",
+    "job_title": "Managing Director",
+    "linkedin": "https://www.linkedin.com/in/johannes-berg-026b3b15/",
+    "photo": "johannes_berg.jpg"
+  },
+  {
+    "name": "Christian Lindener",
+    "company": "Airbus",
+    "job_title": "Global Head of Airbus BizLabs",
+    "linkedin": "https://www.linkedin.com/in/christian-lindener-74203560/",
+    "photo": "christian_lindener.png"
+  },
+  {
+    "name": "Hugo Nogueira",
+    "company": "BCG Digital Ventures",
+    "job_title": "Engineering Lead",
+    "linkedin": "https://in.hugo.im",
+    "photo": "hugo_nogueira.jpg"
+  },
+  {
+    "name": "Kerstin Bock",
+    "company": "Openers",
+    "job_title": "Co-Founder & CEO",
+    "linkedin": "https://www.linkedin.com/in/kerstinbock/",
+    "photo": "kerstin_bock.jpg"
+  },
+  {
+    "name": "Christopher Kampshoff",
+    "company": "wefox",
+    "job_title": "Director Group Corporate Development",
+    "linkedin": "https://www.linkedin.com/in/christopherkampshoff/",
+    "photo": "christopher_kampshoff.jpg"
+  },
+  {
+    "name": "Ramon Toossi",
+    "company": "PwC Germany",
+    "job_title": "Senior Manager",
+    "linkedin": "https://www.linkedin.com/in/ramon-toossi/"
+  },
+  {
+    "name": "Timo Schusser",
+    "company": "The Next Unicorn Ventures GmbH part of valvisio group",
+    "job_title": "Founder & CEO",
+    "linkedin": "https://www.linkedin.com/in/timoschusser/",
+    "photo": "timo_schusser.jpg"
+  },
+  {
+    "name": "Stephan Stricker",
+    "company": "PAIR Finance",
+    "job_title": "Founder & CEO",
+    "linkedin": "https://www.linkedin.com/in/stephanstricker/"
+  },
+  {
+    "name": "Tobias Mittrach",
+    "company": "PwC Legal AG",
+    "job_title": "Director",
+    "linkedin": "https://www.linkedin.com/in/tobias-mittrach-a986263b",
+    "photo": "tobias_mittrach.jpg"
+  },
+  {
+    "name": "Philipp Pohlmann",
+    "company": "Qonto",
+    "job_title": "Country Manager Germany",
+    "linkedin": "https://www.linkedin.com/in/papohlmann/",
+    "photo": "philipp_pohlmann.jpg"
+  },
+  {
+    "name": "Utena Treves",
+    "company": "wefox Group",
+    "job_title": "Group Chief Strategy Officer",
+    "linkedin": "https://www.linkedin.com/in/utenatreves/",
+    "photo": "utena_treves.jpg"
+  },
+  {
+    "name": "Dr. Holger Sprengel",
+    "company": "DigitalHealth Technology GmbH",
+    "job_title": "Founder",
+    "linkedin": "https://www.linkedin.com/in/holgersprengel/",
+    "photo": "holger_sprengel.jpg"
+  },
+  {
+    "name": "Niko LeWoi",
+    "company": "TOA",
+    "job_title": "Founder",
+    "linkedin": "https://www.linkedin.com/in/lewoi/",
+    "photo": "niko_lewoi.jpg"
+  },
+  {
+    "name": "Daniel Manzke",
+    "company": "finleap GmbH",
+    "job_title": "VP Product & Tech",
+    "linkedin": "https://www.linkedin.com/in/danielmanzke/",
+    "photo": "daniel_manzke.jpg"
+  },
+  {
+    "name": "Christian Woehlke",
+    "company": "finleap GmbH",
+    "job_title": "Head of Product",
+    "linkedin": "https://www.linkedin.com/in/cwoehlke/",
+    "photo": "christian_woehlke.jpg"
+  },
+  {
+    "name": "Benjamin Mateev",
+    "company": "Firefly Impact",
+    "job_title": "Founder",
+    "linkedin": "https://www.linkedin.com/in/benjaminmateev",
+    "photo": "benjamin_mateev.jpg"
+  },
+  {
+    "name": "Christian Engnath",
+    "company": "finleap GmbH",
+    "job_title": "Head of Venture Architects",
+    "linkedin": "https://www.linkedin.com/in/christianengnath/",
+    "photo": "christian_engnath.jpg"
+  },
+  {
+    "name": "Thomas Pribbenow",
+    "company": "finleap GmbH",
+    "job_title": "Head of Research",
+    "linkedin": "https://www.linkedin.com/in/thomas-pribbenow-09065b17b/",
+    "photo": "thomas_pribbenow.jpg"
+  }
+]

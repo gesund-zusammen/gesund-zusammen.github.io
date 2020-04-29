@@ -213,7 +213,7 @@
       "imageXL": true
     },
     {
-      "name": "UserCentrics",
+      "name": "Usercentric",
       "slug": "strategic",
       "image": "usercentrics.svg",
       "link": "https://usercentrics.com"
@@ -281,7 +281,7 @@
       "link": "https://www.joliberlin.com"
     },
     {
-      "name": "FORWARD31",
+      "name": "Forward 31",
       "slug": "strategic",
       "image": "forward31.png",
       "link": "https://www.forward31.com"
@@ -323,13 +323,13 @@
       "link": "https://www.apx.ac"
     },
     {
-      "name": "wework",
+      "name": "WeWork",
       "slug": "ambassador",
       "image": "wework.png",
       "link": "https://www.wework.com"
     },
     {
-      "name": "MatchMade",
+      "name": "Matchmade",
       "slug": "ambassador",
       "image": "matchmade.png",
       "link": "https://matchmade.tv"
@@ -343,7 +343,7 @@
       "nameColorInverted": true
     },
     {
-      "name": "Beta-i",
+      "name": "beta-i",
       "slug": "ambassador",
       "image": "betai.png",
       "link": "https://beta-i.com/"
@@ -361,13 +361,25 @@
       "link": "https://www.startupgrind.com/berlin"
     },
     {
+      "name": "Iron Hack",
+      "slug": "ambassador",
+      "image": "Ironhack.png",
+      "link": "https://www.ironhack.com/en"
+    },
+    {
+      "name": "Workstreams",
+      "slug": "ambassador",
+      "image": "Workstreams.png",
+      "link": "https://www.workstreams.ai/"
+    },
+    {
       "name": "Expatrio",
       "slug": "ambassador",
       "image": "expatrio.png",
       "link": "https://www.expatrio.com"
     },
     {
-      "name": "DeGIS",
+      "name": "DeGiS",
       "slug": "ambassador",
       "image": "degis.png",
       "link": "https://www.degis.info"
@@ -466,19 +478,19 @@
       "imageXL": true
     },
     {
-      "name": "PWC",
+      "name": "PwC Germany",
       "slug": "strategic",
       "image": "pwc.png",
       "link": "https://www.pwc.de"
     },
     {
-      "name": "Cortado",
+      "name": "Cortado Mobile Solutions",
       "slug": "strategic",
       "image": "cortado.svg",
       "link": "https://www.cortado.com"
     },
     {
-      "name": "Hello Better",
+      "name": "HelloBetter",
       "slug": "strategic",
       "image": "hello_better.svg",
       "link": "https://hellobetter.de"
@@ -502,13 +514,13 @@
       "link": "https://www.questionpro.de"
     },
     {
-      "name": "myEGO2GO",
+      "name": "The Ego Company",
       "slug": "strategic",
       "image": "my_ego_2_go.png",
       "link": "https://myego2go.com"
     },
     {
-      "name": "Olmogo",
+      "name": "olmogo",
       "slug": "strategic",
       "image": "olmogo.png",
       "link": "https://olmogo.com"
@@ -526,7 +538,7 @@
       "link": "https://www.next-unicorn.vc"
     },
     {
-      "name": "German Tech",
+      "name": "GERMANTECH",
       "slug": "strategic",
       "image": "german_tech.png",
       "link": "https://german.tech"
@@ -543,6 +555,36 @@
       "slug": "strategic",
       "image": "macher_hilfe.png",
       "link": "https://www.macher-hilfe.de"
+    },
+    {
+      "name": "Maker Faire",
+      "slug": "ambassador",
+      "image": "Maker.png",
+      "link": "https://makerfaire.com/"
+    },
+    {
+      "name": "Infermedica",
+      "slug": "strategic",
+      "image": "Infermedica.png",
+      "link": "https://infermedica.com/"
+    },
+    {
+      "name": "MOTIONTAG",
+      "slug": "strategic",
+      "image": "motiontag.png",
+      "link": "https://motion-tag.com/en/"
+    },
+    {
+      "name": "KRS Solutions",
+      "slug": "strategic",
+      "image": "KRS.jpg",
+      "link": "https://krs.solutions/"
+    },
+    {
+      "name": "Alice&Bob.Company",
+      "slug": "strategic",
+      "image": "alicebob.png",
+      "link": "https://www.aliceandbob.company/"
     }
   ]
 }
