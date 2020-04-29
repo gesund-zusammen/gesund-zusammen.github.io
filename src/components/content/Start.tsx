@@ -76,7 +76,11 @@ class Start extends React.PureComponent<WithTranslation, {}> {
         </Box>
 
         <Box id="founding-partners" paddingBottom={4} marginTop={4}>
-          <PartnerItems data={InitiativePartners} categorySlug="founders" />
+          <PartnerItems
+            data={InitiativePartners}
+            categorySlug="founders"
+            onlyCountryPartners={true}
+          />
         </Box>
       </>
     );
