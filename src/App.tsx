@@ -11,10 +11,14 @@ import Page from "./components/Page";
 import "./i18n";
 import reducer from "./reducer";
 
+const { NODE_ENV } = process.env;
+
 const reduxMiddleware = [reduxLogger];
 const store = createStore(
   reducer,
-  composeWithDevTools(applyMiddleware(...reduxMiddleware)),
+  NODE_ENV !== "production"
+    ? composeWithDevTools(applyMiddleware(...reduxMiddleware))
+    : undefined,
 );
 
 class App extends React.Component {
