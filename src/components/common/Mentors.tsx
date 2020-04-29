@@ -34,7 +34,7 @@ class Mentors extends React.PureComponent<WithTranslation, {}> {
             <Grid
               container
               direction="row"
-              justify="center"
+              justify="flex-start"
               alignItems="stretch"
               spacing={4}
             >
