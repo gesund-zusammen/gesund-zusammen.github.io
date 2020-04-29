@@ -32,15 +32,24 @@ interface IPartnerData {
 interface IPartnerItemsProps extends WithTranslation {
   data: IPartnerData;
   categorySlug?: string;
+  excludeCategorySlug?: string;
   country?: string;
   onlyCountryPartners?: boolean;
 }
 
 class PartnerItems extends React.Component<IPartnerItemsProps, {}> {
-  getCategories = (categorySlug?: string): ICategory[] => {
-    return this.props.data.categories.filter(category =>
-      categorySlug ? category.slug === categorySlug : true,
-    );
+  getCategories = (): ICategory[] => {
+    return this.props.data.categories
+      .filter(category =>
+        this.props.excludeCategorySlug
+          ? category.slug !== this.props.excludeCategorySlug
+          : true,
+      )
+      .filter(category =>
+        this.props.categorySlug
+          ? category.slug === this.props.categorySlug
+          : true,
+      );
   };
 
   getPartners = (categorySlug?: string): IPartner[] => {
@@ -57,6 +66,10 @@ class PartnerItems extends React.Component<IPartnerItemsProps, {}> {
           return (
             !partner.countries || partner.countries.includes(this.props.country)
           );
+        } else {
+          if (this.props.onlyCountryPartners) {
+            return !partner.countries;
+          }
         }
         return true;
       });
@@ -65,46 +78,48 @@ class PartnerItems extends React.Component<IPartnerItemsProps, {}> {
   render = () => {
     return (
       <Box id="partners" paddingBottom={4} marginTop={4}>
-        {this.getCategories(this.props.categorySlug).map((category, index) => {
+        {this.getCategories().map((category, index) => {
           const categoryKey: string = "category-" + index;
           return (
             <Fade key={categoryKey} right cascade fraction={0.01}>
               <div id={`wrapper-${categoryKey}`}>
                 {!!this.getPartners(category.slug).length && (
-                  <Typography variant="h3" color="textSecondary">
-                    {category.name[this.props.i18n.language]}
-                  </Typography>
+                  <>
+                    <Typography variant="h3" color="textSecondary">
+                      {category.name[this.props.i18n.language]}
+                    </Typography>
+                    <Box paddingTop={4} paddingBottom={4}>
+                      <Grid
+                        container
+                        direction="row"
+                        justify="center"
+                        alignItems="center"
+                        spacing={4}
+                      >
+                        {this.getPartners(category.slug).map(
+                          (partner, partnerIndex) => {
+                            const partnerCardKey: string =
+                              "category-" + index + "-partner-" + partnerIndex;
+                            return (
+                              <ImageCard
+                                key={partnerCardKey}
+                                name={partner.name}
+                                image={
+                                  require(`../../images/partners/${partner.image}`)
+                                    .default
+                                }
+                                link={partner.link}
+                                color={partner.color}
+                                imageXL={partner.imageXL}
+                                nameColorInverted={partner.nameColorInverted}
+                              />
+                            );
+                          },
+                        )}
+                      </Grid>
+                    </Box>
+                  </>
                 )}
-                <Box paddingTop={4} paddingBottom={4}>
-                  <Grid
-                    container
-                    direction="row"
-                    justify="center"
-                    alignItems="center"
-                    spacing={4}
-                  >
-                    {this.getPartners(category.slug).map(
-                      (partner, partnerIndex) => {
-                        const partnerCardKey: string =
-                          "category-" + index + "-partner-" + partnerIndex;
-                        return (
-                          <ImageCard
-                            key={partnerCardKey}
-                            name={partner.name}
-                            image={
-                              require(`../../images/partners/${partner.image}`)
-                                .default
-                            }
-                            link={partner.link}
-                            color={partner.color}
-                            imageXL={partner.imageXL}
-                            nameColorInverted={partner.nameColorInverted}
-                          />
-                        );
-                      },
-                    )}
-                  </Grid>
-                </Box>
               </div>
             </Fade>
           );

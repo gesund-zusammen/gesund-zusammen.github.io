@@ -155,10 +155,18 @@ class Initiative extends React.PureComponent<
               {`${this.props.t("country.fr")}`}
             </CountrySelect>
           </Box>
+
           <PartnerItems
             data={InitiativePartners}
+            categorySlug="founders"
             country={this.props.country ? this.props.country : undefined}
-            onlyCountryPartners={this.props.country === "it"}
+            onlyCountryPartners={this.props.country === null}
+          />
+          <PartnerItems
+            data={InitiativePartners}
+            excludeCategorySlug="founders"
+            country={this.props.country ? this.props.country : undefined}
+            onlyCountryPartners={this.props.country !== null}
           />
         </Box>
 
