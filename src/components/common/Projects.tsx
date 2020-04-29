@@ -6,6 +6,7 @@ import Fade from "react-reveal";
 import LogoAncora from "../../images/partners/ancora.svg";
 import LogoEverstox from "../../images/partners/everstox.png";
 import LogoExclamo from "../../images/partners/exclamo.svg";
+import LogoVoize from "../../images/partners/voize.png";
 
 import ProjectCard from "./ProjectCard";
 
@@ -38,7 +39,12 @@ class Projects extends React.PureComponent<WithTranslation, {}> {
               <ProjectCard
                 name="Exclamo"
                 image={LogoExclamo}
-                link="https://www.exclamo.org/"
+                link="https://exclamo.org/"
+              />
+              <ProjectCard
+                name="Voize"
+                image={LogoVoize}
+                link="https://voize.de/"
               />
             </Grid>
           </Box>
