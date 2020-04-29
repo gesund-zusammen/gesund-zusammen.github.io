@@ -1,7 +1,15 @@
 import React from "react";
 import { connect } from "react-redux";
 import { AnyAction, bindActionCreators, Dispatch } from "redux";
-import { Box, Button, Grid, Typography } from "@material-ui/core";
+import {
+  Box,
+  Button,
+  Grid,
+  Typography,
+  Hidden,
+  FormControl,
+  Select,
+} from "@material-ui/core";
 import { withTranslation, WithTranslation } from "react-i18next";
 import styled, { AnyStyledComponent } from "styled-components";
 
@@ -119,41 +127,72 @@ class Initiative extends React.PureComponent<
             {this.props.t("partners.header")}
           </Typography>
           <Box id="region-filter" paddingBottom={2}>
-            <CountrySelect
-              variant="body2"
-              onClick={() => this.handleCountrySelect(null)}
-              className={this.props.country === null ? "selected" : ""}
-            >
-              {`${this.props.t("country.all")}`}
-            </CountrySelect>
-            <CountrySelect
-              variant="body2"
-              onClick={() => this.handleCountrySelect("de")}
-              className={this.props.country === "de" ? "selected" : ""}
-            >
-              {`${this.props.t("country.de")}`}
-            </CountrySelect>
-            <CountrySelect
-              variant="body2"
-              onClick={() => this.handleCountrySelect("es")}
-              className={this.props.country === "es" ? "selected" : ""}
-            >
-              {`${this.props.t("country.es")}`}
-            </CountrySelect>
-            <CountrySelect
-              variant="body2"
-              onClick={() => this.handleCountrySelect("it")}
-              className={this.props.country === "it" ? "selected" : ""}
-            >
-              {`${this.props.t("country.it")}`}
-            </CountrySelect>
-            <CountrySelect
-              variant="body2"
-              onClick={() => this.handleCountrySelect("fr")}
-              className={this.props.country === "fr" ? "selected" : ""}
-            >
-              {`${this.props.t("country.fr")}`}
-            </CountrySelect>
+            <Hidden smUp>
+              <FormControl variant="outlined" fullWidth>
+                <Select
+                  native
+                  value={this.props.country ? this.props.country : undefined}
+                  onChange={(
+                    event: React.ChangeEvent<{ name?: string; value: unknown }>,
+                  ) =>
+                    this.handleCountrySelect(
+                      (event.target.value as string | null) === "all"
+                        ? null
+                        : (event.target.value as string | null),
+                    )
+                  }
+                  inputProps={{
+                    name: "country",
+                    id: "filter-select",
+                  }}
+                >
+                  <option value="all">{`${this.props.t(
+                    "country.all",
+                  )}`}</option>
+                  <option value="de">{`${this.props.t("country.de")}`}</option>
+                  <option value="it">{`${this.props.t("country.it")}`}</option>
+                  <option value="es">{`${this.props.t("country.es")}`}</option>
+                  <option value="fr">{`${this.props.t("country.fr")}`}</option>
+                </Select>
+              </FormControl>
+            </Hidden>
+            <Hidden xsDown>
+              <CountrySelect
+                variant="body2"
+                onClick={() => this.handleCountrySelect(null)}
+                className={this.props.country === null ? "selected" : ""}
+              >
+                {`${this.props.t("country.all")}`}
+              </CountrySelect>
+              <CountrySelect
+                variant="body2"
+                onClick={() => this.handleCountrySelect("de")}
+                className={this.props.country === "de" ? "selected" : ""}
+              >
+                {`${this.props.t("country.de")}`}
+              </CountrySelect>
+              <CountrySelect
+                variant="body2"
+                onClick={() => this.handleCountrySelect("it")}
+                className={this.props.country === "it" ? "selected" : ""}
+              >
+                {`${this.props.t("country.it")}`}
+              </CountrySelect>
+              <CountrySelect
+                variant="body2"
+                onClick={() => this.handleCountrySelect("es")}
+                className={this.props.country === "es" ? "selected" : ""}
+              >
+                {`${this.props.t("country.es")}`}
+              </CountrySelect>
+              <CountrySelect
+                variant="body2"
+                onClick={() => this.handleCountrySelect("fr")}
+                className={this.props.country === "fr" ? "selected" : ""}
+              >
+                {`${this.props.t("country.fr")}`}
+              </CountrySelect>
+            </Hidden>
           </Box>
 
           <PartnerItems
