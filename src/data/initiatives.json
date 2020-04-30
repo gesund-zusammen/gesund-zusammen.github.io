@@ -1035,7 +1035,7 @@
     {
       "name": "COVAID Africa",
       "link": "https://www.covaidafrica.org/",
-      "category": "Further Initiatives",
+      "category": "initiatives",
       "description": {
         "de": "COVAID Africa, in support of Doctors Without Borders / Médecins Sans Frontières, was founded to combat the spread of COVID-19 through fundraising to provide medical support and resources throughout Africa.",
         "en": "COVAID Africa, in support of Doctors Without Borders / Médecins Sans Frontières, was founded to combat the spread of COVID-19 through fundraising to provide medical support and resources throughout Africa"
@@ -1045,7 +1045,7 @@
     {
       "name": "IMF World Economic Outlook",
       "link": "https://www.imf.org/en/Publications/WEO/Issues/2020/04/14/World-Economic-Outlook-April-2020-The-Great-Lockdown-49306",
-      "category": "Research and Government Sites",
+      "category": "research_and_government_sites",
       "description": {
         "de": "Weltwirtschaftliche Aussichten des Internationalen Währungsfonds unter Berücksichtigung der Folgen des Coronavirus.",
         "en": "World economic outlook by the International Monetary Fund incorporating coronavirus consequences."
@@ -1065,7 +1065,7 @@
     {
       "name": "Macher Hilfe",
       "link": "https://www.macher-hilfe.de/ueber-uns/",
-      "category": "Further Initiatives",
+      "category": "initiatives",
       "description": {
         "de": "Many doers in small and medium-sized companies are struggling to survive economically. In addition to the daily challenges of somehow keeping shops running, there is simply no time. This platform will help companies in the thicket of many state aids and grants and filter out the best options.",
         "en": "Many doers in small and medium-sized companies are struggling to survive economically. In addition to the daily challenges of somehow keeping shops running, there is simply no time. This platform will help companies in the thicket of many state aids and grants and filter out the best options"
@@ -1075,7 +1075,7 @@
     {
       "name": "foldingathome.org",
       "link": "https://foldingathome.org/covid19/",
-      "category": "Further Initiatives",
+      "category": "initiatives",
       "description": {
         "de": "Help running simulations is the primary way to contribute to COVID-19.",
         "en": "Help running simulations is the primary way to contribute to COVID-19."
@@ -1085,7 +1085,7 @@
     {
       "name": "Fold.it beta",
       "link": "https://fold.it/portal/node/2008963",
-      "category": "Further Initiatives",
+      "category": "initiatives",
       "description": {
         "de": "Help researchers discover new antiviral drugs that might stop coronavirus! The most promising solutions will be manufactured and tested at the University of Washington Institute for Protein Design in Seattle.",
         "en": "Help researchers discover new antiviral drugs that might stop coronavirus! The most promising solutions will be manufactured and tested at the University of Washington Institute for Protein Design in Seattle."
@@ -1095,7 +1095,7 @@
     {
       "name": "Colombia launches vulnerability map to trace COVID-19",
       "link": "https://geoportal.dane.gov.co/visor-vulnerabilidad/",
-      "category": "Research and Government Sites",
+      "category": "research_and_government_sites",
       "description": {
         "de": "Das nationale Statistikamt von Kolumbien zeigt eine Schwachstellenkarte an, um Entscheidungen in der öffentlichen Ordnung zu treffen.",
         "en": "Colombia National Administrative Department of Statistics displays a vulnerability map to take decisions in public policy."
@@ -1105,7 +1105,7 @@
     {
       "name": "Bloomberg Philantrophies",
       "link": "https://www.bloomberg.org/program/public-health/coronavirus-response/#coronavirus-local-response-initiative",
-      "category": "Further Initiatives",
+      "category": "initiatives",
       "description": {
         "de": "Bloomberg Philanthropies beschleunigt den Kampf gegen die COVID-19-Pandemie mit Initiativen wie der Coronavirus Local Response Initiative und der Coronavirus Global Response Initiative und investiert in Städte wie New York und London.",
         "en": "Bloomberg Philanthropies is accelerating the fight against the COVID-19 pandemic with initiatives including the Coronavirus Local Response Initiative and the Coronavirus Global Response Initiative, and is making investments in cities like New York and London."
@@ -1115,7 +1115,7 @@
     {
       "name": "Healthier future with HelloBetter",
       "link": "https://hellobetter.de",
-      "category": "Further Initiatives",
+      "category": "initiatives",
       "description": {
         "de": "Psychologische Online-Schulungen und Online-Psychotherapie - auf Anfrage, in Begleitung von Psychologen und Psychotherapeuten. Hilfe bei Depressionen, Stress, Angstzuständen, Panik und anderen psychischen Beschwerden.",
         "en": "Scientifically proven online psychological training courses and online psychotherapy - on request, accompanied by psychologists and psychotherapists. Help with depression, stress, anxiety, panic and other psychological complaints."
@@ -1125,9 +1125,9 @@
     {
       "name": "UNESCO",
       "link": "https://en.unesco.org/covid19/educationresponse/nationalresponses#LATIN%20AMERICA%20&%20THE%20CARIBBEAN",
-      "category": "Research and Government Sites",
+      "category": "research_and_government_sites",
       "description": {
-        "de": "National learning platforms and tools.",
+        "de": "Nationale Lernplattformen und -instrumente.",
         "en": "National learning platforms and tools."
       },
       "global": true
@@ -1135,7 +1135,7 @@
     {
       "name": "German Association Forum",
       "link": "https://verbaende.com/news.php/Deutsche-Suesswarenindustrie-beteiligt-sich-an-internationaler-Initiative-zur-Bekaempfung-des-Coronavirus-in-Westafrika?m=134288",
-      "category": "Further Initiatives",
+      "category": "initiatives",
       "description": {
         "de": "Die deutsche Süßwarenindustrie beteiligt sich an einer internationalen Initiative zur Bekämpfung des Koronavirus in Westafrika.",
         "en": "German confectionery industry participates in international initiative to combat the corona virus in West Africa."
@@ -1145,9 +1145,9 @@
     {
       "name": "Cross-Cluster-Initiative Thüringen",
       "link": "https://www.kompetenzzentrum-ilmenau.digital/digitalblog/32-kategorie-sonstiges/195-coronavirus-informationen",
-      "category": "Further Initiatives",
+      "category": "initiatives",
       "description": {
-        "de": "19 Thuringian networks and organizations have joined together to form the Cross-Cluster Initiative Thuringia (CCIT). The aim is to collect comprehensive information and support options for companies in Thuringia and to make them available on the central platform www.netzwerktimer-thueringen.de/corona.",
+        "de": "19 Thüringer Netzwerke und Organisationen haben sich zur Clusterübergreifenden Initiative Thüringen (CCIT) zusammengeschlossen. Ziel ist es, umfassende Informations- und Supportmöglichkeiten für Unternehmen in Thüringen zu sammeln und auf der zentralen Plattform www.netzwerktimer-thueringen.de/corona verfügbar zu machen.",
         "en": "19 Thuringian networks and organizations have joined together to form the Cross-Cluster Initiative Thuringia (CCIT). The aim is to collect comprehensive information and support options for companies in Thuringia and to make them available on the central platform www.netzwerktimer-thueringen.de/corona."
       },
       "global": false
@@ -1155,7 +1155,7 @@
     {
       "name": "European Commission",
       "link": "https://ec.europa.eu/info/research-and-innovation/research-area/health-research-and-innovation/coronavirus-research-and-innovation_en",
-      "category": "Further Initiatives",
+      "category": "initiatives",
       "description": {
         "de": "EU-unterstützte Forschungs- und Innovationsprojekte und -initiativen zur Bekämpfung der Verbreitung des Coronavirus und zur Vorbereitung auf andere Ausbrüche.",
         "en": "EU supported research and innovation projects and initiatives to tackle the spread of coronavirus and preparedness for other outbreaks."
@@ -1175,7 +1175,7 @@
     {
       "name": "Macher Hilfe",
       "link": "https://www.macher-hilfe.de/ueber-uns/",
-      "category": "Further Initiatives",
+      "category": "initiatives",
       "description": {
         "de": "Viele Macher in kleinen und mittleren Unternehmen kämpfen ums wirtschaftliche Überleben. Zusätzlich zu den täglichen Herausforderungen, die Geschäfte irgendwie am Laufen zu halten, bleibt einfach keine Zeit. Diese Plattform wird Unternehmen im Dickicht vieler staatlicher Beihilfen und Zuschüsse helfen und die besten Optionen herausfiltern.",
         "en": "Many doers in small and medium-sized companies are struggling to survive economically. In addition to the daily challenges of somehow keeping shops running, there is simply no time. This platform will help companies in the thicket of many state aids and grants and filter out the best options."
@@ -1185,7 +1185,7 @@
     {
       "name": "foldingathome.org",
       "link": "https://foldingathome.org/covid19/",
-      "category": "Further Initiatives",
+      "category": "initiatives",
       "description": {
         "de": "Hilfe beim Ausführen von Simulationen ist der wichtigste Weg, um zu COVID-19 beizutragen.",
         "en": "Help running simulations is the primary way to contribute to COVID-19."
@@ -1195,7 +1195,7 @@
     {
       "name": "Fold.it beta",
       "link": "https://fold.it/portal/node/2008963",
-      "category": "Further Initiatives",
+      "category": "initiatives",
       "description": {
         "de": "Helfen Sie Forschern, neue antivirale Medikamente zu entdecken, die das Coronavirus stoppen könnten! Die vielversprechendsten Lösungen werden am Institut für Proteindesign der Universität Washington in Seattle hergestellt und getestet.",
         "en": "Help researchers discover new antiviral drugs that might stop coronavirus! The most promising solutions will be manufactured and tested at the University of Washington Institute for Protein Design in Seattle."
@@ -1205,7 +1205,7 @@
     {
       "name": "UNESCO",
       "link": "https://en.unesco.org/covid19/educationresponse/nationalresponses#LATIN%20AMERICA%20&%20THE%20CARIBBEAN",
-      "category": "Research and Government Sites",
+      "category": "research_and_government_sites",
       "description": {
         "de": "Nationale Lernplattformen und -instrumente.",
         "en": "National learning platforms and tools."
@@ -1215,7 +1215,7 @@
     {
       "name": "Landesmedienzentrum Baden-württemberg",
       "link": "https://www.lmz-bw.de/statische-newsroom-seiten/schule-machen-in-zeiten-des-coronavirus/",
-      "category": "Digital tools",
+      "category": "digital_tools",
       "description": {
         "de": "Hier finden Sie Unterstützungsangebote für Lehrer für die Zeit der Korona-bezogenen Schulschließungen.",
         "en": "Find support offers for teachers for the period of corona-related school closings."
@@ -1225,7 +1225,7 @@
     {
       "name": "Deutsche Bank Group",
       "link": "https://www.deutsche-bank.de/gk/lp/service-seite-corona.html",
-      "category": "Knowledge Resource",
+      "category": "knowledge_resource",
       "description": {
         "de": "DB bietet Ihnen einen kompakten Überblick über zentrale Fragen, die aktuell für Unternehmen und Betriebe relevant sind.",
         "en": "DB offers you a compact overview of central questions that are currently relevant for companies and businesses."
@@ -1235,7 +1235,7 @@
     {
       "name": "European Digital SME Alliance",
       "link": "https://www.digitalsme.eu/solutions/",
-      "category": "Digital Consultation",
+      "category": "digital_consultation",
       "description": {
         "de": "Digitale Lösungen in Zeiten von COVID-19.",
         "en": "Digital solutions in times of COVID-19."
@@ -1245,7 +1245,7 @@
     {
       "name": "Dear Employee",
       "link": "https://www.dearemployee.de/",
-      "category": "Digital tools",
+      "category": "digital_tools",
       "description": {
         "de": "Unterstützt Unternehmen mit einer CoronaCare-Umfrage, die dazu beitragen soll, diese herausfordernde Phase sicher und gesund zu meistern.",
         "en": "Supports companies with a CoronaCare Survey designed to help master this challenging phase safely and healthily."
@@ -1255,7 +1255,7 @@
     {
       "name": "griztame.lt",
       "link": "https://griztame.lt/",
-      "category": "Further Initiatives",
+      "category": "initiatives",
       "description": {
         "de": "Kommunikationsplattform für litauische Bürger, die wegen der COVID-19-Krise nicht nach Hause können.",
         "en": "Communication platform for lithuanian citizens away form home because of COVID-19 crisis."
@@ -1265,7 +1265,7 @@
     {
       "name": "covid19dataportal.org",
       "link": "https://www.covid19dataportal.org/",
-      "category": "Digital tools",
+      "category": "digital_tools",
       "description": {
         "de": "Die Europäische Kommission hat ein Datenportal für Wissenschaftler eingerichtet, die sich mit dem SARS-CoV-2-Virus befassen, um den Zugang zu Datensätzen und Tools zu beschleunigen und die Forschungsanstrengungen durch Förderung der Wiederverwendung von Daten und offener Wissenschaft zu unterstützen.",
         "en": "The European Commission has launched a data portal for scientists studying the SARS-CoV-2 virus to speed up access to data sets and tools in order to bolster research efforts by encouraging data reuse and open science."
@@ -1275,7 +1275,7 @@
     {
       "name": "European Investment Bank",
       "link": "https://www.eib.org/en/stories/digital-coronavirus",
-      "category": "Research and Government Sites",
+      "category": "research_and_government_sites",
       "description": {
         "de": "Mit der Digitalisierung unseres Lebens hat das Coronavirus möglicherweise eine Revolution beschleunigt. Aber wir müssen sicherstellen, dass niemand zurückgelassen wird.",
         "en": "With our lives turning digital, coronavirus may have accelerated a revolution. But we need to make sure no-one gets left behind."
@@ -1285,7 +1285,7 @@
     {
       "name": "European Commission",
       "link": "https://ec.europa.eu/digital-single-market/en/news/italy-launches-its-national-coalition-digital-skills-and-jobs",
-      "category": "Research and Government Sites",
+      "category": "research_and_government_sites",
       "description": {
         "de": "Italien startet seine Nationale Koalition für digitale Fähigkeiten und Arbeitsplätze.",
         "en": "Italy launches its National Coalition for Digital Skills and Jobs."
@@ -1295,7 +1295,7 @@
     {
       "name": "Digital Republic",
       "link": "https://innovazione.gov.it/it/repubblica-digitale/",
-      "category": "Research and Government Sites",
+      "category": "research_and_government_sites",
       "description": {
         "de": "Digital Republic ist die nationale strategische Initiative, die von der Abteilung für digitale Transformation der Präsidentschaft des Ministerrates mit dem Ziel gefördert wird, die digitale Kluft kultureller Natur in der italienischen Bevölkerung zu bekämpfen, eine maximale digitale Inklusion zu unterstützen und die künftige Bildung zu fördern Technologien, die den digitalen Transformationsprozess des Landes begleiten.",
         "en": "Digital Republic is the national strategic initiative promoted by the Department for digital transformation of the Presidency of the Council of Ministers with the aim of combating the digital divide of a cultural nature present in the Italian population, to support maximum digital inclusion and encourage education on future technologies, accompanying the country's digital transformation process."
@@ -1305,7 +1305,7 @@
     {
       "name": "Accenture",
       "link": "https://www.accenture.com/fi-en/about/company/coronavirus-business-economic-impact",
-      "category": "Research and Government Sites",
+      "category": "research_and_government_sites",
       "description": {
         "de": "Management der menschlichen und geschäftlichen Auswirkungen von Coronavirus.",
         "en": "Managing the human and business impact of coronavirus."
@@ -1315,7 +1315,7 @@
     {
       "name": "Europol",
       "link": "https://www.europol.europa.eu/publications-documents/pandemic-profiteering-how-criminals-exploit-covid-19-crisis",
-      "category": "Research and Government Sites",
+      "category": "research_and_government_sites",
       "description": {
         "de": "Der Bericht bietet einen Überblick darüber, wie Kriminelle ihre Missetaten an die COVID-19-Pandemie anpassen. Es basiert auf Informationen, die Europol rund um die Uhr von den EU-Mitgliedstaaten erhält, und beabsichtigt, die Strafverfolgungsbehörden der Mitgliedstaaten bei ihrer Arbeit zu unterstützen.",
         "en": "The report provides an overview of how criminals adapt their misdeeds to the COVID-19 pandemic. It is based on information Europol receives from the EU Member States on a 24/7 basis and intends to support Member States’ law enforcement authorities in their work."
@@ -1325,7 +1325,7 @@
     {
       "name": "Avawomen",
       "link": "https://www.avawomen.com/press/liechtenstein-study-aims-to-help-combat-coronavirus-pandemic/",
-      "category": "Further Initiatives",
+      "category": "initiatives",
       "description": {
         "de": "Ava ist ein digitales Gesundheitsunternehmen, das sich auf die reproduktive Gesundheit von Frauen konzentriert. Basierend auf einer Kombination aus künstlicher Intelligenz und klinischer Forschung ermöglichen Ava-Armbänder Frauen, die beste Zeit für die Empfängnis in ihrem monatlichen Zyklus zu ermitteln. Sensorische Armbänder von Ava werden jetzt auf freiwilliger Basis zur Verfügung gestellt, um Daten zu sammeln, die hoffentlich eine frühzeitige Erkennung von Covid-19 ermöglichen.",
         "en": "Ava is a digital healthcare company that focuses on women’s reproductive health. Based on a combination of artificial intelligence and clinical research, Ava bracelets allow women to identify the best time in their monthly cycle to conceive. Sensory bracelets made by Ava are now being given on a voluntary basis in order to collect data that will hopefully allow early detection of Covid-19."
@@ -1335,7 +1335,7 @@
     {
       "name": "EmTech",
       "link": "https://emtech.technologyreview.com/emtech-next-2020/?utm_source=event_email&utm_medium=email&utm_campaign=emtech_next_2020.unpaid.acquisition&discount=EMAIL042550#register",
-      "category": "Further Initiatives",
+      "category": "initiatives",
       "description": {
         "de": "MIT Technology Review und Harvard Business Review arbeiten zusammen, um Ihnen EmTech Next zu bieten, eine dreitägige virtuelle Veranstaltung, die Technologie, Führung und Veränderung untersucht.",
         "en": "MIT Technology Review and Harvard Business Review are partnering to bring you EmTech Next, a 3-day virtual event examining technology, leadership, and change."
@@ -1345,7 +1345,7 @@
     {
       "name": "Java Networks",
       "link": "https://cdn.jamanetwork.com/ama/content_public/journal/jama/0/jvp200035supp1_prod.pdf?Expires=2147483647&Signature=bIZCLS7ZLWTJd~U~H40JgiEGdFb3ggVUJpBvJ7KdANK7HgK1zaj4uWHvqweGym1nWfO~nXt9Y5i1vX79pF7zjjqfzmJAy3udTdpVVZQe07xnQIPcBMXLwZ5XjgTO8yKFXVIpxsXhrmOu8sGSpKiEmQ86ZCKfOTar7fMAGmUCtjiYVFwf31K3REWAA-r3hZyoZpqz3QKpVgpsRpF9fV9thQCq0~yvbvRKTH4PcoB~CZgmXH7rpVb6bILXQn5zBCphf6pyLAa4zIebUEKfCdCYdSdi9LeIEUsesqsYpNWgHJcr4K1LC0hFlst0RHQz-vZ7I-OvrX~5jel6zjjtuDQzjQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA",
-      "category": "Knowledge Resource",
+      "category": "knowledge_resources",
       "description": {
         "de": "Reaktion auf COVID-19 in Taiwan: Big-Data-Analyse, neue Technologie und proaktive Tests.",
         "en": "Response to COVID-19 in Taiwan: big data analytics, new technology, and proactive testing."
@@ -1355,7 +1355,7 @@
     {
       "name": "Kahun",
       "link": "https://kahun.com/",
-      "category": "Digital tools",
+      "category": "digital_tools",
       "description": {
         "de": "Die Technologie von Kahun codiert evidenzbasiertes klinisches Wissen und wandelt es in nutzbare strukturierte Daten um, die schnell und umfassend erfasst werden können. Wir verwenden eine Kombination aus KI-Methoden, einer Gemeinschaft professioneller medizinischer Experten und Berechnungsalgorithmen, um vorhandene klinische Literatur zu analysieren und zu verarbeiten und die darin enthaltenen komplexen Assoziationen vollständig zu erfassen. Wir präsentieren die Informationen in einem neuen innovativen Format, das von Ärzten in ihrer täglichen Praxis verwendet werden soll.",
         "en": "Kahun'S technology encodes evidence-based clinical knowledge and transforms it into usable structured data that can be grasped quickly and comprehensively. We employ a combination of AI methodologies, a community of professional medical experts, and computational algorithms to analyze and process existing clinical literature and fully capture the complex associations found within it. We  present the information in a new innovative format designed to be used by physicians in their daily practice."
@@ -1365,7 +1365,7 @@
     {
       "name": "Africa News",
       "link": "https://www.africanews.com/2020/04/26/coronavirus-south-africa-member-of-the-executive-council-mec-debbie-schafer-quality-teaching-at-home-during-covid-19-coronavirus-pandemic/",
-      "category": "Further Initiatives",
+      "category": "initiatives",
       "description": {
         "de": "Südafrika - Qualitätsunterricht zu Hause während der COVID-19-Coronavirus-Pandemie.",
         "en": "South Africa - Quality teaching at home during COVID-19 Coronavirus pandemic."
@@ -1375,7 +1375,7 @@
     {
       "name": "Tech Xplore",
       "link": "https://techxplore.com/news/2020-04-proximity-coronavirus-pandemic-germany.html",
-      "category": "Digital tools",
+      "category": "digital_tools",
       "description": {
         "de": "Die Fraunhofer-Gesellschaft hat einen eigenen Ansatz für eine deutsche Proximity-Tracing-App entwickelt.",
         "en": "The Fraunhofer-Gesellschaft has developed an approach of its own for a German proximity tracing app."
@@ -1383,55 +1383,54 @@
       "global": true
     },
 {
-      " name " : "Flourish " ,
-      " link " : " https://flourish.studio/covid/" ,
-      " category " : " Digital tools" ,
-      " description " : {
-        " de " : " A collection of regularly updated responsive embeddable charts and maps about the coronavirus crisis. " ,
-        " en " : " A collection of regularly updated responsive embeddable charts and maps about the coronavirus crisis. "
+      "name": "Flourish",
+      "link": " https://flourish.studio/covid/",
+      "category": "digital_tools",
+      "description": {
+        "de": "Eine Sammlung regelmäßig aktualisierter reaktionsfähiger einbettbarer Diagramme und Karten zur Coronavirus-Krise.",
+        "en": "A collection of regularly updated responsive embeddable charts and maps about the coronavirus crisis."
       },
-      " global " : true
+      "global" : true
 }, 
 {
-      " name " : "startupsvscovid " ,
-      " link " : " https://www.startupsvscovid.com/" ,
-      " category " : " Further Initiatives" ,
-      " description " : {
-        " de " : " A repository of resources for Indian startups solving challenges created by COVID-19 " ,
-        " en " : " A repository of resources for Indian startups solving challenges created by COVID-19 "
+      "name": "startupsvscovid ",
+      "link": "https://www.startupsvscovid.com/",
+      "category": "initiatives",
+      "description": {
+        "de": "Ein Ressourcen-Repository für indische Startups, die die von COVID-19 geschaffenen Herausforderungen lösen.",
+        "en": "A repository of resources for Indian startups solving challenges created by COVID-19."
       },
-      " global " : true
+      "global": true
 }, 
 {
-      " name " : "engadget " ,
-      " link " : " https://www.engadget.com/apple-maps-covid-19-testing-sites-all-us-191822069.html?guccounter=1&guce_referrer=aHR0cHM6Ly9tYWlsLmdvb2dsZS5jb20vbWFpbC91LzAv&guce_referrer_sig=AQAAAJ4Tuo0OzU7JzZ1784GeoMJnAAp0_0wmExkmNHWvzLjsK7NTm_OlZmMq2BAh23Zk8JMTcf_HdrFMXzVYhO2jV7II_8XgZjpYbB4MQtPB3FTVRbM-uALASafwDO_Hsu6mvB60zt-PUReVWLlrjBbNvdB6fnW2JHfCggw1WTWN9X_r
-" ,
-      " category " : " Digital tools" ,
-      " description " : {
-        " de " : " Apple Maps now shows COVID-19 testing sites across the US " ,
-        " en " : " Apple Maps now shows COVID-19 testing sites across the US "
+      "name": "engadget",
+      "link": "https://www.engadget.com/apple-maps-covid-19-testing-sites-all-us-191822069.html?guccounter=1&guce_referrer=aHR0cHM6Ly9tYWlsLmdvb2dsZS5jb20vbWFpbC91LzAv&guce_referrer_sig=AQAAAJ4Tuo0OzU7JzZ1784GeoMJnAAp0_0wmExkmNHWvzLjsK7NTm_OlZmMq2BAh23Zk8JMTcf_HdrFMXzVYhO2jV7II_8XgZjpYbB4MQtPB3FTVRbM-uALASafwDO_Hsu6mvB60zt-PUReVWLlrjBbNvdB6fnW2JHfCggw1WTWN9X_r",
+      "category": "digital_tools",
+      "description": {
+        "de": "Apple Maps zeigt jetzt COVID-19-Teststandorte in den USA an.",
+        "en": "Apple Maps now shows COVID-19 testing sites across the US."
       },
-      " global " : true
+      "global": true
 }, 
 {
-      " name " : "Elsevier " ,
-      " link " : " https://www.elsevier.com/clinical-solutions/coronavirus-research-hub" ,
-      " category " : " Research and Government Sites" ,
-      " description " : {
-        " de " : " The new Elsevier Coronavirus Research Hub currently includes a biomedical database, scientific and clinical content, COVID-19-specific datasets, a biomedically-focused text mining solution and several research collaboration tools, with more tools coming soon. " ,
-        " en " : " The new Elsevier Coronavirus Research Hub currently includes a biomedical database, scientific and clinical content, COVID-19-specific datasets, a biomedically-focused text mining solution and several research collaboration tools, with more tools coming soon. "
+      "name": "Elsevier",
+      "link": " https://www.elsevier.com/clinical-solutions/coronavirus-research-hub",
+      "category": "research_and_government_sites",
+      "description": {
+        "de": "Der neue Elsevier Coronavirus Research Hub umfasst derzeit eine biomedizinische Datenbank, wissenschaftliche und klinische Inhalte, COVID-19-spezifische Datensätze, eine biomedizinisch ausgerichtete Text Mining-Lösung und mehrere Tools für die Forschungszusammenarbeit. Weitere Tools folgen in Kürze.",
+        "en": "The new Elsevier Coronavirus Research Hub currently includes a biomedical database, scientific and clinical content, COVID-19-specific datasets, a biomedically-focused text mining solution and several research collaboration tools, with more tools coming soon."
       },
-      " global " : true
+      "global": true
 }, 
 {
-      " name " : "Civictechhub.org/ " ,
-      " link " : " https://www.civictechhub.org/" ,
-      " category " : " Further Initiatives" ,
-      " description " : {
-        " de " : " CivicTechHub indexes global initiatives like projects resulting from hackathons, social projects and governments responding to the Covid-19 pandemic " ,
-        " en " : " CivicTechHub indexes global initiatives like projects resulting from hackathons, social projects and governments responding to the Covid-19 pandemic "
+      "name": "Civictechhub.org",
+      "link": "https://www.civictechhub.org/",
+      "category": "initiatives",
+      "description": {
+        "de": "CivicTechHub indiziert globale Initiativen wie Projekte, die aus Hackathons, sozialen Projekten und Regierungen resultieren, die auf die Covid-19-Pandemie reagieren.",
+        "en": "CivicTechHub indexes global initiatives like projects resulting from hackathons, social projects and governments responding to the Covid-19 pandemic."
       },
-      " global " : true
+      "global": true
 }, 
   ]
 }
