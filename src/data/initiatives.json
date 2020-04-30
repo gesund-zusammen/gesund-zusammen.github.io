@@ -1037,8 +1037,8 @@
       "link": "https://www.covaidafrica.org/",
       "category": "initiatives",
       "description": {
-        "de": "COVAID Africa, in support of Doctors Without Borders / Médecins Sans Frontières, was founded to combat the spread of COVID-19 through fundraising to provide medical support and resources throughout Africa.",
-        "en": "COVAID Africa, in support of Doctors Without Borders / Médecins Sans Frontières, was founded to combat the spread of COVID-19 through fundraising to provide medical support and resources throughout Africa"
+        "de": "COVAID Africa wurde zur Unterstützung von Ärzten ohne Grenzen / Ärzte ohne Grenzen gegründet, um die Verbreitung von COVID-19 durch Spendenaktionen zu bekämpfen und medizinische Unterstützung und Ressourcen in ganz Afrika bereitzustellen.",
+        "en": "COVAID Africa, in support of Doctors Without Borders / Médecins Sans Frontières, was founded to combat the spread of COVID-19 through fundraising to provide medical support and resources throughout Africa."
       },
       "global": true
     },
@@ -1067,8 +1067,8 @@
       "link": "https://www.macher-hilfe.de/ueber-uns/",
       "category": "initiatives",
       "description": {
-        "de": "Many doers in small and medium-sized companies are struggling to survive economically. In addition to the daily challenges of somehow keeping shops running, there is simply no time. This platform will help companies in the thicket of many state aids and grants and filter out the best options.",
-        "en": "Many doers in small and medium-sized companies are struggling to survive economically. In addition to the daily challenges of somehow keeping shops running, there is simply no time. This platform will help companies in the thicket of many state aids and grants and filter out the best options"
+        "de": "Viele Macher in kleinen und mittleren Unternehmen kämpfen ums wirtschaftliche Überleben. Zusätzlich zu den täglichen Herausforderungen, die Geschäfte irgendwie am Laufen zu halten, bleibt einfach keine Zeit. Diese Plattform wird Unternehmen im Dickicht vieler staatlicher Beihilfen und Zuschüsse helfen und die besten Optionen herausfiltern.",
+        "en": "Many doers in small and medium-sized companies are struggling to survive economically. In addition to the daily challenges of somehow keeping shops running, there is simply no time. This platform will help companies in the thicket of many state aids and grants and filter out the best options."
       },
       "global": false
     },
@@ -1077,7 +1077,7 @@
       "link": "https://foldingathome.org/covid19/",
       "category": "initiatives",
       "description": {
-        "de": "Help running simulations is the primary way to contribute to COVID-19.",
+        "de": "Die Hilfe beim Ausführen von Simulationen ist der wichtigste Weg, um zu COVID-19 beizutragen.",
         "en": "Help running simulations is the primary way to contribute to COVID-19."
       },
       "global": false
@@ -1087,7 +1087,7 @@
       "link": "https://fold.it/portal/node/2008963",
       "category": "initiatives",
       "description": {
-        "de": "Help researchers discover new antiviral drugs that might stop coronavirus! The most promising solutions will be manufactured and tested at the University of Washington Institute for Protein Design in Seattle.",
+        "de": "Helfen Sie Forschern, neue antivirale Medikamente zu entdecken, die das Coronavirus stoppen könnten! Die vielversprechendsten Lösungen werden am Institut für Proteindesign der Universität Washington in Seattle hergestellt und getestet.",
         "en": "Help researchers discover new antiviral drugs that might stop coronavirus! The most promising solutions will be manufactured and tested at the University of Washington Institute for Protein Design in Seattle."
       },
       "global": false
@@ -1382,7 +1382,7 @@
       },
       "global": true
     },
-{
+    {
       "name": "Flourish",
       "link": " https://flourish.studio/covid/",
       "category": "digital_tools",
@@ -1390,9 +1390,9 @@
         "de": "Eine Sammlung regelmäßig aktualisierter reaktionsfähiger einbettbarer Diagramme und Karten zur Coronavirus-Krise.",
         "en": "A collection of regularly updated responsive embeddable charts and maps about the coronavirus crisis."
       },
-      "global" : true
-}, 
-{
+      "global": true
+    },
+    {
       "name": "startupsvscovid ",
       "link": "https://www.startupsvscovid.com/",
       "category": "initiatives",
@@ -1401,8 +1401,8 @@
         "en": "A repository of resources for Indian startups solving challenges created by COVID-19."
       },
       "global": true
-}, 
-{
+    },
+    {
       "name": "engadget",
       "link": "https://www.engadget.com/apple-maps-covid-19-testing-sites-all-us-191822069.html?guccounter=1&guce_referrer=aHR0cHM6Ly9tYWlsLmdvb2dsZS5jb20vbWFpbC91LzAv&guce_referrer_sig=AQAAAJ4Tuo0OzU7JzZ1784GeoMJnAAp0_0wmExkmNHWvzLjsK7NTm_OlZmMq2BAh23Zk8JMTcf_HdrFMXzVYhO2jV7II_8XgZjpYbB4MQtPB3FTVRbM-uALASafwDO_Hsu6mvB60zt-PUReVWLlrjBbNvdB6fnW2JHfCggw1WTWN9X_r",
       "category": "digital_tools",
@@ -1411,8 +1411,8 @@
         "en": "Apple Maps now shows COVID-19 testing sites across the US."
       },
       "global": true
-}, 
-{
+    },
+    {
       "name": "Elsevier",
       "link": " https://www.elsevier.com/clinical-solutions/coronavirus-research-hub",
       "category": "research_and_government_sites",
@@ -1421,8 +1421,8 @@
         "en": "The new Elsevier Coronavirus Research Hub currently includes a biomedical database, scientific and clinical content, COVID-19-specific datasets, a biomedically-focused text mining solution and several research collaboration tools, with more tools coming soon."
       },
       "global": true
-}, 
-{
+    },
+    {
       "name": "Civictechhub.org",
       "link": "https://www.civictechhub.org/",
       "category": "initiatives",
@@ -1431,6 +1431,6 @@
         "en": "CivicTechHub indexes global initiatives like projects resulting from hackathons, social projects and governments responding to the Covid-19 pandemic."
       },
       "global": true
-}, 
+    }
   ]
 }
