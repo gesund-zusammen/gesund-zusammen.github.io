@@ -7,7 +7,9 @@ import { withTranslation, WithTranslation } from "react-i18next";
 import BgFooter from "../../../images/bg_footer.svg";
 
 import SocialIconTwitter from "../../../images/footer_icon_twitter.svg";
-import LogoGithub from "../../../images/logo_github.svg";
+import SocialIconLinkedin from "../../../images/footer_icon_linkedin.svg";
+import LogoGithub from "../../../images/footer_icon_github.svg";
+
 import LogoDE from "../../../images/logo.svg";
 import LogoEN from "../../../images/logo_en.svg";
 
@@ -42,10 +44,25 @@ class Footer extends React.PureComponent<WithTranslation, {}> {
               </Link>
             </Hidden>
             <FooterSocialIcons>
-              <a href="https://twitter.com/gesundzusammen">
+              <a
+                href="https://www.linkedin.com/company/healthytogether/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={SocialIconLinkedin} alt="LinkedIn" />
+              </a>
+              <a
+                href="https://twitter.com/gesundzusammen"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={SocialIconTwitter} alt="Twitter" />
               </a>
-              <a href="https://github.com/gesund-zusammen/gesund-zusammen.github.io">
+              <a
+                href="https://github.com/gesund-zusammen/gesund-zusammen.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={LogoGithub} alt="Github" />
               </a>
             </FooterSocialIcons>
