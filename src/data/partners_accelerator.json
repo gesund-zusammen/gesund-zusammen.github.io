@@ -181,6 +181,12 @@
       "link": "https://www.doctorly.de"
     },
     {
+      "name": "knotel",
+      "slug": "strategic",
+      "image": "knotel.png",
+      "link": "https://www.knotel.com/"
+    },
+    {
       "name": "PAIR Finance",
       "slug": "strategic",
       "image": "pairfinance.png",
