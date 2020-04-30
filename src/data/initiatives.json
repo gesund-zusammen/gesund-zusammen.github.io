@@ -1381,6 +1381,57 @@
         "en": "The Fraunhofer-Gesellschaft has developed an approach of its own for a German proximity tracing app."
       },
       "global": true
-    }
+    },
+{
+      " name " : "Flourish " ,
+      " link " : " https://flourish.studio/covid/" ,
+      " category " : " Digital tools" ,
+      " description " : {
+        " de " : " A collection of regularly updated responsive embeddable charts and maps about the coronavirus crisis. " ,
+        " en " : " A collection of regularly updated responsive embeddable charts and maps about the coronavirus crisis. "
+      },
+      " global " : true
+}, 
+{
+      " name " : "startupsvscovid " ,
+      " link " : " https://www.startupsvscovid.com/" ,
+      " category " : " Further Initiatives" ,
+      " description " : {
+        " de " : " A repository of resources for Indian startups solving challenges created by COVID-19 " ,
+        " en " : " A repository of resources for Indian startups solving challenges created by COVID-19 "
+      },
+      " global " : true
+}, 
+{
+      " name " : "engadget " ,
+      " link " : " https://www.engadget.com/apple-maps-covid-19-testing-sites-all-us-191822069.html?guccounter=1&guce_referrer=aHR0cHM6Ly9tYWlsLmdvb2dsZS5jb20vbWFpbC91LzAv&guce_referrer_sig=AQAAAJ4Tuo0OzU7JzZ1784GeoMJnAAp0_0wmExkmNHWvzLjsK7NTm_OlZmMq2BAh23Zk8JMTcf_HdrFMXzVYhO2jV7II_8XgZjpYbB4MQtPB3FTVRbM-uALASafwDO_Hsu6mvB60zt-PUReVWLlrjBbNvdB6fnW2JHfCggw1WTWN9X_r
+" ,
+      " category " : " Digital tools" ,
+      " description " : {
+        " de " : " Apple Maps now shows COVID-19 testing sites across the US " ,
+        " en " : " Apple Maps now shows COVID-19 testing sites across the US "
+      },
+      " global " : true
+}, 
+{
+      " name " : "Elsevier " ,
+      " link " : " https://www.elsevier.com/clinical-solutions/coronavirus-research-hub" ,
+      " category " : " Research and Government Sites" ,
+      " description " : {
+        " de " : " The new Elsevier Coronavirus Research Hub currently includes a biomedical database, scientific and clinical content, COVID-19-specific datasets, a biomedically-focused text mining solution and several research collaboration tools, with more tools coming soon. " ,
+        " en " : " The new Elsevier Coronavirus Research Hub currently includes a biomedical database, scientific and clinical content, COVID-19-specific datasets, a biomedically-focused text mining solution and several research collaboration tools, with more tools coming soon. "
+      },
+      " global " : true
+}, 
+{
+      " name " : "Civictechhub.org/ " ,
+      " link " : " https://www.civictechhub.org/" ,
+      " category " : " Further Initiatives" ,
+      " description " : {
+        " de " : " CivicTechHub indexes global initiatives like projects resulting from hackathons, social projects and governments responding to the Covid-19 pandemic " ,
+        " en " : " CivicTechHub indexes global initiatives like projects resulting from hackathons, social projects and governments responding to the Covid-19 pandemic "
+      },
+      " global " : true
+}, 
   ]
 }
