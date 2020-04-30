@@ -170,6 +170,12 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
                 {"PDF: " + this.props.t("press.releaseTitle")}
               </Link>
             </Typography>
+            <br />
+            <Typography variant="body2">
+              <Link href="/FuturePerfect_Press_Release_28.4.2020.pdf">
+                {"PDF: " + this.props.t("press.releaseTitleFuturePerfect")}
+              </Link>
+            </Typography>
             <Link href="/pr_en.png">
               <StyledPressReleaseImage src={ReleaseEnLogo} />
             </Link>
