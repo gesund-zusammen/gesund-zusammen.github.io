@@ -19,7 +19,7 @@ class InitiativePageHeader extends React.PureComponent<
         <Box paddingBottom={4} marginTop={4}>
           <HeaderNav />
         </Box>
-        <Box paddingBottom={4} marginTop={4}>
+        <Box paddingBottom={4}>
           <Grid container spacing={4}>
             <Grid item xs={12} sm={5}>
               <HeaderTitle>
