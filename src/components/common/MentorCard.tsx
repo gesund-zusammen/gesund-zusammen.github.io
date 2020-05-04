@@ -71,6 +71,7 @@ const MentorImage: AnyStyledComponent = styled.div`
   width: 100%;
   border-radius: 4px;
   background-size: cover;
+  background-position: center center;
   margin: 0 0 1rem 0;
 
   &:after {
