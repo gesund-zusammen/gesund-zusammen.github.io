@@ -198,6 +198,7 @@ const HeaderNavItems: AnyStyledComponent = styled.ul`
 
   @media (min-width: 600px) {
     width: auto;
+    height: 2.5rem;
     padding: 0;
 
     &.retracted {
@@ -207,12 +208,12 @@ const HeaderNavItems: AnyStyledComponent = styled.ul`
 `;
 
 const HeaderNavItem: AnyStyledComponent = styled.li`
+  position: relative;
   float: left;
   width: 100%;
 
   @media (min-width: 600px) {
     padding: 0 1rem;
-    height: 2.5rem;
     width: auto;
 
     &:last-of-type {
@@ -240,6 +241,7 @@ const HeaderNavItem: AnyStyledComponent = styled.li`
 `;
 
 const HeaderSubnavItems: AnyStyledComponent = styled.ul`
+  position: relative;
   display: block;
   list-style: none;
   margin: 0;
