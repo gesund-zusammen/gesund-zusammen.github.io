@@ -165,10 +165,11 @@ const HeaderNavItemsBox: AnyStyledComponent = styled(Box)`
 const HeaderLogo: AnyStyledComponent = styled.img`
   display: block;
   float: left;
-  margin: 0;
+  margin: 5px 0 0 0;
   width: 160px;
 
   @media (min-width: 600px) {
+    margin: 0;
     width: 260px;
   }
 `;
@@ -191,18 +192,23 @@ const HeaderNavItems: AnyStyledComponent = styled.ul`
   list-style: none;
   margin: 0;
   padding: 1.5rem 0 0 0;
+  max-height: 800px;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
 
   &.retracted {
-    display: none;
+    max-height: 0px;
   }
 
   @media (min-width: 600px) {
     width: auto;
     height: 2.5rem;
     padding: 0;
+    overflow: visible;
+    margin-top: 5px;
 
     &.retracted {
-      display: inline-block;
+      max-height: 2.5rem;
     }
   }
 `;
