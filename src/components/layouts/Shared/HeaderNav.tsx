@@ -244,18 +244,21 @@ const HeaderSubnavItems: AnyStyledComponent = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0.5rem 0;
+  text-align: left;
 
   @media (min-width: 600px) {
     padding: 0;
+    text-align: center;
   }
 `;
 
 const HeaderSubnavItem: AnyStyledComponent = styled.li`
   @media (min-width: 600px) {
-    float: right;
+    display: inline-block;
     border: 1px solid #ffffff;
     border-radius: 2px;
-    margin: 10px 10px 0 0;
+    margin: 10px 0 0 0;
+    cursor: pointer;
   }
 `;
 
