@@ -20,8 +20,6 @@ const HeaderBox: AnyStyledComponent = styled(Box)`
 
 const MainContentContainer: AnyStyledComponent = styled(Container)`
   overflow: hidden;
-  overflow-wrap: break-word;
-  hyphens: auto;
 `;
 
 export { HeaderBox, MainContentContainer };
