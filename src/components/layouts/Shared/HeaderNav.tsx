@@ -1,5 +1,7 @@
 import React from "react";
-import { Box, MenuItem, Select } from "@material-ui/core";
+import { Box, MenuItem, Select, Hidden } from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
+import CloseIcon from "@material-ui/icons/Close";
 import styled, { css, AnyStyledComponent } from "styled-components";
 import { withRouter, RouteComponentProps } from "react-router";
 import { Link, NavLink } from "react-router-dom";
@@ -10,7 +12,24 @@ import LogoEN from "../../../images/logo_en.svg";
 
 interface IHeaderNavProps extends RouteComponentProps, WithTranslation {}
 
-class HeaderNav extends React.Component<IHeaderNavProps, {}> {
+interface IHeaderNavState {
+  navExpanded: boolean;
+}
+
+const DEFAULT_STATE: IHeaderNavState = {
+  navExpanded: false,
+};
+
+class HeaderNav extends React.Component<IHeaderNavProps, IHeaderNavState> {
+  constructor(props: IHeaderNavProps) {
+    super(props);
+    this.state = DEFAULT_STATE;
+  }
+
+  toggleNav = () => {
+    this.setState({ navExpanded: !this.state.navExpanded });
+  };
+
   handleLangChange = (selected: any) => {
     const newLang = selected.target.value as string;
     this.props.i18n.changeLanguage(newLang, () => {
@@ -22,8 +41,8 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
 
   render = () => {
     return (
-      <Box display="flex">
-        <Box flexShrink={0} flexGrow={0}>
+      <HeaderNavRoot>
+        <HeaderNavLogoBox>
           <Link to={`/${this.props.i18n.language}/`}>
             <HeaderLogo
               src={this.props.i18n.language === "de" ? LogoDE : LogoEN}
@@ -34,9 +53,18 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
               }
             />
           </Link>
-        </Box>
-        <Box flexShrink={0} flexGrow={1} style={{ textAlign: "right" }}>
-          <HeaderNavItems>
+          <Hidden smUp>
+            {this.state.navExpanded ? (
+              <HeaderCloseIcon onClick={this.toggleNav} />
+            ) : (
+              <HeaderMenuIcon onClick={this.toggleNav} />
+            )}
+          </Hidden>
+        </HeaderNavLogoBox>
+        <HeaderNavItemsBox>
+          <HeaderNavItems
+            className={this.state.navExpanded ? "expanded" : "retracted"}
+          >
             <HeaderNavItem>
               <HeaderNavLinkItem
                 to={`/${this.props.i18n.language}/initiative`}
@@ -95,50 +123,118 @@ class HeaderNav extends React.Component<IHeaderNavProps, {}> {
               </LangSelect>
             </HeaderNavItem>
           </HeaderNavItems>
-        </Box>
-      </Box>
+        </HeaderNavItemsBox>
+      </HeaderNavRoot>
     );
   };
 }
 
+const HeaderNavRoot: AnyStyledComponent = styled(Box)`
+  && {
+    display: flex;
+    flex-wrap: wrap;
+  }
+`;
+
+const HeaderNavLogoBox: AnyStyledComponent = styled(Box)`
+  && {
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 2;
+
+    @media (min-width: 600px) {
+      flex-basis: auto;
+    }
+  }
+`;
+
+const HeaderNavItemsBox: AnyStyledComponent = styled(Box)`
+  && {
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: left;
+
+    @media (min-width: 600px) {
+      flex-basis: auto;
+      text-align: right;
+    }
+  }
+`;
+
 const HeaderLogo: AnyStyledComponent = styled.img`
   display: block;
-  margin: 0 auto;
+  float: left;
+  margin: 0;
+  width: 160px;
 
   @media (min-width: 600px) {
-    margin: 0;
-    float: left;
+    width: 260px;
+  }
+`;
+
+const HeaderMenuIcon: AnyStyledComponent = styled(MenuIcon)`
+  && {
+    float: right;
+  }
+`;
+
+const HeaderCloseIcon: AnyStyledComponent = styled(CloseIcon)`
+  && {
+    float: right;
   }
 `;
 
 const HeaderNavItems: AnyStyledComponent = styled.ul`
   display: inline-block;
+  width: 100%;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 1.5rem 0 0 0;
+
+  &.retracted {
+    display: none;
+  }
+
+  @media (min-width: 600px) {
+    width: auto;
+    padding: 0;
+
+    &.retracted {
+      display: inline-block;
+    }
+  }
 `;
 
 const HeaderNavItem: AnyStyledComponent = styled.li`
   float: left;
-  height: 2.5rem;
-  padding: 0 1rem;
-  border-bottom: 1px solid #ffffff;
+  width: 100%;
 
-  &.no-border {
-    border-bottom: none;
-  }
+  @media (min-width: 600px) {
+    padding: 0 1rem;
+    height: 2.5rem;
+    width: auto;
 
-  & > .subnav-items {
-    transition: opacity 0.3s ease-in-out;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-  }
+    &:last-of-type {
+      padding: 0 0 0 1rem;
+    }
 
-  &:hover {
+    &.no-border {
+      border-bottom: none;
+    }
+
     & > .subnav-items {
-      opacity: 1;
-      height: auto;
+      transition: opacity 0.3s ease-in-out;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    &:hover {
+      & > .subnav-items {
+        opacity: 1;
+        height: auto;
+      }
     }
   }
 `;
@@ -147,28 +243,39 @@ const HeaderSubnavItems: AnyStyledComponent = styled.ul`
   display: block;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0.5rem 0;
+
+  @media (min-width: 600px) {
+    padding: 0;
+  }
 `;
 
 const HeaderSubnavItem: AnyStyledComponent = styled.li`
-  float: right;
-  border: 1px solid #ffffff;
-  border-radius: 2px;
-  margin: 10px 10px 0 0;
+  @media (min-width: 600px) {
+    float: right;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    margin: 10px 10px 0 0;
+  }
 `;
 
 const HeaderNavItemStyles = css`
   display: inline-block;
+  width: 100%;
   font-family: inherit;
   color: #ffffff;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600;
-  line-height: 2.5rem;
-  padding: 0 1rem;
 
-  &.active {
-    border-bottom: 2px solid #ffffff;
+  @media (min-width: 600px) {
+    padding: 0 1rem;
+    line-height: 2.5rem;
+    width: auto;
+
+    &.active {
+      border-bottom: 2px solid #ffffff;
+    }
   }
 `;
 
@@ -187,14 +294,30 @@ const HeaderNavLinkSubitem: AnyStyledComponent = styled(NavLink)`
 
 const LangSelect: AnyStyledComponent = styled(Select)`
   && {
+    float: right;
+    width: 100%;
     font-size: 1rem;
-    margin-top: 0.3rem;
-    margin-bottom: 0;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
     & > svg {
       color: #003269;
-      top: 2px;
-      right: -4px;
+      top: 8px;
+      right: 0px;
+    }
+
+    @media (min-width: 600px) {
+      width: auto;
+      border: none;
+      margin: 0.3rem 0 0 0;
+      padding: 0;
+
+      & > svg {
+        top: 0px;
+        right: -5px;
+      }
     }
   }
 `;
