@@ -35,12 +35,14 @@
     {
       "name": "finleap",
       "slug": "founders",
-      "image": "finleap.png"
+      "image": "finleap.png",
+      "link": "https://www.finleap.com"
     },
     {
       "name": "Wefox Group",
       "slug": "founders",
-      "image": "wefoxgroup.png"
+      "image": "wefoxgroup.png",
+      "link": "https://www.wefoxgroup.com"
     },
     {
       "name": "TOA",
@@ -181,7 +183,7 @@
       "link": "https://www.doctorly.de"
     },
     {
-      "name": "knotel",
+      "name": "Knotel",
       "slug": "strategic",
       "image": "knotel.png",
       "link": "https://www.knotel.com/"
