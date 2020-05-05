@@ -310,7 +310,7 @@ const PressReleaseCardContent: AnyStyledComponent = styled(CardContent)`
 const PressReleaseIconWrapper: AnyStyledComponent = styled.div`
   margin-right: 10px;
   margin-top: -4px;
-  display: inline;
+  display: block;
   float: left;
 `;
 
