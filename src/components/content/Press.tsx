@@ -1,18 +1,27 @@
 import React from "react";
-import { Box, Button, Typography, Avatar, Grid, Link } from "@material-ui/core";
-import { GetApp } from "@material-ui/icons";
+import {
+  Box,
+  Button,
+  Card,
+  CardContent,
+  Typography,
+  Avatar,
+  Grid,
+  Link,
+} from "@material-ui/core";
+import { GetApp, PictureAsPdf, Link as LinkIcon } from "@material-ui/icons";
 import styled, { AnyStyledComponent } from "styled-components";
 import { withTranslation, WithTranslation } from "react-i18next";
 
 import CTABox from "../common/CTABox";
 import NewsCard from "../common/NewsCard";
+import OptionalLinkWrapper from "../common/OptionalLinkWrapper";
 
 import PhotoSolveigRatenow from "../../images/solveig_rathenow.png";
 import PhotoKerstinBock from "../../images/kerstin_bock.png";
 import PressKitLogo from "../../images/presskit_logo.svg";
 
-import ReleaseEnLogo from "../../../public/pr_en.png";
-import ReleaseDeLogo from "../../../public/pr_de.png";
+import IconArrowRight from "../../images/icon_arrow_right.svg";
 
 import NewsData from "../../data/latestnews.json";
 
@@ -127,20 +136,27 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
             paddingBottom={4}
             paddingTop={4}
             marginTop={4}
-            style={{ borderTop: "1px solid #CED7DB" }}
+            style={{
+              borderTop: "1px solid #CED7DB",
+              borderBottom: "1px solid #CED7DB",
+            }}
           >
             <Typography variant="h2">
               {this.props.t("press.resources")}
             </Typography>
+
             <Typography variant="body2" color="primary">
               {this.props.t("press.resourcesLine1")}
             </Typography>
+
             <Link href="/PressKit.zip">
               <StyledPressKitImage src={PressKitLogo} />
             </Link>
+
             <Typography variant="body2" color="primary">
               {this.props.t("press.resourcesLine2")}
             </Typography>
+
             <StyledDownloadLink href="/PressKit.zip">
               <Typography variant="body2" color="primary">
                 <StyledDownloadButton color="primary" fontSize="small" />
@@ -148,42 +164,53 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
               </Typography>
             </StyledDownloadLink>
           </Box>
-          <Box
-            paddingBottom={4}
-            paddingTop={4}
-            marginTop={4}
-            style={{ borderTop: "1px solid #CED7DB" }}
-          >
+
+          <Box paddingBottom={4} paddingTop={4} marginTop={4}>
             <Typography variant="h2">
               {this.props.t("press.release")}
             </Typography>
-            <Typography variant="body1" color="primary">
-              {this.props.t("press.releaseLine1")}
-            </Typography>
-            <Typography variant="body2">
-              <Link href={this.props.t("press.releaseHrefURL")}>
-                {"Link: " + this.props.t("press.releaseTitle")}
-              </Link>
-            </Typography>
-            <Typography variant="body2">
-              <Link href={this.props.t("press.releaseHrefPDF")}>
-                {"PDF: " + this.props.t("press.releaseTitle")}
-              </Link>
-            </Typography>
-            <br />
-            <Typography variant="body2">
-              <Link href="/FuturePerfect_Press_Release_28.4.2020.pdf">
-                {"PDF: " + this.props.t("press.releaseTitleFuturePerfect")}
-              </Link>
-            </Typography>
-            <Link href="/pr_en.png">
-              <StyledPressReleaseImage src={ReleaseEnLogo} />
-            </Link>
-            <Link href="/pr_de.png">
-              <StyledPressReleaseImage src={ReleaseDeLogo} />
-            </Link>
+
+            <OptionalLinkWrapper link={this.props.t("press.releaseHrefURL")}>
+              <PressReleaseCardRoot>
+                <PressReleaseCardContent>
+                  <Typography variant="h6">
+                    <PressReleaseIconWrapper>
+                      <LinkIcon />
+                    </PressReleaseIconWrapper>
+                    {this.props.t("press.releaseTitle")}
+                  </Typography>
+                </PressReleaseCardContent>
+              </PressReleaseCardRoot>
+            </OptionalLinkWrapper>
+
+            <OptionalLinkWrapper link={this.props.t("press.releaseHrefPDF")}>
+              <PressReleaseCardRoot>
+                <PressReleaseCardContent>
+                  <Typography variant="h6">
+                    <PressReleaseIconWrapper>
+                      <PictureAsPdf />
+                    </PressReleaseIconWrapper>
+                    {this.props.t("press.releaseTitle")}
+                  </Typography>
+                </PressReleaseCardContent>
+              </PressReleaseCardRoot>
+            </OptionalLinkWrapper>
+
+            <OptionalLinkWrapper link="/FuturePerfect_Press_Release_28.4.2020.pdf">
+              <PressReleaseCardRoot>
+                <PressReleaseCardContent>
+                  <Typography variant="h6">
+                    <PressReleaseIconWrapper>
+                      <PictureAsPdf />
+                    </PressReleaseIconWrapper>
+                    {this.props.t("press.releaseTitleFuturePerfect")}
+                  </Typography>
+                </PressReleaseCardContent>
+              </PressReleaseCardRoot>
+            </OptionalLinkWrapper>
           </Box>
         </PressContactWrapper>
+
         <Box paddingBottom={4} marginTop={4}>
           <CTABox
             claim={this.props.t("press.claim")}
@@ -246,15 +273,45 @@ const StyledDownloadButton: AnyStyledComponent = styled(GetApp)`
   }
 `;
 
-const StyledPressReleaseImage: AnyStyledComponent = styled.img`
-  margin: 2rem 2rem 2rem 0;
-  max-width: 368px;
-  border: 1px solid #00aac8;
-`;
-
 const StyledPressKitImage: AnyStyledComponent = styled.img`
   margin: 2rem 0;
   max-width: 100%;
+`;
+
+const PressReleaseCardRoot: AnyStyledComponent = styled(Card)`
+  && {
+    border-radius: 15px;
+    box-shadow: 0px 2px 24px #e3e6eb;
+    margin-bottom: 2rem;
+    padding: 0.8rem;
+
+    @media (min-width: 600px) {
+      padding: 1rem 4rem 1rem 1rem;
+
+      &:hover {
+        background-image: url(${IconArrowRight});
+        background-position: right 2rem center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+`;
+
+const PressReleaseCardContent: AnyStyledComponent = styled(CardContent)`
+  && {
+    max-width: 680px;
+
+    &:last-child {
+      padding-bottom: 16px;
+    }
+  }
+`;
+
+const PressReleaseIconWrapper: AnyStyledComponent = styled.div`
+  margin-right: 10px;
+  margin-top: -4px;
+  display: inline;
+  float: left;
 `;
 
 export default withTranslation()(PressContact);
