@@ -61,10 +61,10 @@ class HeaderNav extends React.Component<IHeaderNavProps, IHeaderNavState> {
             )}
           </Hidden>
         </HeaderNavLogoBox>
-        <HeaderNavItemsBox>
-          <HeaderNavItems
-            className={this.state.navExpanded ? "expanded" : "retracted"}
-          >
+        <HeaderNavItemsBox
+          className={this.state.navExpanded ? "expanded" : "retracted"}
+        >
+          <HeaderNavItems className={"underline"}>
             <HeaderNavItem>
               <HeaderNavLinkItem
                 to={`/${this.props.i18n.language}/initiative`}
@@ -108,7 +108,9 @@ class HeaderNav extends React.Component<IHeaderNavProps, IHeaderNavState> {
                 {this.props.t("header.nav.faqs")}
               </HeaderNavLinkItem>
             </HeaderNavItem>
-            <HeaderNavItem className="no-border">
+          </HeaderNavItems>
+          <HeaderNavItems>
+            <HeaderNavItem>
               <LangSelect
                 value={this.props.i18n.language}
                 onChange={this.handleLangChange}
@@ -154,10 +156,22 @@ const HeaderNavItemsBox: AnyStyledComponent = styled(Box)`
     flex-grow: 1;
     flex-shrink: 1;
     text-align: left;
+    max-height: 800px;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+
+    &.retracted {
+      max-height: 0px;
+    }
 
     @media (min-width: 600px) {
       flex-basis: auto;
       text-align: right;
+      overflow: visible;
+
+      &.retracted {
+        max-height: 2.5rem;
+      }
     }
   }
 `;
@@ -191,24 +205,25 @@ const HeaderNavItems: AnyStyledComponent = styled.ul`
   width: 100%;
   list-style: none;
   margin: 0;
-  padding: 1.5rem 0 0 0;
-  max-height: 800px;
-  transition: max-height 0.3s ease-in-out;
+  padding: 0;
   overflow: hidden;
 
-  &.retracted {
-    max-height: 0px;
+  &:first-of-type {
+    padding: 1.5rem 0 0 0;
   }
 
   @media (min-width: 600px) {
     width: auto;
     height: 2.5rem;
-    padding: 0;
     overflow: visible;
     margin-top: 5px;
 
-    &.retracted {
-      max-height: 2.5rem;
+    &:first-of-type {
+      padding: 0;
+    }
+
+    &.underline {
+      border-bottom: 1px solid #ffffff;
     }
   }
 `;
@@ -224,10 +239,6 @@ const HeaderNavItem: AnyStyledComponent = styled.li`
 
     &:last-of-type {
       padding: 0 0 0 1rem;
-    }
-
-    &.no-border {
-      border-bottom: none;
     }
 
     & > .subnav-items {
