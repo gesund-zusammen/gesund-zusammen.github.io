@@ -2,7 +2,7 @@ import React from "react";
 import { Box, MenuItem, Select, Hidden } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
-import styled, { css, AnyStyledComponent } from "styled-components";
+import styled, { AnyStyledComponent } from "styled-components";
 import { withRouter, RouteComponentProps } from "react-router";
 import { Link, NavLink } from "react-router-dom";
 import { withTranslation, WithTranslation } from "react-i18next";
@@ -249,6 +249,10 @@ const HeaderNavItem: AnyStyledComponent = styled.li`
     }
 
     &:hover {
+      & > a {
+        border-bottom: 2px solid #ffffff;
+      }
+
       & > .subnav-items {
         opacity: 1;
         height: auto;
@@ -281,7 +285,7 @@ const HeaderSubnavItem: AnyStyledComponent = styled.li`
   }
 `;
 
-const HeaderNavItemStyles = css`
+const HeaderNavLinkItem: AnyStyledComponent = styled(NavLink)`
   display: inline-block;
   width: 100%;
   font-family: inherit;
@@ -299,10 +303,6 @@ const HeaderNavItemStyles = css`
       border-bottom: 2px solid #ffffff;
     }
   }
-`;
-
-const HeaderNavLinkItem: AnyStyledComponent = styled(NavLink)`
-  ${HeaderNavItemStyles}
 `;
 
 const HeaderNavLinkSubitem: AnyStyledComponent = styled(NavLink)`
