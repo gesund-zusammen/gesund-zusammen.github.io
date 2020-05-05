@@ -170,6 +170,19 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
               {this.props.t("press.release")}
             </Typography>
 
+            <OptionalLinkWrapper link="/FuturePerfect_Press_Release_28.4.2020.pdf">
+              <PressReleaseCardRoot>
+                <PressReleaseCardContent>
+                  <Typography variant="h6">
+                    <PressReleaseIconWrapper>
+                      <PictureAsPdf />
+                    </PressReleaseIconWrapper>
+                    {this.props.t("press.releaseTitleFuturePerfect")}
+                  </Typography>
+                </PressReleaseCardContent>
+              </PressReleaseCardRoot>
+            </OptionalLinkWrapper>
+
             <OptionalLinkWrapper link={this.props.t("press.releaseHrefURL")}>
               <PressReleaseCardRoot>
                 <PressReleaseCardContent>
@@ -191,19 +204,6 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
                       <PictureAsPdf />
                     </PressReleaseIconWrapper>
                     {this.props.t("press.releaseTitle")}
-                  </Typography>
-                </PressReleaseCardContent>
-              </PressReleaseCardRoot>
-            </OptionalLinkWrapper>
-
-            <OptionalLinkWrapper link="/FuturePerfect_Press_Release_28.4.2020.pdf">
-              <PressReleaseCardRoot>
-                <PressReleaseCardContent>
-                  <Typography variant="h6">
-                    <PressReleaseIconWrapper>
-                      <PictureAsPdf />
-                    </PressReleaseIconWrapper>
-                    {this.props.t("press.releaseTitleFuturePerfect")}
                   </Typography>
                 </PressReleaseCardContent>
               </PressReleaseCardRoot>
