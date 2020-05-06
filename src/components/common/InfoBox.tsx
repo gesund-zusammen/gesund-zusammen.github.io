@@ -36,9 +36,9 @@ const StyledTitle: AnyStyledComponent = styled(Typography)`
 
 const StyledCard: AnyStyledComponent = styled(Card)`
   && {
-    border-radius: 15px;
     height: 100%;
-    box-shadow: 0px 2px 24px #e3e6eb;
+    border-radius: 0px 0px 70px 0px;
+    box-shadow: 30px 30px 50px rgba(26, 11, 61, 0.25);
   }
 `;
 

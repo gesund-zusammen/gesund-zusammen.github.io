@@ -135,6 +135,7 @@ const EmailField: AnyStyledComponent = styled(TextField)`
     & > div {
       margin-bottom: 0;
       background-color: #ffffff;
+      border-radius: 0;
     }
   }
 `;
@@ -149,7 +150,8 @@ const SubscribeButton: AnyStyledComponent = styled(Button)`
     font-weight: 600;
     text-transform: none;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 0px 0px 30px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 0 auto;
 
     @media (min-width: 600px) {

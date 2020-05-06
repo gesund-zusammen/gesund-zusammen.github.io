@@ -110,7 +110,7 @@ class HeaderNav extends React.Component<IHeaderNavProps, IHeaderNavState> {
             </HeaderNavItem>
           </HeaderNavItems>
           <HeaderNavItems>
-            <HeaderNavItem>
+            <HeaderNavItem className="lang-selector">
               <LangSelect
                 value={this.props.i18n.language}
                 onChange={this.handleLangChange}
@@ -235,9 +235,10 @@ const HeaderNavItem: AnyStyledComponent = styled.li`
 
   @media (min-width: 600px) {
     padding: 0 1rem;
+    margin: -2px 0 0 0;
     width: auto;
 
-    &:last-of-type {
+    &.lang-selector {
       padding: 0 0 0 1rem;
     }
 
@@ -250,7 +251,7 @@ const HeaderNavItem: AnyStyledComponent = styled.li`
 
     &:hover {
       & > a {
-        border-bottom: 2px solid #ffffff;
+        border-bottom: 3px solid #ffffff;
       }
 
       & > .subnav-items {
@@ -279,7 +280,7 @@ const HeaderSubnavItem: AnyStyledComponent = styled.li`
   @media (min-width: 600px) {
     display: inline-block;
     border: 1px solid #ffffff;
-    border-radius: 2px;
+    border-radius: 0px 0px 25px 0px;
     margin: 10px 0 0 0;
     cursor: pointer;
   }
@@ -300,7 +301,7 @@ const HeaderNavLinkItem: AnyStyledComponent = styled(NavLink)`
     width: auto;
 
     &.active {
-      border-bottom: 2px solid #ffffff;
+      border-bottom: 3px solid #ffffff;
     }
   }
 `;

@@ -102,7 +102,9 @@ const LinkButton: AnyStyledComponent = styled(Button)`
     font-weight: 500;
     text-transform: none;
     text-align: center;
-    border-radius: 4px;
+    background: #0a6eaa;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
     padding: 0.6rem 2rem;
     margin: 1rem auto;
   }

@@ -97,7 +97,6 @@ const CopyBox: AnyStyledComponent = styled.div`
   padding: 1rem;
   font-size: 1rem;
   border: 1px solid #ced7db;
-  border-radius: 4px;
   color: #3c3c3c;
   background: #ffffff;
 `;
