@@ -20,19 +20,16 @@ class CTABox extends React.PureComponent<ICTABoxProps, {}> {
           spacing={0}
         >
           <Grid item xs={12} sm={7}>
-            <StyledClaim variant="h4" color="primary">
-              {this.props.claim}
-            </StyledClaim>
+            <StyledClaim variant="h4">{this.props.claim}</StyledClaim>
           </Grid>
           <Grid item xs={12} sm={5}>
-            <PartnerButton
-              color="primary"
+            <CtaBoxButton
               variant="contained"
               disableFocusRipple={true}
               href={this.props.href}
             >
               {this.props.cta}
-            </PartnerButton>
+            </CtaBoxButton>
           </Grid>
         </Grid>
       </StyledPaper>
@@ -43,8 +40,10 @@ class CTABox extends React.PureComponent<ICTABoxProps, {}> {
 const StyledPaper: AnyStyledComponent = styled(Paper)`
   && {
     padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0px 2px 24px #e3e6eb;
+    background: #003269;
+    color: #ffffff;
+    border-radius: 0px 0px 70px 0px;
+    box-shadow: 30px 30px 50px rgba(26, 11, 61, 0.25);
   }
 `;
 
@@ -59,7 +58,7 @@ const StyledClaim: AnyStyledComponent = styled(Typography)`
   }
 `;
 
-const PartnerButton: AnyStyledComponent = styled(Button)`
+const CtaBoxButton: AnyStyledComponent = styled(Button)`
   && {
     display: block;
     width: 100%;
@@ -70,6 +69,10 @@ const PartnerButton: AnyStyledComponent = styled(Button)`
     border-radius: 4px;
     padding: 0.8rem;
     margin: 2rem auto 0 auto;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    font-weight: 600;
 
     @media (min-width: 600px) {
       margin: 0;

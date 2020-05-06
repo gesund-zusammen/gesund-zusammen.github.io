@@ -19,7 +19,7 @@ const HeaderBox: AnyStyledComponent = styled(Box)`
 `;
 
 const MainContentContainer: AnyStyledComponent = styled(Container)`
-  overflow: hidden;
+  overflow: visible;
 `;
 
 export { HeaderBox, MainContentContainer };
