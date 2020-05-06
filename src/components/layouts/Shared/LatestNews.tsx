@@ -3,7 +3,7 @@ import { Box, Button, Container, Grid, Typography } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 import { withTranslation, WithTranslation } from "react-i18next";
 
-import ArrowIcon from "../../../images/icon_arrow_right_dark.svg";
+import ArrowIcon from "../../../images/icon_arrow_right_dark_with_circle.svg";
 import NewsData from "../../../data/latestnews.json";
 
 interface INewsItem {
@@ -79,7 +79,7 @@ const NewsItem: AnyStyledComponent = styled.a`
   display: block;
   padding: 1rem 4rem 1rem 0;
   background-image: url(${ArrowIcon});
-  background-size: 24px 24px;
+  background-size: 48px 48px;
   background-position: right center;
   background-repeat: no-repeat;
   border-bottom: 1px solid #0a6eaa;
