@@ -1431,6 +1431,66 @@
         "en": "CivicTechHub indexes global initiatives like projects resulting from hackathons, social projects and governments responding to the Covid-19 pandemic."
       },
       "global": true
-    }
+    },
+{
+      "name":"Automotive Logistics",
+      "link":"https://www.automotivelogistics.media/coronavirus/register-livestream-hour-episode-4-tier-suppliers-on-the-road-to-recovery/40522.article",
+      "category":"Further Initiatives",
+      "description":{
+        "de":"The Livestream Hour will discuss the key areas that suppliers especially need to consider as the automotive industry stirs back into action, including supply chain and logistics processes, sourcing considerations, digital tools and collaboration",
+        "en":"The Livestream Hour will discuss the key areas that suppliers especially need to consider as the automotive industry stirs back into action, including supply chain and logistics processes, sourcing considerations, digital tools and collaboration"
+      },
+      "global": true
+    },
+{
+      "name":"Cities Today",
+      "link":"https://cities-today.com/espoo-trials-multilingual-smartbot-for-coronavirus-advice/",
+      "category":"Digital tools",
+      "description":{
+        "de":"The City of Espoo in Finland is trialling a ‘smartbot’ to provide information for citizens about Corona virus (COVID-19), which can answer questions in 100 languages and serve 100,000 users simultaneously.",
+        "en":"The City of Espoo in Finland is trialling a ‘smartbot’ to provide information for citizens about Corona virus (COVID-19), which can answer questions in 100 languages and serve 100,000 users simultaneously."
+      },
+      "global": true
+    },
+{
+      "name":"https://www.securepassdx.com/",
+      "link":"https://www.securepassdx.com/",
+      "category":"digital_tools",
+      "description":{
+        "de":"SecurePassDX is an online medical grade screening tool that effectively surveys patients and healthcare communities to identify possible COVID-19 risks, alert surrounding care facilities and help practitioners direct high-risk patients to the appropriate testing or care site.  Using SecurePassDX, care practitioners can greatly reduce the threat of transmission at their facilities and gain valuable insights into the spread of COVID-19 in their community and patient populations.",
+        "en":"SecurePassDX is an online medical grade screening tool that effectively surveys patients and healthcare communities to identify possible COVID-19 risks, alert surrounding care facilities and help practitioners direct high-risk patients to the appropriate testing or care site.  Using SecurePassDX, care practitioners can greatly reduce the threat of transmission at their facilities and gain valuable insights into the spread of COVID-19 in their community and patient populations."
+      },
+      "global": true
+},
+{
+      "name":"Voca.ai",
+      "link":"https://voca.ai/help-us-fight-covid-19-coronavirus/",
+      "category":"digital_tools",
+      "description":{
+        "de":"In partnership with Carnegie Mellon University, Voca.ai has created the project Corona Voice Detect, created for early diagnosis of COVID-19. It combines recently developed AI and voice forensic technologies, finding specific patterns in voice, tone and other sounds that we produce as we speak, that relate to unique illnesses and other human factors.",
+        "en":"In partnership with Carnegie Mellon University, Voca.ai has created the project Corona Voice Detect, created for early diagnosis of COVID-19. It combines recently developed AI and voice forensic technologies, finding specific patterns in voice, tone and other sounds that we produce as we speak, that relate to unique illnesses and other human factors."
+      },
+      "global": true
+},
+{
+      "name":"Northwester University",
+      "link":"https://news.northwestern.edu/stories/2020/04/monitoring-covid-19-from-hospital-to-home-first-wearable-device-continuously-tracks-key-symptoms/",
+      "category":"initiatives",
+      "description":{
+        "de":"Researchers at Northwestern University and Shirley Ryan AbilityLab in Chicago have developed a novel wearable device and are creating a set of data algorithms specifically tailored to catch early signs and symptoms associated with COVID-19 and to monitor patients as the illness progresses",
+        "en":"Researchers at Northwestern University and Shirley Ryan AbilityLab in Chicago have developed a novel wearable device and are creating a set of data algorithms specifically tailored to catch early signs and symptoms associated with COVID-19 and to monitor patients as the illness progresses"
+      },
+      "global": true
+},
+{
+      "name":"Taxy.io",
+      "link":"https://www.taxy.io/corona-hilfe-fuer-unternehmen",
+      "category":"initiatives",
+      "description":{
+        "de":"Taxy.io develops saftware tax solutions, and is offering a free tool for both individuals and companies to find legal, tax and financial solutions that will going through the coronavirus crisis",
+        "en":"Taxy.io develops saftware tax solutions, and is offering a free tool for both individuals and companies to find legal, tax and financial solutions that will going through the coronavirus crisis"
+      },
+      "global": true
+},
   ]
 }
