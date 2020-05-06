@@ -32,8 +32,8 @@ class NewsCard extends React.PureComponent<INewsCardProps, {}> {
 
 const NewsCardRoot: AnyStyledComponent = styled(Card)`
   && {
-    border-radius: 15px;
-    box-shadow: 0px 2px 24px #e3e6eb;
+    border-radius: 0px 0px 30px 0px;
+    box-shadow: 10px 10px 20px rgba(26, 11, 61, 0.25);
     margin-bottom: 2rem;
     padding: 0.8rem;
 

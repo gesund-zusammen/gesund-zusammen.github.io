@@ -57,11 +57,12 @@ class MentorCard extends React.PureComponent<IMentorCardProps, {}> {
 const MentorCardWrapper: AnyStyledComponent = styled(Card)`
   && {
     height: 100%;
-    border-radius: 15px;
-    box-shadow: 0px 1px 4px #e3e6eb;
+    border-radius: 0 0 25px 0;
+    box-shadow: 6px 6px 14px rgba(26, 11, 61, 0.25);
+    transition: box-shadow 0.3s ease-in-out;
 
     &:hover {
-      box-shadow: 0px 2px 24px #e3e6eb;
+      box-shadow: 12px 12px 20px rgba(26, 11, 61, 0.25);
     }
   }
 `;
@@ -69,7 +70,7 @@ const MentorCardWrapper: AnyStyledComponent = styled(Card)`
 const MentorImage: AnyStyledComponent = styled.div`
   display: block;
   width: 100%;
-  border-radius: 4px;
+  border-radius: 0 0 15px 0;
   background-size: cover;
   background-position: center center;
   margin: 0 0 1rem 0;

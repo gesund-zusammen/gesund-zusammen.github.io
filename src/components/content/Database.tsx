@@ -286,15 +286,23 @@ const CategoryChip: AnyStyledComponent = styled(Chip)`
 const RegionSelect: AnyStyledComponent = styled(Typography)`
   && {
     display: inline-block;
-    font-weight: 700;
+    font-weight: normal;
+    color: #93989b;
     text-align: center;
-    color: #0a6eaa;
     width: 50%;
     padding: 0.5rem 0;
     cursor: pointer;
 
+    &:hover {
+      color: #0a6eaa;
+      font-weight: 700;
+    }
+
     &.selected {
-      border-bottom: 2px solid #0a6eaa;
+      font-weight: 700;
+      color: #0a6eaa;
+      border: 2px solid #0a6eaa;
+      border-radius: 25px 0px 0px 0px;
     }
 
     @media (min-width: 600px) {
@@ -311,7 +319,7 @@ const ShowMoreButton: AnyStyledComponent = styled(Button)`
     font-weight: 500;
     text-transform: none;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 15px;
     margin: 0 auto;
     padding-right: 2rem;
     padding-left: 2rem;

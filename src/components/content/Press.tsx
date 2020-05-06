@@ -230,7 +230,7 @@ const ShowMoreButton: AnyStyledComponent = styled(Button)`
     font-weight: 500;
     text-transform: none;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 15px;
     margin: 0 auto;
     padding-right: 2rem;
     padding-left: 2rem;
@@ -280,8 +280,8 @@ const StyledPressKitImage: AnyStyledComponent = styled.img`
 
 const PressReleaseCardRoot: AnyStyledComponent = styled(Card)`
   && {
-    border-radius: 15px;
-    box-shadow: 0px 2px 24px #e3e6eb;
+    border-radius: 0px 0px 30px 0px;
+    box-shadow: 10px 10px 20px rgba(26, 11, 61, 0.25);
     margin-bottom: 2rem;
     padding: 0.8rem;
 

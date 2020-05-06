@@ -45,7 +45,7 @@ const LinkButton: AnyStyledComponent = styled(Button)`
     font-weight: 500;
     text-transform: none;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 15px;
     padding: 0.6rem 2rem;
     margin: 4rem auto 0;
   }
