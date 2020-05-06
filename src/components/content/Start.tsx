@@ -57,13 +57,6 @@ class Start extends React.PureComponent<WithTranslation, {}> {
               </StyledLink>
             </Grid>
             <Grid item xs={12} sm={6} md={4} xl={3}>
-              <InfoBox
-                title={this.props.t("start.box2.title")}
-                content={this.props.t("start.box2.content")}
-                illustration={IlluApp}
-              />
-            </Grid>
-            <Grid item xs={12} sm={6} md={4} xl={3}>
               <StyledLink to={`/${this.props.i18n.language}/accelerator`}>
                 <InfoBox
                   title={this.props.t("start.box3.title")}
@@ -71,6 +64,13 @@ class Start extends React.PureComponent<WithTranslation, {}> {
                   illustration={IlluAccelerator}
                 />
               </StyledLink>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} xl={3}>
+              <InfoBox
+                title={this.props.t("start.box2.title")}
+                content={this.props.t("start.box2.content")}
+                illustration={IlluApp}
+              />
             </Grid>
           </Grid>
         </Box>
