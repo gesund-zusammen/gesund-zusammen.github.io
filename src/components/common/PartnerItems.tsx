@@ -37,7 +37,7 @@ interface IPartnerItemsProps extends WithTranslation {
   onlyCountryPartners?: boolean;
 }
 
-class PartnerItems extends React.Component<IPartnerItemsProps, {}> {
+class PartnerItems extends React.PureComponent<IPartnerItemsProps, {}> {
   getCategories = (): ICategory[] => {
     return this.props.data.categories
       .filter(category =>

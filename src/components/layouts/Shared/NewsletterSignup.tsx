@@ -21,7 +21,7 @@ const DEFAULT_STATE = {
   userEmail: "",
 };
 
-class NewsletterSignup extends React.Component<
+class NewsletterSignup extends React.PureComponent<
   WithTranslation,
   INewsletterSignupState
 > {

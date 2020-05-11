@@ -11,7 +11,7 @@ interface ILayoutInitiativePageProps {
   content: string;
 }
 
-class LayoutInitiativePage extends React.Component<
+class LayoutInitiativePage extends React.PureComponent<
   ILayoutInitiativePageProps,
   {}
 > {

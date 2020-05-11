@@ -13,7 +13,7 @@ interface INewsItem {
   link: string;
 }
 
-class LatestNews extends React.Component<WithTranslation> {
+class LatestNews extends React.PureComponent<WithTranslation> {
   getNewsItems = (limit?: number): Array<INewsItem> => {
     const news = NewsData.sort(
       (a, b) => Date.parse(b.date) - Date.parse(a.date),

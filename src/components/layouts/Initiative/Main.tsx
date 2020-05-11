@@ -9,7 +9,7 @@ import Footer from "../Shared/Footer";
 import NewsletterSignup from "../Shared/NewsletterSignup";
 import { HeaderBox, MainContentContainer } from "../Shared/StyledComponents";
 
-class LayoutInitiative extends React.Component {
+class LayoutInitiative extends React.PureComponent {
   render = () => {
     return (
       <>

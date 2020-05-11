@@ -4,7 +4,7 @@ interface IPaperFormProps {
   paperform: string;
 }
 
-class PaperForm extends React.Component<IPaperFormProps, {}> {
+class PaperForm extends React.PureComponent<IPaperFormProps, {}> {
   componentDidMount(): void {
     const script = document.createElement("script");
     script.src = "https://paperform.co/__embed";

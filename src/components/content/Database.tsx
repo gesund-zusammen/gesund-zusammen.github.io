@@ -50,7 +50,10 @@ const DEFAULT_STATE: IInitiativeState = {
   listLength: INITIAL_LIST_LENGTH,
 };
 
-class Initiatives extends React.Component<WithTranslation, IInitiativeState> {
+class Initiatives extends React.PureComponent<
+  WithTranslation,
+  IInitiativeState
+> {
   categoryInitiativesCount: { [slug: string]: number };
   germanInitiativesCount = 0;
   globalInitiativesCount = 0;

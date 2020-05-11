@@ -27,7 +27,7 @@ interface ICountryInitiative {
   image: string;
 }
 
-class CountryInitiativeItems extends React.Component<WithTranslation, {}> {
+class CountryInitiativeItems extends React.PureComponent<WithTranslation, {}> {
   countryInitiativesData: {
     categories: ICategory[];
     initiatives: ICountryInitiative[];

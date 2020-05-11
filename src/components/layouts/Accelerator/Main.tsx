@@ -9,7 +9,7 @@ import LatestNews from "../Shared/LatestNews";
 import NewsletterSignup from "../Shared/NewsletterSignup";
 import { HeaderBox, MainContentContainer } from "../Shared/StyledComponents";
 
-class LayoutAccelerator extends React.Component {
+class LayoutAccelerator extends React.PureComponent {
   render = () => {
     return (
       <>

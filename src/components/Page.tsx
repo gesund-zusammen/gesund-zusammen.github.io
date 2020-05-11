@@ -40,7 +40,7 @@ interface IPageProps
   extends RouteComponentProps<{ lang: string }>,
     WithTranslation {}
 
-class Page extends React.Component<IPageProps, {}> {
+class Page extends React.PureComponent<IPageProps, {}> {
   componentDidMount = () => {
     if (this.props.match.params.lang !== this.props.i18n.language) {
       setTimeout(() => {

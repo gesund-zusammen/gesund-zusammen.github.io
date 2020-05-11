@@ -23,7 +23,7 @@ const DEFAULT_STATE: IFaqItemsState = {
   panel: "",
 };
 
-class FaqItems extends React.Component<WithTranslation, IFaqItemsState> {
+class FaqItems extends React.PureComponent<WithTranslation, IFaqItemsState> {
   constructor(props: WithTranslation) {
     super(props);
     this.state = DEFAULT_STATE;

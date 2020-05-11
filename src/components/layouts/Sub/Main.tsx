@@ -11,7 +11,7 @@ interface ILayoutSubPageProps {
   image?: string;
 }
 
-class LayoutSubPage extends React.Component<ILayoutSubPageProps, {}> {
+class LayoutSubPage extends React.PureComponent<ILayoutSubPageProps, {}> {
   render = () => {
     return (
       <>

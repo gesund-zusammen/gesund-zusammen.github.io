@@ -20,7 +20,7 @@ const DEFAULT_STATE: IHeaderNavState = {
   navExpanded: false,
 };
 
-class HeaderNav extends React.Component<IHeaderNavProps, IHeaderNavState> {
+class HeaderNav extends React.PureComponent<IHeaderNavProps, IHeaderNavState> {
   constructor(props: IHeaderNavProps) {
     super(props);
     this.state = DEFAULT_STATE;

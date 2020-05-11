@@ -23,7 +23,7 @@ const AcceleratorLogo: AnyStyledComponent = styled.img`
   margin: 0 0 2rem 0;
 `;
 
-class Program extends React.Component<WithTranslation, {}> {
+class Program extends React.PureComponent<WithTranslation, {}> {
   getMarkdown(language: string) {
     switch (language) {
       case "de":
