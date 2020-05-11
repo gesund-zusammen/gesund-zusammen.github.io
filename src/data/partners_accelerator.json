@@ -11,6 +11,16 @@
       }
     },
     {
+      "slug": "patron",
+      "name": {
+        "de": "Patron Partner",
+        "en": "Patron Partners",
+        "fr": "Partenaires mécènes",
+        "it": "Partner patrono",
+        "es": "Socios patrocinadores"
+      }
+    },
+    {
       "slug": "strategic",
       "name": {
         "de": "Strategic Partner",
@@ -593,6 +603,12 @@
       "slug": "strategic",
       "image": "alicebob.png",
       "link": "https://www.aliceandbob.company/"
+    },
+    {
+      "name": "salesforce",
+      "slug": "patron",
+      "image": "salesforce.png",
+      "link": "https://www.salesforce.com/"
     }
   ]
 }
