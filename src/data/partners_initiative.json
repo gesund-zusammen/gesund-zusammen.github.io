@@ -80,6 +80,13 @@
       "countries": ["it"]
     },
     {
+      "name": "Travelperk",
+      "slug": "founders",
+      "image": "travelperk.png",
+      "link": "https://www.travelperk.com/",
+      "countries": ["es"]
+    },
+    {
       "name": "Data4Life",
       "slug": "tech",
       "image": "data4life.svg",
