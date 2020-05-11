@@ -9,6 +9,8 @@ interface INewsCardProps {
   outlet: string;
   teaser: string;
   link: string;
+  date?: string;
+  locale?: string;
 }
 
 class NewsCard extends React.PureComponent<INewsCardProps, {}> {
@@ -17,6 +19,13 @@ class NewsCard extends React.PureComponent<INewsCardProps, {}> {
       <OptionalLinkWrapper link={this.props.link}>
         <NewsCardRoot>
           <NewsCardContent>
+            {this.props.date && this.props.locale && (
+              <Typography variant="overline" color="primary">
+                {new Date(this.props.date).toLocaleDateString(
+                  this.props.locale,
+                )}
+              </Typography>
+            )}
             <Typography variant="h5" color="secondary">
               {this.props.outlet}
             </Typography>

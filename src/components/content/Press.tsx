@@ -81,6 +81,8 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
                     outlet={newsItem.outlet}
                     teaser={newsItem.teaser}
                     link={newsItem.link}
+                    date={newsItem.date}
+                    locale={this.props.i18n.language}
                   />
                 ),
             )}

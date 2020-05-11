@@ -58,5 +58,23 @@
     "outlet": "Reuters",
     "teaser": "Deutsche Tracing-App-Macher werben für europäische Lösung",
     "link": "https://de.reuters.com/article/virus-app-idDEKCN21W1O1"
+  },
+  {
+    "date": "2020-05-06",
+    "outlet": "Süddeutsche Zeitung",
+    "teaser": "Corona-App soll Open Source werden",
+    "link": "https://www.sueddeutsche.de/digital/corona-app-tracing-open-source-1.4899711"
+  },
+  {
+    "date": "2020-05-06",
+    "outlet": "Handelsblatt",
+    "teaser": "Start-ups helfen SAP und Telekom bei der Entwicklung der Corona-App",
+    "link": "https://www.handelsblatt.com/technik/forschung-innovation/kontaktverfolgung-start-ups-helfen-sap-und-telekom-bei-der-entwicklung-der-corona-app/25806712.html"
+  },
+  {
+    "date": "2020-05-06",
+    "outlet": "Reuters Deutschland",
+    "teaser": "Startup-Initiative bei Entwicklung von Corona-App mit von der Partie",
+    "link": "https://de.reuters.com/article/virus-app-idDEKBN22I1QR"
   }
 ]
