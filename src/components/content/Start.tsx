@@ -1,8 +1,6 @@
 import React from "react";
 import { Box, Grid } from "@material-ui/core";
-import { Link } from "react-router-dom";
 import { withTranslation, WithTranslation } from "react-i18next";
-import styled, { AnyStyledComponent } from "styled-components";
 
 import MuiMarkdown from "../common/MuiMarkdown";
 import InfoBox from "../common/InfoBox";
@@ -48,28 +46,29 @@ class Start extends React.PureComponent<WithTranslation, {}> {
         <Box paddingBottom={4} marginTop={4}>
           <Grid container justify="center" spacing={4}>
             <Grid item xs={12} sm={6} md={4} xl={3}>
-              <StyledLink to={`/${this.props.i18n.language}/initiative`}>
-                <InfoBox
-                  title={this.props.t("start.box1.title")}
-                  content={this.props.t("start.box1.content")}
-                  illustration={IlluInitiative}
-                />
-              </StyledLink>
+              <InfoBox
+                link={`/${this.props.i18n.language}/initiative`}
+                title={this.props.t("start.box1.title")}
+                content={this.props.t("start.box1.content")}
+                illustration={IlluInitiative}
+                ctaText={this.props.t("start.box1.cta")}
+              />
             </Grid>
             <Grid item xs={12} sm={6} md={4} xl={3}>
-              <StyledLink to={`/${this.props.i18n.language}/accelerator`}>
-                <InfoBox
-                  title={this.props.t("start.box3.title")}
-                  content={this.props.t("start.box3.content")}
-                  illustration={IlluAccelerator}
-                />
-              </StyledLink>
+              <InfoBox
+                link={`/${this.props.i18n.language}/accelerator`}
+                title={this.props.t("start.box3.title")}
+                content={this.props.t("start.box3.content")}
+                illustration={IlluAccelerator}
+                ctaText={this.props.t("start.box3.cta")}
+              />
             </Grid>
             <Grid item xs={12} sm={6} md={4} xl={3}>
               <InfoBox
                 title={this.props.t("start.box2.title")}
                 content={this.props.t("start.box2.content")}
                 illustration={IlluApp}
+                ctaText={this.props.t("start.box2.cta")}
               />
             </Grid>
           </Grid>
@@ -86,9 +85,5 @@ class Start extends React.PureComponent<WithTranslation, {}> {
     );
   };
 }
-
-const StyledLink: AnyStyledComponent = styled(Link)`
-  text-decoration: none;
-`;
 
 export default withTranslation()(Start);

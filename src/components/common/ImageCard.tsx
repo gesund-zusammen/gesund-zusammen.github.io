@@ -17,7 +17,7 @@ class ImageCard extends React.PureComponent<ICardProps, {}> {
   render = () => {
     return (
       <Grid item xs={6} sm={3}>
-        <OptionalLinkWrapper link={this.props.link}>
+        <OptionalLinkWrapper link={this.props.link} targetBlank={true}>
           <CardWrapper>
             <CardContent
               style={{

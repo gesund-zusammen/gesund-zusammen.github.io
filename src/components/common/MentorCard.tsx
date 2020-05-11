@@ -16,7 +16,7 @@ class MentorCard extends React.PureComponent<IMentorCardProps, {}> {
   render = () => {
     return (
       <Grid item xs={6} sm={3}>
-        <OptionalLinkWrapper link={this.props.linkedin}>
+        <OptionalLinkWrapper link={this.props.linkedin} targetBlank={true}>
           <MentorCardWrapper>
             <CardContent>
               <MentorImage

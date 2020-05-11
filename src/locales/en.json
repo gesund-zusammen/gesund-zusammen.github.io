@@ -26,15 +26,18 @@
   "start": {
     "box1": {
       "title": "The Initiative",
-      "content": "Read more about our digital initiative."
+      "content": "Read more about our digital initiative.",
+      "cta": "Check Initiative"
     },
     "box2": {
       "title": "The App",
-      "content": "More information around the app will come soon."
+      "content": "More information around the app will come soon.",
+      "cta": "How it works?"
     },
     "box3": {
       "title": "The Accelerator",
-      "content": "A minimum of 4 solutions are supported with €20,000 of equity-free capital each, mentorship and reach."
+      "content": "Read more about the Future Perfect accelerator.",
+      "cta": "Go to Accelerator"
     }
   },
   "accelerator": {

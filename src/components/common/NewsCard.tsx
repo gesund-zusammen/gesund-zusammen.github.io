@@ -16,7 +16,7 @@ interface INewsCardProps {
 class NewsCard extends React.PureComponent<INewsCardProps, {}> {
   render = () => {
     return (
-      <OptionalLinkWrapper link={this.props.link}>
+      <OptionalLinkWrapper link={this.props.link} targetBlank={true}>
         <NewsCardRoot>
           <NewsCardContent>
             {this.props.date && this.props.locale && (

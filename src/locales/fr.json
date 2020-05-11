@@ -26,15 +26,18 @@
   "start": {
     "box1": {
       "title": "L'initiative",
-      "content": "En savoir plus sur notre initiative numérique."
+      "content": "En savoir plus sur notre initiative numérique.",
+      "cta": "Découvrez Initiative"
     },
     "box2": {
       "title": "L'application",
-      "content": "Plus d'informations sur l'application seront bientôt disponibles"
+      "content": "Plus d'informations sur l'application seront bientôt disponibles",
+      "cta": "Comment ça fonctionne?"
     },
     "box3": {
       "title": "L'accélérateur",
-      "content": "Un minimum de 4 solutions sont prises en charge avec 20 000 € de capitaux propres chacun, le mentorat et la portée."
+      "content": "En savoir plus sur l'accélérateur Future Perfect.",
+      "cta": "Aller à l'accélérateur"
     }
   },
   "accelerator": {

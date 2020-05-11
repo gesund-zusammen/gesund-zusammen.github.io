@@ -26,15 +26,18 @@
   "start": {
     "box1": {
       "title": "La iniciativa",
-      "content": "Lea más sobre nuestra iniciativa digital."
+      "content": "Lea más sobre nuestra iniciativa digital.",
+      "cta": "Echa un vistazo a Initiative"
     },
     "box2": {
       "title": "La aplicación",
-      "content": "Pronto habrá más información sobre la aplicación."
+      "content": "Pronto habrá más información sobre la aplicación.",
+      "cta": "¿Cómo funciona?"
     },
     "box3": {
       "title": "La Acelerador",
-      "content": "Un mínimo de 4 soluciones son compatibles con € 20,000 de capital libre de capital cada uno, tutoría y alcance."
+      "content": "Lea más sobre el acelerador Future Perfect.",
+      "cta": "Ir al acelerador"
     }
   },
   "accelerator": {

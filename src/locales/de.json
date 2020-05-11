@@ -26,15 +26,18 @@
   "start": {
     "box1": {
       "title": "Die Initiative",
-      "content": "Lesen Sie mehr über unsere Initative."
+      "content": "Lesen Sie mehr über unsere digitale Initative.",
+      "cta": "zur Initative"
     },
     "box2": {
       "title": "Die App",
-      "content": "Mehr Infos zur App gibts in Kürze."
+      "content": "Mehr Infos zur App gibts in Kürze.",
+      "cta": "Wie funktionierts?"
     },
     "box3": {
       "title": "Der Accelerator",
-      "content": "Unterstützung von mindestens 4 Lösungen mit jeweils €20,000 Kapital (ohne Anteilsausgabe), Coaching und Reichweite."
+      "content": "Lesen Sie mehr über den Future Perfect Accelerator.",
+      "cta": "zum Accelerator"
     }
   },
   "accelerator": {

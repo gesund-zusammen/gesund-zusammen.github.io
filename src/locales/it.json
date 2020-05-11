@@ -26,15 +26,18 @@
   "start": {
     "box1": {
       "title": "L'iniziativa",
-      "content": "Maggiori informazioni sulla nostra iniziativa digitale."
+      "content": "Maggiori informazioni sulla nostra iniziativa digitale.",
+      "cta": "Dai un'occhiata all'iniziativa"
     },
     "box2": {
       "title": "L'applicazione",
-      "content": "Plus d'informations sur l'application seront bientôt disponibles"
+      "content": "Plus d'informations sur l'application seront bientôt disponibles",
+      "cta": "Come funziona?"
     },
     "box3": {
       "title": "L'acceleratore",
-      "content": "A minimum of 4 solutions are supported with €20,000 of equity-free capital each, mentorship and reach."
+      "content": "Ulteriori informazioni sull'acceleratore Future Perfect.",
+      "cta": "Vai all'acceleratore"
     }
   },
   "accelerator": {

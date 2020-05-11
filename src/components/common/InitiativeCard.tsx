@@ -15,7 +15,7 @@ interface INewsCardProps {
 class InitiativeCard extends React.PureComponent<INewsCardProps, {}> {
   render = () => {
     return (
-      <OptionalLinkWrapper link={this.props.link}>
+      <OptionalLinkWrapper link={this.props.link} targetBlank={true}>
         <InitiativeCardRoot>
           <InitiativeCardContent>
             <Typography variant="subtitle2" color="secondary">
