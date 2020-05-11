@@ -148,7 +148,8 @@
     "name": "Ramon Toossi",
     "company": "PwC Germany",
     "job_title": "Senior Manager",
-    "linkedin": "https://www.linkedin.com/in/ramon-toossi/"
+    "linkedin": "https://www.linkedin.com/in/ramon-toossi/",
+    "photo": "ramon_toossi.jpg"
   },
   {
     "name": "Timo Schusser",
@@ -240,5 +241,24 @@
     "job_title": "Managing Director - Head of EMEA Technology Banking",
     "linkedin": "https://www.linkedin.com/in/matthew-gehl-06a72b2/",
     "photo": "matthew_gehl.jpg"
+  },
+  {
+    "name": "Jovan Stevovic",
+    "company": "Chino.io",
+    "job_title": "Founder",
+    "linkedin": "https://www.linkedin.com/in/jovanstevovic/",
+    "photo": "jovan_stevovic.jpg"
+  },
+  {
+    "name": "Daniel Santos",
+    "company": "Delivery Hero",
+    "job_title": "Senior Director Product",
+    "linkedin": "https://www.linkedin.com/in/danielfilipesantos/",
+    "photo": "daniel_santos.jpg"
+  },
+  {
+    "name": "Samir Belhsen",
+    "job_title": "Freelance User Experience Designer with +10 years of experience",
+    "linkedin": "https://www.linkedin.com/in/samir-belhsen-94341517/"
   }
 ]
