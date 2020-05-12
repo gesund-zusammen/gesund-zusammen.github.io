@@ -35,6 +35,7 @@ const FunkyBox: AnyStyledComponent = styled(Box)`
       width: 50%;
       height: 100%;
       background: #0a6eaa;
+      box-shadow: 20px 20px 30px rgba(26, 11, 61, 0.25);
     }
   }
 `;
@@ -49,13 +50,15 @@ const SuperFunkyBox: AnyStyledComponent = styled(Box)`
     top: 0;
     z-index: -1;
     display: block;
-    width: 90%;
+    width: 70%;
     height: 100%;
     background: #0a6eaa;
-    border-radius: 0 0 400px 0;
+    border-radius: 0 0 100px 0;
+    box-shadow: 20px 20px 30px rgba(26, 11, 61, 0.25);
 
     @media (min-width: 600px) {
       width: 50%;
+      border-radius: 0 0 400px 0;
     }
   }
 `;
@@ -63,14 +66,17 @@ const SuperFunkyBox: AnyStyledComponent = styled(Box)`
 const FunkyGrid: AnyStyledComponent = styled(Grid)`
   && {
     &:first-of-type {
+      & > h3 {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #003269;
+      }
       @media (min-width: 600px) {
         & > * {
           color: #ffffff;
         }
 
         & > h3 {
-          padding-bottom: 1rem;
-          margin-bottom: 1rem;
           border-bottom: 2px solid #00aac8;
         }
       }
@@ -99,7 +105,7 @@ class Start extends React.PureComponent<WithTranslation, {}> {
       <>
         <Hidden xsDown>
           <Container maxWidth="lg">
-            <Box paddingBottom={2}>
+            <Box paddingBottom={1}>
               <Typography variant="h2">Who are we?</Typography>
             </Box>
           </Container>
@@ -135,7 +141,7 @@ class Start extends React.PureComponent<WithTranslation, {}> {
         <SuperFunkyBox>
           <div className="background" />
           <Container maxWidth="lg">
-            <Box paddingBottom={4}>
+            <Box paddingBottom={6}>
               <Grid container justify="center" spacing={4}>
                 <Grid item xs={12} sm={6} md={4} xl={3}>
                   <InfoBox
