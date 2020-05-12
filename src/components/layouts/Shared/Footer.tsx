@@ -4,8 +4,6 @@ import styled, { css, AnyStyledComponent } from "styled-components";
 import { Link } from "react-router-dom";
 import { withTranslation, WithTranslation } from "react-i18next";
 
-import BgFooter from "../../../images/bg_footer.svg";
-
 import SocialIconTwitter from "../../../images/footer_icon_twitter.svg";
 import SocialIconLinkedin from "../../../images/footer_icon_linkedin.svg";
 import LogoGithub from "../../../images/footer_icon_github.svg";
@@ -94,17 +92,7 @@ const FooterWrapper: AnyStyledComponent = styled(Box)`
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   color: #ffffff;
   padding: 4rem 0 2rem 0;
-  background-color: #ccedf7;
-  background-image: url(${BgFooter});
-  background-position: bottom left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-
-  @media (min-width: 600px) {
-    padding: 6rem 0 2rem 0;
-    background-position: top center;
-  }
+  background-color: #003269;
 `;
 
 const FooterLinks: AnyStyledComponent = styled.div`
@@ -194,7 +182,6 @@ const FooterNavLinkItem: AnyStyledComponent = styled(Link)`
 `;
 
 const CopyrightNote: AnyStyledComponent = styled.p`
-  float: left;
   font-size: 0.6rem;
   text-align: center;
   margin-top: 1rem;

@@ -52,7 +52,7 @@ class FooterShareBox extends React.PureComponent<
           </CopyLink>
         </CopyBox>
         <ShareBox>
-          <Typography variant="subtitle2">
+          <Typography variant="subtitle2" color="primary">
             {this.props.t("footer.shareVia")}
           </Typography>
           <a
