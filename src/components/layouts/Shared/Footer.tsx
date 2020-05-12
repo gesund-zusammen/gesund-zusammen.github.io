@@ -9,7 +9,7 @@ import SocialIconLinkedin from "../../../images/footer_icon_linkedin.svg";
 import LogoGithub from "../../../images/footer_icon_github.svg";
 
 import LogoDE from "../../../images/logo.svg";
-import LogoEN from "../../../images/logo_en.svg";
+import LogoEN from "../../../images/logo_en_light.svg";
 
 class Footer extends React.PureComponent<WithTranslation, {}> {
   copyToClipboard = (str: string) => {
