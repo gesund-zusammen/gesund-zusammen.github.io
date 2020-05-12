@@ -609,6 +609,44 @@
       "slug": "patron",
       "image": "salesforce.png",
       "link": "https://www.salesforce.com/"
+    },
+    {
+      "name": "Digital Hub Logistics Hamburg",
+      "slug": "ambassador",
+      "image": "digital_hub_logistics_hamburg.png",
+      "link": "https://www.digitalhublogistics.hamburg/"
+    },
+    {
+      "name": "shetech",
+      "slug": "ambassador",
+      "image": "shetech.png",
+      "link": "https://shetechitaly.org/"
+    },
+    {
+      "name": "DigitalHealth Technologies",
+      "slug": "strategic",
+      "image": "digitalhealth_technologies.png",
+      "link": "https://www.digitalhealth.technology/",
+      "color": "#79a2a7",
+      "nameColorInverted": true
+    },
+    {
+      "name": "Fincite",
+      "slug": "strategic",
+      "image": "fincite.svg",
+      "link": "https://www.fincite.de/"
+    },
+    {
+      "name": "HubSpot",
+      "slug": "strategic",
+      "image": "hubspot.png",
+      "link": "https://www.hubspot.de/"
+    },
+    {
+      "name": "Sixsentix",
+      "slug": "strategic",
+      "image": "sixsentix.png",
+      "link": "https://www.sixsentix.com/"
     }
   ]
 }
