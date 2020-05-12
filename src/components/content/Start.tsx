@@ -35,7 +35,6 @@ const FunkyBox: AnyStyledComponent = styled(Box)`
       width: 50%;
       height: 100%;
       background: #0a6eaa;
-      box-shadow: 20px 20px 30px rgba(26, 11, 61, 0.25);
     }
   }
 `;
@@ -54,7 +53,6 @@ const SuperFunkyBox: AnyStyledComponent = styled(Box)`
     height: 100%;
     background: #0a6eaa;
     border-radius: 0 0 100px 0;
-    box-shadow: 20px 20px 30px rgba(26, 11, 61, 0.25);
 
     @media (min-width: 600px) {
       width: 50%;
