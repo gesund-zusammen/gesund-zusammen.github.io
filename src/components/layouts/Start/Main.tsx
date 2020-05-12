@@ -7,7 +7,7 @@ import LatestNews from "../Shared/LatestNews";
 import Social from "../Shared/Social";
 import Footer from "../Shared/Footer";
 import NewsletterSignup from "../Shared/NewsletterSignup";
-import { HeaderBox, MainContentContainer } from "../Shared/StyledComponents";
+import { HeaderBox } from "../Shared/StyledComponents";
 
 class LayoutLanding extends React.PureComponent {
   render = () => {
@@ -20,9 +20,7 @@ class LayoutLanding extends React.PureComponent {
         </LandingHeaderBox>
 
         <Box id="content" paddingBottom={4} marginTop={4}>
-          <MainContentContainer maxWidth="lg">
-            {this.props.children}
-          </MainContentContainer>
+          {this.props.children}
         </Box>
 
         <LatestNews />
