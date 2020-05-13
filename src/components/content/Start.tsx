@@ -9,11 +9,11 @@ import PartnerItems from "../common/PartnerItems";
 
 import InitiativePartners from "../../data/partners_initiative.json";
 
-import ContentDE from "../../data/landing/landing_de.md";
-import ContentEN from "../../data/landing/landing_en.md";
-import ContentFR from "../../data/landing/landing_fr.md";
-import ContentIT from "../../data/landing/landing_it.md";
-import ContentES from "../../data/landing/landing_es.md";
+import ContentDE from "../../data/start/start_de.md";
+import ContentEN from "../../data/start/start_en.md";
+import ContentFR from "../../data/start/start_fr.md";
+import ContentIT from "../../data/start/start_it.md";
+import ContentES from "../../data/start/start_es.md";
 
 import IlluAccelerator from "../../images/illu_accelerator.svg";
 import IlluApp from "../../images/illu_app.svg";
@@ -104,7 +104,9 @@ class Start extends React.PureComponent<WithTranslation, {}> {
         <Hidden xsDown>
           <Container maxWidth="lg">
             <Box paddingBottom={1}>
-              <Typography variant="h2">Who are we?</Typography>
+              <Typography variant="h2">
+                {this.props.t("start.title")}
+              </Typography>
             </Box>
           </Container>
         </Hidden>
