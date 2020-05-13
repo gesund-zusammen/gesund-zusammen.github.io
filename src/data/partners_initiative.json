@@ -87,6 +87,14 @@
       "countries": ["es"]
     },
     {
+      "name": "NOVID20",
+      "slug": "founders",
+      "image": "novid20.png",
+      "link": "https://www.novid20.org/",
+      "countries": ["at"],
+      "imageXL": true
+    },
+    {
       "name": "Data4Life",
       "slug": "tech",
       "image": "data4life.svg",
@@ -383,6 +391,14 @@
       "image": "macher_hilfe.png",
       "link": "https://www.macher-hilfe.de",
       "countries": ["de"]
+    },
+    {
+      "name": "Asociacion Espanola Finsurtech e Insurtech",
+      "slug": "tech",
+      "image": "asociacion_espanola_fintech.png",
+      "link": "https://www.asociacionfintech.es/",
+      "countries": ["es"],
+      "imageXL": true
     }
   ]
 }

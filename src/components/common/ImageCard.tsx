@@ -23,7 +23,7 @@ class ImageCard extends React.PureComponent<ICardProps, {}> {
               style={{
                 backgroundImage: `url(${this.props.image})`,
                 backgroundColor: this.props.color,
-                backgroundSize: this.props.imageXL ? "40% auto" : "80% auto",
+                backgroundSize: this.props.imageXL ? "50% auto" : "80% auto",
               }}
             ></CardContent>
             <CardName
@@ -76,6 +76,7 @@ const CardName: AnyStyledComponent = styled(Typography)`
     color: #003269;
     font-size: 1rem;
     font-weight: normal;
+    padding: 0 1rem;
 
     &.inverted {
       color: #ffffff;
