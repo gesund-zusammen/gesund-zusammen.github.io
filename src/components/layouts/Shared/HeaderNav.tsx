@@ -135,6 +135,11 @@ const HeaderNavRoot: AnyStyledComponent = styled(Box)`
   && {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+    @media (min-width: 600px) {
+      margin-bottom: 0;
+    }
   }
 `;
 
@@ -159,6 +164,7 @@ const HeaderNavItemsBox: AnyStyledComponent = styled(Box)`
     max-height: 800px;
     transition: max-height 0.3s ease-in-out;
     overflow: hidden;
+    z-index: 1000;
 
     &.retracted {
       max-height: 0px;
@@ -290,12 +296,13 @@ const HeaderNavLinkItem: AnyStyledComponent = styled(NavLink)`
   display: inline-block;
   width: 100%;
   font-family: inherit;
-  color: #ffffff;
+  color: #003269;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600;
 
   @media (min-width: 600px) {
+    color: #ffffff;
     padding: 0 1rem;
     line-height: 2.5rem;
     width: auto;
@@ -307,12 +314,16 @@ const HeaderNavLinkItem: AnyStyledComponent = styled(NavLink)`
 `;
 
 const HeaderNavLinkSubitem: AnyStyledComponent = styled(NavLink)`
-  color: #ffffff;
+  color: #003269;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 600;
   line-height: 2.5rem;
   margin: 0 1rem;
+
+  @media (min-width: 600px) {
+    color: #ffffff;
+  }
 `;
 
 const LangSelect: AnyStyledComponent = styled(Select)`
@@ -320,10 +331,8 @@ const LangSelect: AnyStyledComponent = styled(Select)`
     float: right;
     width: 100%;
     font-size: 1rem;
-    padding: 0.5rem;
+    padding: 0;
     margin: 1rem 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
     & > svg {
       color: #003269;
@@ -333,9 +342,7 @@ const LangSelect: AnyStyledComponent = styled(Select)`
 
     @media (min-width: 600px) {
       width: auto;
-      border: none;
       margin: 0.3rem 0 0 0;
-      padding: 0;
 
       & > svg {
         top: 0px;
