@@ -199,6 +199,12 @@
       "link": "https://www.knotel.com/"
     },
     {
+      "name": "APX",
+      "slug": "strategic",
+      "image": "apx.png",
+      "link": "https://www.apx.ac"
+    },
+    {
       "name": "PAIR Finance",
       "slug": "strategic",
       "image": "pairfinance.png",
@@ -333,12 +339,6 @@
       "slug": "ambassador",
       "image": "factory_berlin.png",
       "link": "https://factoryberlin.com"
-    },
-    {
-      "name": "APX",
-      "slug": "ambassador",
-      "image": "apx.png",
-      "link": "https://www.apx.ac"
     },
     {
       "name": "WeWork",
