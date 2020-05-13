@@ -108,21 +108,21 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
 
         <Box paddingBottom={4} marginTop={8}>
           <Grid container justify="center" spacing={4}>
-            <Grid item xs={12} sm={6} md={4} xl={3}>
+            <Grid item xs={12} sm={6} md={4}>
               <InfoBox
                 title={this.props.t("accelerator.box1.title")}
                 content={this.props.t("accelerator.box1.content")}
                 illustration={IlluCoworking}
               />
             </Grid>
-            <Grid item xs={12} sm={6} md={4} xl={3}>
+            <Grid item xs={12} sm={6} md={4}>
               <InfoBox
                 title={this.props.t("accelerator.box2.title")}
                 content={this.props.t("accelerator.box2.content")}
                 illustration={IlluMobile}
               />
             </Grid>
-            <Grid item xs={12} sm={6} md={4} xl={3}>
+            <Grid item xs={12} sm={6} md={4}>
               <InfoBox
                 title={this.props.t("accelerator.box3.title")}
                 content={this.props.t("accelerator.box3.content")}

@@ -141,7 +141,7 @@ class Start extends React.PureComponent<WithTranslation, {}> {
           <Container maxWidth="lg">
             <Box paddingBottom={6}>
               <Grid container justify="center" spacing={4}>
-                <Grid item xs={12} sm={6} md={4} xl={3}>
+                <Grid item xs={12} sm={6} md={4}>
                   <InfoBox
                     link={`/${this.props.i18n.language}/initiative`}
                     title={this.props.t("start.box1.title")}
@@ -150,7 +150,7 @@ class Start extends React.PureComponent<WithTranslation, {}> {
                     ctaText={this.props.t("start.box1.cta")}
                   />
                 </Grid>
-                <Grid item xs={12} sm={6} md={4} xl={3}>
+                <Grid item xs={12} sm={6} md={4}>
                   <InfoBox
                     link={`/${this.props.i18n.language}/accelerator`}
                     title={this.props.t("start.box3.title")}
@@ -159,7 +159,7 @@ class Start extends React.PureComponent<WithTranslation, {}> {
                     ctaText={this.props.t("start.box3.cta")}
                   />
                 </Grid>
-                <Grid item xs={12} sm={6} md={4} xl={3}>
+                <Grid item xs={12} sm={6} md={4}>
                   <InfoBox
                     title={this.props.t("start.box2.title")}
                     content={this.props.t("start.box2.content")}
