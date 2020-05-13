@@ -51,7 +51,7 @@ class LandingHeader extends React.PureComponent<WithTranslation, {}> {
                       whiteSpace: "pre-line",
                     }}
                   >
-                    {this.props.t("initiative.landing.title")}
+                    {this.props.t("start.header.title")}
                   </Typography>
                   <Typography
                     variant="body1"
@@ -61,7 +61,7 @@ class LandingHeader extends React.PureComponent<WithTranslation, {}> {
                       whiteSpace: "pre-line",
                     }}
                   >
-                    {this.props.t("initiative.landing.content")}
+                    {this.props.t("start.header.content")}
                   </Typography>
                 </HeaderContent>
               </Grid>

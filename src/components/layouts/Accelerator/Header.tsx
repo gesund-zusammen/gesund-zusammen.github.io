@@ -24,7 +24,7 @@ class AcceleratorHeader extends React.PureComponent<WithTranslation, {}> {
                     whiteSpace: "pre-line",
                   }}
                 >
-                  {this.props.t("accelerator.landing.title")}
+                  {this.props.t("accelerator.header.title")}
                 </Typography>
                 <Typography
                   variant="body1"
@@ -34,7 +34,7 @@ class AcceleratorHeader extends React.PureComponent<WithTranslation, {}> {
                     whiteSpace: "pre-line",
                   }}
                 >
-                  {this.props.t("accelerator.landing.content")}
+                  {this.props.t("accelerator.header.content")}
                 </Typography>
                 <ApplyButton
                   variant="contained"

@@ -24,7 +24,7 @@ class InitiativeHeader extends React.PureComponent<WithTranslation, {}> {
                     whiteSpace: "pre-line",
                   }}
                 >
-                  {this.props.t("initiative.landing.title")}
+                  {this.props.t("initiative.header.title")}
                 </Typography>
                 <Typography
                   variant="body1"
@@ -34,7 +34,7 @@ class InitiativeHeader extends React.PureComponent<WithTranslation, {}> {
                     whiteSpace: "pre-line",
                   }}
                 >
-                  {this.props.t("initiative.landing.content")}
+                  {this.props.t("initiative.header.content")}
                 </Typography>
                 <ApplyButton
                   variant="contained"

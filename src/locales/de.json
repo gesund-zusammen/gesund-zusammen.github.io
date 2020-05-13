@@ -24,6 +24,10 @@
     }
   },
   "start": {
+    "header": {
+      "title": "Technologie rettet Leben",
+      "content": "Digitale Lösungen gegen COVID-19"
+    },
     "box1": {
       "title": "Die Initiative",
       "content": "Lesen Sie mehr über unsere digitale Initative.",
@@ -41,8 +45,8 @@
     }
   },
   "accelerator": {
-    "landing": {
-      "title": "Technologie rettet Leben.",
+    "header": {
+      "title": "Technologie rettet Leben",
       "content": "Ein Accelerator-Programm für Ideen zur Bekämpfung der COVID-19-Krise."
     },
     "box1": {
@@ -64,8 +68,8 @@
     }
   },
   "initiative": {
-    "landing": {
-      "title": "Technologie rettet Leben.",
+    "header": {
+      "title": "Technologie rettet Leben",
       "content": "Digitale Lösungen gegen COVID-19"
     },
     "box1": {

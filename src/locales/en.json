@@ -24,6 +24,10 @@
     }
   },
   "start": {
+    "header": {
+      "title": "Technology saving lives",
+      "content": "Digital tools to fight Covid-19"
+    },
     "box1": {
       "title": "The Initiative",
       "content": "Read more about our digital initiative.",
@@ -41,8 +45,8 @@
     }
   },
   "accelerator": {
-    "landing": {
-      "title": "Technology saving lives.",
+    "header": {
+      "title": "Technology saving lives",
       "content": "An accelerator program to boost solutions against the COVID-19 crisis."
     },
     "box1": {
@@ -64,8 +68,8 @@
     }
   },
   "initiative": {
-    "landing": {
-      "title": "Technology saving lives.",
+    "header": {
+      "title": "Technology saving lives",
       "content": "Digital tools to fight Covid-19"
     },
     "box1": {

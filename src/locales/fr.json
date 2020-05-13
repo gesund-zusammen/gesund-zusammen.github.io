@@ -24,6 +24,10 @@
     }
   },
   "start": {
+    "header": {
+      "title": "La technologie sauve des vies",
+      "content": "Les outils numériques pour combattre le Covid-19"
+    },
     "box1": {
       "title": "L'initiative",
       "content": "En savoir plus sur notre initiative numérique.",
@@ -41,8 +45,8 @@
     }
   },
   "accelerator": {
-    "landing": {
-      "title": "La technologie sauve des vies.",
+    "header": {
+      "title": "La technologie sauve des vies",
       "content": "Un programme d'accélération qui vise à trouver des solutions contre le COVID-19"
     },
     "box1": {
@@ -64,8 +68,8 @@
     }
   },
   "initiative": {
-    "landing": {
-      "title": "La technologie sauve des vies.",
+    "header": {
+      "title": "La technologie sauve des vies",
       "content": "Les outils numériques pour combattre le Covid-19"
     },
     "box1": {

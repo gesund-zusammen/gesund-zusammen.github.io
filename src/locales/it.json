@@ -24,6 +24,10 @@
     }
   },
   "start": {
+    "header": {
+      "title": "La tecnologia salva le vite",
+      "content": "Strumenti digitali per combattere il Covid-19"
+    },
     "box1": {
       "title": "L'iniziativa",
       "content": "Maggiori informazioni sulla nostra iniziativa digitale.",
@@ -41,8 +45,8 @@
     }
   },
   "accelerator": {
-    "landing": {
-      "title": "La tecnologia salva le vite.",
+    "header": {
+      "title": "La tecnologia salva le vite",
       "content": "Un programma di accelerazione per velocizzare soluzioni contro la crisi da Covid-19."
     },
     "box1": {
@@ -64,8 +68,8 @@
     }
   },
   "initiative": {
-    "landing": {
-      "title": "La tecnologia salva le vite.",
+    "header": {
+      "title": "La tecnologia salva le vite",
       "content": "Strumenti digitali per combattere il Covid-19"
     },
     "box1": {
