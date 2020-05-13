@@ -5,7 +5,7 @@ import { withTranslation, WithTranslation } from "react-i18next";
 
 import HeaderNav from "../Shared/HeaderNav";
 
-import IlluHeader from "../../../images/illu_header.svg";
+import IlluHeader from "../../../images/illu_header_start.svg";
 
 class AcceleratorHeader extends React.PureComponent<WithTranslation, {}> {
   render = () => {

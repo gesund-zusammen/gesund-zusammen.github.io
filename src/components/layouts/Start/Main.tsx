@@ -9,7 +9,7 @@ import Footer from "../Shared/Footer";
 import NewsletterSignup from "../Shared/NewsletterSignup";
 import HeaderNav from "../Shared/HeaderNav";
 
-import IlluHeader from "../../../images/illu_header.svg";
+import IlluHeader from "../../../images/illu_header_start.svg";
 
 const SuperFunkyBox: AnyStyledComponent = styled(Box)`
   && {
