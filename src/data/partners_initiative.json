@@ -87,6 +87,14 @@
       "countries": ["es"]
     },
     {
+      "name": "NOVID20",
+      "slug": "founders",
+      "image": "novid20.png",
+      "link": "https://www.novid20.org/",
+      "countries": ["at"],
+      "imageXL": true
+    },
+    {
       "name": "Data4Life",
       "slug": "tech",
       "image": "data4life.svg",

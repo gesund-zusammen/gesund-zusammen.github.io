@@ -23,7 +23,7 @@ class ImageCard extends React.PureComponent<ICardProps, {}> {
               style={{
                 backgroundImage: `url(${this.props.image})`,
                 backgroundColor: this.props.color,
-                backgroundSize: this.props.imageXL ? "40% auto" : "80% auto",
+                backgroundSize: this.props.imageXL ? "50% auto" : "80% auto",
               }}
             ></CardContent>
             <CardName

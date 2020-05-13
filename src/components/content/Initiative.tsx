@@ -173,6 +173,13 @@ class Initiative extends React.PureComponent<
               </CountrySelect>
               <CountrySelect
                 variant="body2"
+                onClick={() => this.handleCountrySelect("at")}
+                className={this.props.country === "at" ? "selected" : ""}
+              >
+                {`${this.props.t("country.at")}`}
+              </CountrySelect>
+              <CountrySelect
+                variant="body2"
                 onClick={() => this.handleCountrySelect("it")}
                 className={this.props.country === "it" ? "selected" : ""}
               >
