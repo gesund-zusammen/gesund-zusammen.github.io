@@ -391,6 +391,14 @@
       "image": "macher_hilfe.png",
       "link": "https://www.macher-hilfe.de",
       "countries": ["de"]
+    },
+    {
+      "name": "Asociacion Espanola Finsurtech e Insurtech",
+      "slug": "tech",
+      "image": "asociacion_espanola_fintech.png",
+      "link": "https://www.asociacionfintech.es/",
+      "countries": ["es"],
+      "imageXL": true
     }
   ]
 }

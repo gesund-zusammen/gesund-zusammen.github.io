@@ -76,6 +76,7 @@ const CardName: AnyStyledComponent = styled(Typography)`
     color: #003269;
     font-size: 1rem;
     font-weight: normal;
+    padding: 0 1rem;
 
     &.inverted {
       color: #ffffff;
