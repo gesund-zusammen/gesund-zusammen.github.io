@@ -116,7 +116,7 @@ const ApplyButton: AnyStyledComponent = styled(Button)`
 const MainContentBox: AnyStyledComponent = styled(Box)`
   && {
     overflow-x: hidden;
-    margin-top: 48px;
+    margin-top: 64px;
     padding-bottom: 48px;
   }
 `;
