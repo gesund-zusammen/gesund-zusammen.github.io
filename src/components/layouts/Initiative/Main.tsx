@@ -1,5 +1,12 @@
 import React from "react";
-import { Box, Container, Typography, Grid, Hidden } from "@material-ui/core";
+import {
+  Box,
+  Button,
+  Container,
+  Typography,
+  Grid,
+  Hidden,
+} from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 import { withTranslation, WithTranslation } from "react-i18next";
 
@@ -30,8 +37,8 @@ const SuperFunkyBox: AnyStyledComponent = styled(Box)`
     box-shadow: 30px 30px 50px rgba(26, 11, 61, 0.25);
 
     @media (min-width: 600px) {
-      width: 50%;
-      border-radius: 0 0 0 200px;
+      width: 100%;
+      border-radius: 0 0 200px 0;
     }
   }
 `;
@@ -46,7 +53,7 @@ const FunkyMobileGridItem: AnyStyledComponent = styled(Grid)`
 
       & > .background {
         position: absolute;
-        right: -16px;
+        right: -8px;
         top: 0;
         z-index: -1;
         display: block;
@@ -65,18 +72,52 @@ const HeaderContent: AnyStyledComponent = styled.div`
 
   @media (min-width: 600px) {
     text-align: left;
-    margin: 4rem 0 0 0;
+    color: #ffffff;
+    margin: 4rem 0 2rem 0;
     padding-right: 10rem;
   }
 `;
 
 const HeaderIllustration: AnyStyledComponent = styled.img`
+  position: relative;
   width: 70%;
   float: right;
 
   @media (min-width: 600px) {
-    width: 70%;
-    margin-top: 2rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+    width: auto;
+    margin-right: 120px;
+  }
+`;
+
+const ApplyButton: AnyStyledComponent = styled(Button)`
+  && {
+    background-color: #003269;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: none;
+    text-align: center;
+    border-radius: 4px;
+    margin: 0 auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+    @media (min-width: 600px) {
+      background-color: #ffffff;
+      color: #003269;
+    }
+  }
+`;
+
+const MainContentBox: AnyStyledComponent = styled(Box)`
+  && {
+    overflow-x: hidden;
+    margin-top: 48px;
+    padding-bottom: 48px;
   }
 `;
 
@@ -100,7 +141,7 @@ class LayoutInitiative extends React.PureComponent<WithTranslation, {}> {
                     <HeaderContent>
                       <Typography
                         variant="h1"
-                        color="textSecondary"
+                        color="inherit"
                         style={{
                           whiteSpace: "pre-line",
                         }}
@@ -109,7 +150,7 @@ class LayoutInitiative extends React.PureComponent<WithTranslation, {}> {
                       </Typography>
                       <Typography
                         variant="body1"
-                        color="textSecondary"
+                        color="inherit"
                         style={{
                           fontFamily: "inherit",
                           whiteSpace: "pre-line",
@@ -117,6 +158,13 @@ class LayoutInitiative extends React.PureComponent<WithTranslation, {}> {
                       >
                         {this.props.t("initiative.header.content")}
                       </Typography>
+                      <ApplyButton
+                        variant="contained"
+                        disableFocusRipple={true}
+                        href={this.props.t("partners.link")}
+                      >
+                        {this.props.t("partners.cta")}
+                      </ApplyButton>
                     </HeaderContent>
                   </Grid>
 
@@ -133,11 +181,11 @@ class LayoutInitiative extends React.PureComponent<WithTranslation, {}> {
           </SuperFunkyBox>
         </Box>
 
-        <Box id="content" paddingBottom={4} marginTop={4}>
+        <MainContentBox id="content">
           <MainContentContainer maxWidth="lg">
             {this.props.children}
           </MainContentContainer>
-        </Box>
+        </MainContentBox>
 
         <LatestNews />
 
