@@ -148,16 +148,6 @@ class LayoutInitiative extends React.PureComponent<WithTranslation, {}> {
                       >
                         {this.props.t("initiative.header.title")}
                       </Typography>
-                      <Typography
-                        variant="body1"
-                        color="inherit"
-                        style={{
-                          fontFamily: "inherit",
-                          whiteSpace: "pre-line",
-                        }}
-                      >
-                        {this.props.t("initiative.header.content")}
-                      </Typography>
                       <ApplyButton
                         variant="contained"
                         disableFocusRipple={true}
