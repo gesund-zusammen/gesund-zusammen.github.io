@@ -58,11 +58,11 @@ const MentorCardWrapper: AnyStyledComponent = styled(Card)`
   && {
     height: 100%;
     border-radius: 0 0 25px 0;
-    box-shadow: 6px 6px 14px rgba(26, 11, 61, 0.25);
+    box-shadow: none;
     transition: box-shadow 0.3s ease-in-out;
 
     &:hover {
-      box-shadow: 12px 12px 20px rgba(26, 11, 61, 0.25);
+      box-shadow: 6px 6px 14px rgba(26, 11, 61, 0.25);
     }
   }
 `;
