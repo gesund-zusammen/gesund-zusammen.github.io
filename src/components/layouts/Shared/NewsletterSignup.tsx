@@ -121,7 +121,11 @@ const NewsletterSignupBox: AnyStyledComponent = styled(Box)`
 `;
 
 const NewsletterSignupContainer: AnyStyledComponent = styled(Container)`
-  padding: 4rem 0 0 0;
+  padding: 4rem 0;
+
+  @media (min-width: 600px) {
+    padding-bottom: 0;
+  }
 `;
 
 const NewsletterIllustration: AnyStyledComponent = styled.img`
