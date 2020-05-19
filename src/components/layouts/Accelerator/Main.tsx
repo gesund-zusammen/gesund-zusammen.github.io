@@ -75,6 +75,10 @@ const HeaderContent: AnyStyledComponent = styled.div`
     color: #ffffff;
     margin: 4rem 0 2rem 0;
     padding-right: 10rem;
+
+    & > h1 {
+      color: #ffffff;
+    }
   }
 `;
 
@@ -139,21 +143,13 @@ class LayoutAccelerator extends React.PureComponent<WithTranslation, {}> {
                 <Grid container spacing={4}>
                   <Grid item xs={12} sm={6}>
                     <HeaderContent>
-                      <Typography
-                        variant="h1"
-                        color="inherit"
-                        style={{
-                          whiteSpace: "pre-line",
-                        }}
-                      >
+                      <Typography variant="h1" color="secondary">
                         {this.props.t("accelerator.header.title")}
                       </Typography>
                       <Typography
                         variant="body1"
-                        color="inherit"
                         style={{
                           fontFamily: "inherit",
-                          whiteSpace: "pre-line",
                         }}
                       >
                         {this.props.t("accelerator.header.content")}

@@ -17,42 +17,49 @@ class MuiMarkdown extends React.PureComponent<IMuiMarkdownProps, {}> {
               component: Typography,
               props: {
                 variant: "h1",
+                color: "primary",
               },
             },
             h2: {
               component: Typography,
               props: {
                 variant: "h2",
+                color: "primary",
               },
             },
             h3: {
               component: Typography,
               props: {
                 variant: "h3",
+                color: "primary",
               },
             },
             h4: {
               component: Typography,
               props: {
                 variant: "h4",
+                color: "primary",
               },
             },
             h5: {
               component: Typography,
               props: {
                 variant: "h5",
+                color: "primary",
               },
             },
             h6: {
               component: Typography,
               props: {
                 variant: "h6",
+                color: "primary",
               },
             },
             p: {
               component: Typography,
               props: {
                 variant: "body1",
+                color: "textPrimary",
               },
             },
             a: {

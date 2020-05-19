@@ -63,19 +63,17 @@ const SuperFunkyBox: AnyStyledComponent = styled(Box)`
 
 const FunkyGrid: AnyStyledComponent = styled(Grid)`
   && {
+    strong {
+      color: #0a6eaa;
+    }
+
     &:first-of-type {
       & > h3 {
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
-        border-bottom: 2px solid #003269;
+        margin-bottom: 0;
       }
       @media (min-width: 600px) {
         & > * {
           color: #ffffff;
-        }
-
-        & > h3 {
-          border-bottom: 2px solid #00aac8;
         }
       }
     }
@@ -104,7 +102,7 @@ class Start extends React.PureComponent<WithTranslation, {}> {
         <Hidden xsDown>
           <Container maxWidth="lg">
             <Box paddingBottom={1}>
-              <Typography variant="h2">
+              <Typography variant="h2" color="primary">
                 {this.props.t("start.title")}
               </Typography>
             </Box>

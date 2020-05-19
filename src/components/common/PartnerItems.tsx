@@ -85,7 +85,7 @@ class PartnerItems extends React.PureComponent<IPartnerItemsProps, {}> {
               <div id={`wrapper-${categoryKey}`}>
                 {!!this.getPartners(category.slug).length && (
                   <>
-                    <Typography variant="h3" color="textSecondary">
+                    <Typography variant="h3" color="secondary">
                       {category.name[this.props.i18n.language]}
                     </Typography>
                     <Box paddingTop={4} paddingBottom={4}>

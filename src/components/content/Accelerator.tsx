@@ -133,7 +133,7 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
         </Box>
 
         <Box id="partners" paddingBottom={4} marginTop={4}>
-          <Typography variant="h2">
+          <Typography variant="h2" color="primary">
             {this.props.t("partners.header")}
           </Typography>
           <PartnerItems data={AcceleratorPartners} />

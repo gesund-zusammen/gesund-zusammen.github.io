@@ -41,10 +41,10 @@ class NewsletterSignup extends React.PureComponent<
               </Grid>
             </Hidden>
             <Grid item xs={12} sm={6}>
-              <Typography variant="h2" color="textSecondary">
+              <Typography variant="h2" color="secondary">
                 {this.props.t("newsletter.title")}
               </Typography>
-              <Typography variant="body1" color="textSecondary">
+              <Typography variant="body1" color="primary">
                 {this.props.t("newsletter.content")}
               </Typography>
               <form

@@ -19,7 +19,9 @@ class InfoBox extends React.PureComponent<IInfoBoxProps, {}> {
       <OptionalLinkWrapper link={this.props.link}>
         <StyledCard>
           <StyledCardContent>
-            <StyledTitle variant="h4">{this.props.title}</StyledTitle>
+            <StyledTitle variant="h4" color="secondary">
+              {this.props.title}
+            </StyledTitle>
             {this.props.illustration && (
               <SquaredImageWrapper>
                 <SquaredImage imageSrc={this.props.illustration} />
@@ -70,7 +72,7 @@ const SquaredImageWrapper: AnyStyledComponent = styled.div`
 const CTA: AnyStyledComponent = styled(Typography)`
   && {
     color: #ffffff;
-    background: #003269;
+    background: #0a6eaa;
     margin: 1rem 0;
     padding: 0.5rem;
     border-radius: 25px;

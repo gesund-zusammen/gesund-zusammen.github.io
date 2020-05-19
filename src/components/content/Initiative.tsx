@@ -123,7 +123,7 @@ class Initiative extends React.PureComponent<
         </Box>
 
         <Box id="partners" paddingBottom={4} marginTop={8}>
-          <Typography variant="h2">
+          <Typography variant="h2" color="primary">
             {this.props.t("partners.header")}
           </Typography>
           <Box id="region-filter" paddingBottom={2}>

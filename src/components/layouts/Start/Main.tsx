@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Typography, Grid, Hidden } from "@material-ui/core";
+import { Box, Container, Typography, Grid } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 import { withTranslation, WithTranslation } from "react-i18next";
 
@@ -16,43 +16,11 @@ const SuperFunkyBox: AnyStyledComponent = styled(Box)`
     position: relative;
     padding-top: 2rem;
   }
-  & > .background {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-    display: block;
-    width: 70%;
-    height: 100%;
-    background: #00aac8;
-    border-radius: 0 0 0 50px;
-    box-shadow: 30px 30px 50px rgba(26, 11, 61, 0.25);
-
-    @media (min-width: 600px) {
-      width: 50%;
-      border-radius: 0 0 0 200px;
-    }
-  }
 `;
 
 const FunkyMobileGridItem: AnyStyledComponent = styled(Grid)`
   && {
     position: relative;
-
-    @media (max-width: 599px) {
-      & > .background {
-        position: absolute;
-        right: -8px;
-        top: 0;
-        z-index: -1;
-        display: block;
-        width: 80%;
-        height: 100%;
-        background: #00aac8;
-        border-radius: 200px 0 0 200px;
-        box-shadow: 30px 30px 50px rgba(26, 11, 61, 0.25);
-      }
-    }
   }
 `;
 
@@ -82,25 +50,15 @@ class LayoutStart extends React.PureComponent<WithTranslation, {}> {
       <>
         <Box id="header" component="header">
           <SuperFunkyBox>
-            <Hidden xsDown>
-              <div className="background" />
-            </Hidden>
-
             <Container maxWidth="lg">
               <Box>
-                <HeaderNav />
+                <HeaderNav dark={true} />
               </Box>
               <Box paddingBottom={4}>
                 <Grid container spacing={4}>
                   <Grid item xs={12} sm={6}>
                     <HeaderContent>
-                      <Typography
-                        variant="h1"
-                        color="textSecondary"
-                        style={{
-                          whiteSpace: "pre-line",
-                        }}
-                      >
+                      <Typography variant="h1" color="secondary">
                         {this.props.t("start.header.title")}
                       </Typography>
                       <Typography
@@ -108,7 +66,6 @@ class LayoutStart extends React.PureComponent<WithTranslation, {}> {
                         color="textSecondary"
                         style={{
                           fontFamily: "inherit",
-                          whiteSpace: "pre-line",
                         }}
                       >
                         {this.props.t("start.header.content")}
@@ -117,8 +74,7 @@ class LayoutStart extends React.PureComponent<WithTranslation, {}> {
                   </Grid>
 
                   <FunkyMobileGridItem item xs={12} sm={6}>
-                    <div className="background" />
-                    <HeaderIllustration src={IlluHeader} alt="Patient 0" />
+                    <HeaderIllustration src={IlluHeader} />
                   </FunkyMobileGridItem>
                 </Grid>
               </Box>

@@ -82,16 +82,15 @@ const theme = responsiveFontSizes(
   createMuiTheme({
     palette: {
       text: {
-        primary: "#003269",
-        secondary: "#0A6EAA",
+        primary: "#676767",
+        secondary: "#949494",
       },
       primary: {
-        light: "#0A6EAA",
         main: "#003269",
         contrastText: "#ffffff",
       },
       secondary: {
-        main: "#00AAC8",
+        main: "#0A6EAA",
         contrastText: "#ffffff",
       },
       background: {
@@ -122,7 +121,6 @@ const theme = responsiveFontSizes(
         fontSize: "2.2rem",
         fontWeight: 700,
         marginBottom: "1rem",
-        color: "#003269",
       },
       h3: {
         fontFamily: [
@@ -134,7 +132,6 @@ const theme = responsiveFontSizes(
         fontSize: "1.67rem",
         fontWeight: 700,
         marginBottom: "1rem",
-        color: "#003269",
       },
       h4: {
         fontFamily: [
@@ -160,7 +157,6 @@ const theme = responsiveFontSizes(
       body1: {
         fontSize: "1.2rem",
         fontWeight: "normal",
-        color: "#003269",
         marginBottom: "1.2rem",
       },
       body2: {
@@ -176,7 +172,6 @@ const theme = responsiveFontSizes(
         fontSize: "0.8rem",
         fontWeight: "normal",
         textTransform: "uppercase",
-        color: "#003269",
       },
       subtitle2: {
         fontSize: "0.8rem",

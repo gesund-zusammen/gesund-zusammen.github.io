@@ -8,9 +8,13 @@ import { Link, NavLink } from "react-router-dom";
 import { withTranslation, WithTranslation } from "react-i18next";
 
 import LogoDE from "../../../images/logo.svg";
+import LogoDELight from "../../../images/logo_light.svg";
 import LogoEN from "../../../images/logo_en.svg";
+import LogoENLight from "../../../images/logo_en_light.svg";
 
-interface IHeaderNavProps extends RouteComponentProps, WithTranslation {}
+interface IHeaderNavProps extends RouteComponentProps, WithTranslation {
+  dark?: boolean;
+}
 
 interface IHeaderNavState {
   navExpanded: boolean;
@@ -44,14 +48,34 @@ class HeaderNav extends React.PureComponent<IHeaderNavProps, IHeaderNavState> {
       <HeaderNavRoot>
         <HeaderNavLogoBox>
           <Link to={`/${this.props.i18n.language}/`}>
-            <HeaderLogo
-              src={this.props.i18n.language === "de" ? LogoDE : LogoEN}
-              alt={
-                this.props.i18n.language === "de"
-                  ? "#GesundZusammen"
-                  : "#HealthyTogether"
-              }
-            />
+            <Hidden xsDown>
+              <HeaderLogo
+                src={
+                  this.props.dark
+                    ? this.props.i18n.language === "de"
+                      ? LogoDE
+                      : LogoEN
+                    : this.props.i18n.language === "de"
+                    ? LogoDELight
+                    : LogoENLight
+                }
+                alt={
+                  this.props.i18n.language === "de"
+                    ? "#GesundZusammen"
+                    : "#HealthyTogether"
+                }
+              />
+            </Hidden>
+            <Hidden smUp>
+              <HeaderLogo
+                src={this.props.i18n.language === "de" ? LogoDE : LogoEN}
+                alt={
+                  this.props.i18n.language === "de"
+                    ? "#GesundZusammen"
+                    : "#HealthyTogether"
+                }
+              />
+            </Hidden>
           </Link>
           <Hidden smUp>
             {this.state.navExpanded ? (
@@ -64,18 +88,22 @@ class HeaderNav extends React.PureComponent<IHeaderNavProps, IHeaderNavState> {
         <HeaderNavItemsBox
           className={this.state.navExpanded ? "expanded" : "retracted"}
         >
-          <HeaderNavItems className={"underline"}>
+          <HeaderNavItems className={`${this.props.dark && "dark"} underline`}>
             <HeaderNavItem>
               <HeaderNavLinkItem
+                color="primary"
                 to={`/${this.props.i18n.language}/initiative`}
                 activeClassName="active"
+                className={this.props.dark && "dark"}
               >
                 {this.props.t("header.nav.initiative")}
               </HeaderNavLinkItem>
               <HeaderSubnavItems className="subnav-items">
-                <HeaderSubnavItem>
+                <HeaderSubnavItem className={this.props.dark && "dark"}>
                   <HeaderNavLinkSubitem
+                    color="primary"
                     to={`/${this.props.i18n.language}/database`}
+                    className={`${this.props.dark && "dark"} subnav-item`}
                   >
                     {this.props.t("header.nav.database")}
                   </HeaderNavLinkSubitem>
@@ -84,16 +112,19 @@ class HeaderNav extends React.PureComponent<IHeaderNavProps, IHeaderNavState> {
             </HeaderNavItem>
             <HeaderNavItem>
               <HeaderNavLinkItem
+                color="primary"
                 to={`/${this.props.i18n.language}/accelerator`}
                 activeClassName="active"
+                className={this.props.dark && "dark"}
               >
                 {this.props.t("header.nav.accelerator")}
               </HeaderNavLinkItem>
               <HeaderSubnavItems className="subnav-items">
-                <HeaderSubnavItem>
+                <HeaderSubnavItem className={this.props.dark && "dark"}>
                   <HeaderNavLinkSubitem
-                    className="subnav-item"
+                    color="primary"
                     to={`/${this.props.i18n.language}/program`}
+                    className={`${this.props.dark && "dark"} subnav-item`}
                   >
                     {this.props.t("header.nav.program")}
                   </HeaderNavLinkSubitem>
@@ -102,19 +133,23 @@ class HeaderNav extends React.PureComponent<IHeaderNavProps, IHeaderNavState> {
             </HeaderNavItem>
             <HeaderNavItem>
               <HeaderNavLinkItem
+                color="primary"
                 to={`/${this.props.i18n.language}/faq`}
                 activeClassName="active"
+                className={this.props.dark && "dark"}
               >
                 {this.props.t("header.nav.faqs")}
               </HeaderNavLinkItem>
             </HeaderNavItem>
           </HeaderNavItems>
           <HeaderNavItems>
-            <HeaderNavItem className="lang-selector">
+            <HeaderNavItem className={`lang-selector`}>
               <LangSelect
+                color="secondary"
                 value={this.props.i18n.language}
                 onChange={this.handleLangChange}
                 label="Language"
+                className={`${this.props.dark && "dark"}`}
                 disableUnderline
               >
                 <LangSelectMenuItem value={"en"}>EN</LangSelectMenuItem>
@@ -230,6 +265,10 @@ const HeaderNavItems: AnyStyledComponent = styled.ul`
 
     &.underline {
       border-bottom: 1px solid #ffffff;
+
+      &.dark {
+        border-color: #003269;
+      }
     }
   }
 `;
@@ -258,6 +297,10 @@ const HeaderNavItem: AnyStyledComponent = styled.li`
     &:hover {
       & > a {
         border-bottom: 3px solid #ffffff;
+
+        &.dark {
+          border-color: #003269;
+        }
       }
 
       & > .subnav-items {
@@ -289,6 +332,10 @@ const HeaderSubnavItem: AnyStyledComponent = styled.li`
     border-radius: 0px 0px 25px 0px;
     margin: 10px 0 0 0;
     cursor: pointer;
+
+    &.dark {
+      border-color: #003269;
+    }
   }
 `;
 
@@ -309,6 +356,14 @@ const HeaderNavLinkItem: AnyStyledComponent = styled(NavLink)`
 
     &.active {
       border-bottom: 3px solid #ffffff;
+
+      &.dark {
+        border-color: #003269;
+      }
+    }
+
+    &.dark {
+      color: #003269;
     }
   }
 `;
@@ -323,6 +378,10 @@ const HeaderNavLinkSubitem: AnyStyledComponent = styled(NavLink)`
 
   @media (min-width: 600px) {
     color: #ffffff;
+
+    &.dark {
+      color: #003269;
+    }
   }
 `;
 
@@ -333,11 +392,20 @@ const LangSelect: AnyStyledComponent = styled(Select)`
     font-size: 1rem;
     padding: 0;
     margin: 1rem 0;
+    color: #003269;
 
     & > svg {
-      color: #003269;
       top: 8px;
       right: 0px;
+      color: #003269;
+    }
+
+    &.dark {
+      color: #949494;
+
+      & > svg {
+        color: #949494;
+      }
     }
 
     @media (min-width: 600px) {
