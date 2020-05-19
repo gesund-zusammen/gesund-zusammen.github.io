@@ -3,17 +3,17 @@ import { FontFace } from "csstype";
 import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 
-import OpenSansRegularTtf from "../fonts/open-sans/open-sans-v17-latin-regular.ttf";
-import OpenSansRegularWoff from "../fonts/open-sans/open-sans-v17-latin-regular.woff";
-import OpenSansRegularWoff2 from "../fonts/open-sans/open-sans-v17-latin-regular.woff2";
+import MontserratRegularTtf from "../fonts/montserrat/montserrat-v14-latin-regular.ttf";
+import MontserratRegularWoff from "../fonts/montserrat/montserrat-v14-latin-regular.woff";
+import MontserratRegularWoff2 from "../fonts/montserrat/montserrat-v14-latin-regular.woff2";
 
-import OpenSans600Ttf from "../fonts/open-sans/open-sans-v17-latin-600.ttf";
-import OpenSans600Woff from "../fonts/open-sans/open-sans-v17-latin-600.woff";
-import OpenSans600Woff2 from "../fonts/open-sans/open-sans-v17-latin-600.woff2";
+import Montserrat600Ttf from "../fonts/montserrat/montserrat-v14-latin-600.ttf";
+import Montserrat600Woff from "../fonts/montserrat/montserrat-v14-latin-600.woff";
+import Montserrat600Woff2 from "../fonts/montserrat/montserrat-v14-latin-600.woff2";
 
-import OpenSans700Ttf from "../fonts/open-sans/open-sans-v17-latin-700.ttf";
-import OpenSans700Woff from "../fonts/open-sans/open-sans-v17-latin-700.woff";
-import OpenSans700Woff2 from "../fonts/open-sans/open-sans-v17-latin-700.woff2";
+import Montserrat700Ttf from "../fonts/montserrat/montserrat-v14-latin-700.ttf";
+import Montserrat700Woff from "../fonts/montserrat/montserrat-v14-latin-700.woff";
+import Montserrat700Woff2 from "../fonts/montserrat/montserrat-v14-latin-700.woff2";
 
 import LatoRegularTtf from "../fonts/lato/lato-v16-latin-regular.ttf";
 import LatoRegularWoff from "../fonts/lato/lato-v16-latin-regular.woff";
@@ -36,45 +36,45 @@ const LatoRegular: FontFace = {
   `,
 };
 
-const OpenSansRegular: FontFace = {
-  fontFamily: "Open Sans",
+const MontserratRegular: FontFace = {
+  fontFamily: "Montserrat",
   fontStyle: "normal",
   fontWeight: 400,
   fontDisplay: "swap",
   src: `
-    local('Open Sans Regular'),
-    local('OpenSans-Regular'),
-    url(${OpenSansRegularTtf}) format('ttf'),
-    url(${OpenSansRegularWoff}) format('woff'),
-    url(${OpenSansRegularWoff2}) format('woff2')
+    local('Montserrat Regular'),
+    local('Montserrat-Regular'),
+    url(${MontserratRegularTtf}) format('ttf'),
+    url(${MontserratRegularWoff}) format('woff'),
+    url(${MontserratRegularWoff2}) format('woff2')
   `,
 };
 
-const OpenSans600: FontFace = {
-  fontFamily: "Open Sans",
+const Montserrat600: FontFace = {
+  fontFamily: "Montserrat",
   fontStyle: "normal",
   fontWeight: 600,
   fontDisplay: "swap",
   src: `
-    local('Open Sans SemiBold'),
-    local('OpenSans-SemiBold'),
-    url(${OpenSans600Ttf}) format('ttf'),
-    url(${OpenSans600Woff}) format('woff'),
-    url(${OpenSans600Woff2}) format('woff2')
+    local('Montserrat SemiBold'),
+    local('Montserrat-SemiBold'),
+    url(${Montserrat600Ttf}) format('ttf'),
+    url(${Montserrat600Woff}) format('woff'),
+    url(${Montserrat600Woff2}) format('woff2')
   `,
 };
 
-const OpenSans700: FontFace = {
-  fontFamily: "Open Sans",
+const Montserrat700: FontFace = {
+  fontFamily: "Montserrat",
   fontStyle: "normal",
   fontWeight: 700,
   fontDisplay: "swap",
   src: `
-    local('Open Sans Bold'),
-    local('OpenSans-Bold'),
-    url(${OpenSans700Ttf}) format('ttf'),
-    url(${OpenSans700Woff}) format('woff'),
-    url(${OpenSans700Woff2}) format('woff2')
+    local('Montserrat Bold'),
+    local('Montserrat-Bold'),
+    url(${Montserrat700Ttf}) format('ttf'),
+    url(${Montserrat700Woff}) format('woff'),
+    url(${Montserrat700Woff2}) format('woff2')
   `,
 };
 
@@ -103,7 +103,7 @@ const theme = responsiveFontSizes(
       fontFamily: ['"Lato"', '"Helvetica"', '"Arial"', "sans-serif"].join(","),
       h1: {
         fontFamily: [
-          '"Open Sans"',
+          '"Montserrat"',
           '"Helvetica"',
           '"Arial"',
           "sans-serif",
@@ -114,7 +114,7 @@ const theme = responsiveFontSizes(
       },
       h2: {
         fontFamily: [
-          '"Open Sans"',
+          '"Montserrat"',
           '"Helvetica"',
           '"Arial"',
           "sans-serif",
@@ -126,7 +126,7 @@ const theme = responsiveFontSizes(
       },
       h3: {
         fontFamily: [
-          '"Open Sans"',
+          '"Montserrat"',
           '"Helvetica"',
           '"Arial"',
           "sans-serif",
@@ -138,7 +138,7 @@ const theme = responsiveFontSizes(
       },
       h4: {
         fontFamily: [
-          '"Open Sans"',
+          '"Montserrat"',
           '"Helvetica"',
           '"Arial"',
           "sans-serif",
@@ -149,7 +149,7 @@ const theme = responsiveFontSizes(
       },
       h6: {
         fontFamily: [
-          '"Open Sans"',
+          '"Montserrat"',
           '"Helvetica"',
           '"Arial"',
           "sans-serif",
@@ -189,9 +189,9 @@ const theme = responsiveFontSizes(
       MuiCssBaseline: {
         "@global": {
           "@font-face": [
-            OpenSansRegular,
-            OpenSans600,
-            OpenSans700,
+            MontserratRegular,
+            Montserrat600,
+            Montserrat700,
             LatoRegular,
           ],
         },
