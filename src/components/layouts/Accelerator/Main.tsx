@@ -101,14 +101,15 @@ const ApplyButton: AnyStyledComponent = styled(Button)`
   && {
     background-color: #003269;
     color: #ffffff;
-    font-size: 1rem;
-    font-weight: 500;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
     text-transform: none;
     text-align: center;
-    border-radius: 4px;
-    margin: 0 auto;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    border-radius: 25px;
+    padding: 1rem 4rem;
+    margin: 2rem auto;
 
     @media (min-width: 600px) {
       background-color: #ffffff;

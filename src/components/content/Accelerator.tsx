@@ -44,14 +44,19 @@ const ContentGridItem: AnyStyledComponent = styled(Grid)`
 
 const LinkButton: AnyStyledComponent = styled(Button)`
   && {
-    display: block;
-    font-size: 1rem;
-    font-weight: 500;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
     text-transform: none;
     text-align: center;
-    border-radius: 15px;
-    padding: 0.6rem 2rem;
-    margin: 4rem auto 0;
+    color: #00aac8;
+    background: transparent;
+    border: 3px solid #00aac8;
+    border-radius: 25px;
+    padding: 0.6rem 4rem;
+    margin: 2rem auto 0;
+    box-shadow: none;
   }
 `;
 
@@ -97,7 +102,6 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
               a: {
                 component: LinkButton,
                 props: {
-                  color: "primary",
                   variant: "contained",
                   disableFocusRipple: true,
                 },

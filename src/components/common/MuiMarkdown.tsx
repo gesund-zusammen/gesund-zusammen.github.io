@@ -5,12 +5,14 @@ import Markdown, { MarkdownOptions } from "markdown-to-jsx";
 interface IMuiMarkdownProps {
   markdown: string;
   overrides?: MarkdownOptions["overrides"];
+  className?: string;
 }
 
 class MuiMarkdown extends React.PureComponent<IMuiMarkdownProps, {}> {
   render = () => {
     return (
       <Markdown
+        className={this.props.className}
         options={{
           overrides: {
             h1: {
