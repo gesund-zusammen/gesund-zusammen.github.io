@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Button, Typography } from "@material-ui/core";
+import { Box, Container, Grid, Button, Typography } from "@material-ui/core";
 import { withTranslation, WithTranslation } from "react-i18next";
 import styled, { AnyStyledComponent } from "styled-components";
 
@@ -16,28 +16,46 @@ import ContentFR from "../../data/accelerator/accelerator_fr.md";
 import ContentIT from "../../data/accelerator/accelerator_it.md";
 import ContentES from "../../data/accelerator/accelerator_es.md";
 
-import LogoFuturePerfect from "../../images/logo_future_perfect.svg";
-import IlluCoworking from "../../images/illu_coworking.svg";
-import IlluMobile from "../../images/illu_mobile.svg";
-import IlluSupport from "../../images/illu_support.svg";
+import LiBulletIcon from "../../images/li_bullet_icon.svg";
 
-const AcceleratorLogo: AnyStyledComponent = styled.img`
-  display: block;
-  width: 500px;
-  max-width: 100%;
-  margin: 0 0 2rem 0;
+const FunkyBox: AnyStyledComponent = styled(Box)`
+  && {
+    position: relative;
+  }
+  & > .background {
+    display: none;
 
-  @media (min-width: 600px) {
-    margin: 0 0 4rem 0;
+    @media (min-width: 600px) {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      width: 50%;
+      height: 100%;
+      background: #e1e1e1;
+    }
   }
 `;
 
-const ContentGridItem: AnyStyledComponent = styled(Grid)`
+const SuperFunkyBox: AnyStyledComponent = styled(Box)`
   && {
+    position: relative;
+  }
+  & > .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    display: block;
+    width: 70%;
+    height: 100%;
+    background: #e1e1e1;
+    border-radius: 0 0 100px 0;
+
     @media (min-width: 600px) {
-      &:last-of-type {
-        border-left: 1px solid #ced7db;
-      }
+      width: 50%;
+      border-radius: 0 0 400px 0;
     }
   }
 `;
@@ -60,6 +78,21 @@ const LinkButton: AnyStyledComponent = styled(Button)`
   }
 `;
 
+const FunkyGrid: AnyStyledComponent = styled(Grid)`
+  && {
+    &:nth-of-type(2) {
+      & > h6 {
+        padding-left: 2rem;
+        background: url(${LiBulletIcon}) no-repeat;
+        background-position: left top 4px;
+      }
+      & > p {
+        padding-left: 2rem;
+      }
+    }
+  }
+`;
+
 class Accelerator extends React.PureComponent<WithTranslation, {}> {
   getMarkdown(language: string) {
     switch (language) {
@@ -79,77 +112,97 @@ class Accelerator extends React.PureComponent<WithTranslation, {}> {
   render = () => {
     return (
       <>
-        <AcceleratorLogo src={LogoFuturePerfect} />
-        <Box id="accelerator" paddingBottom={4} marginTop={2}>
-          <MuiMarkdown
-            markdown={this.getMarkdown(this.props.i18n.language)}
-            overrides={{
-              ul: {
-                component: Grid,
-                props: {
-                  container: true,
-                  spacing: 8,
-                },
-              },
-              li: {
-                component: ContentGridItem,
-                props: {
-                  item: true,
-                  xs: 12,
-                  sm: 6,
-                },
-              },
-              a: {
-                component: LinkButton,
-                props: {
-                  variant: "contained",
-                  disableFocusRipple: true,
-                },
-              },
-            }}
-          />
-        </Box>
-
-        <Box paddingBottom={4} marginTop={8}>
-          <Grid container justify="center" spacing={4}>
-            <Grid item xs={12} sm={6} md={4}>
-              <InfoBox
-                title={this.props.t("accelerator.box1.title")}
-                content={this.props.t("accelerator.box1.content")}
-                illustration={IlluCoworking}
-              />
+        <Container maxWidth="lg">
+          <Box paddingBottom={1}>
+            <Grid container>
+              <Grid item xs={12} sm={6}>
+                <Typography variant="h2" color="primary">
+                  {this.props.t("accelerator.title")}
+                </Typography>
+              </Grid>
             </Grid>
-            <Grid item xs={12} sm={6} md={4}>
-              <InfoBox
-                title={this.props.t("accelerator.box2.title")}
-                content={this.props.t("accelerator.box2.content")}
-                illustration={IlluMobile}
-              />
-            </Grid>
-            <Grid item xs={12} sm={6} md={4}>
-              <InfoBox
-                title={this.props.t("accelerator.box3.title")}
-                content={this.props.t("accelerator.box3.content")}
-                illustration={IlluSupport}
-              />
-            </Grid>
-          </Grid>
-        </Box>
+          </Box>
+        </Container>
 
-        <Box id="partners" paddingBottom={4} marginTop={4}>
-          <Typography variant="h2" color="primary">
-            {this.props.t("partners.header")}
-          </Typography>
-          <PartnerItems data={AcceleratorPartners} />
-        </Box>
+        <FunkyBox>
+          <div className="background" />
+          <Container maxWidth="lg">
+            <Box id="landing" paddingBottom={4} marginTop={4}>
+              <MuiMarkdown
+                markdown={this.getMarkdown(this.props.i18n.language)}
+                overrides={{
+                  ul: {
+                    component: Grid,
+                    props: {
+                      container: true,
+                      spacing: 6,
+                    },
+                  },
+                  li: {
+                    component: FunkyGrid,
+                    props: {
+                      item: true,
+                      xs: 12,
+                      sm: 6,
+                    },
+                  },
+                  a: {
+                    component: LinkButton,
+                    props: {
+                      variant: "contained",
+                      disableFocusRipple: true,
+                    },
+                  },
+                }}
+              ></MuiMarkdown>
+            </Box>
+          </Container>
+        </FunkyBox>
 
-        <Box paddingBottom={4} marginTop={4}>
-          <CTABox
-            claim={this.props.t("accelerator.ctaBox.claim")}
-            cta={this.props.t("accelerator.ctaBox.cta")}
-            href={this.props.t("accelerator.ctaBox.link")}
-          />
-        </Box>
+        <SuperFunkyBox>
+          <div className="background" />
+          <Container maxWidth="lg">
+            <Box paddingBottom={6}>
+              <Grid container justify="center" spacing={4}>
+                <Grid item xs={12} sm={6} md={4}>
+                  <InfoBox
+                    title={this.props.t("accelerator.box1.title")}
+                    content={this.props.t("accelerator.box1.content")}
+                  />
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                  <InfoBox
+                    title={this.props.t("accelerator.box2.title")}
+                    content={this.props.t("accelerator.box2.content")}
+                  />
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                  <InfoBox
+                    title={this.props.t("accelerator.box3.title")}
+                    content={this.props.t("accelerator.box3.content")}
+                  />
+                </Grid>
+              </Grid>
+            </Box>
+          </Container>
+        </SuperFunkyBox>
+
+        <Container maxWidth="lg">
+          <Box id="partners" paddingBottom={4} marginTop={4}>
+            <Typography variant="h2" color="primary">
+              {this.props.t("partners.header")}
+            </Typography>
+            <PartnerItems data={AcceleratorPartners} />
+          </Box>
+
+          <Box paddingBottom={4} marginTop={4}>
+            <CTABox
+              claim={this.props.t("accelerator.ctaBox.claim")}
+              cta={this.props.t("accelerator.ctaBox.cta")}
+              href={this.props.t("accelerator.ctaBox.link")}
+            />
+          </Box>
+        </Container>
       </>
     );
   };

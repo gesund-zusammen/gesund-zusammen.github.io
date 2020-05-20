@@ -12,7 +12,6 @@ import { withTranslation, WithTranslation } from "react-i18next";
 
 import HeaderNav from "../Shared/HeaderNav";
 import Social from "../Shared/Social";
-import LatestNews from "../Shared/LatestNews";
 import Footer from "../Shared/Footer";
 import NewsletterSignup from "../Shared/NewsletterSignup";
 import { MainContentContainer } from "../Shared/StyledComponents";
@@ -93,7 +92,7 @@ const HeaderIllustration: AnyStyledComponent = styled.img`
     bottom: 0;
     height: 80%;
     width: auto;
-    margin-right: 120px;
+    margin-right: 80px;
   }
 `;
 
@@ -175,8 +174,6 @@ class LayoutInitiative extends React.PureComponent<WithTranslation, {}> {
             {this.props.children}
           </MainContentContainer>
         </MainContentBox>
-
-        <LatestNews />
 
         <NewsletterSignup />
 

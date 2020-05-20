@@ -3,6 +3,7 @@ import { Box, Container, Typography, Grid, Hidden } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
 import HeaderNav from "../Shared/HeaderNav";
+import NewsletterSignup from "../Shared/NewsletterSignup";
 import Social from "../Shared/Social";
 import Footer from "../Shared/Footer";
 import { MainContentContainer } from "../Shared/StyledComponents";
@@ -153,6 +154,8 @@ class LayoutInitiativePage extends React.PureComponent<
             {this.props.children}
           </MainContentContainer>
         </MainContentBox>
+
+        <NewsletterSignup />
 
         <Social />
 

@@ -13,9 +13,7 @@ import { withTranslation, WithTranslation } from "react-i18next";
 import HeaderNav from "../Shared/HeaderNav";
 import Social from "../Shared/Social";
 import Footer from "../Shared/Footer";
-import LatestNews from "../Shared/LatestNews";
 import NewsletterSignup from "../Shared/NewsletterSignup";
-import { MainContentContainer } from "../Shared/StyledComponents";
 
 import IlluHeader from "../../../images/illu_header_accelerator.svg";
 
@@ -74,7 +72,7 @@ const HeaderContent: AnyStyledComponent = styled.div`
     text-align: left;
     color: #ffffff;
     margin: 4rem 0 2rem 0;
-    padding-right: 10rem;
+    padding-right: 2rem;
 
     & > h1 {
       color: #ffffff;
@@ -93,7 +91,7 @@ const HeaderIllustration: AnyStyledComponent = styled.img`
     bottom: 0;
     height: 80%;
     width: auto;
-    margin-right: 120px;
+    margin-right: 80px;
   }
 `;
 
@@ -147,14 +145,6 @@ class LayoutAccelerator extends React.PureComponent<WithTranslation, {}> {
                       <Typography variant="h1" color="secondary">
                         {this.props.t("accelerator.header.title")}
                       </Typography>
-                      <Typography
-                        variant="body1"
-                        style={{
-                          fontFamily: "inherit",
-                        }}
-                      >
-                        {this.props.t("accelerator.header.content")}
-                      </Typography>
                       <ApplyButton
                         variant="contained"
                         disableFocusRipple={true}
@@ -178,13 +168,7 @@ class LayoutAccelerator extends React.PureComponent<WithTranslation, {}> {
           </SuperFunkyBox>
         </Box>
 
-        <MainContentBox id="content">
-          <MainContentContainer maxWidth="lg">
-            {this.props.children}
-          </MainContentContainer>
-        </MainContentBox>
-
-        <LatestNews />
+        <MainContentBox id="content">{this.props.children}</MainContentBox>
 
         <NewsletterSignup />
 
