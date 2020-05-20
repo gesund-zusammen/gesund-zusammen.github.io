@@ -1,10 +1,20 @@
 import React from "react";
-import { Box, Container } from "@material-ui/core";
+import { Box } from "@material-ui/core";
+import styled, { AnyStyledComponent } from "styled-components";
 
 import SubPageHeader from "./Header";
+import NewsletterSignup from "../Shared/NewsletterSignup";
 import Social from "../Shared/Social";
 import Footer from "../Shared/Footer";
-import { HeaderBox, MainContentContainer } from "../Shared/StyledComponents";
+import { MainContentContainer } from "../Shared/StyledComponents";
+
+const MainContentBox: AnyStyledComponent = styled(Box)`
+  && {
+    overflow-x: hidden;
+    margin-top: 64px;
+    padding-bottom: 48px;
+  }
+`;
 
 interface ILayoutSubPageProps {
   title: string;
@@ -15,17 +25,15 @@ class LayoutSubPage extends React.PureComponent<ILayoutSubPageProps, {}> {
   render = () => {
     return (
       <>
-        <HeaderBox id="header" component="header">
-          <Container maxWidth="lg">
-            <SubPageHeader title={this.props.title} image={this.props.image} />
-          </Container>
-        </HeaderBox>
+        <SubPageHeader title={this.props.title} image={this.props.image} />
 
-        <Box id="content" paddingBottom={4} marginTop={4}>
+        <MainContentBox id="content">
           <MainContentContainer maxWidth="lg">
             {this.props.children}
           </MainContentContainer>
-        </Box>
+        </MainContentBox>
+
+        <NewsletterSignup />
 
         <Social />
 

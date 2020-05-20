@@ -30,10 +30,10 @@ class LatestNews extends React.PureComponent<WithTranslation> {
         <LatestNewsContainer maxWidth="lg">
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6}>
-              <Typography variant="h2">
+              <Typography variant="h2" color="primary">
                 {this.props.t("latestNews.title")}
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body1" color="primary">
                 {this.props.t("latestNews.content")}
               </Typography>
               <LinkButton
@@ -49,8 +49,10 @@ class LatestNews extends React.PureComponent<WithTranslation> {
               {this.getNewsItems(3).map(newsItem => {
                 return (
                   <NewsItem key={newsItem.link} href={newsItem.link}>
-                    <Typography variant="h4">{newsItem.outlet}</Typography>
-                    <Typography variant="body1">
+                    <Typography variant="h4" color="secondary">
+                      {newsItem.outlet}
+                    </Typography>
+                    <Typography variant="body1" color="primary">
                       &quot;{newsItem.teaser}&quot;
                     </Typography>
                   </NewsItem>
@@ -83,7 +85,6 @@ const NewsItem: AnyStyledComponent = styled.a`
   background-position: right center;
   background-repeat: no-repeat;
   border-bottom: 1px solid #0a6eaa;
-  color: #003269;
   text-decoration: none;
 
   &:first-of-type {

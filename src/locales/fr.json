@@ -26,6 +26,11 @@
     }
   },
   "start": {
+    "header": {
+      "title": "La technologie sauve des vies",
+      "content": "Les outils numériques pour combattre le Covid-19"
+    },
+    "title": "Qui sommes nous?",
     "box1": {
       "title": "L'initiative",
       "content": "En savoir plus sur notre initiative numérique.",
@@ -43,10 +48,10 @@
     }
   },
   "accelerator": {
-    "landing": {
-      "title": "La technologie sauve des vies.",
-      "content": "Un programme d'accélération qui vise à trouver des solutions contre le COVID-19"
+    "header": {
+      "title": "Un programme pour booster les solutions contre COVID-19"
     },
+    "title": "Future Perfect - Un accélérateur initié par l'économie numérique.",
     "box1": {
       "title": "Programme",
       "content": "Au moins 4 solutions retenues, soutenues avec EUR 20,000 de fonds propres, un coaching et un accès à notre réseau"
@@ -66,9 +71,8 @@
     }
   },
   "initiative": {
-    "landing": {
-      "title": "La technologie sauve des vies.",
-      "content": "Les outils numériques pour combattre le Covid-19"
+    "header": {
+      "title": "Une initiative ouverte portée par l'économie numérique européenne"
     },
     "box1": {
       "title": "Développement agile",

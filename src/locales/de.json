@@ -26,6 +26,11 @@
     }
   },
   "start": {
+    "header": {
+      "title": "Technologie rettet Leben",
+      "content": "Digitale Lösungen gegen COVID-19"
+    },
+    "title": "Wer sind wir?",
     "box1": {
       "title": "Die Initiative",
       "content": "Lesen Sie mehr über unsere digitale Initative.",
@@ -43,10 +48,10 @@
     }
   },
   "accelerator": {
-    "landing": {
-      "title": "Technologie rettet Leben.",
-      "content": "Ein Accelerator-Programm für Ideen zur Bekämpfung der COVID-19-Krise."
+    "header": {
+      "title": "Ein Programm für Ideen zur Bekämpfung von COVID-19"
     },
+    "title": "Future Perfect - Ein Accelerator initiiert von der Digitalwirtschaft",
     "box1": {
       "title": "Das Programm",
       "content": "Unterstützung von mindestens 4 Lösungen mit jeweils €20,000 Kapital (ohne Anteilsausgabe), Coaching und Reichweite."
@@ -66,9 +71,8 @@
     }
   },
   "initiative": {
-    "landing": {
-      "title": "Technologie rettet Leben.",
-      "content": "Digitale Lösungen gegen COVID-19"
+    "header": {
+      "title": "Eine offene Initiative der europäischen Digitalwirtschaft"
     },
     "box1": {
       "title": "Agile Entwicklung",

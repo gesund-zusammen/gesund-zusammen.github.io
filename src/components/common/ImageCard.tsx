@@ -44,11 +44,11 @@ const CardWrapper: AnyStyledComponent = styled(Card)`
     position: relative;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 6px 6px 14px rgba(26, 11, 61, 0.25);
+    box-shadow: none;
     transition: box-shadow 0.3s ease-in-out;
 
     &:hover {
-      box-shadow: 12px 12px 20px rgba(26, 11, 61, 0.25);
+      box-shadow: 6px 6px 14px rgba(26, 11, 61, 0.25);
     }
 
     &:after {

@@ -33,18 +33,18 @@ class NewsletterSignup extends React.PureComponent<
   render = () => {
     return (
       <NewsletterSignupBox id="newsletter-signup">
-        <NewsletterSignupContainer maxWidth="lg">
+        <NewsletterSignupContainer maxWidth="md">
           <Grid container spacing={4}>
             <Hidden xsDown>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} sm={4}>
                 <NewsletterIllustration src={IlluNewsletter} />
               </Grid>
             </Hidden>
-            <Grid item xs={12} sm={6}>
-              <Typography variant="h2" color="textSecondary">
+            <Grid item xs={12} sm={8}>
+              <Typography variant="h2" color="secondary">
                 {this.props.t("newsletter.title")}
               </Typography>
-              <Typography variant="body1" color="textSecondary">
+              <Typography variant="body1" color="primary">
                 {this.props.t("newsletter.content")}
               </Typography>
               <form
@@ -122,12 +122,15 @@ const NewsletterSignupBox: AnyStyledComponent = styled(Box)`
 
 const NewsletterSignupContainer: AnyStyledComponent = styled(Container)`
   padding: 4rem 0;
+
+  @media (min-width: 600px) {
+    padding-bottom: 0;
+  }
 `;
 
 const NewsletterIllustration: AnyStyledComponent = styled.img`
-  display: inline-block;
-  width: 100%;
-  height: auto;
+  float: right;
+  margin-top: -4em;
 `;
 
 const EmailField: AnyStyledComponent = styled(TextField)`

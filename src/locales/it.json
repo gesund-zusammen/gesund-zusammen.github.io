@@ -26,6 +26,11 @@
     }
   },
   "start": {
+    "header": {
+      "title": "La tecnologia salva le vite",
+      "content": "Strumenti digitali per combattere il Covid-19"
+    },
+    "title": "Chi siamo noi?",
     "box1": {
       "title": "L'iniziativa",
       "content": "Maggiori informazioni sulla nostra iniziativa digitale.",
@@ -43,10 +48,10 @@
     }
   },
   "accelerator": {
-    "landing": {
-      "title": "La tecnologia salva le vite.",
-      "content": "Un programma di accelerazione per velocizzare soluzioni contro la crisi da Covid-19."
+    "header": {
+      "title": "Un programma per potenziare le soluzioni contro COVID-19"
     },
+    "title": "Future Perfect - Un acceleratore guidato dall'industria digitale",
     "box1": {
       "title": "Programma",
       "content": "Un minimo di 4 soluzioni finanziate con €20,000, mentorship and distribuzione."
@@ -66,9 +71,8 @@
     }
   },
   "initiative": {
-    "landing": {
-      "title": "La tecnologia salva le vite.",
-      "content": "Strumenti digitali per combattere il Covid-19"
+    "header": {
+      "title": "Un'iniziativa aperta guidata dall'economia digitale europea"
     },
     "box1": {
       "title": "Sviluppo agile",

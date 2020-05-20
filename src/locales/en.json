@@ -26,6 +26,11 @@
     }
   },
   "start": {
+    "header": {
+      "title": "Technology saving lives",
+      "content": "Digital tools to fight Covid-19"
+    },
+    "title": "Who are we?",
     "box1": {
       "title": "The Initiative",
       "content": "Read more about our digital initiative.",
@@ -43,10 +48,10 @@
     }
   },
   "accelerator": {
-    "landing": {
-      "title": "Technology saving lives.",
-      "content": "An accelerator program to boost solutions against the COVID-19 crisis."
+    "header": {
+      "title": "A program to boost solutions against COVID-19"
     },
+    "title": "Future Perfect - an Accelerator initiated by the digital economy",
     "box1": {
       "title": "Program",
       "content": "A minimum of 4 solutions are supported with €20,000 of equity-free capital each, mentorship and reach."
@@ -66,9 +71,8 @@
     }
   },
   "initiative": {
-    "landing": {
-      "title": "Technology saving lives.",
-      "content": "Digital tools to fight Covid-19"
+    "header": {
+      "title": "An open initiative led by the european digital economy"
     },
     "box1": {
       "title": "Agile Development",

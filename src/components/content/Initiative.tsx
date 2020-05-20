@@ -25,29 +25,46 @@ import ContentFR from "../../data/initiative/initiative_fr.md";
 import ContentIT from "../../data/initiative/initiative_it.md";
 import ContentES from "../../data/initiative/initiative_es.md";
 
+import IlluContent from "../../images/illu_initiative_content.svg";
+import LiBulletIcon from "../../images/li_bullet_icon.svg";
+
 import { IAppState } from "../../reducer";
 import actions from "../../actions";
 
-const ContentGridItem: AnyStyledComponent = styled(Grid)`
+const ContentImage: AnyStyledComponent = styled.img`
+  width: 100%;
+`;
+
+const StyledMarkdownContent: AnyStyledComponent = styled(MuiMarkdown)`
   && {
-    @media (min-width: 600px) {
-      &:last-of-type {
-        border-left: 1px solid #ced7db;
-      }
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      padding: 0 0 0 2rem;
+      background: url(${LiBulletIcon}) no-repeat;
+      background-position: top 0.3rem left 0;
     }
   }
 `;
 
 const LinkButton: AnyStyledComponent = styled(Button)`
   && {
-    display: block;
-    font-size: 1rem;
-    font-weight: 500;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
     text-transform: none;
     text-align: center;
-    border-radius: 15px;
-    padding: 0.6rem 2rem;
-    margin: 4rem auto 0;
+    color: #00aac8;
+    background: transparent;
+    border: 3px solid #00aac8;
+    border-radius: 25px;
+    padding: 0.6rem 4rem;
+    margin: 2rem auto 0;
+    box-shadow: none;
   }
 `;
 
@@ -92,38 +109,31 @@ class Initiative extends React.PureComponent<
     return (
       <>
         <Box id="initiative" paddingBottom={4} marginTop={4}>
-          <MuiMarkdown
-            markdown={this.getMarkdown(this.props.i18n.language)}
-            overrides={{
-              ul: {
-                component: Grid,
-                props: {
-                  container: true,
-                  spacing: 8,
-                },
-              },
-              li: {
-                component: ContentGridItem,
-                props: {
-                  item: true,
-                  xs: 12,
-                  sm: 6,
-                },
-              },
-              a: {
-                component: LinkButton,
-                props: {
-                  color: "primary",
-                  variant: "contained",
-                  disableFocusRipple: true,
-                },
-              },
-            }}
-          />
+          <Grid container spacing={4}>
+            <Hidden xsDown>
+              <Grid item xs={12} sm={6}>
+                <ContentImage src={IlluContent} />
+              </Grid>
+            </Hidden>
+            <Grid item xs={12} sm={6}>
+              <StyledMarkdownContent
+                markdown={this.getMarkdown(this.props.i18n.language)}
+                overrides={{
+                  a: {
+                    component: LinkButton,
+                    props: {
+                      variant: "contained",
+                      disableFocusRipple: true,
+                    },
+                  },
+                }}
+              />
+            </Grid>
+          </Grid>
         </Box>
 
         <Box id="partners" paddingBottom={4} marginTop={8}>
-          <Typography variant="h2">
+          <Typography variant="h2" color="primary">
             {this.props.t("partners.header")}
           </Typography>
           <Box id="region-filter" paddingBottom={2}>
@@ -240,12 +250,14 @@ class Initiative extends React.PureComponent<
 const CountrySelect: AnyStyledComponent = styled(Typography)`
   && {
     display: inline-block;
-    font-weight: normal;
+    font-family: Montserrat;
+    font-weight: 700;
     text-align: center;
     color: #93989b;
     width: 50%;
     padding: 0.5rem 0;
     cursor: pointer;
+    border-bottom: 2px solid #0a6eaa;
 
     &:hover {
       color: #0a6eaa;
@@ -261,7 +273,7 @@ const CountrySelect: AnyStyledComponent = styled(Typography)`
 
     @media (min-width: 600px) {
       width: auto;
-      padding: 0.5rem 3rem;
+      padding: 0.5rem 2rem;
     }
   }
 `;
