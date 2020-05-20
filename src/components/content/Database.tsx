@@ -289,12 +289,13 @@ const CategoryChip: AnyStyledComponent = styled(Chip)`
 const RegionSelect: AnyStyledComponent = styled(Typography)`
   && {
     display: inline-block;
-    font-weight: normal;
+    font-weight: 700;
     color: #93989b;
     text-align: center;
     width: 50%;
     padding: 0.5rem 0;
     cursor: pointer;
+    border-bottom: 2px solid #0a6eaa;
 
     &:hover {
       color: #0a6eaa;

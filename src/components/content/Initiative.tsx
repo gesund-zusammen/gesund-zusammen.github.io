@@ -250,12 +250,14 @@ class Initiative extends React.PureComponent<
 const CountrySelect: AnyStyledComponent = styled(Typography)`
   && {
     display: inline-block;
-    font-weight: normal;
+    font-family: Montserrat;
+    font-weight: 700;
     text-align: center;
     color: #93989b;
     width: 50%;
     padding: 0.5rem 0;
     cursor: pointer;
+    border-bottom: 2px solid #0a6eaa;
 
     &:hover {
       color: #0a6eaa;
@@ -271,7 +273,7 @@ const CountrySelect: AnyStyledComponent = styled(Typography)`
 
     @media (min-width: 600px) {
       width: auto;
-      padding: 0.5rem 3rem;
+      padding: 0.5rem 2rem;
     }
   }
 `;
