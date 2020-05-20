@@ -8,7 +8,7 @@ import Social from "../Shared/Social";
 import Footer from "../Shared/Footer";
 import { MainContentContainer } from "../Shared/StyledComponents";
 
-import IlluHeader from "../../../images/illu_header_initiative.svg";
+import IlluHeader from "../../../images/illu_header_database.svg";
 
 const SuperFunkyBox: AnyStyledComponent = styled(Box)`
   && {
@@ -65,7 +65,11 @@ const HeaderContent: AnyStyledComponent = styled.div`
     text-align: left;
     color: #ffffff;
     margin: 4rem 0 2rem 0;
-    padding-right: 10rem;
+    padding-right: 2rem;
+
+    & > h1 {
+      color: #ffffff;
+    }
   }
 `;
 
@@ -77,9 +81,8 @@ const HeaderIllustration: AnyStyledComponent = styled.img`
   @media (min-width: 600px) {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 2rem;
     width: 100%;
-    margin-right: 120px;
   }
 `;
 
@@ -117,18 +120,11 @@ class LayoutInitiativePage extends React.PureComponent<
                 <Grid container spacing={4}>
                   <Grid item xs={12} sm={8}>
                     <HeaderContent>
-                      <Typography
-                        variant="h1"
-                        color="inherit"
-                        style={{
-                          whiteSpace: "pre-line",
-                        }}
-                      >
+                      <Typography variant="h1" color="secondary">
                         {this.props.title}
                       </Typography>
                       <Typography
                         variant="body1"
-                        color="inherit"
                         style={{
                           fontFamily: "inherit",
                           whiteSpace: "pre-line",
