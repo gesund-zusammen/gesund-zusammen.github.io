@@ -171,6 +171,7 @@ const HeaderNavRoot: AnyStyledComponent = styled(Box)`
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2rem;
+    font-family: Montserrat;
 
     @media (min-width: 600px) {
       margin-bottom: 0;
