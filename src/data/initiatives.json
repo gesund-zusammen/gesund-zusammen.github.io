@@ -1582,85 +1582,85 @@
       },
       "global": true
     },
-{
-      "name":"http://udlguidelines.cast.org/",
-      "link":"http://udlguidelines.cast.org/",
-      "category":"initiatives",
-      "description":{
-        "de":"The UDL Guidelines are a tool used in the implementation of Universal Design for Learning, a framework to improve and optimize teaching and learning for all people based on scientific insights into how humans learn. The UDL Guidelines can be used by educators, curriculum developers, researchers, parents, and anyone else who wants to implement the UDL framework in a learning environment. These guidelines offer a set of concrete suggestions that can be applied to any discipline or domain to ensure that all learners can access and participate in meaningful, challenging learning opportunities.",
-        "en":"The UDL Guidelines are a tool used in the implementation of Universal Design for Learning, a framework to improve and optimize teaching and learning for all people based on scientific insights into how humans learn. The UDL Guidelines can be used by educators, curriculum developers, researchers, parents, and anyone else who wants to implement the UDL framework in a learning environment. These guidelines offer a set of concrete suggestions that can be applied to any discipline or domain to ensure that all learners can access and participate in meaningful, challenging learning opportunities."
+    {
+      "name": "http://udlguidelines.cast.org/",
+      "link": "http://udlguidelines.cast.org/",
+      "category": "initiatives",
+      "description": {
+        "de": "Die UDL-Richtlinien sind ein Instrument zur Implementierung von Universal Design for Learning, einem Rahmen zur Verbesserung und Optimierung des Lehrens und Lernens für alle Menschen, basierend auf wissenschaftlichen Erkenntnissen darüber, wie Menschen lernen. Die UDL-Richtlinien können von Pädagogen, Lehrplanentwicklern, Forschern, Eltern und allen anderen Personen verwendet werden, die das UDL-Framework in einer Lernumgebung implementieren möchten. Diese Richtlinien bieten eine Reihe konkreter Vorschläge, die auf jede Disziplin oder Domäne angewendet werden können, um sicherzustellen, dass alle Lernenden auf sinnvolle, herausfordernde Lernmöglichkeiten zugreifen und daran teilnehmen können.",
+        "en": "The UDL Guidelines are a tool used in the implementation of Universal Design for Learning, a framework to improve and optimize teaching and learning for all people based on scientific insights into how humans learn. The UDL Guidelines can be used by educators, curriculum developers, researchers, parents, and anyone else who wants to implement the UDL framework in a learning environment. These guidelines offer a set of concrete suggestions that can be applied to any discipline or domain to ensure that all learners can access and participate in meaningful, challenging learning opportunities."
       },
       "global": true
-},
-{
-      "name":"World Economic Forum",
-      "link":"https://www.weforum.org/agenda/2020/05/covid-19-is-showing-us-a-new-model-of-entrepreneurship/",
-      "category":"research_and_government_sites",
-      "description":{
-        "de":"How entrepreneurship has taken a leading role in fighting Covid-19; with collaboration and cooperation are providing to be key in this effort",
-        "en":"How entrepreneurship has taken a leading role in fighting Covid-19; with collaboration and cooperation are providing to be key in this effort"
+    },
+    {
+      "name": "World Economic Forum",
+      "link": "https://www.weforum.org/agenda/2020/05/covid-19-is-showing-us-a-new-model-of-entrepreneurship/",
+      "category": "research_and_government_sites",
+      "description": {
+        "de": "Wie das Unternehmertum eine führende Rolle bei der Bekämpfung von Covid-19 übernommen hat; mit Zusammenarbeit und Kooperation sind entscheidend für diese Bemühungen.",
+        "en": "How entrepreneurship has taken a leading role in fighting Covid-19; with collaboration and cooperation are providing to be key in this effort."
       },
       "global": true
-},
-{
-      "name":"GCCvsVirus",
-      "link":"https://www.gccvsvirus.org/",
-      "category":"Hackathons",
-      "description":{
-        "de":"The GCC countries joined the Hackathon movement #GCCvsVIRUS.  @gccvsvirus has created a space where individuals, partners, mentors, and teams work together to shape innovative solutions for coronavirus challenges. Deadline: May 17",
-        "en":"The GCC countries joined the Hackathon movement #GCCvsVIRUS.  @gccvsvirus has created a space where individuals, partners, mentors, and teams work together to shape innovative solutions for coronavirus challenges. Deadline: May 17"
+    },
+    {
+      "name": "GCCvsVirus",
+      "link": "https://www.gccvsvirus.org/",
+      "category": "Hackathons",
+      "description": {
+        "de":"Die GCC-Länder haben sich der Hackathon-Bewegung #GCCvsVIRUS angeschlossen. @gccvsvirus hat einen Raum geschaffen, in dem Einzelpersonen, Partner, Mentoren und Teams zusammenarbeiten, um innovative Lösungen für Coronavirus-Herausforderungen zu entwickeln. Frist: 17. Mai.",
+        "en":"The GCC countries joined the Hackathon movement #GCCvsVIRUS.  @gccvsvirus has created a space where individuals, partners, mentors, and teams work together to shape innovative solutions for coronavirus challenges. Deadline: May 17."
       },
       "global": true
-},
-{
-      "name":"Solidaridad",
-      "link":"https://www.solidaridadnetwork.org/regions/west-africa",
-      "category":"initiatives",
-      "description":{
-        "de":"Using Interactive Voice Response (IVR) platform, Solidaridad, an international civil society organization, is increasing access to agronomic and other production support information by farmers and communities that produce cocoa, oil palm and other food staples",
-        "en":"Using Interactive Voice Response (IVR) platform, Solidaridad, an international civil society organization, is increasing access to agronomic and other production support information by farmers and communities that produce cocoa, oil palm and other food staples"
+    },
+    {
+      "name": "Solidaridad",
+      "link": "https://www.solidaridadnetwork.org/regions/west-africa",
+      "category": "initiatives",
+      "description": {
+        "de": "Mit der IVR-Plattform (Interactive Voice Response) verbessert Solidaridad, eine internationale Organisation der Zivilgesellschaft, den Zugang von Landwirten und Gemeinden, die Kakao, Ölpalme und andere Grundnahrungsmittel produzieren, zu Informationen über agronomische und andere Produktionsunterstützung.",
+        "en": "Using Interactive Voice Response (IVR) platform, Solidaridad, an international civil society organization, is increasing access to agronomic and other production support information by farmers and communities that produce cocoa, oil palm and other food staples."
       },
       "global": true
-},
-{
-      "name":"AAL",
-      "link":"http://www.aal-europe.eu/available-aal-solutions-supporting-older-adults-to-cope-with-the-consequences-of-the-coronavirus-outbreak/",
-      "category":"initiatives",
-      "description":{
-        "de":"The AAL Programme was created with the mission to improve the quality of life of older adults, their families and carers, and thereby support the sustainability of our health and care systems. AAL informs about different types of solutions, which are already available and can potentially alleviate the challenges created by the social distancing and measures of quarantine in different countries",
-        "en":"The AAL Programme was created with the mission to improve the quality of life of older adults, their families and carers, and thereby support the sustainability of our health and care systems. AAL informs about different types of solutions, which are already available and can potentially alleviate the challenges created by the social distancing and measures of quarantine in different countries"
+    },
+    {
+      "name": "AAL",
+      "link": "http://www.aal-europe.eu/available-aal-solutions-supporting-older-adults-to-cope-with-the-consequences-of-the-coronavirus-outbreak/",
+      "category": "initiatives",
+      "description": {
+        "de": "Das AAL-Programm wurde mit dem Ziel ins Leben gerufen, die Lebensqualität älterer Erwachsener, ihrer Familien und Betreuer zu verbessern und damit die Nachhaltigkeit unserer Gesundheits- und Pflegesysteme zu unterstützen. AAL informiert über verschiedene Arten von Lösungen, die bereits verfügbar sind und möglicherweise die Herausforderungen lindern können, die durch die soziale Distanzierung und Quarantänemaßnahmen in verschiedenen Ländern entstehen.",
+        "en": "The AAL Programme was created with the mission to improve the quality of life of older adults, their families and carers, and thereby support the sustainability of our health and care systems. AAL informs about different types of solutions, which are already available and can potentially alleviate the challenges created by the social distancing and measures of quarantine in different countries."
       },
       "global": true
-},
-{
-      "name":"Maestro Match",
-      "link":"https://www.maestromatch.com/",
-      "category":"initiatives",
-      "description":{
-        "de":"Musicians and performers have lost a significant amount of work due to the Covid 19 Pandemic.  Maestro Match connects world's musicians to people practicing social distancing",
-        "en":"Musicians and performers have lost a significant amount of work due to the Covid 19 Pandemic.  Maestro Match connects world's musicians to people practicing social distancing"
+    },
+    {
+      "name": "Maestro Match",
+      "link": "https://www.maestromatch.com/",
+      "category": "initiatives",
+      "description": {
+        "de": "Musiker und Interpreten haben durch die Covid 19-Pandemie viel Arbeit verloren. Maestro Match verbindet Musiker der Welt mit Menschen, die soziale Distanzierung praktizieren.",
+        "en": "Musicians and performers have lost a significant amount of work due to the Covid 19 Pandemic.  Maestro Match connects world's musicians to people practicing social distancing."
       },
       "global": true
-},
-{
-      "name":"MIT",
-      "link":"https://innovation.mit.edu/c19rapidinnodash/",
-      "category":"initiatives",
-      "description":{
-        "de":"The MIT community has been activated to fight the pandemic. From ways to combat feelings of isolation to open-source ventilators—students, faculty, staff, and alumni from academic departments & labs across campus are living the MIT mission to, “…work wisely, creatively, and effectively for the betterment of humankind.”",
-        "en":"The MIT community has been activated to fight the pandemic. From ways to combat feelings of isolation to open-source ventilators—students, faculty, staff, and alumni from academic departments & labs across campus are living the MIT mission to, “…work wisely, creatively, and effectively for the betterment of humankind.”"
+    },
+    {
+      "name": "MIT",
+      "link": "https://innovation.mit.edu/c19rapidinnodash/",
+      "category": "initiatives",
+      "description": {
+        "de": "Die MIT-Community wurde aktiviert, um die Pandemie zu bekämpfen. Von der Bekämpfung des Gefühls der Isolation bis hin zu Open-Source-Beatmungsgeräten - Studenten, Fakultäten, Mitarbeiter und Alumni aus akademischen Abteilungen und Labors auf dem gesamten Campus leben die MIT-Mission: „… klug, kreativ und effektiv für die Verbesserung der Menschheit zu arbeiten.”",
+        "en": "The MIT community has been activated to fight the pandemic. From ways to combat feelings of isolation to open-source ventilators—students, faculty, staff, and alumni from academic departments & labs across campus are living the MIT mission to, “…work wisely, creatively, and effectively for the betterment of humankind.”"
       },
       "global": true
-},
-{
-      "name":"World Economic Forum",
-      "link":"https://www.weforum.org/agenda/2020/05/indias-lockdown-ends-mental-health-crisis-beginning/",
-      "category":"research_and_government_sites",
-      "description":{
-        "de":"India will suffer from a massive mental health crisis due to unemployment, alcohol abuse, economic hardship, domestic violence and indebtedness. While this will affect most of the population it will disproportionately affect the poor, most vulnerable and marginalized groups",
-        "en":"India will suffer from a massive mental health crisis due to unemployment, alcohol abuse, economic hardship, domestic violence and indebtedness. While this will affect most of the population it will disproportionately affect the poor, most vulnerable and marginalized groups"
+    },
+    {
+      "name": "World Economic Forum",
+      "link": "https://www.weforum.org/agenda/2020/05/indias-lockdown-ends-mental-health-crisis-beginning/",
+      "category": "research_and_government_sites",
+      "description": {
+        "de": "Indien wird unter einer massiven psychischen Krise aufgrund von Arbeitslosigkeit, Alkoholmissbrauch, wirtschaftlicher Not, häuslicher Gewalt und Verschuldung leiden. Dies wird zwar den größten Teil der Bevölkerung betreffen, jedoch die armen, am stärksten gefährdeten und marginalisierten Gruppen überproportional.",
+        "en": "India will suffer from a massive mental health crisis due to unemployment, alcohol abuse, economic hardship, domestic violence and indebtedness. While this will affect most of the population it will disproportionately affect the poor, most vulnerable and marginalized groups."
       },
       "global": true
-},
+    }
   ]
 }
