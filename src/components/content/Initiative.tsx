@@ -150,9 +150,11 @@ class Initiative extends React.PureComponent<
                     "country.all",
                   )}`}</option>
                   <option value="de">{`${this.props.t("country.de")}`}</option>
+                  <option value="at">{`${this.props.t("country.at")}`}</option>
                   <option value="it">{`${this.props.t("country.it")}`}</option>
                   <option value="es">{`${this.props.t("country.es")}`}</option>
                   <option value="fr">{`${this.props.t("country.fr")}`}</option>
+                  <option value="uk">{`${this.props.t("country.uk")}`}</option>
                 </Select>
               </FormControl>
             </Hidden>
