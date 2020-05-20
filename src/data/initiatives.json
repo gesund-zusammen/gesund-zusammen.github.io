@@ -1487,98 +1487,98 @@
       "link": "https://www.taxy.io/corona-hilfe-fuer-unternehmen",
       "category": "initiatives",
       "description": {
-        "de": "Taxy.io entwickelt Lösungen für die Besteuerung von Sicherheitsgeschäften und bietet sowohl Einzelpersonen als auch Unternehmen ein kostenloses Tool, um rechtliche, steuerliche und finanzielle Lösungen zu finden, die die Coronavirus-Krise überstehen.",
-        "en": "Taxy.io develops saftware tax solutions, and is offering a free tool for both individuals and companies to find legal, tax and financial solutions that will going through the coronavirus crisis."
+        "de": "Taxy.io widmet sich der intelligenten Automatisierung in der Steuerberatung und bietet ab sofort ein kostenloses Tool für UnternehmerInnen, um rechtliche, steuerliche, und finanzielle Lösungen zu finden, die in Zeiten der Corona-Krise helfen können.",
+        "en": "Taxy.io is dedicated to intelligent automation in tax advice and is now offering a free tool for entrepreneurs to find legal, tax, and financial solutions that can help in times of the corona crisis."
       },
       "global": true
     },
     {
-      "name":"World Economic Forum",
-      "link":"https://www.weforum.org/agenda/2020/05/how-coronavirus-is-accelerating-the-move-to-digital-government/",
-      "category":"research_and_government_sites",
-      "description":{
-        "de":"Die digitale Bereitstellung von Informationen und wichtigen Diensten für die Bürger war noch nie so wichtig wie während der COVID-19-Pandemie. Untersuchungen der Vereinten Nationen zeigen jedoch, dass es erhebliche Unterschiede in der Kommunikation der Länder mit ihren Bürgern gibt.",
-        "en":"Getting information and vital services to citizens digitally has never been more important than during the COVID-19 pandemic, but UN research shows there are significant differences in how successful countries have been in communicating with their citizens."
+      "name": "World Economic Forum",
+      "link": "https://www.weforum.org/agenda/2020/05/how-coronavirus-is-accelerating-the-move-to-digital-government/",
+      "category": "research_and_government_sites",
+      "description": {
+        "de": "Die digitale Bereitstellung von Informationen und wichtigen Diensten für die Bürger war noch nie so wichtig wie während der COVID-19-Pandemie. Untersuchungen der Vereinten Nationen zeigen jedoch, dass es erhebliche Unterschiede in der Kommunikation der Länder mit ihren Bürgern gibt.",
+        "en": "Getting information and vital services to citizens digitally has never been more important than during the COVID-19 pandemic, but UN research shows there are significant differences in how successful countries have been in communicating with their citizens."
       },
       "global": true
     },
     {
-      "name":"Big Health",
-      "link":"https://www.bighealth.com/",
-      "category":"initiatives",
-      "description":{
-        "de":"Angesichts der Tatsache, dass Bestellungen zu Hause bleiben und die Telemedizinanbieter überfordert sind, war die Kluft zwischen der Notwendigkeit und Bereitstellung evidenzbasierter Unterstützung für die psychische Gesundheit noch nie so groß. Big Health kann sehr effizient eine effektive, evidenzbasierte psychiatrische Versorgung in großem Umfang bereitstellen - ohne dass Mitarbeiter ihre Häuser verlassen oder menschlichen Kontakt aufnehmen müssen.",
-        "en":"With stay-at-home orders and with telehealth providers overwhelmed, right now the gap between the need for and provision of evidence-based mental health support has never been bigger. Big Health can provide effective, evidence-based mental healthcare at a huge scale very efficiently—without employees needing to leave their homes or engage in human contact."
+      "name": "Big Health",
+      "link": "https://www.bighealth.com/",
+      "category": "initiatives",
+      "description": {
+        "de": "Angesichts der Tatsache, dass Bestellungen zu Hause bleiben und die Telemedizinanbieter überfordert sind, war die Kluft zwischen der Notwendigkeit und Bereitstellung evidenzbasierter Unterstützung für die psychische Gesundheit noch nie so groß. Big Health kann sehr effizient eine effektive, evidenzbasierte psychiatrische Versorgung in großem Umfang bereitstellen - ohne dass Mitarbeiter ihre Häuser verlassen oder menschlichen Kontakt aufnehmen müssen.",
+        "en": "With stay-at-home orders and with telehealth providers overwhelmed, right now the gap between the need for and provision of evidence-based mental health support has never been bigger. Big Health can provide effective, evidence-based mental healthcare at a huge scale very efficiently—without employees needing to leave their homes or engage in human contact."
       },
       "global": true
     },
     {
-      "name":"Mobi Health News",
-      "link":"https://www.mobihealthnews.com/news/jj-teams-alevo-technologies-home-covid-19-test-osso-vr-works-jhpiego-maternity-tool-and-more",
-      "category":"initiatives",
-      "description":{
-        "de":"Johnson & Johnson arbeitet mit Alevo Technologies an einer neuen Plattform für diagnostische Tests zu Hause.",
-        "en":"Johnson & Johnson is teaming up with Alevo Technologies on a new at-home diagnostic testing platform."
+      "name": "Mobi Health News",
+      "link": "https://www.mobihealthnews.com/news/jj-teams-alevo-technologies-home-covid-19-test-osso-vr-works-jhpiego-maternity-tool-and-more",
+      "category": "initiatives",
+      "description": {
+        "de": "Johnson & Johnson arbeitet mit Alevo Technologies an einer neuen Plattform für diagnostische Tests zu Hause.",
+        "en": "Johnson & Johnson is teaming up with Alevo Technologies on a new at-home diagnostic testing platform."
       },
       "global": true
     },
     {
-      "name":"https://www.heldsein.at/",
-      "link":"https://www.heldsein.at/",
-      "category":"initiatives",
-      "description":{
-        "de":"Diese Seite richtet sich an alle Menschen aus einer Vielzahl von Berufen, die in diesen schwierigen Zeiten über sich selbst hinauswachsen und jeden Tag einem erhöhten Risiko ausgesetzt sind und Ihnen, mir und uns allen helfen.",
-        "en":"This page pays attention to all people from a wide variety of professions who, in these difficult times, grow beyond themselves and face an increased risk every day and thus help you, me and all of us."
+      "name": "https://www.heldsein.at/",
+      "link": "https://www.heldsein.at/",
+      "category": "initiatives",
+      "description": {
+        "de": "Diese Seite richtet sich an alle Menschen aus einer Vielzahl von Berufen, die in diesen schwierigen Zeiten über sich selbst hinauswachsen und jeden Tag einem erhöhten Risiko ausgesetzt sind und Ihnen, mir und uns allen helfen.",
+        "en": "This page pays attention to all people from a wide variety of professions who, in these difficult times, grow beyond themselves and face an increased risk every day and thus help you, me and all of us."
       },
       "global": true
     },
     {
-      "name":"Emergency Makers Network",
-      "link":"https://landing.emergencymakersnetwork.org/comingsoon",
-      "category":"initiatives",
-      "description":{
-        "de":"Die Emergency Makers Network-Plattform zielt darauf ab, kritische PSA-Lieferungen an Gesundheitspersonal an vorderster Front bereitzustellen, indem die Hersteller mit einem Repository medizinisch überprüfter Open-Source-Designs ausgestattet werden und ihre Verbindung zu Krankenhäusern in Not auf der ganzen Welt erleichtert wird.",
-        "en":"The Emergency Makers Network platform aims to get critical PPE supplies to frontline health workers by empowering makers with a repository of medically reviewed open-source designs and facilitating their connection with hospitals in need anywhere in the world."
+      "name": "Emergency Makers Network",
+      "link": "https://landing.emergencymakersnetwork.org/comingsoon",
+      "category": "initiatives",
+      "description": {
+        "de": "Die Emergency Makers Network-Plattform zielt darauf ab, kritische PSA-Lieferungen an Gesundheitspersonal an vorderster Front bereitzustellen, indem die Hersteller mit einem Repository medizinisch überprüfter Open-Source-Designs ausgestattet werden und ihre Verbindung zu Krankenhäusern in Not auf der ganzen Welt erleichtert wird.",
+        "en": "The Emergency Makers Network platform aims to get critical PPE supplies to frontline health workers by empowering makers with a repository of medically reviewed open-source designs and facilitating their connection with hospitals in need anywhere in the world."
       },
       "global": true
     },
     {
-      "name":"TotnesDelivers",
-      "link":"https://www.totnesdelivers.co.uk/",
-      "category":"initiatives",
-      "description":{
-        "de":"Initiative in Totnes, England, um nach lokalen Unternehmen zu suchen, diese zu filtern und zu suchen, während die Menschen zu Hause bleiben.",
-        "en":"Initiative in Totnes, England to browse, filter and search for local businesses while people stay at home."
+      "name": "TotnesDelivers",
+      "link": "https://www.totnesdelivers.co.uk/",
+      "category": "initiatives",
+      "description": {
+        "de": "Initiative in Totnes, England, um nach lokalen Unternehmen zu suchen, diese zu filtern und zu suchen, während die Menschen zu Hause bleiben.",
+        "en": "Initiative in Totnes, England to browse, filter and search for local businesses while people stay at home."
       },
       "global": true
     },
     {
-      "name":"Marfa Steps up",
-      "link":"https://www.marfastepsup.org/",
-      "category":"initiatives",
-      "description":{
-        "de":"Marfa Steps Up ist eine Gruppe freiwilliger Gemeindemitglieder in Marfa, die unserer Stadt während der COVID-19-Krise helfen. Zu dieser Gruppe gehören diejenigen, die Marfa zu einem Zuhause gemacht haben, Eigentümer von Marfa-Unternehmen, die geschlossen haben, und diejenigen in der Marfa-Dienstleistungsbranche, die ihren Lohn verloren haben.",
-        "en":"Marfa Steps Up is a group of volunteer community members in Marfa, helping our town during the COVID-19 crisis. This group includes those who have made Marfa a home, proprietors of Marfa businesses that have closed, and those in Marfa service industries who have lost their wages."
+      "name": "Marfa Steps up",
+      "link": "https://www.marfastepsup.org/",
+      "category": "initiatives",
+      "description": {
+        "de": "Marfa Steps Up ist eine Gruppe freiwilliger Gemeindemitglieder in Marfa, die unserer Stadt während der COVID-19-Krise helfen. Zu dieser Gruppe gehören diejenigen, die Marfa zu einem Zuhause gemacht haben, Eigentümer von Marfa-Unternehmen, die geschlossen haben, und diejenigen in der Marfa-Dienstleistungsbranche, die ihren Lohn verloren haben.",
+        "en": "Marfa Steps Up is a group of volunteer community members in Marfa, helping our town during the COVID-19 crisis. This group includes those who have made Marfa a home, proprietors of Marfa businesses that have closed, and those in Marfa service industries who have lost their wages."
       },
       "global": true
     },
     {
-      "name":"World Economic Forum",
-      "link":"https://www.weforum.org/agenda/2020/05/this-is-what-travelling-will-be-like-after-covid-19/",
-      "category":"research_and_government_sites",
-      "description":{
-        "de":"So könnte Reisen nach COVID-19 aussehen, mit zwei Schlüsselbereichen der Transformation, in denen digitale Technologien die Zukunft des Reisens gestalten werden.",
-        "en":"Here’s what travelling could be like after COVID-19, featuring two key areas of transformation in which digital technologies will shape the future of travel."
+      "name": "World Economic Forum",
+      "link": "https://www.weforum.org/agenda/2020/05/this-is-what-travelling-will-be-like-after-covid-19/",
+      "category": "research_and_government_sites",
+      "description": {
+        "de": "So könnte Reisen nach COVID-19 aussehen, mit zwei Schlüsselbereichen der Transformation, in denen digitale Technologien die Zukunft des Reisens gestalten werden.",
+        "en": "Here’s what travelling could be like after COVID-19, featuring two key areas of transformation in which digital technologies will shape the future of travel."
       },
       "global": true
     },
     {
-      "name":"Attract",
-      "link":"https://attract-eu.com/",
-      "category":"initiatives",
-      "description":{
-        "de":"ATTRACT-Forscher entwickeln Detektions- und Bildgebungstechnologien, um die Diagnose und Behandlung von Covid-19 zu verbessern. Attract ist eine Pionierinitiative, die Europas Grundlagenforschung und Industrie zusammenbringt, um die nächste Generation von Detektions- und Bildgebungstechnologien zu führen.",
-        "en":"ATTRACT researchers are developing detection and imaging technologies to improve Covid-19 diagnosis and treatment. Attract is a pioneer initiative bringing togetherEurope's fundamental research and industrial communities to lead the next generation of detection and imaging technologies."
+      "name": "Attract",
+      "link": "https://attract-eu.com/",
+      "category": "initiatives",
+      "description": {
+        "de": "ATTRACT-Forscher entwickeln Detektions- und Bildgebungstechnologien, um die Diagnose und Behandlung von Covid-19 zu verbessern. Attract ist eine Pionierinitiative, die Europas Grundlagenforschung und Industrie zusammenbringt, um die nächste Generation von Detektions- und Bildgebungstechnologien zu führen.",
+        "en": "ATTRACT researchers are developing detection and imaging technologies to improve Covid-19 diagnosis and treatment. Attract is a pioneer initiative bringing togetherEurope's fundamental research and industrial communities to lead the next generation of detection and imaging technologies."
       },
       "global": true
     },
