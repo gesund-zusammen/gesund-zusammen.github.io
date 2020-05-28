@@ -3,7 +3,7 @@ import { Card, CardContent, Typography } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
 import OptionalLinkWrapper from "./OptionalLinkWrapper";
-import IconArrowRight from "../../images/icon_arrow_right.svg";
+import IconArrowRight from "../../images/icon_arrow_right_dark_with_circle.svg";
 
 interface INewsCardProps {
   category: string;
@@ -36,10 +36,12 @@ class InitiativeCard extends React.PureComponent<INewsCardProps, {}> {
 
 const InitiativeCardRoot: AnyStyledComponent = styled(Card)`
   && {
-    border-radius: 0px 0px 30px 0px;
-    box-shadow: 10px 10px 20px rgba(26, 11, 61, 0.25);
+    border-radius: 0;
     margin-bottom: 2rem;
     padding: 0.8rem;
+    box-shadow: none;
+    transition: none;
+    border-bottom: 1px solid #ced7db;
 
     @media (min-width: 600px) {
       padding: 2.2rem 6rem 2.2rem 2.2rem;
@@ -48,6 +50,9 @@ const InitiativeCardRoot: AnyStyledComponent = styled(Card)`
         background-image: url(${IconArrowRight});
         background-position: right 2rem center;
         background-repeat: no-repeat;
+        box-shadow: 0px 2px 24px #e3e6eb;
+        border-bottom: none;
+        border-radius: 15px;
       }
     }
   }
