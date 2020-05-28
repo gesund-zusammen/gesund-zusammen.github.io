@@ -168,7 +168,7 @@ class Initiatives extends React.PureComponent<
           ></MuiMarkdown>
         </Box>
         <Box paddingBottom={4}>
-          <Typography variant="h3">
+          <Typography variant="h3" color="primary">
             {this.props.t("database.filter.filterBy")}
           </Typography>
           <Box id="initiatives-filter">
@@ -234,12 +234,7 @@ class Initiatives extends React.PureComponent<
                 ))}
               </Hidden>
             </Box>
-            <Box
-              id="region-filter"
-              paddingBottom={4}
-              marginTop={2}
-              style={{ textAlign: "center" }}
-            >
+            <Box id="region-filter" paddingBottom={4} marginTop={4}>
               <RegionSelect
                 variant="body2"
                 onClick={() => this.handleRegionClick(true)}
@@ -316,8 +311,8 @@ const CategoryChip: AnyStyledComponent = styled(Chip)`
     font-size: 1rem;
     line-height: 1.7rem;
     padding: 1rem;
-    color: #0a6eaa;
-    border: 1px solid #0a6eaa;
+    color: #003269;
+    border: 2px solid #003269;
     margin: 0 1rem 1rem 0;
 
     &:hover,
@@ -328,7 +323,7 @@ const CategoryChip: AnyStyledComponent = styled(Chip)`
 
     &.selected {
       color: #ffffff;
-      background: #0a6eaa;
+      background: #003269;
     }
 
     @media (min-width: 600px) {
