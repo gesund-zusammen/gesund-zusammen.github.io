@@ -45,28 +45,83 @@ class FaqItems extends React.PureComponent<WithTranslation, IFaqItemsState> {
           const panelKey: string = "panel" + index;
           const expanded = this.state.panel === panelKey;
           return (
-            <ExpansionPanel
+            <StyledExpansionPanel
               key={panelKey}
               expanded={expanded}
               onChange={() => this.handleExpansionChange(panelKey)}
             >
-              <ExpansionPanelSummary
+              <StyledExpansionPanelSummary
                 expandIcon={
                   expanded ? <StyledMinimizeIcon /> : <StyledAddIcon />
                 }
               >
                 <Typography variant="h5">{faqItem.title}</Typography>
-              </ExpansionPanelSummary>
-              <ExpansionPanelDetails>
+              </StyledExpansionPanelSummary>
+              <StyledExpansionPanelDetails>
                 <Typography variant="body1">{faqItem.content}</Typography>
-              </ExpansionPanelDetails>
-            </ExpansionPanel>
+              </StyledExpansionPanelDetails>
+            </StyledExpansionPanel>
           );
         })}
       </FaqListWrapper>
     );
   };
 }
+
+const StyledExpansionPanel: AnyStyledComponent = styled(ExpansionPanel)`
+  &:before {
+    display: none;
+  }
+
+  && {
+    border-radius: 0 0 70px 0;
+    box-shadow: none;
+    margin-bottom: 2rem;
+
+    &.Mui-expanded {
+      box-shadow: 20px 15px 50px rgba(26, 11, 61, 0.25);
+      margin-bottom: 2rem;
+    }
+
+    &:first-child {
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 70px;
+    }
+  }
+`;
+
+const StyledExpansionPanelSummary: AnyStyledComponent = styled(
+  ExpansionPanelSummary,
+)`
+  && {
+    font-weight: 600;
+    padding: 0.5rem 2.8rem;
+    border-radius: 0 0 70px 0;
+    color: #003269;
+    background-color: #e1e1e1;
+
+    &.Mui-expanded {
+      color: #ffffff;
+      background: #0a6eaa;
+    }
+  }
+`;
+
+const StyledExpansionPanelDetails: AnyStyledComponent = styled(
+  ExpansionPanelDetails,
+)`
+  && {
+    font-size: 0.9rem;
+    padding: 1.2rem 2.8rem 0.5rem;
+    border-radius: 0 0 70px 0;
+    background-color: #ffffff;
+  }
+`;
 
 const StyledAddIcon: AnyStyledComponent = styled(Add)`
   color: #0a6eaa;

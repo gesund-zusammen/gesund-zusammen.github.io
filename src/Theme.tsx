@@ -144,6 +144,16 @@ const theme = responsiveFontSizes(
         fontWeight: 700,
         marginBottom: "1rem",
       },
+      h5: {
+        fontFamily: [
+          '"Montserrat"',
+          '"Helvetica"',
+          '"Arial"',
+          "sans-serif",
+        ].join(","),
+        fontSize: "1.3rem",
+        fontWeight: 700,
+      },
       h6: {
         fontFamily: [
           '"Montserrat"',
@@ -240,48 +250,6 @@ const theme = responsiveFontSizes(
         root: {
           width: "264px",
           height: "264px",
-        },
-      },
-      MuiExpansionPanelSummary: {
-        root: {
-          fontSize: "1.2rem",
-          fontWeight: 600,
-          padding: "0.5rem 2.8rem",
-          borderRadius: "15px 15px 0px 0px",
-          color: "#003269",
-          "&$expanded": {
-            backgroundColor: "#0a6eaa",
-            color: "#ffffff",
-          },
-        },
-      },
-      MuiExpansionPanelDetails: {
-        root: {
-          fontSize: "0.9rem",
-          color: "#0A6EAA",
-          padding: "1.2rem 2.8rem 0.5rem",
-          borderRadius: "0px 0px 15px 15px",
-        },
-      },
-      MuiExpansionPanel: {
-        root: {
-          boxShadow: "0px 2px 24px #E3E6EB",
-          borderRadius: "15px 15px 15px 15px",
-          marginBottom: "1.6rem",
-          "&:before": {
-            display: "none",
-          },
-        },
-        rounded: {
-          borderRadius: "15px",
-          "&:first-child": {
-            borderTopLeftRadius: "15px",
-            borderTopRightRadius: "15px",
-          },
-          "&:last-child": {
-            borderBottomLeftRadius: "15px",
-            borderBottomRightRadius: "15px",
-          },
         },
       },
       MuiSelect: {
