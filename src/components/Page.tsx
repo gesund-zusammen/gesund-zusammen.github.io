@@ -26,7 +26,7 @@ import Initiative from "./content/Initiative";
 import Start from "./content/Start";
 
 import IlluPrivacy from "../images/illu_privacy.svg";
-import IlluFaq from "../images/illu_faq.svg";
+import IlluFaq from "../images/illu_header_faq.svg";
 import IlluProgram from "../images/illu_program.svg";
 import IlluPartner from "../images/illu_partner.svg";
 import IlluDatabase from "../images/illu_header_database.svg";

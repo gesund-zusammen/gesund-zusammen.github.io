@@ -73,12 +73,9 @@ const HeaderIllustration: AnyStyledComponent = styled.img`
   float: right;
 
   @media (min-width: 600px) {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 80%;
+    height: 280px;
     width: auto;
-    margin-right: 120px;
+    margin: 2rem 120px 0 0;
   }
 `;
 interface ISubPageHeaderProps {
