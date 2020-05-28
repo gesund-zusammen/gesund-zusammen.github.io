@@ -107,8 +107,8 @@
     "cta": "Contáctanos",
     "link": "mailto:privacy@gesund-zusammen.de"
   },
-  "initiatives": {
-    "content": "Para contener al COVID-19, está surgiendo una competencia mundial de ideas, acelerada significativamente por la industria tecnológica y otros. No sólo estamos reuniendo los recursos y capacidades de la economía digital alemana. También buscamos y promovemos el intercambio abierto con otras iniciativas digitales para que las ideas con mayor potencial puedan prevalecer. Aquí encontrarás iniciativas y tecnologías digitales emocionantes de todo el mundo - continuamente actualizadas. Si deseas añadir más proyectos a este escaparate, por favor, ponte en contacto con nosotros.",
+  "database": {
+    "header": "Iniciativas y tecnologías digitales de todo el mundo.",
     "filter": {
       "filterBy": "Filtro",
       "all": "Todos",

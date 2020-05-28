@@ -11,10 +11,17 @@ import {
 import styled, { AnyStyledComponent } from "styled-components";
 import { withTranslation, WithTranslation } from "react-i18next";
 
+import MuiMarkdown from "../common/MuiMarkdown";
 import CTABox from "../common/CTABox";
 import InitiativeCard from "../common/InitiativeCard";
 
 import InitiativeData from "../../data/initiatives.json";
+
+import ContentDE from "../../data/database/database_de.md";
+import ContentEN from "../../data/database/database_en.md";
+import ContentFR from "../../data/database/database_fr.md";
+import ContentIT from "../../data/database/database_it.md";
+import ContentES from "../../data/database/database_es.md";
 
 const INITIAL_LIST_LENGTH = 10;
 const LIST_LENGTH_INCREMENT = 10;
@@ -50,6 +57,14 @@ const DEFAULT_STATE: IInitiativeState = {
   listLength: INITIAL_LIST_LENGTH,
 };
 
+const StyledTypography: AnyStyledComponent = styled(Typography)`
+  && {
+    @media (min-width: 600px) {
+      column-count: 2;
+    }
+  }
+`;
+
 class Initiatives extends React.PureComponent<
   WithTranslation,
   IInitiativeState
@@ -73,6 +88,21 @@ class Initiatives extends React.PureComponent<
     });
   }
 
+  getMarkdown(language: string) {
+    switch (language) {
+      case "de":
+        return ContentDE;
+      case "fr":
+        return ContentFR;
+      case "it":
+        return ContentIT;
+      case "es":
+        return ContentES;
+      default:
+        return ContentEN;
+    }
+  }
+
   getCategories = (): ICategory[] => {
     return InitiativeData.categories;
   };
@@ -84,7 +114,7 @@ class Initiatives extends React.PureComponent<
       }
     }
 
-    return this.props.t("initiatives.unknownCategory");
+    return this.props.t("database.unknownCategory");
   };
 
   getInitiatives = (categorySlug?: string, global = true): IInitiative[] => {
@@ -122,139 +152,161 @@ class Initiatives extends React.PureComponent<
 
   render = () => {
     return (
-      <Box paddingBottom={4}>
-        <Typography variant="h3">
-          {this.props.t("initiatives.filter.filterBy")}
-        </Typography>
-        <Box id="initiatives-filter">
-          <Box id="categories-filter">
-            <Hidden smUp>
-              <FormControl variant="outlined" fullWidth>
-                <Select
-                  native
-                  value={this.state.selectedCategory}
-                  onChange={(
-                    event: React.ChangeEvent<{ name?: string; value: unknown }>,
-                  ) =>
-                    this.handleCategorySelect(
-                      event.target.value as string | undefined,
-                    )
-                  }
-                  inputProps={{
-                    name: "category",
-                    id: "filter-select",
-                  }}
-                >
-                  <option aria-label="all" value="all">{`${this.props.t(
-                    "initiatives.filter.all",
-                  )} (${this.categoryInitiativesCount.all})`}</option>
-                  {this.getCategories().map(category => (
-                    <option key={category.slug} value={category.slug}>
-                      {`${category.name[this.props.i18n.language]} (${
-                        this.categoryInitiativesCount[category.slug]
-                      })`}
-                    </option>
-                  ))}
-                </Select>
-              </FormControl>
-            </Hidden>
-            <Hidden xsDown>
-              <CategoryChip
-                variant="outlined"
-                className={
-                  this.state.selectedCategory === undefined && "selected"
-                }
-                key="all"
-                label={`${this.props.t("initiatives.filter.all")} (${
-                  this.categoryInitiativesCount.all
-                })`}
-                onClick={() => this.handleCategorySelect(undefined)}
-              />
-              {this.getCategories().map(category => (
+      <>
+        <Box paddingBottom={4} marginTop={4}>
+          <MuiMarkdown
+            markdown={this.getMarkdown(this.props.i18n.language)}
+            overrides={{
+              p: {
+                component: StyledTypography,
+                props: {
+                  variant: "body1",
+                  color: "textPrimary",
+                },
+              },
+            }}
+          ></MuiMarkdown>
+        </Box>
+        <Box paddingBottom={4}>
+          <Typography variant="h3">
+            {this.props.t("database.filter.filterBy")}
+          </Typography>
+          <Box id="initiatives-filter">
+            <Box id="categories-filter">
+              <Hidden smUp>
+                <FormControl variant="outlined" fullWidth>
+                  <Select
+                    native
+                    value={this.state.selectedCategory}
+                    onChange={(
+                      event: React.ChangeEvent<{
+                        name?: string;
+                        value: unknown;
+                      }>,
+                    ) =>
+                      this.handleCategorySelect(
+                        event.target.value as string | undefined,
+                      )
+                    }
+                    inputProps={{
+                      name: "category",
+                      id: "filter-select",
+                    }}
+                  >
+                    <option aria-label="all" value="all">{`${this.props.t(
+                      "database.filter.all",
+                    )} (${this.categoryInitiativesCount.all})`}</option>
+                    {this.getCategories().map(category => (
+                      <option key={category.slug} value={category.slug}>
+                        {`${category.name[this.props.i18n.language]} (${
+                          this.categoryInitiativesCount[category.slug]
+                        })`}
+                      </option>
+                    ))}
+                  </Select>
+                </FormControl>
+              </Hidden>
+              <Hidden xsDown>
                 <CategoryChip
                   variant="outlined"
                   className={
-                    this.state.selectedCategory === category.slug && "selected"
+                    this.state.selectedCategory === undefined && "selected"
                   }
-                  key={category.slug}
-                  label={`${category.name[this.props.i18n.language]} (${
-                    this.categoryInitiativesCount[category.slug]
+                  key="all"
+                  label={`${this.props.t("database.filter.all")} (${
+                    this.categoryInitiativesCount.all
                   })`}
-                  onClick={() => this.handleCategorySelect(category.slug)}
+                  onClick={() => this.handleCategorySelect(undefined)}
                 />
-              ))}
-            </Hidden>
+                {this.getCategories().map(category => (
+                  <CategoryChip
+                    variant="outlined"
+                    className={
+                      this.state.selectedCategory === category.slug &&
+                      "selected"
+                    }
+                    key={category.slug}
+                    label={`${category.name[this.props.i18n.language]} (${
+                      this.categoryInitiativesCount[category.slug]
+                    })`}
+                    onClick={() => this.handleCategorySelect(category.slug)}
+                  />
+                ))}
+              </Hidden>
+            </Box>
+            <Box
+              id="region-filter"
+              paddingBottom={4}
+              marginTop={2}
+              style={{ textAlign: "center" }}
+            >
+              <RegionSelect
+                variant="body2"
+                onClick={() => this.handleRegionClick(true)}
+                className={this.state.globalSelected === true ? "selected" : ""}
+              >
+                {`${this.props.t("database.filter.global")} (${
+                  this.getInitiatives(this.state.selectedCategory, true).length
+                })`}
+              </RegionSelect>
+              <RegionSelect
+                variant="body2"
+                onClick={() => this.handleRegionClick(false)}
+                className={
+                  this.state.globalSelected === false ? "selected" : ""
+                }
+              >
+                {`${this.props.t("database.filter.germany")} (${
+                  this.getInitiatives(this.state.selectedCategory, false).length
+                })`}
+              </RegionSelect>
+            </Box>
           </Box>
-          <Box
-            id="region-filter"
-            paddingBottom={4}
-            marginTop={2}
-            style={{ textAlign: "center" }}
-          >
-            <RegionSelect
-              variant="body2"
-              onClick={() => this.handleRegionClick(true)}
-              className={this.state.globalSelected === true ? "selected" : ""}
-            >
-              {`${this.props.t("initiatives.filter.global")} (${
-                this.getInitiatives(this.state.selectedCategory, true).length
-              })`}
-            </RegionSelect>
-            <RegionSelect
-              variant="body2"
-              onClick={() => this.handleRegionClick(false)}
-              className={this.state.globalSelected === false ? "selected" : ""}
-            >
-              {`${this.props.t("initiatives.filter.germany")} (${
-                this.getInitiatives(this.state.selectedCategory, false).length
-              })`}
-            </RegionSelect>
+          <Box id="initiatives-list" paddingBottom={4} marginTop={4}>
+            {this.getInitiatives(
+              this.state.selectedCategory,
+              this.state.globalSelected,
+            ).map(
+              (initiative, index) =>
+                index < this.state.listLength && (
+                  <InitiativeCard
+                    key={`${initiative.link}_${initiative.name}`}
+                    link={initiative.link}
+                    category={this.getCategoryName(initiative.category)}
+                    name={initiative.name}
+                    description={
+                      initiative.description[
+                        this.props.i18n.language === "de" ? "de" : "en"
+                      ]
+                    }
+                  />
+                ),
+            )}
+          </Box>
+          <Box paddingBottom={4}>
+            {this.getInitiatives(
+              this.state.selectedCategory,
+              this.state.globalSelected,
+            ).length > this.state.listLength && (
+              <ShowMoreButton
+                color="primary"
+                variant="outlined"
+                disableFocusRipple={true}
+                onClick={this.handleShowMore}
+              >
+                {this.props.t("database.showMore")}
+              </ShowMoreButton>
+            )}
+          </Box>
+          <Box paddingBottom={4} marginTop={4}>
+            <CTABox
+              claim={this.props.t("database.claim")}
+              cta={this.props.t("database.cta")}
+              href={this.props.t("database.link")}
+            />
           </Box>
         </Box>
-        <Box id="initiatives-list" paddingBottom={4} marginTop={4}>
-          {this.getInitiatives(
-            this.state.selectedCategory,
-            this.state.globalSelected,
-          ).map(
-            (initiative, index) =>
-              index < this.state.listLength && (
-                <InitiativeCard
-                  key={`${initiative.link}_${initiative.name}`}
-                  link={initiative.link}
-                  category={this.getCategoryName(initiative.category)}
-                  name={initiative.name}
-                  description={
-                    initiative.description[
-                      this.props.i18n.language === "de" ? "de" : "en"
-                    ]
-                  }
-                />
-              ),
-          )}
-        </Box>
-        <Box paddingBottom={4}>
-          {this.getInitiatives(
-            this.state.selectedCategory,
-            this.state.globalSelected,
-          ).length > this.state.listLength && (
-            <ShowMoreButton
-              color="primary"
-              variant="outlined"
-              disableFocusRipple={true}
-              onClick={this.handleShowMore}
-            >
-              {this.props.t("initiatives.showMore")}
-            </ShowMoreButton>
-          )}
-        </Box>
-        <Box paddingBottom={4} marginTop={4}>
-          <CTABox
-            claim={this.props.t("initiatives.claim")}
-            cta={this.props.t("initiatives.cta")}
-            href={this.props.t("initiatives.link")}
-          />
-        </Box>
-      </Box>
+      </>
     );
   };
 }

@@ -107,8 +107,8 @@
     "cta": "Contactez nous",
     "link": "mailto:privacy@gesund-zusammen.de"
   },
-  "initiatives": {
-    "content": "Afin de contenir COVID-19, une compétition mondiale d'idées est en train d'émerger, considérablement accélérée par l'industrie technologique mais aussi par d'autres. Nous\nne souhaitons pas nous limiter aux ressources et capacités de l'économie numérique allemande. Nous recherchons et encourageons également un échange ouvert avec\nd'autres initiatives numériques afin que les idées ayant le plus grand potentiel puissent prévaloir. Vous trouverez ici des informations sur les diverses technologies et initiatives numériques provenant du monde entier - constamment mises à jour. Si vous souhaitez\najouter d'autres projets à cette vitrine, veuillez nous contacter.",
+  "database": {
+    "header": "Initiatives et technologies numériques du monde entier",
     "filter": {
       "filterBy": "Filtrer par",
       "all": "Tout",

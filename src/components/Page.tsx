@@ -10,7 +10,6 @@ import ScrollMemory from "react-router-scroll-memory";
 import { Translation, WithTranslation } from "react-i18next";
 
 import LayoutAccelerator from "./layouts/Accelerator/Main";
-import LayoutDatabasePage from "./layouts/Database/Main";
 import LayoutInitiative from "./layouts/Initiative/Main";
 import LayoutStart from "./layouts/Start/Main";
 import LayoutSubPage from "./layouts/Sub/Main";
@@ -30,7 +29,7 @@ import IlluPrivacy from "../images/illu_privacy.svg";
 import IlluFaq from "../images/illu_faq.svg";
 import IlluProgram from "../images/illu_program.svg";
 import IlluPartner from "../images/illu_partner.svg";
-
+import IlluDatabase from "../images/illu_header_database.svg";
 import IlluPressContact from "../images/illu_contact.svg";
 import IlluImprint from "../images/illu_imprint.svg";
 
@@ -65,12 +64,12 @@ class Page extends React.PureComponent<IPageProps, {}> {
             </LayoutAccelerator>
           </Route>
           <Route path="/:lang/(initiatives|database)">
-            <LayoutDatabasePage
-              title={this.props.t("header.nav.database")}
-              content={this.props.t("initiatives.content")}
+            <LayoutSubPage
+              title={this.props.t("database.header")}
+              image={IlluDatabase}
             >
               <Database />
-            </LayoutDatabasePage>
+            </LayoutSubPage>
           </Route>
           <Route path="/:lang/program">
             <LayoutSubPage

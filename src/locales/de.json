@@ -107,8 +107,8 @@
     "cta": "Schreiben Sie uns",
     "link": "mailto:privacy@gesund-zusammen.de"
   },
-  "initiatives": {
-    "content": "Um Covid-19 einzudämmen, entsteht gerade ein weltweiter Wettbewerb von Ideen, maßgeblich beschleunigt unter anderem von der Tech-Industrie. Wir bringen nicht nur die Ressourcen und Fähigkeiten der deutschen Digitalwirtschaft zusammen. Wir suchen und fördern gleichzeitig den offenen Austausch mit anderen digitalen Initiativen, damit sich die Ideen mit dem größten Potenzial durchsetzen. \n\nHier finden Sie spannende digitale Initiativen und Technologien aus aller Welt – fortlaufend aktualisiert. Falls Sie diesem Schaufenster weitere Projekte hinzufügen wollen, kontaktieren Sie uns bitte.",
+  "database": {
+    "header": "Digitale Initiativen und Technologien aus aller Welt",
     "filter": {
       "filterBy": "Filtern",
       "all": "Alle",

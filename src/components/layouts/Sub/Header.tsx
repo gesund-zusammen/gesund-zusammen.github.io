@@ -60,6 +60,10 @@ const HeaderContent: AnyStyledComponent = styled.div`
     color: #ffffff;
     margin: 4rem 0 2rem 0;
     padding-right: 10rem;
+
+    & > h1 {
+      color: #ffffff;
+    }
   }
 `;
 
@@ -101,7 +105,7 @@ class SubPageHeader extends React.PureComponent<ISubPageHeaderProps, {}> {
                   <HeaderContent>
                     <Typography
                       variant="h1"
-                      color="inherit"
+                      color="secondary"
                       style={{
                         whiteSpace: "pre-line",
                       }}

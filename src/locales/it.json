@@ -107,8 +107,8 @@
     "cta": "Contattaci",
     "link": "mailto:privacy@gesund-zusammen.de"
   },
-  "initiatives": {
-    "content": "Al fine di contenere la diffusione del Covid-19, una competizione di idee a livello mondiale sta emergendo, significativamente accelerata dall'industria tecnologica e ad altri attori chiave. Non solo portiamo insieme risorse e capacità dell'industria digitale a livello Europeo, ma cerchiamo e promoviamo una scambio aperto con altre iniziative digitali così da massimizzare la potenza delle idee migliori. \n\n Qui puoi trovare tutte le iniziative digitali e le tecnologie a livello mondiale, continuamente aggiornate. Se vuoi inserire altri progetti a tale lista, contattaci.",
+  "database": {
+    "header": "Iniziative e tecnologie digitali da tutto il mondo",
     "filter": {
       "filterBy": "Filtra per",
       "all": "Tutto",
