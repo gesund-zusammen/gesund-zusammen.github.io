@@ -647,6 +647,12 @@
       "slug": "strategic",
       "image": "sixsentix.png",
       "link": "https://www.sixsentix.com/"
+    },
+    {
+      "name": "Nodes Agency",
+      "slug": "strategic",
+      "image": "nodes.png",
+      "link": "https://nodesagency.de"
     }
   ]
 }
