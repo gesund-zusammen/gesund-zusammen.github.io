@@ -136,7 +136,7 @@ class Initiative extends React.PureComponent<
           <Typography variant="h2" color="primary">
             {this.props.t("partners.header")}
           </Typography>
-          <Box id="region-filter" paddingBottom={2}>
+          <Box id="region-filter" paddingBottom={4} marginTop={4}>
             <Hidden smUp>
               <FormControl variant="outlined" fullWidth>
                 <Select
