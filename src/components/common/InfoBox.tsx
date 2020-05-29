@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardContent, Typography } from "@material-ui/core";
+import { Card, CardContent, CardActions, Typography } from "@material-ui/core";
 import styled, { AnyStyledComponent } from "styled-components";
 
 import OptionalLinkWrapper from "../common/OptionalLinkWrapper";
@@ -28,12 +28,14 @@ class InfoBox extends React.PureComponent<IInfoBoxProps, {}> {
               </SquaredImageWrapper>
             )}
             <Typography variant="body2">{this.props.content}</Typography>
-            {this.props.ctaText && (
+          </StyledCardContent>
+          {this.props.ctaText && (
+            <CardActions>
               <CTA variant="h6" className={!this.props.link && "disabled"}>
                 {this.props.ctaText}
               </CTA>
-            )}
-          </StyledCardContent>
+            </CardActions>
+          )}
         </StyledCard>
       </OptionalLinkWrapper>
     );
@@ -48,6 +50,9 @@ const StyledTitle: AnyStyledComponent = styled(Typography)`
 
 const StyledCard: AnyStyledComponent = styled(Card)`
   && {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
     border-radius: 0px 0px 70px 0px;
     box-shadow: 30px 30px 50px rgba(26, 11, 61, 0.25);
@@ -73,10 +78,12 @@ const CTA: AnyStyledComponent = styled(Typography)`
   && {
     color: #ffffff;
     background: #0a6eaa;
-    margin: 1rem 0;
+    margin: 0 2rem 2rem 2rem;
     padding: 0.5rem;
     border-radius: 25px;
     user-select: none;
+    width: 100%;
+    text-align: center;
 
     &.disabled {
       background: rgba(0, 0, 0, 0.26);
