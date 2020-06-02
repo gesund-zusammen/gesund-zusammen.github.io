@@ -70,7 +70,7 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
       <>
         <Grid container spacing={8}>
           <Grid item xs={12} sm={8}>
-            <Typography variant="h2">
+            <Typography variant="h2" color="primary">
               {this.props.t("press.mediaHeader")}
             </Typography>
             {this.getNewsItems().map(
@@ -100,7 +100,7 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
             </Box>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Typography variant="h4">
+            <Typography variant="h4" color="secondary">
               {this.props.t("press.contactHeader")}
             </Typography>
             <Typography variant="body1">
@@ -143,7 +143,7 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
               borderBottom: "1px solid #CED7DB",
             }}
           >
-            <Typography variant="h2">
+            <Typography variant="h2" color="primary">
               {this.props.t("press.resources")}
             </Typography>
 
@@ -168,7 +168,7 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
           </Box>
 
           <Box paddingBottom={4} paddingTop={4} marginTop={4}>
-            <Typography variant="h2">
+            <Typography variant="h2" color="primary">
               {this.props.t("press.release")}
             </Typography>
 
@@ -178,7 +178,7 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
             >
               <PressReleaseCardRoot>
                 <PressReleaseCardContent>
-                  <Typography variant="h6">
+                  <Typography variant="h6" color="primary">
                     <PressReleaseIconWrapper>
                       <PictureAsPdf />
                     </PressReleaseIconWrapper>
@@ -194,7 +194,7 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
             >
               <PressReleaseCardRoot>
                 <PressReleaseCardContent>
-                  <Typography variant="h6">
+                  <Typography variant="h6" color="primary">
                     <PressReleaseIconWrapper>
                       <LinkIcon />
                     </PressReleaseIconWrapper>
@@ -210,7 +210,7 @@ class PressContact extends React.PureComponent<WithTranslation, IPressState> {
             >
               <PressReleaseCardRoot>
                 <PressReleaseCardContent>
-                  <Typography variant="h6">
+                  <Typography variant="h6" color="primary">
                     <PressReleaseIconWrapper>
                       <PictureAsPdf />
                     </PressReleaseIconWrapper>
