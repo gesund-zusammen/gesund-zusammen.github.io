@@ -35,14 +35,16 @@ class MentorCard extends React.PureComponent<IMentorCardProps, {}> {
                       }
                 }
               />
-              <Typography variant="h6">{this.props.name}</Typography>
+              <Typography variant="h6" color="primary">
+                {this.props.name}
+              </Typography>
               {this.props.job_title && (
                 <Typography variant="subtitle2">
                   {this.props.job_title}
                 </Typography>
               )}
               {this.props.company && (
-                <Typography variant="subtitle1">
+                <Typography variant="subtitle1" color="secondary">
                   {this.props.company}
                 </Typography>
               )}
