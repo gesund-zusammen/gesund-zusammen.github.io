@@ -16,7 +16,7 @@ interface IInfoBoxProps {
 class InfoBox extends React.PureComponent<IInfoBoxProps, {}> {
   render = () => {
     return (
-      <OptionalLinkWrapper link={this.props.link}>
+      <OptionalLinkWrapper link={this.props.link} targetBlank={true}>
         <StyledCard>
           <StyledCardContent>
             <StyledTitle variant="h4" color="secondary">
