@@ -652,7 +652,13 @@
       "name": "Nodes Agency",
       "slug": "strategic",
       "image": "nodes.png",
-      "link": "https://nodesagency.de"
+      "link": "https://nodesagency.de/"
+    },
+    {
+      "name": "Zoom",
+      "slug": "strategic",
+      "image": "zoom.png",
+      "link": "https://zoom.us/"
     }
   ]
 }
