@@ -22,7 +22,7 @@
       "accelerator": "Accelerator",
       "faqs": "Questions fréquentes",
       "program": "Programme",
-      "app": "IchHabs App"
+      "app": "App"
     }
   },
   "start": {
@@ -38,7 +38,7 @@
     },
     "box2": {
       "title": "L'application",
-      "content": "Plus d'informations sur l'application seront bientôt disponibles",
+      "content": "Suit le virus. Pas les humains.",
       "cta": "Comment ça fonctionne?"
     },
     "box3": {

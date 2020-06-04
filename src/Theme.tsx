@@ -211,11 +211,6 @@ const theme = responsiveFontSizes(
           },
         },
       },
-      MuiLink: {
-        root: {
-          color: "#00AAC8",
-        },
-      },
       MuiSwitch: {
         root: {
           height: "48px",

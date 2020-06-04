@@ -1,8 +1,14 @@
 import React from "react";
-import { Box, MenuItem, Select, Hidden } from "@material-ui/core";
+import {
+  Box,
+  MenuItem,
+  Select,
+  Hidden,
+  Link as AnchorLink,
+} from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
-import styled, { AnyStyledComponent } from "styled-components";
+import styled, { css, AnyStyledComponent } from "styled-components";
 import { withRouter, RouteComponentProps } from "react-router";
 import { Link, NavLink } from "react-router-dom";
 import { withTranslation, WithTranslation } from "react-i18next";
@@ -140,6 +146,18 @@ class HeaderNav extends React.PureComponent<IHeaderNavProps, IHeaderNavState> {
               >
                 {this.props.t("header.nav.faqs")}
               </HeaderNavLinkItem>
+            </HeaderNavItem>
+            <HeaderNavItem>
+              <HeaderNavAnchorItem
+                color="primary"
+                href="https://einsapp.eu"
+                className={this.props.dark && "dark"}
+                target="blank"
+                rel="noopener noreferrer"
+                underline="none"
+              >
+                {this.props.t("header.nav.app")}
+              </HeaderNavAnchorItem>
             </HeaderNavItem>
           </HeaderNavItems>
           <HeaderNavItems>
@@ -340,7 +358,7 @@ const HeaderSubnavItem: AnyStyledComponent = styled.li`
   }
 `;
 
-const HeaderNavLinkItem: AnyStyledComponent = styled(NavLink)`
+const SharedLinkStyles = css`
   display: inline-block;
   width: 100%;
   font-family: inherit;
@@ -367,6 +385,14 @@ const HeaderNavLinkItem: AnyStyledComponent = styled(NavLink)`
       color: #003269;
     }
   }
+`;
+
+const HeaderNavLinkItem: AnyStyledComponent = styled(NavLink)`
+  ${SharedLinkStyles}
+`;
+
+const HeaderNavAnchorItem: AnyStyledComponent = styled(AnchorLink)`
+  ${SharedLinkStyles}
 `;
 
 const HeaderNavLinkSubitem: AnyStyledComponent = styled(NavLink)`

@@ -161,6 +161,7 @@ class Start extends React.PureComponent<WithTranslation, {}> {
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}>
                   <InfoBox
+                    link="https://einsapp.eu"
                     title={this.props.t("start.box2.title")}
                     content={this.props.t("start.box2.content")}
                     illustration={IlluApp}

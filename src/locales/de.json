@@ -22,7 +22,7 @@
       "accelerator": "Accelerator",
       "faqs": "Fragen?",
       "program": "Programm",
-      "app": "IchHabs App"
+      "app": "App"
     }
   },
   "start": {
@@ -38,7 +38,7 @@
     },
     "box2": {
       "title": "Die App",
-      "content": "Mehr Infos zur App gibts in Kürze.",
+      "content": "Verfolgt nicht Sie. Nur das Virus.",
       "cta": "Wie funktionierts?"
     },
     "box3": {

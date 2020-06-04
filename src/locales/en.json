@@ -21,8 +21,8 @@
       "database": "Database",
       "accelerator": "Accelerator",
       "faqs": "FAQs",
-      "app": "IchHabs App",
-      "program": "Program"
+      "program": "Program",
+      "app": "App"
     }
   },
   "start": {
@@ -38,7 +38,7 @@
     },
     "box2": {
       "title": "The App",
-      "content": "More information around the app will come soon.",
+      "content": "Tracks the virus. Not humans.",
       "cta": "How it works?"
     },
     "box3": {
