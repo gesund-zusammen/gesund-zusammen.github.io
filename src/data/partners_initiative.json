@@ -399,6 +399,13 @@
       "link": "https://www.asociacionfintech.es/",
       "countries": ["es"],
       "imageXL": true
+    },
+    {
+      "name": "La Parisienne Assurances",
+      "slug": "founders",
+      "image": "la_parisienne.png",
+      "link": "https://la-parisienne.fr/",
+      "countries": ["fr"]
     }
   ]
 }
