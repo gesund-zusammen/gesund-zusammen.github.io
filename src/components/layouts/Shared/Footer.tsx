@@ -80,7 +80,7 @@ class Footer extends React.PureComponent<WithTranslation, {}> {
                 {this.props.t("footer.nav.imprint")}
               </FooterNavLinkItem>
             </FooterNavItems>
-            <CopyrightNote>&copy; 2020 Gesund Zusammen gGmbH</CopyrightNote>
+            <CopyrightNote>&copy; 2020 Healthy Together gGmbH</CopyrightNote>
           </FooterNav>
         </Container>
       </FooterWrapper>

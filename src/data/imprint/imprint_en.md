@@ -5,14 +5,14 @@ language: "de"
 
 ## Address
 
-Gesund Zusammen gGmbH<br />
+Healthy Together gGmbH<br />
 Urbanstr. 71<br />
 10967 Berlin, Germany
 
 ### Contact
 
 Tel .: +49 (0) 30 609865290<br />
-Email: media@gesund-zusammen.de
+Email: media@healthy-together.eu
 
 ### Managing Directors
 
