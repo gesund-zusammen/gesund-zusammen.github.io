@@ -9,10 +9,10 @@ Vielen Dank für Ihr Interesse an unserer Website. Der Schutz Ihrer personenbezo
 
 ## Verantwortlicher im Sinne der DSGVO
 
-Gesund Zusammen gGmbH i.G.<br />
+Healthy Together gGmbH<br />
 Urbanstr. 71<br />
 10967 Berlin, Germany<br />
-media@gesund-zusammen.de<br />
+media@healthy-together.eu<br />
 +49 (0) 30 609865290
 
 ## Kontaktdaten des Datenschutzbeauftragten

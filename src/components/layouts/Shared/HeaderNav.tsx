@@ -150,7 +150,7 @@ class HeaderNav extends React.PureComponent<IHeaderNavProps, IHeaderNavState> {
             <HeaderNavItem>
               <HeaderNavAnchorItem
                 color="primary"
-                href="https://einsapp.eu"
+                href="https://www.coronawarn.app/"
                 className={this.props.dark && "dark"}
                 target="blank"
                 rel="noopener noreferrer"

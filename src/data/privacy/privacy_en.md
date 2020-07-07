@@ -9,10 +9,10 @@ Thank you for your interest in our website. The protection of your personal data
 
 ## Controller in terms of GDPR
 
-Gesund Zusammen gGmbH i.G.<br />
+Healthy Together gGmbH<br />
 Urbanstr. 71<br />
 10967 Berlin, Germany<br />
-media@gesund-zusammen.de<br />
+media@healthy-together.eu<br />
 +49 (0) 30 609865290
 
 ## Contact details of the Data Protection Officer
