@@ -82,5 +82,53 @@
     "outlet": "Gabor Steingart - Der Podcast",
     "teaser": "Interview mit Julian Teicke",
     "link": "https://www.gaborsteingart.com/podcast/https-dasmorningbriefing-podigee-io-503-neue-episode/"
+  },
+  {
+    "date": "2020-06-07",
+    "outlet": "T-Online.de",
+    "teaser": "WDH: Kompletter Programmcode der Corona-Warn-App veröffentlicht",
+    "link": "https://www.t-online.de/finanzen/boerse/id_51922248/isin_52359403/wdh-kompletter-programmcode-der-corona-warn-app-veroeffentlicht.html"
+  },
+  {
+    "date": "2020-06-07",
+    "outlet": "Boersen-Zeitung",
+    "teaser": "WDH: Kompletter Programmcode der Corona-Warn-App veröffentlicht",
+    "link": "https://www.boersen-zeitung.de/index.php?l=5&isin=DE0007164600&dpasubm=all&ansicht=meldungen&dpaid=1293983"
+  },
+  {
+    "date": "2020-06-07",
+    "outlet": "Börse Online",
+    "teaser": "WDH: Kompletter Programmcode der Corona-Warn-App veröffentlicht",
+    "link": "https://www.boerse-online.de/nachrichten/aktien/wdh-kompletter-programmcode-der-corona-warn-app-veroeffentlicht-1029286643"
+  },
+  {
+    "date": "2020-06-14",
+    "outlet": "Tagesschau",
+    "teaser": "Corona-Pandemie So funktioniert die Warn-App",
+    "link": "https://www.tagesschau.de/inland/faq-corona-tracing-app-103.html"
+  },
+  {
+    "date": "2020-06-15",
+    "outlet": "Zeit Online",
+    "teaser": "Corona-App: Was lange währt, wird endlich App",
+    "link": "https://www.zeit.de/digital/mobil/2020-06/corona-app-tracing-datenschutz-faq"
+  },
+  {
+    "date": "2020-06-17",
+    "outlet": "Heise Online",
+    "teaser": "Corona-Warn-App: Alles ist Made in Germany, alle Daten, alle Projekte",
+    "link": "https://www.heise.de/news/Corona-Warn-App-Alles-ist-Made-in-Germany-alle-Daten-alle-Projekte-4785439.html"
+  },
+  {
+    "date": "2020-06-17",
+    "outlet": "Bundesregierung",
+    "teaser": "Pressekonferenz zur Vorstellung der Corona-Warn-App",
+    "link": "https://www.bundesregierung.de/breg-de/aktuelles/pressekonferenz-zur-vorstellung-der-corona-warn-app-1761058"
+  },
+  {
+    "date": "2020-06-17",
+    "outlet": "Zeit Online",
+    "teaser": "Corona Warn-App - Endlich verbunden",
+    "link": "https://www.zeit.de/2020/26/corona-warn-app-entstehungsprozess-datenschutz"
   }
 ]
