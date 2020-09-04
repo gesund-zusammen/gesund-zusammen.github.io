@@ -46,7 +46,7 @@
     "image-maxsize-webpack-loader": "^1.1.1",
     "image-webpack-loader": "^6.0.0",
     "json-diff": "^0.5.4",
-    "markdown-to-jsx": "^6.11.0",
+    "markdown-to-jsx": "^6.11.4",
     "prettier": "^1.19.1",
     "raf": "^3.4.1",
     "raw-loader": "^4.0.0",
